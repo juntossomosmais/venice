@@ -6,17 +6,10 @@ module.exports = {
 		'cypress/globals': true,
 	},
 	extends: ['eslint:recommended', 'plugin:cypress/recommended', 'prettier'],
-	overrides: [
-		{
-			files: ['**/*.svelte'],
-			processor: 'svelte3/svelte3',
-		},
-	],
 	parserOptions: {
 		ecmaVersion: 2019,
 		sourceType: 'module',
 	},
-	plugins: ['svelte3', 'cypress'],
 	rules: {
 		semi: [2, 'never'],
 	},
