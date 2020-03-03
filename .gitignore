@@ -1,4 +1,7 @@
-/node_modules/
-/public/build/
-
 .DS_Store
+**/dist/**
+**/node_modules/**
+**/public/bundle.*
+
+cypress/videos
+cypress/screenshots
