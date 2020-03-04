@@ -1,12 +1,8 @@
+import { storiesOf } from '@storybook/html';
+import { withKnobs } from '@storybook/addon-knobs';
 
-export default {
-  title: 'Button'
-}
-
-export const withText = () => '<jsm-button>Hello World</jsm-button>'
-
-export const withEmoji = () => {
-  const button = document.createElement('button');
-  button.innerText = '😀 😎 👍 💯';
-  return button;
-};
+storiesOf('Button', module)
+.addDecorator(withKnobs)
+  .add('Simple', () => `
+    <jsm-button items='[{"name": "Cat", "value": "Meow"}, {"name": "Dog", "value": "Woof"}]'></jsm-button>
+  `)

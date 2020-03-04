@@ -5,8 +5,10 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { SomeValue, } from "./components/button/button";
 export namespace Components {
     interface JsmButton {
+        "items": string | SomeValue[];
     }
 }
 declare global {
@@ -22,6 +24,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface JsmButton {
+        "items"?: string | SomeValue[];
     }
     interface IntrinsicElements {
         "jsm-button": JsmButton;
