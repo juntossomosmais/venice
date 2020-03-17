@@ -1,9 +1,0 @@
-button {
-	border: 1px solid #eee;
-	border-radius: 3px;
-	background-color: var(--bg);
-	cursor: pointer;
-	font-size: 15px;
-	padding: 3px 10px;
-	margin: 10px;
-}

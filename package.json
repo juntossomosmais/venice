@@ -1,48 +1,14 @@
 {
-  "name": "venice-jsm",
-  "version": "0.0.1",
-  "description": "Stencil Component Starter",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "es2015": "dist/esm/index.mjs",
-  "es2017": "dist/esm/index.mjs",
-  "types": "dist/types/index.d.ts",
-  "collection": "dist/collection/collection-manifest.json",
-  "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/venice-jsm/venice-jsm.js",
-  "files": [
-    "dist/",
-    "loader/"
+  "name": "venice",
+  "private": true,
+  "workspaces": [
+    "packages/*"
   ],
   "scripts": {
-    "build": "stencil build --docs",
-    "fix": "npx eslint --fix \"{,!(node_modules)/**/}*.{js,jsx}\"",
-    "format": "npx prettier --write \"{,!(node_modules)/**/}*.{js,jsx}\"",
-    "generate": "stencil generate",
-    "start": "npm-run-all --parallel stencil storybook",
-    "stencil": "stencil build --dev --watch --no-open",
-    "storybook": "start-storybook -p 60000 -s dist/",
-    "test.watch": "stencil test --spec --e2e --watchAll",
-    "test": "stencil test --spec --e2e"
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "start": "yarn workspace react-ds start"
   },
   "devDependencies": {
-    "@babel/core": "7.8.6",
-    "@stencil/core": "^1.9.0-14",
-    "@stencil/react-output-target": "0.0.3",
-    "@storybook/addon-actions": "5.3.14",
-    "@storybook/addon-backgrounds": "5.3.14",
-    "@storybook/addon-jest": "5.3.14",
-    "@storybook/addon-knobs": "5.3.14",
-    "@storybook/addon-notes": "5.3.14",
-    "@storybook/addon-options": "5.3.14",
-    "@storybook/addon-viewport": "5.3.14",
-    "@storybook/html": "5.3.14",
-    "@types/node": "13.7.7",
-    "babel-loader": "8.0.6",
-    "copy-webpack-plugin": "5.1.1",
-    "npm-run-all": "4.1.5",
-    "write-file-webpack-plugin": "4.5.1"
-  },
-  "license": "MIT",
-  "dependencies": {}
+    "lerna": "^3.20.2"
+  }
 }

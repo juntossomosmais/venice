@@ -1,26 +1,35 @@
 {
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build", 
+    "scripts"
+  ],
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "declaration": false,
-    "experimentalDecorators": true,
+    "target": "es5",
     "lib": [
       "dom",
-      "es2017"
+      "dom.iterable",
+      "esnext"
     ],
-    "moduleResolution": "node",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "module": "esnext",
-    "target": "es2017",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
     "jsx": "react",
-    "jsxFactory": "h"
-  },
-  "include": [
-    "src",
-    "types/jsx.d.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "baseUrl": "./packages",
+    "paths": {
+      "@venice/core": ["core/src"],
+      "@venice/react": ["react-ds/src"],
+      "@venice/vue": ["vue-ds/src"],
+      "@venice/*": ["*/src"]
+    }
+  }
 }
