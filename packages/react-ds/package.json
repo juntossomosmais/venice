@@ -10,6 +10,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@venice/styles": "1.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
@@ -24,9 +25,13 @@
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
-    "@types/react-dom": "^16.9.0",
     "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@venice/core": "1.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "node-sass": "^4.13.1",
     "react-scripts": "3.4.0",
+    "styled-components": "^5.0.1",
     "typescript": "~3.7.2"
   },
   "eslintConfig": {
