@@ -5,7 +5,7 @@
     "types": [
       "webpack-env",
       "jest"
-    ],
+    ]
   },
   "include": [
     "src/**/*.ts",
