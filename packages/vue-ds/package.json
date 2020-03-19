@@ -5,9 +5,8 @@
   "scripts": {
     "build": "vue-cli-service build --target lib --name venice src/main.ts",
     "test:unit": "vue-cli-service test:unit",
-    "start": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
-    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
-    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
+    "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
+    "storybook:build": "vue-cli-service storybook:build -c .storybook"
   },
   "dependencies": {
     "core-js": "^3.6.4",
