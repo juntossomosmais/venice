@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "start": "start-storybook -p 9009 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@venice/styles": "1.0.0",
