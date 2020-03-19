@@ -29,10 +29,10 @@
     ],
     "paths": {
       "@venice/styles": [
-        "styles"
+        "styles/src"
       ],
       "@venice/core": [
-        "core"
+        "core/src"
       ],
       "@venice/react": [
         "react-ds/src"
