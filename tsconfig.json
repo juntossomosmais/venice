@@ -2,34 +2,44 @@
   "exclude": [
     "node_modules",
     "dist",
-    "build", 
+    "build",
     "scripts"
   ],
   "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./packages",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react",
-    "baseUrl": "./packages",
     "paths": {
-      "@venice/core": ["core/src"],
-      "@venice/react": ["react-ds/src"],
-      "@venice/vue": ["vue-ds/src"],
-      "@venice/*": ["*/src"]
+      "@venice/styles": [
+        "styles"
+      ],
+      "@venice/core": [
+        "core"
+      ],
+      "@venice/react": [
+        "react-ds/src"
+      ],
+      "@venice/vue": [
+        "vue-ds/src"
+      ]
     }
   }
 }
