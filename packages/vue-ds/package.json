@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "start-storybook -p 6006 -c .storybook",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
