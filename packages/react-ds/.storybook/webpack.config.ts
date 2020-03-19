@@ -1,7 +1,12 @@
-import { TypeScriptLoader } from '@venice/core/storybook'
-
 module.exports = ({ config }) => {
-	config.module.rules.push(TypeScriptLoader);
+	config.module.rules.push({
+		test: /\.(ts|tsx)$/,
+		use: [
+			{
+				loader: require.resolve('awesome-typescript-loader'),
+			},
+		],
+	});
 	config.resolve.extensions.push('.ts', '.tsx');
 	return config;
 }
