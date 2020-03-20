@@ -1,5 +1,9 @@
 {
-  "name": "@venice/styles",
-  "version": "1.0.0",
-  "license": "MIT"
+	"name": "@venice/styles",
+	"version": "1.0.0",
+	"license": "MIT",
+	"devDependencies": {
+		"node-sass": "^4.13.1",
+		"sass-loader": "^8.0.2"
+	}
 }

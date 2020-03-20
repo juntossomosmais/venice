@@ -10,17 +10,10 @@
 		"build-storybook": "build-storybook"
 	},
 	"dependencies": {
-		"@venice/styles": "1.0.0",
 		"react": "^16.13.0",
 		"react-dom": "^16.13.0"
 	},
 	"devDependencies": {
-		"@storybook/addon-actions": "^5.3.17",
-		"@storybook/addon-docs": "^5.3.17",
-		"@storybook/addon-knobs": "^5.3.17",
-		"@storybook/addon-links": "^5.3.17",
-		"@storybook/addon-notes": "^5.3.17",
-		"@storybook/addons": "^5.3.17",
 		"@storybook/preset-create-react-app": "^2.1.0",
 		"@storybook/react": "^5.3.17",
 		"@testing-library/jest-dom": "^4.2.4",
@@ -31,14 +24,11 @@
 		"@types/react": "^16.9.0",
 		"@types/react-dom": "^16.9.0",
 		"@venice/core": "1.0.0",
-		"awesome-typescript-loader": "^5.2.1",
+		"@venice/styles": "1.0.0",
 		"babel-loader": "^8.1.0",
 		"eslint-plugin-react": "^7.19.0",
-		"node-sass": "^4.13.1",
-		"react": "^16.13.1",
 		"react-is": "^16.13.1",
 		"react-scripts": "3.4.0",
-		"styled-components": "^5.0.1",
 		"typescript": "~3.7.2"
 	},
 	"browserslist": {
