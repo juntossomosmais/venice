@@ -3,6 +3,8 @@ module.exports = {
 		browser: true,
 		node: true,
 		es6: true,
+		jest: true,
+		jasmine: true,
 	},
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -14,7 +16,7 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'prettier',
 	],
-	plugins: ['prettier', '@typescript-eslint'],
+	plugins: ['prettier', 'jest', '@typescript-eslint'],
 	rules: {
 		'prettier/prettier': ['error'],
 		'@typescript-eslint/explicit-function-return-type': 'off',
