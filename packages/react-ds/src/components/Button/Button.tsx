@@ -1,5 +1,4 @@
-import React from 'react';
-import styles from '@venice/styles/src/components/Button.module.scss';
+import styles from '@venice/styles/src/components/Button.module.scss'
 
 const Button = () => {
 	return (
@@ -9,8 +8,8 @@ const Button = () => {
 				onClick={() => alert('I am styled with CSS Modules')}
 			>
 				I am button 2 - Press Me
-      </button>
+			</button>
 		</>
-	);
-};
-export default Button;
+	)
+}
+export default Button

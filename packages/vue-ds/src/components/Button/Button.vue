@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
@@ -9,6 +9,6 @@ export default class MyButton extends Vue {}
 	<button :class="$style.btn">I am button 2 - Press Me</button>
 </template>
 
-<style lang='scss' module>
+<style lang="scss" module>
 @import '~@venice/styles/src/components/Button.module.scss';
 </style>
