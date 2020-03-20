@@ -34,9 +34,6 @@
     "styled-components": "^5.0.1",
     "typescript": "~3.7.2"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
