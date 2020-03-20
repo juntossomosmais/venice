@@ -6,7 +6,10 @@
 	],
 	"scripts": {
 		"bootstrap": "lerna bootstrap --use-workspaces",
-		"start": "yarn workspace react-ds start & yarn workspace vue-ds start",
+		"start": "run-p start:*",
+		"start:react": "yarn workspace react-ds start",
+		"start:vue": "yarn workspace vue-ds start",
+		"start:storybook": "yarn workspace @venice/storybook start",
 		"lint": "eslint . --ext js,ts,jsx,tsx",
 		"lint:css": "stylelint '**/*.scss'",
 		"format": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue,mdx}' $PWD/'*.{js,ts}' && stylelint '**/*.scss' --fix && eslint . --ext js,ts,jsx,tsx,vue --fix"
@@ -25,12 +28,14 @@
 		"husky": "^4.2.3",
 		"lerna": "^3.20.2",
 		"lint-staged": "^10.0.8",
+		"npm-run-all": "^4.1.5",
 		"prettier": "^1.19.1",
 		"prettier-eslint": "^9.0.1",
 		"prettier-eslint-cli": "^5.0.0",
 		"stylelint": "^13.2.1",
 		"stylelint-config-standard": "^20.0.0",
-		"stylelint-order": "^4.0.0"
+		"stylelint-order": "^4.0.0",
+		"typescript": "~3.7.2"
 	},
 	"husky": {
 		"hooks": {
