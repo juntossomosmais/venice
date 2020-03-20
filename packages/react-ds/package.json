@@ -24,12 +24,12 @@
 		"@types/react": "^16.9.0",
 		"@types/react-dom": "^16.9.0",
 		"@venice/core": "1.0.0",
+		"@venice/storybook": "1.0.0",
 		"@venice/styles": "1.0.0",
 		"babel-loader": "^8.1.0",
 		"eslint-plugin-react": "^7.19.0",
 		"react-is": "^16.13.1",
-		"react-scripts": "3.4.0",
-		"typescript": "~3.7.2"
+		"react-scripts": "3.4.0"
 	},
 	"browserslist": {
 		"production": [
