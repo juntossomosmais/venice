@@ -3,10 +3,10 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
+		"start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
 		"build": "vue-cli-service build --target lib --name venice src/main.ts",
 		"test:unit": "vue-cli-service test:unit",
 		"lint": "vue-cli-service lint",
-		"start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
 		"storybook:build": "vue-cli-service storybook:build -c .storybook"
 	},
 	"dependencies": {

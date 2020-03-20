@@ -4,3 +4,4 @@
 lib
 node_modules
 packages/**/dist
+yarn-error
