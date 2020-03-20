@@ -3,14 +3,20 @@ module.exports = {
 		browser: true,
 		node: true,
 		es6: true,
-		'cypress/globals': true,
 	},
-	extends: ['eslint:recommended', 'plugin:cypress/recommended', 'prettier'],
+	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 2019,
 		sourceType: 'module',
 	},
+	extends: [
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'prettier',
+	],
+	plugins: ['prettier', '@typescript-eslint'],
 	rules: {
-		semi: [2, 'never'],
+		'prettier/prettier': ['error'],
+		'@typescript-eslint/explicit-function-return-type': 'off',
 	},
 }
