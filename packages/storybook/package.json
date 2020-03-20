@@ -2,6 +2,12 @@
 	"name": "@venice/storybook",
 	"version": "1.0.0",
 	"license": "MIT",
+	"main": "./lib/index.js",
+	"types": "./lib/index.d.ts",
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"start": "tsc -p tsconfig.build.json --watch --preserveWatchOutput"
+	},
 	"devDependencies": {
 		"@storybook/addon-actions": "^5.3.17",
 		"@storybook/addon-docs": "^5.3.17",
@@ -9,5 +15,8 @@
 		"@storybook/addon-links": "^5.3.17",
 		"@storybook/addon-notes": "^5.3.17",
 		"@storybook/addons": "^5.3.17"
+	},
+	"peerDependencies": {
+		"typescript": "~3.4.5"
 	}
 }
