@@ -1,45 +1,13 @@
 {
-  "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    "scripts"
-  ],
-  "compilerOptions": {
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": "./packages",
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
-    "isolatedModules": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmit": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "paths": {
-      "@venice/styles": [
-        "styles/src"
-      ],
-      "@venice/core": [
-        "core/src"
-      ],
-      "@venice/react": [
-        "react-ds/src"
-      ],
-      "@venice/vue": [
-        "vue-ds/src"
-      ]
-    }
-  }
+	"extends": "./tsconfig.build.json",
+	"compilerOptions": {
+		"baseUrl": "./packages",
+		"paths": {
+			"@venice/styles": ["styles"],
+			"@venice/core": ["core/src"],
+			"@venice/storybook": ["storybook/src"],
+			"@venice/react": ["react-ds/src"],
+			"@venice/vue": ["vue-ds/src"]
+		}
+	}
 }
