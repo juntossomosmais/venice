@@ -36,7 +36,7 @@
 	"lint-staged": {
 		"*.{ts,tsx,js,jsx}": [
 			"eslint --fix . --ignore-path .gitignore",
-			"prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' $PWD/'*.{js,ts}' --ignore '**/dist/**' '**/*.d.ts'",
+			"prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue,mdx}' $PWD/'*.{js,ts}' --ignore $PWD/'**/dist/**' $PWD/'**/*.d.ts'",
 			"git add"
 		]
 	}
