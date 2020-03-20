@@ -6,7 +6,9 @@ export default class MyButton extends Vue {}
 </script>
 
 <template>
-	<button :class="$style.btn">I am button 2 - Press Me</button>
+	<button :class="$style.btn">
+		I am button 2 - Press Me
+	</button>
 </template>
 
 <style lang="scss" module>

@@ -3,7 +3,6 @@
 	"extends": "stylelint-config-standard",
 	"rules": {
 		"order/order": ["custom-properties", "declarations"],
-		"order/properties-alphabetical-order": true,
-		"font-weight-notation": true
+		"order/properties-alphabetical-order": true
 	}
 }

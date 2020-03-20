@@ -7,9 +7,9 @@
 	"scripts": {
 		"bootstrap": "lerna bootstrap --use-workspaces",
 		"start": "yarn workspace react-ds start & yarn workspace vue-ds start",
-		"lint:js": "eslint . --ignore-path .gitignore",
+		"lint": "eslint . --ext js,ts,jsx,tsx",
 		"lint:css": "stylelint '**/*.scss'",
-		"format": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue,mdx}' $PWD/'*.{js,ts}' && stylelint '**/*.scss' --fix"
+		"format": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue,mdx}' $PWD/'*.{js,ts}' && stylelint '**/*.scss' --fix && eslint . --ext js,ts,jsx,tsx --fix"
 	},
 	"devDependencies": {
 		"@commitlint/config-conventional": "^8.3.4",
@@ -20,6 +20,7 @@
 		"eslint-config-prettier": "^6.10.0",
 		"eslint-plugin-import": "^2.20.1",
 		"eslint-plugin-jest": "^23.8.2",
+		"eslint-plugin-mdx": "^1.6.8",
 		"eslint-plugin-prettier": "^3.1.2",
 		"husky": "^4.2.3",
 		"lerna": "^3.20.2",
@@ -39,10 +40,9 @@
 	},
 	"lint-staged": {
 		"*.{ts,tsx,js,jsx}": [
-			"eslint --fix . --ignore-path .gitignore",
+			"eslint . --ext js,ts,jsx,tsx --fix",
 			"prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue,mdx}' $PWD/'*.{js,ts}'",
-			"stylelint '**/*.scss' --fix",
-			"git add"
+			"stylelint '**/*.scss' --fix"
 		]
 	}
 }

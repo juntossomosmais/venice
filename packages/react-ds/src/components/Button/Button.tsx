@@ -1,3 +1,5 @@
+import React from 'react'
+
 import styles from '@venice/styles/src/components/Button.module.scss'
 
 const Button = () => {

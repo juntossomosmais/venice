@@ -1,14 +1,14 @@
 .btn {
   background: rgb(199, 23, 23);
-	border: none;
+  border: none;
   border-radius: 5px;
   color: white;
   font-size: 20px;
   height: 50px;
   margin-top: 20px;
   width: 200px;
-	
-	&:hover {
-		background: rgb(228, 49, 49);
-	}
+
+  &:hover {
+    background: rgb(228, 49, 49);
+  }
 }

@@ -1,4 +1,14 @@
 module.exports = {
+	extends: [
+		'eslint:recommended',
+		'plugin:import/errors',
+		'plugin:import/warnings',
+		'plugin:import/typescript',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:mdx/recommended',
+		'prettier',
+	],
+	plugins: ['prettier', 'jest', 'import', '@typescript-eslint'],
 	env: {
 		browser: true,
 		node: true,
@@ -10,6 +20,9 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 2019,
 		sourceType: 'module',
+		ecmaFeatures: {
+			jsx: true,
+		},
 	},
 	settings: {
 		'import/resolver': {
@@ -18,15 +31,6 @@ module.exports = {
 			},
 		},
 	},
-	extends: [
-		'eslint:recommended',
-		'plugin:import/errors',
-		'plugin:import/warnings',
-		'plugin:import/typescript',
-		'plugin:@typescript-eslint/recommended',
-		'prettier',
-	],
-	plugins: ['prettier', 'jest', 'import', '@typescript-eslint'],
 	rules: {
 		'prettier/prettier': ['error'],
 		'@typescript-eslint/explicit-function-return-type': 'off',
