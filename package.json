@@ -9,7 +9,6 @@
 		"start": "run-p start:*",
 		"start:react": "yarn workspace react-ds start",
 		"start:vue": "yarn workspace vue-ds start",
-		"start:storybook": "yarn workspace @venice/storybook start",
 		"lint": "eslint . --ext js,ts,jsx,tsx",
 		"lint:css": "stylelint '**/*.scss'",
 		"format": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue,mdx}' $PWD/'*.{js,ts}' && stylelint '**/*.scss' --fix && eslint . --ext js,ts,jsx,tsx,vue --fix"

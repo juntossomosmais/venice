@@ -1,17 +1,9 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "jsx": "react",
-    "outDir": "build/lib",
-    "lib": [
-      "es5",
-      "es6",
-      "es7",
-      "es2017",
-      "dom"
-    ]
-  },
-  "include": [
-    "src"
-  ]
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"jsx": "react",
+		"outDir": "build/lib",
+		"lib": ["es5", "es6", "es7", "es2017", "dom"]
+	},
+	"include": ["src"]
 }
