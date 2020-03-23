@@ -4,4 +4,5 @@
 lib
 node_modules
 packages/**/dist
-yarn-error
+packages/**/*.log
+packages/**/*.jest-*
