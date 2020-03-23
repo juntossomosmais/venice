@@ -1,35 +1,49 @@
+const $blue = 'rgb(0, 127, 216)'
+const $grayDark = 'rgb(33, 33, 33)'
+const $orange = 'rgb(255, 125, 0)'
+const $transparent = 'transparent'
+const $white = 'rgb(255, 255, 255, .9)'
+const $white2 = 'rgb(255, 255, 255, .8)'
+const $white3 = 'rgb(240, 240, 240, .9)'
+
+const $colorPrimary = $blue
+const $colorSecondary = $orange
+
+const $borderRadius = 2
+
 export const theme = {
-	base: 'light',
+  base: 'light',
 
-	colorPrimary: 'hotpink',
-	colorSecondary: 'deepskyblue',
+  colorPrimary: $colorPrimary,
+  colorSecondary: $colorSecondary,
 
-	// UI
-	appBg: 'white',
-	appContentBg: 'silver',
-	appBorderColor: 'grey',
-	appBorderRadius: 4,
+  // UI
+  appBg: $white,
+  appContentBg: $white2,
+  appBorderColor: $transparent,
+  appBorderRadius: $borderRadius,
 
-	// Typography
-	fontBase: '"Open Sans", sans-serif',
-	fontCode: 'monospace',
+  // Typography
+  fontBase: '"Open Sans", sans-serif',
+  fontCode: 'monospace',
 
-	// Text colors
-	textColor: 'black',
-	textInverseColor: 'rgba(255,255,255,0.9)',
+  // Text colors
+  textColor: $grayDark,
+  textInverseColor: $white,
 
-	// Toolbar default and active colors
-	barTextColor: 'silver',
-	barSelectedColor: 'black',
-	barBg: 'hotpink',
+  // Toolbar default and active colors
+  barTextColor: $white3,
+  barSelectedColor: $white,
+  barBg: $colorPrimary,
 
-	// Form colors
-	inputBg: 'white',
-	inputBorder: 'silver',
-	inputTextColor: 'black',
-	inputBorderRadius: 4,
+  // Form colors
+  inputBg: $white,
+  inputBorder: $white2,
+  inputTextColor: $grayDark,
+  inputBorderRadius: $borderRadius,
 
-	brandTitle: 'My custom storybook',
-	brandUrl: 'https://example.com',
-	brandImage: 'https://placehold.it/350x150',
+  brandTitle: 'JSM - Design System',
+  brandUrl: 'https://www.juntossomosmais.com.br/',
+  brandImage:
+    'https://user-images.githubusercontent.com/3603793/77353251-67234580-6d1f-11ea-83dc-ad35695ba582.png',
 }
