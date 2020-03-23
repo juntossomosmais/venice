@@ -1,0 +1,19 @@
+:root {
+  --black: #111111;
+  --blue-1: #007fd8;
+  --blue-2: #003a64;
+  --blue-3: #0060a7;
+  --blue-4: #daf0ff;
+  --gray-1: #f5f5f5;
+  --gray-2: #9b9b9b;
+  --green-1: #7ed321;
+  --orange-1: #ff7d00;
+  --purple-1: #bd10e0;
+  --red-1: #d0021b;
+  --red-2: #ba1e24;
+  --white: #ffffff;
+
+  --primaryColor: var(--blue-1);
+  --secondaryColor: var(--orange-1);
+  --textColor: var(--black);
+}
