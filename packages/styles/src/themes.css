@@ -13,7 +13,7 @@
   --red-2: #ba1e24;
   --white: #ffffff;
 
-  --primaryColor: var(--blue-1);
-  --secondaryColor: var(--orange-1);
+  --primaryColor: var(--orange-1);
+  --secondaryColor: var(--blue-1);
   --textColor: var(--black);
 }
