@@ -1,5 +1,4 @@
 .btn {
-  background: var(--primaryColor);
   border: none;
   border-radius: 5px;
   color: white;
@@ -11,4 +10,8 @@
   &:hover {
     background: rgb(228, 49, 49);
   }
+}
+
+.primary {
+  background: var(--primaryColor);
 }
