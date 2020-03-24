@@ -1,17 +1,26 @@
+@import '../core/';
+
 .btn {
-  border: none;
-  border-radius: 5px;
-  color: white;
+  @include reset;
+  align-items: center;
+  border-radius: var(--space-lg);
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
   font-size: 20px;
-  height: 50px;
-  margin-top: 20px;
-  width: 200px;
+  font: var(--typography-button-font);
+  height: $space-lg;
+  letter-spacing: var(--typography-button-letter);
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+  transition: opacity 0.15s;
 
   &:hover {
-    background: rgb(228, 49, 49);
+    opacity: 0.9;
   }
 }
 
 .primary {
-  background: var(--primaryColor);
+  background-color: var(--primary-color);
+  color: var(--white);
 }
