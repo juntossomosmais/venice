@@ -1,19 +1,80 @@
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
-import MyButton from './Button.vue'
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 
-<Meta title="MDX|MyButton" component={MyButton} />
+import Button from './Button.vue'
+
+<Meta title="Button" component={Button} />
 
 # Button
 
-<Props of={MyButton} />
+You can add a `href` attr to use it as `<a>` element.
 
-This is a simple button with some text in it.
+## Filled buttons
 
 <Preview>
-	<Story name="With Text">
-		{{
-			components: { MyButton },
-			template: '<my-button></my-button>',
-		}}
-	</Story>
+  <Story name="Filled" parameters={{ decorators: [withKnobs] }}>
+    {{
+      components: { Button },
+      template: `
+        <div>
+          <Button>Default</Button>
+          <Button color="primary">Primary</Button>
+          <Button color="secondary">Secondary</Button>
+          <Button disabled>Disabled</Button>
+        </div>
+      `,
+    }}
+  </Story>
 </Preview>
+
+## Outlined buttons
+
+<Preview>
+  <Story name="Outlined">
+    {{
+      components: { Button },
+      template: `
+        <div>
+          <Button variant="outlined">Default</Button>
+          <Button color="primary" variant="outlined">
+            Primary
+          </Button>
+          <Button color="secondary" variant="outlined">
+            Secondary
+          </Button>
+          <Button disabled variant="outlined">
+            Disabled
+          </Button>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Text buttons
+
+<Preview>
+  <Story name="Text">
+    {{
+      components: { Button },
+      template: `
+        <div>
+          <Button variant="text">Default</Button>
+          <Button color="primary" variant="text">
+            Primary
+          </Button>
+          <Button color="secondary" variant="text">
+            Secondary
+          </Button>
+          <Button disabled variant="text">
+            Disabled
+          </Button>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Button} />
