@@ -32,7 +32,7 @@ const Button: FC<IButtonProps> = ({
 Button.propTypes = {
   /**  'default' | 'primary' | 'secondary' */
   color: PropTypes.any,
-  /** 'fill' | 'outline' | 'blank' */
+  /** 'filled' | 'outlined' | 'text' */
   variant: PropTypes.any,
   /** true | false */
   disabled: PropTypes.any,

@@ -39,8 +39,8 @@
   --typography-button-font: 900 1.6rem/1.9rem var(--font-family);
   --typography-button-letter: -0.228572px;
 
-  --default-color: var(--white);
-  --default-color-contrast: var(--black);
+  --default-color: var(--gray-2);
+  --default-color-contrast: var(--white);
 
   --disabled-color: var(--gray-1);
   --disabled-color-contrast: var(--gray-2);

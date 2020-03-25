@@ -22,9 +22,16 @@
   }
 
   &[disabled] {
-    border-color: var(--disabled-color);
-    color: var(--disabled-color);
     cursor: not-allowed;
+
+    &.text {
+      color: var(--disabled-color);
+    }
+
+    &.outlined {
+      border-color: var(--disabled-color);
+      color: var(--disabled-color);
+    }
 
     &.filled {
       background-color: var(--disabled-color);
@@ -34,8 +41,14 @@
 }
 
 .default {
-  border-color: var(--default-color);
-  color: var(--default-color);
+  &.text {
+    color: var(--default-color);
+  }
+
+  &.outlined {
+    border-color: var(--default-color);
+    color: var(--default-color);
+  }
 
   &.filled {
     background-color: var(--default-color);
@@ -44,8 +57,14 @@
 }
 
 .primary {
-  border-color: var(--primary-color);
-  color: var(--primary-color);
+  &.text {
+    color: var(--primary-color);
+  }
+
+  &.outlined {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+  }
 
   &.filled {
     background-color: var(--primary-color);
@@ -54,8 +73,14 @@
 }
 
 .secondary {
-  border-color: var(--secondary-color);
-  color: var(--secondary-color);
+  &.text {
+    color: var(--secondary-color);
+  }
+
+  &.outlined {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+  }
 
   &.filled {
     background-color: var(--secondary-color);
