@@ -56,6 +56,10 @@ module.exports = {
             group: 'external',
             position: 'before',
           },
+          {
+            pattern: "@venice/**",
+            group: "internal"
+          }
         ],
         pathGroupsExcludedImportTypes: ['react'],
       },
