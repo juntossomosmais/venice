@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 
 import { IButton } from '@venice/core/models'
 import styles from '@venice/styles/src/components/Button.module.scss'
@@ -14,7 +14,6 @@ const Button: FC<IButtonProps> = ({
   children,
   ...rest
 }: IButtonProps) => {
-  console.log(color)
   const setStyle = (c: string) => (c ? `${styles[c]}` : '')
 
   return (
