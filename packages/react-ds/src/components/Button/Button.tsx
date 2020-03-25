@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { FC } from 'react'
 
 import { IButton } from '@venice/core/models'
 import styles from '@venice/styles/src/components/Button.module.scss'
