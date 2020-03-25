@@ -1,5 +1,6 @@
 export interface IButton {
-  color?: 'primary' | 'secondary'
-  children?: React.ReactNode
-  variant?: 'fill' | 'outline' | 'blank'
+  /**  'default' | 'primary' | 'secondary' */
+  color: 'default' | 'primary' | 'secondary'
+  /** 'fill' | 'outline' | 'blank' */
+  variant: 'fill' | 'outline' | 'blank'
 }

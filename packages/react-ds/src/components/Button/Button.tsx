@@ -1,14 +1,19 @@
-import React, { useState } from 'react'
+import React, { FC } from 'react'
 
 import { IButton } from '@venice/core/models'
 import styles from '@venice/styles/src/components/Button.module.scss'
+import PropTypes from 'prop-types'
 
-const Button = (props: IButton) => {
-  const { children, ...rest } = props
+interface IButtonProps extends IButton {
+  children: React.ReactNode
+}
 
-  const [color] = useState(props.color)
-  const [variant] = useState(props.variant)
-
+const Button: FC<IButtonProps> = ({
+  color,
+  variant,
+  children,
+  ...rest
+}: IButtonProps) => {
   const setStyle = (c: string | undefined) => (c ? `${styles[c]}` : '')
 
   return (
@@ -22,4 +27,17 @@ const Button = (props: IButton) => {
     </>
   )
 }
+
+Button.propTypes = {
+  /**  'default' | 'primary' | 'secondary' */
+  color: PropTypes.any,
+  /** 'fill' | 'outline' | 'blank' */
+  variant: PropTypes.any,
+}
+
+Button.defaultProps = {
+  color: 'default',
+  variant: 'fill',
+}
+
 export default Button
