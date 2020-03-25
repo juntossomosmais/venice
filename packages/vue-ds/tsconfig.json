@@ -2,10 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "jsx": "preserve",
-    "types": [
-      "webpack-env",
-      "jest"
-    ]
+    "types": ["webpack-env", "jest"]
   },
   "include": [
     "src/**/*.ts",
@@ -14,7 +11,5 @@
     "tests/**/*.ts",
     "tests/**/*.tsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
