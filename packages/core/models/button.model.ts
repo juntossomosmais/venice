@@ -5,4 +5,6 @@ export interface IButton {
   variant: 'filled' | 'outlined' | 'text'
   /** true | 'false */
   disabled?: boolean
+  /** href <a> */
+  href?: string
 }

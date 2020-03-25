@@ -15,6 +15,7 @@
   letter-spacing: var(--typography-button-letter);
   padding-left: var(--space-md);
   padding-right: var(--space-md);
+  text-decoration: none;
   transition: opacity 0.15s;
 
   &:not([disabled]):hover {

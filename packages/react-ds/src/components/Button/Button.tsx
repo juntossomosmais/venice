@@ -1,8 +1,9 @@
 import React, { FC } from 'react'
 
+import PropTypes from 'prop-types'
+
 import { IButton } from '@venice/core/models'
 import styles from '@venice/styles/src/components/Button.module.scss'
-import PropTypes from 'prop-types'
 
 interface IButtonProps extends IButton {
   children: React.ReactNode
@@ -11,6 +12,7 @@ interface IButtonProps extends IButton {
 const Button: FC<IButtonProps> = ({
   color,
   variant,
+  href,
   children,
   ...rest
 }: IButtonProps) => {
@@ -18,12 +20,21 @@ const Button: FC<IButtonProps> = ({
 
   return (
     <>
-      <button
-        className={`${styles.btn} ${setStyle(color)} ${setStyle(variant)}`}
-        {...rest}
-      >
-        {children}
-      </button>
+      {href ? (
+        <a
+          className={`${styles.btn} ${setStyle(color)} ${setStyle(variant)}`}
+          {...rest}
+        >
+          {children}
+        </a>
+      ) : (
+        <button
+          className={`${styles.btn} ${setStyle(color)} ${setStyle(variant)}`}
+          {...rest}
+        >
+          {children}
+        </button>
+      )}
     </>
   )
 }
@@ -33,7 +44,9 @@ Button.propTypes = {
   color: PropTypes.any,
   /** 'filled' | 'outlined' | 'text' */
   variant: PropTypes.any,
-  /** true | false */
+  /** (optional) true | false */
+  /** (optional) string */
+  href: PropTypes.any,
   disabled: PropTypes.any,
 }
 
