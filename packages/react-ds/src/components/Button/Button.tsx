@@ -14,7 +14,8 @@ const Button: FC<IButtonProps> = ({
   children,
   ...rest
 }: IButtonProps) => {
-  const setStyle = (c: string | undefined) => (c ? `${styles[c]}` : '')
+  console.log(color)
+  const setStyle = (c: string) => (c ? `${styles[c]}` : '')
 
   return (
     <>
@@ -33,6 +34,8 @@ Button.propTypes = {
   color: PropTypes.any,
   /** 'fill' | 'outline' | 'blank' */
   variant: PropTypes.any,
+  /** true | false */
+  disabled: PropTypes.any,
 }
 
 Button.defaultProps = {

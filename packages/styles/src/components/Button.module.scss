@@ -4,7 +4,8 @@
   @include reset();
 
   align-items: center;
-  border: 0;
+  background-color: transparent;
+  border: 1px solid transparent;
   border-radius: var(--space-lg);
   cursor: pointer;
   display: inline-flex;
@@ -16,12 +17,48 @@
   padding-right: var(--space-md);
   transition: opacity 0.15s;
 
-  &:hover {
-    opacity: 0.9;
+  &:not([disabled]):hover {
+    opacity: 0.85;
+  }
+
+  &[disabled] {
+    border-color: var(--disabled-color);
+    color: var(--disabled-color);
+    cursor: not-allowed;
+
+    &.fill {
+      background-color: var(--disabled-color);
+      color: var(--disabled-color-contrast);
+    }
+  }
+}
+
+.default {
+  border-color: var(--default-color);
+  color: var(--default-color);
+
+  &.fill {
+    background-color: var(--default-color);
+    color: var(--default-color-contrast);
   }
 }
 
 .primary {
-  background-color: var(--primary-color);
-  color: var(--white);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+
+  &.fill {
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
+  }
+}
+
+.secondary {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+
+  &.fill {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color-contrast);
+  }
 }

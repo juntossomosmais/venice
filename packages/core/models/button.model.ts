@@ -3,4 +3,6 @@ export interface IButton {
   color: 'default' | 'primary' | 'secondary'
   /** 'fill' | 'outline' | 'blank' */
   variant: 'fill' | 'outline' | 'blank'
+  /** true | 'false */
+  disabled?: boolean
 }
