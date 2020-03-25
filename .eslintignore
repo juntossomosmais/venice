@@ -1,5 +1,6 @@
-node_modules 
+node_modules
 coverage
 dist
 build
 **/*.d.ts
+**/.eslintrc.js

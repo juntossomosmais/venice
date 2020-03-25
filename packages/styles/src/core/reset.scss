@@ -1,10 +1,10 @@
-@mixin reset {
+@mixin reset() {
   & {
     box-sizing: border-box;
     margin: 0;
 
-    &:after,
-    &:before {
+    &::after,
+    &::before {
       box-sizing: border-box;
     }
   }

@@ -1,14 +1,15 @@
 @import '../core/';
 
 .btn {
-  @include reset;
+  @include reset();
+
   align-items: center;
-  border-radius: var(--space-lg);
   border: 0;
+  border-radius: var(--space-lg);
   cursor: pointer;
   display: inline-flex;
-  font-size: 20px;
   font: var(--typography-button-font);
+  font-size: 20px;
   height: $space-lg;
   letter-spacing: var(--typography-button-letter);
   padding-left: var(--space-md);

@@ -35,7 +35,7 @@ module.exports = {
     'prettier/prettier': ['error'],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/member-delimiter-style': 'off',
-    '@typescript-eslint/interface-name-prefix': 'always',
+    '@typescript-eslint/interface-name-prefix': 'off',
     'import/no-unresolved': 'off',
     'import/order': [
       'error',

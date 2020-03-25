@@ -1,8 +1,10 @@
 {
-	"plugins": ["stylelint-order"],
-	"extends": "stylelint-config-standard",
-	"rules": {
-		"order/order": ["custom-properties", "declarations"],
-		"order/properties-alphabetical-order": true
-	}
+  "plugins": ["stylelint-order"],
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-alphabetical-order": true,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": false
+  }
 }

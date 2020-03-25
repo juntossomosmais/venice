@@ -1,1 +1,1 @@
-export type { IButton } from './button.model'
+export * from './button.model'
