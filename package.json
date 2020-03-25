@@ -11,7 +11,7 @@
     "start:vue": "yarn workspace vue-ds start",
     "lint": "eslint . --ext js,ts,jsx,tsx",
     "lint:css": "stylelint '**/*.scss'",
-    "format": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue,mdx}' $PWD/'*.{js,ts}' && stylelint '**/*.scss' --fix && eslint . --ext js,ts,jsx,tsx,vue --fix"
+    "format": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' $PWD/'*.{js,ts}' && stylelint '**/*.scss' --fix && eslint . --ext js,ts,jsx,tsx,vue --fix"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
@@ -45,7 +45,7 @@
   "lint-staged": {
     "*.{ts,tsx,js,jsx,vue}": [
       "eslint . --ext js,ts,jsx,tsx --fix",
-      "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue,mdx}' $PWD/'*.{js,ts}'",
+      "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' $PWD/'*.{js,ts}'",
       "stylelint '**/*.scss' --fix"
     ]
   }
