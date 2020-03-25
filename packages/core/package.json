@@ -10,6 +10,12 @@
 		"@storybook/addon-notes": "^5.3.17",
 		"@storybook/addon-viewport": "^5.3.17",
 		"@storybook/addons": "^5.3.17",
-		"storybook-addon-themes": "^5.4.0"
+		"@typescript-eslint/eslint-plugin": "^2.25.0",
+		"@typescript-eslint/parser": "^2.25.0",
+		"eslint-config-prettier": "^6.10.1",
+		"lint-staged": "^10.0.9",
+		"prettier": "^2.0.2",
+		"storybook-addon-themes": "^5.4.1",
+		"typescript": "~3.8.3"
 	}
 }
