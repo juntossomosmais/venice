@@ -40,7 +40,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   color: 'default',
-  variant: 'fill',
+  variant: 'filled',
 }
 
 export default Button
