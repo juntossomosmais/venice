@@ -1,21 +1,36 @@
 version: '3.5'
 services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    ports:
+      - 6006:6006
+      - 9009:9009
+    command: yarn start
+
+  tests:
+    image: node:lts-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: yarn && yarn test
+
   loki-test:
+    image: node:lts-slim
     privileged: true
     build:
       context: .
-    #environment:
-    #- CI=true
     command: yarn build:storybook && yarn loki-test
     volumes:
       - './.loki:/app/.loki'
 
   loki-update:
+    image: node:lts-slim
     privileged: true
     build:
       context: .
-    #environment:
-    #- CI=true
     command: yarn build:storybook && yarn loki-update
     volumes:
       - './.loki:/app/.loki'
