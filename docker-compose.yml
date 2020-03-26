@@ -1,0 +1,21 @@
+version: '3.5'
+services:
+  loki-test:
+    privileged: true
+    build:
+      context: .
+    #environment:
+    #- CI=true
+    command: yarn build:storybook && yarn loki-test
+    volumes:
+      - './.loki:/app/.loki'
+
+  loki-update:
+    privileged: true
+    build:
+      context: .
+    #environment:
+    #- CI=true
+    command: yarn build:storybook && yarn loki-update
+    volumes:
+      - './.loki:/app/.loki'
