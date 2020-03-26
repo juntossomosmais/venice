@@ -1,16 +1,3 @@
-<script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator'
-
-import { IButton } from '@venice/core/models'
-
-@Component
-export default class Button extends Vue {
-  @Prop({ default: 'default' }) color!: IButton['color']
-  @Prop({ default: 'filled' }) variant!: IButton['variant']
-  @Prop() href!: IButton['href']
-}
-</script>
-
 <template>
   <a
     v-if="href"
@@ -23,6 +10,19 @@ export default class Button extends Vue {
     <slot />
   </button>
 </template>
+
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-property-decorator'
+
+import { IButton } from '@venice/core/models'
+
+@Component
+export default class Button extends Vue {
+  @Prop({ default: 'default' }) color!: IButton['color']
+  @Prop({ default: 'filled' }) variant!: IButton['variant']
+  @Prop() href!: IButton['href']
+}
+</script>
 
 <style lang="scss" module>
 @import '~@venice/styles/src/components/Button.module.scss';
