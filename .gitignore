@@ -4,6 +4,6 @@
 lib
 dist
 node_modules
-packages/**/dist
-packages/**/*.log
-packages/**/*.jest-*
+*.log
+*.jest-*
+.loki
