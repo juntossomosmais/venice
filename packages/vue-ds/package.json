@@ -1,52 +1,52 @@
 {
-	"name": "vue-ds",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
-		"build": "vue-cli-service build --target lib --name venice src/main.ts",
-		"test:unit": "vue-cli-service test:unit",
-		"lint": "vue-cli-service lint",
-		"storybook:build": "vue-cli-service storybook:build -c .storybook"
-	},
-	"dependencies": {
-		"core-js": "^3.6.4",
-		"vue": "^2.6.11",
-		"vue-class-component": "^7.2.2",
-		"vue-property-decorator": "^8.3.0"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.8.7",
-		"@babel/plugin-proposal-class-properties": "^7.8.3",
-		"@babel/plugin-proposal-decorators": "^7.8.3",
-		"@storybook/vue": ">=5.3.0",
-		"@types/jest": "^25.1.4",
-		"@venice/core": "1.0.0",
-		"@venice/styles": "1.0.0",
-		"@vue/cli-plugin-babel": "~4.2.0",
-		"@vue/cli-plugin-eslint": "~4.2.0",
-		"@vue/cli-plugin-typescript": "~4.2.0",
-		"@vue/cli-plugin-unit-jest": "~4.2.0",
-		"@vue/cli-service": "~4.2.0",
-		"@vue/eslint-config-typescript": "^5.0.1",
-		"@vue/test-utils": "1.0.0-beta.32",
-		"babel-loader": "^8.0.6",
-		"babel-preset-vue": "^2.0.2",
-		"eslint-plugin-vue": "^6.1.2",
-		"vue-cli-plugin-storybook": "~1.2.1",
-		"vue-loader": "^15.9.1",
-		"vue-template-compiler": "^2.6.11"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	}
+  "name": "vue-ds",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
+    "build": "vue-cli-service build --target lib --name venice src/main.ts",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "build-storybook": "vue-cli-service storybook:build -c .storybook -o  -o ../../dist/vue"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.2",
+    "vue-property-decorator": "^8.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@storybook/vue": ">=5.3.0",
+    "@types/jest": "^25.1.4",
+    "@venice/core": "1.0.0",
+    "@venice/styles": "1.0.0",
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-plugin-typescript": "~4.2.0",
+    "@vue/cli-plugin-unit-jest": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "@vue/eslint-config-typescript": "^5.0.1",
+    "@vue/test-utils": "1.0.0-beta.32",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "vue-cli-plugin-storybook": "~1.2.1",
+    "vue-loader": "^15.9.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
