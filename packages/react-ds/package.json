@@ -7,7 +7,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-storybook": "build-storybook -c .storybook -o ../../dist/react"
+    "build-storybook": "build-storybook -c .storybook -o ../../dist/react",
+    "loki-test": "loki test",
+    "loki-update": "loki update"
   },
   "dependencies": {
     "react": "^16.13.0",
@@ -35,11 +37,23 @@
       ">0.2%",
       "not dead",
       "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
+  },
+  "loki": {
+    "reactUri": "file:../../dist/react",
+    "diffingEngine": "gm",
+    "requireReference": true,
+    "chromeDockerWithoutSeccomp": true,
+    "chromeTolerance": 0.8,
+    "chromeFlags": "--headless --disable-gpu --hide-scrollbars --no-sandbox",
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      }
+    }
   }
 }
