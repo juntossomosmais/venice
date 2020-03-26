@@ -9,6 +9,11 @@
     "start": "run-p start:*",
     "start:react": "yarn workspace react-ds start",
     "start:vue": "yarn workspace vue-ds start",
+    "deploy:storybook": "yarn build:storybook && gh-pages-deploy",
+    "deploy:storybook-clean": "rimraf README.md packages package.json",
+    "build:storybook": "run-p build-storybook:*",
+    "build-storybook:react": "yarn workspace react-ds build-storybook",
+    "build-storybook:vue": "yarn workspace vue-ds build-storybook",
     "lint": "eslint . --ext js,ts,jsx,tsx",
     "lint:css": "stylelint '**/*.scss'",
     "format": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' $PWD/'*.{js,ts}' && stylelint '**/*.scss' --fix && eslint . --ext js,ts,jsx,tsx,vue --fix"
@@ -24,6 +29,7 @@
     "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-mdx": "^1.6.8",
     "eslint-plugin-prettier": "^3.1.2",
+    "gh-pages-deploy": "^0.5.1",
     "husky": "^4.2.3",
     "lerna": "^3.20.2",
     "lint-staged": "^10.0.8",
@@ -47,6 +53,12 @@
       "eslint . --ext js,ts,jsx,tsx --fix",
       "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' $PWD/'*.{js,ts}'",
       "stylelint '**/*.scss' --fix"
+    ]
+  },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "post": [
+      "deploy:storybook-clean"
     ]
   }
 }
