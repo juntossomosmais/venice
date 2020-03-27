@@ -44,10 +44,8 @@ Button.propTypes = {
   color: PropTypes.any,
   /** 'filled' | 'outlined' | 'text' */
   variant: PropTypes.any,
-  /** (optional) true | false */
   /** (optional) string */
   href: PropTypes.any,
-  disabled: PropTypes.any,
 }
 
 Button.defaultProps = {
