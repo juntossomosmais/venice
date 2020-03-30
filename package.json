@@ -6,23 +6,15 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "start": "run-p start:*",
-    "start:react": "yarn workspace react-ds start",
-    "start:vue": "yarn workspace vue-ds start",
+    "start": "lerna run start",
     "test": "run-p test:*",
     "test:react": "yarn workspace react-ds test",
     "test:vue": "yarn workspace vue-ds test",
     "deploy:storybook": "yarn build:storybook && gh-pages-deploy",
     "deploy:storybook-clean": "rimraf README.md packages package.json",
-    "build:storybook": "run-p build-storybook:*",
-    "build-storybook:react": "yarn workspace react-ds build-storybook",
-    "build-storybook:vue": "yarn workspace vue-ds build-storybook",
-    "loki-test": "run-p loki-test:*",
-    "loki-test:react": "yarn workspace react-ds loki-test",
-    "loki-test:vue": "yarn workspace vue-ds loki-test",
-    "loki-update": "run-p loki-update:*",
-    "loki-update:react": "yarn workspace react-ds loki-update",
-    "loki-update:vue": "yarn workspace vue-ds loki-update",
+    "build:storybook": "lerna run build-storybook",
+    "loki-test": "lerna run loki-test",
+    "loki-update": "lerna run loki-update",
     "lint": "eslint . --ext js,ts,jsx,tsx",
     "lint:css": "stylelint '**/*.scss'",
     "format": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' $PWD/'*.{js,ts}' && stylelint '**/*.scss' --fix && eslint . --ext js,ts,jsx,tsx,vue --fix"
@@ -67,9 +59,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,vue}": [
-      "eslint . --ext js,ts,jsx,tsx --fix",
-      "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' $PWD/'*.{js,ts}'",
-      "stylelint '**/*.scss' --fix"
+      "yarn format",
+      "yarn test --bail --findRelatedTests"
     ]
   },
   "gh-pages-deploy": {
