@@ -7,7 +7,7 @@
     "build": "vue-cli-service build --target lib --name venice src/main.ts",
     "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "build-storybook": "vue-cli-service storybook:build -c .storybook -o  -o ../../dist/vue",
+    "build-storybook": "vue-cli-service storybook:build -c .storybook -o ../../dist/vue",
     "loki-test": "loki test",
     "loki-update": "loki update"
   },
