@@ -1,12 +1,8 @@
 <template>
-  <a
-    v-if="href"
-    :class="[$style.btn, $style[color], $style[variant]]"
-    :href="href"
-  >
+  <a v-if="href" :class="['btn', color, variant]" :href="href">
     <slot />
   </a>
-  <button v-else :class="[$style.btn, $style[color], $style[variant]]">
+  <button v-else :class="['btn', color, variant]">
     <slot />
   </button>
 </template>
@@ -24,6 +20,6 @@ export default class Button extends Vue {
 }
 </script>
 
-<style lang="scss" module>
+<style lang="scss" scoped>
 @import '~@venice/styles/src/components/Button.module.scss';
 </style>
