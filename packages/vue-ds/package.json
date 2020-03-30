@@ -5,7 +5,7 @@
   "scripts": {
     "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
     "build": "vue-cli-service build --target lib --name venice src/main.ts",
-    "test:unit": "vue-cli-service test:unit",
+    "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "build-storybook": "vue-cli-service storybook:build -c .storybook -o  -o ../../dist/vue",
     "loki-test": "loki test",
@@ -18,12 +18,10 @@
     "vue-property-decorator": "^8.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@storybook/vue": ">=5.3.0",
-    "@testing-library/jest-dom": "^5.1.1",
-    "@types/jest": "^25.1.4",
+    "@testing-library/vue": "^5.0.2",
     "@venice/core": "1.0.0",
     "@venice/styles": "1.0.0",
     "@vue/cli-plugin-babel": "~4.2.0",
@@ -39,13 +37,9 @@
     "vue-loader": "^15.9.1",
     "vue-template-compiler": "^2.6.11"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ]
-  },
+  "browserslist": [
+    "defaults"
+  ],
   "loki": {
     "reactUri": "file:../../dist/vue",
     "diffingEngine": "gm",
