@@ -61,7 +61,7 @@
   "lint-staged": {
     "*.{ts,tsx,js,jsx,vue}": [
       "yarn format",
-      "yarn test --bail --findRelatedTests"
+      "yarn test"
     ]
   },
   "gh-pages-deploy": {
