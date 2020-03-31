@@ -1,5 +1,6 @@
 {
-  "name": "react-ds",
+  "name": "@juntossomosmais/venice-react",
+  "repository": "https://github.com/juntossomosmais/venice",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +12,7 @@
     "loki-test": "loki test",
     "loki-update": "loki update"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
@@ -24,6 +25,8 @@
     "@venice/core": "1.0.0",
     "@venice/styles": "1.0.0",
     "eslint-plugin-react": "^7.19.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "react-is": "^16.13.1",
     "react-scripts": "3.4.1"
   },

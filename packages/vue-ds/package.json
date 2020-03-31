@@ -1,5 +1,6 @@
 {
-  "name": "vue-ds",
+  "name": "@juntossomosmais/venice-vue",
+  "repository": "https://github.com/juntossomosmais/venice",
   "version": "0.1.0",
   "private": true,
   "scripts": {
