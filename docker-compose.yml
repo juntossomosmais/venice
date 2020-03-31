@@ -5,6 +5,7 @@ services:
       context: .
     volumes:
       - .:/app
+      - /app/node_modules
     ports:
       - 6006:6006
       - 9009:9009
@@ -12,9 +13,9 @@ services:
 
   tests:
     image: node:lts-slim
-    working_dir: /app
     volumes:
       - .:/app
+      - /app/node_modules
     command: yarn && yarn test
 
   loki-test:
