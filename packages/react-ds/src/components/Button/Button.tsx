@@ -3,7 +3,7 @@ import React, { FC } from 'react'
 import PropTypes from 'prop-types'
 
 import { IButton } from '@venice/core/models'
-import styles from '@venice/styles/src/components/Button.module.scss'
+import styles from '@venice/styles/components/Button.module.scss'
 
 interface IButtonProps extends IButton {
   children: React.ReactNode
@@ -16,7 +16,8 @@ const Button: FC<IButtonProps> = ({
   children,
   ...rest
 }: IButtonProps) => {
-  const setStyle = (c: string) => (c ? `${styles[c]}` : '')
+  const setStyle = (c: IButton['color'] | IButton['variant']) =>
+    c ? `${styles[c]}` : ''
 
   return (
     <>

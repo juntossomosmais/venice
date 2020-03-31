@@ -21,5 +21,5 @@ export default class Button extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import '~@venice/styles/src/components/Button.module.scss';
+@import '~@venice/styles/components/Button.module.scss';
 </style>

@@ -1,3 +1,2 @@
-import '@venice/styles/src/themes.css'
-
+import '@venice/styles/themes/default.css'
 import 'loki/configure-react'
