@@ -2,6 +2,7 @@
   "name": "@venice/styles",
   "version": "0.0.1",
   "license": "MIT",
+  "private": true,
   "devDependencies": {
     "node-sass": "^4.13.1",
     "rupture-sass": "^0.3.0",

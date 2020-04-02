@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "main": "index.ts",
+  "private": true,
   "devDependencies": {
     "@storybook/addon-a11y": "^5.3.17",
     "@storybook/addon-docs": "^5.3.17",
