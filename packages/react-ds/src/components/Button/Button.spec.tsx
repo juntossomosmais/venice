@@ -49,11 +49,11 @@ describe('<Button />', () => {
 
   it('should be render element as <a> if has an href', () => {
     const { container } = render(<Button href="href">Send</Button>)
-    expect(container.querySelector('a')).toBeInTheDOM()
+    expect(container.querySelector('a')).toBeInTheDocument()
   })
 
   it('should be render element as <button> if not has an href', () => {
     const { container } = render(<Button>Send</Button>)
-    expect(container.querySelector('button')).toBeInTheDOM()
+    expect(container.querySelector('button')).toBeInTheDocument()
   })
 })

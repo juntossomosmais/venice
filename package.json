@@ -9,15 +9,18 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "start": "lerna run start",
     "build": "lerna run build",
-    "test": "lerna run test",
+    "test": "run-p test:*",
+    "test:react": "yarn workspace @juntossomosmais/venice-react test",
+    "test:vue": "yarn workspace @juntossomosmais/venice-vue test",
     "deploy:storybook": "yarn build:storybook && gh-pages-deploy",
     "deploy:storybook-clean": "rimraf README.md packages package.json",
     "build:storybook": "lerna run build-storybook",
     "loki-test": "lerna run loki-test",
     "loki-update": "lerna run loki-update",
-    "lint": "eslint . --ext js,ts,jsx,tsx",
+    "lint": "eslint . --ext js,ts,jsx,tsx,vue",
     "lint:css": "stylelint '**/*.scss'",
-    "format": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' $PWD/'*.{js,ts}' && stylelint '**/*.scss' --fix && eslint . --ext js,ts,jsx,tsx,vue --fix"
+    "format:js": "prettier-eslint --write $PWD/'**/*.{js,ts,jsx,tsx,vue}' $PWD/'*.{js,ts}' && eslint . --ext js,ts,jsx,tsx,vue --fix",
+    "format:css": "stylelint '**/*.scss' --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
@@ -41,6 +44,7 @@
     "lerna": "^3.20.2",
     "lint-staged": "^10.0.8",
     "loki": "^0.20.3",
+    "npm-run-all": "^4.1.5",
     "prettier-eslint-cli": "^5.0.0",
     "prettier-eslint": "^9.0.1",
     "prettier": "^1.19.1",
@@ -50,17 +54,22 @@
     "ts-jest": "^25.2.1",
     "typescript": "~3.8.3"
   },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,vue}": [
+      "yarn format:js",
+      "git add"
+    ],
+    "*.scss": [
+      "yarn format:css",
+      "git add"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "yarn test"
     }
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,vue}": [
-      "yarn format",
-      "yarn test"
-    ]
   },
   "gh-pages-deploy": {
     "staticpath": "dist",
