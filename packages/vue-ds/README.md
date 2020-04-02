@@ -1,24 +1,33 @@
-# vue-ds
+<h1 align="center">venice-vue 🎨</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/node-%3E%3D10-blue.svg" />
+  <a href="https://juntossomosmais.github.io/venice/vue/" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="license.md" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-## Project setup
-```
-yarn install
+> UI Components using Vue
+
+### ✨ [Demo](https://juntossomosmais.github.io/venice/vue/)
+
+## Using as lib
+
+### Install
+
+```sh
+yarn add @juntossomosmais/venice-vue
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+### Usage
+
+```js
+import { Foo } from '@juntossomosmais/venice-vue'
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## As develop
 
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Check the [README](../../README.md).
