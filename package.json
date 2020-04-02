@@ -1,12 +1,20 @@
 {
   "name": "venice",
+  "description": "Design System using Monorepo, Typescript, React, Vue, CSS Modules and Storybook.",
+  "author": "@juntossomosmais",
+  "homepage": "https://github.com/juntossomosmais/venice#readme",
   "repository": "https://github.com/juntossomosmais/venice",
+  "bugs": {
+    "url": "https://github.com/juntossomosmais/venice/issues"
+  },
+  "license": "MIT",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
+    "publish": "lerna publish",
     "start": "lerna run start",
     "build": "lerna run build",
     "test": "run-p test:*",

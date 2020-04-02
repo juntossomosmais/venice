@@ -1,9 +1,15 @@
 {
   "name": "@juntossomosmais/venice-vue",
-  "repository": "https://github.com/juntossomosmais/venice",
+  "description": "Design System of UI Components using Vue",
   "version": "0.1.0",
+  "homepage": "https://github.com/juntossomosmais/venice/packages/vue-ds#readme",
+  "repository": "https://github.com/juntossomosmais/venice/packages/vue-ds",
+  "bugs": {
+    "url": "https://github.com/juntossomosmais/venice/issues"
+  },
+  "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/index.js",
+  "module": "dist/index.es.js",
   "files": [
     "dist"
   ],
