@@ -2,12 +2,12 @@
   "name": "@juntossomosmais/venice-vue",
   "repository": "https://github.com/juntossomosmais/venice",
   "version": "0.1.0",
+  "private": true,
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
     "dist"
   ],
-  "private": true,
   "scripts": {
     "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
     "build": "vue-cli-service build --target lib --name venice src/main.ts",
