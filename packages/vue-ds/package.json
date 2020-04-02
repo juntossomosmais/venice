@@ -8,6 +8,9 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
     "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
     "build": "vue-cli-service build --target lib --name venice src/index.ts",
@@ -16,7 +19,8 @@
     "lint": "vue-cli-service lint",
     "build-storybook": "vue-cli-service storybook:build -c .storybook -o ../../dist/vue",
     "loki-test": "loki test",
-    "loki-update": "loki update"
+    "loki-update": "loki update",
+    "prepublish": "yarn test:ci && yarn build"
   },
   "dependencies": {
     "core-js": "^3.6.4",
