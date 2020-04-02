@@ -3,11 +3,15 @@
   "repository": "https://github.com/juntossomosmais/venice",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "start-storybook -p 9009 -c .storybook",
-    "build": "react-scripts build",
+    "build": "rollup -c",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "build-storybook": "build-storybook -c .storybook -o ../../dist/react",
     "loki-test": "loki test",
     "loki-update": "loki update"
@@ -24,11 +28,18 @@
     "@types/react-dom": "^16.9.0",
     "@venice/core": "1.0.0",
     "@venice/styles": "1.0.0",
+    "autoprefixer": "^9.7.5",
     "eslint-plugin-react": "^7.19.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-is": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "rollup": "^2.3.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-postcss": "^2.5.0",
+    "rollup-plugin-typescript2": "^0.27.0"
   },
   "browserslist": [
     "defaults"
