@@ -1,5 +1,6 @@
 {
   "packages": ["packages/*"],
+  "nohoist": ["packages/core", "packages/styles"],
   "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "independent"
