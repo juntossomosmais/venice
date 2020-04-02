@@ -11,7 +11,7 @@
   "scripts": {
     "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
     "build": "vue-cli-service build --target lib --name venice src/index.ts",
-    "test": "vue-cli-service test:unit",
+    "test": "vue-cli-service test:unit --bail --passWithNoTests",
     "lint": "vue-cli-service lint",
     "build-storybook": "vue-cli-service storybook:build -c .storybook -o ../../dist/vue",
     "loki-test": "loki test",

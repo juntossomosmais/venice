@@ -11,7 +11,7 @@
   "scripts": {
     "start": "start-storybook -p 9009 -c .storybook",
     "build": "rollup -c",
-    "test": "react-scripts test",
+    "test": "react-scripts test --bail --passWithNoTests",
     "build-storybook": "build-storybook -c .storybook -o ../../dist/react",
     "loki-test": "loki test",
     "loki-update": "loki update"
