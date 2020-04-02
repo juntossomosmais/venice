@@ -6,7 +6,7 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "changelogPreset": "@commitlint/config-conventional"
+      "message": "chore(release): publish %s"
     }
   }
 }
