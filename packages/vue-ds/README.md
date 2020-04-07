@@ -28,6 +28,60 @@ yarn add @juntossomosmais/venice-vue
 import { Foo } from '@juntossomosmais/venice-vue'
 ```
 
+And import the default theme file (or create your own theme):
+
+```js
+import '@juntossomosmais/venice-vue/themes/default.css'
+```
+
+### Theming
+
+You can create your own theme changing some variables in your css `:root`:
+
+```css
+:root {
+  --space-xxs: 0.4rem;
+  --space-xs: 0.8rem;
+  --space-sm: 1.6rem;
+  --space: 2.4rem;
+  --space-md: 3.2rem;
+  --space-lg: 4.8rem;
+  --space-xlg: 6.4rem;
+  --space-xxlg: 9.6rem;
+
+  --font-family: 'Roboto', sans-serif;
+
+  --typography-panel-font: 900 3.8rem/4rem var(--font-family);
+  --typography-panel-letter: 0;
+  --typography-title-font: 600 2.5rem/2.9rem var(--font-family);
+  --typography-title-letter: -0.357143px;
+  --typography-subheader-font: 400 1.6rem/1.9rem var(--font-family);
+  --typography-subheader-letter: -0.228572px;
+  --typography-body-font: 400 1.6rem/1.9rem var(--font-family);
+  --typography-body-letter: -0.228572px;
+  --typography-body2-font: 400 1.4rem/1.6rem var(--font-family);
+  --typography-body2-letter: -0.2px;
+  --typography-caption-font: 400 1.2rem/1.4rem var(--font-family);
+  --typography-caption-letter: -0.171429px;
+  --typography-button-font: 900 1.6rem/1.9rem var(--font-family);
+  --typography-button-letter: -0.228572px;
+
+  --default-color: var('some color');
+  --default-color-contrast: var('some color');
+
+  --disabled-color: var('some color');
+  --disabled-color-contrast: var('some color');
+
+  --primary-color: var('some color');
+  --primary-color-contrast: var('some color');
+
+  --secondary-color: var('some color');
+  --secondary-color-contrast: var('some color');
+
+  --text-color: var('some color');
+}
+```
+
 ## As develop
 
 Check the [README](../../README.md).
