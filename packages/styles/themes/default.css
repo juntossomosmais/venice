@@ -1,22 +1,4 @@
 :root {
-  --black: #111111;
-  --white: #ffffff;
-  --blue-1: #007fd8;
-  --blue-1-lighten: #0090f5;
-  --blue-2: #003a64;
-  --blue-3: #0060a7;
-  --blue-4: #daf0ff;
-  --gray-1: #f5f5f5;
-  --gray-2: #9b9b9b;
-  --gray-3: #4a4a4a;
-  --gray-3-lighten: #5c5c5c;
-  --green-1: #7ed321;
-  --orange-1: #ff7d00;
-  --orange-1-lighten: #ff9834;
-  --purple-1: #bd10e0;
-  --red-1: #d0021b;
-  --red-2: #ba1e24;
-
   --space-xxs: 0.4rem;
   --space-xs: 0.8rem;
   --space-sm: 1.6rem;
@@ -43,19 +25,34 @@
   --typography-button-font: 900 1.6rem/1.9rem var(--font-family);
   --typography-button-letter: -0.228572px;
 
+  --black: #111111;
+  --white: #ffffff;
+  --gray-1: #f5f5f5;
+  --gray-2: #9b9b9b;
+  --gray-3: #4a4a4a;
+  --blue-1: #daf0ff;
+  --blue-2: #007fd8;
+  --blue-3: #0060a7;
+  --blue-4: #003a64;
+  --green-1: #7ed321;
+  --orange-1: #ff7d00;
+  --purple-1: #bd10e0;
+  --red-1: #ba1e24;
+  --red-2: #d0021b;
+
   --default-color: var(--gray-3);
-  --default-color-lighten: var(--gray-3-lighten);
+  --default-color-lighten: #5c5c5c;
   --default-color-contrast: var(--white);
 
   --disabled-color: var(--gray-1);
   --disabled-color-contrast: var(--gray-2);
 
   --primary-color: var(--orange-1);
-  --primary-color-lighten: var(--orange-1-lighten);
+  --primary-color-lighten: #ff9834;
   --primary-color-contrast: var(--white);
 
-  --secondary-color: var(--blue-1);
-  --secondary-color-lighten: var(--blue-1-lighten);
+  --secondary-color: var(--blue-2);
+  --secondary-color-lighten: #0090f5;
   --secondary-color-contrast: var(--white);
 
   --text-color: var(--black);
