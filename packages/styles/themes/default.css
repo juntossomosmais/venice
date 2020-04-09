@@ -1,29 +1,28 @@
 :root {
-  --space-xxs: 0.4rem;
-  --space-xs: 0.8rem;
-  --space-sm: 1.6rem;
-  --space: 2.4rem;
-  --space-md: 3.2rem;
-  --space-lg: 4.8rem;
-  --space-xlg: 6.4rem;
-  --space-xxlg: 9.6rem;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
 
   --font-family: 'Roboto', sans-serif;
 
   --typography-panel-font: 900 3.8rem/4rem var(--font-family);
   --typography-panel-letter: 0;
   --typography-title-font: 600 2.5rem/2.9rem var(--font-family);
-  --typography-title-letter: -0.357143px;
+  --typography-title-letter: -0.357143rem;
   --typography-subheader-font: 400 1.6rem/1.9rem var(--font-family);
-  --typography-subheader-letter: -0.228572px;
+  --typography-subheader-letter: -0.228572rem;
   --typography-body-font: 400 1.6rem/1.9rem var(--font-family);
-  --typography-body-letter: -0.228572px;
+  --typography-body-letter: -0.228572rem;
   --typography-body2-font: 400 1.4rem/1.6rem var(--font-family);
-  --typography-body2-letter: -0.2px;
+  --typography-body2-letter: -0.2rem;
   --typography-caption-font: 400 1.2rem/1.4rem var(--font-family);
-  --typography-caption-letter: -0.171429px;
+  --typography-caption-letter: -0.171429rem;
   --typography-button-font: 900 1.6rem/1.9rem var(--font-family);
-  --typography-button-letter: -0.228572px;
+  --typography-button-letter: -0.228572rem;
 
   --black: #111111;
   --white: #ffffff;
