@@ -16,14 +16,12 @@
   padding-left: var(--space-md);
   padding-right: var(--space-md);
   text-decoration: none;
-  transition: opacity 0.15s;
-
-  &:not([disabled]):hover {
-    opacity: 0.85;
-  }
+  transition-duration: 0.25s;
+  transition-property: background-color, border-color;
+  will-change: background-color, border-color;
 
   &[disabled] {
-    cursor: not-allowed;
+    cursor: default;
 
     &.text {
       color: var(--disabled-color);
@@ -44,47 +42,83 @@
 .default {
   &.text {
     color: var(--default-color);
+
+    &:not([disabled]):hover {
+      color: var(--default-color-lighten);
+    }
   }
 
   &.outlined {
     border-color: var(--default-color);
     color: var(--default-color);
+
+    &:not([disabled]):hover {
+      border-color: var(--default-color-lighten);
+    }
   }
 
   &.filled {
     background-color: var(--default-color);
     color: var(--default-color-contrast);
+
+    &:not([disabled]):hover {
+      background-color: var(--default-color-lighten);
+    }
   }
 }
 
 .primary {
   &.text {
     color: var(--primary-color);
+
+    &:not([disabled]):hover {
+      color: var(--primary-color-lighten);
+    }
   }
 
   &.outlined {
     border-color: var(--primary-color);
     color: var(--primary-color);
+
+    &:not([disabled]):hover {
+      border-color: var(--primary-color-lighten);
+    }
   }
 
   &.filled {
     background-color: var(--primary-color);
     color: var(--primary-color-contrast);
+
+    &:not([disabled]):hover {
+      background-color: var(--primary-color-lighten);
+    }
   }
 }
 
 .secondary {
   &.text {
     color: var(--secondary-color);
+
+    &:not([disabled]):hover {
+      color: var(--secondary-color-lighten);
+    }
   }
 
   &.outlined {
     border-color: var(--secondary-color);
     color: var(--secondary-color);
+
+    &:not([disabled]):hover {
+      border-color: var(--secondary-color-lighten);
+    }
   }
 
   &.filled {
     background-color: var(--secondary-color);
     color: var(--secondary-color-contrast);
+
+    &:not([disabled]):hover {
+      background-color: var(--secondary-color-lighten);
+    }
   }
 }
