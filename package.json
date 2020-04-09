@@ -65,7 +65,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,vue}": [
-      "yarn format:js",
+      "npx prettier --write",
+      "eslint **/*.js --fix-dry-run",
       "git add"
     ],
     "*.scss": [
