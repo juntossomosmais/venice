@@ -1,0 +1,161 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks'
+
+<Meta title="Getting Started|Styles/Typography" />
+
+# Typography
+
+The typography using inside project and their CSS Variables. By default, all typography fonts use `rem` as unit to make easier change size between different viewports.
+
+## Default values 
+
+| Variable             | Value                 |
+| -------------------- | ----------------------|
+| `var(--font-family)` | 'Roboto', sans-serif' |
+| `var(--text-color)`  | #4444444              |
+
+## Sizes
+
+<Typeset
+  fontSizes={['12px', '16px', '25px', '38px']}
+  sampleText="Venice is the best!"
+/>
+
+## Variants
+
+We have variables to font and letter spacing, you just need to use on `font` and `letter-spacing` property.
+
+<Preview>
+  <h1 style={{
+    font: 'var(--typography-panel-font)',
+    letterSpacing: 'var(--typography-panel-letter)'
+  }}>
+    Panel
+  </h1>
+</Preview>
+
+
+```css
+foo {
+  font: var(--typography-panel-font);
+  letter-spacing: var(--typography-panel-letter);
+}
+```
+
+<Preview>
+  <h1 style={{
+    font: 'var(--typography-title-font)',
+    letterSpacing: 'var(--typography-title-letter)'
+  }}>
+    Title
+  </h1>
+</Preview>
+
+
+```css
+foo {
+  font: var(--typography-title-font);
+  letter-spacing: var(--typography-title-letter);
+}
+```
+
+<Preview>
+  <div style={{
+    font: 'var(--typography-subheader-font)',
+    letterSpacing: 'var(--typography-subheader-letter)'
+  }}>
+    Subheader
+  </div>
+</Preview>
+
+
+```css
+foo {
+  font: var(--typography-subheader-font);
+  letter-spacing: var(--typography-subheader-letter);
+}
+```
+
+<Preview>
+  <div style={{
+    font: 'var(--typography-subheader-font)',
+    letterSpacing: 'var(--typography-subheader-letter)'
+  }}>
+    Subheader
+  </div>
+</Preview>
+
+
+```css
+foo {
+  font: var(--typography-subheader-font);
+  letter-spacing: var(--typography-subheader-letter);
+}
+```
+
+<Preview>
+  <div style={{
+    font: 'var(--typography-body-font)',
+    letterSpacing: 'var(--typography-body-letter)'
+  }}>
+    Body
+  </div>
+</Preview>
+
+
+```css
+foo {
+  font: var(--typography-body-font);
+  letter-spacing: var(--typography-body-letter);
+}
+```
+
+<Preview>
+  <div style={{
+    font: 'var(--typography-body2-font)',
+    letterSpacing: 'var(--typography-body2-letter)'
+  }}>
+    Body2
+  </div>
+</Preview>
+
+
+```css
+foo {
+  font: var(--typography-body2-font);
+  letter-spacing: var(--typography-body2-letter);
+}
+```
+
+<Preview>
+  <div style={{
+    font: 'var(--typography-caption-font)',
+    letterSpacing: 'var(--typography-caption-letter)'
+  }}>
+    Caption
+  </div>
+</Preview>
+
+
+```css
+foo {
+  font: var(--typography-caption-font);
+  letter-spacing: var(--typography-caption-letter);
+}
+```
+
+<Preview>
+  <div style={{
+    font: 'var(--typography-button-font)',
+    letterSpacing: 'var(--typography-button-letter)'
+  }}>
+    Button
+  </div>
+</Preview>
+
+
+```css
+foo {
+  font: var(--typography-button-font);
+  letter-spacing: var(--typography-button-letter);
+}
+```
