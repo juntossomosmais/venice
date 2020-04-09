@@ -1,13 +1,12 @@
-import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
 import { withKnobs, boolean } from '@storybook/addon-knobs';
+import Docs from '@venice/core/docs/Button.md'
 
 import Button from './Button'
 
-<Meta title="Buttons" component={Button} />
+<Meta title="Components/Buttons" component={Button} />
 
-# Button
-
-You can add a `href` attr to use it as `<a>` element.
+<Description>{Docs}</Description>
 
 ## Filled buttons
 
