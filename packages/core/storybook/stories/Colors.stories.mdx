@@ -1,0 +1,82 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks'
+
+<Meta title="Getting Started|Styles/Colors" />
+
+# Colors
+
+All color palettes and their CSS Variables.
+
+## Color Palette
+
+This is all color palette of project. The variables should to use directly in elements, but to improve the capacity to create theme, is better to use the contextual colors (bellow).
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome"
+    colors={[
+      'var(--white)',
+      'var(--gray-1)',
+      'var(--gray-2)',
+      'var(--gray-3)',
+      'var(--black)',
+    ]}
+  />
+  <ColorItem
+    title="Blue"
+    colors={[
+      'var(--blue-1)',
+      'var(--blue-2)',
+      'var(--blue-3)',
+      'var(--blue-4)',
+    ]}
+  />
+  <ColorItem title="Green" colors={['var(--green-1)']} />
+  <ColorItem title="Orange" colors={['var(--orange-1)']} />
+  <ColorItem title="Purple" colors={['var(--purple-1)']} />
+  <ColorItem title="Red" colors={['var(--red-1)', 'var(--red-2)']} />
+</ColorPalette>
+
+## Contextual colors
+
+This is the contextual colors, is important use it to easily change a theme and maintain a consistent between the projects.
+
+This use 3 kinds of variables:
+
+- `foo-color`: A main state
+- `foo-color-lighten`: For a hover state, for example
+- `foo-color-contrast`: To using inside a color, as a contrast
+
+<ColorPalette>
+  <ColorItem
+    title="Default"
+    subtitle="A neutral color"
+    colors={[
+      'var(--default-color)',
+      'var(--default-color-lighten)',
+      'var(--default-color-contrast)',
+    ]}
+  />
+  <ColorItem
+    title="Primary"
+    subtitle="Primary color, used in the most of cases"
+    colors={[
+      'var(--primary-color)',
+      'var(--primary-color-lighten)',
+      'var(--primary-color-contrast)',
+    ]}
+  />
+  <ColorItem
+    title="Secondary"
+    subtitle="Secondary color, used in some cases"
+    colors={[
+      'var(--secondary-color)',
+      'var(--secondary-color-lighten)',
+      'var(--secondary-color-contrast)',
+    ]}
+  />
+  <ColorItem
+    title="Disabled"
+    subtitle="Used just in disabled states"
+    colors={['var(--disabled-color)', 'var(--disabled-color-contrast)']}
+  />
+</ColorPalette>
