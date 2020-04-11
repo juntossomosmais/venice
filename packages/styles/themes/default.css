@@ -56,12 +56,3 @@
 
   --text-color: var(--gray-3);
 }
-
-html {
-  font-size: 10px;
-}
-
-body {
-  font-family: var(--font-family);
-  color: var(--text-color);
-}
