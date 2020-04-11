@@ -61,6 +61,8 @@
     "stylelint": "^13.2.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.0.0",
+    "rollup": "^2.3.2",
+    "rollup-plugin-postcss": "^2.5.0",
     "ts-jest": "^25.2.1",
     "typescript": "~3.8.3"
   },

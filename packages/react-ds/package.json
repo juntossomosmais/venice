@@ -44,11 +44,9 @@
     "react-dom": "^16.13.0",
     "react-is": "^16.13.1",
     "react-scripts": "3.4.1",
-    "rollup": "^2.3.2",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
-    "rollup-plugin-postcss": "^2.5.0",
     "rollup-plugin-typescript2": "^0.27.0"
   },
   "browserslist": [
