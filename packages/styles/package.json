@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "rollup -c"
+  },
   "devDependencies": {
     "node-sass": "^4.13.1",
     "rupture-sass": "^0.3.0",
