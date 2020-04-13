@@ -7,7 +7,7 @@ import { Meta, Typeset } from '@storybook/addon-docs/blocks'
 The typography using inside project and their CSS Variables. By default, all typography fonts use `rem` as unit to make easier change size between different viewports.
 
 <Typeset
-  fontSizes={['12px', '16px', '25px', '38px']}
+  fontSizes={['12px', '14px', '16px', '24px', '38px']}
   sampleText="Venice is the best!"
 />
 
@@ -37,7 +37,10 @@ We have variables to font and letter spacing, you just need to use on `font` and
 <Preview style={{
   padding: `var(--space-xs) var(--space-sm)`
 }}>
-  <h1 class="jsm-t-panel">Panel</h1>
+  <div style={{
+    font: `var(--typography-panel-font)`,
+    letterSpacing: `var(--typography-panel-letter)`
+  }}>Panel</div>
 </Preview>
 
 ```html
@@ -54,7 +57,10 @@ foo {
 <Preview style={{
   padding: `var(--space-xs) var(--space-sm)`
 }}>
-  <h1 class="jsm-t-title">Title</h1>
+  <div style={{
+    font: `var(--typography-title-font)`,
+    letterSpacing: `var(--typography-title-letter)`
+  }}>Title</div>
 </Preview>
 
 
@@ -72,7 +78,10 @@ foo {
 <Preview style={{
   padding: `var(--space-xs) var(--space-sm)`
 }}>
-  <h2 class="jsm-t-subheader">Subheader</h2>
+  <div style={{
+    font: `var(--typography-subheader-font)`,
+    letterSpacing: `var(--typography-subheader-letter)`
+  }}>Subheader</div>
 </Preview>
 
 
@@ -90,7 +99,10 @@ foo {
 <Preview style={{
   padding: `var(--space-xs) var(--space-sm)`
 }}>
-  <p class="jsm-t-body">Body</p>
+  <div style={{
+    font: `var(--typography-body-font)`,
+    letterSpacing: `var(--typography-body-letter)`
+  }}>Body</div>
 </Preview>
 
 
@@ -108,7 +120,10 @@ foo {
 <Preview style={{
   padding: `var(--space-xs) var(--space-sm)`
 }}>
-  <p class="jsm-t-body2">Body2</p>
+  <div style={{
+    font: `var(--typography-body2-font)`,
+    letterSpacing: `var(--typography-body2-letter)`
+  }}>Body2</div>
 </Preview>
 
 
@@ -126,7 +141,10 @@ foo {
 <Preview style={{
   padding: `var(--space-xs) var(--space-sm)`
 }}>
-  <p class="jsm-t-caption">Caption</p>
+  <div style={{
+    font: `var(--typography-caption-font)`,
+    letterSpacing: `var(--typography-caption-letter)`
+  }}>Caption</div>
 </Preview>
 
 
@@ -144,7 +162,10 @@ foo {
 <Preview style={{
   padding: `var(--space-xs) var(--space-sm)`
 }}>
-  <p class="jsm-t-button">Button</p>
+  <div style={{
+    font: `var(--typography-button-font)`,
+    letterSpacing: `var(--typography-button-letter)`
+  }}>Button</div>
 </Preview>
 
 
