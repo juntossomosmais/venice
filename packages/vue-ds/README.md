@@ -16,22 +16,38 @@
 
 ## Using as lib
 
-### Install
+Fist you need to install it using NPM or Yarn.
+
+#### Yarn
 
 ```sh
-yarn add @juntossomosmais/venice-vue
+$ yarn add @juntossomosmais/venice-vue
 ```
 
-### Usage
+#### NPM
 
-```js
-import { Foo } from '@juntossomosmais/venice-vue'
+```sh
+$ npm i @juntossomosmais/venice-vue
 ```
 
-And import the default theme file (or create your own theme):
+#### CSS
+
+And import the **required** css file.
 
 ```js
-import '@juntossomosmais/venice-vue/themes/default.css'
+import '@juntossomosmais/venice-vue/styles.css'
+```
+
+### Most basic example
+
+```vue
+<template>
+  <Button color="primary">Hellow!</Button>
+</template>
+
+<script>
+import { Button } from '@juntossomosmais/venice-vue'
+</script>
 ```
 
 ## As develop

@@ -18,20 +18,41 @@
 
 ### Install
 
+Fist you need to install it using NPM or Yarn.
+
+#### Yarn
+
 ```sh
-yarn add @juntossomosmais/venice-react
+$ yarn add @juntossomosmais/venice-react
 ```
 
-### Usage
+#### NPM
 
-```js
-import { Foo } from '@juntossomosmais/venice-react'
+```sh
+$ npm i @juntossomosmais/venice-react
 ```
 
-And import the default theme file (or create your own theme):
+#### CSS
+
+And import the **required** css file.
 
 ```js
-import '@juntossomosmais/venice-react/themes/default.css'
+import '@juntossomosmais/venice-react/styles.css'
+```
+
+### Most basic example
+
+```js
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import { Button } from '@juntossomosmais/venice-react'
+
+function App() {
+  return <Button color="primary">Hello!</Button>
+}
+
+ReactDOM.render(<App />, document.querySelector('#app'))
 ```
 
 ## As develop
