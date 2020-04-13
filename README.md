@@ -3,7 +3,7 @@
   <a href="https://www.npmjs.com/package/venice" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/venice.svg">
   </a>
-  <a href="https://juntossomosmais.github.io/venice/react/" target="_blank">
+  <a href="https://juntossomosmais.github.io/venice" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="#" target="_blank">
