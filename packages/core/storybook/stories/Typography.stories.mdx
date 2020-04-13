@@ -6,33 +6,43 @@ import { Meta, Typeset } from '@storybook/addon-docs/blocks'
 
 The typography using inside project and their CSS Variables. By default, all typography fonts use `rem` as unit to make easier change size between different viewports.
 
-## Default values 
+<Typeset
+  fontSizes={['12px', '16px', '25px', '38px']}
+  sampleText="Venice is the best!"
+/>
+
+## Using
+
+### Variable values
 
 | Variable             | Value                 |
 | -------------------- | ----------------------|
 | `var(--font-family)` | 'Roboto', sans-serif' |
 | `var(--text-color)`  | #4444444              |
 
-## Sizes
+### Class values
 
-<Typeset
-  fontSizes={['12px', '16px', '25px', '38px']}
-  sampleText="Venice is the best!"
-/>
+| Typography           | Value                 |
+| -------------------- | ----------------------|
+| Panel                | `jsm-t-panel`         |
+| Title                | `jsm-t-title`         |
+| Subheader            | `jsm-t-subheader`     |
+| Body                 | `jsm-t-body`          |
+| Body2                | `jsm-t-body2`         |
+| Caption              | `jsm-t-caption`       |
+| Button               | `jsm-t-button`        |
 
-## Variants
+We have variables to font and letter spacing, you just need to use on `font` and `letter-spacing` property. You can just use a class to add a typography styles too.
 
-We have variables to font and letter spacing, you just need to use on `font` and `letter-spacing` property.
-
-<Preview>
-  <h1 style={{
-    font: 'var(--typography-panel-font)',
-    letterSpacing: 'var(--typography-panel-letter)'
-  }}>
-    Panel
-  </h1>
+<Preview style={{
+  padding: `var(--space-xs) var(--space-sm)`
+}}>
+  <h1 class="jsm-t-panel">Panel</h1>
 </Preview>
 
+```html
+<h1 class="jsm-t-panel">Panel</h1>
+```
 
 ```css
 foo {
@@ -41,15 +51,16 @@ foo {
 }
 ```
 
-<Preview>
-  <h1 style={{
-    font: 'var(--typography-title-font)',
-    letterSpacing: 'var(--typography-title-letter)'
-  }}>
-    Title
-  </h1>
+<Preview style={{
+  padding: `var(--space-xs) var(--space-sm)`
+}}>
+  <h1 class="jsm-t-title">Title</h1>
 </Preview>
 
+
+```html
+<h1 class="jsm-t-title">Title</h1>
+```
 
 ```css
 foo {
@@ -58,15 +69,16 @@ foo {
 }
 ```
 
-<Preview>
-  <div style={{
-    font: 'var(--typography-subheader-font)',
-    letterSpacing: 'var(--typography-subheader-letter)'
-  }}>
-    Subheader
-  </div>
+<Preview style={{
+  padding: `var(--space-xs) var(--space-sm)`
+}}>
+  <h2 class="jsm-t-subheader">Subheader</h2>
 </Preview>
 
+
+```html
+<h2 class="jsm-t-subheader">Subheader</h2>
+```
 
 ```css
 foo {
@@ -75,32 +87,16 @@ foo {
 }
 ```
 
-<Preview>
-  <div style={{
-    font: 'var(--typography-subheader-font)',
-    letterSpacing: 'var(--typography-subheader-letter)'
-  }}>
-    Subheader
-  </div>
+<Preview style={{
+  padding: `var(--space-xs) var(--space-sm)`
+}}>
+  <p class="jsm-t-body">Body</p>
 </Preview>
 
 
-```css
-foo {
-  font: var(--typography-subheader-font);
-  letter-spacing: var(--typography-subheader-letter);
-}
+```html
+<p class="jsm-t-body">Body</p>
 ```
-
-<Preview>
-  <div style={{
-    font: 'var(--typography-body-font)',
-    letterSpacing: 'var(--typography-body-letter)'
-  }}>
-    Body
-  </div>
-</Preview>
-
 
 ```css
 foo {
@@ -109,15 +105,16 @@ foo {
 }
 ```
 
-<Preview>
-  <div style={{
-    font: 'var(--typography-body2-font)',
-    letterSpacing: 'var(--typography-body2-letter)'
-  }}>
-    Body2
-  </div>
+<Preview style={{
+  padding: `var(--space-xs) var(--space-sm)`
+}}>
+  <p class="jsm-t-body2">Body2</p>
 </Preview>
 
+
+```html
+<p class="jsm-t-body2">Body2</p>
+```
 
 ```css
 foo {
@@ -126,15 +123,16 @@ foo {
 }
 ```
 
-<Preview>
-  <div style={{
-    font: 'var(--typography-caption-font)',
-    letterSpacing: 'var(--typography-caption-letter)'
-  }}>
-    Caption
-  </div>
+<Preview style={{
+  padding: `var(--space-xs) var(--space-sm)`
+}}>
+  <p class="jsm-t-caption">Caption</p>
 </Preview>
 
+
+```html
+<p class="jsm-t-caption">Caption</p>
+```
 
 ```css
 foo {
@@ -143,15 +141,16 @@ foo {
 }
 ```
 
-<Preview>
-  <div style={{
-    font: 'var(--typography-button-font)',
-    letterSpacing: 'var(--typography-button-letter)'
-  }}>
-    Button
-  </div>
+<Preview style={{
+  padding: `var(--space-xs) var(--space-sm)`
+}}>
+  <p class="jsm-t-button">Button</p>
 </Preview>
 
+
+```html
+<p class="jsm-t-button">Button</p>
+```
 
 ```css
 foo {
