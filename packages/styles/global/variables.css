@@ -6,7 +6,9 @@
   --space-md: 32px;
   --space-lg: 48px;
   --space-xlg: 64px;
+
   --font-family: 'Roboto', sans-serif;
+
   --typography-panel-font: 900 3.8rem/4rem var(--font-family);
   --typography-panel-letter: 0;
   --typography-title-font: 600 2.5rem/2.9rem var(--font-family);
@@ -21,6 +23,7 @@
   --typography-caption-letter: -0.171429px;
   --typography-button-font: 900 1.6rem/1.9rem var(--font-family);
   --typography-button-letter: -0.228572px;
+
   --black: #111;
   --white: #fff;
   --gray-1: #f5f5f5;
@@ -35,6 +38,7 @@
   --purple-1: #bd10e0;
   --red-1: #ba1e24;
   --red-2: #d0021b;
+
   --default-color: var(--gray-3);
   --default-color-lighten: #5c5c5c;
   --default-color-contrast: var(--white);
@@ -47,4 +51,11 @@
   --secondary-color-lighten: #0090f5;
   --secondary-color-contrast: var(--white);
   --text-color: var(--gray-3);
+
+  --zindex-1: 1;
+  --zindex-5: 5;
+  --zindex-10: 10;
+  --zindex-100: 100;
+  --zindex-1000: 1000;
+  --zindex-overlay: 10000;
 }
