@@ -9,3 +9,4 @@ node_modules
 *.jest-*
 .loki
 .npmrc
+.vscode
