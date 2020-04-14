@@ -1,7 +1,7 @@
 {
   "name": "@juntossomosmais/venice-react",
   "description": "Design System of UI Components using React",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/juntossomosmais/venice/packages/react-ds#readme",
   "repository": {
     "type": "git",
