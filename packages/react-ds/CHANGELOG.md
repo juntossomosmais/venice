@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/juntossomosmais/venice/packages/react-ds/compare/@juntossomosmais/venice-react@0.1.0...@juntossomosmais/venice-react@0.2.0) (2020-04-14)
+
+
+### Features
+
+* accept stories from core ([ca6043a](https://github.com/juntossomosmais/venice/packages/react-ds/commit/ca6043abdeed97d90c1980b06c306bb4400261f5))
+* change hierarchy ([5b48b9b](https://github.com/juntossomosmais/venice/packages/react-ds/commit/5b48b9b4d20100cdab1d50691296a389388c000f))
+* chore theme on build ([3b58b3e](https://github.com/juntossomosmais/venice/packages/react-ds/commit/3b58b3e95944b919d94d09ce4a3d1aa107d68c90))
+* usint text from docs ([42a7c3b](https://github.com/juntossomosmais/venice/packages/react-ds/commit/42a7c3b9de4ec34060b2fa1509312790c0451ceb))
+
+
+
+
+
 # 0.1.0 (2020-04-02)
 
 

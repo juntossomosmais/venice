@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.1.0...@venice/core@0.2.0) (2020-04-14)
+
+
+### Features
+
+* init docs ([c90ffe9](https://github.com/juntossomosmais/venice/commit/c90ffe9dfc194821274616e3017bf4c8b561b21e))
+
+
+
+
+
 # 0.1.0 (2020-04-02)
 
 

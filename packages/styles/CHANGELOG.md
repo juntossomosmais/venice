@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.1.0...@venice/styles@0.2.0) (2020-04-14)
+
+
+### Features
+
+* add base css ([a058d08](https://github.com/juntossomosmais/venice/commit/a058d08186a2098c9d929ce0a71ad47df6d3c69f))
+* add new variables ([7d664ae](https://github.com/juntossomosmais/venice/commit/7d664ae8fb90fdb3bf7fdd8b15e32fcdc61f2eee))
+* add typography ([1b19d7f](https://github.com/juntossomosmais/venice/commit/1b19d7f16e63cd42418075e375b3df96cedc3a1b))
+* change color logic ([e04b0e7](https://github.com/juntossomosmais/venice/commit/e04b0e715527f0641134642017187be6d4ddfa94))
+* change some variables ([933aeb7](https://github.com/juntossomosmais/venice/commit/933aeb7c5c7194877b183d4b4c77d14486166e59))
+* change typography ([65d331a](https://github.com/juntossomosmais/venice/commit/65d331ab0db8963a545da00c5dca451ea74e1151))
+* create separate files to generate a common css ([544e7ec](https://github.com/juntossomosmais/venice/commit/544e7ecd77daaef168525949966e29594e471084))
+
+
+
+
+
 # 0.1.0 (2020-04-02)
 
 
