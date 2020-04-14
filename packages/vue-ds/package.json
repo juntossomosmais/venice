@@ -5,7 +5,8 @@
   "homepage": "https://github.com/juntossomosmais/venice/packages/vue-ds#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/juntossomosmais/venice.git"
+    "url": "https://github.com/juntossomosmais/venice.git",
+    "directory": "packages/vue-ds"
   },
   "bugs": {
     "url": "https://github.com/juntossomosmais/venice/issues"
