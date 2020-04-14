@@ -18,10 +18,10 @@
   },
   "scripts": {
     "start": "start-storybook -p 9009 -c .storybook",
-    "build": "rollup -c",
+    "build": "rollup -c && yarn workspace @venice/styles build",
     "test": "react-scripts test",
     "test:ci": "cross-env CI=true react-scripts test --bail --passWithNoTests --env=jsdom",
-    "build:storybook": "build-storybook -c .storybook -o ../../dist/react",
+    "build:storybook": "yarn build && build-storybook -c .storybook -o ../../dist/react",
     "loki-test": "loki test",
     "loki-update": "loki update",
     "prepublish": "yarn test:ci && yarn build"

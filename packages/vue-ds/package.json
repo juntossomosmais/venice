@@ -18,10 +18,10 @@
   },
   "scripts": {
     "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
-    "build": "vue-cli-service build --target lib --name venice src/index.ts",
+    "build": "vue-cli-service build --target lib --name venice src/index.ts && yarn workspace @venice/styles build",
     "test:ci": "cross-env CI=true vue-cli-service test:unit --bail --passWithNoTests --env=jsdom",
     "lint": "vue-cli-service lint",
-    "build:storybook": "vue-cli-service storybook:build -c .storybook -o ../../dist/vue",
+    "build:storybook": "yarn build && vue-cli-service storybook:build -c .storybook -o ../../dist/vue",
     "loki-test": "loki test",
     "loki-update": "loki update",
     "prepublish": "yarn test:ci && yarn build"
