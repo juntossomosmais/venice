@@ -88,6 +88,7 @@
     "staticpath": "dist",
     "post": [
       "deploy:storybook-clean"
-    ]
+    ],
+    "noprompt": false
   }
 }
