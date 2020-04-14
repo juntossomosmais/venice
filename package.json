@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build:storybook": "lerna run build-storybook",
+    "build:storybook": "lerna run build:storybook",
     "build": "lerna run build",
     "deploy:storybook-clean": "rimraf README.md packages package.json",
     "deploy:storybook": "yarn build:storybook && gh-pages-deploy",

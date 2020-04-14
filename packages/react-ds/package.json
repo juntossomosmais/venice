@@ -21,7 +21,7 @@
     "build": "rollup -c",
     "test": "react-scripts test",
     "test:ci": "cross-env CI=true react-scripts test --bail --passWithNoTests --env=jsdom",
-    "build-storybook": "build-storybook -c .storybook -o ../../dist/react",
+    "build:storybook": "build-storybook -c .storybook -o ../../dist/react",
     "loki-test": "loki test",
     "loki-update": "loki update",
     "prepublish": "yarn test:ci && yarn build"
