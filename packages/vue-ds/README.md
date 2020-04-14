@@ -32,10 +32,10 @@ $ npm i @juntossomosmais/venice-vue
 
 #### CSS
 
-And import the **required** css file.
+And import the **required** css file in your main application file.
 
 ```js
-import '@juntossomosmais/venice-vue/styles.css'
+import '@juntossomosmais/venice-vue/dist/styles.css'
 ```
 
 ### Most basic example

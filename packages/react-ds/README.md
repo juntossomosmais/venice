@@ -34,10 +34,10 @@ $ npm i @juntossomosmais/venice-react
 
 #### CSS
 
-And import the **required** css file.
+And import the **required** css file in your main application file.
 
 ```js
-import '@juntossomosmais/venice-react/styles.css'
+import '@juntossomosmais/venice-react/dist/styles.css'
 ```
 
 ### Most basic example
