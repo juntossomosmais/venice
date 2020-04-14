@@ -3,7 +3,10 @@
   "description": "Design System using Monorepo, Typescript, React, Vue, CSS Modules and Storybook.",
   "author": "@juntossomosmais",
   "homepage": "https://github.com/juntossomosmais/venice#readme",
-  "repository": "https://github.com/juntossomosmais/venice",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juntossomosmais/venice.git"
+  },
   "bugs": {
     "url": "https://github.com/juntossomosmais/venice/issues"
   },

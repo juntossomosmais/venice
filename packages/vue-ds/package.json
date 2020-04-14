@@ -3,7 +3,10 @@
   "description": "Design System of UI Components using Vue",
   "version": "0.2.1",
   "homepage": "https://github.com/juntossomosmais/venice/packages/vue-ds#readme",
-  "repository": "https://github.com/juntossomosmais/venice",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juntossomosmais/venice.git"
+  },
   "bugs": {
     "url": "https://github.com/juntossomosmais/venice/issues"
   },
@@ -72,5 +75,5 @@
       }
     }
   },
-  "gitHead": "22d69a3545eab98e8b709485fcd29ffb4f3b54da"
+  "gitHead": "df9fd8986ee04d735ebcd547debf7d6d16ce3b22"
 }
