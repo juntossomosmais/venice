@@ -3,7 +3,7 @@
   "description": "Design System of UI Components using React",
   "version": "0.2.0",
   "homepage": "https://github.com/juntossomosmais/venice/packages/react-ds#readme",
-  "repository": "https://github.com/juntossomosmais/venice/packages/react-ds",
+  "repository": "https://github.com/juntossomosmais/venice/packages",
   "bugs": {
     "url": "https://github.com/juntossomosmais/venice/issues"
   },
@@ -68,5 +68,6 @@
         "mobile": false
       }
     }
-  }
+  },
+  "gitHead": "22d69a3545eab98e8b709485fcd29ffb4f3b54da"
 }
