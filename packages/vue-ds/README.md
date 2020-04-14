@@ -42,7 +42,7 @@ import '@juntossomosmais/venice-vue/dist/styles.css'
 
 ```vue
 <template>
-  <Button color="primary">Hellow!</Button>
+  <Button color="primary">Hello!</Button>
 </template>
 
 <script>
