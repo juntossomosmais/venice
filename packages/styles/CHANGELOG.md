@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.2.0...@venice/styles@0.2.1) (2020-04-15)
+
+
+### Bug Fixes
+
+* change lineheight ([7fa6eb6](https://github.com/juntossomosmais/venice/commit/7fa6eb63330bf0ca3510fb3275ff583af8a5e825))
+* set px to typography instead rem ([9968387](https://github.com/juntossomosmais/venice/commit/9968387dae087b196c0ad19e7e9be366c489ce79))
+
+
+
+
+
 # [0.2.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.1.0...@venice/styles@0.2.0) (2020-04-14)
 
 
