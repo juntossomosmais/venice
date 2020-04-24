@@ -18,6 +18,7 @@ This is all color palette of project. The variables should to use directly in el
       'var(--gray-1)',
       'var(--gray-2)',
       'var(--gray-3)',
+      'var(--gray-4)',
       'var(--black)',
     ]}
   />
@@ -75,6 +76,15 @@ This use 3 kinds of variables:
     ]}
   />
   <ColorItem
+    title="Success"
+    subtitle="Success color, used for example in nice results"
+    colors={[
+      'var(--success-color)',
+      'var(--success-color-lighten)',
+      'var(--success-color-contrast)',
+    ]}
+  />
+  <ColorItem
     title="Danger"
     subtitle="Danger color, used for example in errors"
     colors={[
@@ -87,5 +97,10 @@ This use 3 kinds of variables:
     title="Disabled"
     subtitle="Used just in disabled states"
     colors={['var(--disabled-color)', 'var(--disabled-color-contrast)']}
+  />
+  <ColorItem
+    title="Text"
+    subtitle="Used just in text colors"
+    colors={['var(--text-color)', 'var(--text-color-lighten)']}
   />
 </ColorPalette>

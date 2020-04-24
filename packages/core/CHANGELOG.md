@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.3.0...@venice/core@0.4.0) (2020-04-24)
+
+
+### Features
+
+* add success color ([a7300aa](https://github.com/juntossomosmais/venice/commit/a7300aa5509be79bf9e21a23c8b33669e1bd0510))
+
+
+
+
+
+# [0.3.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.2.1...@venice/core@0.3.0) (2020-04-24)
+
+
+### Features
+
+* add new variables about text color ([1de7582](https://github.com/juntossomosmais/venice/commit/1de7582deae0b0f16553f192813bf4e02327f5b0))
+
+
+
+
+
 ## [0.2.1](https://github.com/juntossomosmais/venice/compare/@venice/core@0.2.0...@venice/core@0.2.1) (2020-04-15)
 
 

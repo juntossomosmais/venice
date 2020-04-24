@@ -10,7 +10,7 @@
   cursor: pointer;
   display: inline-flex;
   font: var(--typography-button-font);
-  height: $space-lg;
+  height: var(--space-lg);
   letter-spacing: var(--typography-button-letter);
   padding-left: var(--space-md);
   padding-right: var(--space-md);
