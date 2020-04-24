@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.3.0...@venice/styles@0.3.1) (2020-04-24)
+
+
+### Bug Fixes
+
+* change variable for text ([eca055a](https://github.com/juntossomosmais/venice/commit/eca055a7f6af1ee1ddf2bef7d1fec10a273810e1))
+
+
+
+
+
 # [0.3.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.2.1...@venice/styles@0.3.0) (2020-04-24)
 
 
