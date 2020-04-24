@@ -1,0 +1,108 @@
+@import '~@venice/styles/core';
+
+.stepper {
+  @include reset();
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    height: 100%;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  list-style-type: none;
+  position: relative;
+  width: inherit;
+
+  &::before {
+    background-color: var(--gray-2);
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 10px;
+    margin: 2px calc(var(--space-xs) + 2px) 0 2px;
+    text-align: center;
+    width: 10px;
+    z-index: var(--zindex-1);
+  }
+
+  &::after {
+    background-color: var(--gray-2);
+    content: '';
+    height: 100%;
+    left: 8px;
+    position: absolute;
+    top: 2px;
+    width: 2px;
+  }
+
+  &:last-child::after {
+    content: none;
+  }
+
+  .subtitle:last-child:not(:empty)::before {
+    content: '-';
+    display: inline-block;
+    text-align: center;
+    width: 10px;
+  }
+
+  @media (min-width: $screen-md) {
+    flex-direction: column;
+    height: 100%;
+
+    &::before {
+      margin: 2px 0 calc(var(--space-xs) + 3px) 0;
+    }
+
+    &::after {
+      height: 3px;
+      left: 10px;
+      top: 8px;
+      width: 100%;
+    }
+
+    .subtitle:last-child:not(:empty)::before {
+      content: none;
+    }
+  }
+}
+
+.title,
+.subtitle {
+  color: var(--gray-3);
+  font: var(--typography-body2-font);
+  letter-spacing: var(--typography-body2-letter);
+}
+
+.active {
+  .title,
+  .subtitle {
+    color: var(--text-color);
+    font-weight: bold;
+  }
+
+  &::before {
+    background-color: var(--blue-2);
+    height: 15px;
+    margin: 0 var(--space-xs) 0 0;
+    width: 15px;
+  }
+
+  @media (min-width: $screen-md) {
+    &::before {
+      margin: 0 0 var(--space-xs);
+    }
+  }
+}
