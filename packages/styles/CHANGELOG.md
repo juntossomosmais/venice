@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.2.1...@venice/styles@0.3.0) (2020-04-24)
+
+
+### Features
+
+* add new variables about text color ([1de7582](https://github.com/juntossomosmais/venice/commit/1de7582deae0b0f16553f192813bf4e02327f5b0))
+* use css variables ([63f3254](https://github.com/juntossomosmais/venice/commit/63f325476b2f8ff051f7c6e6926e25c300d41862))
+
+
+
+
+
 ## [0.2.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.2.0...@venice/styles@0.2.1) (2020-04-15)
 
 
