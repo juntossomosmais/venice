@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.3.1...@venice/styles@0.4.0) (2020-04-24)
+
+
+### Features
+
+* add success color ([a7300aa](https://github.com/juntossomosmais/venice/commit/a7300aa5509be79bf9e21a23c8b33669e1bd0510))
+
+
+
+
+
 ## [0.3.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.3.0...@venice/styles@0.3.1) (2020-04-24)
 
 
