@@ -54,8 +54,8 @@
   --danger-color: var(--red-2);
   --danger-color-lighten: #d32228;
   --danger-color-contrast: var(--white);
-  --text-color: var(--gray-3);
-  --text-color-lighten: var(--gray-2);
+  --text-color: var(--gray-4);
+  --text-color-lighten: var(--gray-3);
 
   --border-radius: 4px;
 
