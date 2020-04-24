@@ -51,6 +51,9 @@
   --secondary-color: var(--blue-2);
   --secondary-color-lighten: #0090f5;
   --secondary-color-contrast: var(--white);
+  --success-color: var(--green-1);
+  --success-color-lighten: #8bde2f;
+  --success-color-contrast: var(--white);
   --danger-color: var(--red-2);
   --danger-color-lighten: #d32228;
   --danger-color-contrast: var(--white);
