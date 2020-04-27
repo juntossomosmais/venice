@@ -12,28 +12,40 @@ interface IButtonProps extends IButton {
 const Button: FC<IButtonProps> = ({
   color,
   variant,
+  size,
   href,
   children,
   ...rest
 }: IButtonProps) => {
-  const setStyle = (c: IButton['color'] | IButton['variant']) =>
-    c ? `${styles[c]}` : ''
+  const setStyle = (
+    c: IButton['color'] | IButton['variant'] | IButton['size']
+  ) => (c ? `${styles[c]}` : '')
 
   return (
     <>
       {href ? (
         <a
-          className={`${styles.btn} ${setStyle(color)} ${setStyle(variant)}`}
+          className={`
+            ${styles.btn}
+            ${setStyle(color)}
+            ${setStyle(variant)}
+            ${setStyle(size)}
+          `}
           {...rest}
         >
-          {children}
+          <span className={`${styles.children}`}>{children}</span>
         </a>
       ) : (
         <button
-          className={`${styles.btn} ${setStyle(color)} ${setStyle(variant)}`}
+          className={`
+            ${styles.btn}
+            ${setStyle(color)}
+            ${setStyle(variant)}
+            ${setStyle(size)}
+          `}
           {...rest}
         >
-          {children}
+          <span className={`${styles.children}`}>{children}</span>
         </button>
       )}
     </>
@@ -47,11 +59,14 @@ Button.propTypes = {
   variant: PropTypes.any,
   /** (optional) string */
   href: PropTypes.any,
+  /** (optional) string */
+  size: PropTypes.any,
 }
 
 Button.defaultProps = {
   color: 'default',
   variant: 'filled',
+  size: 'medium',
 }
 
 export default Button

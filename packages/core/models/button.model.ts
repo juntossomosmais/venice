@@ -7,4 +7,6 @@ export interface IButton {
   disabled?: boolean
   /** href <a> */
   href?: string
+  /** 'medium' | 'small' */
+  size?: 'medium' | 'small'
 }

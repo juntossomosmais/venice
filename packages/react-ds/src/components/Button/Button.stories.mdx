@@ -1,5 +1,5 @@
 import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
-import { withKnobs, boolean } from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs'
 import Docs from '@venice/core/docs/Button.md'
 
 import Button from './Button'
@@ -53,6 +53,25 @@ import Button from './Button'
         Secondary
       </Button>
       <Button disabled variant="text">
+        Disabled
+      </Button>
+    </div>
+  </Story>
+</Preview>
+
+## Small buttons
+
+<Preview>
+  <Story name="Small">
+    <div>
+      <Button size="small">Default</Button>
+      <Button color="primary" size="small">
+        Primary
+      </Button>
+      <Button color="secondary" size="small">
+        Secondary
+      </Button>
+      <Button size="small" disabled>
         Disabled
       </Button>
     </div>

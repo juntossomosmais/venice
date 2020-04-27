@@ -10,12 +10,8 @@
   cursor: pointer;
   display: inline-flex;
   font: var(--typography-button-font);
-  height: var(--space-lg);
   justify-content: center;
   letter-spacing: var(--typography-button-letter);
-  min-width: 190px;
-  padding-left: var(--space);
-  padding-right: var(--space);
   text-decoration: none;
   transition-duration: 0.25s;
   transition-property: background-color, border-color;
@@ -121,5 +117,25 @@
     &:not([disabled]):hover {
       background-color: var(--secondary-color-lighten);
     }
+  }
+}
+
+.small {
+  height: var(--space-md);
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
+
+  .children {
+    font-size: 0.8em;
+  }
+}
+
+.medium {
+  height: var(--space-lg);
+  padding-left: var(--space);
+  padding-right: var(--space);
+
+  .children {
+    font-size: 1em;
   }
 }

@@ -75,6 +75,24 @@ You can add a `href` attr to use it as `<a>` element.
   </Story>
 </Preview>
 
+## Small buttons
+
+<Preview>
+  <Story name="Small" parameters={{ decorators: [withKnobs] }}>
+    {{
+      components: { Button },
+      template: `
+        <div>
+          <Button size="small">Default</Button>
+          <Button color="primary" size="small">Primary</Button>
+          <Button color="secondary" size="small">Secondary</Button>
+          <Button size="small" disabled>Disabled</Button>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
 # Props
 
 <Props of={Button} />
