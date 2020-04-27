@@ -1,20 +1,67 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+import {  Description, Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks'
+
+import Docs from '@venice/core/docs/Stepper.md'
+import { initial, started, completed } from '@venice/core/mocks/stepper-mocks'
 
 import Stepper from './Stepper.vue'
 
 <Meta title="Components|Stepper" component={Stepper} />
 
-## Stepper
+# Stepper
+
+Steppers track progress through linear workflows.
+
+## First Step
 
 <Preview>
-  <Story name="Stepper">
+  <Story name="First Step">
     {{
       components: { Stepper },
-      template: `
-        <div>
-          <Stepper />
-        </div>
-      `,
+      template: `<Stepper :steps="[
+                  {title: 'Step 1', subtitle: 'Completed', completed: true},
+                  {title: 'Step 2', completed: false},
+                  {title: 'Step 3', completed: false},
+                  {title: 'Step 4', completed: false},
+                  {title: 'Step 5', completed: false},
+                ]" />`,
     }}
   </Story>
 </Preview>
+
+## Step 3 of 5
+
+<Preview>
+  <Story name="Step 3 of 5">
+    {{
+      components: { Stepper },
+      template: `<Stepper :steps="[
+                  {title: 'Step 1', subtitle: 'Completed', completed: true},
+                  {title: 'Step 2', subtitle: 'Completed', completed: true},
+                  {title: 'Step 3', subtitle: 'Completed', completed: true},
+                  {title: 'Step 4', completed: false},
+                  {title: 'Step 5', completed: false},
+                ]" />`,
+    }}
+  </Story>
+</Preview>
+
+## Last Step
+
+<Preview>
+  <Story name="Last Step">
+    {{
+      components: { Stepper },
+      template: `<Stepper :steps="[
+                  {title: 'Step 1', subtitle: 'Completed', completed: true},
+                  {title: 'Step 2', subtitle: 'Completed', completed: true},
+                  {title: 'Step 3', subtitle: 'Completed', completed: true},
+                  {title: 'Step 4', subtitle: 'Completed', completed: true},
+                  {title: 'Step 5', subtitle: 'Completed', completed: true},
+                ]" />`,
+    }}
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Stepper} />

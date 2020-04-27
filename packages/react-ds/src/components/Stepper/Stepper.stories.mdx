@@ -1,14 +1,38 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
-import Docs from '@venice/core/docs/Button.md'
+import {  Description, Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks'
+
+import Docs from '@venice/core/docs/Stepper.md'
+import { initial, started, completed } from '@venice/core/mocks/stepper-mocks'
 
 import Stepper from './Stepper'
 
 <Meta title="Components|Stepper" component={Stepper} />
 
-## Stepper
+<Description>{Docs}</Description>
+
+## First Step
 
 <Preview>
-  <Story name="Stepper">
-    <Stepper />
+  <Story name="First Step">
+    <Stepper steps={initial} />
   </Story>
 </Preview>
+
+## Step 3 of 5
+
+<Preview>
+  <Story name="Step 3 of 5">
+    <Stepper steps={started} />
+  </Story>
+</Preview>
+
+## Last Step
+
+<Preview>
+  <Story name="Last Step">
+    <Stepper steps={completed} />
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Stepper} />
