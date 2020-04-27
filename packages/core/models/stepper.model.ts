@@ -1,7 +1,7 @@
 interface Steps {
   title: string
   subtitle?: string
-  completed?: boolean
+  completed: boolean
 }
 
 export interface IStepper {
