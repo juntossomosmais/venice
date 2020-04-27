@@ -100,9 +100,17 @@
     width: 15px;
   }
 
+  &::after {
+    background-color: var(--blue-2);
+  }
+
   @media (min-width: $screen-md) {
     &::before {
       margin: 0 0 var(--space-xs);
     }
   }
+}
+
+.last::after {
+  background-color: var(--gray-2);
 }

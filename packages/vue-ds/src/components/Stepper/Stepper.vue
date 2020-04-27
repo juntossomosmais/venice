@@ -2,11 +2,12 @@
   <ul class="stepper">
     <li
       :key="idx"
-      v-bind:class="['step', step.completed ? 'active' : '']"
+      class="step"
+      :class="`${isActive(step.completed)} ${isLastActive(idx)}`"
       v-for="(step, idx) in steps"
     >
       <span class="title">{{ step.title }}</span>
-      <time class="subtitle" v-if="step.subtitle">{{ step.subtitle }}</time>
+      <span class="subtitle" v-if="step.subtitle">{{ step.subtitle }}</span>
     </li>
   </ul>
 </template>
@@ -16,31 +17,22 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 
 import { IStepper } from '@venice/core/models'
 
-const initial = [
-  {
-    title: 'Resgate realizado',
-    subtitle: '31/03/2020',
-    completed: true,
-  },
-  {
-    title: 'Pedido confirmado',
-    subtitle: '31/03/2020',
-    completed: true,
-  },
-  {
-    title: 'Na transportadora',
-  },
-  {
-    title: 'Resgate realizado',
-  },
-  {
-    title: 'Entregue',
-  },
-]
-
 @Component
 export default class Stepper extends Vue {
-  @Prop({ default: initial }) steps!: IStepper['steps']
+  @Prop({ default: [] }) steps!: IStepper['steps']
+
+  isActive(completed: boolean) {
+    return completed ? 'active' : ''
+  }
+
+  isLastActive(index: number) {
+    const currentStep = this.steps[index]
+    const nextStep = this.steps[index + 1]
+
+    return currentStep.completed && nextStep && !nextStep.completed
+      ? 'last'
+      : ''
+  }
 }
 </script>
 
