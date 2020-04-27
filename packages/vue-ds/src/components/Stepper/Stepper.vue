@@ -1,5 +1,5 @@
 <template>
-  <ul class="stepper">
+  <ul class="stepper" data-testid="stepper">
     <li
       :key="idx"
       class="step"
