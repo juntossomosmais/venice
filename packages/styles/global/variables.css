@@ -43,8 +43,8 @@
   --default-color: var(--gray-4);
   --default-color-lighten: #5c5c5c;
   --default-color-contrast: var(--white);
-  --disabled-color: var(--gray-1);
-  --disabled-color-contrast: var(--gray-2);
+  --disabled-color: var(--gray-2);
+  --disabled-color-contrast: var(--gray-3);
   --primary-color: var(--orange-1);
   --primary-color-lighten: #ff9834;
   --primary-color-contrast: var(--white);
