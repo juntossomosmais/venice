@@ -4,7 +4,7 @@ import { render } from '@testing-library/react'
 
 import '@testing-library/jest-dom'
 
-import { completed } from '@venice/core/tests/mocks/stepper-mocks'
+import { completed } from '@venice/core/mocks/stepper-mocks'
 
 import Stepper from './Stepper'
 
