@@ -11,9 +11,11 @@
   display: inline-flex;
   font: var(--typography-button-font);
   height: var(--space-lg);
+  justify-content: center;
   letter-spacing: var(--typography-button-letter);
-  padding-left: var(--space-md);
-  padding-right: var(--space-md);
+  min-width: 190px;
+  padding-left: var(--space);
+  padding-right: var(--space);
   text-decoration: none;
   transition-duration: 0.25s;
   transition-property: background-color, border-color;
