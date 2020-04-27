@@ -64,16 +64,46 @@ import Button from './Button'
 <Preview>
   <Story name="Small">
     <div>
-      <Button size="small">Default</Button>
-      <Button color="primary" size="small">
-        Primary
-      </Button>
-      <Button color="secondary" size="small">
-        Secondary
-      </Button>
-      <Button size="small" disabled>
-        Disabled
-      </Button>
+      <div style={{
+        marginBottom: `var(--space)`
+      }}>
+        <Button size="small">Default</Button>
+        <Button color="primary" size="small">
+          Primary
+        </Button>
+        <Button color="secondary" size="small">
+          Secondary
+        </Button>
+        <Button size="small" disabled>
+          Disabled
+        </Button>
+      </div>
+      <div style={{
+        marginBottom: `var(--space)`
+      }}>
+        <Button size="small" variant="outlined">Default</Button>
+        <Button color="primary" variant="outlined" size="small">
+          Primary
+        </Button>
+        <Button color="secondary" variant="outlined" size="small">
+          Secondary
+        </Button>
+        <Button size="small" variant="outlined" disabled>
+          Disabled
+        </Button>
+      </div>
+      <div>
+        <Button size="small" variant="text">Default</Button>
+        <Button color="primary" variant="text" size="small">
+          Primary
+        </Button>
+        <Button color="secondary" variant="text" size="small">
+          Secondary
+        </Button>
+        <Button size="small" variant="text" disabled>
+          Disabled
+        </Button>
+      </div>
     </div>
   </Story>
 </Preview>

@@ -83,10 +83,24 @@ You can add a `href` attr to use it as `<a>` element.
       components: { Button },
       template: `
         <div>
-          <Button size="small">Default</Button>
-          <Button color="primary" size="small">Primary</Button>
-          <Button color="secondary" size="small">Secondary</Button>
-          <Button size="small" disabled>Disabled</Button>
+          <div style="margin-bottom: var(--space)">
+            <Button size="small">Default</Button>
+            <Button color="primary" size="small">Primary</Button>
+            <Button color="secondary" size="small">Secondary</Button>
+            <Button size="small" disabled>Disabled</Button>
+          </div>
+          <div style="margin-bottom: var(--space)">
+            <Button variant="outlined" size="small">Default</Button>
+            <Button variant="outlined" color="primary" size="small">Primary</Button>
+            <Button variant="outlined" color="secondary" size="small">Secondary</Button>
+            <Button variant="outlined" size="small" disabled>Disabled</Button>
+          </div>
+          <div>
+            <Button variant="text" size="small">Default</Button>
+            <Button variant="text" color="primary" size="small">Primary</Button>
+            <Button variant="text" color="secondary" size="small">Secondary</Button>
+            <Button variant="text" size="small" disabled>Disabled</Button>
+          </div>
         </div>
       `,
     }}
