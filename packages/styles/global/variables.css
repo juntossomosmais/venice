@@ -68,4 +68,6 @@
   --zindex-100: 100;
   --zindex-1000: 1000;
   --zindex-overlay: 10000;
+
+  --transition-duration: 0.25s;
 }

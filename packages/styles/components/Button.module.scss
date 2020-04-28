@@ -12,10 +12,25 @@
   font: var(--typography-button-font);
   justify-content: center;
   letter-spacing: var(--typography-button-letter);
+  overflow: hidden;
+  position: relative;
   text-decoration: none;
-  transition-duration: 0.25s;
-  transition-property: background-color, border-color;
-  will-change: background-color, border-color;
+  transition-duration: var(--transition-duration);
+  transition-property: border-color;
+  will-change: border-color;
+
+  &::before {
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition-duration: var(--transition-duration);
+    transition-property: opacity;
+    z-index: var(--zindex-1);
+  }
 
   &[disabled] {
     cursor: default;
@@ -36,12 +51,20 @@
   }
 }
 
+.children {
+  position: relative;
+  z-index: var(--zindex-1);
+}
+
 .default {
   &.text {
     color: var(--default-color);
 
     &:not([disabled]):hover {
-      color: var(--default-color-lighten);
+      &::before {
+        background-color: var(--default-color-lighten);
+        opacity: 0.1;
+      }
     }
   }
 
@@ -50,7 +73,10 @@
     color: var(--default-color);
 
     &:not([disabled]):hover {
-      border-color: var(--default-color-lighten);
+      &::before {
+        background-color: var(--default-color-lighten);
+        opacity: 0.1;
+      }
     }
   }
 
@@ -59,7 +85,10 @@
     color: var(--default-color-contrast);
 
     &:not([disabled]):hover {
-      background-color: var(--default-color-lighten);
+      &::before {
+        background-color: var(--default-color-lighten);
+        opacity: 1;
+      }
     }
   }
 }
@@ -69,7 +98,10 @@
     color: var(--primary-color);
 
     &:not([disabled]):hover {
-      color: var(--primary-color-lighten);
+      &::before {
+        background-color: var(--primary-color-lighten);
+        opacity: 0.1;
+      }
     }
   }
 
@@ -78,7 +110,10 @@
     color: var(--primary-color);
 
     &:not([disabled]):hover {
-      border-color: var(--primary-color-lighten);
+      &::before {
+        background-color: var(--primary-color-lighten);
+        opacity: 0.1;
+      }
     }
   }
 
@@ -87,7 +122,10 @@
     color: var(--primary-color-contrast);
 
     &:not([disabled]):hover {
-      background-color: var(--primary-color-lighten);
+      &::before {
+        background-color: var(--primary-color-lighten);
+        opacity: 1;
+      }
     }
   }
 }
@@ -97,7 +135,10 @@
     color: var(--secondary-color);
 
     &:not([disabled]):hover {
-      color: var(--secondary-color-lighten);
+      &::before {
+        background-color: var(--secondary-color-lighten);
+        opacity: 0.1;
+      }
     }
   }
 
@@ -106,7 +147,10 @@
     color: var(--secondary-color);
 
     &:not([disabled]):hover {
-      border-color: var(--secondary-color-lighten);
+      &::before {
+        background-color: var(--secondary-color-lighten);
+        opacity: 0.1;
+      }
     }
   }
 
@@ -115,7 +159,10 @@
     color: var(--secondary-color-contrast);
 
     &:not([disabled]):hover {
-      background-color: var(--secondary-color-lighten);
+      &::before {
+        background-color: var(--secondary-color-lighten);
+        opacity: 1;
+      }
     }
   }
 }

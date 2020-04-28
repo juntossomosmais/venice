@@ -1,9 +1,9 @@
 <template>
   <a v-if="href" :class="['btn', color, variant, size]" :href="href">
-    <slot />
+    <span :class="'children'"><slot /></span>
   </a>
   <button v-else :class="['btn', color, variant, size]">
-    <slot />
+    <span :class="'children'"><slot /></span>
   </button>
 </template>
 
