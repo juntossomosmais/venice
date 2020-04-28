@@ -107,6 +107,28 @@ You can add a `href` attr to use it as `<a>` element.
   </Story>
 </Preview>
 
+## With Icons
+
+<Preview>
+  <Story name="With Icons" inline={true}>
+    {{
+      components: { Button },
+      template: `
+        <div style="display: flex">
+          <Button variant="outlined">
+            <template v-slot:startIcon>←</template>
+            With Icon
+          </Button>
+          <Button variant="outlined">
+            <template v-slot:endIcon>→</template>
+            With Icon
+          </Button>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
 # Props
 
 <Props of={Button} />
