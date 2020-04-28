@@ -1,10 +1,10 @@
 <template>
   <ul class="stepper" data-testid="stepper">
     <li
-      :key="idx"
       class="step"
       :class="`${isActive(step.completed)} ${isLastActive(idx)}`"
       v-for="(step, idx) in steps"
+      :key="idx"
     >
       <span class="title">{{ step.title }}</span>
       <span class="subtitle" v-if="step.subtitle">{{ step.subtitle }}</span>
@@ -19,7 +19,7 @@ import { IStepper } from '@venice/core/models'
 
 @Component
 export default class Stepper extends Vue {
-  @Prop({ default: [] }) steps!: IStepper['steps']
+  @Prop({ default: [], type: Array }) steps!: IStepper['steps']
 
   isActive(completed: boolean) {
     return completed ? 'active' : ''
@@ -29,9 +29,10 @@ export default class Stepper extends Vue {
     const currentStep = this.steps[index]
     const nextStep = this.steps[index + 1]
 
-    return currentStep.completed && nextStep && !nextStep.completed
-      ? 'last'
-      : ''
+    const currentStepIsTheLast =
+      currentStep.completed && nextStep && !nextStep.completed
+
+    return currentStepIsTheLast ? 'last' : ''
   }
 }
 </script>

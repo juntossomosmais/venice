@@ -16,9 +16,10 @@ const Stepper: FC<IStepper> = ({ steps }: IStepper) => {
       const currentStep = steps[index]
       const nextStep = steps[index + 1]
 
-      return currentStep.completed && nextStep && !nextStep.completed
-        ? styles['last']
-        : ''
+      const currentStepIsTheLast =
+        currentStep.completed && nextStep && !nextStep.completed
+
+      return currentStepIsTheLast ? styles['last'] : ''
     },
     [steps]
   )
