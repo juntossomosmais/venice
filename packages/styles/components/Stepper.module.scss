@@ -28,7 +28,7 @@
     border-radius: 50%;
     content: '';
     display: block;
-    height: calc(var(--space-xs) + 2px);
+    height: var(--space-xs);
     margin-bottom: calc(var(--space-xs) + 4px);
     margin-left: calc(var(--space-xxs) - 1px);
     margin-right: calc(var(--space-xs) + 2px);
