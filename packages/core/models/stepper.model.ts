@@ -1,9 +1,9 @@
-interface Steps {
+interface Step {
   title: string
   subtitle?: string
   completed: boolean
 }
 
 export interface IStepper {
-  steps: Array<Steps>
+  steps: Array<Step>
 }
