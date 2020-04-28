@@ -1,10 +1,22 @@
 <template>
-  <a v-if="href" :class="['btn', color, variant, size]" :href="href">
-    <span :class="'children'"><slot /></span>
-  </a>
-  <button v-else :class="['btn', color, variant, size]">
-    <span :class="'children'"><slot /></span>
-  </button>
+  <component
+    :is="href ? 'a' : 'button'"
+    :class="['btn', color, variant, size]"
+    :href="href"
+  >
+    <span :class="'startIcon'">
+      <!-- @slot To add icon at the beginning -->
+      <slot name="startIcon" />
+    </span>
+    <span :class="'children'">
+      <!-- @slot To add something, like a text -->
+      <slot />
+    </span>
+    <span :class="'endIcon'">
+      <!-- @slot To add icon at the end -->
+      <slot name="endIcon" />
+    </span>
+  </component>
 </template>
 
 <script lang="ts">
