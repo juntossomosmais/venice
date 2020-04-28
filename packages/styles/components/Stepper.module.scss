@@ -1,0 +1,115 @@
+@import '~@venice/styles/core';
+
+.stepper {
+  @include reset();
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+
+  @include above($screen-lg) {
+    flex-direction: row;
+    height: 100%;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  height: var(--space-lg);
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    background-color: var(--gray-2);
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 10px;
+    margin-left: 2px;
+    margin-right: var(--space-xs);
+    margin-top: 2px;
+    position: relative;
+    text-align: center;
+    width: 10px;
+    z-index: var(--zindex-1);
+  }
+
+  &::after {
+    background-color: var(--gray-2);
+    content: '';
+    height: 100%;
+    left: var(--space-xs);
+    position: absolute;
+    top: var(--space-xxs);
+    width: 2px;
+  }
+
+  &:last-child::after {
+    content: none;
+  }
+
+  .subtitle:last-child:not(:empty)::before {
+    content: '-';
+    display: inline-block;
+    text-align: center;
+    width: var(--space-xs);
+  }
+
+  @include above($screen-lg) {
+    flex-direction: column;
+    height: 100%;
+
+    &::before {
+      margin-bottom: var(--space-xs);
+    }
+
+    &:not(:last-child)::after {
+      height: 2px;
+      left: var(--space-xs);
+      top: var(--space-xs);
+      width: 100%;
+    }
+
+    .subtitle:last-child:not(:empty)::before {
+      content: none;
+    }
+  }
+}
+
+.title,
+.subtitle {
+  color: var(--gray-3);
+  font: var(--typography-body2-font);
+  letter-spacing: var(--typography-body2-letter);
+}
+
+.active {
+  .title,
+  .subtitle {
+    color: var(--text-color);
+    font-weight: bold;
+  }
+
+  &::before {
+    background-color: var(--secondary-color);
+    border-width: 1px;
+    height: var(--space-sm);
+    margin-bottom: var(--space-xs);
+    margin-left: 0;
+    margin-right: calc(var(--space-xxs) + 2px);
+    margin-top: 0;
+    width: var(--space-sm);
+  }
+
+  &::after {
+    background-color: var(--secondary-color);
+  }
+}
+
+.last::after {
+  background-color: var(--gray-2);
+}
