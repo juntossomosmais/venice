@@ -4,8 +4,11 @@ import { IButton } from '@venice/core/models'
 import styles from '@venice/styles/components/Button.module.scss'
 
 interface IButtonProps extends IButton {
-  children: React.ReactNode
+  /** React Element */
   endIcon?: React.ReactNode
+  /** React Element */
+  children: React.ReactNode
+  /** React Element */
   startIcon?: React.ReactNode
 }
 
