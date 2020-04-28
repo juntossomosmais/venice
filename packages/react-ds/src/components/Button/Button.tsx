@@ -1,20 +1,30 @@
 import React, { FC } from 'react'
 
-import PropTypes from 'prop-types'
-
 import { IButton } from '@venice/core/models'
 import styles from '@venice/styles/components/Button.module.scss'
 
 interface IButtonProps extends IButton {
   children: React.ReactNode
+  endIcon: React.ReactNode
+  startIcon: React.ReactNode
 }
 
+const childrenElement = ({ children, endIcon, startIcon }: IButtonProps) => (
+  <>
+    {startIcon && <span className={`${styles.startIcon}`}>{startIcon}</span>}
+    <span className={`${styles.children}`}>{children}</span>
+    {endIcon && <span className={`${styles.endIcon}`}>{endIcon}</span>}
+  </>
+)
+
 const Button: FC<IButtonProps> = ({
-  color,
-  variant,
-  size,
-  href,
   children,
+  color = 'default',
+  endIcon,
+  href,
+  size = 'medium',
+  startIcon,
+  variant = 'filled',
   ...rest
 }: IButtonProps) => {
   const setStyle = (
@@ -33,7 +43,7 @@ const Button: FC<IButtonProps> = ({
           `}
           {...rest}
         >
-          <span className={`${styles.children}`}>{children}</span>
+          {childrenElement({ children, endIcon, startIcon })}
         </a>
       ) : (
         <button
@@ -45,28 +55,11 @@ const Button: FC<IButtonProps> = ({
           `}
           {...rest}
         >
-          <span className={`${styles.children}`}>{children}</span>
+          {childrenElement({ children, endIcon, startIcon })}
         </button>
       )}
     </>
   )
-}
-
-Button.propTypes = {
-  /**  'default' | 'primary' | 'secondary' */
-  color: PropTypes.any,
-  /** 'filled' | 'outlined' | 'text' */
-  variant: PropTypes.any,
-  /** (optional) string */
-  href: PropTypes.any,
-  /** (optional) string */
-  size: PropTypes.any,
-}
-
-Button.defaultProps = {
-  color: 'default',
-  variant: 'filled',
-  size: 'medium',
 }
 
 export default Button

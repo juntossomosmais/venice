@@ -52,8 +52,23 @@
 }
 
 .children {
+  display: inline-block;
   position: relative;
-  z-index: var(--zindex-1);
+  z-index: var(--zindex-5);
+}
+
+.startIcon {
+  display: inline-block;
+  margin-right: var(--space-xs);
+  position: relative;
+  z-index: var(--zindex-5);
+}
+
+.endIcon {
+  display: inline-block;
+  margin-left: var(--space-xs);
+  position: relative;
+  z-index: var(--zindex-5);
 }
 
 .default {
