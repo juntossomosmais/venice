@@ -1,7 +1,7 @@
 import { render } from '@testing-library/vue'
 import '@testing-library/jest-dom'
 
-import { initial, started, completed } from '@venice/core/mocks/stepper-mocks'
+import { initial, started, completed } from '@venice/core/mocks/stepper'
 
 import Stepper from './Stepper.vue'
 
