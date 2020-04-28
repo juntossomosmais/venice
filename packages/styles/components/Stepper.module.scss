@@ -28,13 +28,12 @@
     border-radius: 50%;
     content: '';
     display: block;
-    height: var(--space-xs);
-    margin-bottom: calc(var(--space-xs) + 4px);
-    margin-left: calc(var(--space-xxs) - 1px);
-    margin-right: calc(var(--space-xs) + 2px);
-    margin-top: calc(var(--space-xxs) - 2px);
+    height: 10px;
+    margin-left: 2px;
+    margin-right: var(--space-xs);
+    margin-top: 2px;
     text-align: center;
-    width: calc(var(--space-xs) + 2px);
+    width: 10px;
     z-index: var(--zindex-1);
   }
 
@@ -42,10 +41,10 @@
     background-color: var(--gray-2);
     content: '';
     height: 100%;
-    left: calc(var(--space-xs) + 1px);
+    left: var(--space-xs);
     position: absolute;
-    top: calc(var(--space-xxs) - 2px);
-    width: calc(var(--space-xxs) - 2px);
+    top: var(--space-xxs);
+    width: 2px;
   }
 
   &:last-child::after {
@@ -64,11 +63,11 @@
     height: 100%;
 
     &::before {
-      margin-top: calc(var(--space-xxs) - 2px);
+      margin-bottom: var(--space-xs);
     }
 
     &:not(:last-child)::after {
-      height: calc(var(--space-xxs) - 1px);
+      height: 2px;
       left: var(--space-xs);
       top: var(--space-xs);
       width: 100%;
@@ -96,20 +95,16 @@
 
   &::before {
     background-color: var(--blue-2);
+    border-width: 1px;
     height: var(--space-sm);
     margin: 0;
-    margin-right: var(--space-xs);
+    margin-bottom: var(--space-xs);
+    margin-right: calc(var(--space-xxs) + 2px);
     width: var(--space-sm);
   }
 
   &::after {
     background-color: var(--blue-2);
-  }
-
-  @include above($screen-lg) {
-    &::before {
-      margin-bottom: var(--space-xs);
-    }
   }
 }
 
