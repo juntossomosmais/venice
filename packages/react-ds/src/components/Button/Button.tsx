@@ -12,13 +12,18 @@ interface IButtonProps extends IButton {
   startIcon?: React.ReactNode
 }
 
-const childrenElement = ({ children, endIcon, startIcon }: IButtonProps) => (
-  <>
-    {startIcon && <span className={`${styles.startIcon}`}>{startIcon}</span>}
-    <span className={`${styles.children}`}>{children}</span>
-    {endIcon && <span className={`${styles.endIcon}`}>{endIcon}</span>}
-  </>
-)
+interface CompProps {
+  tag: keyof JSX.IntrinsicElements
+}
+
+const ButtonComponent: React.FunctionComponent<CompProps &
+  React.HTMLAttributes<HTMLOrSVGElement>> = ({
+  tag: Wrapper = 'button',
+  children,
+  ...rest
+}) => {
+  return <Wrapper {...rest}>{children}</Wrapper>
+}
 
 const Button: FC<IButtonProps> = ({
   children,
@@ -36,31 +41,23 @@ const Button: FC<IButtonProps> = ({
 
   return (
     <>
-      {href ? (
-        <a
-          className={`
+      <ButtonComponent
+        tag={href ? 'a' : 'button'}
+        role={href ? '' : 'button'}
+        className={`
             ${styles.btn}
             ${setStyle(color)}
             ${setStyle(variant)}
             ${setStyle(size)}
           `}
-          {...rest}
-        >
-          {childrenElement({ children, endIcon, startIcon })}
-        </a>
-      ) : (
-        <button
-          className={`
-            ${styles.btn}
-            ${setStyle(color)}
-            ${setStyle(variant)}
-            ${setStyle(size)}
-          `}
-          {...rest}
-        >
-          {childrenElement({ children, endIcon, startIcon })}
-        </button>
-      )}
+        {...rest}
+      >
+        {startIcon && (
+          <span className={`${styles.startIcon}`}>{startIcon}</span>
+        )}
+        <span className={`${styles.children}`}>{children}</span>
+        {endIcon && <span className={`${styles.endIcon}`}>{endIcon}</span>}
+      </ButtonComponent>
     </>
   )
 }
