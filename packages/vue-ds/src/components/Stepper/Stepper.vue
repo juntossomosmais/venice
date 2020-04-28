@@ -29,10 +29,10 @@ export default class Stepper extends Vue {
     const currentStep = this.steps[index]
     const nextStep = this.steps[index + 1]
 
-    const currentStepIsTheLast =
+    const currentStepIsTheLastCompleted =
       currentStep.completed && nextStep && !nextStep.completed
 
-    return currentStepIsTheLast ? 'last' : ''
+    return currentStepIsTheLastCompleted ? 'last' : ''
   }
 }
 </script>
