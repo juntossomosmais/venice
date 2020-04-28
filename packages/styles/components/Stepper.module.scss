@@ -10,7 +10,7 @@
   padding: 0;
   width: 100%;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-lg) {
     flex-direction: row;
     height: 100%;
   }
@@ -58,7 +58,7 @@
     width: 10px;
   }
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-lg) {
     flex-direction: column;
     height: 100%;
 
@@ -104,7 +104,7 @@
     background-color: var(--blue-2);
   }
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-lg) {
     &::before {
       margin: 0 0 var(--space-xs);
     }
