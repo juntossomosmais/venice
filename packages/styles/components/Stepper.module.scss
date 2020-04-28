@@ -30,8 +30,7 @@
     display: block;
     height: 10px;
     margin-left: 2px;
-    margin-right: var(--space-xs);
-    margin-top: 2px;
+    margin-right: var(--space-sm);
     position: relative;
     text-align: center;
     width: 10px;
@@ -64,7 +63,8 @@
     height: 100%;
 
     &::before {
-      margin-bottom: var(--space-xs);
+      margin-bottom: var(--space-sm);
+      margin-top: 2px;
     }
 
     &:not(:last-child)::after {
@@ -83,8 +83,8 @@
 .title,
 .subtitle {
   color: var(--gray-3);
-  font: var(--typography-body2-font);
-  letter-spacing: var(--typography-body2-letter);
+  font: var(--typography-caption-font);
+  letter-spacing: var(--typography-caption-letter);
 }
 
 .active {
@@ -92,6 +92,7 @@
   .subtitle {
     color: var(--text-color);
     font-weight: bold;
+    margin-top: 2px;
   }
 
   &::before {
@@ -100,13 +101,24 @@
     height: var(--space-sm);
     margin-bottom: var(--space-xs);
     margin-left: 0;
-    margin-right: calc(var(--space-xxs) + 2px);
+    margin-right: calc(var(--space-sm) - 2px);
     margin-top: 0;
     width: var(--space-sm);
   }
 
   &::after {
     background-color: var(--secondary-color);
+  }
+
+  @include above($screen-lg) {
+    .title,
+    .subtitle {
+      margin-top: 0;
+    }
+
+    &::before {
+      margin-bottom: calc(var(--space-sm) - 2px);
+    }
   }
 }
 
