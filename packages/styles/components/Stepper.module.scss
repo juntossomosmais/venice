@@ -7,10 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   list-style: none;
-  padding: 0;
-  width: 100%;
 
-  @media (min-width: $screen-lg) {
+  @include above($screen-lg) {
     flex-direction: row;
     height: 100%;
   }
@@ -19,10 +17,10 @@
 .step {
   display: flex;
   flex-direction: row;
-  height: 50px;
+  height: var(--space-lg);
   list-style-type: none;
   position: relative;
-  width: inherit;
+  width: 100%;
 
   &::before {
     background-color: var(--gray-2);
@@ -30,10 +28,13 @@
     border-radius: 50%;
     content: '';
     display: block;
-    height: 10px;
-    margin: 2px calc(var(--space-xs) + 2px) 0 2px;
+    height: calc(var(--space-xs) + 2px);
+    margin-bottom: calc(var(--space-xs) + 4px);
+    margin-left: calc(var(--space-xxs) - 1px);
+    margin-right: calc(var(--space-xs) + 2px);
+    margin-top: calc(var(--space-xxs) - 2px);
     text-align: center;
-    width: 10px;
+    width: calc(var(--space-xs) + 2px);
     z-index: var(--zindex-1);
   }
 
@@ -41,10 +42,10 @@
     background-color: var(--gray-2);
     content: '';
     height: 100%;
-    left: 8px;
+    left: calc(var(--space-xs) + 1px);
     position: absolute;
-    top: 2px;
-    width: 2px;
+    top: calc(var(--space-xxs) - 2px);
+    width: calc(var(--space-xxs) - 2px);
   }
 
   &:last-child::after {
@@ -55,21 +56,21 @@
     content: '-';
     display: inline-block;
     text-align: center;
-    width: 10px;
+    width: var(--space-xs);
   }
 
-  @media (min-width: $screen-lg) {
+  @include above($screen-lg) {
     flex-direction: column;
     height: 100%;
 
     &::before {
-      margin: 2px 0 calc(var(--space-xs) + 3px) 0;
+      margin-top: calc(var(--space-xxs) - 2px);
     }
 
-    &::after {
-      height: 3px;
-      left: 10px;
-      top: 8px;
+    &:not(:last-child)::after {
+      height: calc(var(--space-xxs) - 1px);
+      left: var(--space-xs);
+      top: var(--space-xs);
       width: 100%;
     }
 
@@ -95,18 +96,19 @@
 
   &::before {
     background-color: var(--blue-2);
-    height: 15px;
-    margin: 0 var(--space-xs) 0 0;
-    width: 15px;
+    height: var(--space-sm);
+    margin: 0;
+    margin-right: var(--space-xs);
+    width: var(--space-sm);
   }
 
   &::after {
     background-color: var(--blue-2);
   }
 
-  @media (min-width: $screen-lg) {
+  @include above($screen-lg) {
     &::before {
-      margin: 0 0 var(--space-xs);
+      margin-bottom: var(--space-xs);
     }
   }
 }
