@@ -5,8 +5,8 @@ import styles from '@venice/styles/components/Button.module.scss'
 
 interface IButtonProps extends IButton {
   children: React.ReactNode
-  endIcon: React.ReactNode
-  startIcon: React.ReactNode
+  endIcon?: React.ReactNode
+  startIcon?: React.ReactNode
 }
 
 const childrenElement = ({ children, endIcon, startIcon }: IButtonProps) => (
