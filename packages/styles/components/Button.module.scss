@@ -59,16 +59,22 @@
 
 .startIcon {
   display: inline-block;
-  margin-right: var(--space-xs);
   position: relative;
   z-index: var(--zindex-5);
+
+  &:not(:empty) {
+    margin-right: var(--space-xs);
+  }
 }
 
 .endIcon {
   display: inline-block;
-  margin-left: var(--space-xs);
   position: relative;
   z-index: var(--zindex-5);
+
+  &:not(:empty) {
+    margin-left: var(--space-xs);
+  }
 }
 
 .default {
