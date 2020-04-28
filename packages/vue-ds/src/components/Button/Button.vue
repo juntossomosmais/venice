@@ -3,6 +3,7 @@
     :is="href ? 'a' : 'button'"
     :class="['btn', color, variant, size]"
     :href="href"
+    :role="href ? '' : 'button'"
   >
     <span :class="'startIcon'">
       <!-- @slot To add icon at the beginning -->
