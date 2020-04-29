@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.4.0...@venice/core@0.5.0) (2020-04-29)
+
+
+### Bug Fixes
+
+* interface name ([0ac7dae](https://github.com/juntossomosmais/venice/commit/0ac7dae69fec0b22ec98a0c89cfeb338f8b34f81))
+* prop requirement setting ([cb2fbfb](https://github.com/juntossomosmais/venice/commit/cb2fbfb96e65dbc488c356424545eddf490fea25))
+* stepper mock path ([0237e19](https://github.com/juntossomosmais/venice/commit/0237e19bd7bf9c8229082736f37bb34de4192f67))
+
+
+### Features
+
+* added mocks to Stepper ([39d3309](https://github.com/juntossomosmais/venice/commit/39d3309b6acd98666781a65f494e45be8a3ec9ce))
+* added shared doc for Stepper ([e3ce396](https://github.com/juntossomosmais/venice/commit/e3ce396dd3e57accd4833098cc445840cd5d32d1))
+* created stepper mocks ([ed506e9](https://github.com/juntossomosmais/venice/commit/ed506e9953f1ba2337e84c823dbc949ed9a0ca2a))
+* created stepper models ([d221646](https://github.com/juntossomosmais/venice/commit/d2216460912a3fe52b6db42a9552768c0c2e3549))
+* updated stepper mock path ([27dd56e](https://github.com/juntossomosmais/venice/commit/27dd56ee86ed4987d6ed0e7fd3b7f030e73d6a74))
+
+
+
+
+
 # [0.4.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.3.0...@venice/core@0.4.0) (2020-04-24)
 
 

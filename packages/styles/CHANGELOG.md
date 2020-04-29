@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.4.0...@venice/styles@0.5.0) (2020-04-29)
+
+
+### Bug Fixes
+
+* aligments and spacings ([49909e3](https://github.com/juntossomosmais/venice/commit/49909e3ff32aa487400dd73bbd4d01a75c28473f))
+* aligments and spacings ([54fa34e](https://github.com/juntossomosmais/venice/commit/54fa34e166c012b684521ba36bb5e1c22db59d29))
+* contextual colors and margins ([4dcfb8d](https://github.com/juntossomosmais/venice/commit/4dcfb8dfb898039254e622e92a5fd569f638f185))
+* media query screen size ([3fa9c2b](https://github.com/juntossomosmais/venice/commit/3fa9c2b04bbdde966f2a05ce0a2831539d6e5792))
+* space rules ([8616699](https://github.com/juntossomosmais/venice/commit/8616699641586b67fc94be3e90ab372a8d3a5990))
+
+
+### Features
+
+* adapting rules ([20f6cdf](https://github.com/juntossomosmais/venice/commit/20f6cdfd60c19483b411931a4e95beec13eccbad))
+* added padding reset ([d126592](https://github.com/juntossomosmais/venice/commit/d1265928d1695ec81bcf1e8b2529156b376417b3))
+* added rules to step activate style ([c7514b5](https://github.com/juntossomosmais/venice/commit/c7514b5694917344aa5ad716f903fbb8e10ff913))
+* created stepper styles ([3eb0983](https://github.com/juntossomosmais/venice/commit/3eb09836264967d39d779a743b9f6a04a3a4e395))
+* remove unecessary calc rule ([a0054a4](https://github.com/juntossomosmais/venice/commit/a0054a463bb34082a66c944a450522a2e1ff8a2e))
+
+
+
+
+
 # [0.4.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.3.1...@venice/styles@0.4.0) (2020-04-24)
 
 
