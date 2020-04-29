@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import { IButton } from '@venice/core/models'
 import styles from '@venice/styles/components/Button.module.scss'
@@ -25,7 +25,7 @@ const ButtonComponent: React.FunctionComponent<CompProps &
   return <Wrapper {...rest}>{children}</Wrapper>
 }
 
-const Button: FC<IButtonProps> = ({
+const Button: React.FunctionComponent<IButtonProps> = ({
   children,
   color = 'default',
   endIcon,
