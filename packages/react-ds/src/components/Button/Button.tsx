@@ -35,21 +35,17 @@ const Button: FC<IButtonProps> = ({
   variant = 'filled',
   ...rest
 }: IButtonProps) => {
-  const setStyle = (
-    c: IButton['color'] | IButton['variant'] | IButton['size']
-  ) => (c ? `${styles[c]}` : '')
-
   return (
     <>
       <ButtonComponent
         tag={href ? 'a' : 'button'}
         role={href ? '' : 'button'}
         className={`
-            ${styles.btn}
-            ${setStyle(color)}
-            ${setStyle(variant)}
-            ${setStyle(size)}
-          `}
+          ${styles.btn}
+          ${styles[color]}
+          ${styles[variant]}
+          ${styles[size]}
+        `}
         {...rest}
       >
         {startIcon && (
