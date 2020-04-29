@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { IButton } from '@venice/core/models'
+import { IButton, IDynamicComponentProps } from '@venice/core/models'
 import styles from '@venice/styles/components/Button.module.scss'
 
 interface IButtonProps extends IButton {
@@ -12,11 +12,7 @@ interface IButtonProps extends IButton {
   startIcon?: React.ReactNode
 }
 
-interface CompProps {
-  tag: keyof JSX.IntrinsicElements
-}
-
-const ButtonComponent: React.FunctionComponent<CompProps &
+const ButtonComponent: React.FunctionComponent<IDynamicComponentProps &
   React.HTMLAttributes<HTMLOrSVGElement>> = ({
   tag: Wrapper = 'button',
   children,
