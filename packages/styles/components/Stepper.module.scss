@@ -85,6 +85,7 @@
   color: var(--gray-3);
   font: var(--typography-caption-font);
   letter-spacing: var(--typography-caption-letter);
+  margin-left: var(--space-xxs);
 }
 
 .active {
@@ -113,6 +114,7 @@
   @include above($screen-lg) {
     .title,
     .subtitle {
+      margin-left: 2px;
       margin-top: 0;
     }
 
