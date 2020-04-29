@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.2.6...@juntossomosmais/venice-vue@0.3.0) (2020-04-29)
+
+
+### Bug Fixes
+
+* stepper mock path ([79dc286](https://github.com/juntossomosmais/venice/commit/79dc2869f9aec7676a504827ae01df41caf8d790))
+
+
+### Features
+
+* added inline props to story ([f513c36](https://github.com/juntossomosmais/venice/commit/f513c36438f822162072b389db9aaecadf35e521))
+* added new tests ([244bb0b](https://github.com/juntossomosmais/venice/commit/244bb0ba859884f0f650adbe63000608c4722e8f))
+* added rules to step activate style ([c7514b5](https://github.com/juntossomosmais/venice/commit/c7514b5694917344aa5ad716f903fbb8e10ff913))
+* added stepper component ([8d09356](https://github.com/juntossomosmais/venice/commit/8d093565c8bcc0972e605acd537024ece1bf327a))
+* added testid ([c494894](https://github.com/juntossomosmais/venice/commit/c4948941902093ecca330232b7025e6d1ac2c111))
+* created new Stepper preview ([c6a49af](https://github.com/juntossomosmais/venice/commit/c6a49af2dd04df3d908e56f2e48dba1cfc40438a))
+* created stepper component ([b4b477a](https://github.com/juntossomosmais/venice/commit/b4b477aec337b6f5c11bd22ba380354118df30c2))
+* created stepper storie doc ([c70c84a](https://github.com/juntossomosmais/venice/commit/c70c84aa7d1182a34897a1bf5c8525ecc39eb596))
+* given name to conditions ([5ac2d82](https://github.com/juntossomosmais/venice/commit/5ac2d82bcb8ab169560aa4b9082c61aae9831aad))
+* given name to conditions ([629eef4](https://github.com/juntossomosmais/venice/commit/629eef4ac11dab4d3be1351a0500092ea30cfbf4))
+* remove stepper mock import ([dc239c5](https://github.com/juntossomosmais/venice/commit/dc239c584d08985bb612ea6c70f20866b9a0aa1d))
+* updated stepper mock path ([27dd56e](https://github.com/juntossomosmais/venice/commit/27dd56ee86ed4987d6ed0e7fd3b7f030e73d6a74))
+
+
+
+
+
 ## [0.2.6](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.2.5...@juntossomosmais/venice-vue@0.2.6) (2020-04-24)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue

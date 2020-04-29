@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.2.6...@juntossomosmais/venice-react@0.3.0) (2020-04-29)
+
+
+### Bug Fixes
+
+* stepper mock path ([0237e19](https://github.com/juntossomosmais/venice/commit/0237e19bd7bf9c8229082736f37bb34de4192f67))
+
+
+### Features
+
+* added new tests ([244bb0b](https://github.com/juntossomosmais/venice/commit/244bb0ba859884f0f650adbe63000608c4722e8f))
+* added rules to step activate style ([c7514b5](https://github.com/juntossomosmais/venice/commit/c7514b5694917344aa5ad716f903fbb8e10ff913))
+* added stepper component ([8d09356](https://github.com/juntossomosmais/venice/commit/8d093565c8bcc0972e605acd537024ece1bf327a))
+* added testid ([d941bc3](https://github.com/juntossomosmais/venice/commit/d941bc32e0caa3b05c0a5cf7b75a78a5bd491c72))
+* created new Stepper preview ([c6a49af](https://github.com/juntossomosmais/venice/commit/c6a49af2dd04df3d908e56f2e48dba1cfc40438a))
+* created stepper component ([b4b477a](https://github.com/juntossomosmais/venice/commit/b4b477aec337b6f5c11bd22ba380354118df30c2))
+* created stepper storie doc ([c70c84a](https://github.com/juntossomosmais/venice/commit/c70c84aa7d1182a34897a1bf5c8525ecc39eb596))
+* created stepper tests ([0a017c1](https://github.com/juntossomosmais/venice/commit/0a017c1b111054e0c8309227a8192bcd8882145f))
+* fill steppers with data ([f9c9a41](https://github.com/juntossomosmais/venice/commit/f9c9a414f064eda6f1705c2832e529a4eaa4a98f))
+* given name to conditions ([5ac2d82](https://github.com/juntossomosmais/venice/commit/5ac2d82bcb8ab169560aa4b9082c61aae9831aad))
+* given name to conditions ([629eef4](https://github.com/juntossomosmais/venice/commit/629eef4ac11dab4d3be1351a0500092ea30cfbf4))
+* removed proptypes and defaultvalues properties ([d8e3f46](https://github.com/juntossomosmais/venice/commit/d8e3f4664ec71fabad2ddf912c7d10b93d681532))
+* updated stepper mock path ([27dd56e](https://github.com/juntossomosmais/venice/commit/27dd56ee86ed4987d6ed0e7fd3b7f030e73d6a74))
+
+
+
+
+
 ## [0.2.6](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.2.5...@juntossomosmais/venice-react@0.2.6) (2020-04-24)
 
 **Note:** Version bump only for package @juntossomosmais/venice-react
