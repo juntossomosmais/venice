@@ -4,6 +4,7 @@
     :class="['btn', color, variant, size]"
     :href="href"
     :role="href ? '' : 'button'"
+    @click="$emit('click')"
   >
     <span :class="'startIcon'">
       <!-- @slot To add icon at the beginning -->
