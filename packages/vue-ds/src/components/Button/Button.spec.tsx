@@ -1,4 +1,6 @@
-import { render } from '@testing-library/vue'
+import { render, fireEvent } from '@testing-library/vue'
+import { mount } from '@vue/test-utils'
+
 import '@testing-library/jest-dom'
 
 import Button from './Button.vue'
@@ -111,5 +113,13 @@ describe('<Button />', () => {
   it('should be render element as <button> if not has an href', () => {
     const { container } = render(Button)
     expect(container.querySelector('button')).toBeInTheDocument()
+  })
+
+  it('should be call `click` when emit it', async () => {
+    const wrapper = mount(Button)
+    wrapper.vm.$emit('click')
+
+    await wrapper.vm.$nextTick()
+    expect(wrapper.emitted().click).toBeTruthy()
   })
 })
