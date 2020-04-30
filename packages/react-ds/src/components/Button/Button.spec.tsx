@@ -47,6 +47,25 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('text')
   })
 
+  it('should has "small" classname when prop size props is "small"', () => {
+    const { container } = render(<Button size="small">Send</Button>)
+    expect(container.firstChild).toHaveClass('small')
+  })
+
+  it('should has "startIcon" element when has startIcon prop', () => {
+    const { container } = render(<Button startIcon="←">Back</Button>)
+    expect(container.firstChild.firstChild).toContainHTML(
+      `<span class="startIcon">←</span>`
+    )
+  })
+
+  it('should has "endIcon" element when has endIcon prop', () => {
+    const { container } = render(<Button endIcon="→">Back</Button>)
+    expect(container.firstChild.lastChild).toContainHTML(
+      `<span class="endIcon">→</span>`
+    )
+  })
+
   it('should be render element as <a> if has an href', () => {
     const { container } = render(<Button href="href">Send</Button>)
     expect(container.querySelector('a')).toBeInTheDocument()

@@ -1,5 +1,5 @@
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
-import { withKnobs, boolean } from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs'
 
 import Button from './Button.vue'
 
@@ -12,11 +12,11 @@ You can add a `href` attr to use it as `<a>` element.
 ## Filled buttons
 
 <Preview>
-  <Story name="Filled" parameters={{ decorators: [withKnobs] }}>
+  <Story name="Filled" parameters={{ decorators: [withKnobs] }} inline={true}>
     {{
       components: { Button },
       template: `
-        <div>
+        <div class="row-items">
           <Button>Default</Button>
           <Button color="primary">Primary</Button>
           <Button color="secondary">Secondary</Button>
@@ -30,11 +30,11 @@ You can add a `href` attr to use it as `<a>` element.
 ## Outlined buttons
 
 <Preview>
-  <Story name="Outlined">
+  <Story name="Outlined" inline={true}>
     {{
       components: { Button },
       template: `
-        <div>
+        <div class="row-items">
           <Button variant="outlined">Default</Button>
           <Button color="primary" variant="outlined">
             Primary
@@ -54,11 +54,11 @@ You can add a `href` attr to use it as `<a>` element.
 ## Text buttons
 
 <Preview>
-  <Story name="Text">
+  <Story name="Text" inline={true}>
     {{
       components: { Button },
       template: `
-        <div>
+        <div class="row-items">
           <Button variant="text">Default</Button>
           <Button color="primary" variant="text">
             Primary
@@ -68,6 +68,60 @@ You can add a `href` attr to use it as `<a>` element.
           </Button>
           <Button disabled variant="text">
             Disabled
+          </Button>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Small buttons
+
+<Preview>
+  <Story name="Small" parameters={{ decorators: [withKnobs] }} inline={true}>
+    {{
+      components: { Button },
+      template: `
+        <div>
+          <div class="row-items">
+            <Button size="small">Default</Button>
+            <Button color="primary" size="small">Primary</Button>
+            <Button color="secondary" size="small">Secondary</Button>
+            <Button size="small" disabled>Disabled</Button>
+          </div>
+          <div class="row-items">
+            <Button variant="outlined" size="small">Default</Button>
+            <Button variant="outlined" color="primary" size="small">Primary</Button>
+            <Button variant="outlined" color="secondary" size="small">Secondary</Button>
+            <Button variant="outlined" size="small" disabled>Disabled</Button>
+          </div>
+          <div class="row-items">
+            <Button variant="text" size="small">Default</Button>
+            <Button variant="text" color="primary" size="small">Primary</Button>
+            <Button variant="text" color="secondary" size="small">Secondary</Button>
+            <Button variant="text" size="small" disabled>Disabled</Button>
+          </div>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## With Icons
+
+<Preview>
+  <Story name="With Icons" inline={true}>
+    {{
+      components: { Button },
+      template: `
+        <div class="row-items" style="display: flex">
+          <Button variant="outlined">
+            <template v-slot:startIcon>←</template>
+            With Icon
+          </Button>
+          <Button variant="outlined">
+            <template v-slot:endIcon>→</template>
+            With Icon
           </Button>
         </div>
       `,

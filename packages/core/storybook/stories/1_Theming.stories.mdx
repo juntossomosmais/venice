@@ -4,6 +4,16 @@ import { Meta } from '@storybook/addon-docs/blocks'
 
 # Theming
 
+To use a Roboto's font you need to import it:
+
+```html
+<link
+  href="fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+  rel="stylesheet"
+  type="text/css"
+/>
+```
+
 You can create your own theme, just override the variables in your stylesheet `:root`:
 
 ```css
@@ -20,7 +30,7 @@ You can create your own theme, just override the variables in your stylesheet `:
 
   --typography-panel-font: 900 38px/40px var(--font-family);
   --typography-panel-letter: 0;
-  --typography-title-font: 600 24px/28px var(--font-family);
+  --typography-title-font: 500 24px/28px var(--font-family);
   --typography-title-letter: -0.357143px;
   --typography-subheader-font: 400 16px/19px var(--font-family);
   --typography-subheader-letter: -0.228572px;
@@ -30,7 +40,7 @@ You can create your own theme, just override the variables in your stylesheet `:
   --typography-body2-letter: -0.2px;
   --typography-caption-font: 400 12px/14px var(--font-family);
   --typography-caption-letter: -0.171429px;
-  --typography-button-font: 900 16px/19px var(--font-family);
+  --typography-button-font: 500 16px/19px var(--font-family);
   --typography-button-letter: -0.228572px;
 
   --black: #111;
@@ -49,22 +59,25 @@ You can create your own theme, just override the variables in your stylesheet `:
   --red-1: #ba1e24;
   --red-2: #d0021b;
 
-  --default-color: var(--gray-3);
+  --default-color: var(--gray-4);
   --default-color-lighten: #5c5c5c;
   --default-color-contrast: var(--white);
-  --disabled-color: var(--gray-1);
-  --disabled-color-contrast: var(--gray-2);
+  --disabled-color: var(--gray-3);
+  --disabled-color-contrast: var(--gray-1);
   --primary-color: var(--orange-1);
   --primary-color-lighten: #ff9834;
   --primary-color-contrast: var(--white);
   --secondary-color: var(--blue-2);
   --secondary-color-lighten: #0090f5;
   --secondary-color-contrast: var(--white);
+  --success-color: var(--green-1);
+  --success-color-lighten: #8bde2f;
+  --success-color-contrast: var(--white);
   --danger-color: var(--red-2);
   --danger-color-lighten: #d32228;
   --danger-color-contrast: var(--white);
-  --text-color: var(--gray-3);
-  --text-color-lighten: var(--gray-2);
+  --text-color: var(--gray-4);
+  --text-color-lighten: var(--gray-3);
 
   --border-radius: 4px;
 
@@ -74,5 +87,7 @@ You can create your own theme, just override the variables in your stylesheet `:
   --zindex-100: 100;
   --zindex-1000: 1000;
   --zindex-overlay: 10000;
+
+  --transition-duration: 0.25s;
 }
 ```

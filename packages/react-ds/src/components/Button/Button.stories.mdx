@@ -1,5 +1,5 @@
 import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
-import { withKnobs, boolean } from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs'
 import Docs from '@venice/core/docs/Button.md'
 
 import Button from './Button'
@@ -12,7 +12,7 @@ import Button from './Button'
 
 <Preview>
   <Story name="Filled" parameters={{ decorators: [withKnobs] }}>
-    <div>
+    <div class="row-items">
       <Button>Default</Button>
       <Button color="primary">Primary</Button>
       <Button color="secondary">Secondary</Button>
@@ -25,7 +25,7 @@ import Button from './Button'
 
 <Preview>
   <Story name="Outlined">
-    <div>
+    <div class="row-items">
       <Button variant="outlined">Default</Button>
       <Button color="primary" variant="outlined">
         Primary
@@ -44,7 +44,7 @@ import Button from './Button'
 
 <Preview>
   <Story name="Text">
-    <div>
+    <div class="row-items">
       <Button variant="text">Default</Button>
       <Button color="primary" variant="text">
         Primary
@@ -55,6 +55,62 @@ import Button from './Button'
       <Button disabled variant="text">
         Disabled
       </Button>
+    </div>
+  </Story>
+</Preview>
+
+## Small buttons
+
+<Preview>
+  <Story name="Small">
+    <div>
+      <div class="row-items">
+        <Button size="small">Default</Button>
+        <Button color="primary" size="small">
+          Primary
+        </Button>
+        <Button color="secondary" size="small">
+          Secondary
+        </Button>
+        <Button size="small" disabled>
+          Disabled
+        </Button>
+      </div>
+      <div class="row-items">
+        <Button size="small" variant="outlined">Default</Button>
+        <Button color="primary" variant="outlined" size="small">
+          Primary
+        </Button>
+        <Button color="secondary" variant="outlined" size="small">
+          Secondary
+        </Button>
+        <Button size="small" variant="outlined" disabled>
+          Disabled
+        </Button>
+      </div>
+      <div class="row-items">
+        <Button size="small" variant="text">Default</Button>
+        <Button color="primary" variant="text" size="small">
+          Primary
+        </Button>
+        <Button color="secondary" variant="text" size="small">
+          Secondary
+        </Button>
+        <Button size="small" variant="text" disabled>
+          Disabled
+        </Button>
+      </div>
+    </div>
+  </Story>
+</Preview>
+
+## With Icons
+
+<Preview>
+  <Story name="With Icons">
+    <div class="row-items">
+      <Button startIcon="←" variant="outlined">With Icon</Button>
+      <Button endIcon="→" variant="outlined">With Icon</Button>
     </div>
   </Story>
 </Preview>

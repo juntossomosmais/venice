@@ -1,4 +1,6 @@
-import { render } from '@testing-library/vue'
+import { render, fireEvent } from '@testing-library/vue'
+import { mount } from '@vue/test-utils'
+
 import '@testing-library/jest-dom'
 
 import Button from './Button.vue'
@@ -68,6 +70,37 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('text')
   })
 
+  it('should has "small" classname when prop size props is "small"', () => {
+    const { container } = render(Button, {
+      props: {
+        size: 'small',
+      },
+    })
+    expect(container.firstChild).toHaveClass('small')
+  })
+
+  it('should has "startIcon" element when has startIcon prop', () => {
+    const { container } = render(Button, {
+      slots: {
+        startIcon: '←',
+      },
+    })
+    expect(container.firstChild?.firstChild).toContainHTML(
+      `<span class="startIcon">←</span>`
+    )
+  })
+
+  it('should has "endIcon" element when has endIcon prop', () => {
+    const { container } = render(Button, {
+      slots: {
+        endIcon: '→',
+      },
+    })
+    expect(container.firstChild?.lastChild).toContainHTML(
+      `<span class="endIcon">→</span>`
+    )
+  })
+
   it('should be render element as <a> if has an href', () => {
     const { container } = render(Button, {
       props: {
@@ -80,5 +113,13 @@ describe('<Button />', () => {
   it('should be render element as <button> if not has an href', () => {
     const { container } = render(Button)
     expect(container.querySelector('button')).toBeInTheDocument()
+  })
+
+  it('should be call `click` when emit it', async () => {
+    const wrapper = mount(Button)
+    wrapper.vm.$emit('click')
+
+    await wrapper.vm.$nextTick()
+    expect(wrapper.emitted().click).toBeTruthy()
   })
 })
