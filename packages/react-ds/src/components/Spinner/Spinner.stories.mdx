@@ -1,5 +1,6 @@
 import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
-import { withKnobs, boolean } from '@storybook/addon-knobs'
+import { withKnobs, number } from '@storybook/addon-knobs'
+import { knobSpinnerSize } from '@venice/core/storybook/knobs'
 import Docs from '@venice/core/docs/Spinner.md'
 
 import Spinner from './Spinner'
@@ -11,9 +12,9 @@ import Spinner from './Spinner'
 <Preview>
   <Story name="Indeterminated" parameters={{ decorators: [withKnobs] }}>
     <div class="row-items">
-      <Spinner></Spinner>
-      <Spinner color="primary"></Spinner>
-      <Spinner color="secondary"></Spinner>
+      <Spinner size={knobSpinnerSize()}></Spinner>
+      <Spinner size={knobSpinnerSize()} color="primary"></Spinner>
+      <Spinner size={knobSpinnerSize()} color="secondary"></Spinner>
     </div>
   </Story>
 </Preview>
