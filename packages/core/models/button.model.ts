@@ -7,6 +7,6 @@ export interface IButton {
   href?: string
   /** 'medium' | 'small' */
   size?: 'medium' | 'small'
-  /** 'fill' | 'outline' | 'text' */
+  /** 'filled' | 'outlined' | 'text' */
   variant?: 'filled' | 'outlined' | 'text'
 }
