@@ -1,5 +1,4 @@
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
-import { withKnobs, boolean } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
 import Button from './Button.vue'
@@ -13,7 +12,7 @@ You can add a `href` attr to use it as `<a>` element.
 ## Filled buttons
 
 <Preview>
-  <Story name="Filled" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+  <Story name="Filled" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button },
       template: `
@@ -31,7 +30,7 @@ You can add a `href` attr to use it as `<a>` element.
 ## Outlined buttons
 
 <Preview>
-  <Story name="Outlined" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+  <Story name="Outlined" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button },
       template: `
@@ -55,7 +54,7 @@ You can add a `href` attr to use it as `<a>` element.
 ## Text buttons
 
 <Preview>
-  <Story name="Text" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+  <Story name="Text" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button },
       template: `
@@ -79,7 +78,7 @@ You can add a `href` attr to use it as `<a>` element.
 ## Small buttons
 
 <Preview>
-  <Story name="Small" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+  <Story name="Small" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button },
       template: `
@@ -111,7 +110,7 @@ You can add a `href` attr to use it as `<a>` element.
 ## With Icons
 
 <Preview>
-  <Story name="With Icons" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+  <Story name="With Icons" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Button },
       template: `
