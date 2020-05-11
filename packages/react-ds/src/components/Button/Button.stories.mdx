@@ -1,5 +1,6 @@
 import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
 import { withKnobs, boolean } from '@storybook/addon-knobs'
+import { withA11y } from '@storybook/addon-a11y'
 import Docs from '@venice/core/docs/Button.md'
 
 import Button from './Button'
@@ -11,7 +12,7 @@ import Button from './Button'
 ## Filled buttons
 
 <Preview>
-  <Story name="Filled" parameters={{ decorators: [withKnobs] }}>
+  <Story name="Filled" parameters={{ decorators: [withKnobs,withA11y] }}>
     <div class="row-items">
       <Button>Default</Button>
       <Button color="primary">Primary</Button>
@@ -24,7 +25,7 @@ import Button from './Button'
 ## Outlined buttons
 
 <Preview>
-  <Story name="Outlined">
+  <Story name="Outlined" parameters={{ decorators: [withKnobs,withA11y] }}>
     <div class="row-items">
       <Button variant="outlined">Default</Button>
       <Button color="primary" variant="outlined">
@@ -43,7 +44,7 @@ import Button from './Button'
 ## Text buttons
 
 <Preview>
-  <Story name="Text">
+  <Story name="Text" parameters={{ decorators: [withKnobs,withA11y] }}>
     <div class="row-items">
       <Button variant="text">Default</Button>
       <Button color="primary" variant="text">
@@ -62,7 +63,7 @@ import Button from './Button'
 ## Small buttons
 
 <Preview>
-  <Story name="Small">
+  <Story name="Small" parameters={{ decorators: [withKnobs,withA11y] }}>
     <div>
       <div class="row-items">
         <Button size="small">Default</Button>
@@ -107,7 +108,7 @@ import Button from './Button'
 ## With Icons
 
 <Preview>
-  <Story name="With Icons">
+  <Story name="With Icons" parameters={{ decorators: [withKnobs,withA11y] }}>
     <div class="row-items">
       <Button startIcon="←" variant="outlined">With Icon</Button>
       <Button endIcon="→" variant="outlined">With Icon</Button>

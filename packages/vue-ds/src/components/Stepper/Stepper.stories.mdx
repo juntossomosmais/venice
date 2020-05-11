@@ -1,4 +1,5 @@
 import {  Description, Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks'
+import { withA11y } from '@storybook/addon-a11y'
 
 import Docs from '@venice/core/docs/Stepper.md'
 
@@ -13,7 +14,7 @@ Steppers track progress through linear workflows.
 ## First Step
 
 <Preview>
-  <Story name="First Step" inline={true}>
+  <Story name="First Step" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Stepper },
       template: `<Stepper :steps="[
@@ -30,7 +31,7 @@ Steppers track progress through linear workflows.
 ## Step 3 of 5
 
 <Preview>
-  <Story name="Step 3 of 5" inline={true}>
+  <Story name="Step 3 of 5" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Stepper },
       template: `<Stepper :steps="[
@@ -47,7 +48,7 @@ Steppers track progress through linear workflows.
 ## Last Step
 
 <Preview>
-  <Story name="Last Step" inline={true}>
+  <Story name="Last Step" parameters={{ decorators: [withA11y] }} inline={true}>
     {{
       components: { Stepper },
       template: `<Stepper :steps="[
