@@ -1,0 +1,23 @@
+import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
+import { withKnobs, boolean } from '@storybook/addon-knobs'
+import Docs from '@venice/core/docs/Spinner.md'
+
+import Spinner from './Spinner'
+
+<Meta title="Components|Spinners" component={Spinner} />
+
+<Description>{Docs}</Description>
+
+<Preview>
+  <Story name="Indeterminated" parameters={{ decorators: [withKnobs] }}>
+    <div class="row-items">
+      <Spinner></Spinner>
+      <Spinner color="primary"></Spinner>
+      <Spinner color="secondary"></Spinner>
+    </div>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Spinner} />
