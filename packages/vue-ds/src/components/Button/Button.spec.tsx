@@ -1,4 +1,4 @@
-import { render, fireEvent } from '@testing-library/vue'
+import { render } from '@testing-library/vue'
 import { mount } from '@vue/test-utils'
 
 import '@testing-library/jest-dom'
