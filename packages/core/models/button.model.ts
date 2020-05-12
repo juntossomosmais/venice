@@ -1,7 +1,9 @@
 export interface IButton {
   /**  'default' | 'primary' | 'secondary' */
   color?: 'default' | 'primary' | 'secondary'
-  /** true | 'false */
+  /** boolean */
+  isLoading?: boolean
+  /** boolean */
   disabled?: boolean
   /** href <a> */
   href?: string
