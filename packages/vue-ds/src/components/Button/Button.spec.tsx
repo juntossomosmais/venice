@@ -85,7 +85,7 @@ describe('<Button />', () => {
         startIcon: '←',
       },
     })
-    expect(container.firstChild?.firstChild).toContainHTML(
+    expect(container.firstChild).toContainHTML(
       `<span class="startIcon">←</span>`
     )
   })
@@ -96,9 +96,7 @@ describe('<Button />', () => {
         endIcon: '→',
       },
     })
-    expect(container.firstChild?.lastChild).toContainHTML(
-      `<span class="endIcon">→</span>`
-    )
+    expect(container.firstChild).toContainHTML(`<span class="endIcon">→</span>`)
   })
 
   it('should be render element as <a> if has an href', () => {
@@ -121,5 +119,14 @@ describe('<Button />', () => {
 
     await wrapper.vm.$nextTick()
     expect(wrapper.emitted().click).toBeTruthy()
+  })
+
+  it('should has "isLoading" classname when has "isLoading" prop', () => {
+    const { container } = render(Button, {
+      props: {
+        isLoading: true,
+      },
+    })
+    expect(container.firstChild).toHaveClass('isLoading')
   })
 })
