@@ -9,8 +9,8 @@
   >
     <Spinner
       v-if="isLoading"
-      :color="variant === 'filled' ? `${color}-contrast` : color"
-      :size="size === 'small' ? 16 : 24"
+      :color="spinnerColor"
+      :size="spinnerSize"
       class="loading"
     />
     <span class="startIcon">
@@ -55,6 +55,14 @@ export default class Button extends Vue {
       this.size,
       this.isLoading ? 'isLoading' : '',
     ]
+  }
+
+  get spinnerColor() {
+    return this.variant === 'filled' ? `${this.color}-contrast` : this.color
+  }
+
+  get spinnerSize() {
+    return this.size === 'small' ? 16 : 24
   }
 }
 </script>
