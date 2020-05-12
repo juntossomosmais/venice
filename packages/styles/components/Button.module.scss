@@ -12,6 +12,7 @@
   font: var(--typography-button-font);
   justify-content: center;
   letter-spacing: var(--typography-button-letter);
+  min-width: var(--space-xlg);
   overflow: hidden;
   position: relative;
   text-decoration: none;
@@ -77,11 +78,21 @@
   }
 }
 
+.isLoading {
+  cursor: default;
+
+  .children,
+  .startIcon,
+  .endIcon {
+    opacity: 0;
+  }
+}
+
 .default {
   &.text {
     color: var(--default-color);
 
-    &:not([disabled]):hover {
+    &:not([disabled]):not(.isLoading):hover {
       &::before {
         background-color: var(--default-color-lighten);
         opacity: 0.1;
@@ -93,7 +104,7 @@
     border-color: var(--default-color);
     color: var(--default-color);
 
-    &:not([disabled]):hover {
+    &:not([disabled]):not(.isLoading):hover {
       &::before {
         background-color: var(--default-color-lighten);
         opacity: 0.1;
@@ -105,7 +116,7 @@
     background-color: var(--default-color);
     color: var(--default-color-contrast);
 
-    &:not([disabled]):hover {
+    &:not([disabled]):not(.isLoading):hover {
       &::before {
         background-color: var(--default-color-lighten);
         opacity: 1;
@@ -118,7 +129,7 @@
   &.text {
     color: var(--primary-color);
 
-    &:not([disabled]):hover {
+    &:not([disabled]):not(.isLoading):hover {
       &::before {
         background-color: var(--primary-color-lighten);
         opacity: 0.1;
@@ -130,7 +141,7 @@
     border-color: var(--primary-color);
     color: var(--primary-color);
 
-    &:not([disabled]):hover {
+    &:not([disabled]):not(.isLoading):hover {
       &::before {
         background-color: var(--primary-color-lighten);
         opacity: 0.1;
@@ -142,7 +153,7 @@
     background-color: var(--primary-color);
     color: var(--primary-color-contrast);
 
-    &:not([disabled]):hover {
+    &:not([disabled]):not(.isLoading):hover {
       &::before {
         background-color: var(--primary-color-lighten);
         opacity: 1;
@@ -155,7 +166,7 @@
   &.text {
     color: var(--secondary-color);
 
-    &:not([disabled]):hover {
+    &:not([disabled]):not(.isLoading):hover {
       &::before {
         background-color: var(--secondary-color-lighten);
         opacity: 0.1;
@@ -167,7 +178,7 @@
     border-color: var(--secondary-color);
     color: var(--secondary-color);
 
-    &:not([disabled]):hover {
+    &:not([disabled]):not(.isLoading):hover {
       &::before {
         background-color: var(--secondary-color-lighten);
         opacity: 0.1;
@@ -179,7 +190,7 @@
     background-color: var(--secondary-color);
     color: var(--secondary-color-contrast);
 
-    &:not([disabled]):hover {
+    &:not([disabled]):not(.isLoading):hover {
       &::before {
         background-color: var(--secondary-color-lighten);
         opacity: 1;
@@ -206,4 +217,10 @@
   .children {
     font-size: 1em;
   }
+}
+
+.loading {
+  display: block;
+  position: absolute;
+  z-index: calc(var(--zindex-5) + 1);
 }
