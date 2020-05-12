@@ -54,14 +54,14 @@ describe('<Button />', () => {
 
   it('should has "startIcon" element when has startIcon prop', () => {
     const { container } = render(<Button startIcon="←">Back</Button>)
-    expect(container.firstChild.firstChild).toContainHTML(
+    expect(container.firstChild?.firstChild).toContainHTML(
       `<span class="startIcon">←</span>`
     )
   })
 
   it('should has "endIcon" element when has endIcon prop', () => {
     const { container } = render(<Button endIcon="→">Back</Button>)
-    expect(container.firstChild.lastChild).toContainHTML(
+    expect(container.firstChild?.lastChild).toContainHTML(
       `<span class="endIcon">→</span>`
     )
   })
@@ -74,5 +74,10 @@ describe('<Button />', () => {
   it('should be render element as <button> if not has an href', () => {
     const { container } = render(<Button>Send</Button>)
     expect(container.querySelector('button')).toBeInTheDocument()
+  })
+
+  it('should has "isLoading" classname when has "isLoading" prop', () => {
+    const { container } = render(<Button isLoading={true}>Loading</Button>)
+    expect(container.firstChild).toHaveClass('isLoading')
   })
 })
