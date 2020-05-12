@@ -1,53 +1,66 @@
 @import '~@venice/styles/core';
 
+$rotation: 270;
+$dashoffset: 180;
+$animation-time: 1.2s;
+
 .spinner {
   @include reset();
 
-  animation: loadingspin 0.6s linear infinite;
-  border: 0.125em solid transparent;
-  border-color: transparent;
-  border-radius: 50%;
-  pointer-events: none;
+  animation: rotation $animation-time linear infinite;
+}
+
+.circle {
+  animation: turn $animation-time ease-in-out infinite;
+  stroke-dasharray: $dashoffset;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-width: 6;
+  transform-origin: center;
 }
 
 .default {
-  border-left-color: var(--default-color);
-  border-right-color: var(--default-color);
-  border-top-color: var(--default-color);
+  stroke: var(--default-color);
 }
 
 .default-contrast {
-  border-left-color: var(--default-color-contrast);
-  border-right-color: var(--default-color-contrast);
-  border-top-color: var(--default-color-contrast);
+  stroke: var(--default-color-contrast);
 }
 
 .primary {
-  border-left-color: var(--primary-color);
-  border-right-color: var(--primary-color);
-  border-top-color: var(--primary-color);
+  stroke: var(--primary-color);
 }
 
 .primary-contrast {
-  border-left-color: var(--primary-color-contrast);
-  border-right-color: var(--primary-color-contrast);
-  border-top-color: var(--primary-color-contrast);
+  stroke: var(--primary-color-contrast);
 }
 
 .secondary {
-  border-left-color: var(--secondary-color);
-  border-right-color: var(--secondary-color);
-  border-top-color: var(--secondary-color);
+  stroke: var(--secondary-color);
 }
 
 .secondary-contrast {
-  border-left-color: var(--secondary-color-contrast);
-  border-right-color: var(--secondary-color-contrast);
-  border-top-color: var(--secondary-color-contrast);
+  stroke: var(--secondary-color-contrast);
 }
 
-@keyframes loadingspin {
+@keyframes rotation {
   100% {
-    transform: rotate(360deg);
+    transform: rotate(#{$rotation}deg);
+  }
+}
+
+@keyframes turn {
+  0% {
+    stroke-dashoffset: $dashoffset;
+  }
+
+  50% {
+    stroke-dashoffset: ($dashoffset / 4);
+    transform: rotate(#{$rotation / 2}deg);
+  }
+
+  100% {
+    stroke-dashoffset: $dashoffset;
+    transform: rotate(#{$rotation * 1.65}deg);
   }
 }

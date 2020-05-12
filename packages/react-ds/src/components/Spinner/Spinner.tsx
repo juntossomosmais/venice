@@ -15,7 +15,7 @@ const Spinner = ({
   ...rest
 }: ISpinnerProps) => {
   return (
-    <div
+    <svg
       className={`
       ${styles.spinner}
       ${styles[color]}
@@ -28,8 +28,21 @@ const Spinner = ({
       }}
       role="progressbar"
       aria-busy="true"
+      viewBox="0 0 66 66"
       {...rest}
-    ></div>
+    >
+      <circle
+        className={`
+          ${styles.circle}
+        `}
+        fill="none"
+        strokeWidth="6"
+        strokeLinecap="round"
+        cx="33"
+        cy="33"
+        r="30"
+      ></circle>
+    </svg>
   )
 }
 

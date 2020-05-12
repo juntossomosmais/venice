@@ -1,10 +1,21 @@
 <template>
-  <div
+  <svg
     :class="['spinner', color]"
     :style="{ height: `${size}px`, width: `${size}px` }"
     role="progressbar"
     aria-busy="true"
-  ></div>
+    viewBox="0 0 66 66"
+  >
+    <circle
+      :class="['circle']"
+      fill="none"
+      strokeWidth="6"
+      strokeLinecap="round"
+      cx="33"
+      cy="33"
+      r="30"
+    ></circle>
+  </svg>
 </template>
 
 <script lang="ts">
