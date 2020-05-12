@@ -54,14 +54,14 @@ describe('<Button />', () => {
 
   it('should has "startIcon" element when has startIcon prop', () => {
     const { container } = render(<Button startIcon="←">Back</Button>)
-    expect(container.firstChild?.firstChild).toContainHTML(
+    expect(container.firstChild.firstChild).toContainHTML(
       `<span class="startIcon">←</span>`
     )
   })
 
   it('should has "endIcon" element when has endIcon prop', () => {
     const { container } = render(<Button endIcon="→">Back</Button>)
-    expect(container.firstChild?.lastChild).toContainHTML(
+    expect(container.firstChild.lastChild).toContainHTML(
       `<span class="endIcon">→</span>`
     )
   })
