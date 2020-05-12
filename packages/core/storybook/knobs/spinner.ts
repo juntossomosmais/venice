@@ -1,3 +1,3 @@
 import { number } from '@storybook/addon-knobs'
 
-export const knobSpinnerSize = () => number('Size', 36)
+export const knobSpinnerSize = () => number('size', 36)
