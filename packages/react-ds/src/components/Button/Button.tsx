@@ -18,7 +18,7 @@ interface IButtonProps extends IButton {
 
 const ButtonComponent: React.FunctionComponent<IDynamicComponentProps &
   React.HTMLAttributes<HTMLOrSVGElement>> = ({
-  tag: Wrapper = 'button',
+  as: Wrapper = 'button',
   children,
   ...rest
 }) => {
@@ -40,7 +40,7 @@ const Button: React.FunctionComponent<IButtonProps> = ({
   return (
     <>
       <ButtonComponent
-        tag={href ? 'a' : 'button'}
+        as={href ? 'a' : 'button'}
         role={href ? '' : 'button'}
         aria-busy={isLoading}
         className={`

@@ -1,3 +1,3 @@
 export interface IDynamicComponentProps {
-  tag: keyof JSX.IntrinsicElements
+  as: keyof JSX.IntrinsicElements
 }
