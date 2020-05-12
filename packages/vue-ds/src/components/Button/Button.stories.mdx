@@ -142,14 +142,18 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
         },
       },
       template: `
-        <div class="row-items" style="display: flex">
+        <div class="row-items" style="display: flex; align-items: center">
           <Button :isLoading="isLoading" variant="outlined">
             <template v-slot:startIcon>←</template>
-            With Icon
+            With icon
           </Button>
           <Button :isLoading="isLoading" variant="outlined">
             <template v-slot:endIcon>→</template>
-            With Icon
+            With icon
+          </Button>
+          <Button :isLoading="isLoading" size="small">
+            <template v-slot:startIcon><span>←</span></template>
+            With icon and tag
           </Button>
         </div>
       `,
