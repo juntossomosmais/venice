@@ -129,4 +129,13 @@ describe('<Button />', () => {
     })
     expect(container.firstChild).toHaveClass('isLoading')
   })
+
+  it('should has "Spinner" component when has "isLoading" prop', () => {
+    const { container } = render(Button, {
+      props: {
+        isLoading: true,
+      },
+    })
+    expect(container.querySelector('.loading')).toBeInTheDocument()
+  })
 })
