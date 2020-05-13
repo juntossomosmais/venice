@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://github.com/juntossomosmais/venice/compare/@venice/core@0.7.0...@venice/core@0.7.1) (2020-05-13)
+
+**Note:** Version bump only for package @venice/core
+
+
+
+
+
 # [0.7.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.6.0...@venice/core@0.7.0) (2020-05-13)
 
 

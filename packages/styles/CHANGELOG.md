@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.7.0...@venice/styles@0.7.1) (2020-05-13)
+
+
+### Bug Fixes
+
+* **button:** fix render of hover on safari ([cb1466d](https://github.com/juntossomosmais/venice/commit/cb1466db0346752a95dd3eb05f509d41aae2dd2c))
+
+
+
+
+
 # [0.7.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.6.0...@venice/styles@0.7.0) (2020-05-13)
 
 
