@@ -1,5 +1,6 @@
 <h1 align="center">venice 🎨</h1>
 <p>
+  <img alt="Release" src="https://img.shields.io/github/v/release/juntossomosmais/venice" />
   <a href="https://juntossomosmais.github.io/venice" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
