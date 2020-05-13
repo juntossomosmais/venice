@@ -21,6 +21,7 @@
   will-change: border-color;
 
   &::before {
+    border-radius: var(--space-lg);
     bottom: 0;
     content: '';
     left: 0;
