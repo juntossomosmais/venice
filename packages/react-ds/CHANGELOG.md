@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.4.0...@juntossomosmais/venice-react@0.5.0) (2020-05-13)
+
+
+### Features
+
+* **button:** add loading state ([344c51c](https://github.com/juntossomosmais/venice/commit/344c51c8b389ff518c1f9ac5c6ee9d2433917707))
+* **spinner:** add contrast colors ([3ef953e](https://github.com/juntossomosmais/venice/commit/3ef953ef4f16cd4db6cc233cc165b4588553f344))
+* **spinner:** change to svg and improve animation ([1f3b523](https://github.com/juntossomosmais/venice/commit/1f3b5238509921af36513bf5b81b981962e54721))
+* add checker acessibility to story ([4d980f8](https://github.com/juntossomosmais/venice/commit/4d980f8a579ed6423c8f3a4c0a43955042eafad1))
+* add spinner component ([d9f1a4a](https://github.com/juntossomosmais/venice/commit/d9f1a4ae7edcdf0dddf396f2b4fd12f16f6b0369))
+* use knobs to spinner ([91945b6](https://github.com/juntossomosmais/venice/commit/91945b6257715d8ef4b43fc216c4e127975fa482))
+
+
+
+
+
 # [0.4.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.3.0...@juntossomosmais/venice-react@0.4.0) (2020-04-30)
 
 

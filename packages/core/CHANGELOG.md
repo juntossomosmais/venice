@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.6.0...@venice/core@0.7.0) (2020-05-13)
+
+
+### Features
+
+* **button:** add isLoading to interface ([7c9c06d](https://github.com/juntossomosmais/venice/commit/7c9c06d1e56c4d5f9aceaf7ea8b994b04a40281c))
+* **button:** add knob to test loading on button ([c4fee5e](https://github.com/juntossomosmais/venice/commit/c4fee5e332d6ec9083b6eb115c2f0dd0c7a8393e))
+* **spinner:** add contrast colors ([794668b](https://github.com/juntossomosmais/venice/commit/794668b1f06cc1d271df1ac64c1eaf47de3f36d3))
+* add interface to spinner ([fd7c048](https://github.com/juntossomosmais/venice/commit/fd7c0487a8642b57d667fd626901714c8d8bc4b1))
+* add knob to spinner ([6a58927](https://github.com/juntossomosmais/venice/commit/6a58927aa3f1c8949cd50c0ac74f6dd413a4e1c3))
+* adding font values on typography story ([08a0d34](https://github.com/juntossomosmais/venice/commit/08a0d348edb8f3a74d978b639ddaaff79707d2e1))
+
+
+
+
+
 # [0.6.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.5.0...@venice/core@0.6.0) (2020-04-30)
 
 

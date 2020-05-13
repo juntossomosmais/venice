@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.6.0...@venice/styles@0.7.0) (2020-05-13)
+
+
+### Features
+
+* **button:** add loading styles ([07cc8b5](https://github.com/juntossomosmais/venice/commit/07cc8b5ebb83c8ac9d9f8d91b2623afacf8f9abe))
+* **spinner:** add contrast colors ([3ef953e](https://github.com/juntossomosmais/venice/commit/3ef953ef4f16cd4db6cc233cc165b4588553f344))
+* **spinner:** change to svg and improve animation ([1f3b523](https://github.com/juntossomosmais/venice/commit/1f3b5238509921af36513bf5b81b981962e54721))
+* add spinner component ([d9f1a4a](https://github.com/juntossomosmais/venice/commit/d9f1a4ae7edcdf0dddf396f2b4fd12f16f6b0369))
+
+
+
+
+
 # [0.6.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.5.0...@venice/styles@0.6.0) (2020-04-30)
 
 

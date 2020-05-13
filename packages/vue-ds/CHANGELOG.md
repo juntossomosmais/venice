@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.4.0...@juntossomosmais/venice-vue@0.5.0) (2020-05-13)
+
+
+### Features
+
+* **button:** add loading state ([e544a2f](https://github.com/juntossomosmais/venice/commit/e544a2f9a2b79daaa84bb0bedb973bcbcadd2fc8))
+* **spinner:** add component ([f569f46](https://github.com/juntossomosmais/venice/commit/f569f461d36d24c9093582ce13c961a684cc274a))
+* **spinner:** change to svg and improve animation ([1f3b523](https://github.com/juntossomosmais/venice/commit/1f3b5238509921af36513bf5b81b981962e54721))
+* add checker acessibility to story ([4d980f8](https://github.com/juntossomosmais/venice/commit/4d980f8a579ed6423c8f3a4c0a43955042eafad1))
+
+
+
+
+
 # [0.4.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.3.0...@juntossomosmais/venice-vue@0.4.0) (2020-04-30)
 
 
