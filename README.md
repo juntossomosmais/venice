@@ -140,8 +140,7 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 ## 📝 License
 
-Copyright © 2020 [@juntossomosmais](https://github.com/juntossomosmais).<br />
-This project is [MIT](license.md) licensed.
+Copyright © 2020 [@juntossomosmais](https://github.com/juntossomosmais)
 
 ---
 
