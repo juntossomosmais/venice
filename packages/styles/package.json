@@ -1,7 +1,6 @@
 {
   "name": "@venice/styles",
   "version": "0.7.1",
-  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "rollup -c -w",

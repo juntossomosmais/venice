@@ -1,7 +1,6 @@
 {
   "name": "@venice/core",
   "version": "0.7.1",
-  "license": "MIT",
   "main": "index.ts",
   "private": true,
   "devDependencies": {
