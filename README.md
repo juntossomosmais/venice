@@ -129,6 +129,7 @@ All logical of Vue components, Storybook's presentation and build configs need t
 - Website: https://www.juntossomosmais.com.br
 - Github: [@juntossomosmais](https://github.com/juntossomosmais)
 - LinkedIn: [@juntos-somos-mais](https://linkedin.com/in/juntos-somos-mais)
+- Medium: https://medium.com/juntos-somos-mais
 
 ## 🤝 Contributing
 
