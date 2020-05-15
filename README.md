@@ -72,37 +72,37 @@ import { IButton } from '@venice/core/models'
 
 ## Commands
 
-### Install
+#### Install
 
 ```sh
 yarn install
 ```
 
-### Usage
+#### Usage
 
 ```sh
 yarn start
 ```
 
-### Build library
+#### Build library
 
 ```sh
 yarn build
 ```
 
-### Publish library
+#### Publish library
 
 ```sh
 yarn publish
 ```
 
-### Deploy Storybook on GH Pages
+#### Deploy Storybook on GH Pages
 
 ```sh
 yarn deploy:storybook
 ```
 
-### Run tests
+#### Run tests
 
 ```sh
 yarn test
