@@ -1,4 +1,4 @@
-<h1 align="center">Venice Design System 🎨</h1>
+<h1 align="center"><img src="https://user-images.githubusercontent.com/3603793/82264068-9bd80580-993a-11ea-9715-41de3c11a8e8.png" alt="Venice Design System" /></h1>
 <p align="center">
   <img
     alt="Build"
