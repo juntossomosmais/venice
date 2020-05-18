@@ -1,13 +1,16 @@
 <h1 align="center">Venice Design System 🎨</h1>
 <p align="center">
-  <img alt="Release" src="https://img.shields.io/github/v/release/juntossomosmais/venice" />
+  <img alt="Build" src="https://img.shields.io/github/workflow/status/juntossomosmais/venice/Node.js CI" />
+  <a href="https://github.com/juntossomosmais/venice/releases">
+    <img alt="Release" src="https://img.shields.io/github/package-json/v/juntossomosmais/venice" />
+  </a>
   <a href="https://juntossomosmais.github.io/venice" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://lerna.js.org/">
     <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="Maintained with Lerna" />
   </a>
-  <a href="https://github.com/carbon-design-system/carbon/blob/master/LICENSE">
+  <a href="https://github.com/juntossomosmais/venice/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg" alt="Venice is released under the Apache-2.0 license" />
   </a>
   <a href="https://github.com/juntossomosmais/venice/graphs/contributors" target="_blank">
