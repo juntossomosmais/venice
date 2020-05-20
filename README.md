@@ -84,7 +84,7 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent com
 
 ### React
 
-```sh
+```js
 import styles from '@venice/styles/components/Button.module.scss'
 
 <button className={styles.btn}></button>
