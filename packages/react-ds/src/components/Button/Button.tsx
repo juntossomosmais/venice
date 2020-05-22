@@ -31,9 +31,10 @@ const Button: React.FunctionComponent<IButtonProps> = ({
   color = 'default',
   endIcon,
   href,
+  isLoading = false,
+  shape = 'round-square',
   size = 'medium',
   startIcon,
-  isLoading = false,
   variant = 'filled',
   ...rest
 }: IButtonProps) => {
@@ -48,6 +49,7 @@ const Button: React.FunctionComponent<IButtonProps> = ({
           ${styles[color]}
           ${styles[variant]}
           ${styles[size]}
+          ${styles[shape]}
           ${isLoading ? styles.isLoading : ''}
           ${className}
         `}
