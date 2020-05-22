@@ -77,36 +77,36 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('circle')
   })
 
-  it('should have "startIcon" element when has startIcon prop', () => {
+  it('should have "startIcon" element when has "startIcon prop"', () => {
     const { container } = render(<Button startIcon="←">Back</Button>)
     expect(container.firstChild.firstChild).toContainHTML(
       `<span class="startIcon">←</span>`
     )
   })
 
-  it('should have "endIcon" element when has endIcon prop', () => {
+  it('should have "endIcon" element when has "endIcon prop"', () => {
     const { container } = render(<Button endIcon="→">Back</Button>)
     expect(container.firstChild.lastChild).toContainHTML(
       `<span class="endIcon">→</span>`
     )
   })
 
-  it('should be render element as <a> if has an href', () => {
+  it('should be render element as <a> if has href', () => {
     const { container } = render(<Button href="href">Send</Button>)
     expect(container.querySelector('a')).toBeInTheDocument()
   })
 
-  it('should be render element as <button> if not has an href', () => {
+  it('should be render element as <button> if not has href', () => {
     const { container } = render(<Button>Send</Button>)
     expect(container.querySelector('button')).toBeInTheDocument()
   })
 
-  it('should have "isLoading" classname when has "isLoading" prop', () => {
+  it('should have "isLoading" classname when has "isLoading prop"', () => {
     const { container } = render(<Button isLoading={true}>Loading</Button>)
     expect(container.firstChild).toHaveClass('isLoading')
   })
 
-  it('should have "Spinner" component when has "isLoading" prop', () => {
+  it('should have "Spinner" component when has "isLoading prop"', () => {
     const { container } = render(<Button isLoading={true}>Loading</Button>)
     expect(container.querySelector('.loading')).toBeInTheDocument()
   })

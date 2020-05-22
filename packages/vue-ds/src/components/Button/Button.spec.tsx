@@ -6,12 +6,12 @@ import '@testing-library/jest-dom'
 import Button from './Button.vue'
 
 describe('<Button />', () => {
-  it('should have "default" classname when prop color is empty', () => {
+  it('should have "default" classname when "color prop" is empty', () => {
     const { container } = render(Button)
     expect(container.firstChild).toHaveClass('default')
   })
 
-  it('should have "default" classname when prop color is "default"', () => {
+  it('should have "default" classname when "color prop" is "default"', () => {
     const { container } = render(Button, {
       props: {
         color: 'default',
@@ -20,7 +20,7 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('default')
   })
 
-  it('should have "primary" classname when prop color is "primary"', () => {
+  it('should have "primary" classname when "color prop" is "primary"', () => {
     const { container } = render(Button, {
       props: {
         color: 'primary',
@@ -29,7 +29,7 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('primary')
   })
 
-  it('should have "secondary" classname when prop color is "secondary"', () => {
+  it('should have "secondary" classname when "color prop" is "secondary"', () => {
     const { container } = render(Button, {
       props: {
         color: 'secondary',
@@ -38,12 +38,12 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('secondary')
   })
 
-  it('should have "filled" classname when prop variant is empty', () => {
+  it('should have "filled" classname when "variant prop" is empty', () => {
     const { container } = render(Button)
     expect(container.firstChild).toHaveClass('filled')
   })
 
-  it('should have "filled" classname when prop variant props is "filled"', () => {
+  it('should have "filled" classname when "variant prop" props is "filled"', () => {
     const { container } = render(Button, {
       props: {
         variant: 'filled',
@@ -52,7 +52,7 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('filled')
   })
 
-  it('should have "outlined" classname when prop variant props is "outlined"', () => {
+  it('should have "outlined" classname when "variant prop" props is "outlined"', () => {
     const { container } = render(Button, {
       props: {
         variant: 'outlined',
@@ -61,7 +61,7 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('outlined')
   })
 
-  it('should have "text" classname when prop variant props is "text"', () => {
+  it('should have "text" classname when "variant prop" props is "text"', () => {
     const { container } = render(Button, {
       props: {
         variant: 'text',
@@ -70,7 +70,21 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('text')
   })
 
-  it('should have "small" classname when prop size props is "small"', () => {
+  it('should have "medium" classname when "size prop" is empty', () => {
+    const { container } = render(Button)
+    expect(container.firstChild).toHaveClass('medium')
+  })
+
+  it('should have "medium" classname when "size prop" is "medium"', () => {
+    const { container } = render(Button, {
+      props: {
+        size: 'medium',
+      },
+    })
+    expect(container.firstChild).toHaveClass('medium')
+  })
+
+  it('should have "small" classname when "size prop" is "small"', () => {
     const { container } = render(Button, {
       props: {
         size: 'small',
@@ -79,7 +93,30 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('small')
   })
 
-  it('should have "startIcon" element when has startIcon prop', () => {
+  it('should have "round-square" classname when "shape prop" is empty', () => {
+    const { container } = render(Button)
+    expect(container.firstChild).toHaveClass('round-square')
+  })
+
+  it('should have "round-square" classname when "shape prop" is "round-square"', () => {
+    const { container } = render(Button, {
+      props: {
+        shape: 'round-square',
+      },
+    })
+    expect(container.firstChild).toHaveClass('round-square')
+  })
+
+  it('should have "circle" classname when "shape prop" is "circle"', () => {
+    const { container } = render(Button, {
+      props: {
+        shape: 'circle',
+      },
+    })
+    expect(container.firstChild).toHaveClass('circle')
+  })
+
+  it('should have "startIcon" element when has "startIcon prop"', () => {
     const { container } = render(Button, {
       slots: {
         startIcon: '←',
@@ -90,7 +127,7 @@ describe('<Button />', () => {
     )
   })
 
-  it('should have "endIcon" element when has endIcon prop', () => {
+  it('should have "endIcon" element when has "endIcon prop"', () => {
     const { container } = render(Button, {
       slots: {
         endIcon: '→',
@@ -99,7 +136,7 @@ describe('<Button />', () => {
     expect(container.firstChild).toContainHTML(`<span class="endIcon">→</span>`)
   })
 
-  it('should be render element as <a> if has an href', () => {
+  it('should be render element as <a> if has href', () => {
     const { container } = render(Button, {
       props: {
         href: 'href',
@@ -108,7 +145,7 @@ describe('<Button />', () => {
     expect(container.querySelector('a')).toBeInTheDocument()
   })
 
-  it('should be render element as <button> if not has an href', () => {
+  it('should be render element as <button> if not has href', () => {
     const { container } = render(Button)
     expect(container.querySelector('button')).toBeInTheDocument()
   })
@@ -121,7 +158,7 @@ describe('<Button />', () => {
     expect(wrapper.emitted().click).toBeTruthy()
   })
 
-  it('should have "isLoading" classname when has "isLoading" prop', () => {
+  it('should have "isLoading" classname when has "isLoading prop"', () => {
     const { container } = render(Button, {
       props: {
         isLoading: true,
@@ -130,7 +167,7 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('isLoading')
   })
 
-  it('should have "Spinner" component when has "isLoading" prop', () => {
+  it('should have "Spinner" component when has "isLoading prop"', () => {
     const { container } = render(Button, {
       props: {
         isLoading: true,
