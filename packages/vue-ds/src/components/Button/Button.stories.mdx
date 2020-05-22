@@ -2,7 +2,7 @@ import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
 import { withKnobs } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
-import { knobButtonLoading } from '@venice/core/storybook/knobs'
+import { knobButtonLoading, knobButtonSizes } from '@venice/core/storybook/knobs'
 
 import Button from './Button.vue'
 
@@ -123,6 +123,46 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
             <Button :isLoading="isLoading" variant="text" color="primary" size="small">Primary</Button>
             <Button :isLoading="isLoading" variant="text" color="secondary" size="small">Secondary</Button>
             <Button :isLoading="isLoading" variant="text" size="small" disabled>Disabled</Button>
+          </div>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Circle buttons
+
+<Preview>
+  <Story name="Circle" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+    {{
+      components: { Button },
+      props: {
+        isLoading: {
+          default: knobButtonLoading(),
+        },
+        size: {
+          default: knobButtonSizes(),
+        },
+      },
+      template: `
+        <div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" color="primary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" color="secondary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" shape="circle" :size="size" disabled>@</Button>
+          </div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" variant="outlined" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="outlined" color="primary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="outlined" color="secondary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="outlined" shape="circle" :size="size" disabled>@</Button>
+          </div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" variant="text" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="text" color="primary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="text" color="secondary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="text" shape="circle" :size="size" disabled>@</Button>
           </div>
         </div>
       `,
