@@ -2,7 +2,7 @@ import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
 import { withKnobs } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
-import { knobButtonLoading } from '@venice/core/storybook/knobs'
+import { knobButtonLoading, knobButtonSizes } from '@venice/core/storybook/knobs'
 
 import Button from './Button.vue'
 
@@ -12,7 +12,9 @@ import Button from './Button.vue'
 
 Buttons allow users to make some actions. You can add a `href` attr to use it as `<a>` element.
 
-## Filled buttons
+## Variants
+
+### Filled buttons
 
 <Preview>
   <Story name="Filled" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
@@ -35,7 +37,7 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
   </Story>
 </Preview>
 
-## Outlined buttons
+### Outlined buttons
 
 <Preview>
   <Story name="Outlined" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
@@ -64,7 +66,7 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
   </Story>
 </Preview>
 
-## Text buttons
+### Text buttons
 
 <Preview>
   <Story name="Text" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
@@ -93,7 +95,51 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
   </Story>
 </Preview>
 
-## Small buttons
+## Shapes
+
+### Circle buttons
+
+<Preview>
+  <Story name="Circle" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+    {{
+      components: { Button },
+      props: {
+        isLoading: {
+          default: knobButtonLoading(),
+        },
+        size: {
+          default: knobButtonSizes(),
+        },
+      },
+      template: `
+        <div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" color="primary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" color="secondary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" shape="circle" :size="size" disabled>@</Button>
+          </div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" variant="outlined" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="outlined" color="primary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="outlined" color="secondary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="outlined" shape="circle" :size="size" disabled>@</Button>
+          </div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" variant="text" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="text" color="primary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="text" color="secondary" shape="circle" :size="size">@</Button>
+            <Button :isLoading="isLoading" variant="text" shape="circle" :size="size" disabled>@</Button>
+          </div>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Sizes
+
+### Small buttons
 
 <Preview>
   <Story name="Small" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
@@ -130,10 +176,10 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
   </Story>
 </Preview>
 
-## With icons
+## Icons
 
 <Preview>
-  <Story name="With icons" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+  <Story name="Icons" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
     {{
       components: { Button },
       props: {

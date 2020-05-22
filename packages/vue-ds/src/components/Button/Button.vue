@@ -43,6 +43,7 @@ import Spinner from '../Spinner/Spinner.vue'
 export default class Button extends Vue {
   @Prop({ default: 'default' }) color!: IButton['color']
   @Prop({ default: 'filled' }) variant!: IButton['variant']
+  @Prop({ default: 'round-square' }) shape!: IButton['shape']
   @Prop({ default: 'medium' }) size!: IButton['size']
   @Prop({ default: false }) isLoading!: IButton['isLoading']
   @Prop() href!: IButton['href']
@@ -52,6 +53,7 @@ export default class Button extends Vue {
       'btn',
       this.color,
       this.variant,
+      this.shape,
       this.size,
       this.isLoading ? 'isLoading' : '',
     ]
