@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.7.1...@venice/core@0.8.0) (2020-05-22)
+
+
+### Bug Fixes
+
+* add div to prevent mdx error ([c4a8517](https://github.com/juntossomosmais/venice/commit/c4a8517b84d704b7803e507932518084a561ec0a))
+
+
+### Features
+
+* **button:** add knob to select size ([1d35184](https://github.com/juntossomosmais/venice/commit/1d35184c09c309b2f8ca3d452d4f795a700cd912))
+* **button:** add new param to interface ([71222d5](https://github.com/juntossomosmais/venice/commit/71222d58fe8c220f5e4556f8305d321c478a65da))
+
+
+
+
+
 ## [0.7.1](https://github.com/juntossomosmais/venice/compare/@venice/core@0.7.0...@venice/core@0.7.1) (2020-05-13)
 
 **Note:** Version bump only for package @venice/core

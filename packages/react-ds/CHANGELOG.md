@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.5.1...@juntossomosmais/venice-react@0.6.0) (2020-05-22)
+
+
+### Features
+
+* **button:** add new tests ([0214514](https://github.com/juntossomosmais/venice/commit/0214514242668423932bb4c00fc2249d1e33026e))
+* **button:** add option to change shape ([58e25df](https://github.com/juntossomosmais/venice/commit/58e25df01453cfaa94da88c6ea67364092b4e275))
+* **button:** add story to circle shape ([066caed](https://github.com/juntossomosmais/venice/commit/066caed95b69d8f7fdd308c9296c8c5873876bc0))
+
+
+
+
+
 ## [0.5.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.5.0...@juntossomosmais/venice-react@0.5.1) (2020-05-13)
 
 **Note:** Version bump only for package @juntossomosmais/venice-react

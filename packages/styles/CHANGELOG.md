@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.7.1...@venice/styles@0.8.0) (2020-05-22)
+
+
+### Features
+
+* **button:** add new css styles ([478d21f](https://github.com/juntossomosmais/venice/commit/478d21feaa41599def6c404f88f962ef092cb2c5))
+
+
+
+
+
 ## [0.7.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.7.0...@venice/styles@0.7.1) (2020-05-13)
 
 
