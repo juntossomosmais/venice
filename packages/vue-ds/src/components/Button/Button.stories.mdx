@@ -12,7 +12,9 @@ import Button from './Button.vue'
 
 Buttons allow users to make some actions. You can add a `href` attr to use it as `<a>` element.
 
-## Filled buttons
+## Variants
+
+### Filled buttons
 
 <Preview>
   <Story name="Filled" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
@@ -35,7 +37,7 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
   </Story>
 </Preview>
 
-## Outlined buttons
+### Outlined buttons
 
 <Preview>
   <Story name="Outlined" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
@@ -64,7 +66,7 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
   </Story>
 </Preview>
 
-## Text buttons
+### Text buttons
 
 <Preview>
   <Story name="Text" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
@@ -93,44 +95,9 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
   </Story>
 </Preview>
 
-## Small buttons
+## Shapes
 
-<Preview>
-  <Story name="Small" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
-    {{
-      components: { Button },
-      props: {
-        isLoading: {
-          default: knobButtonLoading(),
-        },
-      },
-      template: `
-        <div>
-          <div class="row-items">
-            <Button :isLoading="isLoading" size="small">Default</Button>
-            <Button :isLoading="isLoading" color="primary" size="small">Primary</Button>
-            <Button :isLoading="isLoading" color="secondary" size="small">Secondary</Button>
-            <Button :isLoading="isLoading" size="small" disabled>Disabled</Button>
-          </div>
-          <div class="row-items">
-            <Button :isLoading="isLoading" variant="outlined" size="small">Default</Button>
-            <Button :isLoading="isLoading" variant="outlined" color="primary" size="small">Primary</Button>
-            <Button :isLoading="isLoading" variant="outlined" color="secondary" size="small">Secondary</Button>
-            <Button :isLoading="isLoading" variant="outlined" size="small" disabled>Disabled</Button>
-          </div>
-          <div class="row-items">
-            <Button :isLoading="isLoading" variant="text" size="small">Default</Button>
-            <Button :isLoading="isLoading" variant="text" color="primary" size="small">Primary</Button>
-            <Button :isLoading="isLoading" variant="text" color="secondary" size="small">Secondary</Button>
-            <Button :isLoading="isLoading" variant="text" size="small" disabled>Disabled</Button>
-          </div>
-        </div>
-      `,
-    }}
-  </Story>
-</Preview>
-
-## Circle buttons
+### Circle buttons
 
 <Preview>
   <Story name="Circle" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
@@ -170,10 +137,49 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
   </Story>
 </Preview>
 
-## With icons
+## Sizes
+
+### Small buttons
 
 <Preview>
-  <Story name="With icons" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+  <Story name="Small" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+    {{
+      components: { Button },
+      props: {
+        isLoading: {
+          default: knobButtonLoading(),
+        },
+      },
+      template: `
+        <div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" size="small">Default</Button>
+            <Button :isLoading="isLoading" color="primary" size="small">Primary</Button>
+            <Button :isLoading="isLoading" color="secondary" size="small">Secondary</Button>
+            <Button :isLoading="isLoading" size="small" disabled>Disabled</Button>
+          </div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" variant="outlined" size="small">Default</Button>
+            <Button :isLoading="isLoading" variant="outlined" color="primary" size="small">Primary</Button>
+            <Button :isLoading="isLoading" variant="outlined" color="secondary" size="small">Secondary</Button>
+            <Button :isLoading="isLoading" variant="outlined" size="small" disabled>Disabled</Button>
+          </div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" variant="text" size="small">Default</Button>
+            <Button :isLoading="isLoading" variant="text" color="primary" size="small">Primary</Button>
+            <Button :isLoading="isLoading" variant="text" color="secondary" size="small">Secondary</Button>
+            <Button :isLoading="isLoading" variant="text" size="small" disabled>Disabled</Button>
+          </div>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Icons
+
+<Preview>
+  <Story name="Icons" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
     {{
       components: { Button },
       props: {

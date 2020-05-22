@@ -11,7 +11,9 @@ import Button from './Button'
 
 <Description>{Docs}</Description>
 
-## Filled buttons
+## Variants
+
+### Filled buttons
 
 <Preview>
   <Story name="Filled" parameters={{ decorators: [withKnobs,withA11y] }}>
@@ -24,7 +26,7 @@ import Button from './Button'
   </Story>
 </Preview>
 
-## Outlined buttons
+### Outlined buttons
 
 <Preview>
   <Story name="Outlined" parameters={{ decorators: [withKnobs,withA11y] }}>
@@ -43,7 +45,7 @@ import Button from './Button'
   </Story>
 </Preview>
 
-## Text buttons
+### Text buttons
 
 <Preview>
   <Story name="Text" parameters={{ decorators: [withKnobs,withA11y] }}>
@@ -62,7 +64,58 @@ import Button from './Button'
   </Story>
 </Preview>
 
-## Small buttons
+## Shapes
+
+### Circle buttons
+
+<Preview>
+  <Story name="Circle" parameters={{ decorators: [withKnobs,withA11y] }}>
+    <div>
+      <div class="row-items">
+        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle">
+          @
+        </Button>
+        <Button isLoading={knobButtonLoading()} color="primary" size={knobButtonSizes()} shape="circle">
+          @
+        </Button>
+        <Button isLoading={knobButtonLoading()} color="secondary" size={knobButtonSizes()} shape="circle">
+          @
+        </Button>
+        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" disabled>
+          @
+        </Button>
+      </div>
+      <div class="row-items">
+        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="outlined">@</Button>
+        <Button isLoading={knobButtonLoading()} color="primary" variant="outlined" size={knobButtonSizes()} shape="circle">
+          @
+        </Button>
+        <Button isLoading={knobButtonLoading()} color="secondary" variant="outlined" size={knobButtonSizes()} shape="circle">
+          @
+        </Button>
+        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="outlined" disabled>
+          @
+        </Button>
+      </div>
+      <div class="row-items">
+        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="text">@</Button>
+        <Button isLoading={knobButtonLoading()} color="primary" variant="text" size={knobButtonSizes()} shape="circle">
+          @
+        </Button>
+        <Button isLoading={knobButtonLoading()} color="secondary" variant="text" size={knobButtonSizes()} shape="circle">
+          @
+        </Button>
+        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="text" disabled>
+          @
+        </Button>
+      </div>
+    </div>
+  </Story>
+</Preview>
+
+## Sizes
+
+### Small buttons
 
 <Preview>
   <Story name="Small" parameters={{ decorators: [withKnobs,withA11y] }}>
@@ -107,61 +160,14 @@ import Button from './Button'
   </Story>
 </Preview>
 
-## With icons
+## Icons
 
 <Preview>
-  <Story name="With icons" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Icons" parameters={{ decorators: [withKnobs,withA11y] }}>
     <div class="row-items">
-      <Button isLoading={knobButtonLoading()} startIcon="←" variant="outlined">With Icon</Button>
-      <Button isLoading={knobButtonLoading()} endIcon="→" variant="outlined">With Icon</Button>
+      <Button isLoading={knobButtonLoading()} startIcon="←" variant="outlined">With icon</Button>
+      <Button isLoading={knobButtonLoading()} endIcon="→" variant="outlined">With icon</Button>
       <Button isLoading={knobButtonLoading()} startIcon={<span>←</span>} size="small">With icon and tag</Button>
-    </div>
-  </Story>
-</Preview>
-
-## Circle buttons
-
-<Preview>
-  <Story name="Circle" parameters={{ decorators: [withKnobs,withA11y] }}>
-    <div>
-      <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle">
-          @
-        </Button>
-        <Button isLoading={knobButtonLoading()} color="primary" size={knobButtonSizes()} shape="circle">
-          @
-        </Button>
-        <Button isLoading={knobButtonLoading()} color="secondary" size={knobButtonSizes()} shape="circle">
-          @
-        </Button>
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" disabled>
-          @
-        </Button>
-      </div>
-      <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="outlined">@</Button>
-        <Button isLoading={knobButtonLoading()} color="primary" variant="outlined" size={knobButtonSizes()} shape="circle">
-          @
-        </Button>
-        <Button isLoading={knobButtonLoading()} color="secondary" variant="outlined" size={knobButtonSizes()} shape="circle">
-          @
-        </Button>
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="outlined" disabled>
-          @
-        </Button>
-      </div>
-      <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="text">@</Button>
-        <Button isLoading={knobButtonLoading()} color="primary" variant="text" size={knobButtonSizes()} shape="circle">
-          @
-        </Button>
-        <Button isLoading={knobButtonLoading()} color="secondary" variant="text" size={knobButtonSizes()} shape="circle">
-          @
-        </Button>
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="text" disabled>
-          @
-        </Button>
-      </div>
     </div>
   </Story>
 </Preview>
