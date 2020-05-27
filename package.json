@@ -2,7 +2,7 @@
   "name": "venice",
   "description": "Design System using Monorepo, Typescript, React, Vue, CSS Modules and Storybook.",
   "author": "@juntossomosmais",
-  "version": "0.5.1",
+  "version": "0.6.1",
   "homepage": "https://github.com/juntossomosmais/venice#readme",
   "repository": {
     "type": "git",
