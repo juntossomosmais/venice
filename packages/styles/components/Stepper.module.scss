@@ -8,7 +8,7 @@
   justify-content: space-between;
   list-style: none;
 
-  @include above($screen-lg) {
+  @include above(desktopL) {
     flex-direction: row;
     height: 100%;
   }
@@ -58,7 +58,7 @@
     width: var(--space-xs);
   }
 
-  @include above($screen-lg) {
+  @include above(desktopL) {
     flex-direction: column;
     height: 100%;
 
@@ -111,7 +111,7 @@
     background-color: var(--secondary-color);
   }
 
-  @include above($screen-lg) {
+  @include above(desktopL) {
     .title,
     .subtitle {
       margin-left: 2px;
