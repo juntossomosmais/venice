@@ -7,14 +7,21 @@
   --space-lg: 48px;
   --space-xlg: 64px;
 
+  --screen-xs: 360px;
+  --screen-sm: 768px;
+  --screen-md: 992px;
+  --screen-lg: 1280px;
+  --screen-xlg: 1440px;
+  --screen-max-container: var(--screen-xlg);
+
   --font-family: 'Roboto', sans-serif;
 
   --typography-panel-font: 900 38px/40px var(--font-family);
   --typography-panel-letter: 0;
   --typography-title-font: 500 24px/28px var(--font-family);
   --typography-title-letter: -0.357143px;
-  --typography-subheader-font: 400 16px/19px var(--font-family);
-  --typography-subheader-letter: -0.228572px;
+  --typography-subheader-font: 400 20px/24px var(--font-family);
+  --typography-subheader-letter: -0.288572px;
   --typography-body-font: 400 16px/19px var(--font-family);
   --typography-body-letter: -0.228572px;
   --typography-body2-font: 400 14px/16px var(--font-family);

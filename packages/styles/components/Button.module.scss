@@ -53,9 +53,13 @@
 }
 
 .children {
-  display: inline-block;
+  display: inherit;
   position: relative;
   z-index: var(--zindex-5);
+
+  img {
+    max-width: none;
+  }
 }
 
 .startIcon {
