@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.9.0...@venice/styles@0.9.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* change size of screen-max-container ([860722d](https://github.com/juntossomosmais/venice/commit/860722d61f7e9eff3f490b26ac17932b1539aa8c))
+
+
+
+
+
 # [0.9.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.8.0...@venice/styles@0.9.0) (2020-05-27)
 
 

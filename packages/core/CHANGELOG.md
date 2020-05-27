@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://github.com/juntossomosmais/venice/compare/@venice/core@0.8.1...@venice/core@0.8.2) (2020-05-27)
+
+
+### Bug Fixes
+
+* change size of screen-max-container ([e391d47](https://github.com/juntossomosmais/venice/commit/e391d470d0e3dd94fe41a8885f1db7cdb444565a))
+
+
+
+
+
 ## [0.8.1](https://github.com/juntossomosmais/venice/compare/@venice/core@0.8.0...@venice/core@0.8.1) (2020-05-27)
 
 **Note:** Version bump only for package @venice/core
