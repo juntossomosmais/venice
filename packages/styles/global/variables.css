@@ -12,7 +12,7 @@
   --screen-md: 992px;
   --screen-lg: 1280px;
   --screen-xlg: 1440px;
-  --screen-max-container: 1440px;
+  --screen-max-container: var(--screen-xlg);
 
   --font-family: 'Roboto', sans-serif;
 
