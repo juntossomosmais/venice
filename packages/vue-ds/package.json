@@ -1,7 +1,7 @@
 {
   "name": "@juntossomosmais/venice-vue",
   "description": "Design System of UI Components using Vue",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "license": "Apache-2.0",
   "homepage": "https://github.com/juntossomosmais/venice/packages/vue-ds#readme",
   "repository": {
@@ -41,8 +41,8 @@
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@storybook/vue": "^5.3.18",
     "@testing-library/vue": "^5.0.2",
-    "@venice/core": "^0.8.0",
-    "@venice/styles": "^0.8.0",
+    "@venice/core": "^0.8.1",
+    "@venice/styles": "^0.9.0",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-typescript": "~4.2.0",

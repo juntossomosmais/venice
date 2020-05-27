@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.8.0...@venice/styles@0.9.0) (2020-05-27)
+
+
+### Bug Fixes
+
+* **button:** improve align of children and prevent error to load svg ([3a32a61](https://github.com/juntossomosmais/venice/commit/3a32a61576e89fc909651023f5176059fb006b6a))
+
+
+### Features
+
+* add variables to screen ([efc23ea](https://github.com/juntossomosmais/venice/commit/efc23eac84839adf6483de7050ceeb277ef3ed79))
+
+
+
+
+
 # [0.8.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.7.1...@venice/styles@0.8.0) (2020-05-22)
 
 

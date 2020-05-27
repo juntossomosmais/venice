@@ -1,6 +1,6 @@
 {
   "name": "@venice/core",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "main": "index.ts",
   "private": true,
   "devDependencies": {
