@@ -136,15 +136,6 @@ describe('<Button />', () => {
     expect(container.firstChild).toContainHTML(`<span class="endIcon">→</span>`)
   })
 
-  it('should be render element as <a> if has href', () => {
-    const { container } = render(Button, {
-      props: {
-        href: 'href',
-      },
-    })
-    expect(container.querySelector('a')).toBeInTheDocument()
-  })
-
   it('should be add a href in <a> if it has href', () => {
     const { container } = render(Button, {
       props: {
