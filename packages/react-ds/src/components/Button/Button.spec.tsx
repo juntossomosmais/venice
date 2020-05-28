@@ -91,9 +91,9 @@ describe('<Button />', () => {
     )
   })
 
-  it('should be render element as <a> if has href', () => {
+  it('should be add a href in <a> if it has href', () => {
     const { container } = render(<Button href="href">Send</Button>)
-    expect(container.querySelector('a')).toBeInTheDocument()
+    expect(container.querySelector('a[href="href"]')).toBeInTheDocument()
   })
 
   it('should be render element as <button> if not has href', () => {

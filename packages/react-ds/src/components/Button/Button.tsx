@@ -53,6 +53,7 @@ const Button: React.FunctionComponent<IButtonProps> = ({
           ${isLoading ? styles.isLoading : ''}
           ${className}
         `}
+        {...(href && { href })}
         {...rest}
       >
         {isLoading && (
