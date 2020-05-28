@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.6.2...@juntossomosmais/venice-react@0.6.3) (2020-05-28)
+
+
+### Bug Fixes
+
+* **button:** add href to <a> element ([55da0c0](https://github.com/juntossomosmais/venice/commit/55da0c01b6af78de1a0e73bb7b1bd503fcaf4ab4))
+
+
+
+
+
 ## [0.6.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.6.1...@juntossomosmais/venice-react@0.6.2) (2020-05-27)
 
 **Note:** Version bump only for package @juntossomosmais/venice-react
