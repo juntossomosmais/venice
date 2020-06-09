@@ -5,6 +5,7 @@ import styles from '@venice/styles/components/Pagination.module.scss'
 
 import AngleLeft from './icons/AngleLeft'
 import AngleRight from './icons/AngleRight'
+import PaginationRange from './PaginationRange'
 
 interface IPaginationProps extends IPagination {
   /** Total pages to be paginated. */
@@ -48,19 +49,16 @@ const Pagination: React.FC<IPaginationProps> = ({
 
   const getRangeIndexes = () => {
     const [startOfRange, endOfRange] = getRangeOffsets()
-
     if (startOfRange < 0) {
       return [0, endOfRange]
     }
     if (endOfRange > count) {
       return [startOfRange, count]
     }
-
     return [startOfRange, endOfRange]
   }
 
   const [startOfRange, endOfRange] = getRangeIndexes()
-
   const range = pageIndexes.slice(startOfRange, endOfRange)
 
   return (
@@ -79,32 +77,15 @@ const Pagination: React.FC<IPaginationProps> = ({
             data-testid="previous-button"
             onClick={prevPage}
           >
-            <AngleLeft
-              fill="white"
-              width="12"
-              height="23"
-              viewBox="-1 3 12 7"
-            />
+            <AngleLeft width="12" height="23" viewBox="-1 3 12 7" />
           </button>
         )}
-        {range.map((page) => {
-          const isCurrentPage = page === currentPage
-          return (
-            <div
-              className={`${styles.indexWrapper} ${isCurrentPage &&
-                styles.active}`}
-              key={page}
-              data-marker={isCurrentPage && `de ${count}`}
-            >
-              <div
-                className={styles.paginationIndex}
-                onClick={() => onSelectPage(page)}
-              >
-                <p data-testid="page-index">{page}</p>
-              </div>
-            </div>
-          )
-        })}
+        <PaginationRange
+          range={range}
+          count={count}
+          currentPage={currentPage}
+          onSelect={onSelectPage}
+        />
         {hasNextCondition && (
           <button
             className={styles.paginationButton}
@@ -112,12 +93,7 @@ const Pagination: React.FC<IPaginationProps> = ({
             data-testid="next-button"
             onClick={nextPage}
           >
-            <AngleRight
-              fill="white"
-              width="12"
-              height="23"
-              viewBox="-3 3 12 7"
-            />
+            <AngleRight width="12" height="23" viewBox="-3 3 12 7" />
           </button>
         )}
       </div>

@@ -1,14 +1,14 @@
 import React from 'react'
 
-interface AngleLeftProps {
-  fill: string
+interface AngleRightProps {
+  fill?: string
   width: string
   height: string
   viewBox: string
 }
 
-const AngleRight: React.SFC<AngleLeftProps> = ({
-  fill,
+const AngleRight: React.SFC<AngleRightProps> = ({
+  fill = 'white',
   width,
   height,
   viewBox,
