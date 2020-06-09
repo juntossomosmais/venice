@@ -1,0 +1,58 @@
+import {
+  Meta,
+  Story,
+  Description,
+  Preview,
+  Props,
+} from '@storybook/addon-docs/blocks'
+
+import Pagination from './Pagination'
+import { withA11y } from '@storybook/addon-a11y'
+import { withKnobs } from '@storybook/addon-knobs'
+import Docs from '@venice/core/docs/Pagination.md'
+import { knobPaginationIsMobile, knobPaginationIsLoading } from '@venice/core/storybook/knobs'
+
+
+<Meta title="Components|Pagination" component={Pagination} />
+
+<Description>{Docs}</Description>
+
+### Initial ranges
+
+<Preview>
+  <Story name="Initial ranges" decorators={[withKnobs,withA11y]}>
+    <div>
+      <Pagination count={10} page={0} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
+      <Pagination count={10} page={1} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
+      <Pagination count={10} page={2} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
+      <Pagination count={10} page={3} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
+    </div>
+  </Story>
+</Preview>
+
+### Final ranges
+
+<Preview>
+  <Story name="Final ranges" decorators={[withKnobs,withA11y]}>
+    <div>
+      <Pagination count={10} page={9} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
+      <Pagination count={10} page={8} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
+      <Pagination count={10} page={7} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
+      <Pagination count={10} page={6} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
+    </div>
+  </Story>
+</Preview>
+
+### Loading state
+
+<Preview>
+  <Story name="Loading state" decorators={[withKnobs,withA11y]}>
+    <div>
+      <Pagination count={10} page={6} onChangePage={() => {}} isLoading={true} isMobile={knobPaginationIsMobile()} />
+    </div>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Pagination} />
