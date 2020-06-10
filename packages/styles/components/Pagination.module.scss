@@ -23,7 +23,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
   position: relative;
   width: $short-range;
 
-  @include above(desktop) {
+  @include above(tablet) {
     width: $long-range;
   }
 }

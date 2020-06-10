@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { IPagination } from '@venice/core/models'
 import styles from '@venice/styles/components/Pagination.module.scss'
+
+import {
+  getRangeIndexes,
+  hasNextRange,
+  hasPreviousRange,
+} from '../../helpers/PaginationHelper'
 
 import AngleLeft from './icons/AngleLeft'
 import AngleRight from './icons/AngleRight'
@@ -14,8 +20,6 @@ interface IPaginationProps extends IPagination {
   page?: number
   /** Pagination status. When true, pagination buttons are disabled. */
   isLoading?: boolean
-  /** Device option. When true, the range sizes change. */
-  isMobile?: boolean
   /** Change page event. */
   onChangePage?: (page: number) => void
 }
@@ -24,9 +28,28 @@ const Pagination: React.FC<IPaginationProps> = ({
   count = 0,
   page = 0,
   isLoading = false,
-  isMobile = false,
   onChangePage = () => null,
 }: IPaginationProps) => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    let doit: NodeJS.Timeout
+    const timeOut = 200
+    const maxPhoneWidth = 420
+
+    const checkDevice = () =>
+      window.innerWidth <= maxPhoneWidth
+        ? setIsMobile(true)
+        : setIsMobile(false)
+
+    const onResize = () => {
+      clearTimeout(doit)
+      doit = setTimeout(() => checkDevice(), timeOut)
+    }
+    checkDevice()
+    window.addEventListener('resize', onResize)
+  }, [])
+
   const currentPage = page + 1
   const pageIndexes = Array.from(Array(count + 1).keys()).slice(1)
 
@@ -34,35 +57,25 @@ const Pagination: React.FC<IPaginationProps> = ({
   const prevPage = () => onChangePage(page - 1)
   const onSelectPage = (newPage: number) => onChangePage(newPage - 1)
 
-  const hasNextRange = (offset: number) => currentPage + offset <= count
-  const hasNextCondition = isMobile ? hasNextRange(2) : hasNextRange(3)
+  const hasNextCondition = isMobile
+    ? hasNextRange(2, currentPage, count)
+    : hasNextRange(3, currentPage, count)
 
-  const hasPreviousRange = (offset: number) => currentPage - offset > 0
   const hasPreviousCondition = isMobile
-    ? hasPreviousRange(2)
-    : hasPreviousRange(3)
+    ? hasPreviousRange(2, currentPage)
+    : hasPreviousRange(3, currentPage)
 
-  const getRangeOffsets = () =>
+  const [startOfRange, endOfRange] = getRangeIndexes(
+    count,
+    currentPage,
     isMobile
-      ? [currentPage - 2, currentPage + 1]
-      : [currentPage - 3, currentPage + 2]
-
-  const getRangeIndexes = () => {
-    const [startOfRange, endOfRange] = getRangeOffsets()
-    if (startOfRange < 0) {
-      return [0, endOfRange]
-    }
-    if (endOfRange > count) {
-      return [startOfRange, count]
-    }
-    return [startOfRange, endOfRange]
-  }
-
-  const [startOfRange, endOfRange] = getRangeIndexes()
+  )
   const range = pageIndexes.slice(startOfRange, endOfRange)
 
   return (
-    <section className={`${styles.pagination} ${isMobile && styles.isMobile}`}>
+    <section
+      className={`${styles.pagination} ${isMobile ? styles.isMobile : ''}`}
+    >
       <div
         className={`${styles.container} ${
           hasNextCondition

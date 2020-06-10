@@ -17,28 +17,14 @@ import { knobPaginationIsMobile, knobPaginationIsLoading } from '@venice/core/st
 
 <Description>{Docs}</Description>
 
-### Initial ranges
+### Default
 
 <Preview>
-  <Story name="Initial ranges" decorators={[withKnobs,withA11y]}>
+  <Story name="Default" decorators={[withKnobs,withA11y]}>
     <div>
-      <Pagination count={10} page={0} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
-      <Pagination count={10} page={1} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
-      <Pagination count={10} page={2} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
-      <Pagination count={10} page={3} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
-    </div>
-  </Story>
-</Preview>
-
-### Final ranges
-
-<Preview>
-  <Story name="Final ranges" decorators={[withKnobs,withA11y]}>
-    <div>
-      <Pagination count={10} page={9} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
-      <Pagination count={10} page={8} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
-      <Pagination count={10} page={7} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
-      <Pagination count={10} page={6} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} isMobile={knobPaginationIsMobile()} />
+      <Pagination count={7} page={0} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} />
+      <Pagination count={7} page={3} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} />
+      <Pagination count={7} page={6} onChangePage={() => {}} isLoading={knobPaginationIsLoading()} />
     </div>
   </Story>
 </Preview>
@@ -48,7 +34,7 @@ import { knobPaginationIsMobile, knobPaginationIsLoading } from '@venice/core/st
 <Preview>
   <Story name="Loading state" decorators={[withKnobs,withA11y]}>
     <div>
-      <Pagination count={10} page={6} onChangePage={() => {}} isLoading={true} isMobile={knobPaginationIsMobile()} />
+      <Pagination count={10} page={6} onChangePage={() => {}} isLoading={true} />
     </div>
   </Story>
 </Preview>
