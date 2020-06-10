@@ -16,7 +16,7 @@ import Button from './Button'
 ### Filled buttons
 
 <Preview>
-  <Story name="Filled" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Filled" decorators={[withKnobs,withA11y]}>
     <div class="row-items">
       <Button isLoading={knobButtonLoading()}>Default</Button>
       <Button isLoading={knobButtonLoading()} color="primary">Primary</Button>
@@ -29,7 +29,7 @@ import Button from './Button'
 ### Outlined buttons
 
 <Preview>
-  <Story name="Outlined" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Outlined" decorators={[withKnobs,withA11y]}>
     <div class="row-items">
       <Button isLoading={knobButtonLoading()} variant="outlined">Default</Button>
       <Button isLoading={knobButtonLoading()} color="primary" variant="outlined">
@@ -48,7 +48,7 @@ import Button from './Button'
 ### Text buttons
 
 <Preview>
-  <Story name="Text" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Text" decorators={[withKnobs,withA11y]}>
     <div class="row-items">
       <Button isLoading={knobButtonLoading()} variant="text">Default</Button>
       <Button isLoading={knobButtonLoading()} color="primary" variant="text">
@@ -69,7 +69,7 @@ import Button from './Button'
 ### Circle buttons
 
 <Preview>
-  <Story name="Circle" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Circle" decorators={[withKnobs,withA11y]}>
     <div>
       <div class="row-items">
         <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle">
@@ -118,7 +118,7 @@ import Button from './Button'
 ### Small buttons
 
 <Preview>
-  <Story name="Small" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Small" decorators={[withKnobs,withA11y]}>
     <div>
       <div class="row-items">
         <Button isLoading={knobButtonLoading()} size="small">Default</Button>
@@ -163,7 +163,7 @@ import Button from './Button'
 ## Icons
 
 <Preview>
-  <Story name="Icons" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Icons" decorators={[withKnobs,withA11y]}>
     <div class="row-items">
       <Button isLoading={knobButtonLoading()} startIcon="←" variant="outlined">With icon</Button>
       <Button isLoading={knobButtonLoading()} endIcon="→" variant="outlined">With icon</Button>
@@ -175,7 +175,7 @@ import Button from './Button'
 ## Loading state
 
 <Preview>
-  <Story name="Loading state" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Loading state" decorators={[withKnobs,withA11y]}>
     <div class="row-items">
       <Button isLoading={true} color="primary">Loading example</Button>
       <Button isLoading={true} color="secondary" size="small">Loading example</Button>
