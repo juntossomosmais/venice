@@ -7,8 +7,7 @@ import {
   getRangeIndexes,
   hasNextRange,
   hasPreviousRange,
-} from '../../helpers/PaginationHelper'
-
+} from './helpers/Pagination/PaginationHelper'
 import AngleLeft from './icons/AngleLeft'
 import AngleRight from './icons/AngleRight'
 import PaginationRange from './PaginationRange'
