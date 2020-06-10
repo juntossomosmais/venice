@@ -52,10 +52,6 @@ const Pagination: React.FC<IPaginationProps> = ({
   const currentPage = page + 1
   const pageIndexes = Array.from(Array(count + 1).keys()).slice(1)
 
-  const nextPage = () => onChangePage(page + 1)
-  const prevPage = () => onChangePage(page - 1)
-  const onSelectPage = (newPage: number) => onChangePage(newPage - 1)
-
   const hasNextCondition = isMobile
     ? hasNextRange(2, currentPage, count)
     : hasNextRange(3, currentPage, count)
@@ -63,6 +59,16 @@ const Pagination: React.FC<IPaginationProps> = ({
   const hasPreviousCondition = isMobile
     ? hasPreviousRange(2, currentPage)
     : hasPreviousRange(3, currentPage)
+
+  const nextPage = () => onChangePage(page + 1)
+  const prevPage = () => onChangePage(page - 1)
+  const onSelectPage = (newPage: number) => onChangePage(newPage - 1)
+
+  const flexCondition = () =>
+    hasNextCondition ? styles.justifyContentEnd : styles.justifyContentStart
+
+  const justifyCondition = () =>
+    !hasNextCondition && !hasPreviousCondition ? 'center' : flexCondition()
 
   const [startOfRange, endOfRange] = getRangeIndexes(
     count,
@@ -75,13 +81,7 @@ const Pagination: React.FC<IPaginationProps> = ({
     <section
       className={`${styles.pagination} ${isMobile ? styles.isMobile : ''}`}
     >
-      <div
-        className={`${styles.container} ${
-          hasNextCondition
-            ? styles.justifyContentEnd
-            : styles.justifyContentStart
-        }`}
-      >
+      <div className={`${styles.container} ${justifyCondition()}`}>
         {hasPreviousCondition && (
           <button
             className={styles.paginationButton}
