@@ -33,7 +33,7 @@ const Button: React.FunctionComponent<IButtonProps> = ({
   href,
   isLoading = false,
   shape = 'round-square',
-  size = 'medium',
+  size = 'large',
   startIcon,
   variant = 'filled',
   ...rest
