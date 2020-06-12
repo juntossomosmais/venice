@@ -9,8 +9,8 @@ export interface IButton {
   href?: string
   /** boolean */
   isLoading?: boolean
-  /** 'medium' | 'small' */
-  size?: 'medium' | 'small'
+  /** 'large' | 'medium' | 'small' */
+  size?: 'large' | 'medium' | 'small'
   /** 'filled' | 'outlined' | 'text' */
   variant?: 'filled' | 'outlined' | 'text'
 }
