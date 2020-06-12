@@ -139,6 +139,43 @@ Buttons allow users to make some actions. You can add a `href` attr to use it as
 
 ## Sizes
 
+### Medium buttons
+
+<Preview>
+  <Story name="Medium" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
+    {{
+      components: { Button },
+      props: {
+        isLoading: {
+          default: knobButtonLoading(),
+        },
+      },
+      template: `
+        <div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" size="medium">Default</Button>
+            <Button :isLoading="isLoading" color="primary" size="medium">Primary</Button>
+            <Button :isLoading="isLoading" color="secondary" size="medium">Secondary</Button>
+            <Button :isLoading="isLoading" size="medium" disabled>Disabled</Button>
+          </div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" variant="outlined" size="medium">Default</Button>
+            <Button :isLoading="isLoading" variant="outlined" color="primary" size="medium">Primary</Button>
+            <Button :isLoading="isLoading" variant="outlined" color="secondary" size="medium">Secondary</Button>
+            <Button :isLoading="isLoading" variant="outlined" size="medium" disabled>Disabled</Button>
+          </div>
+          <div class="row-items">
+            <Button :isLoading="isLoading" variant="text" size="medium">Default</Button>
+            <Button :isLoading="isLoading" variant="text" color="primary" size="medium">Primary</Button>
+            <Button :isLoading="isLoading" variant="text" color="secondary" size="medium">Secondary</Button>
+            <Button :isLoading="isLoading" variant="text" size="medium" disabled>Disabled</Button>
+          </div>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
 ### Small buttons
 
 <Preview>

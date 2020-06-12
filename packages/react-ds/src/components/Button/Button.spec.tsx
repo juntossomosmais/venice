@@ -47,9 +47,14 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('text')
   })
 
-  it('should have "medium" classname when "size prop" is empty', () => {
+  it('should have "large" classname when "size prop" is empty', () => {
     const { container } = render(<Button>Send</Button>)
-    expect(container.firstChild).toHaveClass('medium')
+    expect(container.firstChild).toHaveClass('large')
+  })
+
+  it('should have "large" classname when "size prop" is "large"', () => {
+    const { container } = render(<Button size="large">Send</Button>)
+    expect(container.firstChild).toHaveClass('large')
   })
 
   it('should have "medium" classname when "size prop" is "medium"', () => {

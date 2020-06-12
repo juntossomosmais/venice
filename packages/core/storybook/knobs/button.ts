@@ -1,6 +1,6 @@
 import { boolean, select } from '@storybook/addon-knobs'
 
-const sizes = ['medium', 'small']
+const sizes = ['large', 'medium', 'small']
 
 export const knobButtonLoading = () => boolean('isLoading', false)
 

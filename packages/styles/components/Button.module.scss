@@ -214,6 +214,16 @@
 }
 
 .medium {
+  height: 40px;
+  padding-left: var(--space);
+  padding-right: var(--space);
+
+  .children {
+    font-size: 0.9em;
+  }
+}
+
+.large {
   height: var(--space-lg);
   padding-left: var(--space);
   padding-right: var(--space);
@@ -235,6 +245,12 @@
   }
 
   &.medium {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    width: 40px;
+  }
+
+  &.large {
     width: var(--space-lg);
   }
 }
