@@ -8,7 +8,7 @@ import Pagination from './Pagination'
 describe('<Pagination />', () => {
   const props = {
     count: 100,
-    onChangePage: jest.fn(),
+    onChange: jest.fn(),
     isLoading: false,
   }
   it('should not display the previous button', () => {
@@ -16,7 +16,9 @@ describe('<Pagination />', () => {
     expect(queryByTestId('previous-button')).not.toBeInTheDocument()
   })
   it('should not display the next button', () => {
-    const { queryByTestId } = render(<Pagination page={99} {...props} />)
+    const { queryByTestId } = render(
+      <Pagination page={props.count - 1} {...props} />
+    )
     expect(queryByTestId('next-button')).not.toBeInTheDocument()
   })
   it('should increase the range size on the second page', () => {
@@ -29,10 +31,10 @@ describe('<Pagination />', () => {
   })
   it('should increase the range size on the penultimate page', () => {
     const { queryAllByTestId, rerender } = render(
-      <Pagination page={100} {...props} />
+      <Pagination page={props.count} {...props} />
     )
     const firstRangeSize = queryAllByTestId('page-index').length
-    rerender(<Pagination page={99} {...props} />)
+    rerender(<Pagination page={props.count - 1} {...props} />)
     expect(queryAllByTestId('page-index')).toHaveLength(firstRangeSize + 1)
   })
 
@@ -47,10 +49,10 @@ describe('<Pagination />', () => {
   })
   it('should decrease the range size on the last page', () => {
     const { queryAllByTestId, rerender } = render(
-      <Pagination page={99} {...props} />
+      <Pagination page={props.count - 1} {...props} />
     )
     const firstRangeSize = queryAllByTestId('page-index').length
-    rerender(<Pagination page={100} {...props} />)
+    rerender(<Pagination page={props.count} {...props} />)
 
     expect(queryAllByTestId('page-index')).toHaveLength(firstRangeSize - 1)
   })
@@ -59,8 +61,8 @@ describe('<Pagination />', () => {
     const { queryByTestId } = render(
       <Pagination
         page={50}
-        count={100}
-        onChangePage={jest.fn()}
+        count={props.count}
+        onChange={jest.fn()}
         isLoading={true}
       />
     )
