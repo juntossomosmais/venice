@@ -53,7 +53,6 @@ const Pagination: React.FC<IPagination> = ({
   const flexCondition = () =>
     hasNextCondition ? styles.justifyContentEnd : styles.justifyContentStart
 
-  //TODO: remove center string.
   const justifyCondition = () =>
     !hasNextCondition && !hasPreviousCondition ? 'center' : flexCondition()
 
