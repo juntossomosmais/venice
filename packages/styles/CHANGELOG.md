@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.9.1...@venice/styles@0.10.0) (2020-06-12)
+
+
+### Bug Fixes
+
+* font size in medium button ([cf047b4](https://github.com/juntossomosmais/venice/commit/cf047b4d0a2b315429d36ea90348f8ca32290ae3))
+
+
+### Features
+
+* set large size as default and add medium button ([7fa3600](https://github.com/juntossomosmais/venice/commit/7fa3600536795151e6d114820674ceb907c14298))
+
+
+
+
+
 ## [0.9.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.9.0...@venice/styles@0.9.1) (2020-05-27)
 
 

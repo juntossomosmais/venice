@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.6.4...@juntossomosmais/venice-vue@0.7.0) (2020-06-12)
+
+
+### Features
+
+* set large size as default and add medium button ([7fa3600](https://github.com/juntossomosmais/venice/commit/7fa3600536795151e6d114820674ceb907c14298))
+
+
+
+
+
 ## [0.6.4](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.6.3...@juntossomosmais/venice-vue@0.6.4) (2020-06-04)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue
