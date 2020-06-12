@@ -8,27 +8,19 @@ import {
   hasNextRange,
   hasPreviousRange,
 } from './helpers/PaginationHelper'
+// TODO: these icons should be replaced when there is an icon library
 import AngleLeft from './icons/AngleLeft'
 import AngleRight from './icons/AngleRight'
 import PaginationRange from './PaginationRange'
 
-interface IPaginationProps extends IPagination {
-  /** Total pages to be paginated. */
-  count?: number
-  /** Current page, starting in zero. */
-  page?: number
-  /** Pagination status. When true, pagination buttons are disabled. */
-  isLoading?: boolean
-  /** Change page event. */
-  onChangePage?: (page: number) => void
-}
-
-const Pagination: React.FC<IPaginationProps> = ({
+const Pagination: React.FC<IPagination> = ({
   count = 0,
   page = 0,
   isLoading = false,
-  onChangePage = () => null,
-}: IPaginationProps) => {
+  onChange = () => null,
+}: IPagination) => {
+  const currentPage = page + 1
+  const pageIndexes = Array.from(Array(count + 1).keys()).slice(1)
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -36,10 +28,7 @@ const Pagination: React.FC<IPaginationProps> = ({
     const timeOut = 200
     const maxPhoneWidth = 420
 
-    const checkDevice = () =>
-      window.innerWidth <= maxPhoneWidth
-        ? setIsMobile(true)
-        : setIsMobile(false)
+    const checkDevice = () => setIsMobile(window.innerWidth <= maxPhoneWidth)
 
     const onResize = () => {
       clearTimeout(doit)
@@ -49,9 +38,6 @@ const Pagination: React.FC<IPaginationProps> = ({
     window.addEventListener('resize', onResize)
   }, [])
 
-  const currentPage = page + 1
-  const pageIndexes = Array.from(Array(count + 1).keys()).slice(1)
-
   const hasNextCondition = isMobile
     ? hasNextRange(2, currentPage, count)
     : hasNextRange(3, currentPage, count)
@@ -60,13 +46,14 @@ const Pagination: React.FC<IPaginationProps> = ({
     ? hasPreviousRange(2, currentPage)
     : hasPreviousRange(3, currentPage)
 
-  const nextPage = () => onChangePage(page + 1)
-  const prevPage = () => onChangePage(page - 1)
-  const onSelectPage = (newPage: number) => onChangePage(newPage - 1)
+  const nextPage = () => onChange(page + 1)
+  const prevPage = () => onChange(page - 1)
+  const onSelectPage = (newPage: number) => onChange(newPage - 1)
 
   const flexCondition = () =>
     hasNextCondition ? styles.justifyContentEnd : styles.justifyContentStart
 
+  //TODO: remove center string.
   const justifyCondition = () =>
     !hasNextCondition && !hasPreviousCondition ? 'center' : flexCondition()
 

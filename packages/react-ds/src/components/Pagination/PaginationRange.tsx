@@ -10,7 +10,7 @@ interface PaginationRangeProps {
 }
 
 const PaginationRange: React.SFC<PaginationRangeProps> = ({
-  range,
+  range = [],
   count,
   currentPage,
   onSelect,

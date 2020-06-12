@@ -1,10 +1,10 @@
 export interface IPagination {
-  /** number */
-  count?: number
-  /** number */
-  page?: number
-  /** boolean */
+  /** Total pages to be paginated. */
+  count: number
+  /** Current page, starting in zero. */
+  page: number
+  /** Pagination status. When true, pagination buttons are disabled. */
   isLoading?: boolean
-  /** (page: number) => void */
-  onChangePage?: (page: number) => void
+  /** Change page event. */
+  onChange?: (page: number) => void
 }
