@@ -10,11 +10,13 @@ describe('CatalogPaginationHelper', () => {
 
     expect(result).toEqual([0, 2])
   })
+
   it('should return the correct indexes to slice in pages array on desktop device', () => {
     const result = getRangeIndexes(100, 5, false)
 
     expect(result).toEqual([2, 7])
   })
+
   it('should return the correct boolean value given an offset on hasNextRange', () => {
     const count = 2
     const currentPage = 0
@@ -29,6 +31,7 @@ describe('CatalogPaginationHelper', () => {
     const desktopResult = hasNextRange(offset.desktop, currentPage, count)
     expect(desktopResult).toEqual(false)
   })
+
   it('should return the correct boolean value given an offset on hasPreviousRange', () => {
     const currentPage = 3
     const offset = {
