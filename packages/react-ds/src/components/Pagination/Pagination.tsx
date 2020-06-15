@@ -19,27 +19,19 @@ const Pagination: React.FC<IPagination> = ({
   isLoading = false,
   onChange = () => null,
 }: IPagination) => {
+  const maxPhoneWidth = 420
   const [isMobile, setIsMobile] = useState(false)
 
-  useEffect(() => {
-    let doit: NodeJS.Timeout
-    const timeOut = 200
-    const maxPhoneWidth = 420
+  const checkDevice = () => setIsMobile(window.innerWidth <= maxPhoneWidth)
 
-    const checkDevice = () => setIsMobile(window.innerWidth <= maxPhoneWidth)
-    checkDevice()
-
-    const onResize = () => {
-      clearTimeout(doit)
-      doit = setTimeout(() => checkDevice(), timeOut)
-    }
-    window.addEventListener('resize', onResize)
+  const debounce = (func: () => void, wait: number) => {
+    let timer: NodeJS.Timeout
 
     return () => {
-      clearTimeout(doit)
-      window.removeEventListener('resize', onResize)
+      clearTimeout(timer)
+      timer = setTimeout(() => func(), wait)
     }
-  }, [])
+  }
 
   const isInvalid = () => page < 1 || page > count || count < 1
 
@@ -67,6 +59,12 @@ const Pagination: React.FC<IPagination> = ({
     [count]
   )
   const range = getAllIndexes().slice(startOfRange, endOfRange)
+
+  useEffect(() => {
+    checkDevice()
+    window.addEventListener('resize', debounce(checkDevice, 200))
+    return () => window.removeEventListener('resize', checkDevice)
+  }, [])
 
   return !isInvalid() ? (
     <section
