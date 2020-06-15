@@ -1,7 +1,7 @@
 export interface IPagination {
   /** Total pages to be paginated. */
   count: number
-  /** Current page, starting in zero. */
+  /** Current page. */
   page: number
   /** Pagination status. When true, pagination buttons are disabled. */
   isLoading?: boolean
