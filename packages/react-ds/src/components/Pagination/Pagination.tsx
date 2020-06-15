@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 
 import { IPagination } from '@venice/core/models'
 import styles from '@venice/styles/components/Pagination.module.scss'
@@ -14,13 +14,11 @@ import AngleRight from './icons/AngleRight'
 import PaginationRange from './PaginationRange'
 
 const Pagination: React.FC<IPagination> = ({
-  count = 0,
-  page = 0,
+  count = 1,
+  page = 1,
   isLoading = false,
   onChange = () => null,
 }: IPagination) => {
-  const currentPage = page + 1
-  const pageIndexes = Array.from(Array(count + 1).keys()).slice(1)
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -29,26 +27,33 @@ const Pagination: React.FC<IPagination> = ({
     const maxPhoneWidth = 420
 
     const checkDevice = () => setIsMobile(window.innerWidth <= maxPhoneWidth)
+    checkDevice()
 
     const onResize = () => {
       clearTimeout(doit)
       doit = setTimeout(() => checkDevice(), timeOut)
     }
-    checkDevice()
     window.addEventListener('resize', onResize)
+
+    return () => {
+      clearTimeout(doit)
+      window.removeEventListener('resize', onResize)
+    }
   }, [])
 
+  const isInvalid = () => page < 1 || page > count || count < 1
+
   const hasNextCondition = isMobile
-    ? hasNextRange(2, currentPage, count)
-    : hasNextRange(3, currentPage, count)
+    ? hasNextRange(2, page, count)
+    : hasNextRange(3, page, count)
 
   const hasPreviousCondition = isMobile
-    ? hasPreviousRange(2, currentPage)
-    : hasPreviousRange(3, currentPage)
+    ? hasPreviousRange(2, page)
+    : hasPreviousRange(3, page)
 
   const nextPage = () => onChange(page + 1)
   const prevPage = () => onChange(page - 1)
-  const onSelectPage = (newPage: number) => onChange(newPage - 1)
+  const onSelectPage = (newPage: number) => onChange(newPage)
 
   const flexCondition = () =>
     hasNextCondition ? styles.justifyContentEnd : styles.justifyContentStart
@@ -56,14 +61,14 @@ const Pagination: React.FC<IPagination> = ({
   const justifyCondition = () =>
     !hasNextCondition && !hasPreviousCondition ? 'center' : flexCondition()
 
-  const [startOfRange, endOfRange] = getRangeIndexes(
-    count,
-    currentPage,
-    isMobile
+  const [startOfRange, endOfRange] = getRangeIndexes(count, page, isMobile)
+  const getAllIndexes = useCallback(
+    () => Array.from(Array(count + 1).keys()).slice(1),
+    [count]
   )
-  const range = pageIndexes.slice(startOfRange, endOfRange)
+  const range = getAllIndexes().slice(startOfRange, endOfRange)
 
-  return (
+  return !isInvalid() ? (
     <section
       className={`${styles.pagination} ${isMobile ? styles.isMobile : ''}`}
     >
@@ -81,7 +86,7 @@ const Pagination: React.FC<IPagination> = ({
         <PaginationRange
           range={range}
           count={count}
-          currentPage={currentPage}
+          currentPage={page}
           onSelect={onSelectPage}
         />
         {hasNextCondition && (
@@ -96,7 +101,7 @@ const Pagination: React.FC<IPagination> = ({
         )}
       </div>
     </section>
-  )
+  ) : null
 }
 
 export default Pagination

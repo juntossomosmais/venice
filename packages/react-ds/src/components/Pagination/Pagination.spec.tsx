@@ -23,10 +23,10 @@ describe('<Pagination />', () => {
   })
   it('should increase the range size on the second page', () => {
     const { queryAllByTestId, rerender } = render(
-      <Pagination page={0} {...props} />
+      <Pagination page={1} {...props} />
     )
     const firstRangeSize = queryAllByTestId('page-index').length
-    rerender(<Pagination page={1} {...props} />)
+    rerender(<Pagination page={2} {...props} />)
     expect(queryAllByTestId('page-index')).toHaveLength(firstRangeSize + 1)
   })
   it('should increase the range size on the penultimate page', () => {
@@ -40,10 +40,10 @@ describe('<Pagination />', () => {
 
   it('should decrease the range size on the first page', () => {
     const { queryAllByTestId, rerender } = render(
-      <Pagination page={1} {...props} />
+      <Pagination page={2} {...props} />
     )
     const firstRangeSize = queryAllByTestId('page-index').length
-    rerender(<Pagination page={0} {...props} />)
+    rerender(<Pagination page={1} {...props} />)
 
     expect(queryAllByTestId('page-index')).toHaveLength(firstRangeSize - 1)
   })
@@ -62,7 +62,7 @@ describe('<Pagination />', () => {
       <Pagination
         page={50}
         count={props.count}
-        onChange={jest.fn()}
+        onChange={props.onChange}
         isLoading={true}
       />
     )
@@ -74,5 +74,32 @@ describe('<Pagination />', () => {
     const { queryByTestId } = render(<Pagination page={50} {...props} />)
     expect(queryByTestId('previous-button')).not.toBeDisabled()
     expect(queryByTestId('next-button')).not.toBeDisabled()
+  })
+  it('should not render component when page is less than 1', () => {
+    const { queryByTestId } = render(<Pagination page={0} {...props} />)
+    expect(queryByTestId('page-index')).not.toBeInTheDocument()
+    expect(queryByTestId('previous-button')).not.toBeInTheDocument()
+    expect(queryByTestId('next-button')).not.toBeInTheDocument()
+  })
+  it('should not render component when page is greater than count', () => {
+    const { queryByTestId } = render(
+      <Pagination page={props.count + 2} {...props} />
+    )
+    expect(queryByTestId('page-index')).not.toBeInTheDocument()
+    expect(queryByTestId('previous-button')).not.toBeInTheDocument()
+    expect(queryByTestId('next-button')).not.toBeInTheDocument()
+  })
+  it('should not render component when count is less than 1', () => {
+    const { queryByTestId } = render(
+      <Pagination
+        page={2}
+        count={0}
+        onChange={props.onChange}
+        isLoading={props.isLoading}
+      />
+    )
+    expect(queryByTestId('page-index')).not.toBeInTheDocument()
+    expect(queryByTestId('previous-button')).not.toBeInTheDocument()
+    expect(queryByTestId('next-button')).not.toBeInTheDocument()
   })
 })
