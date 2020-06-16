@@ -1,0 +1,69 @@
+import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import SplitButton from './SplitButton.vue'
+
+<Meta title="Components|SplitButton" component={SplitButton} />
+
+# SplitButton
+
+SplitButton allow user to have many options to choice to take an action.
+
+## Single Button
+
+<Preview>
+  <Story name="Single Button" height="225px">
+    {{
+      components: { SplitButton },
+      template: `
+        <div class="row-items sm-offset">
+          <SplitButton text="Single Button">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+          <SplitButton text="Single Button" color="primary">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+          <SplitButton text="Single Button" color="secondary">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+        </div>
+      `
+    }}
+  </Story>
+</Preview>
+
+# Sizing
+
+## Medium Button
+
+<Preview>
+  <Story name="Medium Button" height="225px">
+    {{
+      components: { SplitButton },
+      template: `
+        <div class="row-items sm-offset">
+          <SplitButton text="Single Button" size="medium">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+          <SplitButton text="Single Button" size="medium" color="primary">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+          <SplitButton text="Single Button" size="medium" color="secondary">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+        </div>
+      `
+    }}
+  </Story>
+</Preview>

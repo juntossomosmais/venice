@@ -1,0 +1,59 @@
+import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import Docs from '@venice/core/docs/SplitButton.md'
+
+import SplitButton from './SplitButton'
+
+<Meta title="Components|SplitButton" component={SplitButton} />
+
+<Description>{Docs}</Description>
+
+## Single Button
+
+<Preview>
+  <Story name="Single Button" height="200px">
+    <div class="row-items">
+      <SplitButton text="Single Button">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton text="Single Button" color="primary">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton text="Single Button" color="secondary">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+    </div>
+  </Story>
+</Preview>
+
+# Sizing
+
+## Medium Button
+
+<Preview>
+  <Story name="Medium Button" height="200px">
+    <div class="row-items">
+      <SplitButton text="Medium Button" size="medium">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton text="Medium Button" color="primary" size="medium">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton text="Medium Button" color="secondary" size="medium">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+    </div>
+  </Story>
+</Preview>
