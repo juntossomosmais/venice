@@ -13,6 +13,15 @@ import AngleLeft from './icons/AngleLeft'
 import AngleRight from './icons/AngleRight'
 import PaginationIndex from './PaginationIndex'
 
+const debounce = (func: () => void, wait: number) => {
+  let timer: NodeJS.Timeout
+
+  return () => {
+    clearTimeout(timer)
+    timer = setTimeout(func, wait)
+  }
+}
+
 const Pagination: React.FC<IPagination> = ({
   count = 1,
   page = 1,
@@ -23,15 +32,6 @@ const Pagination: React.FC<IPagination> = ({
   const [isMobile, setIsMobile] = useState(false)
 
   const checkDevice = () => setIsMobile(window.innerWidth <= maxPhoneWidth)
-
-  const debounce = (func: () => void, wait: number) => {
-    let timer: NodeJS.Timeout
-
-    return () => {
-      clearTimeout(timer)
-      timer = setTimeout(func, wait)
-    }
-  }
 
   const isInvalid = () => page < 1 || page > count || count < 1
 
