@@ -62,10 +62,10 @@ const Pagination: React.FC<IPagination> = ({
 
   useEffect(() => {
     checkDevice()
-    window.addEventListener('resize', debounce(checkDevice, 200))
+    const debouncedCheck = debounce(checkDevice, 200)
 
-    return () =>
-      window.removeEventListener('resize', debounce(checkDevice, 200))
+    window.addEventListener('resize', debouncedCheck)
+    return () => window.removeEventListener('resize', debouncedCheck)
   }, [])
 
   return !isInvalid() ? (
