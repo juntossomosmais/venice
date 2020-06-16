@@ -28,12 +28,12 @@
     border-radius: 50%;
     content: '';
     display: block;
-    height: 10px;
+    height: 14px;
     margin-left: 2px;
     margin-right: var(--space-sm);
     position: relative;
     text-align: center;
-    width: 10px;
+    width: 14px;
     z-index: var(--zindex-1);
   }
 
@@ -99,12 +99,12 @@
   &::before {
     background-color: var(--secondary-color);
     border-width: 1px;
-    height: var(--space-sm);
+    height: 18px;
     margin-bottom: var(--space-xs);
     margin-left: 0;
     margin-right: calc(var(--space-sm) - 2px);
     margin-top: 0;
-    width: var(--space-sm);
+    width: 18px;
   }
 
   &::after {
