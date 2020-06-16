@@ -11,7 +11,7 @@ import {
 // TODO: these icons should be replaced when there is an icon library
 import AngleLeft from './icons/AngleLeft'
 import AngleRight from './icons/AngleRight'
-import PaginationRange from './PaginationRange'
+import PaginationIndex from './PaginationIndex'
 
 const Pagination: React.FC<IPagination> = ({
   count = 1,
@@ -29,7 +29,7 @@ const Pagination: React.FC<IPagination> = ({
 
     return () => {
       clearTimeout(timer)
-      timer = setTimeout(() => func(), wait)
+      timer = setTimeout(func, wait)
     }
   }
 
@@ -63,7 +63,9 @@ const Pagination: React.FC<IPagination> = ({
   useEffect(() => {
     checkDevice()
     window.addEventListener('resize', debounce(checkDevice, 200))
-    return () => window.removeEventListener('resize', checkDevice)
+
+    return () =>
+      window.removeEventListener('resize', debounce(checkDevice, 200))
   }, [])
 
   return !isInvalid() ? (
@@ -81,12 +83,15 @@ const Pagination: React.FC<IPagination> = ({
             <AngleLeft width="12" height="23" viewBox="-1 3 12 7" />
           </button>
         )}
-        <PaginationRange
-          range={range}
-          count={count}
-          currentPage={page}
-          onSelect={onSelectPage}
-        />
+        {range.map((pageIndex) => (
+          <PaginationIndex
+            key={pageIndex}
+            page={pageIndex}
+            count={count}
+            isCurrentPage={page === pageIndex}
+            onSelect={onSelectPage}
+          />
+        ))}
         {hasNextCondition && (
           <button
             className={styles.paginationButton}
