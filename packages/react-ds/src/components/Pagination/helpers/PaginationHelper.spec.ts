@@ -4,7 +4,7 @@ import {
   hasPreviousRange,
 } from './PaginationHelper'
 
-describe('CatalogPaginationHelper', () => {
+describe('PaginationHelper', () => {
   it('should return the correct indexes to slice in pages array on mobile device', () => {
     const result = getRangeIndexes(100, 1, true)
 
