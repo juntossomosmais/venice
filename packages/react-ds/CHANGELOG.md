@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.7.0...@juntossomosmais/venice-react@0.8.0) (2020-06-16)
+
+
+### Bug Fixes
+
+* fix doc file ([2db38a9](https://github.com/juntossomosmais/venice/commit/2db38a9d533e654ee2de6fd0d732aeec45e6c59c))
+* fix test description in PaginationHelper test ([102364c](https://github.com/juntossomosmais/venice/commit/102364c88addea79f795c687a7fa9fc77d049e95))
+* improving pagination tests ([41b3a06](https://github.com/juntossomosmais/venice/commit/41b3a06295d538557d0f813ff58f9cd41db650d3))
+* removing IPaginationPros ([b9fb6b9](https://github.com/juntossomosmais/venice/commit/b9fb6b945f217edbadb046fc8116ebeadfc73d78))
+* updating icons usage ([5db464a](https://github.com/juntossomosmais/venice/commit/5db464a91d78515e927ebcaf6fc946c37b8dd1f4))
+* using the same debounce declaration ([b8d658e](https://github.com/juntossomosmais/venice/commit/b8d658ed9e444075f4f6a109fb80fe2aef731b17))
+
+
+### Features
+
+* add component tests ([97d54dd](https://github.com/juntossomosmais/venice/commit/97d54dd9ac5237568bab2fa557d2f7c53ccac696))
+* creating pagination component ([fa5c692](https://github.com/juntossomosmais/venice/commit/fa5c6920f061a01d6d71c688453bd55fdb5e8222))
+* removing isMobile prop and add pagination helpers ([c4fa85f](https://github.com/juntossomosmais/venice/commit/c4fa85fd40c6df683205427b94677f8436e28dd4))
+* updating helper with tests ([0469771](https://github.com/juntossomosmais/venice/commit/0469771ab2c556333b40460ce9645f38d4be98d8))
+
+
+
+
+
 # [0.7.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.6.4...@juntossomosmais/venice-react@0.7.0) (2020-06-12)
 
 

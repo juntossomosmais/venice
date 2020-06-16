@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.9.0...@venice/core@0.10.0) (2020-06-16)
+
+
+### Bug Fixes
+
+* fix page prop description ([8aea7d7](https://github.com/juntossomosmais/venice/commit/8aea7d7c73947735f48fd6d0bb07cb8ecb657fa6))
+* removing IPaginationPros ([b9fb6b9](https://github.com/juntossomosmais/venice/commit/b9fb6b945f217edbadb046fc8116ebeadfc73d78))
+* updating icons usage ([5db464a](https://github.com/juntossomosmais/venice/commit/5db464a91d78515e927ebcaf6fc946c37b8dd1f4))
+
+
+### Features
+
+* creating md file to pagination ([ab29222](https://github.com/juntossomosmais/venice/commit/ab29222a3c2e697a52549e0001aaa870b59e4b25))
+* creating pagination component ([fa5c692](https://github.com/juntossomosmais/venice/commit/fa5c6920f061a01d6d71c688453bd55fdb5e8222))
+* creating pagination model ([c7a9f3f](https://github.com/juntossomosmais/venice/commit/c7a9f3fd3548ab64db14cfc4a555f833166ea887))
+* removing isMobile prop and add pagination helpers ([c4fa85f](https://github.com/juntossomosmais/venice/commit/c4fa85fd40c6df683205427b94677f8436e28dd4))
+
+
+
+
+
 # [0.9.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.8.3...@venice/core@0.9.0) (2020-06-12)
 
 

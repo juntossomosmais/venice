@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.10.0...@venice/styles@0.11.0) (2020-06-16)
+
+
+### Bug Fixes
+
+* updating icons usage ([5db464a](https://github.com/juntossomosmais/venice/commit/5db464a91d78515e927ebcaf6fc946c37b8dd1f4))
+
+
+### Features
+
+* creating pagination styles ([a9c1c6c](https://github.com/juntossomosmais/venice/commit/a9c1c6c8819e8c627b5a8c123eaf06f97f4fe1c3))
+* removing isMobile prop and add pagination helpers ([c4fa85f](https://github.com/juntossomosmais/venice/commit/c4fa85fd40c6df683205427b94677f8436e28dd4))
+
+
+
+
+
 # [0.10.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.9.1...@venice/styles@0.10.0) (2020-06-12)
 
 

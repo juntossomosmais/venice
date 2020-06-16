@@ -1,7 +1,7 @@
 {
   "name": "@juntossomosmais/venice-react",
   "description": "Design System of UI Components using React",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "license": "Apache-2.0",
   "homepage": "https://github.com/juntossomosmais/venice/packages/react-ds#readme",
   "repository": {
@@ -40,8 +40,8 @@
     "@testing-library/react": "^10.0.1",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "@venice/core": "^0.9.0",
-    "@venice/styles": "^0.10.0",
+    "@venice/core": "^0.10.0",
+    "@venice/styles": "^0.11.0",
     "autoprefixer": "^9.7.5",
     "eslint-plugin-react": "^7.19.0",
     "react": "^16.13.0",
