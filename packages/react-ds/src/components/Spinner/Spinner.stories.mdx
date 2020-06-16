@@ -12,7 +12,7 @@ import Spinner from './Spinner'
 <Description>{Docs}</Description>
 
 <Preview>
-  <Story name="Indeterminated" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Indeterminated" decorators={[withKnobs,withA11y]}>
     <div class="row-items">
       <Spinner size={knobSpinnerSize()} />
       <Spinner size={knobSpinnerSize()} color="primary" />

@@ -1,0 +1,138 @@
+@import '~@venice/styles/core';
+
+$btn-width: 36px;
+$btn-space: -12px;
+$item-width: 45px;
+
+$short-range: calc((#{$item-width} * 3) + (#{$btn-width} * 2));
+$long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
+
+.pagination {
+  @include reset();
+
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space);
+  padding: 0 $btn-width;
+  position: relative;
+  width: $short-range;
+
+  @include above(tablet) {
+    width: $long-range;
+  }
+}
+
+.isMobile {
+  .container {
+    @include above(desktop) {
+      width: $short-range;
+    }
+  }
+}
+
+.justifyContentStart {
+  justify-content: flex-start;
+}
+
+.justifyContentEnd {
+  justify-content: flex-end;
+}
+
+.paginationButton {
+  align-items: center;
+  background-color: var(--gray-2);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: $btn-width;
+  justify-content: center;
+  margin-top: var(--space-xxs);
+  outline: none;
+  width: $btn-width;
+
+  &:hover {
+    background-color: var(--secondary-color);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:first-child {
+    left: $btn-space;
+  }
+
+  &:last-child {
+    right: $btn-space;
+  }
+
+  &:hover:disabled {
+    background-color: var(--gray-2);
+    opacity: 0.3;
+  }
+}
+
+.paginationIndex {
+  background-color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  font: var(--typography-body2-font);
+  letter-spacing: var(--typography-body2-letter);
+  text-align: center;
+  width: $item-width;
+
+  p {
+    color: var(--gray-3);
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+}
+
+.indexWrapper {
+  margin-top: var(--space-xxs);
+  position: relative;
+
+  &.active {
+    p {
+      color: var(--secondary-color);
+      font-weight: bold;
+    }
+
+    &::before {
+      background-color: var(--secondary-color);
+      border-radius: 9px;
+      content: '';
+      height: var(--space-xxs);
+      left: 0;
+      margin-top: 2px;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+    }
+
+    &::after {
+      color: var(--disabled-color);
+      content: attr(data-marker);
+      display: flex;
+      font: var(--typography-caption-font);
+      justify-content: center;
+      left: 0;
+      letter-spacing: var(--typography-caption-letter);
+      margin-top: var(--space-xs);
+      position: absolute;
+      top: 100%;
+      width: 100%;
+    }
+  }
+}
