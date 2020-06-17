@@ -27,42 +27,46 @@ describe('<Pagination />', () => {
 
   it('should increase the range size on the second page', () => {
     const { container, rerender } = render(<Pagination page={1} {...props} />)
-    const paginationIndex = container.getElementsByClassName('paginationIndex')
-    const { length } = paginationIndex
 
+    const index = container.getElementsByClassName('paginationIndex')
+    const { length } = index
     rerender(<Pagination page={2} {...props} />)
-    expect(paginationIndex).toHaveLength(length + 1)
+
+    expect(index).toHaveLength(length + 1)
   })
 
   it('should increase the range size on the penultimate page', () => {
     const { container, rerender } = render(
       <Pagination page={props.count} {...props} />
     )
-    const paginationIndex = container.getElementsByClassName('paginationIndex')
-    const { length } = paginationIndex
 
+    const index = container.getElementsByClassName('paginationIndex')
+    const { length } = index
     rerender(<Pagination page={props.count - 1} {...props} />)
-    expect(paginationIndex).toHaveLength(length + 1)
+
+    expect(index).toHaveLength(length + 1)
   })
 
   it('should decrease the range size on the first page', () => {
     const { container, rerender } = render(<Pagination page={2} {...props} />)
-    const paginationIndex = container.getElementsByClassName('paginationIndex')
-    const { length } = paginationIndex
 
+    const index = container.getElementsByClassName('paginationIndex')
+    const { length } = index
     rerender(<Pagination page={1} {...props} />)
-    expect(paginationIndex).toHaveLength(length - 1)
+
+    expect(index).toHaveLength(length - 1)
   })
 
   it('should decrease the range size on the last page', () => {
     const { container, rerender } = render(
       <Pagination page={props.count - 1} {...props} />
     )
-    const paginationIndex = container.getElementsByClassName('paginationIndex')
-    const { length } = paginationIndex
 
+    const index = container.getElementsByClassName('paginationIndex')
+    const { length } = index
     rerender(<Pagination page={props.count} {...props} />)
-    expect(paginationIndex).toHaveLength(length - 1)
+
+    expect(index).toHaveLength(length - 1)
   })
 
   it('should disabled buttons when page is loading', () => {
