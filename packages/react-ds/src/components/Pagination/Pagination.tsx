@@ -77,7 +77,6 @@ const Pagination: React.FC<IPagination> = ({
           <button
             className={styles.paginationButton}
             disabled={isLoading}
-            data-testid="previous-button"
             onClick={prevPage}
           >
             <AngleLeft width="12" height="23" viewBox="-1 3 12 7" />
@@ -96,7 +95,6 @@ const Pagination: React.FC<IPagination> = ({
           <button
             className={styles.paginationButton}
             disabled={isLoading}
-            data-testid="next-button"
             onClick={nextPage}
           >
             <AngleRight width="12" height="23" viewBox="-3 3 12 7" />
