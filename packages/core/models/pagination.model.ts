@@ -1,4 +1,6 @@
 export interface IPagination {
+  /** String. */
+  className: string
   /** Total pages to be paginated. */
   count: number
   /** Current page. */
