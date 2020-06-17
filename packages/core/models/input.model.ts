@@ -1,4 +1,6 @@
-export interface IInput extends React.HTMLProps<HTMLInputElement> {
+import { HTMLProps } from 'react'
+
+export interface IInput extends HTMLProps<HTMLInputElement> {
   /** String */
   label?: string
   /** String */
