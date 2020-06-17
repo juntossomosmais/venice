@@ -43,6 +43,7 @@
   justify-content: center;
   position: absolute;
   width: 100%;
+  z-index: var(--zindex-10);
 
   &::before {
     border: var(--space-xs) solid transparent;
