@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import classNames from 'classnames/bind'
 
 import { IInput } from '@venice/core/models/input.model'
 import styles from '@venice/styles/components/Input.module.scss'
 
-const Input = ({
+const Input: FC<IInput> = ({
   id,
   label,
   name,
