@@ -14,7 +14,7 @@ interface IButtonProps extends IButton {
   endIcon?: React.ReactNode | string
   /** React Element | string */
   startIcon?: React.ReactNode | string
-  onClick: () => void
+  onClick: (event: React.MouseEvent<HTMLButtonElement>): void
 }
 
 const ButtonComponent: React.FunctionComponent<IDynamicComponentProps &
