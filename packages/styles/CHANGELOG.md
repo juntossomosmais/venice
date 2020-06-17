@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.11.0...@venice/styles@0.12.0) (2020-06-17)
+
+
+### Features
+
+* add box-sizing on project ([01b4d60](https://github.com/juntossomosmais/venice/commit/01b4d603f1421fecda47c8404d68b3c8ba1ce9c7))
+
+
+
+
+
 # [0.11.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.10.0...@venice/styles@0.11.0) (2020-06-16)
 
 
