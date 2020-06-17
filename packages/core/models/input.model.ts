@@ -1,18 +1,10 @@
-export interface IInput {
-  /** String */
-  id?: string
-  /** Function */
-  onChange: Function
+export interface IInput extends React.HTMLProps<HTMLInputElement> {
   /** String */
   label?: string
   /** String */
   name: string
   /** String */
-  mask?: string
-  /** String */
-  value: string
-  /** String */
-  style?: any
+  style?: object
   /** String */
   className?: string
   /** String */

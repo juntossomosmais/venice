@@ -1,30 +1,19 @@
-import React, { ChangeEvent } from 'react'
+import React from 'react'
 
 import classNames from 'classnames/bind'
 
-import { mask as masker, unMask } from '@venice/core/helpers/mask'
 import { IInput } from '@venice/core/models/input.model'
 import styles from '@venice/styles/components/Input.module.scss'
-
 
 const Input = ({
   id,
   label,
-  onChange,
-  mask,
-  value = '',
   name,
   style,
   className,
   error,
   ...props
 }: IInput) => {
-  const handleChange = (ev: ChangeEvent<HTMLInputElement>) => {
-    const value = ev.target.value
-    const originalValue = mask ? unMask(value, mask) : value
-    onChange(originalValue)
-  }
-  const handleValue = mask ? masker(value, mask) : value
   const selfId = id || `input__${name}`
 
   return (
@@ -41,14 +30,7 @@ const Input = ({
           {label}
         </label>
       )}
-      <input
-        className={styles.input}
-        name={name}
-        id={selfId}
-        {...props}
-        onChange={handleChange}
-        value={handleValue}
-      />
+      <input className={styles.input} name={name} id={selfId} {...props} />
       {/* TODO: Replace for alert component */}
       {error && (
         <div className={styles.error} data-testid="error">

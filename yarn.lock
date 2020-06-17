@@ -3773,11 +3773,6 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
 
-"@types/vanilla-masker@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@types/vanilla-masker/-/vanilla-masker-1.2.0.tgz#1b22559bb8b5b7af924df3f9d38dd0634c28c422"
-  integrity sha512-3d5r9I6nMcw0wHPcuoxVX+rv9+JmQSLIsK3X2vG5dG3QA9edHc8ViDSxcZ4AtoWiVx9hToAMyPM1B57WXBK8ow==
-
 "@types/vfile-message@*":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/vfile-message/-/vfile-message-2.0.0.tgz#690e46af0fdfc1f9faae00cd049cc888957927d5"
@@ -19630,11 +19625,6 @@ validate-npm-package-name@^3.0.0:
   integrity sha1-X6kS2B630MdK/BQN5zF/DKffQ34=
   dependencies:
     builtins "^1.0.3"
-
-vanilla-masker@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/vanilla-masker/-/vanilla-masker-1.2.0.tgz#c2830e9d994a5fecd2261506477c2707fe589756"
-  integrity sha1-woMOnZlKX+zSJhUGR3wnB/5Yl1Y=
 
 vary@~1.1.2:
   version "1.1.2"

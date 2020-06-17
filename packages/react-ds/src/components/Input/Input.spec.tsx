@@ -7,11 +7,13 @@ import '@testing-library/jest-dom'
 import Input from './Input'
 
 describe('<Input />', () => {
-  it('should have "default" classname when "color prop" is empty', () => {
-    const onChange = jest.fn()
-    const { container } = render(
-      <Input name="name" value="v" onChange={onChange} />
-    )
-    expect(container.firstChild).not.toHaveClass('default')
+  it('Should display the base input', () => {
+    const { queryByTestId } = render(<Input name="name" />)
+    expect(queryByTestId('error')).not.toBeInTheDocument()
+  })
+
+  it('Should display errors in the input', () => {
+    const { queryByTestId } = render(<Input name="name" error="error" />)
+    expect(queryByTestId('error')).toBeInTheDocument()
   })
 })

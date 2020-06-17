@@ -28,10 +28,11 @@ import Button from '../Button/Button'
               name="teste"
               label="label"
               style={{flex: '1'}}
-              onChange={v => setFormData( (prev) =>({
-                ...prev,
-                teste: v
-              }))}
+              onChange={e => setFormData({
+                ...formData,
+                [e.target.name]: e.target.value
+              })
+              }
             />
             <Input
               name="teste2"
@@ -39,16 +40,11 @@ import Button from '../Button/Button'
               placeholder="placeholder"
               style={{flex: '1'}}
               value={formData.teste2}
-              onChange={v => setFormData( (prev) =>({
-                ...prev,
-                teste2: v
-              }))}
+              onChange={v => setFormData({
+                ...formData,
+                [e.target.name]: e.target.value
+                })}
             />
-          </div>
-          <div className="row-items" style={{display: 'flex'}}>
-            <Input name="disabled" label="disabled" disabled style={{flex: '1'}}/>
-            <Input name="disabled" label="disabled" placeholder="placeholder" disabled style={{flex: '1'}}/>
-            <Input name="disabled" label="disabled" value="value" disabled style={{flex: '1'}}/>
           </div>
         </form>)
       }
@@ -56,81 +52,32 @@ import Button from '../Button/Button'
   </Story>
 </Preview>
 
-###  Mask
+
+###  Disabled
 
 <Preview>
-  <Story name="Mask" decorators={[withKnobs,withA11y]}>
-    <Hook>
-      { ({formData, setFormData}) =>(
-        <form className="row-items">
-          <Input
-            name="money"
-            label="Money"
-            mask='money'
-            value={formData.money}
-            onChange={v =>
-              setFormData( prev =>({
-                ...prev,
-                money: v
-              }))
-            }
-          />
-          <Input
-            name="cpf"
-            label="CPF"
-            mask='999.999.999-99'
-            value={formData.cpf}
-            onChange={v =>
-              setFormData( prev =>({
-                ...prev,
-                cpf: v
-              }))
-            }
-          />
-          <Input
-            name="cnpj"
-            mask="99.999.999/9999-99"
-            label="CNPJ"
-            value={formData.cnpj}
-            onChange={v =>
-              setFormData( prev => ({
-                ...prev,
-                cnpj: v
-              }))
-            }
-          />
-          <Input name="cpfcnpj"
-            mask={['999.999.999-99',"99.999.999/9999-99"]}
-            label="CPF/CNPJ"
-            value={formData.cpfcnpj}
-            placeholder="Type CPF or CNPJ"
-            onChange={v =>
-              setFormData( prev => ({
-                ...prev,
-                cpfcnpj: v
-              }))
-            }
-          />
-        </form>
-      )}
-    </Hook>
+  <Story name="disabled" decorators={[withKnobs,withA11y]}>
+    <div className="row-items" style={{display: 'flex'}}>
+      <Input name="disabled" label="disabled" disabled style={{flex: '1'}}/>
+      <Input name="disabled" label="disabled" placeholder="placeholder" disabled style={{flex: '1'}}/>
+      <Input name="disabled" label="disabled" value="value" disabled style={{flex: '1'}}/>
+    </div>
   </Story>
 </Preview>
 
 
-###  Error
+###  Validation
 
 <Preview>
-  <Story name="Error" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Validation" decorators={[withKnobs,withA11y]}>
     <Hook>
       {({formData, setFormData}) =>(
-        <Input name="error" label="Error Sample" error="Erro list"
+        <Input name="error" label="Error Sample" error="Errors will be displayed here"
         value={formData.error}
-        onChange={v =>
-          setFormData( prev => ({
-            ...prev,
-            error: v
-          }))
+        onChange={e => setFormData({
+          ...formData,
+          [e.target.name]: e.target.value
+        })
         }/>
       )}
     </Hook>
