@@ -55,6 +55,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
   justify-content: center;
   margin-top: var(--space-xxs);
   outline: none;
+  position: absolute;
   width: $btn-width;
 
   &:hover {
@@ -115,7 +116,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
       content: '';
       height: var(--space-xxs);
       left: 0;
-      margin-top: 2px;
+      margin-top: 7px;
       position: absolute;
       top: 100%;
       width: 100%;
@@ -129,7 +130,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
       justify-content: center;
       left: 0;
       letter-spacing: var(--typography-caption-letter);
-      margin-top: var(--space-xs);
+      margin-top: 14px;
       position: absolute;
       top: 100%;
       width: 100%;

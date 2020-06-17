@@ -21,10 +21,16 @@ import { knobPaginationIsMobile, knobPaginationIsLoading } from '@venice/core/st
 
 <Preview>
   <Story name="Default" decorators={[withKnobs,withA11y]}>
-    <div>
-      <Pagination count={7} page={1} onChange={() => {}} isLoading={knobPaginationIsLoading()} />
-      <Pagination count={7} page={4} onChange={() => {}} isLoading={knobPaginationIsLoading()} />
-      <Pagination count={7} page={7} onChange={() => {}} isLoading={knobPaginationIsLoading()} />
+    <div className="row-items">
+      <div >
+        <Pagination count={7} page={1} onChange={() => {}} isLoading={knobPaginationIsLoading()} />
+      </div>
+      <div>
+        <Pagination count={7} page={4} onChange={() => {}} isLoading={knobPaginationIsLoading()} />
+      </div>
+      <div>
+        <Pagination count={7} page={7} onChange={() => {}} isLoading={knobPaginationIsLoading()} />
+      </div>
     </div>
   </Story>
 </Preview>
