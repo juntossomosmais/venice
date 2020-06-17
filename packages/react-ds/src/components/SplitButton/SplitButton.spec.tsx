@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { render, fireEvent } from '@testing-library/react'
+import { render } from '@testing-library/react'
 
 import '@testing-library/jest-dom'
 
 import SplitButton from './SplitButton'
 
 describe('<SplitButton />', () => {
-  it('should have on menu the "dropdown" and "hide" classnames by default', () => {
+  it('should have on menu the "dropdown" classname by default', () => {
     const { getByRole } = render(
       <SplitButton text="Button">
         <a>Action</a>
@@ -15,7 +15,6 @@ describe('<SplitButton />', () => {
     )
 
     expect(getByRole('menu')).toHaveClass('dropdown')
-    expect(getByRole('menu')).toHaveClass('hide')
   })
 
   it('should have on menu the "default" classname when the prop "color" is empty', () => {
@@ -28,6 +27,16 @@ describe('<SplitButton />', () => {
     expect(getByRole('menu')).toHaveClass('default')
   })
 
+  it('should have on menu the "rtl" classname when the prop "direction" is empty', () => {
+    const { getByRole } = render(
+      <SplitButton text="Button">
+        <a>Action</a>
+      </SplitButton>
+    )
+
+    expect(getByRole('menu')).toHaveClass('rtl')
+  })
+
   it('should have on menu the "large" classname when the prop "size" is empty', () => {
     const { getByRole } = render(
       <SplitButton text="Button">
@@ -36,6 +45,26 @@ describe('<SplitButton />', () => {
     )
 
     expect(getByRole('menu')).toHaveClass('large')
+  })
+
+  it('should have on menu the "rtl" classname when the prop "direction" is "rtl"', () => {
+    const { getByRole } = render(
+      <SplitButton text="Button" direction="rtl">
+        <a>Action</a>
+      </SplitButton>
+    )
+
+    expect(getByRole('menu')).toHaveClass('rtl')
+  })
+
+  it('should have on menu the "ltr" classname when the prop "direction" is "ltr"', () => {
+    const { getByRole } = render(
+      <SplitButton text="Button" direction="ltr">
+        <a>Action</a>
+      </SplitButton>
+    )
+
+    expect(getByRole('menu')).toHaveClass('ltr')
   })
 
   it('should have on menu the "default" classname when the prop "color" is "default"', () => {
@@ -58,7 +87,7 @@ describe('<SplitButton />', () => {
     expect(getByRole('menu')).toHaveClass('primary')
   })
 
-  it('should have on menu the "secondary" class when the prop "color" is "secondary"', () => {
+  it('should have on menu the "secondary" classname when the prop "color" is "secondary"', () => {
     const { getByRole } = render(
       <SplitButton text="Button" color="secondary">
         <a>Action</a>
@@ -78,7 +107,7 @@ describe('<SplitButton />', () => {
     expect(getByRole('menu')).toHaveClass('large')
   })
 
-  it('should have on menu the "medium" class when the prop "size" is "medium"', () => {
+  it('should have on menu the "medium" classname when the prop "size" is "medium"', () => {
     const { getByRole } = render(
       <SplitButton text="Button" size="medium">
         <a>Action</a>
@@ -86,18 +115,6 @@ describe('<SplitButton />', () => {
     )
 
     expect(getByRole('menu')).toHaveClass('medium')
-  })
-
-  it('should have "show" as classname when click on button', () => {
-    const { getByRole } = render(
-      <SplitButton text="Button">
-        <a>Action</a>
-      </SplitButton>
-    )
-
-    fireEvent.click(getByRole('button'))
-
-    expect(getByRole('menu')).toHaveClass('show')
   })
 
   it('should have three options inside the menu', () => {
@@ -108,8 +125,6 @@ describe('<SplitButton />', () => {
         <a>Action</a>
       </SplitButton>
     )
-
-    fireEvent.click(getByRole('button'))
 
     expect(getByRole('menu').children).toHaveLength(3)
   })

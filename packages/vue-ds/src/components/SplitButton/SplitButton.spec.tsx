@@ -1,11 +1,13 @@
-import { render, fireEvent, waitFor } from '@testing-library/vue'
+import { render, waitFor, cleanup, fireEvent } from '@testing-library/vue'
 
 import '@testing-library/jest-dom'
 
 import SplitButton from './SplitButton.vue'
 
 describe('<SplitButton />', () => {
-  it('should have on menu the "dropdown" and "hide" classnames by default', () => {
+  afterEach(cleanup)
+
+  it('should have on menu the "dropdown" classname by default', () => {
     const { getByRole } = render(SplitButton, {
       props: {
         text: 'Button',
@@ -16,7 +18,6 @@ describe('<SplitButton />', () => {
     })
 
     expect(getByRole('menu')).toHaveClass('dropdown')
-    expect(getByRole('menu')).toHaveClass('hide')
   })
 
   it('should have on menu the "default" classname when the prop "color" is empty', () => {
@@ -115,33 +116,18 @@ describe('<SplitButton />', () => {
     expect(getByRole('menu')).toHaveClass('medium')
   })
 
-  // it('should have "show" as classname when click on button',  () => {
-  //   const { getByRole } = render(SplitButton, {
-  //     props: {
-  //       text: "Button",
-  //     },
-  //     slots: {
-  //       default: '<a>Action</a>'
-  //     }
-  //   })
-
-  //   fireEvent.click(getByRole('button'))
-
-  //   expect(getByRole('menu')).toHaveClass('show')
-  // })
-
   it('should have three options inside the menu', () => {
     const { getByRole } = render(SplitButton, {
       props: {
         text: 'Button',
       },
       slots: {
-        default: '<a>Action</a><a>Action</a>',
+        default: `<a>Action</a>
+        <a>Action</a>
+        <a>Action</a>`,
       },
     })
 
-    fireEvent.click(getByRole('button'))
-
-    expect(getByRole('menu').children).toHaveLength(2)
+    expect(getByRole('menu').children).toHaveLength(3)
   })
 })
