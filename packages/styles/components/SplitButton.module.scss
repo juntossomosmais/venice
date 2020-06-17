@@ -11,13 +11,15 @@
 
   &::before,
   &::after {
+    $centralize: 25%;
+
     background-color: var(--white);
     border-radius: 1px;
     content: "";
     display: block;
     height: 10px;
     position: absolute;
-    top: 25%;
+    top: $centralize;
     transform: rotate(45deg);
     width: 3px;
   }
@@ -35,26 +37,23 @@
 .dropdown {
   @include reset();
 
-  align-items: center;
   border-radius: var(--border-radius);
   box-shadow: -6px 8px 15px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  opacity: 0;
   position: absolute;
-  width: 100%;
+  right: 0;
+  transform: translateY(var(--space-lg));
+  visibility: hidden;
+  will-change: visibility;
   z-index: var(--zindex-10);
 
   &::before {
     border: var(--space-xs) solid transparent;
     content: "";
-    height: 0;
     margin-left: -20px;
     pointer-events: none;
     position: absolute;
-    right: var(--space-sm);
     top: -16px;
-    width: 0;
   }
 
   & > * {
@@ -66,7 +65,7 @@
     padding-left: var(--space);
     padding-right: var(--space);
     text-decoration: none;
-    width: inherit;
+    white-space: nowrap;
 
     &:first-of-type {
       border-top-left-radius: var(--border-radius);
@@ -79,24 +78,33 @@
     }
   }
 
-  &.show {
-    opacity: 1;
-    transition: visibility 0s, top 0.2s ease-in, opacity 0.1s linear;
-    visibility: visible;
-
-    &.large {
-      top: var(--space-xlg);
-    }
-
-    &.medium {
-      top: calc(var(--space-xlg) - var(--space-xs));
+  &.rtl {
+    &::before {
+      right: var(--space-sm);
     }
   }
 
-  &.hide {
-    opacity: 0;
-    top: var(--space-lg);
-    visibility: hidden;
+  &.ltr {
+    left: 0;
+    width: fit-content;
+
+    &::before {
+      left: calc(var(--space-md) + var(--space-xxs));
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    transition: visibility 0s, transform 0.2s ease-in, opacity 0.1s linear;
+    visibility: visible;
+
+    &.large {
+      transform: translateY(var(--space-xlg));
+    }
+
+    &.medium {
+      transform: translateY(calc(var(--space-xlg) - var(--space-xs)));
+    }
   }
 
   &.large > * {

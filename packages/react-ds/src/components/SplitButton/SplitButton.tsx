@@ -6,7 +6,7 @@ import styles from '@venice/styles/components/SplitButton.module.scss'
 import Button from '../Button/Button'
 
 interface ISplitButtonProps extends ISplitButton {
-  /** React Element's */
+  /** React Element */
   children: React.ReactNode
 }
 
@@ -15,6 +15,7 @@ const SplitButton: React.FC<ISplitButtonProps> = ({
   children,
   color = 'default',
   size = 'large',
+  direction = 'rtl',
   ...props
 }: ISplitButtonProps) => {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -34,7 +35,8 @@ const SplitButton: React.FC<ISplitButtonProps> = ({
         className={`${styles.dropdown}
                     ${styles[size]}
                     ${styles[color]}
-                    ${isOpen ? styles.show : styles.hide}`}
+                    ${styles[direction]}
+                    ${isOpen ? styles.active : ''}`}
         role="menu"
       >
         {children}
