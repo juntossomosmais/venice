@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 
+import classNames from 'classnames/bind'
+
 import { IPagination } from '@venice/core/models'
 import styles from '@venice/styles/components/Pagination.module.scss'
 
@@ -27,6 +29,7 @@ const Pagination: React.FC<IPagination> = ({
   page = 1,
   isLoading = false,
   onChange = () => null,
+  className,
   ...props
 }: IPagination) => {
   const maxPhoneWidth = 420
@@ -48,12 +51,6 @@ const Pagination: React.FC<IPagination> = ({
   const prevPage = () => onChange(page - 1)
   const onSelectPage = (newPage: number) => onChange(newPage)
 
-  const flexCondition = () =>
-    hasNextCondition ? styles.justifyContentEnd : styles.justifyContentStart
-
-  const justifyCondition = () =>
-    !hasNextCondition && !hasPreviousCondition ? 'center' : flexCondition()
-
   const [startOfRange, endOfRange] = getRangeIndexes(count, page, isMobile)
   const getAllIndexes = useCallback(
     () => Array.from(Array(count + 1).keys()).slice(1),
@@ -71,10 +68,21 @@ const Pagination: React.FC<IPagination> = ({
 
   return !isInvalid() ? (
     <section
-      className={`${styles.pagination} ${isMobile ? styles.isMobile : ''}`}
+      className={classNames(
+        styles.pagination,
+        { [styles.isMobile]: isMobile },
+        className
+      )}
       {...props}
     >
-      <div className={`${styles.container} ${justifyCondition()}`}>
+      <div
+        className={classNames(styles.container, {
+          center: !hasNextCondition && !hasPreviousCondition,
+          [styles.justifyContentEnd]: hasNextCondition && !hasPreviousCondition,
+          [styles.justifyContentStart]:
+            !hasNextCondition && hasPreviousCondition,
+        })}
+      >
         {hasPreviousCondition && (
           <button
             className={styles.paginationButton}
