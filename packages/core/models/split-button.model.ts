@@ -5,4 +5,6 @@ export interface ISplitButton {
   color?: 'default' | 'primary' | 'secondary'
   /** string */
   text: string
+  /** ltr | rtl */
+  direction?: 'ltr' | 'rtl'
 }
