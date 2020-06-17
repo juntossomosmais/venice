@@ -27,6 +27,7 @@ const Pagination: React.FC<IPagination> = ({
   page = 1,
   isLoading = false,
   onChange = () => null,
+  ...props
 }: IPagination) => {
   const maxPhoneWidth = 420
   const [isMobile, setIsMobile] = useState(false)
@@ -71,6 +72,7 @@ const Pagination: React.FC<IPagination> = ({
   return !isInvalid() ? (
     <section
       className={`${styles.pagination} ${isMobile ? styles.isMobile : ''}`}
+      {...props}
     >
       <div className={`${styles.container} ${justifyCondition()}`}>
         {hasPreviousCondition && (

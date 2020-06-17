@@ -3,7 +3,7 @@ import React, { FC, useCallback } from 'react'
 import { IStepper } from '@venice/core/models'
 import styles from '@venice/styles/components/Stepper.module.scss'
 
-const Stepper: FC<IStepper> = ({ steps = [] }: IStepper) => {
+const Stepper: FC<IStepper> = ({ steps = [], ...props }: IStepper) => {
   const isActive = useCallback(
     (completed: boolean): string => (completed ? styles['active'] : ''),
     []
@@ -23,7 +23,7 @@ const Stepper: FC<IStepper> = ({ steps = [] }: IStepper) => {
   )
 
   return (
-    <ul className={styles.stepper} data-testid="stepper">
+    <ul className={styles.stepper} data-testid="stepper" {...props}>
       {steps.map((item, index) => (
         <li
           key={index}
