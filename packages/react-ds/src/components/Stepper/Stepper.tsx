@@ -23,7 +23,7 @@ const Stepper: FC<IStepper> = ({ steps = [] }: IStepper) => {
   )
 
   return (
-    <ul className={styles.stepper} data-testid="stepper">
+    <ul className={styles.stepper}>
       {steps.map((item, index) => (
         <li
           key={index}
