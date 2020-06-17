@@ -8,25 +8,27 @@ import SplitButton from './SplitButton.vue'
 
 SplitButton allow user to have many options to choice to take an action.
 
-## Single Button
+## Sizing
+
+### Large Button
 
 <Preview>
-  <Story name="Single Button" height="225px">
+  <Story name="Large" height="225px">
     {{
       components: { SplitButton },
       template: `
-        <div class="row-items sm-offset">
-          <SplitButton text="Single Button">
+        <div class="row-items lg-offset-left">
+          <SplitButton text="Large Button" size="large">
             <a href="#">Action</a>
             <a href="#">Another action</a>
             <a href="#">Something else here</a>
           </SplitButton>
-          <SplitButton text="Single Button" color="primary">
+          <SplitButton text="Large Button" size="large" color="primary" >
             <a href="#">Action</a>
             <a href="#">Another action</a>
             <a href="#">Something else here</a>
           </SplitButton>
-          <SplitButton text="Single Button" color="secondary">
+          <SplitButton text="Large Button" size="large" color="secondary">
             <a href="#">Action</a>
             <a href="#">Another action</a>
             <a href="#">Something else here</a>
@@ -37,27 +39,25 @@ SplitButton allow user to have many options to choice to take an action.
   </Story>
 </Preview>
 
-# Sizing
-
-## Medium Button
+### Medium Button
 
 <Preview>
-  <Story name="Medium Button" height="225px">
+  <Story name="Medium" height="225px">
     {{
       components: { SplitButton },
       template: `
-        <div class="row-items sm-offset">
-          <SplitButton text="Single Button" size="medium">
+        <div class="row-items lg-offset-left">
+          <SplitButton text="Medium Button" size="medium">
             <a href="#">Action</a>
             <a href="#">Another action</a>
             <a href="#">Something else here</a>
           </SplitButton>
-          <SplitButton text="Single Button" size="medium" color="primary">
+          <SplitButton text="Medium Button" size="medium" color="primary">
             <a href="#">Action</a>
             <a href="#">Another action</a>
             <a href="#">Something else here</a>
           </SplitButton>
-          <SplitButton text="Single Button" size="medium" color="secondary">
+          <SplitButton text="Medium Button" size="medium" color="secondary">
             <a href="#">Action</a>
             <a href="#">Another action</a>
             <a href="#">Something else here</a>
@@ -67,3 +67,67 @@ SplitButton allow user to have many options to choice to take an action.
     }}
   </Story>
 </Preview>
+
+## Direction
+
+### Right to Left
+
+<Preview>
+  <Story name="Right to Left" height="225px">
+    {{
+      components: { SplitButton },
+      template: `
+        <div class="row-items lg-offset-left">
+          <SplitButton text="Right to Left Button" direction="rtl">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+          <SplitButton text="Right to Left Button" direction="rtl" color="primary" >
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+          <SplitButton text="Right to Left Button" direction="rtl" color="secondary">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+        </div>
+      `
+    }}
+  </Story>
+</Preview>
+
+### Left to Right
+
+<Preview>
+  <Story name="Left to Right" height="225px">
+    {{
+      components: { SplitButton },
+      template: `
+        <div class="row-items lg-offset-left">
+          <SplitButton text="Left to Right Button" direction="ltr">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+          <SplitButton text="Left to Right Button" direction="ltr" color="primary" >
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+          <SplitButton text="Left to Right Button" direction="ltr" color="secondary">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+        </div>
+      `
+    }}
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={SplitButton} />
