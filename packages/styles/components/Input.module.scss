@@ -1,0 +1,40 @@
+@import '~@venice/styles/core';
+
+.container {
+  display: flex;
+  flex-flow: column;
+  .label {
+    font: var(--typography-caption-font);
+    margin-bottom: var(--space-xs);
+    color: #616161;
+  }
+  .input {
+    background: var(--disabled-color-contrast);
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    font: var(--typography-body-font);
+    padding: var(--space-sm);
+
+    &:disabled,
+    &[disabled] {
+      background: #e7e7e7;
+      &,
+      &::placeholder {
+        color: var(--disabled-color);
+      }
+    }
+
+    @at-root .invalid#{&} {
+      outline: 1px auto var(--danger-color);
+    }
+  }
+  .error {
+    font: var(--typography-caption-font);
+    margin-top: var(--space-xxs);
+    color: var(--danger-color);
+    svg {
+      fill: var(--danger-color);
+    }
+  }
+}

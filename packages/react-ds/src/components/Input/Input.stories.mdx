@@ -1,0 +1,142 @@
+import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
+import { withKnobs } from '@storybook/addon-knobs'
+import { withA11y } from '@storybook/addon-a11y'
+
+import { knobInputLoading, knobInputSizes } from '@venice/core/storybook/knobs'
+import Docs from '@venice/core/docs/Input.md'
+
+import Hook from './Hook'
+import Input from './Input'
+import Button from '../Button/Button'
+
+<Meta title="Components|Inputs" component={Input} />
+
+<Description>{Docs}</Description>
+
+## Variants
+
+###  Base
+
+<Preview>
+  <Story name="Base" decorators={[withKnobs,withA11y]}>
+    <Hook>
+      {({formData, setFormData}) =>(
+        <form>
+          <div className="row-items" style={{display: 'flex'}}>
+            <Input
+              value={formData.teste}
+              name="teste"
+              label="label"
+              style={{flex: '1'}}
+              onChange={v => setFormData( (prev) =>({
+                ...prev,
+                teste: v
+              }))}
+            />
+            <Input
+              name="teste2"
+              label="label"
+              placeholder="placeholder"
+              style={{flex: '1'}}
+              value={formData.teste2}
+              onChange={v => setFormData( (prev) =>({
+                ...prev,
+                teste2: v
+              }))}
+            />
+          </div>
+          <div className="row-items" style={{display: 'flex'}}>
+            <Input name="disabled" label="disabled" disabled style={{flex: '1'}}/>
+            <Input name="disabled" label="disabled" placeholder="placeholder" disabled style={{flex: '1'}}/>
+            <Input name="disabled" label="disabled" value="value" disabled style={{flex: '1'}}/>
+          </div>
+        </form>)
+      }
+    </Hook>
+  </Story>
+</Preview>
+
+###  Mask
+
+<Preview>
+  <Story name="Mask" decorators={[withKnobs,withA11y]}>
+    <Hook>
+      { ({formData, setFormData}) =>(
+        <form className="row-items">
+          <Input
+            name="money"
+            label="Money"
+            mask='money'
+            value={formData.money}
+            onChange={v =>
+              setFormData( prev =>({
+                ...prev,
+                money: v
+              }))
+            }
+          />
+          <Input
+            name="cpf"
+            label="CPF"
+            mask='999.999.999-99'
+            value={formData.cpf}
+            onChange={v =>
+              setFormData( prev =>({
+                ...prev,
+                cpf: v
+              }))
+            }
+          />
+          <Input
+            name="cnpj"
+            mask="99.999.999/9999-99"
+            label="CNPJ"
+            value={formData.cnpj}
+            onChange={v =>
+              setFormData( prev => ({
+                ...prev,
+                cnpj: v
+              }))
+            }
+          />
+          <Input name="cpfcnpj"
+            mask={['999.999.999-99',"99.999.999/9999-99"]}
+            label="CPF/CNPJ"
+            value={formData.cpfcnpj}
+            placeholder="Type CPF or CNPJ"
+            onChange={v =>
+              setFormData( prev => ({
+                ...prev,
+                cpfcnpj: v
+              }))
+            }
+          />
+        </form>
+      )}
+    </Hook>
+  </Story>
+</Preview>
+
+
+###  Error
+
+<Preview>
+  <Story name="Error" parameters={{ decorators: [withKnobs,withA11y] }}>
+    <Hook>
+      {({formData, setFormData}) =>(
+        <Input name="error" label="Error Sample" error="Erro list"
+        value={formData.error}
+        onChange={v =>
+          setFormData( prev => ({
+            ...prev,
+            error: v
+          }))
+        }/>
+      )}
+    </Hook>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Input} />
