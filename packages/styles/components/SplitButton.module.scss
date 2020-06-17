@@ -62,6 +62,8 @@
     cursor: pointer;
     display: flex;
     min-height: var(--space-lg);
+    padding-left: var(--space);
+    padding-right: var(--space);
     text-decoration: none;
     width: inherit;
 
@@ -94,6 +96,14 @@
     opacity: 0;
     top: var(--space-lg);
     visibility: hidden;
+  }
+
+  &.large > * {
+    font-size: 1em;
+  }
+
+  &.medium > * {
+    font-size: 0.9em;
   }
 
   &.default {
@@ -157,17 +167,5 @@
         border-bottom: 1px solid var(--secondary-color-lighten);
       }
     }
-  }
-
-  &.large > * {
-    font-size: 1em;
-    padding-left: var(--space);
-    padding-right: var(--space);
-  }
-
-  &.medium > * {
-    font-size: 0.9em;
-    padding-left: var(--space);
-    padding-right: var(--space);
   }
 }
