@@ -5,7 +5,6 @@ import { withA11y } from '@storybook/addon-a11y'
 import { knobInputLoading, knobInputSizes } from '@venice/core/storybook/knobs'
 import Docs from '@venice/core/docs/Input.md'
 
-import Hook from './Hook'
 import Input from './Input'
 import Button from '../Button/Button'
 
@@ -17,36 +16,19 @@ import Button from '../Button/Button'
 
 <Preview>
   <Story name="Base" decorators={[withKnobs,withA11y]}>
-    <Hook>
-      {({formData, setFormData}) =>(
-        <form>
-          <div className="row-items" style={{display: 'flex'}}>
-            <Input
-              value={formData.teste}
-              name="teste"
-              label="label"
-              style={{flex: '1'}}
-              onChange={e => setFormData({
-                ...formData,
-                [e.target.name]: e.target.value
-              })
-              }
-            />
-            <Input
-              name="teste2"
-              label="label"
-              placeholder="placeholder"
-              style={{flex: '1'}}
-              value={formData.teste2}
-              onChange={v => setFormData({
-                ...formData,
-                [e.target.name]: e.target.value
-                })}
-            />
-          </div>
-        </form>)
-      }
-    </Hook>
+    <form className="row-items" style={{display: 'flex'}}>
+      <Input
+        name="teste"
+        label="label"
+        style={{flex: '1'}}
+      />
+      <Input
+        name="teste2"
+        label="label"
+        placeholder="placeholder"
+        style={{flex: '1'}}
+      />
+    </form>
   </Story>
 </Preview>
 
@@ -68,17 +50,7 @@ import Button from '../Button/Button'
 
 <Preview>
   <Story name="Validation" decorators={[withKnobs,withA11y]}>
-    <Hook>
-      {({formData, setFormData}) =>(
-        <Input name="error" label="Error Sample" error="Errors will be displayed here"
-        value={formData.error}
-        onChange={e => setFormData({
-          ...formData,
-          [e.target.name]: e.target.value
-        })
-        }/>
-      )}
-    </Hook>
+    <Input name="error" label="Error Sample" error="Errors will be displayed here"/>
   </Story>
 </Preview>
 
