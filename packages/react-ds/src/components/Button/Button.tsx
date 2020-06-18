@@ -20,12 +20,12 @@ interface IButtonProps extends IButton {
 
 const ButtonComponent: React.FunctionComponent<IDynamicComponentProps &
   React.HTMLAttributes<HTMLOrSVGElement>> = ({
-    as: Wrapper = 'button',
-    children,
-    ...rest
-  }) => {
-    return <Wrapper {...rest}>{children}</Wrapper>
-  }
+  as: Wrapper = 'button',
+  children,
+  ...rest
+}) => {
+  return <Wrapper {...rest}>{children}</Wrapper>
+}
 
 const Button: React.FunctionComponent<IButtonProps> = ({
   children,

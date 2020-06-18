@@ -87,10 +87,9 @@ const Pagination: React.FC<IPagination> = ({
           <button
             className={styles.paginationButton}
             disabled={isLoading}
-            data-testid="previous-button"
             onClick={prevPage}
           >
-            <AngleLeft width="12" height="23" viewBox="-1 2 12 7" />
+            <AngleLeft width="12" height="23" viewBox="-1 3 12 7" />
           </button>
         )}
         {range.map((pageIndex) => (
@@ -106,10 +105,9 @@ const Pagination: React.FC<IPagination> = ({
           <button
             className={styles.paginationButton}
             disabled={isLoading}
-            data-testid="next-button"
             onClick={nextPage}
           >
-            <AngleRight width="12" height="23" viewBox="-3 2 12 7" />
+            <AngleRight width="12" height="23" viewBox="-3 3 12 7" />
           </button>
         )}
       </div>
