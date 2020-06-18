@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FunctionComponent } from 'react'
 
 import classNames from 'classnames/bind'
 import uniqid from 'uniqid'
@@ -6,7 +6,7 @@ import uniqid from 'uniqid'
 import { IInput } from '@venice/core/models/input.model'
 import styles from '@venice/styles/components/Input.module.scss'
 
-const Input: FC<IInput> = ({
+const Input: FunctionComponent<IInput> = ({
   id,
   label,
   name,
@@ -16,16 +16,14 @@ const Input: FC<IInput> = ({
   ...props
 }: IInput) => {
   const selfId = id || uniqid(`input__${name}`)
+  const styleContainer = classNames(
+    styles.container,
+    { [styles.invalid]: Boolean(error) },
+    className
+  )
 
   return (
-    <div
-      className={classNames(
-        styles.container,
-        { [styles.invalid]: !!error },
-        className
-      )}
-      style={style}
-    >
+    <div className={styleContainer} style={style}>
       {label && (
         <label htmlFor={selfId} className={styles.label}>
           {label}
