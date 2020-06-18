@@ -15,6 +15,10 @@ $caret-size: 16px;
   margin-bottom: var(--space-xs);
 }
 
+.selectWrapper {
+  position: relative;
+}
+
 .select {
   appearance: none;
   background: var(--disabled-color-contrast);
@@ -81,6 +85,3 @@ $caret-size: 16px;
   }
 }
 
-.selectWrapper {
-  position: relative;
-}
