@@ -22,7 +22,7 @@ const PaginationIndex: React.SFC<PaginationIndexProps> = ({
       data-marker={isCurrentPage && `de ${count}`}
     >
       <div className={styles.paginationIndex} onClick={() => onSelect(page)}>
-        <p data-testid="page-index">{page}</p>
+        <p>{page}</p>
       </div>
     </div>
   )

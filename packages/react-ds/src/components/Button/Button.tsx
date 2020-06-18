@@ -16,16 +16,18 @@ interface IButtonProps extends IButton {
   endIcon?: React.ReactNode | string
   /** React Element | string */
   startIcon?: React.ReactNode | string
+  /** React MouseEvent  */
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 const ButtonComponent: React.FunctionComponent<IDynamicComponentProps &
   React.HTMLAttributes<HTMLOrSVGElement>> = ({
-    as: Wrapper = 'button',
-    children,
-    ...rest
-  }) => {
-    return <Wrapper {...rest}>{children}</Wrapper>
-  }
+  as: Wrapper = 'button',
+  children,
+  ...rest
+}) => {
+  return <Wrapper {...rest}>{children}</Wrapper>
+}
 
 const Button: React.FunctionComponent<IButtonProps> = ({
   children,
