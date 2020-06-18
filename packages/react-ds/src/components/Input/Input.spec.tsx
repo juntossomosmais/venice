@@ -2,8 +2,6 @@ import React from 'react'
 
 import { render, fireEvent } from '@testing-library/react'
 
-import styles from '@venice/styles/components/Input.module.scss'
-
 import '@testing-library/jest-dom'
 
 import Input from './Input'
