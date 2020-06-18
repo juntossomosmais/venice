@@ -17,12 +17,10 @@ import Input from './Input'
   <Story name="Base" decorators={[withKnobs,withA11y]}>
     <form className="row-items" style={{display: 'flex'}}>
       <Input
-        name="teste"
         label="label"
         style={{flex: '1'}}
       />
       <Input
-        name="teste2"
         label="label"
         placeholder="placeholder"
         style={{flex: '1'}}
@@ -37,9 +35,9 @@ import Input from './Input'
 <Preview>
   <Story name="disabled" decorators={[withKnobs,withA11y]}>
     <div className="row-items" style={{display: 'flex'}}>
-      <Input name="disabled" label="disabled" disabled style={{flex: '1'}}/>
-      <Input name="disabled" label="disabled" placeholder="placeholder" disabled style={{flex: '1'}}/>
-      <Input name="disabled" label="disabled" value="value" disabled style={{flex: '1'}}/>
+      <Input label="disabled" disabled style={{flex: '1'}}/>
+      <Input label="disabled" placeholder="placeholder" disabled style={{flex: '1'}}/>
+      <Input label="disabled" value="value" disabled style={{flex: '1'}}/>
     </div>
   </Story>
 </Preview>
@@ -49,7 +47,7 @@ import Input from './Input'
 
 <Preview>
   <Story name="Validation" decorators={[withKnobs,withA11y]}>
-    <Input name="error" label="Error Sample" error="Errors will be displayed here"/>
+    <Input label="Error Sample" error="Errors will be displayed here"/>
   </Story>
 </Preview>
 

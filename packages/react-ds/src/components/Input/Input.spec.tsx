@@ -2,27 +2,33 @@ import React from 'react'
 
 import { render, fireEvent } from '@testing-library/react'
 
+import styles from '@venice/styles/components/Input.module.scss'
+
 import '@testing-library/jest-dom'
 
 import Input from './Input'
 
 describe('<Input />', () => {
   it('Should display the base input', () => {
-    const { queryByTestId } = render(<Input />)
-    expect(queryByTestId('error')).not.toBeInTheDocument()
+    const { container } = render(<Input />)
+    const errorDOM = container.querySelector(`.error`)
+    expect(errorDOM).toBeNull()
   })
 
   it('Should display errors in the input', () => {
-    const { queryByText } = render(
-      <Input error="Errors will be displayed here" />
-    )
-    expect(queryByText('Errors will be displayed here')).toBeInTheDocument()
+    const feedBackError = 'Errors will be displayed here'
+    const { container, queryByText } = render(<Input error={feedBackError} />)
+    const errorDOM = container.querySelector(`.error`)
+
+    expect(errorDOM).toBeInTheDocument()
+    expect(errorDOM?.textContent).toBe(feedBackError)
+    expect(queryByText(feedBackError)).toBeInTheDocument()
   })
 
   it('Should change value of input ', () => {
     const id = 'field_id'
-    const { getByLabelText } = render(<Input id={id} />)
-    const input = getByLabelText(id)
+    const { container } = render(<Input id={id} />)
+    const input = container.querySelector(`#${id}`)
 
     fireEvent.change(input, { target: { value: '23' } })
     expect(input.value).toBe('23')
@@ -31,8 +37,8 @@ describe('<Input />', () => {
   it('Should call onchange event of input', () => {
     const id = 'field_id'
     const onChange = jest.fn()
-    const { getByLabelText } = render(<Input id={id} onChange={onChange} />)
-    const input = getByLabelText(id)
+    const { container } = render(<Input id={id} onChange={onChange} />)
+    const input = container.querySelector(`#${id}`)
 
     fireEvent.change(input, { target: { value: '23' } })
     expect(input.value).toBe('23')

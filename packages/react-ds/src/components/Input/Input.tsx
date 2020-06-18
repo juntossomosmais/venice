@@ -9,13 +9,12 @@ import styles from '@venice/styles/components/Input.module.scss'
 const Input: FunctionComponent<IInput> = ({
   id,
   label,
-  name,
   style,
   className,
   error,
   ...props
 }: IInput) => {
-  const selfId = id || uniqid(`input__${name}`)
+  const selfId = id || uniqid(`input__`)
   const styleContainer = classNames(
     styles.container,
     { [styles.invalid]: Boolean(error) },
@@ -29,13 +28,7 @@ const Input: FunctionComponent<IInput> = ({
           {label}
         </label>
       )}
-      <input
-        aria-label={selfId}
-        className={styles.input}
-        name={name}
-        id={selfId}
-        {...props}
-      />
+      <input className={styles.input} id={selfId} {...props} />
       {/* TODO: Replace for alert component */}
       {error && (
         <div className={styles.error}>
