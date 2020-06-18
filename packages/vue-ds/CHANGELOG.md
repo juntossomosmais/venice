@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.9.0...@juntossomosmais/venice-vue@0.9.1) (2020-06-18)
+
+
+### Bug Fixes
+
+* add component's imports ([b59f7ec](https://github.com/juntossomosmais/venice/commit/b59f7ecb2706e81dddb365a78c14b498d8d57e2e))
+* change path to generated build ([2bbc41d](https://github.com/juntossomosmais/venice/commit/2bbc41d75ba0c6e7cff7fbe9999e8d325916fc3d))
+
+
+
+
+
 # [0.9.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.8.0...@juntossomosmais/venice-vue@0.9.0) (2020-06-18)
 
 
