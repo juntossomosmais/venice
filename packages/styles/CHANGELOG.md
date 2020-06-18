@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.12.0...@venice/styles@0.13.0) (2020-06-18)
+
+
+### Bug Fixes
+
+* dropdown zindex ([464a6dd](https://github.com/juntossomosmais/venice/commit/464a6dd1e28360f7c1a9dd09911369c9f61580a9))
+* fix some pagination styles ([cb3a8d2](https://github.com/juntossomosmais/venice/commit/cb3a8d2fee22de1ee7bc0b72620f73cdfbc0f796))
+* resolving conflicts ([4b40ebf](https://github.com/juntossomosmais/venice/commit/4b40ebf1063e075b82c5e97662a7df6f512c9485))
+* some styles ([4410856](https://github.com/juntossomosmais/venice/commit/4410856af8453afd5b9f5f047014d5105ae707ce))
+
+
+### Features
+
+* added direction prop ([41387cd](https://github.com/juntossomosmais/venice/commit/41387cdb512d94d3413cfefa16ec1b854f44e565))
+* created Split Button component ([9d7f7d5](https://github.com/juntossomosmais/venice/commit/9d7f7d5255d82f3307360b9bc9cbb4f35bf9fa41))
+
+
+
+
+
 # [0.12.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.11.0...@venice/styles@0.12.0) (2020-06-17)
 
 

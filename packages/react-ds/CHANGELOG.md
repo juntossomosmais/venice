@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.9.0...@juntossomosmais/venice-react@0.10.0) (2020-06-18)
+
+
+### Bug Fixes
+
+* fix some pagination styles ([cb3a8d2](https://github.com/juntossomosmais/venice/commit/cb3a8d2fee22de1ee7bc0b72620f73cdfbc0f796))
+* removing data-testid on pagination component ([dc9a4d5](https://github.com/juntossomosmais/venice/commit/dc9a4d5f9baa8b2309dbee9cfe5f8356263b8367))
+* resolving conflicts ([4b40ebf](https://github.com/juntossomosmais/venice/commit/4b40ebf1063e075b82c5e97662a7df6f512c9485))
+* updating pagination test ([842c873](https://github.com/juntossomosmais/venice/commit/842c8732635cbc84aa57362ec0cedd6a8a3430c2))
+* updating pagination tests ([cbdb1bc](https://github.com/juntossomosmais/venice/commit/cbdb1bcd2c679c5029a9c96d9dddbef6d11bdf90))
+* updating stepper tests ([3d4439a](https://github.com/juntossomosmais/venice/commit/3d4439a91995080bbb2cc04fde31aca5575d9286))
+
+
+### Features
+
+* add classname ([48e88d3](https://github.com/juntossomosmais/venice/commit/48e88d3eb2f397c5e9f37cbe6df8cd7f594fb7ba))
+* added class to storybook container ([fa4333a](https://github.com/juntossomosmais/venice/commit/fa4333adaa95c3d897c03b292d66045688f26b31))
+* added direction preview ([4ce0981](https://github.com/juntossomosmais/venice/commit/4ce0981903dc4b195a4f8deb2014673f4b687330))
+* added direction prop ([41387cd](https://github.com/juntossomosmais/venice/commit/41387cdb512d94d3413cfefa16ec1b854f44e565))
+* added event tests ([777c614](https://github.com/juntossomosmais/venice/commit/777c6147fa4177a914b4868670447d3576927ec7))
+* added new property ([73a4bbb](https://github.com/juntossomosmais/venice/commit/73a4bbbae8780437f8420e5fc48c49c8daf8e935))
+* added offset classes ([d4cc3d3](https://github.com/juntossomosmais/venice/commit/d4cc3d33ec1a1653cb39c320ba9c742482e8489a))
+* added tests for direction prop ([9f2c056](https://github.com/juntossomosmais/venice/commit/9f2c0567c7b144290dea6660cee1e9c2f38fdbb7))
+* created Split Button component ([9d7f7d5](https://github.com/juntossomosmais/venice/commit/9d7f7d5255d82f3307360b9bc9cbb4f35bf9fa41))
+* created Split Button component documentation ([7805be2](https://github.com/juntossomosmais/venice/commit/7805be2b0135ac9ed39d4fc16b7e64aa82c709b1))
+* created Split Button component tests ([7e02eb5](https://github.com/juntossomosmais/venice/commit/7e02eb59079f31ebe4fededcc981cac756b670ba))
+* typed onClick function ([9e2a7c3](https://github.com/juntossomosmais/venice/commit/9e2a7c38e44561bcd7673c345d2d4ab14c2bb060))
+
+
+
+
+
 # [0.9.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.8.0...@juntossomosmais/venice-react@0.9.0) (2020-06-17)
 
 

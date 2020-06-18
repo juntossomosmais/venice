@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.10.0...@venice/core@0.11.0) (2020-06-18)
+
+
+### Features
+
+* add classname ([abb2da3](https://github.com/juntossomosmais/venice/commit/abb2da3fd492bd321503bd0badb656596c32bbe2))
+* add classname ([48e88d3](https://github.com/juntossomosmais/venice/commit/48e88d3eb2f397c5e9f37cbe6df8cd7f594fb7ba))
+* added doc to SplitButton ([ae5d36b](https://github.com/juntossomosmais/venice/commit/ae5d36b7a32c8d33a586df49ce2ee7e686c78ebc))
+* created model for Split Button ([2161ec5](https://github.com/juntossomosmais/venice/commit/2161ec50192a05bc48e70ec9a67f5a875c1371ac))
+
+
+
+
+
 # [0.10.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.9.0...@venice/core@0.10.0) (2020-06-16)
 
 
