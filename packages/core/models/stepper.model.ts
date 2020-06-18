@@ -6,4 +6,5 @@ interface IStep {
 
 export interface IStepper {
   steps: Array<IStep>
+  className?: string
 }

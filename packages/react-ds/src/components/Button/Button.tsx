@@ -1,5 +1,7 @@
 import React from 'react'
 
+import classNames from 'classnames/bind'
+
 import { IButton, IDynamicComponentProps } from '@venice/core/models'
 import styles from '@venice/styles/components/Button.module.scss'
 
@@ -46,15 +48,15 @@ const Button: React.FunctionComponent<IButtonProps> = ({
         as={href ? 'a' : 'button'}
         role={href ? '' : 'button'}
         aria-busy={isLoading}
-        className={`
-          ${styles.btn}
-          ${styles[color]}
-          ${styles[variant]}
-          ${styles[size]}
-          ${styles[shape]}
-          ${isLoading ? styles.isLoading : ''}
-          ${className}
-        `}
+        className={classNames(
+          styles.btn,
+          styles[color],
+          styles[variant],
+          styles[size],
+          styles[shape],
+          { [styles.isLoading]: isLoading },
+          className
+        )}
         {...(href && { href })}
         {...rest}
       >
@@ -62,15 +64,13 @@ const Button: React.FunctionComponent<IButtonProps> = ({
           <Spinner
             color={variant === 'filled' ? `${color}-contrast` : color}
             size={size === 'small' ? 16 : 24}
-            className={`${styles.loading}`}
+            className={styles.loading}
           />
         )}
         <>
-          {startIcon && (
-            <span className={`${styles.startIcon}`}>{startIcon}</span>
-          )}
-          <span className={`${styles.children}`}>{children}</span>
-          {endIcon && <span className={`${styles.endIcon}`}>{endIcon}</span>}
+          {startIcon && <span className={styles.startIcon}>{startIcon}</span>}
+          <span className={styles.children}>{children}</span>
+          {endIcon && <span className={styles.endIcon}>{endIcon}</span>}
         </>
       </ButtonComponent>
     </>

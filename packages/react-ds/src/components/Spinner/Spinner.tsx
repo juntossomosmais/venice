@@ -1,5 +1,7 @@
 import React from 'react'
 
+import classNames from 'classnames/bind'
+
 import { ISpinner } from '@venice/core/models'
 import styles from '@venice/styles/components/Spinner.module.scss'
 
@@ -16,11 +18,7 @@ const Spinner = ({
 }: ISpinnerProps) => {
   return (
     <svg
-      className={`
-      ${styles.spinner}
-      ${styles[color]}
-      ${className}
-    `}
+      className={classNames(styles.spinner, styles[color], className)}
       style={{
         fontSize: size,
         height: size,
