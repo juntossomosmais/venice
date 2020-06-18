@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 
 import classNames from 'classnames/bind'
+import uniqid from 'uniqid'
 
 import { IInput } from '@venice/core/models/input.model'
 import styles from '@venice/styles/components/Input.module.scss'
@@ -14,7 +15,7 @@ const Input: FC<IInput> = ({
   error,
   ...props
 }: IInput) => {
-  const selfId = id || `input__${name}`
+  const selfId = id || uniqid(`input__${name}`)
 
   return (
     <div
@@ -30,17 +31,22 @@ const Input: FC<IInput> = ({
           {label}
         </label>
       )}
-      <input className={styles.input} name={name} id={selfId} {...props} />
+      <input
+        aria-label={selfId}
+        className={styles.input}
+        name={name}
+        id={selfId}
+        {...props}
+      />
       {/* TODO: Replace for alert component */}
       {error && (
-        <div className={styles.error} data-testid="error">
+        <div className={styles.error}>
           <svg
             width="10"
             height="10"
             viewBox="0 0 10 10"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            style={{ marginRight: `4px` }}
           >
             <path
               fillRule="evenodd"

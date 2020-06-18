@@ -1,40 +1,45 @@
 @import '~@venice/styles/core';
 
 .container {
+  @include reset();
   display: flex;
   flex-flow: column;
-  .label {
-    font: var(--typography-caption-font);
-    margin-bottom: var(--space-xs);
-    color: #616161;
-  }
-  .input {
-    background: var(--disabled-color-contrast);
-    border: 1px solid #ebebeb;
-    box-sizing: border-box;
-    border-radius: var(--border-radius);
-    font: var(--typography-body-font);
-    padding: var(--space-sm);
+}
 
-    &:disabled,
-    &[disabled] {
-      background: #e7e7e7;
-      &,
-      &::placeholder {
-        color: var(--disabled-color);
-      }
-    }
+.label {
+  color: var(--gray-4);
+  font: var(--typography-caption-font);
+  margin-bottom: var(--space-xs);
+}
 
-    @at-root .invalid#{&} {
-      outline: 1px auto var(--danger-color);
+.input {
+  background: var(--disabled-color-contrast);
+  border: 1px solid var(--gray-2);
+  border-radius: var(--border-radius);
+  font: var(--typography-body-font);
+  padding: var(--space-sm);
+
+  &:disabled,
+  &[disabled] {
+    background: var(--gray-2);
+    &,
+    &::placeholder {
+      color: var(--disabled-color);
     }
   }
-  .error {
-    font: var(--typography-caption-font);
-    margin-top: var(--space-xxs);
-    color: var(--danger-color);
-    svg {
-      fill: var(--danger-color);
-    }
+
+  @at-root .container.invalid#{&} {
+    outline: 1px auto var(--danger-color);
+  }
+}
+
+.error {
+  color: var(--danger-color);
+  font: var(--typography-caption-font);
+  margin-top: var(--space-xxs);
+
+  svg {
+    fill: var(--danger-color);
+    margin-right: var(--space-xxs);
   }
 }
