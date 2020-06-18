@@ -1,5 +1,5 @@
 <template>
-  <nav class="SplitButton">
+  <nav class="splitButton">
     <Button
       :color="color"
       :size="size"

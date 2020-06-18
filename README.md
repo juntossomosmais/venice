@@ -87,7 +87,7 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent com
 ```js
 import styles from '@venice/styles/components/Button.module.scss'
 
-<button className={styles.btn}></button>
+;<button className={styles.button}></button>
 ```
 
 ### Vue
@@ -102,7 +102,7 @@ import { IButton } from '@venice/core/models'
 </style>
 
 <template>
-  <button :class="btn"></button>
+  <button :class="button"></button>
 </template>
 ```
 

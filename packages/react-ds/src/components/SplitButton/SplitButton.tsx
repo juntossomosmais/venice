@@ -21,7 +21,7 @@ const SplitButton: React.FC<ISplitButtonProps> = ({
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
-    <nav className={styles.SplitButton} {...props}>
+    <nav className={styles.splitButton} {...props}>
       <Button
         color={color}
         onClick={() => setIsOpen((prev) => !prev)}
