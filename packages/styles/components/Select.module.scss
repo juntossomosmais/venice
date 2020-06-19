@@ -32,6 +32,7 @@ $caret-size: 16px;
   &:disabled,
   &[disabled] {
     background: var(--gray-2);
+    
     &,
     &::placeholder {
       color: var(--disabled-color);
@@ -70,16 +71,20 @@ $caret-size: 16px;
 
 .icon {
   left: var(--space-xs);
+  
   svg {
     width: $icon-size;
     height: $icon-size;
   }
+  
   + .select {
     padding-left: calc(#{$icon-size} + var(--space-sm));
   }
 }
+
 .caret {
   right: var(--space-xs);
+  
   svg {
     width: 16px;
   }
