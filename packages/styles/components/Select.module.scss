@@ -4,7 +4,6 @@ $icon-size: 24px;
 $caret-size: 16px;
 
 .container {
-  @include reset();
   display: flex;
   flex-flow: column;
 }
