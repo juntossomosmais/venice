@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.9.1...@juntossomosmais/venice-vue@0.9.2) (2020-06-19)
+
+
+### Bug Fixes
+
+* add class to camelcase ([26dcbdc](https://github.com/juntossomosmais/venice/commit/26dcbdcc421f48c6557e60f16cbc98916debf9e4))
+* change btn prefix to button ([3f25368](https://github.com/juntossomosmais/venice/commit/3f25368c90d0e5ceae814f955c9a92e4b09867c8))
+
+
+
+
+
 ## [0.9.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.9.0...@juntossomosmais/venice-vue@0.9.1) (2020-06-18)
 
 

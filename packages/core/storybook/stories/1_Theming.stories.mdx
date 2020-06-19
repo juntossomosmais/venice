@@ -4,7 +4,9 @@ import { Meta } from '@storybook/addon-docs/blocks'
 
 # Theming
 
-To use a Roboto's font you need to import it:
+## Webfont
+
+You also need to add a `Roboto`, just call it in your `<head>`.
 
 ```html
 <link
@@ -13,6 +15,10 @@ To use a Roboto's font you need to import it:
   type="text/css"
 />
 ```
+
+If you want to use another font, you need to change a CSS variable `--font-family`.
+
+## CSS Variables
 
 You can create your own theme, just override the variables in your stylesheet `:root`:
 

@@ -8,8 +8,6 @@ $short-range: calc((#{$item-width} * 3) + (#{$btn-width} * 2));
 $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
 
 .pagination {
-  @include reset();
-
   display: flex;
   justify-content: center;
 }
