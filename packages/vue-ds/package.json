@@ -1,7 +1,7 @@
 {
   "name": "@juntossomosmais/venice-vue",
   "description": "Design System of UI Components using Vue",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "license": "Apache-2.0",
   "homepage": "https://github.com/juntossomosmais/venice/packages/vue-ds#readme",
   "repository": {
@@ -24,6 +24,7 @@
   "scripts": {
     "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
     "build": "vue-cli-service build --target lib --name index src/index.ts && yarn workspace @venice/styles build",
+    "test": "vue-cli-service test:unit --env=jsdom",
     "test:ci": "cross-env CI=true vue-cli-service test:unit --bail --passWithNoTests --env=jsdom",
     "lint": "vue-cli-service lint",
     "build:storybook": "yarn build && vue-cli-service storybook:build -c .storybook -o ../../dist/vue",
@@ -42,8 +43,8 @@
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@storybook/vue": "^5.3.18",
     "@testing-library/vue": "^5.0.2",
-    "@venice/core": "^0.11.0",
-    "@venice/styles": "^0.13.0",
+    "@venice/core": "^0.11.1",
+    "@venice/styles": "^0.14.0",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-typescript": "~4.2.0",

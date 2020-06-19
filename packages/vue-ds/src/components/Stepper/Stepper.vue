@@ -1,5 +1,5 @@
 <template>
-  <ul class="stepper" data-testid="stepper">
+  <ul class="stepper">
     <li
       class="step"
       :class="`${isActive(step.completed)} ${isLastActive(idx)}`"

@@ -1,8 +1,6 @@
 @import '~@venice/styles/core';
 
-.btn {
-  @include reset();
-
+.button {
   align-items: center;
   background-color: transparent;
   border: 1px solid transparent;

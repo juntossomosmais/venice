@@ -1,7 +1,7 @@
 <template>
   <component
     :is="href ? 'a' : 'button'"
-    :class="btnClass"
+    :class="buttonClass"
     :href="href"
     :role="href ? '' : 'button'"
     :aria-busy="isLoading"
@@ -48,9 +48,9 @@ export default class Button extends Vue {
   @Prop({ default: false }) isLoading!: IButton['isLoading']
   @Prop() href!: IButton['href']
 
-  get btnClass() {
+  get buttonClass() {
     return [
-      'btn',
+      'button',
       this.color,
       this.variant,
       this.shape,

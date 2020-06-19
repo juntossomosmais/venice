@@ -1,8 +1,6 @@
 @import '~@venice/styles/core';
 
 .stepper {
-  @include reset();
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;

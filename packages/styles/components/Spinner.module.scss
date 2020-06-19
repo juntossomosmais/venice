@@ -5,8 +5,6 @@ $dashoffset: 180;
 $animation-time: 1.2s;
 
 .spinner {
-  @include reset();
-
   animation: rotation $animation-time linear infinite;
 }
 
