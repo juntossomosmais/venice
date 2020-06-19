@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.13.0...@venice/styles@0.14.0) (2020-06-19)
+
+
+### Bug Fixes
+
+* add class to camelcase ([26dcbdc](https://github.com/juntossomosmais/venice/commit/26dcbdcc421f48c6557e60f16cbc98916debf9e4))
+* change btn prefix to button ([3f25368](https://github.com/juntossomosmais/venice/commit/3f25368c90d0e5ceae814f955c9a92e4b09867c8))
+
+
+### Features
+
+* add reset file ([b4554f5](https://github.com/juntossomosmais/venice/commit/b4554f5bb88047d286f6c98f1e99eec940dd39ae))
+* remove mixin to reset ([ea60eb3](https://github.com/juntossomosmais/venice/commit/ea60eb38f4a4f08dd4657b07b25a52cc45e4f7df))
+
+
+
+
+
 # [0.13.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.12.0...@venice/styles@0.13.0) (2020-06-18)
 
 
