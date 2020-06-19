@@ -6,12 +6,14 @@ import uniqid from 'uniqid'
 import { ISelect } from '@venice/core/models/select.model'
 import styles from '@venice/styles/components/Select.module.scss'
 
-interface ISelectProps extends ISelect {
+interface ISelectProps extends React.HTMLProps<HTMLSelectElement> {
   /** React Element */
   icon?: React.ReactNode | string
+  /** Style */
+  style?: object
 }
 
-const Select: FunctionComponent<ISelectProps> = ({
+const Select: FunctionComponent<ISelectProps & ISelect> = ({
   id,
   label,
   style,
@@ -21,7 +23,7 @@ const Select: FunctionComponent<ISelectProps> = ({
   children,
   icon,
   ...props
-}: ISelect) => {
+}: ISelectProps & ISelect) => {
   const selfId = id || uniqid(`select__`)
   const styleContainer = classNames(
     styles.container,
