@@ -16,10 +16,10 @@ import Select from './Select'
 <Preview>
   <Story name="Base" decorators={[withKnobs,withA11y]}>
     <form className="row-items" style={{display: 'flex'}}>
-      <Select label="label" style={{flex: '1'}} >
-        <option>option 1</option>
-        <option selected>option 2</option>
-        <option>option 3</option>
+      <Select label="label" style={{flex: '1'}}  defaultValue="2">
+        <option value="1">option 1</option>
+        <option value="2">option 2</option>
+        <option value="3">option 3</option>
       </Select>
       <Select label="label" style={{flex: '1'}} >
         <option>option 1</option>
@@ -42,8 +42,8 @@ import Select from './Select'
     <div className="row-items" style={{display: 'flex'}}>
       <Select name="disabled" label="disabled" disabled style={{flex: '1'}}/>
       <Select name="disabled" label="disabled" placeholder="placeholder" disabled style={{flex: '1'}}/>
-      <Select name="disabled" label="disabled" icon="R$" disabled style={{flex: '1'}}>
-        <option selected>0,00</option>
+      <Select name="disabled" label="disabled" icon="R$" disabled style={{flex: '1'}} defaultValue="0">
+        <option value="0">0,00</option>
       </Select>
     </div>
   </Story>
@@ -66,18 +66,18 @@ import Select from './Select'
 <Preview>
   <Story name="icon" decorators={[withKnobs,withA11y]}>
     <div className="row-items" style={{display: 'flex'}}>
-      <Select label="With Icon"  style={{flex: '1'}} icon={
+      <Select label="With Icon"  style={{flex: '1'}} defaultValue="svg" icon={
         <svg xmlns="http://www.w3.org/2000/svg" >
           <path d="M 20.480469 6.5625 L 21.28125 10.5 L 2.71875 10.5 L 3.519531 6.5625 Z M 22.667969 0 L 1.332031 0 L 1.332031 2.625 L 22.667969 2.625 Z M 22.667969 3.9375 L 1.332031 3.9375 L 0 10.5 L 0 13.125 L 1.332031 13.125 L 1.332031 21 L 14.667969 21 L 14.667969 13.125 L 20 13.125 L 20 21 L 22.667969 21 L 22.667969 13.125 L 24 13.125 L 24 10.5 Z M 4 18.375 L 4 13.125 L 12 13.125 L 12 18.375 Z M 4 18.375 " />
         </svg>
       }>
-        <option selected>With SVG</option>
+        <option value="svg">With SVG</option>
       </Select>
-      <Select label="With Icon" placeholder="placeholder" icon="R$" style={{flex: '1'}}>
-        <option selected>0,00</option>
+      <Select label="With Icon" placeholder="placeholder" icon="R$" style={{flex: '1'}} defaultValue="0">
+        <option value="0">0,00</option>
       </Select>
-      <Select label="With Icon" icon={<Spinner/>} style={{flex: '1'}}>
-        <option selected>Spinner</option>
+      <Select label="With Icon" icon={<Spinner/>} style={{flex: '1'}}  defaultValue="Spinner">
+        <option value="Spinner">Spinner</option>
       </Select>
     </div>
   </Story>
