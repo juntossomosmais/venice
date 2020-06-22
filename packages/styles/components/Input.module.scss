@@ -28,7 +28,7 @@
     }
   }
 
-  @at-root .container.invalid#{&} {
+  @at-root .container.invalid #{&} {
     outline: 1px auto var(--danger-color);
   }
 }
