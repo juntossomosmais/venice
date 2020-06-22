@@ -1,7 +1,6 @@
 @import '~@venice/styles/core';
 
 .container {
-  @include reset();
   display: flex;
   flex-flow: column;
 }
@@ -22,6 +21,7 @@
   &:disabled,
   &[disabled] {
     background: var(--gray-2);
+
     &,
     &::placeholder {
       color: var(--disabled-color);
