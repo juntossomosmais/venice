@@ -1,0 +1,15 @@
+import React, { FunctionComponent, SVGAttributes } from 'react'
+
+import Icon from './Icon'
+
+export const Alert: FunctionComponent<SVGAttributes<
+  SVGElement
+>> = Icon((props: SVGAttributes<SVGElement>) => (
+  <path
+    fillRule="evenodd"
+    d="M 11.988281 0 C 5.363281 0 0 5.375 0 12 C 0 18.625 5.363281 24 11.988281 24 C 18.625 24 24 18.625 24 12 C 24 5.375 18.625 0 11.988281 0 Z M 13.199219 13.199219 L 13.199219 6 L 10.800781 6 L 10.800781 13.199219 Z M 13.199219 18 L 13.199219 15.601562 L 10.800781 15.601562 L 10.800781 18 Z M 2.398438 12 C 2.398438 17.304688 6.695312 21.601562 12 21.601562 C 17.304688 21.601562 21.601562 17.304688 21.601562 12 C 21.601562 6.695312 17.304688 2.398438 12 2.398438 C 6.695312 2.398438 2.398438 6.695312 2.398438 12 Z M 2.398438 12 "
+    {...props}
+  />
+))
+
+export default Alert
