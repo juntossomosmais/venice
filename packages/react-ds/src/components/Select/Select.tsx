@@ -6,6 +6,8 @@ import uniqid from 'uniqid'
 import { ISelect } from '@venice/core/models/select.model'
 import styles from '@venice/styles/components/Select.module.scss'
 
+import Caret from '../icons/Caret'
+
 interface ISelectProps extends ISelect {
   /** React Element */
   icon?: React.ReactNode | string
@@ -43,11 +45,7 @@ const Select: FunctionComponent<ISelectProps &
           <option hidden>{placeholder}</option>
           {children}
         </select>
-        <div className={styles.caret}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 13">
-            <path d="M 23.890625 1.671875 L 23.753906 1.816406 L 13.507812 12.417969 C 13.160156 12.777344 12.640625 13 12.0625 13 C 11.480469 13 10.960938 12.769531 10.613281 12.417969 L 0.375 1.835938 L 0.203125 1.660156 C 0.0742188 1.488281 0 1.285156 0 1.070312 C 0 0.480469 0.554688 0 1.25 0 L 22.855469 0 C 23.550781 0 24.105469 0.480469 24.105469 1.070312 C 24.105469 1.296875 24.023438 1.503906 23.890625 1.671875 Z M 23.890625 1.671875 " />
-          </svg>
-        </div>
+        <Caret className={styles.caret} viewBox="0 0 24 13" />
       </div>
       {/* TODO: Replace for alert component */}
       {error && (

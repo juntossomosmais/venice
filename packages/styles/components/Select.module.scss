@@ -31,7 +31,7 @@ $caret-size: 16px;
   &:disabled,
   &[disabled] {
     background: var(--gray-2);
-    
+
     &,
     &::placeholder {
       color: var(--disabled-color);
@@ -60,22 +60,17 @@ $caret-size: 16px;
   color: var(--gray-2);
   display: flex;
   fill: var(--gray-2);
-  justify-content: center;
   height: 100%;
-  position: absolute;
+  justify-content: center;
   pointer-events: none;
+  position: absolute;
   top: 0;
   width: $icon-size;
 }
 
 .icon {
   left: var(--space-xs);
-  
-  svg {
-    width: $icon-size;
-    height: $icon-size;
-  }
-  
+
   + .select {
     padding-left: calc(#{$icon-size} + var(--space-sm));
   }
@@ -83,9 +78,5 @@ $caret-size: 16px;
 
 .caret {
   right: var(--space-xs);
-  
-  svg {
-    width: 16px;
-  }
+  width: $caret-size;
 }
-
