@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, HTMLProps } from 'react'
 
 import classNames from 'classnames/bind'
 import uniqid from 'uniqid'
@@ -6,14 +6,14 @@ import uniqid from 'uniqid'
 import { IInput } from '@venice/core/models/input.model'
 import styles from '@venice/styles/components/Input.module.scss'
 
-const Input: FunctionComponent<IInput> = ({
+const Input: FunctionComponent<IInput & HTMLProps<HTMLInputElement>> = ({
   id,
   label,
   style,
   className,
   error,
   ...props
-}: IInput) => {
+}: IInput & HTMLProps<HTMLInputElement>) => {
   const selfId = id || uniqid(`input__`)
   const styleContainer = classNames(
     styles.container,
