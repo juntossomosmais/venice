@@ -1,0 +1,87 @@
+import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
+import { withKnobs } from '@storybook/addon-knobs'
+import { withA11y } from '@storybook/addon-a11y'
+
+import Spinner from '../Spinner/Spinner'
+import Docs from '@venice/core/docs/Select.md'
+
+import Select from './Select'
+import StoreIcon from '../icons/Store'
+
+<Meta title="Components|Selects" component={Select} />
+
+<Description>{Docs}</Description>
+
+##  Base
+
+<Preview>
+  <Story name="Base" decorators={[withKnobs,withA11y]}>
+    <form className="row-items" style={{display: 'flex'}}>
+      <Select label="label" style={{flex: '1'}}  defaultValue="2">
+        <option value="1">option 1</option>
+        <option value="2">option 2</option>
+        <option value="3">option 3</option>
+      </Select>
+      <Select label="label" style={{flex: '1'}} >
+        <option>option 1</option>
+        <option>option 2</option>
+        <option>option 3</option>
+      </Select>
+      <Select label="label" placeholder="Chose your Option" style={{flex: '1'}}>
+        <option>option 1</option>
+        <option>option 2</option>
+        <option>option 3</option>
+      </Select>
+    </form>
+  </Story>
+</Preview>
+
+##  Disabled
+
+<Preview>
+  <Story name="Disabled" decorators={[withKnobs,withA11y]}>
+    <div className="row-items" style={{display: 'flex'}}>
+      <Select name="disabled" label="disabled" disabled style={{flex: '1'}}/>
+      <Select name="disabled" label="disabled" placeholder="placeholder" disabled style={{flex: '1'}}/>
+      <Select name="disabled" label="disabled" icon="R$" disabled style={{flex: '1'}} defaultValue="0">
+        <option value="0">0,00</option>
+      </Select>
+    </div>
+  </Story>
+</Preview>
+
+##  Validation
+
+<Preview>
+  <Story name="Validation" decorators={[withKnobs,withA11y]}>
+    <Select name="error" label="Error Sample" error="Errors will be displayed here">
+      <option>option 1</option>
+      <option>option 2</option>
+      <option>option 3</option>
+    </Select>
+  </Story>
+</Preview>
+
+##  Icon
+
+<Preview>
+  <Story name="Icon" decorators={[withKnobs,withA11y]}>
+    <div className="row-items" style={{display: 'flex'}}>
+      <Select label="With Icon"  style={{flex: '1'}} defaultValue="svg" icon={
+        <StoreIcon/>
+      }>
+        <option value="svg">With SVG</option>
+      </Select>
+      <Select label="With Icon" placeholder="placeholder" icon="R$" style={{flex: '1'}} defaultValue="0">
+        <option value="0">0,00</option>
+      </Select>
+      <Select label="With Icon" icon={<Spinner size="24"/>} style={{flex: '1'}}  defaultValue="Spinner">
+        <option value="Spinner">Spinner</option>
+      </Select>
+    </div>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Select} />

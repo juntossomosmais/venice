@@ -8,7 +8,14 @@
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+        "ignoreAtRules": [
+          "at-root",
+          "function",
+          "if",
+          "each",
+          "include",
+          "mixin"
+        ]
       }
     ]
   }
