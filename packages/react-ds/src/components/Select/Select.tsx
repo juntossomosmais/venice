@@ -6,8 +6,7 @@ import uniqid from 'uniqid'
 import { ISelect } from '@venice/core/models/select.model'
 import styles from '@venice/styles/components/Select.module.scss'
 
-import Alert from '../icons/Alert'
-import Caret from '../icons/Caret'
+import { Alert, Caret } from '../icons/Alert'
 
 interface ISelectProps extends ISelect {
   /** React Element */
