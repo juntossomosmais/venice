@@ -1,0 +1,82 @@
+@import '~@venice/styles/core';
+
+$icon-size: 24px;
+$caret-size: 16px;
+
+.container {
+  display: flex;
+  flex-flow: column;
+}
+
+.label {
+  color: var(--gray-4);
+  font: var(--typography-caption-font);
+  margin-bottom: var(--space-xs);
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.select {
+  appearance: none;
+  background: var(--disabled-color-contrast);
+  border: 1px solid var(--gray-2);
+  border-radius: var(--border-radius);
+  font: var(--typography-body-font);
+  padding: var(--space-sm);
+  padding-right: calc(#{$caret-size} + var(--space-sm));
+  width: 100%;
+
+  &:disabled,
+  &[disabled] {
+    background: var(--gray-2);
+
+    &,
+    &::placeholder {
+      color: var(--disabled-color);
+    }
+  }
+
+  @at-root .container.invalid #{&} {
+    outline: 1px auto var(--danger-color);
+  }
+}
+
+.error {
+  color: var(--danger-color);
+  font: var(--typography-caption-font);
+  margin-top: var(--space-xxs);
+
+  svg {
+    fill: var(--danger-color);
+    margin-right: var(--space-xxs);
+  }
+}
+
+.caret,
+.icon {
+  align-items: center;
+  color: var(--gray-2);
+  display: flex;
+  fill: var(--gray-2);
+  height: 100%;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: $icon-size;
+}
+
+.icon {
+  left: var(--space-xs);
+
+  + .select {
+    padding-left: calc(#{$icon-size} + var(--space-sm));
+  }
+}
+
+.caret {
+  right: var(--space-xs);
+  width: $caret-size;
+}
