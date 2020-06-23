@@ -6,37 +6,6 @@ import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks'
 
 All color palettes and their CSS Variables.
 
-## Color Palette
-
-This is all color palette of project. The variables should to use directly in elements, but to improve the capacity to create theme, is better to use the contextual colors (bellow).
-
-<ColorPalette>
-  <ColorItem
-    title="Monochrome"
-    colors={[
-      'var(--white)',
-      'var(--gray-1)',
-      'var(--gray-2)',
-      'var(--gray-3)',
-      'var(--gray-4)',
-      'var(--black)',
-    ]}
-  />
-  <ColorItem
-    title="Blue"
-    colors={[
-      'var(--blue-1)',
-      'var(--blue-2)',
-      'var(--blue-3)',
-      'var(--blue-4)',
-    ]}
-  />
-  <ColorItem title="Green" colors={['var(--green-1)']} />
-  <ColorItem title="Orange" colors={['var(--orange-1)']} />
-  <ColorItem title="Purple" colors={['var(--purple-1)']} />
-  <ColorItem title="Red" colors={['var(--red-1)', 'var(--red-2)']} />
-</ColorPalette>
-
 ## Contextual colors
 
 This is the contextual colors, is important use it to easily change a theme and maintain a consistent between the projects.
@@ -103,4 +72,35 @@ This use 3 kinds of variables:
     subtitle="Used just in text colors"
     colors={['var(--text-color)', 'var(--text-color-lighten)']}
   />
+</ColorPalette>
+
+## Color Palette
+
+This is all color palette of project. The variables should to use directly in elements, but to improve the capacity to create theme, is better to use the contextual colors (bellow).
+
+<ColorPalette>
+  <ColorItem
+    title="Monochrome"
+    colors={[
+      'var(--white)',
+      'var(--gray-1)',
+      'var(--gray-2)',
+      'var(--gray-3)',
+      'var(--gray-4)',
+      'var(--black)',
+    ]}
+  />
+  <ColorItem
+    title="Blue"
+    colors={[
+      'var(--blue-1)',
+      'var(--blue-2)',
+      'var(--blue-3)',
+      'var(--blue-4)',
+    ]}
+  />
+  <ColorItem title="Green" colors={['var(--green-1)']} />
+  <ColorItem title="Orange" colors={['var(--orange-1)']} />
+  <ColorItem title="Purple" colors={['var(--purple-1)']} />
+  <ColorItem title="Red" colors={['var(--red-1)', 'var(--red-2)']} />
 </ColorPalette>
