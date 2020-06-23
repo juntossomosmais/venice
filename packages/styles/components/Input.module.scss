@@ -35,13 +35,14 @@
 
 .error {
   color: var(--danger-color);
+  display: inherit;
   font: var(--typography-caption-font);
   margin-top: var(--space-xxs);
 
   svg {
     fill: var(--danger-color);
-    height: 10px;
+    height: 14px;
     margin-right: var(--space-xxs);
-    width: 10px;
+    width: 14px;
   }
 }
