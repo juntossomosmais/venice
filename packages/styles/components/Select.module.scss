@@ -23,9 +23,10 @@ $caret-size: 16px;
   background: var(--disabled-color-contrast);
   border: 1px solid var(--gray-2);
   border-radius: var(--border-radius);
+  color: var(--default-color);
   font: var(--typography-body-font);
   padding: var(--space-sm);
-  padding-right: calc(#{$caret-size} + var(--space-sm));
+  padding-right: calc(#{$caret-size} + var(--space-md));
   width: 100%;
 
   &:disabled,
@@ -45,14 +46,15 @@ $caret-size: 16px;
 
 .error {
   color: var(--danger-color);
+  display: inherit;
   font: var(--typography-caption-font);
   margin-top: var(--space-xxs);
 
   svg {
     fill: var(--danger-color);
-    height: 10px;
+    height: 14px;
     margin-right: var(--space-xxs);
-    width: 10px;
+    width: 14px;
   }
 }
 
@@ -79,6 +81,6 @@ $caret-size: 16px;
 }
 
 .caret {
-  right: var(--space-xs);
+  right: var(--space);
   width: $caret-size;
 }
