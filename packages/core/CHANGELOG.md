@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.11.1...@venice/core@0.12.0) (2020-06-23)
+
+
+### Features
+
+* add Input ([3569963](https://github.com/juntossomosmais/venice/commit/3569963a53f0c400dd88d0025b8fce992daece89))
+* add Select ([a2ecaca](https://github.com/juntossomosmais/venice/commit/a2ecaca715f8593926e77cfc5e10a7d17b41739a))
+* adjusts ([da0101f](https://github.com/juntossomosmais/venice/commit/da0101fc53d9f4f17034ac01df6fa014cde9ea50))
+* adjusts ([9083c8e](https://github.com/juntossomosmais/venice/commit/9083c8e1af66826c24adb46f8f43cec57561971e))
+* adjusts ([3226a90](https://github.com/juntossomosmais/venice/commit/3226a90fcf763f50f5d207248f17a6806f49798f))
+* adjusts from PR ([28b5e4f](https://github.com/juntossomosmais/venice/commit/28b5e4f9d2064d7fa820bc7f665fc9987966a62e))
+* adjusts from PR ([5f58f6e](https://github.com/juntossomosmais/venice/commit/5f58f6eeb3a3880baa02388e5a4fd3aa38301a6e))
+* fixing model ([0118538](https://github.com/juntossomosmais/venice/commit/011853857e1edaf8ac689b7e1489d6f0642caca6))
+
+
+
+
+
 ## [0.11.1](https://github.com/juntossomosmais/venice/compare/@venice/core@0.11.0...@venice/core@0.11.1) (2020-06-19)
 
 **Note:** Version bump only for package @venice/core

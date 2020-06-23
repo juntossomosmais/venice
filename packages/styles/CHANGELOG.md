@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.14.0...@venice/styles@0.15.0) (2020-06-23)
+
+
+### Bug Fixes
+
+* lint file ([1b72dac](https://github.com/juntossomosmais/venice/commit/1b72dacf72695030ca7b1447fe92469e9cd90d5e))
+
+
+### Features
+
+* add Input ([3569963](https://github.com/juntossomosmais/venice/commit/3569963a53f0c400dd88d0025b8fce992daece89))
+* add Select ([b6ed89c](https://github.com/juntossomosmais/venice/commit/b6ed89cc009091371951b38145355386db769790))
+* add Select ([a2ecaca](https://github.com/juntossomosmais/venice/commit/a2ecaca715f8593926e77cfc5e10a7d17b41739a))
+* adjusts from PR ([28b5e4f](https://github.com/juntossomosmais/venice/commit/28b5e4f9d2064d7fa820bc7f665fc9987966a62e))
+* adjusts from PR ([5f58f6e](https://github.com/juntossomosmais/venice/commit/5f58f6eeb3a3880baa02388e5a4fd3aa38301a6e))
+* ajusts into input/select ([b62aaf0](https://github.com/juntossomosmais/venice/commit/b62aaf014536501550738a22b9e72977f1ee6732))
+* fixing css error ([b48fb9c](https://github.com/juntossomosmais/venice/commit/b48fb9c574be30134550343d3c04940277b69d52))
+* fixing css error ([603c796](https://github.com/juntossomosmais/venice/commit/603c796b5423837d2b044c9b7af9cdca79f9f43a))
+* modularizing icons ([98a5f78](https://github.com/juntossomosmais/venice/commit/98a5f78c41e6c45cc4791253003a0947fe4fcf47))
+* removed reset() ([2a6e21c](https://github.com/juntossomosmais/venice/commit/2a6e21caee914f8a85996007250acdd0876b3931))
+
+
+
+
+
 # [0.14.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.13.0...@venice/styles@0.14.0) (2020-06-19)
 
 

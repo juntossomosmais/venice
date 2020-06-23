@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.10.1...@juntossomosmais/venice-react@0.11.0) (2020-06-23)
+
+
+### Bug Fixes
+
+* export split button ([90c067c](https://github.com/juntossomosmais/venice/commit/90c067c8bceff4da0f445c427483bb27333e2594))
+* lint file ([00e16c7](https://github.com/juntossomosmais/venice/commit/00e16c70510ce515682bca6960a8591bceb24745))
+
+
+### Features
+
+* add barril into icons ([16c2e91](https://github.com/juntossomosmais/venice/commit/16c2e91062eb11fc0232ce3707781d051d685068))
+* add barril into icons ([fd88e7a](https://github.com/juntossomosmais/venice/commit/fd88e7acafb6efa8cee91e7c56ee665256e83940))
+* add dependences ([b8047a1](https://github.com/juntossomosmais/venice/commit/b8047a10bff38543487ac4723ec74b05bad78a6f))
+* add Input ([3569963](https://github.com/juntossomosmais/venice/commit/3569963a53f0c400dd88d0025b8fce992daece89))
+* add Select ([d3cc816](https://github.com/juntossomosmais/venice/commit/d3cc816bf1dcce76228ec8ee1efc811563ccf4ca))
+* add Select ([a2ecaca](https://github.com/juntossomosmais/venice/commit/a2ecaca715f8593926e77cfc5e10a7d17b41739a))
+* adjusts ([e47d83a](https://github.com/juntossomosmais/venice/commit/e47d83ac59bd418071c436bdd48e40555ebc4b44))
+* adjusts ([3226a90](https://github.com/juntossomosmais/venice/commit/3226a90fcf763f50f5d207248f17a6806f49798f))
+* adjusts from PR ([28b5e4f](https://github.com/juntossomosmais/venice/commit/28b5e4f9d2064d7fa820bc7f665fc9987966a62e))
+* adjusts from PR ([33b4996](https://github.com/juntossomosmais/venice/commit/33b4996799e89bbcdcb03501ed472bd8c825459a))
+* adjusts from PR ([5816d5d](https://github.com/juntossomosmais/venice/commit/5816d5d9fa81ca603e8561443c84c6352cb449ba))
+* adjusts from PR ([63d8292](https://github.com/juntossomosmais/venice/commit/63d829268a218a4416eec3b744b977ff047167ac))
+* adjusts from PR ([9e05641](https://github.com/juntossomosmais/venice/commit/9e05641d2ed2bca2833f4808877da83793900bc0))
+* adjusts from PR ([fc10d73](https://github.com/juntossomosmais/venice/commit/fc10d739266fe81c82971d0f199fed3c011c77be))
+* adjusts from PR ([5f58f6e](https://github.com/juntossomosmais/venice/commit/5f58f6eeb3a3880baa02388e5a4fd3aa38301a6e))
+* ajusts into input/select ([b62aaf0](https://github.com/juntossomosmais/venice/commit/b62aaf014536501550738a22b9e72977f1ee6732))
+* exporting Component ([44938b8](https://github.com/juntossomosmais/venice/commit/44938b800207235dbc732918658211295adfca15))
+* fix model of select ([0a4fe39](https://github.com/juntossomosmais/venice/commit/0a4fe39948a764ce99b222335329250d63e340a0))
+* fixing model ([0118538](https://github.com/juntossomosmais/venice/commit/011853857e1edaf8ac689b7e1489d6f0642caca6))
+* fixing typing of Select ([f605881](https://github.com/juntossomosmais/venice/commit/f60588120c773959f8c47c180047092daac9b8ee))
+* modularizing icons ([98a5f78](https://github.com/juntossomosmais/venice/commit/98a5f78c41e6c45cc4791253003a0947fe4fcf47))
+* select documentation ([e70b511](https://github.com/juntossomosmais/venice/commit/e70b511e3d5c21b4e59e7b66db3ea79405e463ab))
+
+
+
+
+
 ## [0.10.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.10.0...@juntossomosmais/venice-react@0.10.1) (2020-06-19)
 
 
