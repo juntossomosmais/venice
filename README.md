@@ -2,7 +2,7 @@
 <p align="center">
   <img
     alt="Build"
-    src="https://img.shields.io/github/workflow/status/juntossomosmais/venice/Node.js CI"
+    src="https://img.shields.io/github/workflow/status/juntossomosmais/venice/ghpages"
   />
   <a
     href="https://juntossomosmais.github.io/venice"
