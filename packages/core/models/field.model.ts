@@ -1,4 +1,4 @@
-export interface ISelect extends HTMLSelectElement {
+export interface IField extends HTMLSelectElement {
   /** String */
   label?: string
   /** String */
