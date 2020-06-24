@@ -6,10 +6,10 @@ import uniqid from 'uniqid'
 import { IField } from '@venice/core/models/field.model'
 import styles from '@venice/styles/components/Field.module.scss'
 
-import Alert from '../icons/Alert'
+import Alert from '../components/Icons/Alert'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Field = (Component: FunctionComponent<any>) =>
+const WithField = (Component: FunctionComponent<any>) =>
   forwardRef(
     (
       {
@@ -54,4 +54,4 @@ const Field = (Component: FunctionComponent<any>) =>
     }
   )
 
-export default Field
+export default WithField

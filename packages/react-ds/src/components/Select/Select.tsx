@@ -5,8 +5,8 @@ import classNames from 'classnames/bind'
 import { IField } from '@venice/core/models/field.model'
 import styles from '@venice/styles/components/Select.module.scss'
 
-import Field from '../Field/Field'
-import Caret from '../icons/Caret'
+import WithField from '../../hoc/WithField'
+import Caret from '../Icons/Caret'
 
 interface IFieldProps extends IField {
   /** React Element */
@@ -39,4 +39,4 @@ const Select = (
   </div>
 )
 
-export default Field(forwardRef(Select))
+export default WithField(forwardRef(Select))
