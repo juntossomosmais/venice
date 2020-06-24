@@ -2,21 +2,26 @@ name: ghpages
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }} and publish to ghpages
-        uses: actions/setup-node@v1
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
         with:
-          node-version: ${{ matrix.node-version }}
-      - run: yarn
-      - run: yarn deploy:storybook
+          persist-credentials: false
+
+      - name: Install and Build 🔧
+        run: |
+          yarn
+          yarn build:storybook
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_GHPAGES }}
+          BRANCH: gh-pages
+          FOLDER: dist
