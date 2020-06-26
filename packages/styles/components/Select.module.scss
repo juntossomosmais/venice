@@ -3,45 +3,8 @@
 $icon-size: 24px;
 $caret-size: 16px;
 
-.container {
-  display: flex;
-  flex-flow: column;
-}
-
-.label {
-  color: var(--gray-4);
-  font: var(--typography-caption-font);
-  margin-bottom: var(--space-xs);
-}
-
-.selectWrapper {
+.wrapper {
   position: relative;
-}
-
-.select {
-  appearance: none;
-  background: var(--disabled-color-contrast);
-  border: 1px solid var(--gray-2);
-  border-radius: var(--border-radius);
-  color: var(--default-color);
-  font: var(--typography-body-font);
-  padding: var(--space-sm);
-  padding-right: calc(#{$caret-size} + var(--space-md));
-  width: 100%;
-
-  &:disabled,
-  &[disabled] {
-    background: var(--gray-2);
-
-    &,
-    &::placeholder {
-      color: var(--disabled-color);
-    }
-  }
-
-  @at-root .container.invalid #{&} {
-    outline: 1px auto var(--danger-color);
-  }
 }
 
 .error {
@@ -75,7 +38,7 @@ $caret-size: 16px;
 .icon {
   left: var(--space-xs);
 
-  + .select {
+  + .field {
     padding-left: calc(#{$icon-size} + var(--space-sm));
   }
 }
