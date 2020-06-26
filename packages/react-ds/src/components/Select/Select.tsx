@@ -14,60 +14,58 @@ interface ISelectProps extends IField {
   icon?: React.ReactNode | string
 }
 
-const Select = forwardRef(
-  (
-    {
-      id,
-      label,
-      style,
-      className,
-      error,
-      placeholder,
-      children,
-      icon,
-      ...props
-    }: ISelectProps & HTMLProps<HTMLSelectElement>,
-    ref?: Ref<HTMLSelectElement>
-  ) => {
-    const selfId = id || uniqid(`select__`)
-    const styleContainer = classNames(
-      stylesField.container,
-      { [stylesField.invalid]: Boolean(error) },
-      className
-    )
+const Select = (
+  {
+    id,
+    label,
+    style,
+    className,
+    error,
+    placeholder,
+    children,
+    icon,
+    ...props
+  }: ISelectProps & HTMLProps<HTMLSelectElement>,
+  ref?: Ref<HTMLSelectElement>
+) => {
+  const selfId = id || uniqid(`select__`)
+  const styleContainer = classNames(
+    stylesField.container,
+    { [stylesField.invalid]: Boolean(error) },
+    className
+  )
 
-    return (
-      <div className={styleContainer} style={style}>
-        {label && (
-          <label htmlFor={selfId} className={stylesField.label}>
-            {label}
-          </label>
-        )}
-        <div className={styles.wrapper}>
-          {icon && <span className={styles.icon}>{icon}</span>}
-          <select
-            {...props}
-            id={selfId}
-            className={classNames(stylesField.field, styles.field)}
-            ref={ref}
-          >
-            <option hidden value="">
-              {placeholder}
-            </option>
-            {children}
-          </select>
-          <Caret className={styles.caret} viewBox="0 0 24 13" />
-        </div>
-        {/* TODO: Replace for alert component */}
-        {error && (
-          <div className={stylesField.error}>
-            <Alert />
-            {error}
-          </div>
-        )}
+  return (
+    <div className={styleContainer} style={style}>
+      {label && (
+        <label htmlFor={selfId} className={stylesField.label}>
+          {label}
+        </label>
+      )}
+      <div className={styles.wrapper}>
+        {icon && <span className={styles.icon}>{icon}</span>}
+        <select
+          {...props}
+          id={selfId}
+          className={classNames(stylesField.field, styles.field)}
+          ref={ref}
+        >
+          <option hidden value="">
+            {placeholder}
+          </option>
+          {children}
+        </select>
+        <Caret className={styles.caret} viewBox="0 0 24 13" />
       </div>
-    )
-  }
-)
+      {/* TODO: Replace for alert component */}
+      {error && (
+        <div className={stylesField.error}>
+          <Alert />
+          {error}
+        </div>
+      )}
+    </div>
+  )
+}
 
-export default Select
+export default forwardRef(Select)
