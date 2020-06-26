@@ -47,6 +47,7 @@ const Select = forwardRef(
           {icon && <span className={styles.icon}>{icon}</span>}
           <select
             {...props}
+            id={selfId}
             className={classNames(stylesField.field, styles.field)}
             ref={ref}
           >
