@@ -1,5 +1,4 @@
 import { render } from '@testing-library/vue'
-import { mount } from '@vue/test-utils'
 
 import '@testing-library/jest-dom'
 
@@ -157,14 +156,6 @@ describe('<Button />', () => {
   it('should be render element as <button> if not has href', () => {
     const { container } = render(Button)
     expect(container.querySelector('button')).toBeInTheDocument()
-  })
-
-  it('should be call `click` when emit it', async () => {
-    const wrapper = mount(Button)
-    wrapper.vm.$emit('click')
-
-    await wrapper.vm.$nextTick()
-    expect(wrapper.emitted().click).toBeTruthy()
   })
 
   it('should have "isLoading" classname when has "isLoading prop"', () => {

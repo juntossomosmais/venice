@@ -1,0 +1,51 @@
+@import '~@venice/styles/core';
+
+.container {
+  display: flex;
+  flex-flow: column;
+}
+
+.label {
+  color: var(--gray-4);
+  font: var(--typography-caption-font);
+  margin-bottom: var(--space-xs);
+}
+
+.field {
+  appearance: none;
+  background: var(--disabled-color-contrast);
+  border: 1px solid var(--gray-2);
+  border-radius: var(--border-radius);
+  color: var(--default-color);
+  font: var(--typography-body-font);
+  padding: var(--space-sm);
+  width: 100%;
+
+  &:disabled,
+  &[disabled] {
+    background: var(--gray-2);
+
+    &,
+    &::placeholder {
+      color: var(--disabled-color);
+    }
+  }
+
+  @at-root .container.invalid #{&} {
+    outline: 1px auto var(--danger-color);
+  }
+}
+
+.error {
+  color: var(--danger-color);
+  display: inherit;
+  font: var(--typography-caption-font);
+  margin-top: var(--space-xxs);
+
+  svg {
+    fill: var(--danger-color);
+    height: 14px;
+    margin-right: var(--space-xxs);
+    width: 14px;
+  }
+}

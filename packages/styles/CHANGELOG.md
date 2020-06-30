@@ -3,6 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.14.0...@venice/styles@0.15.0) (2020-06-23)
+
+
+### Bug Fixes
+
+* lint file ([1b72dac](https://github.com/juntossomosmais/venice/commit/1b72dacf72695030ca7b1447fe92469e9cd90d5e))
+
+
+### Features
+
+* add Input ([3569963](https://github.com/juntossomosmais/venice/commit/3569963a53f0c400dd88d0025b8fce992daece89))
+* add Select ([b6ed89c](https://github.com/juntossomosmais/venice/commit/b6ed89cc009091371951b38145355386db769790))
+* add Select ([a2ecaca](https://github.com/juntossomosmais/venice/commit/a2ecaca715f8593926e77cfc5e10a7d17b41739a))
+* adjusts from PR ([28b5e4f](https://github.com/juntossomosmais/venice/commit/28b5e4f9d2064d7fa820bc7f665fc9987966a62e))
+* adjusts from PR ([5f58f6e](https://github.com/juntossomosmais/venice/commit/5f58f6eeb3a3880baa02388e5a4fd3aa38301a6e))
+* ajusts into input/select ([b62aaf0](https://github.com/juntossomosmais/venice/commit/b62aaf014536501550738a22b9e72977f1ee6732))
+* fixing css error ([b48fb9c](https://github.com/juntossomosmais/venice/commit/b48fb9c574be30134550343d3c04940277b69d52))
+* fixing css error ([603c796](https://github.com/juntossomosmais/venice/commit/603c796b5423837d2b044c9b7af9cdca79f9f43a))
+* modularizing icons ([98a5f78](https://github.com/juntossomosmais/venice/commit/98a5f78c41e6c45cc4791253003a0947fe4fcf47))
+* removed reset() ([2a6e21c](https://github.com/juntossomosmais/venice/commit/2a6e21caee914f8a85996007250acdd0876b3931))
+
+
+
+
+
+# [0.14.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.13.0...@venice/styles@0.14.0) (2020-06-19)
+
+
+### Bug Fixes
+
+* add class to camelcase ([26dcbdc](https://github.com/juntossomosmais/venice/commit/26dcbdcc421f48c6557e60f16cbc98916debf9e4))
+* change btn prefix to button ([3f25368](https://github.com/juntossomosmais/venice/commit/3f25368c90d0e5ceae814f955c9a92e4b09867c8))
+
+
+### Features
+
+* add reset file ([b4554f5](https://github.com/juntossomosmais/venice/commit/b4554f5bb88047d286f6c98f1e99eec940dd39ae))
+* remove mixin to reset ([ea60eb3](https://github.com/juntossomosmais/venice/commit/ea60eb38f4a4f08dd4657b07b25a52cc45e4f7df))
+
+
+
+
+
+# [0.13.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.12.0...@venice/styles@0.13.0) (2020-06-18)
+
+
+### Bug Fixes
+
+* dropdown zindex ([464a6dd](https://github.com/juntossomosmais/venice/commit/464a6dd1e28360f7c1a9dd09911369c9f61580a9))
+* fix some pagination styles ([cb3a8d2](https://github.com/juntossomosmais/venice/commit/cb3a8d2fee22de1ee7bc0b72620f73cdfbc0f796))
+* resolving conflicts ([4b40ebf](https://github.com/juntossomosmais/venice/commit/4b40ebf1063e075b82c5e97662a7df6f512c9485))
+* some styles ([4410856](https://github.com/juntossomosmais/venice/commit/4410856af8453afd5b9f5f047014d5105ae707ce))
+
+
+### Features
+
+* added direction prop ([41387cd](https://github.com/juntossomosmais/venice/commit/41387cdb512d94d3413cfefa16ec1b854f44e565))
+* created Split Button component ([9d7f7d5](https://github.com/juntossomosmais/venice/commit/9d7f7d5255d82f3307360b9bc9cbb4f35bf9fa41))
+
+
+
+
+
 # [0.12.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.11.0...@venice/styles@0.12.0) (2020-06-17)
 
 

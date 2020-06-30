@@ -1,4 +1,4 @@
-import { render, waitFor, cleanup, fireEvent } from '@testing-library/vue'
+import { render, cleanup, fireEvent } from '@testing-library/vue'
 
 import '@testing-library/jest-dom'
 

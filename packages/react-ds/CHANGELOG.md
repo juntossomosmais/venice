@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.10.1...@juntossomosmais/venice-react@0.11.0) (2020-06-23)
+
+
+### Bug Fixes
+
+* export split button ([90c067c](https://github.com/juntossomosmais/venice/commit/90c067c8bceff4da0f445c427483bb27333e2594))
+* lint file ([00e16c7](https://github.com/juntossomosmais/venice/commit/00e16c70510ce515682bca6960a8591bceb24745))
+
+
+### Features
+
+* add barril into icons ([16c2e91](https://github.com/juntossomosmais/venice/commit/16c2e91062eb11fc0232ce3707781d051d685068))
+* add barril into icons ([fd88e7a](https://github.com/juntossomosmais/venice/commit/fd88e7acafb6efa8cee91e7c56ee665256e83940))
+* add dependences ([b8047a1](https://github.com/juntossomosmais/venice/commit/b8047a10bff38543487ac4723ec74b05bad78a6f))
+* add Input ([3569963](https://github.com/juntossomosmais/venice/commit/3569963a53f0c400dd88d0025b8fce992daece89))
+* add Select ([d3cc816](https://github.com/juntossomosmais/venice/commit/d3cc816bf1dcce76228ec8ee1efc811563ccf4ca))
+* add Select ([a2ecaca](https://github.com/juntossomosmais/venice/commit/a2ecaca715f8593926e77cfc5e10a7d17b41739a))
+* adjusts ([e47d83a](https://github.com/juntossomosmais/venice/commit/e47d83ac59bd418071c436bdd48e40555ebc4b44))
+* adjusts ([3226a90](https://github.com/juntossomosmais/venice/commit/3226a90fcf763f50f5d207248f17a6806f49798f))
+* adjusts from PR ([28b5e4f](https://github.com/juntossomosmais/venice/commit/28b5e4f9d2064d7fa820bc7f665fc9987966a62e))
+* adjusts from PR ([33b4996](https://github.com/juntossomosmais/venice/commit/33b4996799e89bbcdcb03501ed472bd8c825459a))
+* adjusts from PR ([5816d5d](https://github.com/juntossomosmais/venice/commit/5816d5d9fa81ca603e8561443c84c6352cb449ba))
+* adjusts from PR ([63d8292](https://github.com/juntossomosmais/venice/commit/63d829268a218a4416eec3b744b977ff047167ac))
+* adjusts from PR ([9e05641](https://github.com/juntossomosmais/venice/commit/9e05641d2ed2bca2833f4808877da83793900bc0))
+* adjusts from PR ([fc10d73](https://github.com/juntossomosmais/venice/commit/fc10d739266fe81c82971d0f199fed3c011c77be))
+* adjusts from PR ([5f58f6e](https://github.com/juntossomosmais/venice/commit/5f58f6eeb3a3880baa02388e5a4fd3aa38301a6e))
+* ajusts into input/select ([b62aaf0](https://github.com/juntossomosmais/venice/commit/b62aaf014536501550738a22b9e72977f1ee6732))
+* exporting Component ([44938b8](https://github.com/juntossomosmais/venice/commit/44938b800207235dbc732918658211295adfca15))
+* fix model of select ([0a4fe39](https://github.com/juntossomosmais/venice/commit/0a4fe39948a764ce99b222335329250d63e340a0))
+* fixing model ([0118538](https://github.com/juntossomosmais/venice/commit/011853857e1edaf8ac689b7e1489d6f0642caca6))
+* fixing typing of Select ([f605881](https://github.com/juntossomosmais/venice/commit/f60588120c773959f8c47c180047092daac9b8ee))
+* modularizing icons ([98a5f78](https://github.com/juntossomosmais/venice/commit/98a5f78c41e6c45cc4791253003a0947fe4fcf47))
+* select documentation ([e70b511](https://github.com/juntossomosmais/venice/commit/e70b511e3d5c21b4e59e7b66db3ea79405e463ab))
+
+
+
+
+
+## [0.10.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.10.0...@juntossomosmais/venice-react@0.10.1) (2020-06-19)
+
+
+### Bug Fixes
+
+* add class to camelcase ([26dcbdc](https://github.com/juntossomosmais/venice/commit/26dcbdcc421f48c6557e60f16cbc98916debf9e4))
+* change btn prefix to button ([3f25368](https://github.com/juntossomosmais/venice/commit/3f25368c90d0e5ceae814f955c9a92e4b09867c8))
+* remove data-testid ([c449d02](https://github.com/juntossomosmais/venice/commit/c449d028b8eccd9fbbb4a1187cacd91eaf1ce227))
+
+
+
+
+
+# [0.10.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.9.0...@juntossomosmais/venice-react@0.10.0) (2020-06-18)
+
+
+### Bug Fixes
+
+* fix some pagination styles ([cb3a8d2](https://github.com/juntossomosmais/venice/commit/cb3a8d2fee22de1ee7bc0b72620f73cdfbc0f796))
+* removing data-testid on pagination component ([dc9a4d5](https://github.com/juntossomosmais/venice/commit/dc9a4d5f9baa8b2309dbee9cfe5f8356263b8367))
+* resolving conflicts ([4b40ebf](https://github.com/juntossomosmais/venice/commit/4b40ebf1063e075b82c5e97662a7df6f512c9485))
+* updating pagination test ([842c873](https://github.com/juntossomosmais/venice/commit/842c8732635cbc84aa57362ec0cedd6a8a3430c2))
+* updating pagination tests ([cbdb1bc](https://github.com/juntossomosmais/venice/commit/cbdb1bcd2c679c5029a9c96d9dddbef6d11bdf90))
+* updating stepper tests ([3d4439a](https://github.com/juntossomosmais/venice/commit/3d4439a91995080bbb2cc04fde31aca5575d9286))
+
+
+### Features
+
+* add classname ([48e88d3](https://github.com/juntossomosmais/venice/commit/48e88d3eb2f397c5e9f37cbe6df8cd7f594fb7ba))
+* added class to storybook container ([fa4333a](https://github.com/juntossomosmais/venice/commit/fa4333adaa95c3d897c03b292d66045688f26b31))
+* added direction preview ([4ce0981](https://github.com/juntossomosmais/venice/commit/4ce0981903dc4b195a4f8deb2014673f4b687330))
+* added direction prop ([41387cd](https://github.com/juntossomosmais/venice/commit/41387cdb512d94d3413cfefa16ec1b854f44e565))
+* added event tests ([777c614](https://github.com/juntossomosmais/venice/commit/777c6147fa4177a914b4868670447d3576927ec7))
+* added new property ([73a4bbb](https://github.com/juntossomosmais/venice/commit/73a4bbbae8780437f8420e5fc48c49c8daf8e935))
+* added offset classes ([d4cc3d3](https://github.com/juntossomosmais/venice/commit/d4cc3d33ec1a1653cb39c320ba9c742482e8489a))
+* added tests for direction prop ([9f2c056](https://github.com/juntossomosmais/venice/commit/9f2c0567c7b144290dea6660cee1e9c2f38fdbb7))
+* created Split Button component ([9d7f7d5](https://github.com/juntossomosmais/venice/commit/9d7f7d5255d82f3307360b9bc9cbb4f35bf9fa41))
+* created Split Button component documentation ([7805be2](https://github.com/juntossomosmais/venice/commit/7805be2b0135ac9ed39d4fc16b7e64aa82c709b1))
+* created Split Button component tests ([7e02eb5](https://github.com/juntossomosmais/venice/commit/7e02eb59079f31ebe4fededcc981cac756b670ba))
+* typed onClick function ([9e2a7c3](https://github.com/juntossomosmais/venice/commit/9e2a7c38e44561bcd7673c345d2d4ab14c2bb060))
+
+
+
+
+
 # [0.9.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.8.0...@juntossomosmais/venice-react@0.9.0) (2020-06-17)
 
 

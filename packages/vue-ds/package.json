@@ -1,7 +1,7 @@
 {
   "name": "@juntossomosmais/venice-vue",
   "description": "Design System of UI Components using Vue",
-  "version": "0.8.0",
+  "version": "0.9.3",
   "license": "Apache-2.0",
   "homepage": "https://github.com/juntossomosmais/venice/packages/vue-ds#readme",
   "repository": {
@@ -12,8 +12,9 @@
   "bugs": {
     "url": "https://github.com/juntossomosmais/venice/issues"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.min.js",
   "files": [
     "dist"
   ],
@@ -22,7 +23,8 @@
   },
   "scripts": {
     "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
-    "build": "vue-cli-service build --target lib --name venice src/index.ts && yarn workspace @venice/styles build",
+    "build": "vue-cli-service build --target lib --name index src/index.ts && yarn workspace @venice/styles build",
+    "test": "vue-cli-service test:unit --env=jsdom",
     "test:ci": "cross-env CI=true vue-cli-service test:unit --bail --passWithNoTests --env=jsdom",
     "lint": "vue-cli-service lint",
     "build:storybook": "yarn build && vue-cli-service storybook:build -c .storybook -o ../../dist/vue",
@@ -41,8 +43,8 @@
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@storybook/vue": "^5.3.18",
     "@testing-library/vue": "^5.0.2",
-    "@venice/core": "^0.10.0",
-    "@venice/styles": "^0.12.0",
+    "@venice/core": "^0.12.0",
+    "@venice/styles": "^0.15.0",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-typescript": "~4.2.0",

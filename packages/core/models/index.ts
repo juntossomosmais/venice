@@ -1,5 +1,6 @@
 export * from './button.model'
 export * from './dynamic-components.model'
+export * from './field.model'
 export * from './spinner.model'
 export * from './stepper.model'
 export * from './split-button.model'

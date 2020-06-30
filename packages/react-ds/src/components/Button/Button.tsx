@@ -49,7 +49,7 @@ const Button: React.FunctionComponent<IButtonProps> = ({
         role={href ? '' : 'button'}
         aria-busy={isLoading}
         className={classNames(
-          styles.btn,
+          styles.button,
           styles[color],
           styles[variant],
           styles[size],

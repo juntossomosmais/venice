@@ -2,17 +2,8 @@
 <p align="center">
   <img
     alt="Build"
-    src="https://img.shields.io/github/workflow/status/juntossomosmais/venice/Node.js CI"
+    src="https://img.shields.io/github/workflow/status/juntossomosmais/venice/ghpages"
   />
-  <a
-    href="https://github.com/juntossomosmais/venice/releases"
-    target="_blank"
-  >
-    <img
-      alt="Release"
-      src="https://img.shields.io/github/package-json/v/juntossomosmais/venice"
-    />
-  </a>
   <a
     href="https://juntossomosmais.github.io/venice"
     target="_blank"
@@ -86,8 +77,7 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent com
 
 ```js
 import styles from '@venice/styles/components/Button.module.scss'
-
-<button className={styles.btn}></button>
+;<button className={styles.button}></button>
 ```
 
 ### Vue
@@ -102,7 +92,7 @@ import { IButton } from '@venice/core/models'
 </style>
 
 <template>
-  <button :class="btn"></button>
+  <button :class="button"></button>
 </template>
 ```
 

@@ -1,5 +1,9 @@
 @import '~@venice/styles/core';
 
+.icon {
+  fill: var(--gray-2);
+}
+
 .default {
   fill: var(--white);
 }

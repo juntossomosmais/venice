@@ -93,6 +93,6 @@
     "post": [
       "deploy:storybook-clean"
     ],
-    "noprompt": false
+    "noprompt": true
   }
 }

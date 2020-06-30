@@ -6,16 +6,13 @@
   --space-md: 32px;
   --space-lg: 48px;
   --space-xlg: 64px;
-
   --screen-xs: 360px;
   --screen-sm: 768px;
   --screen-md: 992px;
   --screen-lg: 1280px;
   --screen-xlg: 1440px;
   --screen-max-container: 1140px;
-
   --font-family: 'Roboto', sans-serif;
-
   --typography-panel-font: 900 38px/40px var(--font-family);
   --typography-panel-letter: 0;
   --typography-title-font: 500 24px/28px var(--font-family);
@@ -30,7 +27,6 @@
   --typography-caption-letter: -0.171429px;
   --typography-button-font: 500 16px/19px var(--font-family);
   --typography-button-letter: -0.228572px;
-
   --black: #111;
   --white: #fff;
   --gray-1: #f5f5f5;
@@ -46,7 +42,6 @@
   --purple-1: #bd10e0;
   --red-1: #ba1e24;
   --red-2: #d0021b;
-
   --default-color: var(--gray-4);
   --default-color-lighten: #5c5c5c;
   --default-color-contrast: var(--white);
@@ -66,15 +61,12 @@
   --danger-color-contrast: var(--white);
   --text-color: var(--gray-4);
   --text-color-lighten: var(--gray-3);
-
   --border-radius: 4px;
-
   --zindex-1: 1;
   --zindex-5: 5;
   --zindex-10: 10;
   --zindex-100: 100;
   --zindex-1000: 1000;
   --zindex-overlay: 10000;
-
   --transition-duration: 0.25s;
 }
