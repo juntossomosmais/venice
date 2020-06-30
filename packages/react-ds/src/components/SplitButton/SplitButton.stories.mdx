@@ -1,4 +1,10 @@
-import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
+import {
+  Meta,
+  Story,
+  Description,
+  Preview,
+  Props,
+} from '@storybook/addon-docs/blocks'
 
 import Docs from '@venice/core/docs/SplitButton.md'
 
@@ -50,6 +56,88 @@ import SplitButton from './SplitButton'
         <a href="#">Something else here</a>
       </SplitButton>
       <SplitButton text="Medium Button" color="secondary" size="medium">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+    </div>
+  </Story>
+</Preview>
+
+## Menu
+
+### Menu Fit Button Container
+
+<Preview>
+  <Story name="Menu Fit Button Container" height="200px">
+    <div class="row-items lg-offset-left">
+      <SplitButton text="Container" menuFitButtonContainer={true}>
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton
+        text="Container"
+        color="primary"
+        menuFitButtonContainer={true}
+      >
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton
+        text="Container"
+        color="secondary"
+        menuFitButtonContainer={true}
+      >
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+    </div>
+  </Story>
+</Preview>
+
+### Menu Open on Hover
+
+<Preview>
+  <Story name="Menu Open on Hover" height="200px">
+    <div class="row-items lg-offset-left">
+      <SplitButton text="Menu Hover" openType="hover">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton text="Menu Hover" color="primary" openType="hover">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton text="Menu Hover" color="secondary" openType="hover">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+    </div>
+  </Story>
+</Preview>
+
+### Menu Open on Click
+
+<Preview>
+  <Story name="Menu Open on Click" height="200px">
+    <div class="row-items lg-offset-left">
+      <SplitButton text="Menu Click" openType="click">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton text="Menu Click" color="primary" openType="click">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton text="Menu Click" color="secondary" openType="click">
         <a href="#">Action</a>
         <a href="#">Another action</a>
         <a href="#">Something else here</a>

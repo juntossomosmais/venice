@@ -15,7 +15,7 @@
 
     background-color: var(--white);
     border-radius: 1px;
-    content: "";
+    content: '';
     display: block;
     height: 10px;
     position: absolute;
@@ -47,9 +47,13 @@
   will-change: visibility;
   z-index: var(--zindex-10);
 
+  .hover > & {
+    transition-delay: 0.2s;
+  }
+
   &::before {
     border: var(--space-xs) solid transparent;
-    content: "";
+    content: '';
     margin-left: -20px;
     pointer-events: none;
     position: absolute;
@@ -93,7 +97,16 @@
     }
   }
 
-  &.active {
+  &.fitbutton {
+    width: 100%;
+
+    > * {
+      white-space: normal;
+    }
+  }
+
+  .hover:hover > &,
+  .click.active > & {
     opacity: 1;
     transition: visibility 0s, transform 0.2s ease-in, opacity 0.1s linear;
     visibility: visible;

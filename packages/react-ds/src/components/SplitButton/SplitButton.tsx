@@ -16,17 +16,26 @@ const SplitButton: React.FC<ISplitButtonProps> = ({
   color = 'default',
   size = 'large',
   direction = 'rtl',
+  menuFitButtonContainer = false,
+  openType = 'hover',
   ...props
 }: ISplitButtonProps) => {
   const [isOpen, setIsOpen] = React.useState(false)
 
+  const clickType = openType === 'click' && isOpen ? styles.active : ''
+
   return (
-    <nav className={styles.SplitButton} {...props}>
+    <nav
+      className={`${styles.SplitButton}
+      ${styles[openType]}
+      ${clickType}`}
+      {...props}
+    >
       <Button
         color={color}
-        onClick={() => setIsOpen((prev) => !prev)}
         size={size}
         aria-expanded={isOpen}
+        onClick={() => setIsOpen(!isOpen)}
       >
         {text}
         <span className={styles.caret}></span>
@@ -36,7 +45,7 @@ const SplitButton: React.FC<ISplitButtonProps> = ({
                     ${styles[size]}
                     ${styles[color]}
                     ${styles[direction]}
-                    ${isOpen ? styles.active : ''}`}
+                    ${menuFitButtonContainer ? styles.fitbutton : ''}`}
         role="menu"
       >
         {children}
