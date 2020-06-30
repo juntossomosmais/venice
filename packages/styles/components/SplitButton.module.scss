@@ -1,4 +1,4 @@
-@import '~@venice/styles/core';
+@import "~@venice/styles/core";
 
 .splitButton {
   display: inline-flex;
@@ -15,7 +15,7 @@
 
     background-color: var(--white);
     border-radius: 1px;
-    content: '';
+    content: "";
     display: block;
     height: 10px;
     position: absolute;
@@ -51,7 +51,7 @@
 
   &::before {
     border: var(--space-xs) solid transparent;
-    content: '';
+    content: "";
     margin-left: -20px;
     pointer-events: none;
     position: absolute;

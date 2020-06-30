@@ -26,7 +26,7 @@ const SplitButton: React.FC<ISplitButtonProps> = ({
 
   return (
     <nav
-      className={`${styles.SplitButton}
+      className={`${styles.splitButton}
       ${styles[openType]}
       ${clickType}`}
       {...props}

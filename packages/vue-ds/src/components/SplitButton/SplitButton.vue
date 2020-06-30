@@ -42,7 +42,7 @@ export default class SplitButton extends Vue {
   get componentClass() {
     const clickType = this.openType === 'click' && this.isOpen ? 'active' : ''
 
-    return ['SplitButton', this.openType, clickType]
+    return ['splitButton', this.openType, clickType]
   }
 
   get dropdownClass() {
