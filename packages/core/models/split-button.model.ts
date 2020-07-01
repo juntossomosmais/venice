@@ -8,7 +8,7 @@ export interface ISplitButton {
   /** ltr | rtl */
   direction?: 'ltr' | 'rtl'
   /** boolean */
-  menuFitButtonContainer?: boolean
+  isFitMenu?: boolean
   /** 'hover' | 'click' */
   openType?: 'hover' | 'click'
 }

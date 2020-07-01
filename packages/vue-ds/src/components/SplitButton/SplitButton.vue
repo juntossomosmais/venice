@@ -31,10 +31,8 @@ export default class SplitButton extends Vue {
   @Prop({ default: 'default' }) color!: ISplitButton['color']
   @Prop({ default: 'large' }) size!: ISplitButton['size']
   @Prop({ default: 'rtl' }) direction!: ISplitButton['direction']
-  @Prop({ default: false })
-  menuFitButtonContainer!: ISplitButton['menuFitButtonContainer']
-  @Prop({ default: 'hover' })
-  openType!: ISplitButton['openType']
+  @Prop({ default: false }) isFitMenu!: ISplitButton['isFitMenu']
+  @Prop({ default: 'hover' }) openType!: ISplitButton['openType']
   @Prop({ type: String }) text!: ISplitButton['text']
 
   private isOpen = false
@@ -51,7 +49,7 @@ export default class SplitButton extends Vue {
       this.direction,
       this.size,
       this.color,
-      this.menuFitButtonContainer ? 'fitbutton' : '',
+      this.isFitMenu ? 'fitbutton' : '',
     ]
   }
 
