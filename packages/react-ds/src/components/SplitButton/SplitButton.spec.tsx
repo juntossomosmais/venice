@@ -117,18 +117,6 @@ describe('<SplitButton />', () => {
     expect(getByRole('menu')).toHaveClass('medium')
   })
 
-  it('should have the "active" classname when menu is open', async () => {
-    const { getByRole } = render(
-      <SplitButton text="Button">
-        <a>Action</a>
-      </SplitButton>
-    )
-
-    fireEvent.click(getByRole('button'))
-
-    expect(getByRole('menu')).toHaveClass('active')
-  })
-
   it('should have three options inside the menu', () => {
     const { getByRole } = render(
       <SplitButton text="Button">

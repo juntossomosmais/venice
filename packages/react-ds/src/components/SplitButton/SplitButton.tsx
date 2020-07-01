@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import classNames from 'classnames/bind'
+
 import { ISplitButton } from '@venice/core/models'
 import styles from '@venice/styles/components/SplitButton.module.scss'
 
@@ -16,29 +18,38 @@ const SplitButton: React.FC<ISplitButtonProps> = ({
   color = 'default',
   size = 'large',
   direction = 'rtl',
+  isFitMenu = false,
+  openType = 'hover',
   ...props
 }: ISplitButtonProps) => {
   const [isOpen, setIsOpen] = React.useState(false)
 
+  const clickType = openType === 'click' && isOpen
+
+  const navClassNames = classNames(styles.splitButton, styles[openType], {
+    [styles.active]: clickType,
+  })
+
+  const menuClassNames = classNames(
+    styles.dropdown,
+    styles[size],
+    styles[color],
+    styles[direction],
+    { [styles.fitbutton]: isFitMenu }
+  )
+
   return (
-    <nav className={styles.splitButton} {...props}>
+    <nav className={navClassNames} {...props}>
       <Button
         color={color}
-        onClick={() => setIsOpen((prev) => !prev)}
         size={size}
         aria-expanded={isOpen}
+        onClick={() => setIsOpen(!isOpen)}
       >
         {text}
         <span className={styles.caret}></span>
       </Button>
-      <div
-        className={`${styles.dropdown}
-                    ${styles[size]}
-                    ${styles[color]}
-                    ${styles[direction]}
-                    ${isOpen ? styles.active : ''}`}
-        role="menu"
-      >
+      <div className={menuClassNames} role="menu">
         {children}
       </div>
     </nav>
