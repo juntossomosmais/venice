@@ -11,12 +11,15 @@
   margin-bottom: var(--space-xs);
 }
 
-.input {
+.field {
+  appearance: none;
   background: var(--disabled-color-contrast);
   border: 1px solid var(--gray-2);
   border-radius: var(--border-radius);
+  color: var(--default-color);
   font: var(--typography-body-font);
   padding: var(--space-sm);
+  width: 100%;
 
   &:disabled,
   &[disabled] {

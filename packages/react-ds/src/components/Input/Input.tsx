@@ -1,20 +1,24 @@
-import React, { FunctionComponent, HTMLProps } from 'react'
+import React, { HTMLProps, forwardRef, Ref } from 'react'
 
 import classNames from 'classnames/bind'
 import uniqid from 'uniqid'
 
-import { IInput } from '@venice/core/models/input.model'
-import styles from '@venice/styles/components/Input.module.scss'
-import Alert from '../icons/Alert'
+import { IField } from '@venice/core/models/field.model'
+import styles from '@venice/styles/components/Field.module.scss'
 
-const Input: FunctionComponent<IInput & HTMLProps<HTMLInputElement>> = ({
-  id,
-  label,
-  style,
-  className,
-  error,
-  ...props
-}: IInput & HTMLProps<HTMLInputElement>) => {
+import Alert from '../Icons/Alert'
+
+const Input = (
+  {
+    id,
+    label,
+    style,
+    className,
+    error,
+    ...props
+  }: IField & HTMLProps<HTMLInputElement>,
+  ref?: Ref<HTMLInputElement>
+) => {
   const selfId = id || uniqid(`input__`)
   const styleContainer = classNames(
     styles.container,
@@ -29,7 +33,7 @@ const Input: FunctionComponent<IInput & HTMLProps<HTMLInputElement>> = ({
           {label}
         </label>
       )}
-      <input className={styles.input} id={selfId} {...props} />
+      <input className={styles.field} id={selfId} {...props} ref={ref} />
       {/* TODO: Replace for alert component */}
       {error && (
         <div className={styles.error}>
@@ -41,4 +45,4 @@ const Input: FunctionComponent<IInput & HTMLProps<HTMLInputElement>> = ({
   )
 }
 
-export default Input
+export default forwardRef(Input)
