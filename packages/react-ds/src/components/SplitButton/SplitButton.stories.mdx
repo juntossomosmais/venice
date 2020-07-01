@@ -1,5 +1,14 @@
-import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
+import {
+  Meta,
+  Story,
+  Description,
+  Preview,
+  Props,
+} from '@storybook/addon-docs/blocks'
+import { withKnobs } from '@storybook/addon-knobs'
+import { withA11y } from '@storybook/addon-a11y'
 
+import { knobSplitButtonOpenType, knotSplitButtonIsFitMenu } from '@venice/core/storybook/knobs'
 import Docs from '@venice/core/docs/SplitButton.md'
 
 import SplitButton from './SplitButton'
@@ -50,6 +59,44 @@ import SplitButton from './SplitButton'
         <a href="#">Something else here</a>
       </SplitButton>
       <SplitButton text="Medium Button" color="secondary" size="medium">
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+    </div>
+  </Story>
+</Preview>
+
+## Menu Options
+
+<Preview>
+  <Story name="Menu Options" height="200px" decorators={[withKnobs,withA11y]}>
+    <div class="row-items lg-offset-left">
+      <SplitButton
+        text="Menu Options"
+        isFitMenu={knotSplitButtonIsFitMenu()}
+        openType={knobSplitButtonOpenType()}
+      >
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton
+        text="Menu Options"
+        color="primary"
+        isFitMenu={knotSplitButtonIsFitMenu()}
+        openType={knobSplitButtonOpenType()}
+      >
+        <a href="#">Action</a>
+        <a href="#">Another action</a>
+        <a href="#">Something else here</a>
+      </SplitButton>
+      <SplitButton
+        text="Menu Options"
+        color="secondary"
+        isFitMenu={knotSplitButtonIsFitMenu()}
+        openType={knobSplitButtonOpenType()}
+      >
         <a href="#">Action</a>
         <a href="#">Another action</a>
         <a href="#">Something else here</a>
