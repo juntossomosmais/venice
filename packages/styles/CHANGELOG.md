@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.15.0...@venice/styles@0.16.0) (2020-07-01)
+
+
+### Bug Fixes
+
+* add forwardRef into select/input ([251880a](https://github.com/juntossomosmais/venice/commit/251880a3873f8c9462adfb2b58e4ba8cca5840f0))
+* added outline style to parent ([4c470e1](https://github.com/juntossomosmais/venice/commit/4c470e1fb657850be00ac3531e8a55a710e860c7))
+* css of select and input ([3cfc7ec](https://github.com/juntossomosmais/venice/commit/3cfc7ec66fd0f458a6e2fa85abfa15d767aaa268))
+* splitbutton container classname ([7d9ae56](https://github.com/juntossomosmais/venice/commit/7d9ae56e08836312100473044eb9b89105979f56))
+
+
+### Features
+
+* added menu conditional styles ([93ffed3](https://github.com/juntossomosmais/venice/commit/93ffed35320b809e1e899ece23bea115fc6bc900))
+
+
+
+
+
 # [0.15.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.14.0...@venice/styles@0.15.0) (2020-06-23)
 
 

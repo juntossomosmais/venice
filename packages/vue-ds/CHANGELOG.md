@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.9.3...@juntossomosmais/venice-vue@0.10.0) (2020-07-01)
+
+
+### Bug Fixes
+
+* splitbutton container classname ([7d9ae56](https://github.com/juntossomosmais/venice/commit/7d9ae56e08836312100473044eb9b89105979f56))
+
+
+### Features
+
+* add class on body ([5b41dc3](https://github.com/juntossomosmais/venice/commit/5b41dc35a08f1d6fcad2bb6d3550c28fb53d2e40))
+* added knobs to splitbutton menu options ([8e55222](https://github.com/juntossomosmais/venice/commit/8e552222f98566327a026f3000a1c30c4710cfc8))
+* added menu conditional styles ([93ffed3](https://github.com/juntossomosmais/venice/commit/93ffed35320b809e1e899ece23bea115fc6bc900))
+* better naming props ([5477daf](https://github.com/juntossomosmais/venice/commit/5477daf5049d32df5d04d4b7ce888614e8ecbe58))
+* import github-markdown ([e895550](https://github.com/juntossomosmais/venice/commit/e8955509c0e9680b3812979892bdb5ef297fbc3b))
+
+
+
+
+
 ## [0.9.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.9.2...@juntossomosmais/venice-vue@0.9.3) (2020-06-23)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue

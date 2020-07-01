@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.11.0...@juntossomosmais/venice-react@0.12.0) (2020-07-01)
+
+
+### Bug Fixes
+
+* add forwardRef into select/input ([33ea700](https://github.com/juntossomosmais/venice/commit/33ea700a19ac2cb7461f6cf01e569d28a19cc202))
+* add forwardRef into select/input ([1989762](https://github.com/juntossomosmais/venice/commit/19897625d54e8895fcce84984a4e82b547294257))
+* add forwardRef into select/input ([251880a](https://github.com/juntossomosmais/venice/commit/251880a3873f8c9462adfb2b58e4ba8cca5840f0))
+* css of select and input ([3cfc7ec](https://github.com/juntossomosmais/venice/commit/3cfc7ec66fd0f458a6e2fa85abfa15d767aaa268))
+* force rename Icons ([9329563](https://github.com/juntossomosmais/venice/commit/932956353c803aa206ed12eac41d7d1a433b7f6b))
+* force rename Icons ([753d844](https://github.com/juntossomosmais/venice/commit/753d844ecfd7290049530314290598385e1bcf59))
+* splitbutton container classname ([7d9ae56](https://github.com/juntossomosmais/venice/commit/7d9ae56e08836312100473044eb9b89105979f56))
+
+
+### Features
+
+* add class on body ([5b41dc3](https://github.com/juntossomosmais/venice/commit/5b41dc35a08f1d6fcad2bb6d3550c28fb53d2e40))
+* added knobs to splitbutton menu options ([8e55222](https://github.com/juntossomosmais/venice/commit/8e552222f98566327a026f3000a1c30c4710cfc8))
+* added menu conditional styles ([becd8c8](https://github.com/juntossomosmais/venice/commit/becd8c87d28a352926372e55289cbe1c33a71e2d))
+* added menu conditional styles ([93ffed3](https://github.com/juntossomosmais/venice/commit/93ffed35320b809e1e899ece23bea115fc6bc900))
+* better naming props ([5477daf](https://github.com/juntossomosmais/venice/commit/5477daf5049d32df5d04d4b7ce888614e8ecbe58))
+* better naming props and used classNames library ([962ae89](https://github.com/juntossomosmais/venice/commit/962ae898b2f90c2fd7ae17fdae48a7d7594c1274))
+* changed requirement from prop ([52b4ac7](https://github.com/juntossomosmais/venice/commit/52b4ac77a26b1349ad43b0424d232ac49f35010d))
+* import github-markdown ([e895550](https://github.com/juntossomosmais/venice/commit/e8955509c0e9680b3812979892bdb5ef297fbc3b))
+
+
+
+
+
 # [0.11.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.10.1...@juntossomosmais/venice-react@0.11.0) (2020-06-23)
 
 
