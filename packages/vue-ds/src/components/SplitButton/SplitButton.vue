@@ -5,6 +5,7 @@
       :size="size"
       @click="onClickButton"
       v-bind="{ 'aria-expanded': isOpen }"
+      class="inner-button"
     >
       <slot name="text">{{ text }}</slot>
       <span class="caret"></span>
