@@ -8,7 +8,7 @@ import {
 import { withKnobs } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
-import { knobSplitButtonOpenType, knotSplitButtonIsFitMenu } from '@venice/core/storybook/knobs'
+import { knobSplitButtonOpenType, knobSplitButtonIsFitMenu, knobSplitButtonSizes } from '@venice/core/storybook/knobs'
 import Docs from '@venice/core/docs/SplitButton.md'
 
 import SplitButton from './SplitButton'
@@ -74,8 +74,9 @@ import SplitButton from './SplitButton'
     <div class="row-items lg-offset-left">
       <SplitButton
         text="Menu Options"
-        isFitMenu={knotSplitButtonIsFitMenu()}
+        isFitMenu={knobSplitButtonIsFitMenu()}
         openType={knobSplitButtonOpenType()}
+        size={knobSplitButtonSizes()}
       >
         <a href="#">Action</a>
         <a href="#">Another action</a>
@@ -84,8 +85,9 @@ import SplitButton from './SplitButton'
       <SplitButton
         text="Menu Options"
         color="primary"
-        isFitMenu={knotSplitButtonIsFitMenu()}
+        isFitMenu={knobSplitButtonIsFitMenu()}
         openType={knobSplitButtonOpenType()}
+        size={knobSplitButtonSizes()}
       >
         <a href="#">Action</a>
         <a href="#">Another action</a>
@@ -94,8 +96,9 @@ import SplitButton from './SplitButton'
       <SplitButton
         text="Menu Options"
         color="secondary"
-        isFitMenu={knotSplitButtonIsFitMenu()}
+        isFitMenu={knobSplitButtonIsFitMenu()}
         openType={knobSplitButtonOpenType()}
+        size={knobSplitButtonSizes()}
       >
         <a href="#">Action</a>
         <a href="#">Another action</a>
