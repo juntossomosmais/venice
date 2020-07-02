@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.16.0...@venice/styles@0.17.0) (2020-07-02)
+
+
+### Bug Fixes
+
+* some sizes and spacings ([6c44a54](https://github.com/juntossomosmais/venice/commit/6c44a54ebd47a4e0d718391e54bcee7e2e7411ed))
+
+
+### Features
+
+* added css variable ([bca036e](https://github.com/juntossomosmais/venice/commit/bca036e535b461e02fa6339abe50b7103cb3debd))
+* added space variable calc ([da90c42](https://github.com/juntossomosmais/venice/commit/da90c4288abdd180f4a273dde32d9a9280dbbd67))
+* match button from classname ([43e5dfc](https://github.com/juntossomosmais/venice/commit/43e5dfcf4ad0d6f0b3ac5985947529fd2bef6c49))
+
+
+
+
+
 # [0.16.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.15.0...@venice/styles@0.16.0) (2020-07-01)
 
 
