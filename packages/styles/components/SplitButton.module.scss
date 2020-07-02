@@ -4,6 +4,10 @@
   display: inline-flex;
   outline: none;
   position: relative;
+
+  button[role="button"] {
+    padding-right: var(--space-md);
+  }
 }
 
 .caret {
@@ -12,17 +16,17 @@
 
   &::before,
   &::after {
-    $centralize: 25%;
+    $centralize: 30%;
 
     background-color: var(--white);
     border-radius: 1px;
     content: "";
     display: block;
-    height: 10px;
+    height: 8px;
     position: absolute;
     top: $centralize;
     transform: rotate(45deg);
-    width: 3px;
+    width: 2px;
   }
 
   &::before {
@@ -64,6 +68,7 @@
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    font-weight: 500;
     min-height: var(--space-lg);
     padding-left: var(--space);
     padding-right: var(--space);
@@ -79,11 +84,15 @@
       border-bottom-left-radius: var(--border-radius);
       border-bottom-right-radius: var(--border-radius);
     }
+
+    &:hover {
+      font-weight: bold;
+    }
   }
 
   &.rtl {
     &::before {
-      right: var(--space-sm);
+      right: var(--space);
     }
   }
 
@@ -111,11 +120,11 @@
     visibility: visible;
 
     &.large {
-      transform: translateY(var(--space-xlg));
+      transform: translateY(60px);
     }
 
     &.medium {
-      transform: translateY(calc(var(--space-xlg) - var(--space-xs)));
+      transform: translateY(52px);
     }
   }
 
