@@ -1,0 +1,40 @@
+import {  Description, Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks'
+import { withA11y } from '@storybook/addon-a11y'
+
+import Docs from '@venice/core/docs/Pagination.md'
+
+import Pagination from './Pagination.vue'
+
+<Meta title="Components|Pagination" component={Pagination} />
+
+# Pagination
+
+Alguma coisa aqui.
+
+## Default
+
+<Preview>
+  <Story name="Default" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Pagination },
+      template: `
+      <div class="row-items">
+        <div >
+          <Pagination :count="7" :page="1" :onChange="() => {}" :isLoading="false" />
+        </div>
+        <div >
+          <Pagination :count="7" :page="4" :onChange="() => {}" :isLoading="false" />
+        </div>
+        <div >
+          <Pagination :count="7" :page="7" :onChange="() => {}" :isLoading="false" />
+        </div>
+      </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+
+# Props
+
+<Props of={Pagination} />
