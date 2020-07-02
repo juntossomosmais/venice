@@ -120,11 +120,11 @@
     visibility: visible;
 
     &.large {
-      transform: translateY(60px);
+      transform: translateY(calc(var(--space-xlg) - var(--space-xxs)));
     }
 
     &.medium {
-      transform: translateY(52px);
+      transform: translateY(calc(var(--space-lg) + var(--space-xxs)));
     }
   }
 
