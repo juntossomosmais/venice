@@ -22,7 +22,7 @@
     border-radius: 1px;
     content: "";
     display: block;
-    height: 8px;
+    height: var(--space-xs);
     position: absolute;
     top: $centralize;
     transform: rotate(45deg);
