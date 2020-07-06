@@ -46,6 +46,21 @@ Pagination allow users to select a specific page from a page range.
   </Story>
 </Preview>
 
+### Loading state
+
+<Preview>
+  <Story name="Loading state" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Pagination },
+      template: `
+        <div >
+          <Pagination :count="7" :page="4" :onChange="() => {}" :isLoading="true" />
+        </div>
+      `
+    }}
+  </Story>
+</Preview>
+
 
 # Props
 
