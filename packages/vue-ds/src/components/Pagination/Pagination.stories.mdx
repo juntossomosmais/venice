@@ -1,5 +1,7 @@
 import {  Description, Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks'
 import { withA11y } from '@storybook/addon-a11y'
+import { withKnobs } from '@storybook/addon-knobs'
+import { knobPaginationIsLoading } from '@venice/core/storybook/knobs'
 
 import Docs from '@venice/core/docs/Pagination.md'
 
@@ -9,27 +11,37 @@ import Pagination from './Pagination.vue'
 
 # Pagination
 
-Alguma coisa aqui.
+Pagination allow users to select a specific page from a page range.
 
 ## Default
 
 <Preview>
-  <Story name="Default" parameters={{ decorators: [withA11y] }} inline={true}>
+  <Story name="Default" parameters={{ decorators: [withKnobs,withA11y] }} inline={true}>
     {{
       components: { Pagination },
+      props: {
+        isLoading: {
+          default: knobPaginationIsLoading(),
+        },
+      },
       template: `
       <div class="row-items">
         <div >
-          <Pagination :count="7" :page="1" :onChange="() => {}" :isLoading="false" />
+          <Pagination :count="7" :page="1" :onChange="clicked" :isLoading="isLoading" />
         </div>
         <div >
-          <Pagination :count="7" :page="4" :onChange="() => {}" :isLoading="false" />
+          <Pagination :count="7" :page="4" :onChange="clicked" :isLoading="isLoading" />
         </div>
         <div >
-          <Pagination :count="7" :page="7" :onChange="() => {}" :isLoading="false" />
+          <Pagination :count="7" :page="7" :onChange="clicked" :isLoading="isLoading" />
         </div>
       </div>
       `,
+      methods: {
+        clicked(page) {
+          alert(`Nova página: ${page}`);
+        }
+      }
     }}
   </Story>
 </Preview>
