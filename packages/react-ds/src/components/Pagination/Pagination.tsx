@@ -16,11 +16,11 @@ import AngleRight from './icons/AngleRight'
 import PaginationIndex from './PaginationIndex'
 
 const debounce = (func: () => void, wait: number) => {
-  let timer: NodeJS.Timeout
+  let timer = 0
 
   return () => {
     clearTimeout(timer)
-    timer = setTimeout(func, wait)
+    timer = window.setTimeout(func, wait)
   }
 }
 
