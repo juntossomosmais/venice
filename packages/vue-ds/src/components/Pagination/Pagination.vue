@@ -1,5 +1,5 @@
 <template>
-  <section class="pagination" :class="`${isMobile ? 'isMobile' : ''}`">
+  <section class="pagination" :class="isMobile ? 'isMobile' : ''">
     <div
       class="container"
       :class="`${
@@ -12,7 +12,7 @@
         v-if="hasPreviousCondition"
         class="paginationButton"
         :disabled="isLoading"
-        :v-on:click="prevPage"
+        @click="prevPage"
       >
         l
       </button>
@@ -23,7 +23,7 @@
           :class="`${page === currentPage ? 'active' : ''}`"
           :data-marker="page === currentPage && `de ${count}`"
         >
-          <div class="paginationIndex" :v-on:click="() => onSelect(page)">
+          <div class="paginationIndex" @click="selectPage(currentPage)">
             <p>{{ currentPage }}</p>
           </div>
         </div>
@@ -33,7 +33,7 @@
         v-if="hasNextCondition"
         class="paginationButton"
         :disabled="isLoading"
-        :v-on:click="nextPage"
+        @click="nextPage"
       >
         r
       </button>
@@ -57,60 +57,67 @@ export default class Pagination extends Vue {
   @Prop({ default: 1 }) count!: IPagination['count']
   @Prop({ default: 1 }) page!: IPagination['page']
   @Prop({ default: false }) isLoading!: IPagination['isLoading']
-  @Prop({ default: () => null }) onChange!: IPagination['onChange']
+  @Prop() onChange!: IPagination['onChange']
   @Prop() className!: IPagination['className']
 
   private maxPhoneWidth = 420
   private isMobile = false
+  private range: number[] = []
 
-  /*
-  TODO: add this debounce function
   debounce = (func: () => void, wait: number) => {
-    let timer: NodeJS.Timeout
+    let timer: number
 
     return () => {
       clearTimeout(timer)
-      timer = setTimeout(func, wait)
+      timer = window.setTimeout(func, wait)
     }
   }
-  */
-  isInvalid = () => this.page < 1 || this.page > this.count || this.count < 1
 
-  checkDevice = () => {
-    console.log('chamando check device')
-    this.isMobile = window.innerWidth <= this.maxPhoneWidth
+  checkDevice = () => window.innerWidth <= this.maxPhoneWidth
+
+  setState() {
+    this.isMobile = this.checkDevice()
+    this.range = this.getRange
   }
 
-  //debouncedCheck = (this.checkDevice, 200)
+  debouncedSetState = this.debounce(this.setState, 200)
 
-  hasNextCondition = this.isMobile
-    ? hasNextRange(2, this.page, this.count)
-    : hasNextRange(3, this.page, this.count)
-
-  hasPreviousCondition = this.isMobile
-    ? hasPreviousRange(2, this.page)
-    : hasPreviousRange(3, this.page)
-
-  nextPage = () => this.onChange && this.onChange(this.page + 1)
-  prevPage = () => this.onChange && this.onChange(this.page - 1)
-  onSelectPage = (newPage: number) => this.onChange && this.onChange(newPage)
-
-  rangeLimits = () => getRangeIndexes(this.count, this.page, this.isMobile)
-
-  //TODO: improve this, maybe using an object
-  startOfRange = this.rangeLimits()[0]
-  endOfRange = this.rangeLimits()[1]
-
-  getAllIndexes = () => Array.from(Array(this.count + 1).keys()).slice(1)
-  range = this.getAllIndexes().slice(this.startOfRange, this.endOfRange)
-
-  mounted() {
-    this.checkDevice()
-    window.addEventListener('resize', this.checkDevice)
+  created() {
+    this.setState()
+    window.addEventListener('resize', this.debouncedSetState)
   }
 
   beforeDestroy() {
-    window.removeEventListener('resize', this.checkDevice)
+    window.removeEventListener('resize', this.debouncedSetState)
+  }
+
+  isInvalid = () => this.page < 1 || this.page > this.count || this.count < 1
+
+  nextPage = () => this.onChange && this.onChange(this.page + 1)
+  prevPage = () => this.onChange && this.onChange(this.page - 1)
+  selectPage = (newPage: number) => this.onChange && this.onChange(newPage)
+
+  get hasNextCondition() {
+    return this.isMobile
+      ? hasNextRange(2, this.page, this.count)
+      : hasNextRange(3, this.page, this.count)
+  }
+
+  get hasPreviousCondition() {
+    return this.isMobile
+      ? hasPreviousRange(2, this.page)
+      : hasPreviousRange(3, this.page)
+  }
+
+  get rangeLimits() {
+    return getRangeIndexes(this.count, this.page, this.isMobile)
+  }
+
+  get getRange() {
+    const allIndexes = Array.from(Array(this.count + 1).keys()).slice(1)
+    const [startOfRange, endOfRange] = this.rangeLimits
+
+    return allIndexes.slice(startOfRange, endOfRange)
   }
 }
 </script>
