@@ -1,45 +1,32 @@
 <template>
-  <section
-    v-if="!isInvalid"
-    class="pagination"
-    :class="isMobile ? 'isMobile' : ''"
-  >
-    <div
-      class="container"
-      :class="`${
-        hasNextCondition && !hasPreviousCondition ? 'justifyContentEnd' : ''
-      } ${
-        !hasNextCondition && hasPreviousCondition ? 'justifyContentStart' : ''
-      }`"
-    >
+  <section v-if="!isInvalid" :class="PaginationClass">
+    <div :class="PaginationContainerClass">
       <button
         v-if="hasPreviousCondition"
         class="paginationButton"
         :disabled="isLoading"
         @click="prevPage"
       >
-        l
+        <AngleLeft :width="12" :height="23" :viewBox="'-1 3 12 7'" />
       </button>
-
-      <div v-for="(currentPage, idx) in range" :key="idx">
-        <div
-          class="indexWrapper"
-          :class="`${page === currentPage ? 'active' : ''}`"
-          :data-marker="page === currentPage && `de ${count}`"
-        >
-          <div class="paginationIndex" @click="selectPage(currentPage)">
-            <p>{{ currentPage }}</p>
-          </div>
+      <div
+        v-for="(currentPage, idx) in range"
+        :key="idx"
+        class="indexWrapper"
+        :class="page === currentPage ? 'active' : ''"
+        :data-marker="page === currentPage && `de ${count}`"
+      >
+        <div class="paginationIndex" @click="selectPage(currentPage)">
+          <p>{{ currentPage }}</p>
         </div>
       </div>
-
       <button
         v-if="hasNextCondition"
         class="paginationButton"
         :disabled="isLoading"
         @click="nextPage"
       >
-        r
+        <AngleRight :width="12" :height="23" :viewBox="'-3 3 12 7'" />
       </button>
     </div>
   </section>
@@ -55,14 +42,21 @@ import {
   hasNextRange,
   hasPreviousRange,
 } from './helpers/PaginationHelper'
+import AngleLeft from './icons/AngleLeft.vue'
+import AngleRight from './icons/AngleRight.vue'
 
-@Component
+@Component({
+  components: {
+    AngleLeft,
+    AngleRight,
+  },
+})
 export default class Pagination extends Vue {
   @Prop({ default: 1 }) count!: IPagination['count']
   @Prop({ default: 1 }) page!: IPagination['page']
   @Prop({ default: false }) isLoading!: IPagination['isLoading']
   @Prop() onChange!: IPagination['onChange']
-  @Prop() className!: IPagination['className']
+  @Prop() customClass!: IPagination['className']
 
   private maxPhoneWidth = 420
   private isMobile = false
@@ -98,6 +92,22 @@ export default class Pagination extends Vue {
   nextPage = () => this.onChange && this.onChange(this.page + 1)
   prevPage = () => this.onChange && this.onChange(this.page - 1)
   selectPage = (newPage: number) => this.onChange && this.onChange(newPage)
+
+  get PaginationClass() {
+    return ['pagination', this.isMobile ? 'isMobile' : '', this.customClass]
+  }
+
+  get PaginationContainerClass() {
+    return [
+      'container',
+      this.hasNextCondition && !this.hasPreviousCondition
+        ? 'justifyContentEnd'
+        : '',
+      !this.hasNextCondition && this.hasPreviousCondition
+        ? 'justifyContentStart'
+        : '',
+    ]
+  }
 
   get isInvalid() {
     return this.page < 1 || this.page > this.count || this.count < 1
