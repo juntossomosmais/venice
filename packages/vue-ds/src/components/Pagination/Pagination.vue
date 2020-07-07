@@ -1,5 +1,9 @@
 <template>
-  <section class="pagination" :class="isMobile ? 'isMobile' : ''">
+  <section
+    v-if="!isInvalid"
+    class="pagination"
+    :class="isMobile ? 'isMobile' : ''"
+  >
     <div
       class="container"
       :class="`${
@@ -91,11 +95,13 @@ export default class Pagination extends Vue {
     window.removeEventListener('resize', this.debouncedSetState)
   }
 
-  isInvalid = () => this.page < 1 || this.page > this.count || this.count < 1
-
   nextPage = () => this.onChange && this.onChange(this.page + 1)
   prevPage = () => this.onChange && this.onChange(this.page - 1)
   selectPage = (newPage: number) => this.onChange && this.onChange(newPage)
+
+  get isInvalid() {
+    return this.page < 1 || this.page > this.count || this.count < 1
+  }
 
   get hasNextCondition() {
     return this.isMobile
