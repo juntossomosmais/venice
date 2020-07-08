@@ -100,7 +100,6 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
 }
 
 .indexWrapper {
-  margin-top: var(--space-xxs);
   position: relative;
 
   &.active {
