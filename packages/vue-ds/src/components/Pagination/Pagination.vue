@@ -33,7 +33,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator'
+import { Component, Vue, Prop, Watch } from 'vue-property-decorator'
 
 import {
   getRangeIndexes,
@@ -74,6 +74,7 @@ export default class Pagination extends Vue {
 
   checkDevice = () => window.innerWidth <= this.maxPhoneWidth
 
+  @Watch('page')
   setState() {
     this.isMobile = this.checkDevice()
     this.range = this.getRange
@@ -81,7 +82,7 @@ export default class Pagination extends Vue {
 
   debouncedSetState = this.debounce(this.setState, 200)
 
-  created() {
+  mounted() {
     this.setState()
     window.addEventListener('resize', this.debouncedSetState)
   }

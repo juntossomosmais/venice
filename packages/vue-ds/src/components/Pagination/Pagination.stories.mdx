@@ -25,21 +25,16 @@ Pagination allow users to select a specific page from a page range.
         },
       },
       template: `
-      <div class="row-items">
-        <div >
-          <Pagination :count="7" :page="1" :onChange="clicked" :isLoading="isLoading" />
-        </div>
-        <div >
-          <Pagination :count="7" :page="4" :onChange="clicked" :isLoading="isLoading" />
-        </div>
-        <div >
-          <Pagination :count="7" :page="7" :onChange="clicked" :isLoading="isLoading" />
-        </div>
-      </div>
+        <Pagination :count="7" :page="page" :onChange="clicked" :isLoading="isLoading" />
       `,
+      data: function () {
+        return {
+          page: 1,
+        }
+      },
       methods: {
         clicked(page) {
-          alert(`Nova página: ${page}`);
+          this.page = page;
         }
       }
     }}
@@ -54,7 +49,7 @@ Pagination allow users to select a specific page from a page range.
       components: { Pagination },
       template: `
         <div >
-          <Pagination :count="7" :page="4" :onChange="() => {}" :isLoading="true" />
+          <Pagination :count="10" :page="4" :onChange="() => {}" :isLoading="true" />
         </div>
       `
     }}
