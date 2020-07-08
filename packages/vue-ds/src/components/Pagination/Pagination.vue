@@ -35,13 +35,14 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
 
-import { IPagination } from '@venice/core/models'
-
 import {
   getRangeIndexes,
   hasNextRange,
   hasPreviousRange,
-} from './helpers/PaginationHelper'
+} from '@venice/core/helpers/Pagination'
+import { IPagination } from '@venice/core/models'
+
+// TODO: these icons should be replaced when there is an icon library
 import AngleLeft from './icons/AngleLeft.vue'
 import AngleRight from './icons/AngleRight.vue'
 
