@@ -82,7 +82,7 @@ export default class Pagination extends Vue {
 
   debouncedSetState = this.debounce(this.setState, 200)
 
-  mounted() {
+  created() {
     this.setState()
     window.addEventListener('resize', this.debouncedSetState)
   }
