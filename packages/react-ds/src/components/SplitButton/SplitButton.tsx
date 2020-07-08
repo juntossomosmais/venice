@@ -41,6 +41,7 @@ const SplitButton: React.FC<ISplitButtonProps> = ({
   return (
     <nav className={navClassNames} {...props}>
       <Button
+        className={styles['inner-button']}
         color={color}
         size={size}
         aria-expanded={isOpen}

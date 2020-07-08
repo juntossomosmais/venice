@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.13.0...@venice/core@0.14.0) (2020-07-02)
+
+
+### Features
+
+* added knob for splitbutton size ([58b3b7e](https://github.com/juntossomosmais/venice/commit/58b3b7e69b80488a6329a82cf847ddeebcbc98cf))
+
+
+
+
+
 # [0.13.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.12.0...@venice/core@0.13.0) (2020-07-01)
 
 

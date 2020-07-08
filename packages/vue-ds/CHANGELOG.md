@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.10.0...@juntossomosmais/venice-vue@0.11.0) (2020-07-02)
+
+
+### Features
+
+* added knob for splitbutton size ([58b3b7e](https://github.com/juntossomosmais/venice/commit/58b3b7e69b80488a6329a82cf847ddeebcbc98cf))
+* match button from classname ([43e5dfc](https://github.com/juntossomosmais/venice/commit/43e5dfcf4ad0d6f0b3ac5985947529fd2bef6c49))
+
+
+
+
+
 # [0.10.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.9.3...@juntossomosmais/venice-vue@0.10.0) (2020-07-01)
 
 
