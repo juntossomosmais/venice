@@ -18,7 +18,9 @@ describe('<Pagination />', () => {
       },
     })
 
-    expect(container.getElementsByTagName('button')).toHaveLength(1)
+    const previousButton = container.getElementsByTagName('button')[0]
+
+    expect(previousButton).toHaveStyle('display: none')
   })
 
   it('should not display the next button', () => {
@@ -29,7 +31,9 @@ describe('<Pagination />', () => {
       },
     })
 
-    expect(container.getElementsByTagName('button')).toHaveLength(1)
+    const nextButton = container.getElementsByTagName('button')[1]
+
+    expect(nextButton).toHaveStyle('display: none')
   })
 
   it('should increase the range size on the second page', () => {
@@ -122,8 +126,11 @@ describe('<Pagination />', () => {
       },
     })
 
-    expect(container.getElementsByTagName('button')[0]).toBeDisabled()
-    expect(container.getElementsByTagName('button')[1]).toBeDisabled()
+    const previousButton = container.getElementsByTagName('button')[0]
+    const nextButton = container.getElementsByTagName('button')[1]
+
+    expect(previousButton).toBeDisabled()
+    expect(nextButton).toBeDisabled()
   })
 
   it('should enabled buttons when page is loaded', () => {
@@ -134,8 +141,11 @@ describe('<Pagination />', () => {
       },
     })
 
-    expect(container.getElementsByTagName('button')[0]).not.toBeDisabled()
-    expect(container.getElementsByTagName('button')[1]).not.toBeDisabled()
+    const previousButton = container.getElementsByTagName('button')[0]
+    const nextButton = container.getElementsByTagName('button')[1]
+
+    expect(previousButton).not.toBeDisabled()
+    expect(nextButton).not.toBeDisabled()
   })
 
   it('should not render component when page is less than 1', () => {
@@ -146,7 +156,11 @@ describe('<Pagination />', () => {
       },
     })
 
-    expect(container.getElementsByClassName('pagination')).toHaveLength(0)
+    const paginationContainer = container.getElementsByClassName(
+      'pagination'
+    )[0]
+
+    expect(paginationContainer).toHaveStyle('display: none')
   })
 
   it('should not render component when page is greater than count', () => {
@@ -157,7 +171,11 @@ describe('<Pagination />', () => {
       },
     })
 
-    expect(container.getElementsByClassName('pagination')).toHaveLength(0)
+    const paginationContainer = container.getElementsByClassName(
+      'pagination'
+    )[0]
+
+    expect(paginationContainer).toHaveStyle('display: none')
   })
 
   it('should not render component when count is less than 1', () => {
@@ -170,6 +188,10 @@ describe('<Pagination />', () => {
       },
     })
 
-    expect(container.getElementsByClassName('pagination')).toHaveLength(0)
+    const paginationContainer = container.getElementsByClassName(
+      'pagination'
+    )[0]
+
+    expect(paginationContainer).toHaveStyle('display: none')
   })
 })

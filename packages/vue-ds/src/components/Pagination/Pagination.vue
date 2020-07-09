@@ -1,17 +1,17 @@
 <template>
-  <section v-if="!isInvalid" :class="PaginationClass">
+  <section v-show="!isInvalid" :class="PaginationClass">
     <div :class="PaginationContainerClass">
       <button
-        v-if="hasPreviousCondition"
+        v-show="hasPreviousCondition"
         class="paginationButton"
         :disabled="isLoading"
         @click="prevPage"
       >
-        <AngleLeft :width="12" :height="23" :viewBox="'-1 3 12 7'" />
+        <AngleLeft :width="12" :height="23" viewBox="-1 3 12 7" />
       </button>
       <div
-        v-for="(currentPage, idx) in range"
-        :key="idx"
+        v-for="currentPage in range"
+        :key="currentPage"
         class="indexWrapper"
         :class="page === currentPage ? 'active' : ''"
         :data-marker="page === currentPage && `de ${count}`"
@@ -21,12 +21,12 @@
         </div>
       </div>
       <button
-        v-if="hasNextCondition"
+        v-show="hasNextCondition"
         class="paginationButton"
         :disabled="isLoading"
         @click="nextPage"
       >
-        <AngleRight :width="12" :height="23" :viewBox="'-3 3 12 7'" />
+        <AngleRight :width="12" :height="23" viewBox="-3 3 12 7" />
       </button>
     </div>
   </section>
@@ -91,9 +91,14 @@ export default class Pagination extends Vue {
     window.removeEventListener('resize', this.debouncedSetState)
   }
 
-  nextPage = () => this.onChange && this.onChange(this.page + 1)
-  prevPage = () => this.onChange && this.onChange(this.page - 1)
-  selectPage = (newPage: number) => this.onChange && this.onChange(newPage)
+  nextPage = () =>
+    this.onChange && this.onChange(this.page + 1) && this.$emit('next-page')
+
+  prevPage = () =>
+    this.onChange && this.onChange(this.page - 1) && this.$emit('previous-page')
+
+  selectPage = (newPage: number) =>
+    this.onChange && this.onChange(newPage) && this.$emit('select-page')
 
   get PaginationClass() {
     return ['pagination', this.isMobile ? 'isMobile' : '', this.customClass]
