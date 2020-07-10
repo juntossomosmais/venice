@@ -56,7 +56,6 @@ export default class Pagination extends Vue {
   @Prop({ default: 1 }) count!: IPagination['count']
   @Prop({ default: 1 }) page!: IPagination['page']
   @Prop({ default: false }) isLoading!: IPagination['isLoading']
-  @Prop() onChange!: IPagination['onChange']
   @Prop() customClass!: IPagination['className']
 
   private maxPhoneWidth = 420
@@ -91,14 +90,15 @@ export default class Pagination extends Vue {
     window.removeEventListener('resize', this.debouncedSetState)
   }
 
-  nextPage = () =>
-    this.onChange && this.onChange(this.page + 1) && this.$emit('next-page')
-
-  prevPage = () =>
-    this.onChange && this.onChange(this.page - 1) && this.$emit('previous-page')
-
-  selectPage = (newPage: number) =>
-    this.onChange && this.onChange(newPage) && this.$emit('select-page')
+  nextPage() {
+    this.$emit('next-page', this.page + 1)
+  }
+  prevPage() {
+    this.$emit('previous-page', this.page - 1)
+  }
+  selectPage(newPage: number) {
+    this.$emit('select-page', newPage)
+  }
 
   get PaginationClass() {
     return ['pagination', this.isMobile ? 'isMobile' : '', this.customClass]
