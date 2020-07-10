@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.13.0...@juntossomosmais/venice-react@0.14.0) (2020-07-10)
+
+
+### Bug Fixes
+
+* add some improvement on debounce function ([279dd43](https://github.com/juntossomosmais/venice/commit/279dd43e9228571b195dbea41ae6738173cfdf06))
+
+
+### Features
+
+* improving pagination .mdx files ([6ca829b](https://github.com/juntossomosmais/venice/commit/6ca829b2e89843b424c5fa74b878488cd332c58a))
+* updating helpers path on packages ([0b026ab](https://github.com/juntossomosmais/venice/commit/0b026ab6edfbe5c16ee9a83a467a397ec2b4d525))
+
+
+
+
+
 # [0.13.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.12.0...@juntossomosmais/venice-react@0.13.0) (2020-07-02)
 
 

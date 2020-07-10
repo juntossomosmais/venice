@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.17.0...@venice/styles@0.17.1) (2020-07-10)
+
+
+### Bug Fixes
+
+* updating pagination styles ([60a1bd5](https://github.com/juntossomosmais/venice/commit/60a1bd586497190528799ee93a25f7c8cd4a6a0e))
+
+
+
+
+
 # [0.17.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.16.0...@venice/styles@0.17.0) (2020-07-02)
 
 

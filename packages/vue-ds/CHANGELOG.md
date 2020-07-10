@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.11.0...@juntossomosmais/venice-vue@0.12.0) (2020-07-10)
+
+
+### Bug Fixes
+
+* add a watcher to listen page prop ([07a924e](https://github.com/juntossomosmais/venice/commit/07a924ef278963553a49e7f0037219a1aa291649))
+* change mounted method per created method ([2669914](https://github.com/juntossomosmais/venice/commit/2669914a4b45d20329b3909971fc20e2c875194d))
+* improve some events ([265ad6a](https://github.com/juntossomosmais/venice/commit/265ad6a13bc79a2b0d0b300ae798992b083f623b))
+
+
+### Features
+
+* add icon folder ([40ba8c0](https://github.com/juntossomosmais/venice/commit/40ba8c0c40b25fabcb2827059b30bd1885d42e5c))
+* add tests to pagination component on vue ([3deb9c4](https://github.com/juntossomosmais/venice/commit/3deb9c4c94a21af892806e3db76908180cedccdb))
+* creating a mdx to pagination ([e394113](https://github.com/juntossomosmais/venice/commit/e39411322f1e0a96c760e8fec75eb0405980978e))
+* creating a pagination component ([546abc8](https://github.com/juntossomosmais/venice/commit/546abc846e19b01458c9f9f9babd08a4e644605c))
+* improving pagination .mdx files ([6ca829b](https://github.com/juntossomosmais/venice/commit/6ca829b2e89843b424c5fa74b878488cd332c58a))
+* improving pagination component on vue ([6d65815](https://github.com/juntossomosmais/venice/commit/6d658159339b85e3726c0613191440e8230dd5f8))
+* updating helpers path on packages ([0b026ab](https://github.com/juntossomosmais/venice/commit/0b026ab6edfbe5c16ee9a83a467a397ec2b4d525))
+
+
+
+
+
 # [0.11.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.10.0...@juntossomosmais/venice-vue@0.11.0) (2020-07-02)
 
 
