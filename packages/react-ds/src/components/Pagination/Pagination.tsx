@@ -2,25 +2,25 @@ import React, { useState, useEffect, useCallback } from 'react'
 
 import classNames from 'classnames/bind'
 
-import { IPagination } from '@venice/core/models'
-import styles from '@venice/styles/components/Pagination.module.scss'
-
 import {
   getRangeIndexes,
   hasNextRange,
   hasPreviousRange,
-} from './helpers/PaginationHelper'
+} from '@venice/core/helpers/Pagination'
+import { IPagination } from '@venice/core/models'
+import styles from '@venice/styles/components/Pagination.module.scss'
+
 // TODO: these icons should be replaced when there is an icon library
 import AngleLeft from './icons/AngleLeft'
 import AngleRight from './icons/AngleRight'
 import PaginationIndex from './PaginationIndex'
 
 const debounce = (func: () => void, wait: number) => {
-  let timer: NodeJS.Timeout
+  let timer = 0
 
   return () => {
     clearTimeout(timer)
-    timer = setTimeout(func, wait)
+    timer = window.setTimeout(func, wait)
   }
 }
 

@@ -92,6 +92,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
     color: var(--gray-3);
     display: flex;
     justify-content: center;
+    margin: 0;
 
     &:hover {
       color: var(--secondary-color);
@@ -115,7 +116,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
       content: '';
       height: var(--space-xxs);
       left: 0;
-      margin-top: 7px;
+      margin-top: var(--space-xs);
       position: absolute;
       top: 100%;
       width: 100%;
@@ -129,7 +130,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
       justify-content: center;
       left: 0;
       letter-spacing: var(--typography-caption-letter);
-      margin-top: 14px;
+      margin-top: var(--space-sm);
       position: absolute;
       top: 100%;
       width: 100%;

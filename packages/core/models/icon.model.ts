@@ -3,8 +3,8 @@ export interface IIcon {
   fill?: 'default' | 'primary' | 'secondary'
   /** string | number */
   width: string | number
-  /** string */
-  height: string
+  /** string | number */
+  height: string | number
   /** string */
   viewBox: string
 }
