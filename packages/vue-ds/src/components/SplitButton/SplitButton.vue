@@ -1,10 +1,11 @@
 <template>
-  <nav class="splitButton">
+  <nav :class="componentClass">
     <Button
       :color="color"
       :size="size"
       @click="onClickButton"
       v-bind="{ 'aria-expanded': isOpen }"
+      class="inner-button"
     >
       <slot name="text">{{ text }}</slot>
       <span class="caret"></span>
@@ -31,9 +32,17 @@ export default class SplitButton extends Vue {
   @Prop({ default: 'default' }) color!: ISplitButton['color']
   @Prop({ default: 'large' }) size!: ISplitButton['size']
   @Prop({ default: 'rtl' }) direction!: ISplitButton['direction']
+  @Prop({ default: false }) isFitMenu!: ISplitButton['isFitMenu']
+  @Prop({ default: 'hover' }) openType!: ISplitButton['openType']
   @Prop({ type: String }) text!: ISplitButton['text']
 
-  isOpen = false
+  private isOpen = false
+
+  get componentClass() {
+    const clickType = this.openType === 'click' && this.isOpen ? 'active' : ''
+
+    return ['splitButton', this.openType, clickType]
+  }
 
   get dropdownClass() {
     return [
@@ -41,7 +50,7 @@ export default class SplitButton extends Vue {
       this.direction,
       this.size,
       this.color,
-      this.isOpen ? 'active' : '',
+      this.isFitMenu ? 'fitbutton' : '',
     ]
   }
 

@@ -1,5 +1,14 @@
-import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
+import {
+  Meta,
+  Story,
+  Description,
+  Preview,
+  Props,
+} from '@storybook/addon-docs/blocks'
+import { withKnobs } from '@storybook/addon-knobs'
+import { withA11y } from '@storybook/addon-a11y'
 
+import { knobSplitButtonOpenType, knobSplitButtonIsFitMenu, knobSplitButtonSizes } from '@venice/core/storybook/knobs'
 import SplitButton from './SplitButton.vue'
 
 <Meta title="Components|SplitButton" component={SplitButton} />
@@ -34,7 +43,7 @@ SplitButton allow user to have many options to choice to take an action.
             <a href="#">Something else here</a>
           </SplitButton>
         </div>
-      `
+      `,
     }}
   </Story>
 </Preview>
@@ -63,7 +72,51 @@ SplitButton allow user to have many options to choice to take an action.
             <a href="#">Something else here</a>
           </SplitButton>
         </div>
-      `
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Menu Options
+
+<Preview>
+  <Story
+    name="Menu Options"
+    height="225px"
+    parameters={{ decorators: [withKnobs,withA11y] }}
+  >
+    {{
+      components: { SplitButton },
+      props: {
+        isFitMenu: {
+          default: knobSplitButtonIsFitMenu(),
+        },
+        openType: {
+          default: knobSplitButtonOpenType(),
+        },
+        size: {
+          default: knobSplitButtonSizes(),
+        }
+      },
+      template: `
+        <div class="row-items lg-offset-left">
+          <SplitButton text="Menu Options" :isFitMenu="isFitMenu" :openType="openType" :size="size">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+          <SplitButton text="Menu Options" color="primary" :isFitMenu="isFitMenu" :openType="openType" :size="size">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+          <SplitButton text="Menu Options" color="secondary" :isFitMenu="isFitMenu" :openType="openType" :size="size">
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+          </SplitButton>
+        </div>
+      `,
     }}
   </Story>
 </Preview>

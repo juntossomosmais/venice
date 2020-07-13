@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.14.0...@venice/core@0.15.0) (2020-07-10)
+
+
+### Features
+
+* add a common helpers folder to core ([d03002e](https://github.com/juntossomosmais/venice/commit/d03002e88632390fbbf5cf58cc7146b4711e0ca5))
+
+
+
+
+
+# [0.14.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.13.0...@venice/core@0.14.0) (2020-07-02)
+
+
+### Features
+
+* added knob for splitbutton size ([58b3b7e](https://github.com/juntossomosmais/venice/commit/58b3b7e69b80488a6329a82cf847ddeebcbc98cf))
+
+
+
+
+
+# [0.13.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.12.0...@venice/core@0.13.0) (2020-07-01)
+
+
+### Bug Fixes
+
+* add forwardRef into select/input ([33ea700](https://github.com/juntossomosmais/venice/commit/33ea700a19ac2cb7461f6cf01e569d28a19cc202))
+* add forwardRef into select/input ([251880a](https://github.com/juntossomosmais/venice/commit/251880a3873f8c9462adfb2b58e4ba8cca5840f0))
+
+
+### Features
+
+* add config to github-markdown ([38565c4](https://github.com/juntossomosmais/venice/commit/38565c44038cad9b653862b7864aaf75736e0365))
+* added knobs to splitbutton menu options ([8e55222](https://github.com/juntossomosmais/venice/commit/8e552222f98566327a026f3000a1c30c4710cfc8))
+* added menu conditional styles ([93ffed3](https://github.com/juntossomosmais/venice/commit/93ffed35320b809e1e899ece23bea115fc6bc900))
+* better naming props ([5477daf](https://github.com/juntossomosmais/venice/commit/5477daf5049d32df5d04d4b7ce888614e8ecbe58))
+* improve index page ([7c6111b](https://github.com/juntossomosmais/venice/commit/7c6111b8dec5ed777005115229189f78448c4bf2))
+
+
+
+
+
 # [0.12.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.11.1...@venice/core@0.12.0) (2020-06-23)
 
 

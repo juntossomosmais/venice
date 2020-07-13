@@ -1,8 +1,4 @@
-import {
-  getRangeIndexes,
-  hasNextRange,
-  hasPreviousRange,
-} from './PaginationHelper'
+import { getRangeIndexes, hasNextRange, hasPreviousRange } from './'
 
 describe('PaginationHelper', () => {
   it('should return the correct indexes to slice in pages array on mobile device', () => {

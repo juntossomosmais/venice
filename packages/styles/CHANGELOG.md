@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.17.0...@venice/styles@0.17.1) (2020-07-10)
+
+
+### Bug Fixes
+
+* updating pagination styles ([60a1bd5](https://github.com/juntossomosmais/venice/commit/60a1bd586497190528799ee93a25f7c8cd4a6a0e))
+
+
+
+
+
+# [0.17.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.16.0...@venice/styles@0.17.0) (2020-07-02)
+
+
+### Bug Fixes
+
+* some sizes and spacings ([6c44a54](https://github.com/juntossomosmais/venice/commit/6c44a54ebd47a4e0d718391e54bcee7e2e7411ed))
+
+
+### Features
+
+* added css variable ([bca036e](https://github.com/juntossomosmais/venice/commit/bca036e535b461e02fa6339abe50b7103cb3debd))
+* added space variable calc ([da90c42](https://github.com/juntossomosmais/venice/commit/da90c4288abdd180f4a273dde32d9a9280dbbd67))
+* match button from classname ([43e5dfc](https://github.com/juntossomosmais/venice/commit/43e5dfcf4ad0d6f0b3ac5985947529fd2bef6c49))
+
+
+
+
+
+# [0.16.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.15.0...@venice/styles@0.16.0) (2020-07-01)
+
+
+### Bug Fixes
+
+* add forwardRef into select/input ([251880a](https://github.com/juntossomosmais/venice/commit/251880a3873f8c9462adfb2b58e4ba8cca5840f0))
+* added outline style to parent ([4c470e1](https://github.com/juntossomosmais/venice/commit/4c470e1fb657850be00ac3531e8a55a710e860c7))
+* css of select and input ([3cfc7ec](https://github.com/juntossomosmais/venice/commit/3cfc7ec66fd0f458a6e2fa85abfa15d767aaa268))
+* splitbutton container classname ([7d9ae56](https://github.com/juntossomosmais/venice/commit/7d9ae56e08836312100473044eb9b89105979f56))
+
+
+### Features
+
+* added menu conditional styles ([93ffed3](https://github.com/juntossomosmais/venice/commit/93ffed35320b809e1e899ece23bea115fc6bc900))
+
+
+
+
+
 # [0.15.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.14.0...@venice/styles@0.15.0) (2020-06-23)
 
 
