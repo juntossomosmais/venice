@@ -9,6 +9,7 @@ import pkg from './package.json'
 
 export default {
   input: 'src/index.tsx',
+  external: ['react-imask'],
   output: [
     {
       file: pkg.main,
