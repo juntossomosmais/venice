@@ -8,17 +8,18 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "isolatedModules": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
     "noImplicitAny": false,
+    "outDir": "lib",
     "resolveJsonModule": true,
+    "rootDir": ".",
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "outDir": "lib",
-    "rootDir": "."
+    "typeRoots": ["./packages/core/@types"]
   }
 }
