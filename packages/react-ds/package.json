@@ -12,9 +12,11 @@
   "bugs": {
     "url": "https://github.com/juntossomosmais/venice/issues"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "files": [
+    "src",
     "dist"
   ],
   "engines": {
@@ -35,6 +37,8 @@
     "react-dom": "^16.13.0"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "^5.1.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
     "@testing-library/react": "^10.0.1",
@@ -52,8 +56,9 @@
     "react-scripts": "3.4.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.2",
-    "rollup-plugin-typescript2": "^0.27.0"
+    "rollup-plugin-sourcemaps": "^0.6.2",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "tslib": "^2.0.0"
   },
   "browserslist": [
     "defaults"
