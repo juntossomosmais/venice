@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { render, waitFor, fireEvent } from '@testing-library/react'
+import { render } from '@testing-library/react'
 
 import '@testing-library/jest-dom'
 
-import SplitButton from './SplitButton'
+import { SplitButton } from '.'
 
 describe('<SplitButton />', () => {
   it('should have on menu the "dropdown" classname by default', () => {

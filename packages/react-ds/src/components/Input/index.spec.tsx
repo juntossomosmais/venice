@@ -4,10 +4,11 @@ import { render, fireEvent } from '@testing-library/react'
 
 import '@testing-library/jest-dom'
 
-import Input from './Input'
+import { Input } from '.'
 
 describe('<Input />', () => {
   it('Should display the base input', () => {
+    // TODO - Fix TypeScript compilation errors
     const { container } = render(<Input />)
     const errorDOM = container.querySelector(`.error`)
     expect(errorDOM).toBeNull()
@@ -15,6 +16,7 @@ describe('<Input />', () => {
 
   it('Should display errors in the input', () => {
     const feedBackError = 'Errors will be displayed here'
+    // TODO - Fix TypeScript compilation errors
     const { container, queryByText } = render(<Input error={feedBackError} />)
     const errorDOM = container.querySelector(`.error`)
 
@@ -25,9 +27,11 @@ describe('<Input />', () => {
 
   it('Should change value of input ', () => {
     const id = 'field_id'
+    // TODO - Fix TypeScript compilation errors
     const { container } = render(<Input id={id} />)
     const input = container.querySelector(`#${id}`)
 
+    // TODO - Fix TypeScript compilation errors
     fireEvent.change(input, { target: { value: '23' } })
     expect(input.value).toBe('23')
   })
@@ -38,6 +42,7 @@ describe('<Input />', () => {
     const { container } = render(<Input id={id} onChange={onChange} />)
     const input = container.querySelector(`#${id}`)
 
+    // TODO - Fix TypeScript compilation errors
     fireEvent.change(input, { target: { value: '23' } })
     expect(input.value).toBe('23')
     expect(onChange).toBeCalled()

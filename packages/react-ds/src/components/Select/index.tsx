@@ -14,7 +14,7 @@ interface ISelectProps extends IField {
   icon?: React.ReactNode | string
 }
 
-const Select = (
+const InternalSelect = (
   {
     id,
     label,
@@ -68,4 +68,4 @@ const Select = (
   )
 }
 
-export default forwardRef(Select)
+export const Select = forwardRef(InternalSelect)

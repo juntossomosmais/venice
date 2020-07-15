@@ -8,7 +8,7 @@ import styles from '@venice/styles/components/Field.module.scss'
 
 import Alert from '../Icons/Alert'
 
-const Input = (
+const InternalInput = (
   {
     id,
     label,
@@ -45,4 +45,4 @@ const Input = (
   )
 }
 
-export default forwardRef(Input)
+export const Input = forwardRef(InternalInput)

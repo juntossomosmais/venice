@@ -4,22 +4,25 @@ import { render, fireEvent } from '@testing-library/react'
 
 import '@testing-library/jest-dom'
 
-import Select from './Select'
+import { Select } from '.'
 
 describe('<Select />', () => {
   it('Should display the base Select', () => {
+    // TODO - Fix TypeScript compilation error
     const { container } = render(<Select />)
     const errorDOM = container.querySelector(`.error`)
     expect(errorDOM).toBeNull()
   })
 
   it('Should display the base Select', () => {
+    // TODO - Fix TypeScript compilation error
     const { queryByText } = render(<Select icon="R$" />)
     expect(queryByText('R$')).toBeInTheDocument()
   })
 
   it('Should display errors in the Select', () => {
     const feedBackError = 'Errors will be displayed here'
+    // TODO - Fix TypeScript compilation error
     const { container, queryByText } = render(<Select error={feedBackError} />)
     const errorDOM = container.querySelector(`.error`)
 
@@ -30,6 +33,7 @@ describe('<Select />', () => {
 
   it('Should change value of Select ', () => {
     const id = 'field_id'
+    // TODO - Fix TypeScript compilation error
     const { container } = render(
       <Select label="label" id={id} defaultValue="2">
         <option value="1">option 1</option>
@@ -39,6 +43,7 @@ describe('<Select />', () => {
     )
     const select = container.querySelector(`#${id}`)
 
+    // TODO - Fix TypeScript compilation errors
     expect(select.value).toBe('2')
     fireEvent.change(select, { target: { value: '3' } })
     expect(select.value).toBe('3')
@@ -48,10 +53,12 @@ describe('<Select />', () => {
     const id = 'field_id'
     const store = { value: '1' }
     const _onChange = jest.fn()
+    // TODO - Fix TypeScript compilation error
     const onChange = (e) => {
       store.value = e.target.value
       return _onChange(e.target.value)
     }
+    // TODO - Fix TypeScript compilation error
     const { container } = render(
       <Select
         label="label"
@@ -66,6 +73,7 @@ describe('<Select />', () => {
     )
     const select = container.querySelector(`#${id}`)
 
+    // TODO - Fix TypeScript compilation errors
     expect(select.value).toBe(store.value)
     fireEvent.change(select, { target: { value: '3' } })
     expect(_onChange).toBeCalledWith('3')

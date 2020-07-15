@@ -6,7 +6,7 @@ import '@testing-library/jest-dom'
 
 import { initial, started, completed } from '@venice/core/mocks/stepper'
 
-import Stepper from './Stepper'
+import { Stepper } from '.'
 
 describe('<Stepper />', () => {
   it('should create a stepbar with 5 steps', () => {

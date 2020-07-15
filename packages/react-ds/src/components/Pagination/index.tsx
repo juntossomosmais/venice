@@ -24,14 +24,14 @@ const debounce = (func: () => void, wait: number) => {
   }
 }
 
-const Pagination: React.FC<IPagination> = ({
+export const Pagination: React.FunctionComponent<IPagination> = ({
   count = 1,
   page = 1,
   isLoading = false,
   onChange = () => null,
   className,
   ...props
-}: IPagination) => {
+}) => {
   const maxPhoneWidth = 420
   const [isMobile, setIsMobile] = useState(false)
 
@@ -114,5 +114,3 @@ const Pagination: React.FC<IPagination> = ({
     </section>
   ) : null
 }
-
-export default Pagination

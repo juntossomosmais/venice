@@ -4,7 +4,7 @@ import { render } from '@testing-library/react'
 
 import '@testing-library/jest-dom'
 
-import Spinner from './Spinner'
+import { Spinner } from '.'
 
 describe('<Spinner />', () => {
   it('should have "default" classname when prop color is empty', () => {
