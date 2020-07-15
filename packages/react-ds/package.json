@@ -30,6 +30,11 @@
     "loki-update": "loki update",
     "prepublish": "yarn test:ci && yarn build"
   },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-imask": "^5.2.1",
+    "uniqid": "^5.2.0"
+  },
   "peerDependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
@@ -75,10 +80,5 @@
       }
     }
   },
-  "gitHead": "df9fd8986ee04d735ebcd547debf7d6d16ce3b22",
-  "dependencies": {
-    "classnames": "^2.2.6",
-    "react-imask": "^6.0.5",
-    "uniqid": "^5.2.0"
-  }
+  "gitHead": "df9fd8986ee04d735ebcd547debf7d6d16ce3b22"
 }
