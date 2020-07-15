@@ -3,6 +3,10 @@
   "version": "0.15.0",
   "main": "index.ts",
   "private": true,
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@storybook/addon-a11y": "^5.3.18",
     "@storybook/addon-docs": "^5.3.18",
