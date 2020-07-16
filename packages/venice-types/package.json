@@ -18,7 +18,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "prepare": "yarn build"
   },
   "types": "dist/index.d.ts",
   "bugs": {
