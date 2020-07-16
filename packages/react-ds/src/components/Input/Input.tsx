@@ -9,7 +9,7 @@ import styles from '@venice/styles/components/Field.module.scss'
 
 import Alert from '../Icons/Alert'
 
-export const Input = (
+const Input = (
   {
     id,
     label,
