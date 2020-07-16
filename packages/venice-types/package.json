@@ -1,0 +1,27 @@
+{
+  "name": "@juntossomosmais/venice-types",
+  "version": "0.1.0",
+  "description": "Components types and interfaces for Venice",
+  "homepage": "https://github.com/juntossomosmais/venice/tree/master/packages/venice-types#readme",
+  "license": "Apache-2.0",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juntossomosmais/venice.git",
+    "directory": "packages/venice-types"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "types": "dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/juntossomosmais/venice/issues"
+  }
+}
