@@ -1,11 +1,21 @@
-# `venice-types`
+<h1 align="center">venice-types 🎨</h1>
 
-> TODO: description
+> Components types for React and Vue
 
-## Usage
+## Using as lib
 
+### Install
+
+You just need to install it using NPM or Yarn and that's it.
+
+#### Yarn
+
+```sh
+$ yarn add --dev @juntossomosmais/venice-types
 ```
-const veniceTypes = require('venice-types');
 
-// TODO: DEMONSTRATE API
+#### NPM
+
+```sh
+$ npm i -D @juntossomosmais/venice-types
 ```
