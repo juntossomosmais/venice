@@ -1,4 +1,4 @@
-import React, { HTMLProps, forwardRef, Ref } from 'react'
+import React, { HTMLProps, forwardRef, Ref, FunctionComponent } from 'react'
 
 import classNames from 'classnames/bind'
 import { IMaskInput } from 'react-imask'
@@ -9,7 +9,7 @@ import styles from '@venice/styles/components/Field.module.scss'
 
 import Alert from '../Icons/Alert'
 
-const Input = (
+export const Input: FunctionComponent<IField & HTMLProps<HTMLInputElement>> = (
   {
     id,
     label,
