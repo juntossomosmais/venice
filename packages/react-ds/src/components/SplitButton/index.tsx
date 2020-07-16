@@ -1,8 +1,8 @@
 import * as React from 'react'
 
+import { ISplitButton } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 
-import { ISplitButton } from '@venice/core/models'
 import styles from '@venice/styles/components/SplitButton.module.scss'
 
 import { Button } from '../Button'
@@ -12,7 +12,7 @@ export interface ISplitButtonProps extends ISplitButton {
   children: React.ReactNode
 }
 
-export const SplitButton: React.FC<ISplitButtonProps> = ({
+export const SplitButton: React.FunctionComponent<ISplitButtonProps> = ({
   text,
   children,
   color = 'default',

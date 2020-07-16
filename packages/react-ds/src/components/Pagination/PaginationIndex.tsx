@@ -9,7 +9,7 @@ interface PaginationIndexProps {
   onSelect: (page: number) => void
 }
 
-const PaginationIndex: React.SFC<PaginationIndexProps> = ({
+export const PaginationIndex: React.FunctionComponent<PaginationIndexProps> = ({
   page,
   count,
   isCurrentPage,
@@ -27,5 +27,3 @@ const PaginationIndex: React.SFC<PaginationIndexProps> = ({
     </div>
   )
 }
-
-export default PaginationIndex

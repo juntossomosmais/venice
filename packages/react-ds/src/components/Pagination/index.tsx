@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 
+import { IPagination } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 
 import {
@@ -7,13 +8,12 @@ import {
   hasNextRange,
   hasPreviousRange,
 } from '@venice/core/helpers/Pagination'
-import { IPagination } from '@venice/core/models'
 import styles from '@venice/styles/components/Pagination.module.scss'
 
 // TODO: these icons should be replaced when there is an icon library
 import AngleLeft from './icons/AngleLeft'
 import AngleRight from './icons/AngleRight'
-import PaginationIndex from './PaginationIndex'
+import { PaginationIndex } from './PaginationIndex'
 
 const debounce = (func: () => void, wait: number) => {
   let timer = 0

@@ -1,9 +1,9 @@
 import React, { HTMLProps, forwardRef, Ref } from 'react'
 
+import { IField } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 import uniqid from 'uniqid'
 
-import { IField } from '@venice/core/models/field.model'
 import stylesField from '@venice/styles/components/Field.module.scss'
 import styles from '@venice/styles/components/Select.module.scss'
 

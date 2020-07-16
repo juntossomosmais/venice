@@ -1,8 +1,8 @@
 import React from 'react'
 
+import { ISpinner } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 
-import { ISpinner } from '@venice/core/models'
 import styles from '@venice/styles/components/Spinner.module.scss'
 
 export interface ISpinnerProps extends ISpinner {

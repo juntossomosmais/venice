@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react'
 
+import { IStepper } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 
-import { IStepper } from '@venice/core/models'
 import styles from '@venice/styles/components/Stepper.module.scss'
 
 export const Stepper: React.FunctionComponent<IStepper> = ({
