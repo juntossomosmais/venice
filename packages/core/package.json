@@ -1,8 +1,25 @@
 {
-  "name": "@venice/core",
+  "name": "@juntossomosmais/venice-core",
+  "description": "Typings and utilities used across Venice",
   "version": "0.15.0",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/juntossomosmais/venice/packages/react-ds#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juntossomosmais/venice.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/juntossomosmais/venice/issues"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "main": "index.ts",
-  "private": true,
   "scripts": {
     "build": "tsc --build"
   },
