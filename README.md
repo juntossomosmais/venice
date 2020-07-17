@@ -44,7 +44,7 @@
 
 <h3 align="center">
   <a href="https://juntossomosmais.github.io/venice/react/">React Version</a> | <a href="https://juntossomosmais.github.io/venice/vue/" target="_blank">Vue Version</a>
-</h4>
+</h3>
 
 > Design System of @juntossomosmais
 
@@ -75,9 +75,12 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent com
 
 ### React
 
-```js
-import styles from '@venice/styles/components/Button.module.scss'
-;<button className={styles.button}></button>
+```jsx
+import styles from '@venice/styles/components/Button.module.scss';
+
+<button className={styles.button}>
+  Hello
+</button>
 ```
 
 ### Vue
@@ -92,7 +95,9 @@ import { IButton } from '@venice/core/models'
 </style>
 
 <template>
-  <button :class="button"></button>
+  <button :class="button">
+  Hello
+</button>
 </template>
 ```
 
@@ -140,7 +145,11 @@ This project has the following folders:
 
 #### `packages/core`
 
-That contains shareable configs of Storybook, TypeScript interfaces and etc. If you need to share something between project, it need to stay here.
+It contains internal configs of Venice. If you need to share something between project, it needs to stay here.
+
+#### `packages/venice-types`
+
+It contains types and interfaces used across Venice. Types related to an specific property of Vue/React should go to their package.
 
 #### `packages/styles`
 
