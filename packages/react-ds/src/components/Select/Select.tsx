@@ -47,7 +47,7 @@ const Select = (
         <select
           {...props}
           id={selfId}
-          className={classNames(stylesField.field, styles.field)}
+          className={classNames(stylesField.field, styles.field, styles.select)}
           ref={ref}
         >
           <option hidden value="">
