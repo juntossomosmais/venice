@@ -1,6 +1,7 @@
 import React, { HTMLProps, forwardRef, Ref } from 'react'
 
 import classNames from 'classnames/bind'
+import { IMaskInput } from 'react-imask'
 import uniqid from 'uniqid'
 
 import { IField } from '@venice/core/models/field.model'
@@ -33,7 +34,7 @@ const Input = (
           {label}
         </label>
       )}
-      <input className={styles.field} id={selfId} {...props} ref={ref} />
+      <IMaskInput className={styles.field} id={selfId} {...props} ref={ref} />
       {/* TODO: Replace for alert component */}
       {error && (
         <div className={styles.error}>

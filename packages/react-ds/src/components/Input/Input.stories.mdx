@@ -42,12 +42,41 @@ import Input from './Input'
   </Story>
 </Preview>
 
-
 ##  Validation
 
 <Preview>
   <Story name="Validation" decorators={[withKnobs,withA11y]}>
     <Input label="Error Sample" error="Errors will be displayed here"/>
+  </Story>
+</Preview>
+
+##  Mask
+
+It's using [imaskjs](https://github.com/uNmAnNeR/imaskjs) for displaying masks.
+
+<Preview>
+  <Story name="Mask" decorators={[withKnobs,withA11y]}>
+    <div className="row-items" style={{display: 'flex'}}>
+      <Input label="CPF/CNPJ" mask={[
+        {mask: '000.000.000-00'},
+        {mask: '00.000.000/0000-00'}
+      ]} style={{flex: '1'}}/>
+      <Input
+        label="Currency"
+        placeholder="R$ 0,00"
+        mask='R$ num'
+        blocks={{
+          num: {
+            mask: Number,
+            padFractionalZeros: true,
+            thousandsSeparator: '.',
+            radix: ',',
+            mapToRadix: ['.'],
+          },
+        }}
+        style={{flex: '1'}}
+      />
+    </div>
   </Story>
 </Preview>
 
