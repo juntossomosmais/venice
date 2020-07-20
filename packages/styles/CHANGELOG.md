@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.2](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.17.1...@venice/styles@0.17.2) (2020-07-20)
+
+
+### Bug Fixes
+
+* **select:** add zindex to avoid errors without icons ([b20a75a](https://github.com/juntossomosmais/venice/commit/b20a75a3dc71b1b7793411eb4c7676027e5f9345))
+
+
+
+
+
 ## [0.17.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.17.0...@venice/styles@0.17.1) (2020-07-10)
 
 

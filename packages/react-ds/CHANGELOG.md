@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.14.0...@juntossomosmais/venice-react@0.15.0) (2020-07-20)
+
+
+### Bug Fixes
+
+* **select:** add new style ([6167ed4](https://github.com/juntossomosmais/venice/commit/6167ed48a05b220226361b204b82abaf2b869eb3))
+* use react-imask 5.2.1 ([ac1b8fd](https://github.com/juntossomosmais/venice/commit/ac1b8fdd394ceea25d3f0bc4800383abaf748a3c))
+
+
+### Features
+
+* add mask into Input ([983c340](https://github.com/juntossomosmais/venice/commit/983c340d29dc1e27eee3c237cbff86ee3e8ea4b6))
+* adjusts ([c1e304b](https://github.com/juntossomosmais/venice/commit/c1e304b9c60e3465ac04453b491ae0d6e04f58b1))
+* adjusts ([268b269](https://github.com/juntossomosmais/venice/commit/268b2692c2c93f99ac6c24883792520673d762af))
+* adjusts ([c4cd013](https://github.com/juntossomosmais/venice/commit/c4cd0133e6a8e399371721ffe074a5d522e8ec6d))
+
+
+
+
+
 # [0.14.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.13.0...@juntossomosmais/venice-react@0.14.0) (2020-07-10)
 
 
