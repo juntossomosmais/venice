@@ -7,6 +7,10 @@ $caret-size: 16px;
   position: relative;
 }
 
+.select {
+  padding-right: 40px;
+}
+
 .error {
   color: var(--danger-color);
   display: inherit;
@@ -33,6 +37,7 @@ $caret-size: 16px;
   position: absolute;
   top: 0;
   width: $icon-size;
+  z-index: var(--zindex-5);
 }
 
 .icon {
@@ -44,6 +49,6 @@ $caret-size: 16px;
 }
 
 .caret {
-  right: var(--space);
+  right: var(--space-sm);
   width: $caret-size;
 }
