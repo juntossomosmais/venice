@@ -1,4 +1,4 @@
-import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
+import { Meta, Story, Description, Preview } from '@storybook/addon-docs/blocks'
 import { withKnobs } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
@@ -11,60 +11,58 @@ import Input from './Input'
 
 <Description>{Docs}</Description>
 
-##  Base
+## Base
 
 <Preview>
-  <Story name="Base" decorators={[withKnobs,withA11y]}>
-    <form className="row-items" style={{display: 'flex'}}>
-      <Input
-        label="label"
-        style={{flex: '1'}}
-      />
-      <Input
-        label="label"
-        placeholder="placeholder"
-        style={{flex: '1'}}
-      />
+  <Story name="Base" decorators={[withKnobs, withA11y]}>
+    <form className="row-items" style={{ display: 'flex' }}>
+      <Input label="label" style={{ flex: '1' }} />
+      <Input label="label" placeholder="placeholder" style={{ flex: '1' }} />
     </form>
   </Story>
 </Preview>
 
-
-##  Disabled
+## Disabled
 
 <Preview>
-  <Story name="Disabled" decorators={[withKnobs,withA11y]}>
-    <div className="row-items" style={{display: 'flex'}}>
-      <Input label="disabled" disabled style={{flex: '1'}}/>
-      <Input label="disabled" placeholder="placeholder" disabled style={{flex: '1'}}/>
-      <Input label="disabled" value="value" disabled style={{flex: '1'}}/>
+  <Story name="Disabled" decorators={[withKnobs, withA11y]}>
+    <div className="row-items" style={{ display: 'flex' }}>
+      <Input label="disabled" disabled style={{ flex: '1' }} />
+      <Input
+        label="disabled"
+        placeholder="placeholder"
+        disabled
+        style={{ flex: '1' }}
+      />
+      <Input label="disabled" value="value" disabled style={{ flex: '1' }} />
     </div>
   </Story>
 </Preview>
 
-##  Validation
+## Validation
 
 <Preview>
-  <Story name="Validation" decorators={[withKnobs,withA11y]}>
-    <Input label="Error Sample" error="Errors will be displayed here"/>
+  <Story name="Validation" decorators={[withKnobs, withA11y]}>
+    <Input label="Error Sample" error="Errors will be displayed here" />
   </Story>
 </Preview>
 
-##  Mask
+## Mask
 
 It's using [imaskjs](https://github.com/uNmAnNeR/imaskjs) for displaying masks.
 
 <Preview>
-  <Story name="Mask" decorators={[withKnobs,withA11y]}>
-    <div className="row-items" style={{display: 'flex'}}>
-      <Input label="CPF/CNPJ" mask={[
-        {mask: '000.000.000-00'},
-        {mask: '00.000.000/0000-00'}
-      ]} style={{flex: '1'}}/>
+  <Story name="Mask" decorators={[withKnobs, withA11y]}>
+    <div className="row-items" style={{ display: 'flex' }}>
+      <Input
+        label="CPF/CNPJ"
+        mask={[{ mask: '000.000.000-00' }, { mask: '00.000.000/0000-00' }]}
+        style={{ flex: '1' }}
+      />
       <Input
         label="Currency"
         placeholder="R$ 0,00"
-        mask='R$ num'
+        mask="R$ num"
         blocks={{
           num: {
             mask: Number,
@@ -74,12 +72,8 @@ It's using [imaskjs](https://github.com/uNmAnNeR/imaskjs) for displaying masks.
             mapToRadix: ['.'],
           },
         }}
-        style={{flex: '1'}}
+        style={{ flex: '1' }}
       />
     </div>
   </Story>
 </Preview>
-
-# Props
-
-<Props of={Input} />
