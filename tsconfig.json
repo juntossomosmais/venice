@@ -3,6 +3,7 @@
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,6 +15,10 @@
     "noEmit": true,
     "noImplicitAny": false,
     "outDir": "lib",
+    "paths": {
+      "@venice/core": ["packages/core"],
+      "@venice/styles": ["packages/styles"]
+    },
     "resolveJsonModule": true,
     "rootDir": ".",
     "skipLibCheck": true,
