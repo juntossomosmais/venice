@@ -47,18 +47,12 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/uniqid": "^5.2.0",
-    "@venice/core": "^0.15.1",
-    "@venice/styles": "^0.17.2",
     "autoprefixer": "^9.7.5",
     "eslint-plugin-react": "^7.19.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-is": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.2",
-    "rollup-plugin-typescript2": "^0.27.0"
+    "react-scripts": "3.4.1"
   },
   "browserslist": [
     "defaults"

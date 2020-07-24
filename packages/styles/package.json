@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
-    "rollup-plugin-copy": "^3.3.0",
     "rupture-sass": "^0.3.0",
     "sass-loader": "^8.0.2"
   }
