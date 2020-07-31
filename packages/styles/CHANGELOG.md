@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.3](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.17.2...@venice/styles@0.17.3) (2020-07-31)
+
+
+### Bug Fixes
+
+* remove zindex to avoid overlap ([aeb18d5](https://github.com/juntossomosmais/venice/commit/aeb18d56928e87350b85a19750c5431c90a66757))
+
+
+
+
+
 ## [0.17.2](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.17.1...@venice/styles@0.17.2) (2020-07-20)
 
 
