@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 import { ISpinner } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'

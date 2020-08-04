@@ -1,4 +1,4 @@
-import React, { HTMLProps, forwardRef, Ref } from 'react'
+import * as React from 'react'
 
 import { IField } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
@@ -17,8 +17,8 @@ const InternalInput = (
     className,
     error,
     ...props
-  }: IField & HTMLProps<HTMLInputElement>,
-  ref?: Ref<HTMLInputElement>
+  }: IField & React.HTMLProps<HTMLInputElement>,
+  ref?: React.Ref<HTMLInputElement>
 ) => {
   const selfId = id || uniqid(`input__`)
   const styleContainer = classNames(
@@ -46,4 +46,4 @@ const InternalInput = (
   )
 }
 
-export const Input = forwardRef(InternalInput)
+export const Input = React.forwardRef(InternalInput)

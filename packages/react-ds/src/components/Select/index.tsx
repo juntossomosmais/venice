@@ -1,4 +1,4 @@
-import React, { HTMLProps, forwardRef, Ref } from 'react'
+import * as React from 'react'
 
 import { IField } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
@@ -25,8 +25,8 @@ const InternalSelect = (
     children,
     icon,
     ...props
-  }: ISelectProps & HTMLProps<HTMLSelectElement>,
-  ref?: Ref<HTMLSelectElement>
+  }: ISelectProps & React.HTMLProps<HTMLSelectElement>,
+  ref?: React.Ref<HTMLSelectElement>
 ) => {
   const selfId = id || uniqid(`select__`)
   const styleContainer = classNames(
@@ -68,4 +68,4 @@ const InternalSelect = (
   )
 }
 
-export const Select = forwardRef(InternalSelect)
+export const Select = React.forwardRef(InternalSelect)

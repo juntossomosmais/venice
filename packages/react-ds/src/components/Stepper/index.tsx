@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import * as React from 'react'
 
 import { IStepper } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
@@ -10,12 +10,12 @@ export const Stepper: React.FunctionComponent<IStepper> = ({
   className,
   ...props
 }) => {
-  const isActive = useCallback(
+  const isActive = React.useCallback(
     (completed: boolean): string => (completed ? styles['active'] : ''),
     []
   )
 
-  const isLastActive = useCallback(
+  const isLastActive = React.useCallback(
     (index: number): string => {
       const currentStep = steps[index]
       const nextStep = steps[index + 1]

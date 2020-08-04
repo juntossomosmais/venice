@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import * as React from 'react'
 
 import { IPagination } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
@@ -33,7 +33,7 @@ export const Pagination: React.FunctionComponent<IPagination> = ({
   ...props
 }) => {
   const maxPhoneWidth = 420
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = React.useState(false)
 
   const checkDevice = () => setIsMobile(window.innerWidth <= maxPhoneWidth)
 
@@ -52,13 +52,13 @@ export const Pagination: React.FunctionComponent<IPagination> = ({
   const onSelectPage = (newPage: number) => onChange(newPage)
 
   const [startOfRange, endOfRange] = getRangeIndexes(count, page, isMobile)
-  const getAllIndexes = useCallback(
+  const getAllIndexes = React.useCallback(
     () => Array.from(Array(count + 1).keys()).slice(1),
     [count]
   )
   const range = getAllIndexes().slice(startOfRange, endOfRange)
 
-  useEffect(() => {
+  React.useEffect(() => {
     checkDevice()
     const debouncedCheck = debounce(checkDevice, 200)
 
