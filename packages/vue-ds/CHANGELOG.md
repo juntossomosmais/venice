@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.5](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.12.2...@juntossomosmais/venice-vue@0.12.5) (2020-08-04)
+
+
+### Bug Fixes
+
+* change version for bump ([c6f8b72](https://github.com/juntossomosmais/venice/commit/c6f8b72c5f74ab662984a91589c0714165f3eb18))
+
+
+
+
+
 ## [0.12.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.12.2...@juntossomosmais/venice-vue@0.12.3) (2020-08-04)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue
