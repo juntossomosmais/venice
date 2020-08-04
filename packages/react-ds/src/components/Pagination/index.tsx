@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import * as React from 'react'
 
+import { IPagination } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 
 import {
@@ -7,13 +8,12 @@ import {
   hasNextRange,
   hasPreviousRange,
 } from '@venice/core/helpers/Pagination'
-import { IPagination } from '@venice/core/models'
 import styles from '@venice/styles/components/Pagination.module.scss'
 
 // TODO: these icons should be replaced when there is an icon library
 import AngleLeft from './icons/AngleLeft'
 import AngleRight from './icons/AngleRight'
-import PaginationIndex from './PaginationIndex'
+import { PaginationIndex } from './PaginationIndex'
 
 const debounce = (func: () => void, wait: number) => {
   let timer = 0
@@ -24,16 +24,16 @@ const debounce = (func: () => void, wait: number) => {
   }
 }
 
-const Pagination: React.FC<IPagination> = ({
+export const Pagination: React.FunctionComponent<IPagination> = ({
   count = 1,
   page = 1,
   isLoading = false,
   onChange = () => null,
   className,
   ...props
-}: IPagination) => {
+}) => {
   const maxPhoneWidth = 420
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = React.useState(false)
 
   const checkDevice = () => setIsMobile(window.innerWidth <= maxPhoneWidth)
 
@@ -52,13 +52,13 @@ const Pagination: React.FC<IPagination> = ({
   const onSelectPage = (newPage: number) => onChange(newPage)
 
   const [startOfRange, endOfRange] = getRangeIndexes(count, page, isMobile)
-  const getAllIndexes = useCallback(
+  const getAllIndexes = React.useCallback(
     () => Array.from(Array(count + 1).keys()).slice(1),
     [count]
   )
   const range = getAllIndexes().slice(startOfRange, endOfRange)
 
-  useEffect(() => {
+  React.useEffect(() => {
     checkDevice()
     const debouncedCheck = debounce(checkDevice, 200)
 
@@ -114,5 +114,3 @@ const Pagination: React.FC<IPagination> = ({
     </section>
   ) : null
 }
-
-export default Pagination

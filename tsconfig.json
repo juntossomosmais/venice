@@ -2,6 +2,7 @@
   "exclude": ["node_modules", "dist", "build", "scripts"],
   "compilerOptions": {
     "allowJs": true,
+    "declaration": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "esModuleInterop": true,

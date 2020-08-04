@@ -4,7 +4,7 @@ import { render } from '@testing-library/react'
 
 import '@testing-library/jest-dom'
 
-import Button from './Button'
+import { Button } from '.'
 
 describe('<Button />', () => {
   it('should have "default" classname when "color prop" is empty', () => {

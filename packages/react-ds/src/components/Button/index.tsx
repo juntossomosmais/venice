@@ -1,13 +1,13 @@
-import React from 'react'
+import * as React from 'react'
 
+import { IButton, IDynamicComponent } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 
-import { IButton, IDynamicComponentProps } from '@venice/core/models'
 import styles from '@venice/styles/components/Button.module.scss'
 
-import Spinner from '../Spinner/Spinner'
+import { Spinner } from '../Spinner'
 
-interface IButtonProps extends IButton {
+export interface IButtonProps extends IButton {
   /** string */
   className?: string
   /** React Element */
@@ -21,12 +21,12 @@ interface IButtonProps extends IButton {
 }
 
 const ButtonComponent: React.FunctionComponent<
-  IDynamicComponentProps & React.HTMLAttributes<HTMLOrSVGElement>
+  IDynamicComponent & React.HTMLAttributes<HTMLOrSVGElement>
 > = ({ as: Wrapper = 'button', children, ...rest }) => {
   return <Wrapper {...rest}>{children}</Wrapper>
 }
 
-const Button: React.FunctionComponent<IButtonProps> = ({
+export const Button: React.FunctionComponent<IButtonProps> = ({
   children,
   className = '',
   color = 'default',
@@ -38,7 +38,7 @@ const Button: React.FunctionComponent<IButtonProps> = ({
   startIcon,
   variant = 'filled',
   ...rest
-}: IButtonProps) => {
+}) => {
   return (
     <>
       <ButtonComponent
@@ -73,5 +73,3 @@ const Button: React.FunctionComponent<IButtonProps> = ({
     </>
   )
 }
-
-export default Button

@@ -1,15 +1,15 @@
-import React, { HTMLProps, forwardRef, Ref } from 'react'
+import * as React from 'react'
 
+import { IField } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 import { IMaskInput } from 'react-imask'
 import uniqid from 'uniqid'
 
-import { IField } from '@venice/core/models/field.model'
 import styles from '@venice/styles/components/Field.module.scss'
 
 import Alert from '../Icons/Alert'
 
-const Input = (
+const InternalInput = (
   {
     id,
     label,
@@ -17,8 +17,8 @@ const Input = (
     className,
     error,
     ...props
-  }: IField & HTMLProps<HTMLInputElement>,
-  ref?: Ref<HTMLInputElement>
+  }: IField & React.HTMLProps<HTMLInputElement>,
+  ref?: React.Ref<HTMLInputElement>
 ) => {
   const selfId = id || uniqid(`input__`)
   const styleContainer = classNames(
@@ -46,4 +46,4 @@ const Input = (
   )
 }
 
-export default forwardRef(Input)
+export const Input = React.forwardRef(InternalInput)

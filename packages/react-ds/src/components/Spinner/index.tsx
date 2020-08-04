@@ -1,16 +1,16 @@
-import React from 'react'
+import * as React from 'react'
 
+import { ISpinner } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 
-import { ISpinner } from '@venice/core/models'
 import styles from '@venice/styles/components/Spinner.module.scss'
 
-interface ISpinnerProps extends ISpinner {
+export interface ISpinnerProps extends ISpinner {
   /** string */
-  className: string
+  className?: string
 }
 
-const Spinner = ({
+export const Spinner = ({
   className = '',
   color = 'default',
   size = 36,
@@ -43,5 +43,3 @@ const Spinner = ({
     </svg>
   )
 }
-
-export default Spinner

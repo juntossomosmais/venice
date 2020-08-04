@@ -1,18 +1,18 @@
 import * as React from 'react'
 
+import { ISplitButton } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 
-import { ISplitButton } from '@venice/core/models'
 import styles from '@venice/styles/components/SplitButton.module.scss'
 
-import Button from '../Button/Button'
+import { Button } from '../Button'
 
-interface ISplitButtonProps extends ISplitButton {
+export interface ISplitButtonProps extends ISplitButton {
   /** React Element */
   children: React.ReactNode
 }
 
-const SplitButton: React.FC<ISplitButtonProps> = ({
+export const SplitButton: React.FunctionComponent<ISplitButtonProps> = ({
   text,
   children,
   color = 'default',
@@ -21,7 +21,7 @@ const SplitButton: React.FC<ISplitButtonProps> = ({
   isFitMenu = false,
   openType = 'hover',
   ...props
-}: ISplitButtonProps) => {
+}) => {
   const [isOpen, setIsOpen] = React.useState(false)
 
   const clickType = openType === 'click' && isOpen
@@ -56,5 +56,3 @@ const SplitButton: React.FC<ISplitButtonProps> = ({
     </nav>
   )
 }
-
-export default SplitButton

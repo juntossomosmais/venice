@@ -1,21 +1,21 @@
-import React, { FC, useCallback } from 'react'
+import * as React from 'react'
 
+import { IStepper } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 
-import { IStepper } from '@venice/core/models'
 import styles from '@venice/styles/components/Stepper.module.scss'
 
-const Stepper: FC<IStepper> = ({
+export const Stepper: React.FunctionComponent<IStepper> = ({
   steps = [],
   className,
   ...props
-}: IStepper) => {
-  const isActive = useCallback(
+}) => {
+  const isActive = React.useCallback(
     (completed: boolean): string => (completed ? styles['active'] : ''),
     []
   )
 
-  const isLastActive = useCallback(
+  const isLastActive = React.useCallback(
     (index: number): string => {
       const currentStep = steps[index]
       const nextStep = steps[index + 1]
@@ -46,5 +46,3 @@ const Stepper: FC<IStepper> = ({
     </ul>
   )
 }
-
-export default Stepper
