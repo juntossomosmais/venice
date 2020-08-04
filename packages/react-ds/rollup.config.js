@@ -85,6 +85,6 @@ export default {
       ...outputOptions,
     },
   ],
-  external: Object.keys(pkg.peerDependencies),
+  external: [...Object.keys(pkg.peerDependencies), 'react-imask'],
   plugins,
 }
