@@ -6,6 +6,11 @@ import '@testing-library/jest-dom'
 
 import { Input } from '.'
 
+const props = {
+  id: 'field_id',
+  label: 'My Label',
+}
+
 describe('<Input />', () => {
   it('Should display the base input', () => {
     // TODO - Fix TypeScript compilation errors
@@ -26,10 +31,8 @@ describe('<Input />', () => {
   })
 
   it('Should change value of input ', () => {
-    const id = 'field_id'
-    // TODO - Fix TypeScript compilation errors
-    const { container } = render(<Input id={id} />)
-    const input = container.querySelector(`#${id}`)
+    const { getByLabelText } = render(<Input {...props} />)
+    const input = getByLabelText(props.label)
 
     // TODO - Fix TypeScript compilation errors
     fireEvent.change(input, { target: { value: '23' } })
@@ -37,10 +40,9 @@ describe('<Input />', () => {
   })
 
   it('Should call onchange event of input', () => {
-    const id = 'field_id'
     const onChange = jest.fn()
-    const { container } = render(<Input id={id} onChange={onChange} />)
-    const input = container.querySelector(`#${id}`)
+    const { getByLabelText } = render(<Input {...props} onChange={onChange} />)
+    const input = getByLabelText(props.label)
 
     // TODO - Fix TypeScript compilation errors
     fireEvent.change(input, { target: { value: '23' } })

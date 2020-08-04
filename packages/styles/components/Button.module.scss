@@ -28,7 +28,6 @@
     top: 0;
     transition-duration: var(--transition-duration);
     transition-property: opacity;
-    z-index: var(--zindex-1);
   }
 
   &[disabled] {
@@ -53,7 +52,6 @@
 .children {
   display: inherit;
   position: relative;
-  z-index: var(--zindex-5);
 
   img {
     max-width: none;
@@ -63,7 +61,6 @@
 .startIcon {
   display: inline-block;
   position: relative;
-  z-index: var(--zindex-5);
 
   &:not(:empty) {
     margin-right: var(--space-xs);
@@ -73,7 +70,6 @@
 .endIcon {
   display: inline-block;
   position: relative;
-  z-index: var(--zindex-5);
 
   &:not(:empty) {
     margin-left: var(--space-xs);
@@ -255,5 +251,5 @@
 
 .loading {
   position: absolute;
-  z-index: calc(var(--zindex-5) + 1);
+  z-index: var(--zindex-1);
 }

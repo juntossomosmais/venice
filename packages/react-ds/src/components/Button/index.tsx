@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 
 import { IButton, IDynamicComponent } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
