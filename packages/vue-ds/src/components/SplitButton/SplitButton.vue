@@ -19,7 +19,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
 
-import { ISplitButton } from '@venice/core/models'
+import { ISplitButton } from '@juntossomosmais/venice-types'
 
 import Button from '../Button/Button.vue'
 

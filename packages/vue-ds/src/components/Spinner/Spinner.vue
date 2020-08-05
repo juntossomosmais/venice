@@ -21,7 +21,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
 
-import { ISpinner } from '@venice/core/models'
+import { ISpinner } from '@juntossomosmais/venice-types'
 
 @Component
 export default class Spinner extends Vue {

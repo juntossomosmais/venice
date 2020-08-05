@@ -15,7 +15,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
 
-import { IStepper } from '@venice/core/models'
+import { IStepper } from '@juntossomosmais/venice-types'
 
 @Component
 export default class Stepper extends Vue {

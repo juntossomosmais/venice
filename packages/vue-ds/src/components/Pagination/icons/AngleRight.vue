@@ -10,7 +10,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
 
-import { IIcon } from '@venice/core/models'
+import { IIcon } from '@juntossomosmais/venice-types'
 
 @Component
 export default class AngleRight extends Vue {
