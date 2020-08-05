@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "react-imask": "^5.2.1",
+    "react-imask": "^6.0.5",
     "uniqid": "^5.2.0"
   },
   "peerDependencies": {
