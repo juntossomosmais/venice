@@ -87,17 +87,17 @@ import styles from '@venice/styles/components/Button.module.scss';
 
 ```vue
 <script lang="ts">
-import { IButton } from '@venice/core/models'
+  import { IButton } from '@juntossomosmais/venice-types'
 </script>
 
 <style lang="scss" scoped>
-@import '~@venice/styles/components/Button.module.scss';
+  @import '~@venice/styles/components/Button.module.scss';
 </style>
 
 <template>
   <button :class="button">
   Hello
-</button>
+  </button>
 </template>
 ```
 
