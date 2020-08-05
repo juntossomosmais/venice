@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.15.1...@juntossomosmais/venice-react@0.17.0) (2020-08-04)
+
+
+### Bug Fixes
+
+* change version for bump ([c6f8b72](https://github.com/juntossomosmais/venice/commit/c6f8b72c5f74ab662984a91589c0714165f3eb18))
+
+
+### Features
+
+* add rollup plugins and library metadata ([b263acf](https://github.com/juntossomosmais/venice/commit/b263acf5c7787ed7762680f8b0031d8bb0cfa9ff))
+* add venice-types package ([18866f4](https://github.com/juntossomosmais/venice/commit/18866f4bf953b6b7e8e287ea7b13c38c90e5a036))
+
+
+
+
+
 # [0.16.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.15.1...@juntossomosmais/venice-react@0.16.0) (2020-08-04)
 
 

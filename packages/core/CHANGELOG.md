@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.15.2...@venice/core@0.17.0) (2020-08-04)
+
+
+### Bug Fixes
+
+* change version for bump ([c6f8b72](https://github.com/juntossomosmais/venice/commit/c6f8b72c5f74ab662984a91589c0714165f3eb18))
+
+
+### Features
+
+* add venice-types package ([18866f4](https://github.com/juntossomosmais/venice/commit/18866f4bf953b6b7e8e287ea7b13c38c90e5a036))
+* added core package metadata ([57aa4c4](https://github.com/juntossomosmais/venice/commit/57aa4c4cc1a614b488122856e5e788676c418a53))
+
+
+
+
+
 # [0.16.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.15.2...@venice/core@0.16.0) (2020-08-04)
 
 
