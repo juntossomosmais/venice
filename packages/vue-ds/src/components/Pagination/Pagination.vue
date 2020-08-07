@@ -33,6 +33,7 @@
 </template>
 
 <script lang="ts">
+import { IPagination } from '@juntossomosmais/venice-types'
 import { Component, Vue, Prop, Watch } from 'vue-property-decorator'
 
 import {
@@ -40,7 +41,6 @@ import {
   hasNextRange,
   hasPreviousRange,
 } from '@venice/core/helpers/Pagination'
-import { IPagination } from '@venice/core/models'
 
 // TODO: these icons should be replaced when there is an icon library
 import AngleLeft from './icons/AngleLeft.vue'

@@ -19,9 +19,8 @@
 </template>
 
 <script lang="ts">
+import { ISpinner } from '@juntossomosmais/venice-types'
 import { Component, Vue, Prop } from 'vue-property-decorator'
-
-import { ISpinner } from '@venice/core/models'
 
 @Component
 export default class Spinner extends Vue {

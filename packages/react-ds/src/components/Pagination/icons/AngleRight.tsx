@@ -1,9 +1,10 @@
-import React from 'react'
+import * as React from 'react'
 
-import { IIcon } from '@venice/core/models'
+import { IIcon } from '@juntossomosmais/venice-types'
+
 import styles from '@venice/styles/components/Icon.module.scss'
 
-const AngleRight: React.SFC<IIcon> = ({
+const AngleRight: React.FunctionComponent<IIcon> = ({
   fill = 'default',
   width,
   height,

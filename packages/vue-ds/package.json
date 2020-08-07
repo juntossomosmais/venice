@@ -39,6 +39,7 @@
     "vue-property-decorator": "^9.0.0"
   },
   "devDependencies": {
+    "@juntossomosmais/venice-types": "^0.2.2",
     "@storybook/vue": "^5.3.18",
     "@testing-library/vue": "^5.0.2",
     "@vue/cli-plugin-babel": "~4.4.6",

@@ -8,9 +8,8 @@
 </template>
 
 <script lang="ts">
+import { IIcon } from '@juntossomosmais/venice-types'
 import { Component, Vue, Prop } from 'vue-property-decorator'
-
-import { IIcon } from '@venice/core/models'
 
 @Component
 export default class AngleRight extends Vue {
