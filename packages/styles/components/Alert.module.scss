@@ -1,0 +1,57 @@
+@import '~@venice/styles/core';
+
+$colors: 'primary' var(--primary-color), 'secondary' var(--secondary-color),
+  'success' var(--success-color), 'danger' var(--danger-color);
+
+$iconSize: 16px;
+$iconSizeClose: #{$iconSize * 0.75};
+
+.alert {
+  background: var(--gray-1);
+  border: 1px solid var(--gray-2);
+  border-radius: var(--border-radius);
+  font: var(--typography-body-font);
+  padding: var(--space-sm);
+  position: relative;
+
+  &.with-icon {
+    padding-left: calc(#{$iconSize} + var(--space-md));
+  }
+
+  &.with-close {
+    padding-right: calc(#{$iconSize} + var(--space-md));
+  }
+
+  @each $type, $color in $colors {
+    &.#{$type} {
+      .icon-alert {
+        color: $color;
+      }
+    }
+  }
+}
+
+.icon {
+  display: grid;
+  font-size: $iconSize;
+  height: $iconSize;
+  place-content: center;
+  position: absolute;
+  top: var(--space-sm);
+  width: $iconSize;
+
+  &.icon-alert {
+    color: var(--primary-color);
+    left: var(--space-sm);
+  }
+
+  &.icon-close {
+    color: var(--text-color-lighten);
+    cursor: pointer;
+    right: var(--space-sm);
+
+    &:hover {
+      color: var(--gray-2);
+    }
+  }
+}

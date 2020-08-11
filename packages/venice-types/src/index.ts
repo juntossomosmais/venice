@@ -1,3 +1,4 @@
+export * from './IAlert'
 export * from './IButton'
 export * from './IDynamicComponent'
 export * from './IField'
