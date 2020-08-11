@@ -43,17 +43,17 @@ export const Alert: React.FunctionComponent<
   children,
   className,
   icon,
-  color,
+  color = '',
   closable,
   onClose,
-  type,
+  type = '',
   ...rest
 }) => {
   const [closed, setClosed] = useState(false)
 
-  const selfType = TYPES[type?.toLocaleLowerCase()] || TYPES.default
+  const selfType = TYPES[type.toLocaleLowerCase()] || TYPES.default
   const selfIcon = icon ?? selfType.icon
-  const selfColor = VALID_COLORS.includes(color?.toLocaleLowerCase())
+  const selfColor = VALID_COLORS.includes(color.toLocaleLowerCase())
     ? color
     : selfType.color || TYPES.default.color
   const isClosable = (closable ?? selfType.closable) || Boolean(onClose)
