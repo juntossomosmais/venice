@@ -70,14 +70,14 @@ export const Alert: React.FunctionComponent<
     },
     className
   )
-
+  const iconProps = {
+    className: classNames(styles.icon, styles['icon-alert']),
+  }
   return closed ? null : (
     <div className={styleContainer} {...rest}>
       {selfIcon &&
         React.isValidElement(selfIcon) &&
-        React.cloneElement(selfIcon, {
-          className: classNames(styles.icon, styles['icon-alert']),
-        })}
+        React.cloneElement(selfIcon, iconProps)}
       {children}
       {isClosable && (
         <TimesCircle
