@@ -11,7 +11,6 @@ import { Star } from '../Icons'
 import { Bell } from '../Icons'
 import { Check } from '../Icons'
 
-
 <Meta title="Components|Alert" component={Alert} />
 
 <Description>{Docs}</Description>
@@ -29,6 +28,11 @@ import { Check } from '../Icons'
       </Alert><br/>
       <Alert onClose={() => alert('Alert was Closed') }>
         Whitout <code>onClose</code> event
+      </Alert><br/>
+      <Alert>
+        Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.<br/>
+        Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. A ordem dos tratores não altera o pão duris. Quem num gosta di mé, boa gentis num é.<br/>
+        Mé faiz elementum girarzis, nisi eros vermeio. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
       </Alert>
     </div>
   </Story>
@@ -39,11 +43,15 @@ import { Check } from '../Icons'
 <Preview>
   <Story name="Types">
     <div>
-      <Alert type="default">default</Alert><br/>
-      <Alert type="success">success</Alert><br/>
-      <Alert type="danger">danger</Alert><br/>
-      <Alert type="toast">toast</Alert><br/>
-      <Alert type="vip">vip</Alert>
+      <Alert type="default">default</Alert>
+      <br />
+      <Alert type="success">success</Alert>
+      <br />
+      <Alert type="danger">danger</Alert>
+      <br />
+      <Alert type="toast">toast</Alert>
+      <br />
+      <Alert type="featured">featured</Alert>
     </div>
   </Story>
 </Preview>
@@ -53,10 +61,14 @@ import { Check } from '../Icons'
 <Preview>
   <Story name="Colors">
     <div>
-      <Alert>default</Alert><br/>
-      <Alert color="primary">primary</Alert><br/>
-      <Alert color="secondary">secondary</Alert><br/>
-      <Alert color="success">success</Alert><br/>
+      <Alert>default</Alert>
+      <br />
+      <Alert color="primary">primary</Alert>
+      <br />
+      <Alert color="secondary">secondary</Alert>
+      <br />
+      <Alert color="success">success</Alert>
+      <br />
       <Alert color="danger">danger</Alert>
     </div>
   </Story>
@@ -67,13 +79,29 @@ import { Check } from '../Icons'
 <Preview>
   <Story name="Icons">
     <div>
-      <Alert icon={<Star/>}>Star</Alert><br/>
-      <Alert color="secondary" icon={<Star />}>Star secondary</Alert><br/>
-      <Alert type="toast" color="success" icon={<Star />}>Star toast secondary</Alert><br/>
-      <Alert type="toast" icon={<Star />}>Star toast</Alert><br/>
-      <Alert icon={<span>♫</span>}>Custom Font</Alert><br/>
-      <Alert color="danger" icon={<span>☺</span>}>Custom Font</Alert><br/>
-      <Alert color="secondary" icon={<span>♣</span>}>Custom Font</Alert>
+      <Alert icon={<Star />}>Star</Alert>
+      <br />
+      <Alert color="secondary" icon={<Star />}>
+        Star secondary
+      </Alert>
+      <br />
+      <Alert type="toast" color="success" icon={<Star />}>
+        Star toast secondary
+      </Alert>
+      <br />
+      <Alert type="toast" icon={<Star />}>
+        Star toast
+      </Alert>
+      <br />
+      <Alert icon={<span>♫</span>}>Custom Font</Alert>
+      <br />
+      <Alert color="danger" icon={<span>☺</span>}>
+        Custom Font
+      </Alert>
+      <br />
+      <Alert color="secondary" icon={<span>♣</span>}>
+        Custom Font
+      </Alert>
     </div>
   </Story>
 </Preview>

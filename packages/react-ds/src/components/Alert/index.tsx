@@ -6,7 +6,13 @@ import classNames from 'classnames/bind'
 
 import styles from '@venice/styles/components/Alert.module.scss'
 
-import { Alert as AlertIcon, VipStar, Bell, Check, TimesCircle } from '../Icons'
+import {
+  Alert as AlertIcon,
+  FeaturedStar,
+  Bell,
+  Check,
+  TimesCircle,
+} from '../Icons'
 
 export const VALID_COLORS = ['primary', 'secondary', 'success', 'danger']
 export const TYPES = {
@@ -26,8 +32,8 @@ export const TYPES = {
     icon: <Bell />,
     closable: true,
   },
-  vip: {
-    icon: <VipStar />,
+  featured: {
+    icon: <FeaturedStar />,
     color: 'secondary',
   },
 }
@@ -70,20 +76,21 @@ export const Alert: React.FunctionComponent<
     },
     className
   )
-  const iconProps = {
-    className: classNames(styles.icon, styles['icon-alert']),
-  }
   return closed ? null : (
     <div className={styleContainer} {...rest}>
-      {selfIcon &&
-        React.isValidElement(selfIcon) &&
-        React.cloneElement(selfIcon, iconProps)}
-      {children}
+      {selfIcon && React.isValidElement(selfIcon) && (
+        <span className={classNames(styles.icon, styles['icon-alert'])}>
+          {selfIcon}
+        </span>
+      )}
+      <div>{children}</div>
       {isClosable && (
-        <TimesCircle
+        <span
           className={classNames(styles.icon, styles['icon-close'])}
           onClick={() => setClosed(true)}
-        />
+        >
+          <TimesCircle />
+        </span>
       )}
     </div>
   )

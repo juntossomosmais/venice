@@ -3,23 +3,30 @@
 $colors: 'primary' var(--primary-color), 'secondary' var(--secondary-color),
   'success' var(--success-color), 'danger' var(--danger-color);
 
-$iconSize: 16px;
-$iconSizeClose: #{$iconSize * 0.75};
+$iconSize: var(--space-sm);
 
 .alert {
   background: var(--gray-1);
   border: 1px solid var(--gray-2);
   border-radius: var(--border-radius);
+  display: grid;
   font: var(--typography-body-font);
+  grid-auto-flow: column;
+  grid-gap: var(--space-sm);
+  line-height: inherit;
   padding: var(--space-sm);
   position: relative;
 
   &.with-icon {
-    padding-left: calc(#{$iconSize} + var(--space-md));
+    grid-template-columns: var(--space-sm) 1fr;
   }
 
   &.with-close {
-    padding-right: calc(#{$iconSize} + var(--space-md));
+    grid-template-columns: 1fr var(--space-sm);
+  }
+
+  &.with-icon.with-close {
+    grid-template-columns: var(--space-sm) 1fr var(--space-sm);
   }
 
   @each $type, $color in $colors {
@@ -32,12 +39,8 @@ $iconSizeClose: #{$iconSize * 0.75};
 }
 
 .icon {
-  display: grid;
+  display: flex;
   font-size: $iconSize;
-  height: $iconSize;
-  place-content: center;
-  position: absolute;
-  top: var(--space-sm);
   width: $iconSize;
 
   &.icon-alert {
