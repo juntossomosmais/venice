@@ -7,7 +7,7 @@ import { Star } from './Star'
 export const FeaturedStar: FunctionComponent<SVGAttributes<SVGElement>> = (
   props: SVGAttributes<SVGElement>
 ) => {
-  const gradientId = uniqid(`vip-star`)
+  const gradientId = uniqid(`featured-star`)
   return (
     <Star fill={`url(#${gradientId})`} {...props}>
       <defs>
