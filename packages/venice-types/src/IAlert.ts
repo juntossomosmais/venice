@@ -4,6 +4,7 @@ enum type {
   'toast',
   'vip',
 }
+
 enum color {
   'primary',
   'secondary',
