@@ -12,7 +12,7 @@ const defaultProps = {
 
 export const Icon = (
   Component: FunctionComponent<SVGAttributes<SVGElement>>
-) => (props: SVGAttributes<SVGElement>) => {
+) => ({ children, ...props }: SVGAttributes<SVGElement>) => {
   const { fill, className, size, ...selfProps } = {
     ...defaultProps,
     ...props,
@@ -26,6 +26,7 @@ export const Icon = (
       {...selfProps}
     >
       <Component fill={!styles[fill] ? fill : ''} />
+      {children}
     </svg>
   )
 }
