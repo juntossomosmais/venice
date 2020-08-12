@@ -54,6 +54,7 @@ describe('<Alert />', () => {
     expect(onClose).toBeCalled()
     expect(container.firstChild).toBeFalsy()
   })
+  
   it('Should display Alert with colors', () => {
     VALID_COLORS.forEach((color) => {
       const { container } = render(<Mount color={color} />)
