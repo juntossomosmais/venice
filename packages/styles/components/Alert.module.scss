@@ -41,6 +41,7 @@ $iconSize: var(--space-sm);
 .icon {
   display: flex;
   font-size: $iconSize;
+  justify-content: center;
   width: $iconSize;
 
   &.icon-alert {
