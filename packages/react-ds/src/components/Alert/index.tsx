@@ -14,6 +14,11 @@ import {
   TimesCircle,
 } from '../Icons'
 
+const iconProps = {
+  width: '16px',
+  height: '16px',
+}
+
 export const VALID_COLORS = ['primary', 'secondary', 'success', 'danger']
 export const TYPES = {
   default: {
@@ -80,7 +85,7 @@ export const Alert: React.FunctionComponent<
     <div className={styleContainer} {...rest}>
       {selfIcon && React.isValidElement(selfIcon) && (
         <span className={classNames(styles.icon, styles['icon-alert'])}>
-          {selfIcon}
+          {React.cloneElement(selfIcon, iconProps)}
         </span>
       )}
       <div>{children}</div>
@@ -89,7 +94,7 @@ export const Alert: React.FunctionComponent<
           className={classNames(styles.icon, styles['icon-close'])}
           onClick={() => setClosed(true)}
         >
-          <TimesCircle />
+          <TimesCircle {...iconProps} />
         </span>
       )}
     </div>
