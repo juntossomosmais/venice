@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.17.0...@juntossomosmais/venice-react@0.18.0) (2020-08-13)
+
+
+### Bug Fixes
+
+* build storybook ([a5a340a](https://github.com/juntossomosmais/venice/commit/a5a340a68b9dd1f85dafb677e4fc472f8729de6f))
+* css fix ([718c442](https://github.com/juntossomosmais/venice/commit/718c4425886b10626e43d6c3b0fbdfe0b99347e6))
+* removing conditional atributes ([cd40d76](https://github.com/juntossomosmais/venice/commit/cd40d76167c49cc7c5a1f046cba74ae2bb30dee9))
+
+
+### Features
+
+* add Alert ([93d5ebd](https://github.com/juntossomosmais/venice/commit/93d5ebde0181eb0d9389587af71266e84bc65cb2))
+* add icons ([03b86fb](https://github.com/juntossomosmais/venice/commit/03b86fbe343d962483d58a6cd197c6232c9eddc1))
+* exporting Alert ([2ad2126](https://github.com/juntossomosmais/venice/commit/2ad21264a00bd49727da267ab6fba6af92d20375))
+* fixing id ([02c383d](https://github.com/juntossomosmais/venice/commit/02c383d2567834bb432c3aef890b3c2fb6c60f6f))
+* update icons ([ab313e7](https://github.com/juntossomosmais/venice/commit/ab313e7e087bfc492b7003574a832eb1556fadc6))
+* using grid and update type ([e9ba6d9](https://github.com/juntossomosmais/venice/commit/e9ba6d97aa9f27d65cb27173f2439bce6380dda5))
+
+
+
+
+
 # [0.17.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.15.1...@juntossomosmais/venice-react@0.17.0) (2020-08-04)
 
 

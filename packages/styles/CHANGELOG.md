@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.17.3...@venice/styles@0.18.0) (2020-08-13)
+
+
+### Bug Fixes
+
+* alert css ([4ae587c](https://github.com/juntossomosmais/venice/commit/4ae587c17122299bde4d59867b478370978e503e))
+
+
+### Features
+
+* add Alert ([93d5ebd](https://github.com/juntossomosmais/venice/commit/93d5ebde0181eb0d9389587af71266e84bc65cb2))
+* add icons ([03b86fb](https://github.com/juntossomosmais/venice/commit/03b86fbe343d962483d58a6cd197c6232c9eddc1))
+* add new monochrome color ([d8c0a92](https://github.com/juntossomosmais/venice/commit/d8c0a929d01027dff30a44338aaa856a3bfbdb1a))
+* aligin icon in edge ([2a108ab](https://github.com/juntossomosmais/venice/commit/2a108ab929473c848bff920c281bb12b81720039))
+* removed unused css ([c07b2bc](https://github.com/juntossomosmais/venice/commit/c07b2bcfb797c4aa0d5ec0021120959268fa90c1))
+* using grid and update type ([e9ba6d9](https://github.com/juntossomosmais/venice/commit/e9ba6d97aa9f27d65cb27173f2439bce6380dda5))
+
+
+
+
+
 ## [0.17.3](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.17.2...@venice/styles@0.17.3) (2020-07-31)
 
 

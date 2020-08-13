@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.17.0...@venice/core@0.18.0) (2020-08-13)
+
+
+### Features
+
+* add new monochrome color ([d8c0a92](https://github.com/juntossomosmais/venice/commit/d8c0a929d01027dff30a44338aaa856a3bfbdb1a))
+
+
+
+
+
 # [0.17.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.15.2...@venice/core@0.17.0) (2020-08-04)
 
 

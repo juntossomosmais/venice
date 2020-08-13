@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.12.5...@juntossomosmais/venice-vue@0.13.0) (2020-08-13)
+
+
+### Features
+
+* added venice-types on vue-ds ([65cdadc](https://github.com/juntossomosmais/venice/commit/65cdadce81314669c1f3ca690b52c3f2cb751df5))
+
+
+
+
+
 ## [0.12.5](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.12.2...@juntossomosmais/venice-vue@0.12.5) (2020-08-04)
 
 
