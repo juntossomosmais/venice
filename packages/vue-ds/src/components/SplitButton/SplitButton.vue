@@ -17,9 +17,8 @@
 </template>
 
 <script lang="ts">
+import { ISplitButton } from '@juntossomosmais/venice-types'
 import { Component, Vue, Prop } from 'vue-property-decorator'
-
-import { ISplitButton } from '@venice/core/models'
 
 import Button from '../Button/Button.vue'
 

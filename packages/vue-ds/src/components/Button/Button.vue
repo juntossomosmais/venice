@@ -29,9 +29,8 @@
 </template>
 
 <script lang="ts">
+import { IButton } from '@juntossomosmais/venice-types'
 import { Component, Vue, Prop } from 'vue-property-decorator'
-
-import { IButton } from '@venice/core/models'
 
 import Spinner from '../Spinner/Spinner.vue'
 
