@@ -12,7 +12,6 @@ $iconSize: var(--space-sm);
   display: grid;
   font: var(--typography-body-font);
   grid-gap: var(--space-sm);
-  line-height: inherit;
   padding: var(--space-sm);
   position: relative;
 
@@ -38,8 +37,10 @@ $iconSize: var(--space-sm);
 }
 
 .icon {
+  align-items: center;
   display: flex;
   font-size: $iconSize;
+  height: $iconSize;
   justify-content: center;
   width: $iconSize;
 
