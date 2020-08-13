@@ -1,0 +1,58 @@
+@import '~@venice/styles/core';
+
+$colors: 'primary' var(--primary-color), 'secondary' var(--secondary-color),
+  'success' var(--success-color), 'danger' var(--danger-color);
+
+$iconSize: var(--space-sm);
+
+.alert {
+  background: var(--gray-1);
+  border: 1px solid var(--gray-2);
+  border-radius: var(--border-radius);
+  display: grid;
+  font: var(--typography-body-font);
+  grid-gap: var(--space-sm);
+  line-height: inherit;
+  padding: var(--space-sm);
+  position: relative;
+
+  &.with-icon {
+    grid-template-columns: var(--space-sm) 1fr;
+  }
+
+  &.with-close {
+    grid-template-columns: 1fr var(--space-sm);
+  }
+
+  &.with-icon.with-close {
+    grid-template-columns: var(--space-sm) 1fr var(--space-sm);
+  }
+
+  @each $type, $color in $colors {
+    &.#{$type} {
+      .icon-alert {
+        color: $color;
+      }
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  font-size: $iconSize;
+  justify-content: center;
+  width: $iconSize;
+
+  &.icon-alert {
+    color: var(--primary-color);
+  }
+
+  &.icon-close {
+    color: var(--text-color-lighten);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--gray-2);
+    }
+  }
+}
