@@ -7,8 +7,9 @@ import { render } from '@testing-library/react'
 import { act } from 'react-dom/test-utils'
 
 import { VALID_COLORS } from './Progress.base'
+import { transitionDuration } from './Progress.wrapper'
 
-import { Progress, transitionDuration } from './'
+import { Progress } from './'
 
 const transition = () =>
   new Promise((resolve) => setTimeout(resolve, transitionDuration * 2))

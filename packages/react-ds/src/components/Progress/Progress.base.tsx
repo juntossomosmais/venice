@@ -7,13 +7,18 @@ import styles from '@venice/styles/components/Progress.module.scss'
 
 export const VALID_COLORS = ['primary', 'secondary', 'success', 'danger']
 
-export const Progress: React.FunctionComponent<
-  IProgressBase & React.HTMLProps<HTMLProgressElement>
-> = ({ className, color = '', value, max, ...props }) => {
+export const Progress = ({
+  className,
+  color,
+  value,
+  max,
+  ...props
+}: IProgressBase & React.HTMLProps<HTMLProgressElement>) => {
   const [selfValue, setValue] = useState(0)
-  const selfColor = VALID_COLORS.includes(color.toLocaleLowerCase())
-    ? color.toLocaleLowerCase()
-    : 'secondary'
+  const selfColor =
+    color && VALID_COLORS.includes(color.toLocaleLowerCase())
+      ? color.toLocaleLowerCase()
+      : 'secondary'
 
   useEffect(() => {
     setValue(value)

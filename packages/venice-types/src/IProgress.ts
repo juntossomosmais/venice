@@ -1,10 +1,3 @@
-enum type {
-  'success',
-  'danger',
-  'toast',
-  'vip',
-}
-
 enum color {
   'primary',
   'secondary',
@@ -12,16 +5,12 @@ enum color {
   'danger',
 }
 
-export interface IProgressBase extends HTMLElement {
+export interface IProgressBase extends HTMLProgressElement {
   /**  'primary' | 'secondary' | 'success' | 'danger' */
   color?: color | string
-  value?: number
-  max?: number
 }
 
 export interface IProgress extends IProgressBase {
-  /**  'success' | 'danger' | 'toast' | 'vip' */
-  progressClass?: type | string
   /**  'left' | 'right' */
   display?: string
 }
