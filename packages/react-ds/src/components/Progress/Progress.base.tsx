@@ -11,9 +11,8 @@ export const Progress = ({
   className,
   color,
   value,
-  max,
   ...props
-}: IProgressBase & React.HTMLProps<HTMLProgressElement>) => {
+}: any & IProgressBase & React.HTMLProps<HTMLProgressElement>) => {
   const [selfValue, setValue] = useState(0)
   const selfColor =
     color && VALID_COLORS.includes(color.toLocaleLowerCase())
@@ -21,7 +20,7 @@ export const Progress = ({
       : 'secondary'
 
   useEffect(() => {
-    setValue(value)
+    setValue(Number(value))
   }, [value])
 
   const styleContainer = classNames(
@@ -29,14 +28,7 @@ export const Progress = ({
     styles[selfColor],
     className
   )
-  return (
-    <progress
-      value={selfValue}
-      max={max}
-      className={styleContainer}
-      {...props}
-    />
-  )
+  return <progress value={selfValue} className={styleContainer} {...props} />
 }
 
 export default Progress

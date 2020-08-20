@@ -36,8 +36,8 @@ export const ProgressWrapper = ({
   progressClass,
   className,
   display,
-  value = 0,
-  max = 100,
+  value,
+  max,
   ...props
 }: IProgressWrapper & React.HTMLProps<HTMLDivElement>) => {
   const [selfValue, setValue] = useState(0)
@@ -54,16 +54,10 @@ export const ProgressWrapper = ({
     className
   )
 
-  const progressProps = {
-    id,
-    value,
-    max,
-  }
-
   return (
     <div className={styleContainer} {...props}>
       <span className={styles.value}>{selfValue}%</span>
-      <ProgressBase className={progressClass} {...progressProps} />
+      <ProgressBase className={progressClass} id={id} value={value} max={max} />
     </div>
   )
 }

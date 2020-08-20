@@ -1,14 +1,9 @@
 import React from 'react'
 
-import { IProgressBase } from '@juntossomosmais/venice-types'
-
 import ProgressBase from './Progress.base'
-import ProgressWrapper, { IProgressWrapper } from './Progress.wrapper'
+import ProgressWrapper from './Progress.wrapper'
 
-export const Progress = ({
-  display,
-  ...props
-}: IProgressWrapper & IProgressBase) =>
+export const Progress = ({ display, ...props }: any) =>
   display ? (
     <ProgressWrapper display={display} {...props} />
   ) : (
