@@ -48,6 +48,7 @@ describe('<Progress />', () => {
     const { container } = render(<Progress value="50" display="left" />)
     expect(container.firstChild).toHaveClass('left')
   })
+  
   it('Should display the value at right', () => {
     const { container } = render(<Progress value="50" display="right" />)
     expect(container.firstChild).toHaveClass('right')
