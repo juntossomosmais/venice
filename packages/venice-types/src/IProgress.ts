@@ -1,4 +1,4 @@
-enum color {
+enum Color {
   'primary',
   'secondary',
   'success',
@@ -7,7 +7,7 @@ enum color {
 
 export interface IProgressBase extends HTMLProgressElement {
   /**  'primary' | 'secondary' | 'success' | 'danger' */
-  color?: color | string
+  color?: string | typeof Color
 }
 
 export interface IProgress extends IProgressBase {
