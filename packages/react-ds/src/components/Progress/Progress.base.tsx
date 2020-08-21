@@ -24,7 +24,7 @@ export const Progress = ({
   value,
   max = 100,
   ...props
-}: IProgressBase & React.HTMLProps<HTMLDivElement>) => {
+}: any & IProgressBase & React.HTMLProps<HTMLDivElement>) => {
   const [selfValue, setValue] = useState(0)
   const selfColor = getColor(color)
 

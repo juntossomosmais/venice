@@ -5,7 +5,7 @@ enum Color {
   'danger',
 }
 
-export interface IProgressBase extends HTMLProgressElement {
+export interface IProgressBase extends HTMLDivElement {
   /**  'primary' | 'secondary' | 'success' | 'danger' */
   color?: string | typeof Color
 }
