@@ -1,20 +1,5 @@
 @import '~@venice/styles/core';
 
-$colors: 'primary' var(--primary-color), 'secondary' var(--secondary-color),
-  'success' var(--success-color), 'danger' var(--danger-color);
-
-@mixin bar-progress {
-  background: var(--disabled-color-contrast);
-  background-image: linear-gradient(90deg, transparent 50%, currentColor 50%);
-  background-size: 10% 100px;
-  color: var(--disabled-color-contrast);
-}
-
-@mixin bar-progress-value {
-  background: var(--secondary-color);
-  transition: width var(--transition-duration) ease-in-out;
-}
-
 .progress-wrapper {
   align-items: center;
   display: flex;
@@ -40,43 +25,19 @@ $colors: 'primary' var(--primary-color), 'secondary' var(--secondary-color),
 
 .progress {
   appearance: none;
+  background: var(--disabled-color-contrast);
   border: none;
   border-radius: 10px;
   height: 12px;
   overflow: hidden;
   position: relative;
 
-  @include bar-progress;
-
-  &::-moz-progress-bar {
-    @include bar-progress-value;
-  }
-
-  &::-webkit-progress {
-    &-value {
-      @include bar-progress-value;
-    }
-
-    &-bar {
-      @include bar-progress;
-    }
-  }
-
-  @each $type, $color in $colors {
-    &.#{$type} {
-      &::-moz-progress-bar {
-        background: $color;
-      }
-
-      &::-webkit-progress-value {
-        background: $color;
-      }
-    }
-  }
-
-  &:not([value]) {
-    &::-moz-progress-bar {
-      @include bar-progress;
-    }
+  &-bar {
+    background: var(--secondary-color);
+    height: 100%;
+    transform-origin: left top;
+    transition: transform var(--transition-duration) ease-in-out;
+    width: 100%;
+    will-change: transform;
   }
 }

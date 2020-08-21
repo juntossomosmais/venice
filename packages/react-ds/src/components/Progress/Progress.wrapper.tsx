@@ -9,7 +9,7 @@ import ProgressBase from './Progress.base'
 
 export const transitionDuration = 250
 
-function animateValue(fn, start = 0, end = 0) {
+const animateValue = (fn, start = 0, end = 0) => {
   let current = start
   const range = end - start
   if (!range) return
@@ -32,12 +32,13 @@ export interface IProgressWrapper extends IProgress {
 }
 
 export const ProgressWrapper = ({
-  id,
   progressClass,
   className,
   display,
+  color,
   value,
   max,
+  id,
   ...props
 }: IProgressWrapper & React.HTMLProps<HTMLDivElement>) => {
   const [selfValue, setValue] = useState(0)
@@ -57,7 +58,13 @@ export const ProgressWrapper = ({
   return (
     <div className={styleContainer} {...props}>
       <span className={styles.value}>{selfValue}%</span>
-      <ProgressBase className={progressClass} id={id} value={value} max={max} />
+      <ProgressBase
+        className={progressClass}
+        color={color}
+        id={id}
+        value={value}
+        max={max}
+      />
     </div>
   )
 }
