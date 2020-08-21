@@ -6,7 +6,6 @@ import '@testing-library/jest-dom'
 import { render } from '@testing-library/react'
 import { act } from 'react-dom/test-utils'
 
-import { VALID_COLORS } from './Progress.base'
 import { transitionDuration } from './Progress.wrapper'
 
 import { Progress } from './'
@@ -18,14 +17,7 @@ describe('<Progress />', () => {
   it('Should display simple Progress', () => {
     const { container } = render(<Progress />)
 
-    expect(container.firstChild.tagName).toBe('PROGRESS')
-  })
-
-  it('Should display simple Progress with colors', () => {
-    VALID_COLORS.forEach((color) => {
-      const { container } = render(<Progress color={color} />)
-      expect(container.firstChild).toHaveClass(color)
-    })
+    expect(container.firstChild).toHaveClass('progress')
   })
 
   it('Should display the value after transition', async () => {
@@ -48,7 +40,7 @@ describe('<Progress />', () => {
     const { container } = render(<Progress value="50" display="left" />)
     expect(container.firstChild).toHaveClass('left')
   })
-  
+
   it('Should display the value at right', () => {
     const { container } = render(<Progress value="50" display="right" />)
     expect(container.firstChild).toHaveClass('right')
