@@ -1,0 +1,88 @@
+import { Meta, Story, Description, Preview } from '@storybook/addon-docs/blocks'
+import { withKnobs } from '@storybook/addon-knobs'
+import { withA11y } from '@storybook/addon-a11y'
+
+import Docs from '@venice/core/docs/Progress.md'
+import {
+  knobProgressValue,
+  knobProgressColor,
+} from '@venice/core/storybook/knobs'
+
+import { Progress } from '.'
+
+<Meta title="Components|Progress" component={Progress} />
+
+<Description>{Docs}</Description>
+
+## Base
+
+<Preview>
+  <Story name="Base" decorators={[withKnobs, withA11y]}>
+    <div>
+      Without display value
+      <Progress
+        value={knobProgressValue()}
+        color={knobProgressColor()}
+        style={{ width: '100%' }}
+      /> <hr />
+      With display value default
+      <Progress
+        value={knobProgressValue()}
+        color={knobProgressColor()}
+        display
+      /> <hr />
+      With display value at left
+      <Progress
+        value={knobProgressValue()}
+        color={knobProgressColor()}
+        display="left"
+      /> <hr />
+      Without display value at right
+      <Progress
+        value={knobProgressValue()}
+        color={knobProgressColor()}
+        display="right"
+      />
+    </div>
+  </Story>
+</Preview>
+
+## Colors
+
+<Preview>
+  <Story name="Colors" decorators={[withKnobs, withA11y]}>
+    <div>
+      <Progress
+        style={{ width: '100%', margin: '1em 0' }}
+        color="primary"
+        value={knobProgressValue()}
+      />
+      <Progress
+        style={{ width: '100%', margin: '1em 0' }}
+        color="secondary"
+        value={knobProgressValue()}
+      />
+      <Progress
+        style={{ width: '100%', margin: '1em 0' }}
+        color="success"
+        value={knobProgressValue()}
+      />
+      <Progress
+        style={{ width: '100%', margin: '1em 0' }}
+        color="danger"
+        value={knobProgressValue()}
+      />
+      <Progress
+        style={{ width: '100%', margin: '1em 0' }}
+        color="purple"
+        value={knobProgressValue()}
+      />
+      <Progress
+        style={{ width: '100%', margin: '1em 0' }}
+        color="#607d8b"
+        value={knobProgressValue()}
+      />
+      <br />
+    </div>
+  </Story>
+</Preview>

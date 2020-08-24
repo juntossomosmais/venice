@@ -1,0 +1,43 @@
+@import '~@venice/styles/core';
+
+.progress-wrapper {
+  align-items: center;
+  display: flex;
+
+  .value {
+    font: var(--typography-body2-font);
+    font-weight: bold;
+    padding: 0 var(--space-xs);
+
+    @at-root .right#{&} {
+      order: 1;
+    }
+
+    @at-root .left#{&} {
+      order: 0;
+    }
+  }
+
+  .progress {
+    flex: 1;
+  }
+}
+
+.progress {
+  appearance: none;
+  background: var(--disabled-color-contrast);
+  border: none;
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+  position: relative;
+
+  &-bar {
+    background: var(--secondary-color);
+    height: 100%;
+    transform-origin: left top;
+    transition: transform var(--transition-duration) ease-in-out;
+    width: 100%;
+    will-change: transform;
+  }
+}
