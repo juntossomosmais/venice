@@ -10,15 +10,18 @@ import ProgressBase from './Progress.base'
 export const transitionDuration = 250
 
 const animateValue = (fn, start = 0, end = 0) => {
-  let current = start
-  const range = end - start
+  const _start = Math.floor(start)
+  const _end = Math.floor(end)
+
+  let current = _start
+  const range = _end - _start
   if (!range) return
-  const increment = end > start ? 1 : -1
+  const increment = _end > _start ? 1 : -1
   const stepTime = Math.abs(Math.floor(transitionDuration / range))
   const timer = window.setInterval(() => {
     current += increment
     fn(current)
-    if (current === end) {
+    if (current === _end) {
       clearInterval(timer)
     }
   }, stepTime)
@@ -36,15 +39,18 @@ export const ProgressWrapper = ({
   className,
   display,
   color,
-  value,
+  value = 0,
   max,
   id,
   ...props
 }: IProgressWrapper & React.HTMLProps<HTMLDivElement>) => {
   const [selfValue, setValue] = useState(0)
+  const [modValue, setModValue] = useState(0)
 
   useEffect(() => {
     const timer = animateValue(setValue, selfValue, Number(value))
+    const mod = +(Number(value) % 1).toFixed(2)
+    setModValue(mod)
     return () => clearInterval(timer)
   }, [value])
 
@@ -57,7 +63,7 @@ export const ProgressWrapper = ({
 
   return (
     <div className={styleContainer} {...props}>
-      <span className={styles.value}>{selfValue}%</span>
+      <span className={styles.value}>{selfValue + modValue}%</span>
       <ProgressBase
         className={progressClass}
         color={color}
