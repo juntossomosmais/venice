@@ -45,4 +45,29 @@ describe('<Progress />', () => {
     const { container } = render(<Progress value="50" display="right" />)
     expect(container.firstChild).toHaveClass('right')
   })
+
+  it('Should display the value with float value after transition', async () => {
+    const { container, queryByText, rerender } = render(
+      <Progress value="70.5" display />
+    )
+    const value = container.querySelector('.value')
+    expect(value).toBeInTheDocument()
+    expect(queryByText('0.5%')).toBeInTheDocument()
+
+    await act(async () => {
+      await transition()
+
+      expect(queryByText('70.5%')).toBeInTheDocument()
+      expect(queryByText('0%')).not.toBeInTheDocument()
+    })
+
+    rerender(<Progress value="25.25" display />)
+    expect(queryByText('70.25%')).toBeInTheDocument()
+
+    await act(async () => {
+      await transition()
+
+      expect(queryByText('25.25%')).toBeInTheDocument()
+    })
+  })
 })

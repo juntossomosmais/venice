@@ -39,7 +39,7 @@ export const ProgressWrapper = ({
   className,
   display,
   color,
-  value,
+  value = 0,
   max,
   id,
   ...props
