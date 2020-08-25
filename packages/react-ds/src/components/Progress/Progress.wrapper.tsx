@@ -49,9 +49,7 @@ export const ProgressWrapper = ({
 
   useEffect(() => {
     const timer = animateValue(setValue, selfValue, Number(value))
-    const a = Number(value) % 1
-    const b = a.toFixed(2)
-    const mod = Number(b)
+    const mod = +(Number(value) % 1).toFixed(2)
     setModValue(mod)
     return () => clearInterval(timer)
   }, [value])
