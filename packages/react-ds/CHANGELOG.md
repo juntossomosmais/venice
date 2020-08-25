@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.18.0...@juntossomosmais/venice-react@0.19.0) (2020-08-24)
+
+
+### Features
+
+* add progress bar ([dda42e4](https://github.com/juntossomosmais/venice/commit/dda42e491d31fc446e492e229d5e82cf6e815616))
+* alterando o elemento de progresso para div ([94bc59d](https://github.com/juntossomosmais/venice/commit/94bc59d22fd440d9e11c012d157e95fe94231894))
+* fixing progress tests ([fe929a2](https://github.com/juntossomosmais/venice/commit/fe929a2228f7ae6c303bd06cfaaef07f1992dc33))
+* fixing typo ([2843ca5](https://github.com/juntossomosmais/venice/commit/2843ca5bebf68c20e74c5da0a7c42c295540081e))
+* fixing typo ([746f103](https://github.com/juntossomosmais/venice/commit/746f103453e306f1088b90b5ad13ac3a4db1a7f2))
+* improve semantic in progress ([1591c0a](https://github.com/juntossomosmais/venice/commit/1591c0a6ef2e554cd6afb24125dadc5dec662c80))
+* improving typos ([9e7d7cd](https://github.com/juntossomosmais/venice/commit/9e7d7cd5211e44cfa5b100653e7760fac18d09cf))
+
+
+
+
+
 # [0.18.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.17.0...@juntossomosmais/venice-react@0.18.0) (2020-08-13)
 
 

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.3.0...@juntossomosmais/venice-types@0.4.0) (2020-08-24)
+
+
+### Features
+
+* add progress bar ([dda42e4](https://github.com/juntossomosmais/venice/commit/dda42e491d31fc446e492e229d5e82cf6e815616))
+* fixing typo ([2843ca5](https://github.com/juntossomosmais/venice/commit/2843ca5bebf68c20e74c5da0a7c42c295540081e))
+* fixing typo ([5603047](https://github.com/juntossomosmais/venice/commit/560304797253c5039ea2150b20ac055833d44252))
+* improving typos ([9e7d7cd](https://github.com/juntossomosmais/venice/commit/9e7d7cd5211e44cfa5b100653e7760fac18d09cf))
+
+
+
+
+
 # [0.3.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.2.2...@juntossomosmais/venice-types@0.3.0) (2020-08-13)
 
 

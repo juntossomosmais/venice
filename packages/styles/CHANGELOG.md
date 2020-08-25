@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.18.0...@venice/styles@0.19.0) (2020-08-24)
+
+
+### Features
+
+* add progress bar ([dda42e4](https://github.com/juntossomosmais/venice/commit/dda42e491d31fc446e492e229d5e82cf6e815616))
+* alterando o elemento de progresso para div ([94bc59d](https://github.com/juntossomosmais/venice/commit/94bc59d22fd440d9e11c012d157e95fe94231894))
+
+
+
+
+
 # [0.18.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.17.3...@venice/styles@0.18.0) (2020-08-13)
 
 
