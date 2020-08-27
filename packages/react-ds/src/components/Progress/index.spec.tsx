@@ -70,4 +70,27 @@ describe('<Progress />', () => {
       expect(queryByText('25.25%')).toBeInTheDocument()
     })
   })
+
+  it('Should display the value as percent', async () => {
+    const { queryByText, rerender } = render(
+      <Progress value={1} max={2} display />
+    )
+    expect(queryByText('0%')).toBeInTheDocument()
+
+    await act(async () => {
+      await transition()
+
+      expect(queryByText('50%')).toBeInTheDocument()
+      expect(queryByText('0%')).not.toBeInTheDocument()
+    })
+
+    rerender(<Progress value="1" max="3" display />)
+    expect(queryByText('50.33%')).toBeInTheDocument()
+
+    await act(async () => {
+      await transition()
+
+      expect(queryByText('33.33%')).toBeInTheDocument()
+    })
+  })
 })
