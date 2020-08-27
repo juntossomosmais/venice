@@ -40,7 +40,7 @@ export const ProgressWrapper = ({
   display,
   color,
   value = 0,
-  max,
+  max = 100,
   id,
   ...props
 }: IProgressWrapper & React.HTMLProps<HTMLDivElement>) => {
@@ -48,11 +48,12 @@ export const ProgressWrapper = ({
   const [modValue, setModValue] = useState(0)
 
   useEffect(() => {
-    const timer = animateValue(setValue, selfValue, Number(value))
-    const mod = +(Number(value) % 1).toFixed(2)
+    const percValue = (Number(value) / Number(max)) * 100
+    const timer = animateValue(setValue, selfValue, percValue)
+    const mod = +(Number(percValue) % 1).toFixed(2)
     setModValue(mod)
     return () => clearInterval(timer)
-  }, [value])
+  }, [value, max])
 
   const styleContainer = classNames(
     styles['progress-wrapper'],

@@ -6,6 +6,7 @@ import Docs from '@venice/core/docs/Progress.md'
 import {
   knobProgressValue,
   knobProgressColor,
+  knobProgressMaxValue,
 } from '@venice/core/storybook/knobs'
 
 import { Progress } from '.'
@@ -22,24 +23,28 @@ import { Progress } from '.'
       Without display value
       <Progress
         value={knobProgressValue()}
+        max={knobProgressMaxValue()}
         color={knobProgressColor()}
         style={{ width: '100%' }}
       /> <hr />
       With display value default
       <Progress
         value={knobProgressValue()}
+        max={knobProgressMaxValue()}
         color={knobProgressColor()}
         display
       /> <hr />
       With display value at left
       <Progress
         value={knobProgressValue()}
+        max={knobProgressMaxValue()}
         color={knobProgressColor()}
         display="left"
       /> <hr />
       Without display value at right
       <Progress
         value={knobProgressValue()}
+        max={knobProgressMaxValue()}
         color={knobProgressColor()}
         display="right"
       />
@@ -56,31 +61,37 @@ import { Progress } from '.'
         style={{ width: '100%', margin: '1em 0' }}
         color="primary"
         value={knobProgressValue()}
+        max={knobProgressMaxValue()}
       />
       <Progress
         style={{ width: '100%', margin: '1em 0' }}
         color="secondary"
         value={knobProgressValue()}
+        max={knobProgressMaxValue()}
       />
       <Progress
         style={{ width: '100%', margin: '1em 0' }}
         color="success"
         value={knobProgressValue()}
+        max={knobProgressMaxValue()}
       />
       <Progress
         style={{ width: '100%', margin: '1em 0' }}
         color="danger"
         value={knobProgressValue()}
+        max={knobProgressMaxValue()}
       />
       <Progress
         style={{ width: '100%', margin: '1em 0' }}
         color="purple"
         value={knobProgressValue()}
+        max={knobProgressMaxValue()}
       />
       <Progress
         style={{ width: '100%', margin: '1em 0' }}
         color="#607d8b"
         value={knobProgressValue()}
+        max={knobProgressMaxValue()}
       />
       <br />
     </div>
