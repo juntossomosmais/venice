@@ -48,7 +48,7 @@ export const ProgressWrapper = ({
   const [modValue, setModValue] = useState(0)
 
   useEffect(() => {
-    const percValue = (value / max) * 100
+    const percValue = (Number(value) / Number(max)) * 100
     const timer = animateValue(setValue, selfValue, percValue)
     const mod = +(Number(percValue) % 1).toFixed(2)
     setModValue(mod)
