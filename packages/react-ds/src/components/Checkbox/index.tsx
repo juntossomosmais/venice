@@ -4,7 +4,7 @@ import { IField } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 import uniqid from 'uniqid'
 
-import styles from '@venice/styles/components/Field.module.scss'
+import styles from '@venice/styles/components/CheckboxRadio.module.scss'
 
 import Alert from '../Icons/Alert'
 
@@ -28,18 +28,27 @@ const InternalCheckbox = (
 
   return (
     <div className={styleContainer} style={style}>
-      <label htmlFor={selfId} className={styles.label}>
-        <input id={selfId} {...props} ref={ref} type="checkbox" />
-        {label}
-        {error && (
-          <div className={styles.error}>
-            <Alert />
-            {error}
-          </div>
+      <div>
+        <input
+          type="checkbox"
+          className={styles.field}
+          id={selfId}
+          {...props}
+          ref={ref}
+        />
+        {label && (
+          <label htmlFor={selfId} className={styles.label}>
+            {label}
+          </label>
         )}
-      </label>
-
+      </div>
       {/* TODO: Replace for alert component */}
+      {error && (
+        <div className={styles.error}>
+          <Alert />
+          {error}
+        </div>
+      )}
     </div>
   )
 }
