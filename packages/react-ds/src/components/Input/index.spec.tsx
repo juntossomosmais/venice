@@ -13,7 +13,6 @@ const props = {
 
 describe('<Input />', () => {
   it('Should display the base input', () => {
-    // TODO - Fix TypeScript compilation errors
     const { container } = render(<Input />)
     const errorDOM = container.querySelector(`.error`)
     expect(errorDOM).toBeNull()
@@ -32,9 +31,8 @@ describe('<Input />', () => {
 
   it('Should change value of input ', () => {
     const { getByLabelText } = render(<Input {...props} />)
-    const input = getByLabelText(props.label)
+    const input = getByLabelText(props.label) as HTMLInputElement
 
-    // TODO - Fix TypeScript compilation errors
     fireEvent.change(input, { target: { value: '23' } })
     expect(input.value).toBe('23')
   })
@@ -42,9 +40,8 @@ describe('<Input />', () => {
   it('Should call onchange event of input', () => {
     const onChange = jest.fn()
     const { getByLabelText } = render(<Input {...props} onChange={onChange} />)
-    const input = getByLabelText(props.label)
+    const input = getByLabelText(props.label) as HTMLInputElement
 
-    // TODO - Fix TypeScript compilation errors
     fireEvent.change(input, { target: { value: '23' } })
     expect(input.value).toBe('23')
     expect(onChange).toBeCalled()

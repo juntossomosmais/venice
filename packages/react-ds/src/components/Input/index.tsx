@@ -17,7 +17,7 @@ const InternalInput = (
     className,
     error,
     ...props
-  }: IField & React.HTMLProps<HTMLInputElement>,
+  }: IField | React.HTMLProps<HTMLInputElement>,
   ref?: React.Ref<HTMLInputElement>
 ) => {
   const selfId = id || uniqid(`input__`)
