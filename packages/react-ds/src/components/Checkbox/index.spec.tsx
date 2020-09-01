@@ -11,7 +11,7 @@ const props = {
   label: 'My Label',
 }
 
-describe('<Input />', () => {
+describe('<Checkbox />', () => {
   it('Should display the base input', () => {
     // TODO - Fix TypeScript compilation errors
     const { container } = render(<Checkbox />)
