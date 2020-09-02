@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.19.0...@venice/core@0.20.0) (2020-09-01)
+
+
+### Features
+
+* applying the rule of three on the progress label ([3c0c23b](https://github.com/juntossomosmais/venice/commit/3c0c23bc42ecf20ba8a9f4da72e4db1faecc7213))
+
+
+
+
+
 # [0.19.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.18.0...@venice/core@0.19.0) (2020-08-24)
 
 

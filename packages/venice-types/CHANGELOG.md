@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.4.0...@juntossomosmais/venice-types@0.5.0) (2020-09-01)
+
+
+### Features
+
+* fixing typo ([7b3637a](https://github.com/juntossomosmais/venice/commit/7b3637a25c6721bbe5e95510449d312f7012dea2))
+
+
+
+
+
 # [0.4.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.3.0...@juntossomosmais/venice-types@0.4.0) (2020-08-24)
 
 
