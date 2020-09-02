@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.5.0...@juntossomosmais/venice-types@0.6.0) (2020-09-02)
+
+
+### Features
+
+* adding bold prop ([1ed917f](https://github.com/juntossomosmais/venice/commit/1ed917f705631bc31f1bc883b1c2d00e8ee44f2b))
+
+
+
+
+
 # [0.5.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.4.0...@juntossomosmais/venice-types@0.5.0) (2020-09-01)
 
 
