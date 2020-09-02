@@ -1,4 +1,6 @@
 export interface IButton {
+  /** boolean */
+  bold?: boolean
   /**  'default' | 'primary' | 'secondary' */
   color?: 'default' | 'primary' | 'secondary'
   /** boolean */
