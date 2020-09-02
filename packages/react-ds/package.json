@@ -1,7 +1,7 @@
 {
   "name": "@juntossomosmais/venice-react",
   "description": "Design System of UI Components using React",
-  "version": "0.20.0",
+  "version": "0.21.0",
   "license": "Apache-2.0",
   "homepage": "https://github.com/juntossomosmais/venice/packages/react-ds#readme",
   "repository": {
@@ -42,7 +42,7 @@
     "react-dom": "^16.13.0"
   },
   "devDependencies": {
-    "@juntossomosmais/venice-types": "^0.5.0",
+    "@juntossomosmais/venice-types": "^0.6.0",
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^15.0.0",
     "@storybook/preset-create-react-app": "^3.1.2",
