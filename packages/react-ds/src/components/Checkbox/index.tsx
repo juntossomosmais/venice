@@ -29,13 +29,7 @@ const InternalCheckbox = (
   return (
     <div className={styleContainer} style={style}>
       <div>
-        <input
-          type="checkbox"
-          className={styles.field}
-          id={selfId}
-          {...props}
-          ref={ref}
-        />
+        <input type="checkbox" id={selfId} {...props} ref={ref} />
         {label && (
           <label htmlFor={selfId} className={styles.label}>
             {label}
