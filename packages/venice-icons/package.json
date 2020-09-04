@@ -10,18 +10,33 @@
     "url": "https://github.com/juntossomosmais/venice.git",
     "directory": "packages/venice-icons"
   },
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "engines": {
     "node": ">=10"
   },
   "scripts": {
-    "build": "node src/index.js",
+    "start": "yarn build:fontello && start-storybook -p 3003 -c .storybook -s ./public",
+    "build": "node src/buildPackage.js",
+    "build:fontello": "node_modules/.bin/fontello-cli install && node src/generateFontelloAssets.js",
     "prepare": "yarn build"
-  },
-  "dependencies": {
-    "fs-extra": "^9.0.1"
   },
   "bugs": {
     "url": "https://github.com/juntossomosmais/venice/issues"
-  }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/html": "^6.0.21",
+    "babel-loader": "^8.1.0",
+    "fontello-cli": "^0.5.0",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6",
+    "react-is": "^16.13.1"
+  },
+  "dependencies": {}
 }

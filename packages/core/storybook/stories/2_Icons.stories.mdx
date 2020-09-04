@@ -1,0 +1,15 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import config from '../../../venice-icons/config.json'
+
+<Meta title="Getting Started|Styles/Icons"/>
+
+# Icons
+
+<div className='icons-grid'>
+  {config.glyphs.map(glyph => (
+    <div key={glyph.css} className='grid-item'>
+      <i className={`jsm-icon-${glyph.css} glyph`}></i>
+      <span className='glyph-class'>{`jsm-icon-${glyph.css}`}</span>
+    </div>
+  ))}
+</div>
