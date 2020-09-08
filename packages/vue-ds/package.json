@@ -22,12 +22,13 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
+    "start": "yarn build:fontello && vue-cli-service storybook:serve -p 6006 -c .storybook -s ./public",
     "build": "vue-cli-service build --target lib --name index src/index.ts && yarn workspace @venice/styles build",
     "test": "vue-cli-service test:unit --env=jsdom",
     "test:ci": "cross-env CI=true vue-cli-service test:unit --bail --passWithNoTests --env=jsdom",
     "lint": "vue-cli-service lint",
     "build:storybook": "yarn build && vue-cli-service storybook:build -c .storybook -o ../../dist/vue",
+    "build:fontello": "../../node_modules/.bin/fontello-cli install --config ../venice-icons/config.json && node ../../scripts/moveFontelloAssets.js",
     "loki-test": "loki test",
     "loki-update": "loki update",
     "prepublish": "yarn test:ci && yarn build"

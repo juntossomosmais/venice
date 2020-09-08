@@ -5,6 +5,8 @@ import CustomViewports from '@venice/core/storybook/config/customViewports'
 import '@juntossomosmais/venice-vue/dist/reset.css'
 import '@venice/core/storybook/styles/storybook.css'
 import '@juntossomosmais/venice-vue/dist/styles.css'
+import '@juntossomosmais/venice-icons/styles/storybook.css'
+import '@juntossomosmais/venice-icons/public/css/jsm-icons.css'
 import 'github-markdown-css/github-markdown.css'
 import 'loki/configure-vue'
 
