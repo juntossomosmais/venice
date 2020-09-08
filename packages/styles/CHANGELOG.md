@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.19.0...@venice/styles@0.20.0) (2020-09-02)
+
+
+### Features
+
+* add checkbox ([ccd9213](https://github.com/juntossomosmais/venice/commit/ccd92130f35615e2e23967226d1c6ffb473df9bd))
+* adding bold prop ([1ed917f](https://github.com/juntossomosmais/venice/commit/1ed917f705631bc31f1bc883b1c2d00e8ee44f2b))
+
+
+
+
+
 # [0.19.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.18.0...@venice/styles@0.19.0) (2020-08-24)
 
 

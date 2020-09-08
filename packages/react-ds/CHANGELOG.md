@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.20.0...@juntossomosmais/venice-react@0.21.0) (2020-09-02)
+
+
+### Bug Fixes
+
+*  semantic error TS2339 for Checkbox and Input ([7d1e658](https://github.com/juntossomosmais/venice/commit/7d1e6589e64066cf0559e1552c2731e919030cd1))
+* some TypeScript compilation errors ([91131a2](https://github.com/juntossomosmais/venice/commit/91131a24c30839e1f14d2653fcf5a2b590400697))
+
+
+### Features
+
+* add checkbox ([ccd9213](https://github.com/juntossomosmais/venice/commit/ccd92130f35615e2e23967226d1c6ffb473df9bd))
+* adding bold prop ([1ed917f](https://github.com/juntossomosmais/venice/commit/1ed917f705631bc31f1bc883b1c2d00e8ee44f2b))
+
+
+
+
+
+# [0.20.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.19.0...@juntossomosmais/venice-react@0.20.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* fixing animation progress in float values ([44f377c](https://github.com/juntossomosmais/venice/commit/44f377c7fda19f2a8cddcf09fe96a5011ef2e929))
+
+
+### Features
+
+* add test to float number ([736fd23](https://github.com/juntossomosmais/venice/commit/736fd23cc910cd63aea9e47744e4c195546b946e))
+* applying the rule of three on the progress label ([ea1bb61](https://github.com/juntossomosmais/venice/commit/ea1bb61212fe2d5dee7d5e9772a8c63b4802569a))
+* applying the rule of three on the progress label ([3c0c23b](https://github.com/juntossomosmais/venice/commit/3c0c23bc42ecf20ba8a9f4da72e4db1faecc7213))
+* exporting progress component ([d084e97](https://github.com/juntossomosmais/venice/commit/d084e97e354352107a5be461c1ce1120b027a295))
+* fixing typo ([ee5aa1d](https://github.com/juntossomosmais/venice/commit/ee5aa1ddfcee6a6e64133d965d1fd5a348d4dc2b))
+* fixing typo ([15bb7b0](https://github.com/juntossomosmais/venice/commit/15bb7b074369da675b88bce394ee6b1bd40da2cd))
+
+
+
+
+
 # [0.19.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.18.0...@juntossomosmais/venice-react@0.19.0) (2020-08-24)
 
 

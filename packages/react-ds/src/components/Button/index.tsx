@@ -27,6 +27,7 @@ const ButtonComponent: React.FunctionComponent<
 }
 
 export const Button: React.FunctionComponent<IButtonProps> = ({
+  bold = false,
   children,
   className = '',
   color = 'default',
@@ -51,7 +52,7 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
           styles[variant],
           styles[size],
           styles[shape],
-          { [styles.isLoading]: isLoading },
+          { [styles.isLoading]: isLoading, [styles.bold]: bold },
           className
         )}
         {...(href && { href })}

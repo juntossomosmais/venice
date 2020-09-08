@@ -1,0 +1,25 @@
+@import '~@venice/styles/core';
+
+.container {
+  div {
+    display: flex;
+  }
+}
+
+.label {
+  color: var(--gray-4);
+  font: var(--typography-caption-font);
+  margin-left: var(--space-xs);
+}
+
+.error {
+  color: var(--danger-color);
+  font: var(--typography-caption-font);
+
+  svg {
+    fill: var(--danger-color);
+    height: 14px;
+    margin-right: var(--space-xxs);
+    width: 14px;
+  }
+}
