@@ -1,8 +1,12 @@
 module.exports = {
   stories: ['../../core/**/*.stories.(js|jsx|ts|tsx|mdx)'],
   addons: [
-    '@storybook/addon-links',
-    '@storybook/addon-essentials',
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        configureJSX: true,
+      },
+    },
   ],
   webpackFinal: async config => {
     config.module.rules = [{
