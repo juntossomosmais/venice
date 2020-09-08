@@ -1,20 +1,28 @@
 ## Infos
 
-#### O que está sendo entregue?
+[Task](https://juntossomosmais.monday.com/boards/XXX/pulses/XXX)
 
-Descreva aqui todas as alterações que serão feitas e qual o resultado esperado
+#### What is being delivered?
 
-#### Plano de rollback
+Describe here all the changes that will be made and what the expected result is.
 
-Descreva qual o plano que devemos seguir caso essa entrega tenha que ser revertida.
+#### What impacts?
 
-#### Evidências
+Describe what impacts this delivery has and whether it can cause side effects in other parts of the application.
 
-Imagens, gifs ou conteúdos que queira adicionar.
+#### Reversal plan
+
+Describe which plan we should follow if this delivery has to be reversed.
+
+#### Evidences
+
+Media(images, gifs or videos) that shows the result of your work.
 
 ## DoD checklist
 
-- [ ] Código pronto
-- [ ] Documentação atualizada
-- [ ] Testes atualizados/adicionados e funcionando
-- [ ] Corrigido erros/alertas de lint
+- [ ] Related code finished
+- [ ] Documentation updated (if exists)
+- [ ] Unit tests written and passing
+- [ ] Any configuration or build changes documented
+- [ ] Project builds without errors
+- [ ] Lint errors fixed
