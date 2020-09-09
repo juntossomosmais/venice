@@ -1,0 +1,102 @@
+@import '~@venice/styles/core';
+
+.tooltip {
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+
+  .tooltipContent {
+    border: 1px solid #e5e5e5;
+    border-radius: var(--border-radius);
+    display: none;
+    padding: 10px var(--space-sm);
+    position: absolute;
+    transition: opacity 0.5s;
+    width: 100%;
+    z-index: 1;
+
+    &::after {
+      border-style: solid;
+      border-width: 5px;
+      content: '';
+      position: absolute;
+    }
+  }
+
+  &:hover {
+    .tooltipContent {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &.dark {
+    .tooltipContent {
+      background-color: var(--default-color);
+      color: var(--white);
+    }
+  }
+
+  &.light {
+    .tooltipContent {
+      background: var(--white);
+      border-radius: 4px;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+      box-sizing: border-box;
+    }
+  }
+
+  &.top {
+    display: inline-block;
+
+    .tooltipContent {
+      bottom: 150%;
+
+      &::after {
+        border-color: var(--default-color) transparent transparent transparent;
+        left: 50%;
+        margin-left: -5px;
+        top: 100%;
+      }
+    }
+
+    &.light {
+      .tooltipContent::after {
+        border-color: var(--white) transparent transparent transparent;
+      }
+    }
+  }
+
+  &.right {
+    .tooltipContent {
+      left: 105%;
+      top: -10px;
+
+      &::after {
+        border-color: transparent var(--default-color) transparent transparent;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &.light {
+      .tooltipContent::after {
+        border-color: transparent var(--white) transparent transparent;
+      }
+
+      .tooltipContent::before {
+        border-color: var(--default-color) transparent transparent transparent;
+        border-color: transparent var(--gray-2) transparent transparent;
+        border-style: solid;
+        border-width: 7px;
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

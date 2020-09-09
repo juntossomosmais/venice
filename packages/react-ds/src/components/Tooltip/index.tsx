@@ -3,23 +3,26 @@ import * as React from 'react'
 import { ITooltip } from '@juntossomosmais/venice-types'
 import classNames from 'classnames/bind'
 
-import styles from '@venice/styles/components/Spinner.module.scss'
+import styles from '@venice/styles/components/Tooltip.module.scss'
 
-export interface ITooltipProps extends ITooltip {
-  /** string */
-  className?: string
-}
-
-export const Tooltip = ({
-  className = '',
-  color = 'default',
+export const Tooltip: React.FunctionComponent<ITooltip> = ({
+  children,
+  render,
+  theme = 'dark',
   position = 'top',
-  ...rest
-}: ITooltipProps) => {
+}) => {
+  const menuClassNames = classNames(
+    styles[theme],
+    styles[position],
+    styles.tooltip
+  )
+
   return (
-    <div className={classNames(styles[position], styles[color], className)}>
-      Hover over me
-      <span>Info Tooltip</span>
+    <div className={menuClassNames}>
+      {render && (
+        <div className={classNames(styles.tooltipContent)}>{render()}</div>
+      )}
+      <div className={classNames(styles.tooltipTarget)}>{children}</div>
     </div>
   )
 }

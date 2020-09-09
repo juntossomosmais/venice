@@ -1,6 +1,8 @@
 export interface ITooltip {
-  /** String */
-  color?: 'default' | 'light'
-  /** String */
-  Position?: 'top' | 'right'
+  /** 'dark' | 'light' */
+  theme?: 'dark' | 'light'
+  /** 'top' | 'right' */
+  position?: 'top' | 'right'
+  /** function **/
+  render: () => JSX.Element
 }
