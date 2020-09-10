@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build:storybook": "yarn build:fontello && lerna run build:storybook --profile",
+    "build:storybook": "yarn build:fontello && lerna run build:storybook",
     "build:fontello": "node_modules/.bin/fontello-cli install --config packages/venice-icons/config.json && node scripts/moveFontelloAssets.js",
     "build": "yarn build:fontello && lerna run build",
     "deploy:storybook-clean": "rimraf README.md packages package.json",

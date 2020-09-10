@@ -27,7 +27,7 @@
     "build": "rollup -c && yarn workspace @venice/styles build",
     "test": "react-scripts test",
     "test:ci": "cross-env CI=true react-scripts test --bail --passWithNoTests --env=jsdom",
-    "build:storybook": "yarn build && build-storybook -c .storybook -o ../../dist/react",
+    "build:storybook": "yarn build && build-storybook -c .storybook -s ./public -o ../../dist/react",
     "loki-test": "loki test",
     "loki-update": "loki update",
     "prepublish": "yarn test:ci && yarn build"
