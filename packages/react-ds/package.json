@@ -24,10 +24,10 @@
   },
   "scripts": {
     "start": "yarn build:fontello && start-storybook -p 9009 -c .storybook -s ./public",
-    "build": "rollup -c && yarn workspace @venice/styles build",
+    "build": "yarn build:fontello && rollup -c && yarn workspace @venice/styles build",
     "test": "react-scripts test",
     "test:ci": "cross-env CI=true react-scripts test --bail --passWithNoTests --env=jsdom",
-    "build:storybook": "yarn build:fontello && yarn build && build-storybook -c .storybook -o ../../dist/react",
+    "build:storybook": "yarn build && build-storybook -c .storybook -o ../../dist/react",
     "build:fontello": "../../node_modules/.bin/fontello-cli install --config ../venice-icons/config.json && node ../../scripts/moveFontelloAssets.js",
     "loki-test": "loki test",
     "loki-update": "loki update",
