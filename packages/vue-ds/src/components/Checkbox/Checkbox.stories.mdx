@@ -1,0 +1,35 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
+import { withA11y } from '@storybook/addon-a11y'
+
+import Checkbox from './Checkbox.vue'
+
+<Meta title="Components|Checkbox" component={Checkbox} />
+
+# Checkbox
+
+Checkbox is a content container for text, photos, and actions in the context of a single subject.
+
+## Base
+
+<Preview>
+  <Story name="Base" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Checkbox },
+      template: `
+        <div>
+          <Checkbox style="padding: var(--space)" v-model="checkbox" id="venice-checkbox" :props="props"/>
+          {{ checkbox.toString() }}
+        </div>
+      `,
+      data() {
+        return {
+          checkbox: false,
+          props: {
+            testid: 'testid',
+            'aria-labelledby': 'chk1-label',
+          },
+        }
+      },
+    }}
+  </Story>
+</Preview>
