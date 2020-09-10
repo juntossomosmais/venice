@@ -15,6 +15,7 @@
 .error {
   color: var(--danger-color);
   font: var(--typography-caption-font);
+  margin-top: var(--space-xxs);
 
   svg {
     fill: var(--danger-color);
