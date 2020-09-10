@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.13.3...@juntossomosmais/venice-vue@0.14.0) (2020-09-10)
+
+
+### Features
+
+* **paper:** add component to vue ([2ac4b87](https://github.com/juntossomosmais/venice/commit/2ac4b8742f4cec5a4a88c3a1064d5e9d043ba803))
+* **paper:** add test ([6cf29ef](https://github.com/juntossomosmais/venice/commit/6cf29ef782d798b846571518832300d659e76843))
+
+
+
+
+
 ## [0.13.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.13.2...@juntossomosmais/venice-vue@0.13.3) (2020-09-02)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.20.0...@venice/styles@0.21.0) (2020-09-10)
+
+
+### Bug Fixes
+
+* add same space for error msg as input ([096e875](https://github.com/juntossomosmais/venice/commit/096e8756f944d2d459eab605bee7bd8e4a7120c4))
+* remove unnecessary css ([83295c4](https://github.com/juntossomosmais/venice/commit/83295c4e5caf0437ba3db3abe2cf4cbb4c3f5baa))
+
+
+### Features
+
+* **paper:** add style ([f378a40](https://github.com/juntossomosmais/venice/commit/f378a4050a1e0c4cfa8ff621416c0b45e7a5a930))
+
+
+
+
+
 # [0.20.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.19.0...@venice/styles@0.20.0) (2020-09-02)
 
 
