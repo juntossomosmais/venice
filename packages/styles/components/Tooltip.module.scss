@@ -3,16 +3,17 @@
 .tooltip {
   align-items: center;
   display: inline-flex;
+  justify-content: center;
   position: relative;
 
   .tooltipContent {
     border: 1px solid #e5e5e5;
     border-radius: var(--border-radius);
     display: none;
+    min-width: 150px;
     padding: 10px var(--space-sm);
     position: absolute;
     transition: opacity 0.5s;
-    width: 100%;
     z-index: 1;
 
     &::after {
@@ -42,7 +43,7 @@
     .tooltipContent {
       background: var(--white);
       border-radius: 4px;
-      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+      box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
       box-sizing: border-box;
     }
   }
@@ -70,13 +71,14 @@
 
   &.right {
     .tooltipContent {
-      left: 105%;
-      top: -10px;
+      bottom: -100%;
+      left: 100%;
+      margin-left: 10px;
 
       &::after {
         border-color: transparent var(--default-color) transparent transparent;
-        right: 100%;
-        top: 50%;
+        bottom: 35%;
+        left: -10px;
         transform: translateY(-50%);
       }
     }
