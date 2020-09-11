@@ -23,7 +23,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "start-storybook -p 9009 -c .storybook -s ./public",
+    "start": "start-storybook -p 9009 -c .storybook -s src/fontello",
     "build": "rollup -c && yarn workspace @venice/styles build",
     "test": "react-scripts test",
     "test:ci": "cross-env CI=true react-scripts test --bail --passWithNoTests --env=jsdom",
