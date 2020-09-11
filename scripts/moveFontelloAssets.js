@@ -7,8 +7,8 @@ async function moveFontelloToStorybookPublicFolder(error, files) {
   try {
     console.log('Moving fontello assets to Storybook public folder')
 
-    await fs.copy(fontelloDirectory, 'packages/react-ds/public')
-    await fs.copy(fontelloDirectory, 'packages/vue-ds/public')
+    await fs.copy(fontelloDirectory, 'packages/react-ds/src/fontello')
+    await fs.copy(fontelloDirectory, 'packages/vue-ds/src/fontello')
 
     console.log('Deleting fontello original folder')
 
