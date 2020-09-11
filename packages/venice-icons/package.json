@@ -18,9 +18,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "yarn build:fontello && start-storybook -p 3003 -c .storybook -s ./public",
+    "start": "start-storybook -p 3003 -c .storybook -s src/fontello",
     "build": "node src/buildPackage.js",
-    "build:fontello": "../../node_modules/.bin/fontello-cli install && node ../../scripts/moveFontelloAssets.js",
     "prepare": "yarn build"
   },
   "bugs": {

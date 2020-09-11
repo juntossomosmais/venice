@@ -1,2 +1,2 @@
-import '../public/css/jsm-icons.css'
+import '../src/fontello/css/jsm-icons.css'
 import '../styles/storybook.css'
