@@ -1,5 +1,7 @@
 @import '~@venice/styles/core';
 
+$arrow-size: 5px;
+
 .tooltip {
   align-items: center;
   display: inline-flex;
@@ -18,7 +20,7 @@
 
     &::after {
       border-style: solid;
-      border-width: 5px;
+      border-width: ($arrow-size);
       content: '';
       position: absolute;
     }
@@ -42,7 +44,7 @@
   &.light {
     .tooltipContent {
       background: var(--white);
-      border-radius: 4px;
+      border-radius: var (-border-radius);
       box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
       box-sizing: border-box;
     }
@@ -57,7 +59,7 @@
       &::after {
         border-color: var(--default-color) transparent transparent transparent;
         left: 50%;
-        margin-left: -5px;
+        margin-left: (-$arrow-size);
         top: 100%;
       }
     }
@@ -77,8 +79,9 @@
 
       &::after {
         border-color: transparent var(--default-color) transparent transparent;
-        bottom: 35%;
         left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
         transform: translateY(-50%);
       }
     }
@@ -89,10 +92,9 @@
       }
 
       .tooltipContent::before {
-        border-color: var(--default-color) transparent transparent transparent;
         border-color: transparent var(--gray-2) transparent transparent;
         border-style: solid;
-        border-width: 7px;
+        border-width: ($arrow-size + 2px);
         content: '';
         position: absolute;
         right: 100%;
