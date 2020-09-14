@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.22.0...@juntossomosmais/venice-react@0.22.2) (2020-09-14)
+
+**Note:** Version bump only for package @juntossomosmais/venice-react
+
+
+
+
+
+# [0.22.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.21.0...@juntossomosmais/venice-react@0.22.0) (2020-09-10)
+
+
+### Bug Fixes
+
+* remove unnecessary css ([83295c4](https://github.com/juntossomosmais/venice/commit/83295c4e5caf0437ba3db3abe2cf4cbb4c3f5baa))
+
+
+### Features
+
+* **paper:** add component to react ([8e4bbce](https://github.com/juntossomosmais/venice/commit/8e4bbce2e25b33c078949d341ee2b6239a6eb504))
+* **paper:** add test ([6cf29ef](https://github.com/juntossomosmais/venice/commit/6cf29ef782d798b846571518832300d659e76843))
+
+
+
+
+
 # [0.21.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.20.0...@juntossomosmais/venice-react@0.21.0) (2020-09-02)
 
 

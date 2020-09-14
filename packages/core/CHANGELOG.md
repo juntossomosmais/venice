@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.20.0...@venice/core@0.21.0) (2020-09-10)
+
+
+### Features
+
+* **paper:** add docs ([09586a0](https://github.com/juntossomosmais/venice/commit/09586a07e4ab798fff8b3886b4e7f69f80bd4d79))
+
+
+
+
+
 # [0.20.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.19.0...@venice/core@0.20.0) (2020-09-01)
 
 
