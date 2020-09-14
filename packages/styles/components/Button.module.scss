@@ -10,6 +10,7 @@
   font: var(--typography-button-font);
   justify-content: center;
   letter-spacing: var(--typography-button-letter);
+  outline: 0;
   overflow: hidden;
   position: relative;
   text-decoration: none;
@@ -253,6 +254,7 @@
   position: absolute;
   z-index: var(--zindex-1);
 }
- .bold {
-   font-weight: bold;
- }
+
+.bold {
+  font-weight: bold;
+}
