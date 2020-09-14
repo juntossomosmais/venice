@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.21.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.21.0...@venice/styles@0.21.1) (2020-09-14)
+
+
+### Bug Fixes
+
+* removed outline border from components with focus ([597496c](https://github.com/juntossomosmais/venice/commit/597496ca25f4dff21eec9c8c4886ff3b9008a6bb))
+
+
+
+
+
 # [0.21.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.20.0...@venice/styles@0.21.0) (2020-09-10)
 
 
