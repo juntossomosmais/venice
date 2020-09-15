@@ -1,0 +1,51 @@
+import {
+  Meta,
+  Story,
+  Description,
+  Preview,
+  Props,
+} from '@storybook/addon-docs/blocks'
+import { withKnobs } from '@storybook/addon-knobs'
+import { withA11y } from '@storybook/addon-a11y'
+
+import { knobSpinnerSize } from '@venice/core/storybook/knobs'
+
+import { Tooltip } from '.'
+
+<Meta title="Components|Tooltip" component={Tooltip} />
+
+# Tooltip
+
+## Theme
+
+<Preview>
+  <Story name="Theme">
+    <div class="row-items lg-offset-left lg-offset-top">
+      <Tooltip render={() => <span>Tooltip</span>}>
+        <span> Tootip Dark</span>
+      </Tooltip>
+      <Tooltip theme="light" render={() => <span>Tooltip</span>}>
+        <span> Tootip Light</span>
+      </Tooltip>
+    </div>
+  </Story>
+</Preview>
+
+## Position
+
+<Preview>
+  <Story name="Position">
+    <div class="row-items lg-offset-left lg-offset-top">
+      <Tooltip position="right" render={() => <span>Tooltip</span>}>
+        <span> Tootip Dark Right</span>
+      </Tooltip>
+      <Tooltip theme="light" position="right" render={() => <span>Tooltip</span>}>
+        <span> Tootip Light Right</span>
+      </Tooltip>
+    </div>
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Tooltip} />
