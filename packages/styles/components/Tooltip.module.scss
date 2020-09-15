@@ -102,4 +102,10 @@ $arrow-size: 5px;
       }
     }
   }
+
+  &.show {
+    .tooltipContent {
+      display: inline-block;
+    }
+  }
 }

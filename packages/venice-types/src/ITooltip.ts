@@ -3,6 +3,8 @@ export interface ITooltip {
   theme?: 'dark' | 'light'
   /** 'top' | 'right' */
   position?: 'top' | 'right'
+  /** boolean */
+  show?: boolean
   /** function **/
   render: () => JSX.Element
 }

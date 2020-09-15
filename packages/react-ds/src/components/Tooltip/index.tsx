@@ -10,10 +10,12 @@ export const Tooltip: React.FunctionComponent<ITooltip> = ({
   render,
   theme = 'dark',
   position = 'top',
+  show = false,
 }) => {
   const menuClassNames = classNames(
     styles[theme],
     styles[position],
+    { [styles.show]: show },
     styles.tooltip
   )
 
