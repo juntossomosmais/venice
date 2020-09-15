@@ -54,6 +54,7 @@ $arrow-size: 5px;
 
     .tooltipContent {
       bottom: 150%;
+      left: -30%;
 
       &::after {
         border-color: var(--default-color) transparent transparent transparent;
@@ -72,7 +73,6 @@ $arrow-size: 5px;
 
   &.right {
     .tooltipContent {
-      bottom: -100%;
       left: 100%;
       margin-left: 10px;
 
