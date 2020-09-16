@@ -22,12 +22,12 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "vue-cli-service storybook:serve -p 6006 -c .storybook",
+    "start": "vue-cli-service storybook:serve -p 6006 -c .storybook -s src/fontello",
     "build": "vue-cli-service build --target lib --name index src/index.ts && yarn workspace @venice/styles build",
     "test": "vue-cli-service test:unit --env=jsdom",
     "test:ci": "cross-env CI=true vue-cli-service test:unit --bail --passWithNoTests --env=jsdom",
     "lint": "vue-cli-service lint",
-    "build:storybook": "yarn build && vue-cli-service storybook:build -c .storybook -o ../../dist/vue",
+    "build:storybook": "yarn build && vue-cli-service storybook:build -c .storybook -s src/fontello -o ../../dist/vue",
     "loki-test": "loki test",
     "loki-update": "loki update",
     "prepublish": "yarn test:ci && yarn build"

@@ -1,0 +1,23 @@
+.icons-grid {
+  padding: 20px;
+  background-color: #F8F8F8;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 32px;
+  border-radius: 4px;
+}
+
+.grid-item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.glyph {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.glyph-class {
+  font-size: 12px !important;
+}
