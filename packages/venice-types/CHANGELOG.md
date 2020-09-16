@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.6.0...@juntossomosmais/venice-types@0.7.0) (2020-09-16)
+
+
+### Features
+
+* add props show ([4478093](https://github.com/juntossomosmais/venice/commit/44780930b87206d27563f4c1060b34ef440a3ecf))
+* changed css ([3ebcb88](https://github.com/juntossomosmais/venice/commit/3ebcb8887f8222c0eed88a37aa7b3f5a8d4d07fb))
+* first commit ([63cce0c](https://github.com/juntossomosmais/venice/commit/63cce0cd460370322ca56dc7f4105c91497c43de))
+
+
+
+
+
 # [0.6.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.5.0...@juntossomosmais/venice-types@0.6.0) (2020-09-02)
 
 
