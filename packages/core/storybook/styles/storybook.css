@@ -44,3 +44,15 @@
 .lg-offset-left {
   margin-left: var(--space-lg) !important;
 }
+
+.sm-offset-top {
+  margin-top: var(--space-sm) !important;
+}
+
+.md-offset-top {
+  margin-top: var(--space-md) !important;
+}
+
+.lg-offset-top {
+  margin-top: var(--space-lg) !important;
+}
