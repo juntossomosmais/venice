@@ -19,7 +19,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build:storybook": "yarn build:fontello && lerna run build:storybook",
-    "build:fontello": "node_modules/.bin/fontello-cli install --config packages/venice-icons/config.json && node scripts/moveFontelloAssets.js",
+    "build:fontello": "fontello-cli install --config packages/venice-icons/config.json && node scripts/moveFontelloAssets.js",
     "build": "yarn build:fontello && lerna run build",
     "deploy:storybook-clean": "rimraf README.md packages package.json",
     "deploy:storybook": "yarn build:storybook && gh-pages-deploy",
@@ -29,7 +29,7 @@
     "lint": "eslint . --ext js,ts,jsx,tsx,vue",
     "loki-test": "lerna run loki-test",
     "loki-update": "lerna run loki-update",
-    "postinstall": "lerna run build",
+    "postinstall": "yarn build",
     "publish": "lerna publish",
     "start": "lerna run start --parallel",
     "test:react": "yarn workspace @juntossomosmais/venice-react test:ci",
