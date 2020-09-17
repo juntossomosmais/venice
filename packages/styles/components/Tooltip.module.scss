@@ -24,16 +24,6 @@ $arrow-size: 10px;
       content: '';
       position: absolute;
     }
-
-    &::before {
-      border-color: transparent var(--gray-2) transparent transparent;
-      border-style: solid;
-      border-width: ($arrow-size + 2px);
-      position: absolute;
-      right: 100%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
   }
 
   &:hover {
@@ -68,25 +58,27 @@ $arrow-size: 10px;
 
       &::after {
         border-color: var(--default-color) transparent transparent transparent;
-        left: 50%;
-        margin-left: (-$arrow-size);
         top: 100%;
       }
     }
 
     &.light {
-      .tooltipContent::after {
-        border-color: var(--white) transparent transparent transparent;
-      }
+      .tooltipContent {
+        &::after {
+          border-color: var(--white) transparent transparent transparent;
+        }
 
-      .tooltipContent::before {
-        border-color: transparent var(--gray-2) transparent transparent;
-        border-style: solid;
-        border-width: ($arrow-size + 2px);
-        position: absolute;
-        right: 100%;
-        top: 50%;
-        transform: translateY(-50%);
+        &::before {
+          border-color: var(--gray-2) transparent transparent transparent;
+          border-style: solid;
+          border-width: ($arrow-size + 2px);
+          content: '';
+          left: 42%;
+          position: absolute;
+          top: 128%;
+          transform: translateX(-50%);
+          transform: translateY(-50%);
+        }
       }
     }
   }
@@ -101,24 +93,25 @@ $arrow-size: 10px;
         left: -20px;
         top: 50%;
         transform: translateY(-50%);
-        transform: translateY(-50%);
       }
     }
 
     &.light {
-      .tooltipContent::after {
-        border-color: transparent var(--white) transparent transparent;
-      }
+      .tooltipContent {
+        &::after {
+          border-color: transparent var(--white) transparent transparent;
+        }
 
-      .tooltipContent::before {
-        border-color: transparent var(--gray-2) transparent transparent;
-        border-style: solid;
-        border-width: ($arrow-size + 2px);
-        content: '';
-        position: absolute;
-        right: 100%;
-        top: 50%;
-        transform: translateY(-50%);
+        &::before {
+          border-color: transparent var(--gray-2) transparent transparent;
+          border-style: solid;
+          border-width: ($arrow-size + 2px);
+          content: '';
+          position: absolute;
+          right: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
   }
