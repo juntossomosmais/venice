@@ -3,7 +3,7 @@ import { withA11y } from '@storybook/addon-a11y'
 
 import Checkbox from './Checkbox.vue'
 
-<Meta title="Components|Checkbox" component={Checkbox} />
+<Meta title="Forms|Checkbox" component={Checkbox} />
 
 # Checkbox
 
@@ -16,20 +16,66 @@ Checkbox is a content container for text, photos, and actions in the context of 
     {{
       components: { Checkbox },
       template: `
-        <div>
-          <Checkbox style="padding: var(--space)" v-model="checkbox" id="venice-checkbox" :props="props"/>
-          {{ checkbox.toString() }}
+        <div class="row-items" style="display: flex">
+          <Checkbox label="label" v-model="checkbox" :props="props" style="flex: 1"/>
+          <Checkbox label="label" id="venice-checkbox" v-model="checkbox1" style="flex: 1"/>
         </div>
       `,
       data() {
         return {
           checkbox: false,
+          checkbox1: true,
           props: {
             testid: 'testid',
-            'aria-labelledby': 'chk1-label',
+            name: 'chk1-label',
           },
         }
       },
+      created() {
+        console.log(this)
+      },
+    }}
+  </Story>
+</Preview>
+
+## Disabled
+
+<Preview>
+  <Story name="Disabled" parameters={{ decorators: [withA11y] }} inline={true}>
+    {{
+      components: { Checkbox },
+      template: `
+        <div class="row-items" style="display: flex">
+          <Checkbox label="disabled" :props="props" style="flex: 1" />
+          <Checkbox label="disabled" :props="props" v-model="checkbox" style="flex: 1" />
+        </div>
+      `,
+      data() {
+        return {
+          checkbox: true,
+          props: {
+            disabled: true,
+            name: 'name',
+          },
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+## Validation
+
+<Preview>
+  <Story
+    name="Validation"
+    parameters={{ decorators: [withA11y] }}
+    inline={true}
+  >
+    {{
+      components: { Checkbox },
+      template: `
+          <Checkbox label="Error Sample" error="Errors will be displayed here" />
+      `,
     }}
   </Story>
 </Preview>
