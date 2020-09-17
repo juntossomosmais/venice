@@ -4,6 +4,7 @@
       <input
         type="checkbox"
         :id="selfId"
+        :checked="value"
         @change="$emit('input', $event.target.checked)"
         v-bind="{ ...props }"
       />
@@ -24,11 +25,16 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 
 @Component({})
 export default class Checkbox extends Vue {
-  @Prop({ default: '' }) id!: string
   @Prop({ default: '' }) label!: IField['label']
   @Prop({ default: '' }) error!: IField['error']
+  @Prop({ default: '' }) id!: string
+  @Prop({ default: false }) value!: boolean
   @Prop({ default: null }) props
 
   private selfId = this.id || uniqid(`input__`)
 }
 </script>
+
+<style lang="scss" scoped>
+@import '~@venice/styles/components/CheckboxRadio.module.scss';
+</style>
