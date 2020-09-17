@@ -2,6 +2,8 @@
 
 $arrow-size: 10px;
 $coordinate-space: 50%;
+$arrow-space-left: -20px;
+$arrow-shadow-space: -25px;
 
 .tooltip {
   align-items: center;
@@ -23,7 +25,9 @@ $coordinate-space: 50%;
       border-style: solid;
       border-width: ($arrow-size);
       content: '';
+      left: ($coordinate-space);
       position: absolute;
+      transform: translateX(-$coordinate-space);
     }
   }
 
@@ -47,6 +51,13 @@ $coordinate-space: 50%;
       background: var(--white);
       border-radius: var (-border-radius);
       box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+
+      &::before {
+        border-style: solid;
+        border-width: ($arrow-size + 2px);
+        content: '';
+        position: absolute;
+      }
     }
   }
 
@@ -72,14 +83,9 @@ $coordinate-space: 50%;
 
         &::before {
           border-color: var(--gray-2) transparent transparent transparent;
-          border-style: solid;
-          border-width: ($arrow-size + 2px);
-          content: '';
-          left: 42%;
-          position: absolute;
-          top: 127%;
+          left: ($coordinate-space);
+          top: calc(100% + 1px);
           transform: translateX(-$coordinate-space);
-          transform: translateY(-$coordinate-space);
         }
       }
     }
@@ -93,7 +99,7 @@ $coordinate-space: 50%;
 
       &::after {
         border-color: transparent var(--default-color) transparent transparent;
-        left: -20px;
+        left: ($arrow-space-left);
         top: ($coordinate-space);
         transform: translateY(-$coordinate-space);
       }
@@ -107,11 +113,7 @@ $coordinate-space: 50%;
 
         &::before {
           border-color: transparent var(--gray-2) transparent transparent;
-          border-style: solid;
-          border-width: ($arrow-size + 2px);
-          content: '';
-          position: absolute;
-          right: 100%;
+          left: ($arrow-shadow-space);
           top: ($coordinate-space);
           transform: translateY(-$coordinate-space);
         }
