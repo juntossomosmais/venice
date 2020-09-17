@@ -1,6 +1,6 @@
 @import '~@venice/styles/core';
 
-$arrow-size: 5px;
+$arrow-size: 10px;
 
 .tooltip {
   align-items: center;
@@ -23,6 +23,16 @@ $arrow-size: 5px;
       border-width: ($arrow-size);
       content: '';
       position: absolute;
+    }
+
+    &::before {
+      border-color: transparent var(--gray-2) transparent transparent;
+      border-style: solid;
+      border-width: ($arrow-size + 2px);
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
@@ -68,6 +78,16 @@ $arrow-size: 5px;
       .tooltipContent::after {
         border-color: var(--white) transparent transparent transparent;
       }
+
+      .tooltipContent::before {
+        border-color: transparent var(--gray-2) transparent transparent;
+        border-style: solid;
+        border-width: ($arrow-size + 2px);
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
 
@@ -78,7 +98,7 @@ $arrow-size: 5px;
 
       &::after {
         border-color: transparent var(--default-color) transparent transparent;
-        left: -10px;
+        left: -20px;
         top: 50%;
         transform: translateY(-50%);
         transform: translateY(-50%);
