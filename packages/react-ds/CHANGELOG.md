@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.24.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.23.0...@juntossomosmais/venice-react@0.24.0) (2020-09-17)
+
+
+### Bug Fixes
+
+* fontello folder path on start script ([303c621](https://github.com/juntossomosmais/venice/commit/303c6210619a7e546e68c0ccbcda3c59b0c7ac54))
+
+
+### Features
+
+* add public folder to build-storybook ([1175085](https://github.com/juntossomosmais/venice/commit/117508594b9cfe223fd3e2cd63482219ca0c48c7))
+
+
+
+
+
 # [0.23.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.22.2...@juntossomosmais/venice-react@0.23.0) (2020-09-16)
 
 
