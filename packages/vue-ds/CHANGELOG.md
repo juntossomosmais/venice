@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.14.3...@juntossomosmais/venice-vue@0.15.0) (2020-09-17)
+
+
+### Bug Fixes
+
+* fontello folder path on start script ([303c621](https://github.com/juntossomosmais/venice/commit/303c6210619a7e546e68c0ccbcda3c59b0c7ac54))
+
+
+### Features
+
+* add public folder to build-storybook ([1175085](https://github.com/juntossomosmais/venice/commit/117508594b9cfe223fd3e2cd63482219ca0c48c7))
+
+
+
+
+
 ## [0.14.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.14.2...@juntossomosmais/venice-vue@0.14.3) (2020-09-16)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue
