@@ -1,6 +1,7 @@
 @import '~@venice/styles/core';
 
 $arrow-size: 10px;
+$coordinate-space: 50%;
 
 .tooltip {
   align-items: center;
@@ -53,8 +54,9 @@ $arrow-size: 10px;
     display: inline-block;
 
     .tooltipContent {
-      bottom: 150%;
-      left: -35%;
+      bottom: calc(100% + var(--space-sm));
+      left: ($coordinate-space);
+      transform: translateX(-$coordinate-space);
 
       &::after {
         border-color: var(--default-color) transparent transparent transparent;
@@ -76,8 +78,8 @@ $arrow-size: 10px;
           left: 42%;
           position: absolute;
           top: 127%;
-          transform: translateX(-50%);
-          transform: translateY(-50%);
+          transform: translateX(-$coordinate-space);
+          transform: translateY(-$coordinate-space);
         }
       }
     }
@@ -85,14 +87,15 @@ $arrow-size: 10px;
 
   &.right {
     .tooltipContent {
-      left: 100%;
-      margin-left: 10px;
+      left: calc(100% + var(--space));
+      top: ($coordinate-space);
+      transform: translateY(-$coordinate-space);
 
       &::after {
         border-color: transparent var(--default-color) transparent transparent;
         left: -20px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: ($coordinate-space);
+        transform: translateY(-$coordinate-space);
       }
     }
 
@@ -109,8 +112,8 @@ $arrow-size: 10px;
           content: '';
           position: absolute;
           right: 100%;
-          top: 50%;
-          transform: translateY(-50%);
+          top: ($coordinate-space);
+          transform: translateY(-$coordinate-space);
         }
       }
     }
