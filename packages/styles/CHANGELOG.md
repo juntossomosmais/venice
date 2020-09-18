@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.22.0...@venice/styles@0.22.1) (2020-09-18)
+
+
+### Bug Fixes
+
+* changed arrow css ([dfc0ba0](https://github.com/juntossomosmais/venice/commit/dfc0ba0eb231208369f6832ad9d5ab031c08c904))
+* changed arrow css ([925c691](https://github.com/juntossomosmais/venice/commit/925c6914e68e1f47bbe0412b8278b58971555958))
+* changed arrow css ([502a8f5](https://github.com/juntossomosmais/venice/commit/502a8f5c6f20ed52e4d3f00c117f91919db932fa))
+* coordinate-space ([0efa4be](https://github.com/juntossomosmais/venice/commit/0efa4be5c30d1464b7af12e61f6bf1ef6a4a20f1))
+* coordinate-space / changed css ([891054e](https://github.com/juntossomosmais/venice/commit/891054edfe5c7f31b6e745a7f829ea869302fd5b))
+
+
+
+
+
 # [0.22.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.21.1...@venice/styles@0.22.0) (2020-09-16)
 
 
