@@ -6,7 +6,7 @@
         :id="selfId"
         :checked="value"
         @change="$emit('input', $event.target.checked)"
-        v-bind="{ ...props }"
+        v-bind="$attrs"
       />
       <label v-if="label" :for="selfId" class="label">
         {{ label }}
@@ -23,15 +23,15 @@ import { IField } from '@juntossomosmais/venice-types'
 import uniqid from 'uniqid'
 import { Component, Vue, Prop } from 'vue-property-decorator'
 
-@Component({})
+@Component({
+  inheritAttrs: false,
+})
 export default class Checkbox extends Vue {
   @Prop({ default: '' }) label!: IField['label']
   @Prop({ default: '' }) error!: IField['error']
-  @Prop({ default: '' }) id!: string
   @Prop({ default: false }) value!: boolean
-  @Prop({ default: null }) props
 
-  private selfId = this.id || uniqid(`input__`)
+  private selfId = this.$attrs.id || uniqid(`input__`)
 }
 </script>
 

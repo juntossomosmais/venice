@@ -17,7 +17,7 @@ Checkbox is a content container for text, photos, and actions in the context of 
       components: { Checkbox },
       template: `
         <div class="row-items" style="display: flex">
-          <Checkbox label="label" v-model="checkbox" :props="props" style="flex: 1"/>
+          <Checkbox label="label" testeid="testeid" v-model="checkbox" style="flex: 1"/>
           <Checkbox label="label" id="venice-checkbox" v-model="checkbox1" style="flex: 1"/>
         </div>
       `,
@@ -25,15 +25,8 @@ Checkbox is a content container for text, photos, and actions in the context of 
         return {
           checkbox: false,
           checkbox1: true,
-          props: {
-            testid: 'testid',
-            name: 'chk1-label',
-          },
         }
-      },
-      created() {
-        console.log(this)
-      },
+      }
     }}
   </Story>
 </Preview>
@@ -46,17 +39,13 @@ Checkbox is a content container for text, photos, and actions in the context of 
       components: { Checkbox },
       template: `
         <div class="row-items" style="display: flex">
-          <Checkbox label="disabled" :props="props" style="flex: 1" />
-          <Checkbox label="disabled" :props="props" v-model="checkbox" style="flex: 1" />
+          <Checkbox label="disabled" disabled style="flex: 1" />
+          <Checkbox label="disabled" disabled v-model="checkbox" style="flex: 1" />
         </div>
       `,
       data() {
         return {
           checkbox: true,
-          props: {
-            disabled: true,
-            name: 'name',
-          },
         }
       },
     }}
