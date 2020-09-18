@@ -20,15 +20,15 @@ enum size {
 
 export interface IAlert extends HTMLElement {
   /**  'success' | 'danger' | 'toast' | 'vip' */
-  type?: type | string
+  type?: keyof typeof type | string
   /**  'primary' | 'secondary' | 'success' | 'danger' */
-  color?: color | string
+  color?: keyof typeof color | string
   /** boolean */
   closable?: boolean
   /** boolean */
   transparent?: boolean
   /**  'small' | 'medium' | 'large' */
-  size?: size | string
+  size?: keyof typeof size | string
   /** function */
   onClose?(): void
 }

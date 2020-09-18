@@ -60,13 +60,13 @@ export const Alert: React.FunctionComponent<
 }) => {
   const [closed, setClosed] = useState(false)
 
-  const selfType = TYPES[type.toLocaleLowerCase()] || TYPES.default
+  const selfType = TYPES[type.toLowerCase()] || TYPES.default
   const selfIcon = icon ?? selfType.icon
-  const selfColor = VALID_COLORS.includes(color.toLocaleLowerCase())
+  const selfColor = VALID_COLORS.includes(color.toLowerCase())
     ? color
     : selfType.color || TYPES.default.color
 
-  const isValidSize = VALID_SIZES.includes(size.toLocaleLowerCase())
+  const isValidSize = VALID_SIZES.includes(size.toLowerCase())
   const isClosable = (closable ?? selfType.closable) || Boolean(onClose)
 
   useEffect(() => {
@@ -84,13 +84,15 @@ export const Alert: React.FunctionComponent<
     },
     className
   )
+  const iconProps = { className: styles.icon }
+
   return closed ? null : (
     <div className={styleContainer} {...rest}>
       {selfIcon && React.isValidElement(selfIcon) && (
         <span
           className={classNames(styles['icon-place'], styles['icon-alert'])}
         >
-          {React.cloneElement(selfIcon, { className: styles.icon })}
+          {React.cloneElement(selfIcon, iconProps)}
         </span>
       )}
       <div>{children}</div>
