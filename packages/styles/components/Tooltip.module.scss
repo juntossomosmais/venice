@@ -1,6 +1,9 @@
 @import '~@venice/styles/core';
 
-$arrow-size: 5px;
+$arrow-size: 10px;
+$coordinate-space: 50%;
+$arrow-space-left: -20px;
+$arrow-shadow-space: -25px;
 
 .tooltip {
   align-items: center;
@@ -22,7 +25,9 @@ $arrow-size: 5px;
       border-style: solid;
       border-width: ($arrow-size);
       content: '';
+      left: ($coordinate-space);
       position: absolute;
+      transform: translateX(-$coordinate-space);
     }
   }
 
@@ -46,6 +51,13 @@ $arrow-size: 5px;
       background: var(--white);
       border-radius: var (-border-radius);
       box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+
+      &::before {
+        border-style: solid;
+        border-width: ($arrow-size + 2px);
+        content: '';
+        position: absolute;
+      }
     }
   }
 
@@ -53,52 +65,58 @@ $arrow-size: 5px;
     display: inline-block;
 
     .tooltipContent {
-      bottom: 150%;
-      left: -35%;
+      bottom: calc(100% + var(--space-sm));
+      left: ($coordinate-space);
+      transform: translateX(-$coordinate-space);
 
       &::after {
         border-color: var(--default-color) transparent transparent transparent;
-        left: 50%;
-        margin-left: (-$arrow-size);
         top: 100%;
       }
     }
 
     &.light {
-      .tooltipContent::after {
-        border-color: var(--white) transparent transparent transparent;
+      .tooltipContent {
+        &::after {
+          border-color: var(--white) transparent transparent transparent;
+        }
+
+        &::before {
+          border-color: var(--gray-2) transparent transparent transparent;
+          left: ($coordinate-space);
+          top: calc(100% + 1px);
+          transform: translateX(-$coordinate-space);
+        }
       }
     }
   }
 
   &.right {
     .tooltipContent {
-      left: 100%;
-      margin-left: 10px;
+      left: calc(100% + var(--space));
+      top: ($coordinate-space);
+      transform: translateY(-$coordinate-space);
 
       &::after {
         border-color: transparent var(--default-color) transparent transparent;
-        left: -10px;
-        top: 50%;
-        transform: translateY(-50%);
-        transform: translateY(-50%);
+        left: ($arrow-space-left);
+        top: ($coordinate-space);
+        transform: translateY(-$coordinate-space);
       }
     }
 
     &.light {
-      .tooltipContent::after {
-        border-color: transparent var(--white) transparent transparent;
-      }
+      .tooltipContent {
+        &::after {
+          border-color: transparent var(--white) transparent transparent;
+        }
 
-      .tooltipContent::before {
-        border-color: transparent var(--gray-2) transparent transparent;
-        border-style: solid;
-        border-width: ($arrow-size + 2px);
-        content: '';
-        position: absolute;
-        right: 100%;
-        top: 50%;
-        transform: translateY(-50%);
+        &::before {
+          border-color: transparent var(--gray-2) transparent transparent;
+          left: ($arrow-shadow-space);
+          top: ($coordinate-space);
+          transform: translateY(-$coordinate-space);
+        }
       }
     }
   }
