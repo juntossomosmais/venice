@@ -14,12 +14,8 @@ import {
   TimesCircle,
 } from '../Icons'
 
-const iconProps = {
-  width: '16px',
-  height: '16px',
-}
-
 export const VALID_COLORS = ['primary', 'secondary', 'success', 'danger']
+export const VALID_SIZES = ['small', 'medium', 'large']
 export const TYPES = {
   default: {
     color: 'primary',
@@ -58,6 +54,8 @@ export const Alert: React.FunctionComponent<
   closable,
   onClose,
   type = '',
+  transparent = false,
+  size = '',
   ...rest
 }) => {
   const [closed, setClosed] = useState(false)
@@ -67,7 +65,10 @@ export const Alert: React.FunctionComponent<
   const selfColor = VALID_COLORS.includes(color.toLocaleLowerCase())
     ? color
     : selfType.color || TYPES.default.color
+
+  const isValidSize = VALID_SIZES.includes(size.toLocaleLowerCase())
   const isClosable = (closable ?? selfType.closable) || Boolean(onClose)
+
   useEffect(() => {
     if (closed && onClose) onClose()
   }, [closed])
@@ -76,25 +77,29 @@ export const Alert: React.FunctionComponent<
     styles.alert,
     styles[selfColor],
     {
+      [styles[size]]: isValidSize,
       [styles['with-icon']]: Boolean(selfIcon),
       [styles['with-close']]: isClosable,
+      [styles['with-bg']]: !transparent,
     },
     className
   )
   return closed ? null : (
     <div className={styleContainer} {...rest}>
       {selfIcon && React.isValidElement(selfIcon) && (
-        <span className={classNames(styles.icon, styles['icon-alert'])}>
-          {React.cloneElement(selfIcon, iconProps)}
+        <span
+          className={classNames(styles['icon-place'], styles['icon-alert'])}
+        >
+          {React.cloneElement(selfIcon, { className: styles.icon })}
         </span>
       )}
       <div>{children}</div>
       {isClosable && (
         <span
-          className={classNames(styles.icon, styles['icon-close'])}
+          className={classNames(styles['icon-place'], styles['icon-close'])}
           onClick={() => setClosed(true)}
         >
-          <TimesCircle {...iconProps} />
+          <TimesCircle className={styles.icon} />
         </span>
       )}
     </div>
