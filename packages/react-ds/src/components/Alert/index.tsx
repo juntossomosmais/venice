@@ -16,6 +16,8 @@ import {
 
 export const VALID_COLORS = ['primary', 'secondary', 'success', 'danger']
 export const VALID_SIZES = ['small', 'medium', 'large']
+export const VALID_VARIANTS = ['filled', 'transparent']
+
 export const TYPES = {
   default: {
     color: 'primary',
@@ -54,7 +56,7 @@ export const Alert: React.FunctionComponent<
   closable,
   onClose,
   type = '',
-  transparent = false,
+  variant = '',
   size = '',
   ...rest
 }) => {
@@ -65,6 +67,9 @@ export const Alert: React.FunctionComponent<
   const selfColor = VALID_COLORS.includes(color.toLowerCase())
     ? color
     : selfType.color || TYPES.default.color
+  const selfVariant = VALID_VARIANTS.includes(variant.toLowerCase())
+    ? variant
+    : VALID_VARIANTS[0]
 
   const isValidSize = VALID_SIZES.includes(size.toLowerCase())
   const isClosable = (closable ?? selfType.closable) || Boolean(onClose)
@@ -76,11 +81,11 @@ export const Alert: React.FunctionComponent<
   const styleContainer = classNames(
     styles.alert,
     styles[selfColor],
+    [styles[selfVariant]],
     {
       [styles[size]]: isValidSize,
       [styles['with-icon']]: Boolean(selfIcon),
       [styles['with-close']]: isClosable,
-      [styles['with-bg']]: !transparent,
     },
     className
   )

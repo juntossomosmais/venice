@@ -18,6 +18,11 @@ enum size {
   'large',
 }
 
+enum variants {
+  'filled',
+  'transparent',
+}
+
 export interface IAlert extends HTMLElement {
   /**  'success' | 'danger' | 'toast' | 'vip' */
   type?: keyof typeof type | string
@@ -25,8 +30,8 @@ export interface IAlert extends HTMLElement {
   color?: keyof typeof color | string
   /** boolean */
   closable?: boolean
-  /** boolean */
-  transparent?: boolean
+  /**  'transparent' | 'filled' */
+  variants?: keyof typeof variants | string
   /**  'small' | 'medium' | 'large' */
   size?: keyof typeof size | string
   /** function */

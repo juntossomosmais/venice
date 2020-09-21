@@ -3,9 +3,9 @@
 $colors: 'primary' var(--primary-color), 'secondary' var(--secondary-color),
   'success' var(--success-color), 'danger' var(--danger-color);
 
-$icon-sz-sm: 12px;
-$icon-sz: var(--space-sm);
-$icon-sz-lg: 24px;
+$icon-size-sm: 12px;
+$icon-size: var(--space-sm);
+$icon-size-lg: 24px;
 
 @mixin icon-size($iconSize) {
   .icon-alert {
@@ -23,9 +23,9 @@ $icon-sz-lg: 24px;
   justify-content: center;
 
   .icon {
-    font-size: $icon-sz;
-    height: $icon-sz;
-    width: $icon-sz;
+    font-size: $icon-size;
+    height: $icon-size;
+    width: $icon-size;
   }
 
   &.icon-alert {
@@ -51,26 +51,26 @@ $icon-sz-lg: 24px;
   padding: var(--space-sm);
   position: relative;
 
-  @include icon-size($icon-sz);
+  @include icon-size($icon-size);
 
   &.small {
     font: var(--typography-caption-font);
 
-    @include icon-size($icon-sz-sm);
+    @include icon-size($icon-size-sm);
   }
 
   &.large {
     font: var(--typography-title-font);
 
-    @include icon-size($icon-sz-lg);
+    @include icon-size($icon-size-lg);
   }
 
-  &.with-bg {
+  &.filled {
     background: var(--gray-1);
     border: 1px solid var(--gray-2);
   }
 
-  &:not(.with-bg) {
+  &.transparent {
     margin-top: var(--space);
   }
 
@@ -78,11 +78,11 @@ $icon-sz-lg: 24px;
     grid-template-columns: var(--space-sm) 1fr;
 
     &.small {
-      grid-template-columns: $icon-sz-sm 1fr;
+      grid-template-columns: $icon-size-sm 1fr;
     }
 
     &.large {
-      grid-template-columns: $icon-sz-lg 1fr;
+      grid-template-columns: $icon-size-lg 1fr;
     }
   }
 
@@ -93,11 +93,11 @@ $icon-sz-lg: 24px;
       grid-template-columns: var(--space-sm) 1fr var(--space-sm);
 
       &.small {
-        grid-template-columns: $icon-sz-sm 1fr var(--space-sm);
+        grid-template-columns: $icon-size-sm 1fr var(--space-sm);
       }
 
       &.large {
-        grid-template-columns: $icon-sz-lg 1fr var(--space-sm);
+        grid-template-columns: $icon-size-lg 1fr var(--space-sm);
       }
     }
   }
