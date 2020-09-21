@@ -18,7 +18,7 @@ enum size {
   'large',
 }
 
-enum variants {
+enum variant {
   'filled',
   'transparent',
 }
@@ -31,7 +31,7 @@ export interface IAlert extends HTMLElement {
   /** boolean */
   closable?: boolean
   /**  'transparent' | 'filled' */
-  variants?: keyof typeof variants | string
+  variant?: keyof typeof variant | string
   /**  'small' | 'medium' | 'large' */
   size?: keyof typeof size | string
   /** function */
