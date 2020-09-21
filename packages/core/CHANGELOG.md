@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.22.0...@venice/core@0.23.0) (2020-09-17)
+
+
+### Features
+
+* added description ([78b2b72](https://github.com/juntossomosmais/venice/commit/78b2b723d9b837c022b9e24048e772a92c7be428))
+* added storybook integration ([f8b9c91](https://github.com/juntossomosmais/venice/commit/f8b9c91ad1d3b95e907caf903f93a0278c42871f))
+
+
+
+
+
+# [0.22.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.21.0...@venice/core@0.22.0) (2020-09-16)
+
+
+### Features
+
+* changed css ([3ebcb88](https://github.com/juntossomosmais/venice/commit/3ebcb8887f8222c0eed88a37aa7b3f5a8d4d07fb))
+
+
+
+
+
 # [0.21.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.20.0...@venice/core@0.21.0) (2020-09-10)
 
 

@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.24.0...@juntossomosmais/venice-react@0.24.2) (2020-09-18)
+
+**Note:** Version bump only for package @juntossomosmais/venice-react
+
+
+
+
+
+# [0.24.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.23.0...@juntossomosmais/venice-react@0.24.0) (2020-09-17)
+
+
+### Bug Fixes
+
+* fontello folder path on start script ([303c621](https://github.com/juntossomosmais/venice/commit/303c6210619a7e546e68c0ccbcda3c59b0c7ac54))
+
+
+### Features
+
+* add public folder to build-storybook ([1175085](https://github.com/juntossomosmais/venice/commit/117508594b9cfe223fd3e2cd63482219ca0c48c7))
+
+
+
+
+
+# [0.23.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.22.2...@juntossomosmais/venice-react@0.23.0) (2020-09-16)
+
+
+### Features
+
+* add changed css ([398aaf1](https://github.com/juntossomosmais/venice/commit/398aaf17b4e6172cbaef736b3e6d5b1f7db404d6))
+* add props show ([4478093](https://github.com/juntossomosmais/venice/commit/44780930b87206d27563f4c1060b34ef440a3ecf))
+* add test ([d5b7416](https://github.com/juntossomosmais/venice/commit/d5b7416608ede08fecec40ee8d69502f648718b8))
+* add test ([0742e86](https://github.com/juntossomosmais/venice/commit/0742e867187f6ee4270f78c51a7fcbd207e7e5ef))
+* changed css ([3ebcb88](https://github.com/juntossomosmais/venice/commit/3ebcb8887f8222c0eed88a37aa7b3f5a8d4d07fb))
+* first commit ([63cce0c](https://github.com/juntossomosmais/venice/commit/63cce0cd460370322ca56dc7f4105c91497c43de))
+* preview - Theme and Position ([aff079b](https://github.com/juntossomosmais/venice/commit/aff079b4c2245c10a7713a7a0ccdfc1638ac86ca))
+* retired test ([e0e36b7](https://github.com/juntossomosmais/venice/commit/e0e36b79fea33fb61355e99fcfe37cd1a4f2ec29))
+* test failed ([a48d99e](https://github.com/juntossomosmais/venice/commit/a48d99e24c6b9ac918b8e679da38e3fb337f0b93))
+
+
+
+
+
+## [0.22.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.22.0...@juntossomosmais/venice-react@0.22.2) (2020-09-14)
+
+**Note:** Version bump only for package @juntossomosmais/venice-react
+
+
+
+
+
 # [0.22.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.21.0...@juntossomosmais/venice-react@0.22.0) (2020-09-10)
 
 

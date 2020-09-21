@@ -14,12 +14,10 @@ import {
   TimesCircle,
 } from '../Icons'
 
-const iconProps = {
-  width: '16px',
-  height: '16px',
-}
-
 export const VALID_COLORS = ['primary', 'secondary', 'success', 'danger']
+export const VALID_SIZES = ['small', 'medium', 'large']
+export const VALID_VARIANTS = ['filled', 'transparent']
+
 export const TYPES = {
   default: {
     color: 'primary',
@@ -58,16 +56,24 @@ export const Alert: React.FunctionComponent<
   closable,
   onClose,
   type = '',
+  variant = '',
+  size = '',
   ...rest
 }) => {
   const [closed, setClosed] = useState(false)
 
-  const selfType = TYPES[type.toLocaleLowerCase()] || TYPES.default
+  const selfType = TYPES[type.toLowerCase()] || TYPES.default
   const selfIcon = icon ?? selfType.icon
-  const selfColor = VALID_COLORS.includes(color.toLocaleLowerCase())
+  const selfColor = VALID_COLORS.includes(color.toLowerCase())
     ? color
     : selfType.color || TYPES.default.color
+  const selfVariant = VALID_VARIANTS.includes(variant.toLowerCase())
+    ? variant
+    : VALID_VARIANTS[0]
+
+  const isValidSize = VALID_SIZES.includes(size.toLowerCase())
   const isClosable = (closable ?? selfType.closable) || Boolean(onClose)
+
   useEffect(() => {
     if (closed && onClose) onClose()
   }, [closed])
@@ -75,26 +81,32 @@ export const Alert: React.FunctionComponent<
   const styleContainer = classNames(
     styles.alert,
     styles[selfColor],
+    [styles[selfVariant]],
     {
+      [styles[size]]: isValidSize,
       [styles['with-icon']]: Boolean(selfIcon),
       [styles['with-close']]: isClosable,
     },
     className
   )
+  const iconProps = { className: styles.icon }
+
   return closed ? null : (
     <div className={styleContainer} {...rest}>
       {selfIcon && React.isValidElement(selfIcon) && (
-        <span className={classNames(styles.icon, styles['icon-alert'])}>
+        <span
+          className={classNames(styles['icon-place'], styles['icon-alert'])}
+        >
           {React.cloneElement(selfIcon, iconProps)}
         </span>
       )}
       <div>{children}</div>
       {isClosable && (
         <span
-          className={classNames(styles.icon, styles['icon-close'])}
+          className={classNames(styles['icon-place'], styles['icon-close'])}
           onClick={() => setClosed(true)}
         >
-          <TimesCircle {...iconProps} />
+          <TimesCircle className={styles.icon} />
         </span>
       )}
     </div>

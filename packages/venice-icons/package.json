@@ -1,0 +1,31 @@
+{
+  "name": "@juntossomosmais/venice-icons",
+  "version": "0.1.0",
+  "description": "Icons used on Juntos Somos Mais applications",
+  "homepage": "https://github.com/juntossomosmais/venice/tree/master/packages/venice-icons#readme",
+  "license": "Apache-2.0",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juntossomosmais/venice.git",
+    "directory": "packages/venice-icons"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "node src/buildPackage.js",
+    "prepare": "yarn build"
+  },
+  "bugs": {
+    "url": "https://github.com/juntossomosmais/venice/issues"
+  },
+  "dependencies": {
+    "@storybook/addon-docs": "5.3.18",
+    "babel-loader": "^8.1.0"
+  }
+}

@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.22.0...@venice/styles@0.22.1) (2020-09-18)
+
+
+### Bug Fixes
+
+* changed arrow css ([dfc0ba0](https://github.com/juntossomosmais/venice/commit/dfc0ba0eb231208369f6832ad9d5ab031c08c904))
+* changed arrow css ([925c691](https://github.com/juntossomosmais/venice/commit/925c6914e68e1f47bbe0412b8278b58971555958))
+* changed arrow css ([502a8f5](https://github.com/juntossomosmais/venice/commit/502a8f5c6f20ed52e4d3f00c117f91919db932fa))
+* coordinate-space ([0efa4be](https://github.com/juntossomosmais/venice/commit/0efa4be5c30d1464b7af12e61f6bf1ef6a4a20f1))
+* coordinate-space / changed css ([891054e](https://github.com/juntossomosmais/venice/commit/891054edfe5c7f31b6e745a7f829ea869302fd5b))
+
+
+
+
+
+# [0.22.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.21.1...@venice/styles@0.22.0) (2020-09-16)
+
+
+### Features
+
+* add changed css ([398aaf1](https://github.com/juntossomosmais/venice/commit/398aaf17b4e6172cbaef736b3e6d5b1f7db404d6))
+* add changed css/sass ([10d2eb6](https://github.com/juntossomosmais/venice/commit/10d2eb603fdc65dec125a9ba405030fc39f1a69d))
+* add props show ([4478093](https://github.com/juntossomosmais/venice/commit/44780930b87206d27563f4c1060b34ef440a3ecf))
+* changed css ([3ebcb88](https://github.com/juntossomosmais/venice/commit/3ebcb8887f8222c0eed88a37aa7b3f5a8d4d07fb))
+* changed css - position ([d87190b](https://github.com/juntossomosmais/venice/commit/d87190b2b930d495d372d05fa7609d9e814d4873))
+* changed css - position ([e8164fe](https://github.com/juntossomosmais/venice/commit/e8164fedd4173c5ce7d9c162a3abea5cb76f480a))
+* retired box-sizing ([b16967c](https://github.com/juntossomosmais/venice/commit/b16967cfcae6b85216ebb9f55e535ea502978f45))
+
+
+
+
+
+## [0.21.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.21.0...@venice/styles@0.21.1) (2020-09-14)
+
+
+### Bug Fixes
+
+* removed outline border from components with focus ([597496c](https://github.com/juntossomosmais/venice/commit/597496ca25f4dff21eec9c8c4886ff3b9008a6bb))
+
+
+
+
+
 # [0.21.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.20.0...@venice/styles@0.21.0) (2020-09-10)
 
 
