@@ -10,9 +10,7 @@
   line-height: var(--typography-body-letter);
 
   :root & > * {
-    &a:hover {
-      text-decoration: underline;
-    }
+    text-decoration: none;
   }
 
   &:not(:last-child) {
@@ -22,13 +20,24 @@
       margin-left: var(--space-xs);
       margin-right: var(--space-xs);
     }
+
+    :root & > a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &:last-child {
     :root & > * {
       cursor: default;
       font-weight: 600;
-      text-decoration: none;
+    }
+
+    :root & > a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
