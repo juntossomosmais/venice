@@ -1,0 +1,54 @@
+@import '~@venice/styles/core';
+
+.breadcrumb {
+  display: flex;
+}
+
+.breadcrumbItem {
+  display: inline-block;
+  font: var(--typography-body-font);
+  line-height: var(--typography-body-letter);
+
+  :root & > * {
+    &a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:not(:last-child) {
+    &::after {
+      content: '/';
+      display: inline-block;
+      margin-left: var(--space-xs);
+      margin-right: var(--space-xs);
+    }
+  }
+
+  &:last-child {
+    :root & > * {
+      cursor: default;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}
+
+.default {
+  .breadcrumbItem {
+    color: var(--text-color);
+
+    :root & > * {
+      color: var(--text-color);
+    }
+  }
+}
+
+.contrast {
+  .breadcrumbItem {
+    color: var(--white);
+
+    :root & > * {
+      color: var(--white);
+    }
+  }
+}
