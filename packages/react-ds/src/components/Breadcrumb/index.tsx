@@ -5,9 +5,19 @@ import classNames from 'classnames/bind'
 
 import styles from '@venice/styles/components/Breadcrumb.module.scss'
 
-export const Breadcrumb: React.FunctionComponent<
-  IBreadcrumb & React.HTMLAttributes<HTMLOrSVGElement>
-> = ({ children, color = 'default', className = '', ...rest }) => {
+export interface IBreadcrumbProps extends IBreadcrumb {
+  /** string */
+  className?: string
+  /** React Element */
+  children?: React.ReactNode
+}
+
+export const Breadcrumb: React.FunctionComponent<IBreadcrumbProps> = ({
+  children,
+  color = 'default',
+  className = '',
+  ...rest
+}) => {
   return (
     <nav
       className={classNames(styles.breadcrumb, styles[color], className)}
