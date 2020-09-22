@@ -1,6 +1,6 @@
 export * from './IAlert'
-export * from './IButton'
 export * from './IBreadcrumb'
+export * from './IButton'
 export * from './IDynamicComponent'
 export * from './IField'
 export * from './IIcon'
