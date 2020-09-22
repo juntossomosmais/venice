@@ -1,26 +1,80 @@
 @import '~@venice/styles/core';
 
+$checkbox-border: 2px;
+$checkbox-size: 14px;
+$checkbox-opacity: 0.55;
+
 .container {
-  div {
-    display: flex;
-  }
+  display: flex;
+  font: var(--typography-body2-font);
 }
 
 .label {
-  color: var(--gray-4);
-  font: var(--typography-caption-font);
-  margin-left: var(--space-xs);
+  cursor: pointer;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:hover .checkbox:not(:disabled) ~ .customCheckbox {
+    border-color: var(--secondary-color-lighten);
+  }
 }
 
-.error {
-  color: var(--danger-color);
-  font: var(--typography-caption-font);
-  margin-top: var(--space-xxs);
+.checkbox {
+  cursor: pointer;
+  height: 0;
+  opacity: 0;
+  width: 0;
 
-  svg {
-    fill: var(--danger-color);
-    height: 14px;
-    margin-right: var(--space-xxs);
-    width: 14px;
+  &:disabled {
+    ~ .customCheckbox {
+      opacity: $checkbox-opacity;
+
+      &::before {
+        background-color: var(--disabled-color);
+        display: block;
+      }
+    }
+
+    &:not(:checked) ~ .customCheckbox::before {
+      color: var(--disabled-color);
+    }
+  }
+
+  &:not(:disabled):checked {
+    ~ .customCheckbox {
+      background-color: var(--secondary-color-lighten);
+
+      &::before {
+        background-color: var(--secondary-color-lighten);
+        display: block;
+      }
+    }
+  }
+}
+
+.customCheckbox {
+  background-color: var(--secondary-color-contrast);
+  border: $checkbox-border solid var(--gray-3);
+  border-radius: $checkbox-border;
+  font-size: $checkbox-size;
+  height: $checkbox-size;
+  margin-right: var(--space-xs);
+  position: relative;
+  width: $checkbox-size;
+
+  &::before {
+    border-radius: $checkbox-border;
+    color: var(--secondary-color-contrast);
+    display: none;
+    height: $checkbox-size;
+    left: calc(#{$checkbox-border} * -1);
+    margin-left: unset;
+    margin-right: unset;
+    position: absolute;
+    top: calc(#{$checkbox-border} * -1);
+    width: $checkbox-size;
   }
 }
