@@ -6,7 +6,7 @@ import styles from '@venice/styles/components/Icon.module.scss'
 
 const defaultProps = {
   fill: '',
-  size: 24,
+  size: '',
   viewBox: '0 0 24 24',
 }
 
@@ -17,15 +17,28 @@ export const Icon = (
     ...defaultProps,
     ...props,
   }
+  const selfSize = !size
+    ? {}
+    : {
+        width: size,
+        height: size,
+      }
+
+  const selfFill =
+    !fill && !styles[fill]
+      ? {}
+      : {
+          fill: styles[fill] || fill,
+        }
+
   return (
     <svg
-      width={size}
-      height={size}
+      {...selfSize}
       xmlns="http://www.w3.org/2000/svg"
       className={classNames(styles.icon, styles[fill], className)}
       {...selfProps}
     >
-      <Component fill={!styles[fill] ? fill : ''} />
+      <Component {...selfFill} />
       {children}
     </svg>
   )
