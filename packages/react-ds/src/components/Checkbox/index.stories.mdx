@@ -17,7 +17,12 @@ import { Checkbox } from '.'
   <Story name="Base" decorators={[withKnobs, withA11y]}>
     <form className="row-items" style={{ display: 'flex' }}>
       <Checkbox label="label" style={{ flex: '1' }} />
-      <Checkbox label="label" placeholder="placeholder" style={{ flex: '1' }} />
+      <Checkbox
+        label="label"
+        id="venice-checkbox"
+        defaultChecked
+        style={{ flex: '1' }}
+      />
     </form>
   </Story>
 </Preview>
@@ -30,19 +35,10 @@ import { Checkbox } from '.'
       <Checkbox label="disabled" disabled style={{ flex: '1' }} />
       <Checkbox
         label="disabled"
-        placeholder="placeholder"
         disabled
+        defaultChecked
         style={{ flex: '1' }}
       />
-      <Checkbox label="disabled" value="value" disabled style={{ flex: '1' }} />
     </div>
-  </Story>
-</Preview>
-
-## Validation
-
-<Preview>
-  <Story name="Validation" decorators={[withKnobs, withA11y]}>
-    <Checkbox label="Error Sample" error="Errors will be displayed here" />
   </Story>
 </Preview>

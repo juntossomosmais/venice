@@ -6,8 +6,6 @@ import uniqid from 'uniqid'
 
 import styles from '@venice/styles/components/CheckboxRadio.module.scss'
 
-import Alert from '../Icons/Alert'
-
 const InternalCheckbox = (
   {
     id,
@@ -20,29 +18,21 @@ const InternalCheckbox = (
   ref?: React.Ref<HTMLInputElement>
 ) => {
   const selfId = id || uniqid(`input__`)
-  const styleContainer = classNames(
-    styles.container,
-    { [styles.invalid]: Boolean(error) },
-    className
-  )
+  const styleContainer = classNames(styles.container, className)
 
   return (
     <div className={styleContainer} style={style}>
-      <div>
-        <input type="checkbox" id={selfId} {...props} ref={ref} />
-        {label && (
-          <label htmlFor={selfId} className={styles.label}>
-            {label}
-          </label>
-        )}
-      </div>
-      {/* TODO: Replace for alert component */}
-      {error && (
-        <div className={styles.error}>
-          <Alert />
-          {error}
-        </div>
-      )}
+      <label htmlFor={selfId} className={styles.label}>
+        <input
+          className={styles.checkbox}
+          type="checkbox"
+          id={selfId}
+          {...props}
+          ref={ref}
+        />
+        <span className={`${styles.customCheckbox} jsm-icon-check`}></span>
+        {label}
+      </label>
     </div>
   )
 }
