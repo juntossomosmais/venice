@@ -1,20 +1,17 @@
 <template>
   <div class="container">
-    <div>
+    <label :for="selfId" class="label">
       <input
+        class="checkbox"
         type="checkbox"
         :id="selfId"
         :checked="value"
         @change="$emit('input', $event.target.checked)"
         v-bind="$attrs"
       />
-      <label v-if="label" :for="selfId" class="label">
-        {{ label }}
-      </label>
-    </div>
-    <div v-if="error" class="error">
-      {{ error }}
-    </div>
+      <span class="customCheckbox jsm-icon-check"></span>
+      {{ label }}
+    </label>
   </div>
 </template>
 
@@ -28,7 +25,6 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 })
 export default class Checkbox extends Vue {
   @Prop({ default: '' }) label!: IField['label']
-  @Prop({ default: '' }) error!: IField['error']
   @Prop({ default: false }) value!: boolean
 
   private selfId = this.$attrs.id || uniqid(`input__`)

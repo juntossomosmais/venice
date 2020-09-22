@@ -14,29 +14,14 @@ const ATTRS_WITH_DISABLED = { disabled: 'disabled', id: 'id' }
 const ID_SELECTOR = '#id'
 const ERRO_SELECTOR = '.error'
 const LABEL_SELECTOR = '.label'
-const FEED_BACK_ERROR = 'Errors will be displayed here'
 
 describe('<Checkbox />', () => {
   it('Should display the base input', () => {
     // given
     const container = mount(Checkbox)
-    const errorDOM = container.find(ERRO_SELECTOR)
 
     // then
-    expect(errorDOM.element).toBeUndefined()
-  })
-
-  it('Should display errors in the input', () => {
-    // given
-    const container = mount(Checkbox, {
-      propsData: {
-        error: FEED_BACK_ERROR,
-      },
-    })
-    const errorDOM = container.find(ERRO_SELECTOR)
-
-    // then
-    expect(errorDOM.exists()).toBeTruthy()
+    expect(container.exists()).toBeTruthy()
   })
 
   it('Should change value of checkbox by clicking label', async () => {
