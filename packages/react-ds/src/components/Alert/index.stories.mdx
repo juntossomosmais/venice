@@ -20,19 +20,72 @@ import { Check } from '../Icons'
 <Preview>
   <Story name="Base">
     <div>
-      <Alert>Default</Alert> <br/>
-      <Alert closable>Closable</Alert> <br/>
-      <Alert icon={false}>Whitout icon</Alert> <br/>
+      <Alert>Default</Alert> <br />
+      <Alert closable>Closable</Alert> <br />
+      <Alert icon={false}>Whitout icon</Alert> <br />
       <Alert closable icon={false}>
         Whitout icon and closable
-      </Alert><br/>
-      <Alert onClose={() => alert('Alert was Closed') }>
+      </Alert>
+      <br />
+      <Alert onClose={() => alert('Alert was Closed')}>
         Whitout <code>onClose</code> event
-      </Alert><br/>
+      </Alert>
+      <br />
       <Alert>
-        Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.<br/>
-        Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. A ordem dos tratores não altera o pão duris. Quem num gosta di mé, boa gentis num é.<br/>
-        Mé faiz elementum girarzis, nisi eros vermeio. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+        Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma
+        pindureta. Interessantiss quisso pudia ce receita de bolis, mais bolis
+        eu num gostis. Praesent malesuada urna nisi, quis volutpat erat
+        hendrerit non. Nam vulputate dapibus. Tá deprimidis, eu conheço uma
+        cachacis que pode alegrar sua vidis.
+        <br />
+        Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non
+        consequat odio. Em pé sem cair, deitado sem dormir, sentado sem cochilar
+        e fazendo pose. A ordem dos tratores não altera o pão duris. Quem num
+        gosta di mé, boa gentis num é.
+        <br />
+        Mé faiz elementum girarzis, nisi eros vermeio. Copo furadis é disculpa
+        de bebadis, arcu quam euismod magna. Suco de cevadiss deixa as pessoas
+        mais interessantis. Admodum accumsan disputationi eu sit. Vide electram
+        sadipscing et per.
+      </Alert>
+    </div>
+  </Story>
+</Preview>
+
+## Sizes
+
+<Preview>
+  <Story name="Sizes">
+    <div>
+      <Alert closable size="small">
+        small
+      </Alert>
+      <br />
+      <Alert closable size="medium">
+        medium
+      </Alert>
+      <br />
+      <Alert closable size="large">
+        large
+      </Alert>
+      <br />
+    </div>
+  </Story>
+</Preview>
+
+## Background
+
+<Preview>
+  <Story name="Background">
+    <div>
+      <Alert variant="transparent" size="small">
+        Without background
+      </Alert>
+      <Alert variant="transparent" size="medium">
+        Without background
+      </Alert>
+      <Alert variant="transparent" size="large">
+        Without background
       </Alert>
     </div>
   </Story>

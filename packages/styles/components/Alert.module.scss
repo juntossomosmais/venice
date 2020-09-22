@@ -3,46 +3,30 @@
 $colors: 'primary' var(--primary-color), 'secondary' var(--secondary-color),
   'success' var(--success-color), 'danger' var(--danger-color);
 
-$iconSize: var(--space-sm);
+$icon-size-sm: 12px;
+$icon-size: var(--space-sm);
+$icon-size-lg: 24px;
 
-.alert {
-  background: var(--gray-1);
-  border: 1px solid var(--gray-2);
-  border-radius: var(--border-radius);
-  display: grid;
-  font: var(--typography-body-font);
-  grid-gap: var(--space-sm);
-  padding: var(--space-sm);
-  position: relative;
-
-  &.with-icon {
-    grid-template-columns: var(--space-sm) 1fr;
-  }
-
-  &.with-close {
-    grid-template-columns: 1fr var(--space-sm);
-  }
-
-  &.with-icon.with-close {
-    grid-template-columns: var(--space-sm) 1fr var(--space-sm);
-  }
-
-  @each $type, $color in $colors {
-    &.#{$type} {
-      .icon-alert {
-        color: $color;
-      }
+@mixin icon-size($iconSize) {
+  .icon-alert {
+    .icon {
+      font-size: $iconSize;
+      height: $iconSize;
+      width: $iconSize;
     }
   }
 }
 
-.icon {
+.icon-place {
   align-items: center;
   display: flex;
-  font-size: $iconSize;
-  height: $iconSize;
   justify-content: center;
-  width: $iconSize;
+
+  .icon {
+    font-size: $icon-size;
+    height: $icon-size;
+    width: $icon-size;
+  }
 
   &.icon-alert {
     color: var(--primary-color);
@@ -54,6 +38,75 @@ $iconSize: var(--space-sm);
 
     &:hover {
       color: var(--gray-2);
+    }
+  }
+}
+
+.alert {
+  border-radius: var(--border-radius);
+  border-top: 1px solid var(--gray-2);
+  display: grid;
+  font: var(--typography-body-font);
+  grid-gap: var(--space-sm);
+  padding: var(--space-sm);
+  position: relative;
+
+  @include icon-size($icon-size);
+
+  &.small {
+    font: var(--typography-caption-font);
+
+    @include icon-size($icon-size-sm);
+  }
+
+  &.large {
+    font: var(--typography-title-font);
+
+    @include icon-size($icon-size-lg);
+  }
+
+  &.filled {
+    background: var(--gray-1);
+    border: 1px solid var(--gray-2);
+  }
+
+  &.transparent {
+    margin-top: var(--space);
+  }
+
+  &.with-icon {
+    grid-template-columns: var(--space-sm) 1fr;
+
+    &.small {
+      grid-template-columns: $icon-size-sm 1fr;
+    }
+
+    &.large {
+      grid-template-columns: $icon-size-lg 1fr;
+    }
+  }
+
+  &.with-close {
+    grid-template-columns: 1fr var(--space-sm);
+
+    &.with-icon {
+      grid-template-columns: var(--space-sm) 1fr var(--space-sm);
+
+      &.small {
+        grid-template-columns: $icon-size-sm 1fr var(--space-sm);
+      }
+
+      &.large {
+        grid-template-columns: $icon-size-lg 1fr var(--space-sm);
+      }
+    }
+  }
+
+  @each $type, $color in $colors {
+    &.#{$type} {
+      .icon-alert {
+        color: $color;
+      }
     }
   }
 }
