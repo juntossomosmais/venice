@@ -5,7 +5,6 @@ $checkbox-size: 14px;
 $checkbox-opacity: 0.55;
 
 .container {
-  display: flex;
   font: var(--typography-body2-font);
 }
 
@@ -76,5 +75,15 @@ $checkbox-opacity: 0.55;
     position: absolute;
     top: calc(#{$checkbox-border} * -1);
     width: $checkbox-size;
+  }
+}
+
+.error {
+  color: var(--danger-color);
+  font: var(--typography-caption-font);
+  margin-top: var(--space-xxs);
+
+  &::before {
+    margin-left: unset;
   }
 }

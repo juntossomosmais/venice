@@ -12,6 +12,9 @@
       <span class="customCheckbox jsm-icon-check"></span>
       {{ label }}
     </label>
+    <div v-if="error" class="error jsm-icon-alert">
+      {{ error }}
+    </div>
   </div>
 </template>
 
@@ -25,6 +28,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 })
 export default class Checkbox extends Vue {
   @Prop({ default: '' }) label!: IField['label']
+  @Prop({ default: '' }) error!: IField['error']
   @Prop({ default: false }) value!: boolean
 
   private selfId = this.$attrs.id || uniqid(`input__`)

@@ -51,3 +51,22 @@ Checkbox is a content container for text, photos, and actions in the context of 
     }}
   </Story>
 </Preview>
+
+## Validation
+
+`Please, avoid use it because will be removed in the future.`
+
+<Preview>
+  <Story
+    name="Validation"
+    parameters={{ decorators: [withA11y] }}
+    inline={true}
+  >
+    {{
+      components: { Checkbox },
+      template: `
+          <Checkbox label="Error sample" error="Errors will be displayed here" style="flex: 1" />
+      `,
+    }}
+  </Story>
+</Preview>
