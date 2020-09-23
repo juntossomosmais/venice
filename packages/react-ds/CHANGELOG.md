@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.24.2...@juntossomosmais/venice-react@0.25.0) (2020-09-23)
+
+
+### Features
+
+* **breadcrumb:** add react component ([1d68d5b](https://github.com/juntossomosmais/venice/commit/1d68d5b80c8b24f1b75c70d30976167e70987ec1))
+* **breadcrumb:** improve logic to react files ([962157f](https://github.com/juntossomosmais/venice/commit/962157f39b09a23c24551a14d766e8e31fd413b1))
+* change att transparent to variants=filled/transparent ([660a544](https://github.com/juntossomosmais/venice/commit/660a5446171c07d6d9ca3645380979bdd937afcf))
+* fixing build ([31b7645](https://github.com/juntossomosmais/venice/commit/31b764554cc85239aded37126280863a83c9b61d))
+* improving icons ([4775a90](https://github.com/juntossomosmais/venice/commit/4775a901581232286f84c672c546f4f872ecbaae))
+* update alert variables ([7d300b0](https://github.com/juntossomosmais/venice/commit/7d300b07604b44e924213e2fe0f2dd3cfc6aaa96))
+
+
+
+
+
 ## [0.24.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.24.0...@juntossomosmais/venice-react@0.24.2) (2020-09-18)
 
 **Note:** Version bump only for package @juntossomosmais/venice-react
