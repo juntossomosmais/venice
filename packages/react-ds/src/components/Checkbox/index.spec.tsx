@@ -15,8 +15,21 @@ describe('<Checkbox />', () => {
   it('Should display the base input', () => {
     // TODO - Fix TypeScript compilation errors
     const { container } = render(<Checkbox />)
-    const checkbox = container.querySelector(`.container`)
-    expect(checkbox).toBeInTheDocument()
+    const errorDOM = container.querySelector(`.error`)
+    expect(errorDOM).toBeNull()
+  })
+
+  it('Should display errors in the input', () => {
+    const feedBackError = 'Errors will be displayed here'
+    // TODO - Fix TypeScript compilation errors
+    const { container, queryByText } = render(
+      <Checkbox error={feedBackError} />
+    )
+    const errorDOM = container.querySelector(`.error`)
+
+    expect(errorDOM).toBeInTheDocument()
+    expect(errorDOM?.textContent).toBe(feedBackError)
+    expect(queryByText(feedBackError)).toBeInTheDocument()
   })
 
   it('Should change value of input ', () => {

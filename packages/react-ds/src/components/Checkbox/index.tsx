@@ -18,7 +18,11 @@ const InternalCheckbox = (
   ref?: React.Ref<HTMLInputElement>
 ) => {
   const selfId = id || uniqid(`input__`)
-  const styleContainer = classNames(styles.container, className)
+  const styleContainer = classNames(
+    styles.container,
+    { [styles.invalid]: Boolean(error) },
+    className
+  )
 
   return (
     <div className={styleContainer} style={style}>
@@ -33,6 +37,7 @@ const InternalCheckbox = (
         <span className={`${styles.customCheckbox} jsm-icon-check`}></span>
         {label}
       </label>
+      {error && <div className={`${styles.error} jsm-icon-alert`}>{error}</div>}
     </div>
   )
 }
