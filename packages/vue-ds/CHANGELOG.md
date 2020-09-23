@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.15.0...@juntossomosmais/venice-vue@0.16.0) (2020-09-23)
+
+
+### Features
+
+* **breadcrumb:** add vue component ([7d073d0](https://github.com/juntossomosmais/venice/commit/7d073d05dca644f612bc1afc2ef84f5302934ac0))
+* **breadcrumb:** export lost file ([5f8db3b](https://github.com/juntossomosmais/venice/commit/5f8db3b0826de82e5e6d7ad9dc64c3d957d8a858))
+
+
+
+
+
 # [0.15.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.14.3...@juntossomosmais/venice-vue@0.15.0) (2020-09-17)
 
 

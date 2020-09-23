@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.22.1...@venice/styles@0.23.0) (2020-09-23)
+
+
+### Features
+
+* **breadcrumb:** add styles ([e24764f](https://github.com/juntossomosmais/venice/commit/e24764fd352ba024e0a722251cb9bebca17d18ff))
+* **breadcrumb:** improve styles ([94e1025](https://github.com/juntossomosmais/venice/commit/94e102577ef9ccf3626e3909d6678cea55842602))
+* change att transparent to variants=filled/transparent ([660a544](https://github.com/juntossomosmais/venice/commit/660a5446171c07d6d9ca3645380979bdd937afcf))
+* improving icons ([4775a90](https://github.com/juntossomosmais/venice/commit/4775a901581232286f84c672c546f4f872ecbaae))
+* update alert variables ([7d300b0](https://github.com/juntossomosmais/venice/commit/7d300b07604b44e924213e2fe0f2dd3cfc6aaa96))
+
+
+
+
+
 ## [0.22.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.22.0...@venice/styles@0.22.1) (2020-09-18)
 
 

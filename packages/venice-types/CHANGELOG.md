@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.7.0...@juntossomosmais/venice-types@0.8.0) (2020-09-23)
+
+
+### Features
+
+* **breadcrumb:** add types ([98dd937](https://github.com/juntossomosmais/venice/commit/98dd937701a22ff245cd25c742c6f3173235ca27))
+* add typo ([c55fafa](https://github.com/juntossomosmais/venice/commit/c55fafa3842fca875a343b0e5db8aed294bea6a0))
+* change att transparent to variants=filled/transparent ([660a544](https://github.com/juntossomosmais/venice/commit/660a5446171c07d6d9ca3645380979bdd937afcf))
+* fix typo ([fa9eec8](https://github.com/juntossomosmais/venice/commit/fa9eec878fcee20c46cf4241eb16278b7026bcca))
+* fixing build ([31b7645](https://github.com/juntossomosmais/venice/commit/31b764554cc85239aded37126280863a83c9b61d))
+
+
+
+
+
 # [0.7.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.6.0...@juntossomosmais/venice-types@0.7.0) (2020-09-16)
 
 
