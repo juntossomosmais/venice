@@ -26,3 +26,4 @@ Media(images, gifs or videos) that shows the result of your work.
 - [ ] Any configuration or build changes documented
 - [ ] Project builds without errors
 - [ ] Lint errors fixed
+- [ ] Test a lib's generated build inside projects **!important**
