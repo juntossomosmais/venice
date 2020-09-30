@@ -147,6 +147,10 @@ This project has the following folders:
 
 It contains internal configs of Venice. If you need to share something between project, it needs to stay here.
 
+#### `packages/venice-icons`
+
+It contains all the icons used in Venice. Venice uses [fontello](http://fontello.com/) to generate the `config.json` file with icons.
+
 #### `packages/venice-types`
 
 It contains types and interfaces used across Venice. Types related to an specific property of Vue/React should go to their package.
