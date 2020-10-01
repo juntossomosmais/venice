@@ -150,7 +150,7 @@ It is usually used in a `rectangle format`, but feel free to use in both formats
 
 ## Click behavior
 
-It is usually used in a `round-square format`, but feel free to use in both formats.
+Only available with `round-square format`.
 
 <Preview>
   <Story
@@ -162,10 +162,10 @@ It is usually used in a `round-square format`, but feel free to use in both form
       components: { Tag },
       template: `
         <div class="row-items" style="display: flex; align-items: center" >
-          <Tag :isClickable="true" color="primary" format="round-square">
+          <Tag :isClickable="true" color="primary">
             I'm clickable
           </Tag>
-          <Tag :isClickable="true" color="secondary" format="round-square">
+          <Tag :isClickable="true" color="secondary">
             I'm clickable too
           </Tag>
         </div>

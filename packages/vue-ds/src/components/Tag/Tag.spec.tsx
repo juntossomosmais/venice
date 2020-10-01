@@ -72,7 +72,6 @@ describe('<Tag />', () => {
     const container = mount(Tag, {
       propsData: {
         isClickable: true,
-        format: ROUND_SQUARE_FORMAT,
       },
     })
 
@@ -81,6 +80,7 @@ describe('<Tag />', () => {
 
     // then
     expect(container.emitted().click).toBeTruthy()
+    expect(container.classes()).toContain(ROUND_SQUARE_FORMAT)
     expect(container.attributes().role).toBe(ROLE_BUTTON_WHEN_CLICKABLE)
   })
 })

@@ -17,8 +17,6 @@
 import { ITag } from '@juntossomosmais/venice-types'
 import { Component, Vue, Prop } from 'vue-property-decorator'
 
-import { clickableValidate } from '@venice/core/alerts/Tag'
-
 @Component({
   name: 'Tag',
 })
@@ -31,11 +29,12 @@ export default class Tag extends Vue {
   @Prop({ default: '' }) endIcon!: string
 
   get tagClass() {
-    return ['tag', this.color, this.format, this.isClickable && 'clickable']
-  }
-
-  created() {
-    clickableValidate(this.format, this.isClickable)
+    return [
+      'tag',
+      this.color,
+      this.isClickable ? 'round-square' : this.format,
+      this.isClickable && 'clickable',
+    ]
   }
 }
 </script>
