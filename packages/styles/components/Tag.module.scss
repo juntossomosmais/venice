@@ -1,0 +1,109 @@
+.tag {
+  border-radius: var(--border-radius);
+  display: flex;
+  font: var(--typography-caption-font);
+  font-weight: bold;
+  height: fit-content;
+  padding: var(--space-xxs) var(--space-xs);
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+
+  &.round-square {
+    border-radius: var(--space-lg);
+  }
+
+  &.clickable:hover {
+    cursor: pointer;
+  }
+
+  &[data-aside-info] {
+    margin-bottom: var(--space-sm);
+    margin-right: 28px;
+  }
+
+  &::before {
+    bottom: calc(-1 * var(--space-sm));
+    color: var(--default-color-lighten);
+    content: attr(data-aside-info);
+    font: inherit;
+    font-weight: 400;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.startIcon {
+  display: inline-block;
+  position: relative;
+
+  &:not(:empty) {
+    margin-right: var(--space-xs);
+  }
+}
+
+.endIcon {
+  display: inline-block;
+  position: relative;
+
+  &:not(:empty) {
+    margin-left: var(--space-xs);
+  }
+}
+
+.default {
+  background-color: var(--default-color);
+  color: var(--default-color-contrast);
+
+  &.clickable:hover {
+    background-color: var(--default-color-lighten);
+  }
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--primary-color-contrast);
+
+  &.clickable:hover {
+    background-color: var(--primary-color-lighten);
+  }
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: var(--secondary-color-contrast);
+
+  &.clickable:hover {
+    background-color: var(--secondary-color-lighten);
+  }
+}
+
+.success {
+  background-color: var(--success-color);
+  color: var(--success-color-contrast);
+
+  &.clickable:hover {
+    background-color: var(--success-color-lighten);
+  }
+}
+
+.danger {
+  background-color: var(--danger-color);
+  color: var(--danger-color-contrast);
+
+  &.clickable:hover {
+    background-color: var(--danger-color-lighten);
+  }
+}
+
+.purple {
+  background-color: var(--purple-1);
+  color: var(--default-color-contrast);
+
+  &.clickable:hover {
+    background-color: var(--default-color-lighten);
+  }
+}
