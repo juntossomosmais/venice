@@ -72,6 +72,7 @@ describe('<Tag />', () => {
     const container = mount(Tag, {
       propsData: {
         isClickable: true,
+        format: ROUND_SQUARE_FORMAT,
       },
     })
 
