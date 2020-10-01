@@ -12,10 +12,10 @@
 
   &.round-square {
     border-radius: var(--space-lg);
-  }
 
-  &.clickable:hover {
-    cursor: pointer;
+    &.clickable:hover {
+      cursor: pointer;
+    }
   }
 
   &[data-aside-info] {
