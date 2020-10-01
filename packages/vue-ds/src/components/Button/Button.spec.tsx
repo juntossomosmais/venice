@@ -130,9 +130,12 @@ describe('<Button />', () => {
         startIcon: '←',
       },
     })
+    const endIcon = container.querySelector('.endIcon')
+
     expect(container.firstChild).toContainHTML(
       `<span class="startIcon">←</span>`
     )
+    expect(endIcon).not.toBeInTheDocument()
   })
 
   it('should have "endIcon" element when has "endIcon prop"', () => {
@@ -141,6 +144,9 @@ describe('<Button />', () => {
         endIcon: '→',
       },
     })
+    const startIcon = container.querySelector('.startIcon')
+
+    expect(startIcon).not.toBeInTheDocument()
     expect(container.firstChild).toContainHTML(`<span class="endIcon">→</span>`)
   })
 

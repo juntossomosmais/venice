@@ -13,7 +13,7 @@
       :size="spinnerSize"
       class="loading"
     />
-    <span class="startIcon">
+    <span v-if="$slots.startIcon" class="startIcon">
       <!-- @slot To add icon at the beginning -->
       <slot name="startIcon" />
     </span>
@@ -21,7 +21,7 @@
       <!-- @slot To add something, like a text -->
       <slot />
     </span>
-    <span class="endIcon">
+    <span v-if="$slots.endIcon" class="endIcon">
       <!-- @slot To add icon at the end -->
       <slot name="endIcon" />
     </span>
