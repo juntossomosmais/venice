@@ -124,6 +124,8 @@ Default format
 
 ## Extra information
 
+It is usually used in a `rectangle format`, but feel free to use in both formats.
+
 <Preview>
   <Story
     name="aside-info"
@@ -137,7 +139,7 @@ Default format
           <Tag color="danger" asideInfo="22/04/2017">
             Danger
           </Tag>
-          <Tag color="purple" format="round-square" asideInfo="22/04/2017">
+          <Tag color="purple" asideInfo="extra info">
             Purple
           </Tag>
         </div>
@@ -148,7 +150,7 @@ Default format
 
 ## Click behavior
 
-It is usually used in a round-square format, but feel free to use in both formats.
+It is usually used in a `round-square format`, but feel free to use in both formats.
 
 <Preview>
   <Story
@@ -160,11 +162,11 @@ It is usually used in a round-square format, but feel free to use in both format
       components: { Tag },
       template: `
         <div class="row-items" style="display: flex; align-items: center" >
-          <Tag :isClickable="true" color="danger">
-            Danger
+          <Tag :isClickable="true" color="primary" format="round-square">
+            I'm clickable
           </Tag>
-          <Tag :isClickable="true" color="purple" format="round-square">
-            Purple
+          <Tag :isClickable="true" color="secondary" format="round-square">
+            I'm clickable too
           </Tag>
         </div>
       `,
