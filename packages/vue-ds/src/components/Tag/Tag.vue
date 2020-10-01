@@ -7,6 +7,7 @@
   >
     <span v-if="startIcon" :class="`startIcon ${startIcon}`" />
     <span class="children">
+      <!-- @slot To add something, like a text -->
       <slot />
     </span>
     <span v-if="endIcon" :class="`endIcon ${endIcon}`" />
