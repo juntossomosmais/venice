@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.8.0...@juntossomosmais/venice-types@0.9.0) (2020-10-05)
+
+
+### Features
+
+* add Tag types ([7d52de6](https://github.com/juntossomosmais/venice/commit/7d52de67d44d70efe9340a0717fbb437081f02c6))
+
+
+
+
+
 # [0.8.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.7.0...@juntossomosmais/venice-types@0.8.0) (2020-09-23)
 
 

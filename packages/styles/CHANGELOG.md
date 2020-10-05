@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.24.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.23.0...@venice/styles@0.24.0) (2020-10-05)
+
+
+### Features
+
+* click at roundsquare format only ([421b7b1](https://github.com/juntossomosmais/venice/commit/421b7b198580fc0504280864030c509235c001c3))
+* tag styles ([ec2e2df](https://github.com/juntossomosmais/venice/commit/ec2e2df5338b67c4ecc2f547aad8a434fa8a83a4))
+
+
+
+
+
 # [0.23.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.22.1...@venice/styles@0.23.0) (2020-09-23)
 
 

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.16.0...@juntossomosmais/venice-vue@0.17.0) (2020-10-05)
+
+
+### Bug Fixes
+
+* **vue:** button semantic ([9bf123e](https://github.com/juntossomosmais/venice/commit/9bf123edfe2913d1b77057811c559a9dff7171ab))
+
+
+### Features
+
+* change clickable ([8152749](https://github.com/juntossomosmais/venice/commit/81527491d4efc8a7eff601e9f43b817e5035925b))
+* **vue:** add import ([f01e261](https://github.com/juntossomosmais/venice/commit/f01e26117a69092dc688e41243bfb5901e66faba))
+* **vue:** create component ([d2883a5](https://github.com/juntossomosmais/venice/commit/d2883a59fa666036b07f9762268e0a08fe83b407))
+* **vue:** warn at tag component ([9260cf1](https://github.com/juntossomosmais/venice/commit/9260cf1690014d8a4d31fb423bade9a2a8f570f2))
+
+
+
+
+
 # [0.16.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.15.0...@juntossomosmais/venice-vue@0.16.0) (2020-09-23)
 
 

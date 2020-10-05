@@ -1,0 +1,179 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks'
+import { withKnobs } from '@storybook/addon-knobs'
+import { withA11y } from '@storybook/addon-a11y'
+
+import Tag from './Tag.vue'
+
+<Meta title="Components|Tag" component={Tag} />
+
+# Tag
+
+Tag is used to segment data and can be used for user actions.
+
+## Formats
+
+### rectangle
+
+Default format
+
+<Preview>
+  <Story
+    name="rectangle"
+    parameters={{ decorators: [withKnobs, withA11y] }}
+    inline={true}
+  >
+    {{
+      components: { Tag },
+      template: `
+        <div class="row-items" style="display: flex; align-items: center">
+          <Tag>
+            Default
+          </Tag>
+          <Tag color="primary">
+            Primary
+          </Tag>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+### round-square
+
+<Preview>
+  <Story
+    name="round-square"
+    parameters={{ decorators: [withKnobs, withA11y] }}
+    inline={true}
+  >
+    {{
+      components: { Tag },
+      template: `
+        <div class="row-items" style="display: flex; align-items: center" >
+          <Tag format="round-square">
+            Default
+          </Tag>
+          <Tag color="primary" format="round-square">
+            Primary
+          </Tag>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Colors
+
+<Preview>
+  <Story
+    name="Colors"
+    parameters={{ decorators: [withKnobs, withA11y] }}
+    inline={true}
+  >
+    {{
+      components: { Tag },
+      template: `
+        <div class="row-items" style="display: flex; align-items: center" >
+          <Tag>
+            Default
+          </Tag>
+          <Tag color="primary">
+            Primary
+          </Tag>
+          <Tag  color="secondary">
+            Secondary
+          </Tag>
+          <Tag color="success">
+            Success
+          </Tag>
+          <Tag color="danger">
+            Danger
+          </Tag>
+          <Tag color="purple">
+            Purple
+          </Tag>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Icons
+
+<Preview>
+  <Story
+    name="Icons"
+    parameters={{ decorators: [withKnobs, withA11y] }}
+    inline={true}
+  >
+    {{
+      components: { Tag },
+      template: `
+        <div class="row-items" style="display: flex; align-items: center" >
+          <Tag  color="secondary" startIcon="jsm-icon-angle-right" endIcon="jsm-icon-angle-left">
+            Secondary
+          </Tag>
+          <Tag format="round-square" color="success" startIcon="jsm-icon-angle-right" endIcon="jsm-icon-angle-left">
+            Success
+          </Tag>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Extra information
+
+It is usually used in a `rectangle format`, but feel free to use in both formats.
+
+<Preview>
+  <Story
+    name="aside-info"
+    parameters={{ decorators: [withKnobs, withA11y] }}
+    inline={true}
+  >
+    {{
+      components: { Tag },
+      template: `
+        <div class="row-items" style="display: flex; align-items: center" >
+          <Tag color="danger" asideInfo="22/04/2017">
+            Danger
+          </Tag>
+          <Tag color="purple" asideInfo="extra info">
+            Purple
+          </Tag>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+## Click behavior
+
+Only available with `round-square format`.
+
+<Preview>
+  <Story
+    name="Clickable"
+    parameters={{ decorators: [withKnobs, withA11y] }}
+    inline={true}
+  >
+    {{
+      components: { Tag },
+      template: `
+        <div class="row-items" style="display: flex; align-items: center" >
+          <Tag :isClickable="true" color="primary">
+            I'm clickable
+          </Tag>
+          <Tag :isClickable="true" color="secondary">
+            I'm clickable too
+          </Tag>
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Tag} />
