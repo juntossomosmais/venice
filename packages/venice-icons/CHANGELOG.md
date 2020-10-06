@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.3.0...@juntossomosmais/venice-icons@0.4.0) (2020-10-06)
+
+
+### Features
+
+* added two icons from FA ([7a9e869](https://github.com/juntossomosmais/venice/commit/7a9e869601cd8a27efaea834e5c97346bdd311a3))
+
+
+
+
+
 # [0.3.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.2.0...@juntossomosmais/venice-icons@0.3.0) (2020-09-30)
 
 
