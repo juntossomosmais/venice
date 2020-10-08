@@ -5,7 +5,7 @@
     :href="href"
     :role="href ? '' : 'button'"
     :aria-busy="isLoading"
-    @click="$emit('click')"
+    @click="!isLoading && $emit('click')"
   >
     <Spinner
       v-if="isLoading"
