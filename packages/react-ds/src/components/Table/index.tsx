@@ -1,14 +1,12 @@
 import * as React from 'react'
 
-// import { ITable } from '@juntossomosmais/venice-types'
+import { ITable } from '@juntossomosmais/venice-types'
 import classnames from 'classnames'
 
 import styles from '@venice/styles/components/Table.module.scss'
 
-interface ITableProps {
+interface ITableProps extends ITable {
   className?: string
-  striped?: boolean
-  center?: boolean
 }
 
 export const Table: React.FunctionComponent<ITableProps> = ({
