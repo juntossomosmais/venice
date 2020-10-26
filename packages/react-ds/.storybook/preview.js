@@ -7,7 +7,6 @@ import '@venice/core/storybook/styles/storybook.css'
 import '@juntossomosmais/venice-icons/styles/storybook.css'
 import '../src/fontello/css/jsm-icons.css'
 import '@juntossomosmais/venice-vue/dist/styles.css'
-import 'github-markdown-css/github-markdown.css'
 import 'loki/configure-react'
 
 addParameters({

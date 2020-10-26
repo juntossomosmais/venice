@@ -1795,6 +1795,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@juntossomosmais/venice-types@^0.10.0":
+  version "0.10.0"
+  resolved "https://npm.pkg.github.com/download/@juntossomosmais/venice-types/0.10.0/1b0056513aa2032dae4f10ad91cddeae8b06c28dd84cef8c00861527fe39c1d1#08dd4dae3a5c7cb535b76debe426d8e2d38cb1ec"
+  integrity sha512-FyrTSmRw/LEkFqMm3pr9KdrM54bNIkk5sLjblmXNWVZuHMcrrj5LkMbr8kmY6tOIigGboTz9AJxYx2hjCL4Yuw==
+
 "@lerna/add@3.21.0":
   version "3.21.0"
   resolved "https://registry.yarnpkg.com/@lerna/add/-/add-3.21.0.tgz#27007bde71cc7b0a2969ab3c2f0ae41578b4577b"
