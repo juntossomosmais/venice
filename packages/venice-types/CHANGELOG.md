@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.9.0...@juntossomosmais/venice-types@0.10.0) (2020-10-26)
+
+
+### Features
+
+* created table component types ([0d79b0c](https://github.com/juntossomosmais/venice/commit/0d79b0cff430a08102f2315ac74baa403c5bf5bd))
+
+
+
+
+
 # [0.9.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.8.0...@juntossomosmais/venice-types@0.9.0) (2020-10-05)
 
 

@@ -1,4 +1,4 @@
 export interface ITable {
-  stripped?: boolean
   center?: boolean
+  striped?: boolean
 }
