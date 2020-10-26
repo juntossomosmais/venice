@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { render } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 
 import '@testing-library/jest-dom'
 
@@ -114,5 +114,31 @@ describe('<Button />', () => {
   it('should have "Spinner" component when has "isLoading prop"', () => {
     const { container } = render(<Button isLoading={true}>Loading</Button>)
     expect(container.querySelector('.loading')).toBeInTheDocument()
+  })
+
+  it('should click when button is not loading', () => {
+    const onClick = jest.fn()
+
+    const { getByText } = render(
+      <Button isLoading={false} onClick={onClick}>
+        Loading
+      </Button>
+    )
+
+    fireEvent.click(getByText('Loading'))
+
+    expect(onClick).toBeCalled()
+  })
+
+  it('should not click when button is loading', () => {
+    const onClick = jest.fn()
+    const { container } = render(
+      <Button isLoading={true} onClick={onClick}>
+        Loading
+      </Button>
+    )
+
+    fireEvent.click(container)
+    expect(onClick).not.toBeCalled()
   })
 })
