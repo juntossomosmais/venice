@@ -14,7 +14,7 @@ interface ITableProps {
 export const Table: React.FunctionComponent<ITableProps> = ({
   children,
   className = '',
-  striped = true,
+  striped = false,
   center = false,
 }) => {
   const classNames = classnames([
