@@ -132,13 +132,13 @@ describe('<Button />', () => {
 
   it('should not click when button is loading', () => {
     const onClick = jest.fn()
-    const { container } = render(
+    const { getByText } = render(
       <Button isLoading={true} onClick={onClick}>
         Loading
       </Button>
     )
 
-    fireEvent.click(container)
+    fireEvent.click(getByText('Loading'))
     expect(onClick).not.toBeCalled()
   })
 })
