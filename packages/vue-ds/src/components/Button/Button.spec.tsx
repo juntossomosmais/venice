@@ -184,7 +184,7 @@ describe('<Button />', () => {
     expect(wrapper.find('.loading').exists()).toBeTruthy()
   })
 
-  it('should click when button is not loading', () => {
+  it('should not execute click when button is loading', () => {
     const wrapper = mount(Button, {
       propsData: {
         isLoading: true,
@@ -196,7 +196,7 @@ describe('<Button />', () => {
     expect(wrapper.emitted('click')).toBeFalsy()
   })
 
-  it('should not click when button is not loading', () => {
+  it('should execute click when button is not loading', () => {
     const wrapper = mount(Button, {
       propsData: {
         isLoading: false,
