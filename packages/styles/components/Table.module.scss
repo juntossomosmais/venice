@@ -42,7 +42,8 @@
   }
 
   &.center {
-    tbody tr > td {
+    tbody tr > td,
+    thead tr > th {
       text-align: center;
     }
   }
