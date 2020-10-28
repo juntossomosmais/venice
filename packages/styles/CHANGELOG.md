@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.24.0...@venice/styles@0.25.0) (2020-10-28)
+
+
+### Bug Fixes
+
+* aligned checkbox with label ([342f19e](https://github.com/juntossomosmais/venice/commit/342f19e7b87d71d45bb1f26aedd051cfc490da79))
+
+
+### Features
+
+* aligned first column to center when table is centralized ([20c7714](https://github.com/juntossomosmais/venice/commit/20c7714571105366df6c72981124950f60cfc7e7))
+* aligned first column to start ([3065489](https://github.com/juntossomosmais/venice/commit/30654894dea2029689b69be539df9978ce8ddede))
+* created table component ([5f15f45](https://github.com/juntossomosmais/venice/commit/5f15f452acb2289a658b746f18104cabc20eff1a))
+
+
+
+
+
 # [0.24.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.23.0...@venice/styles@0.24.0) (2020-10-05)
 
 

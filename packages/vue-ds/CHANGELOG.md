@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.17.2...@juntossomosmais/venice-vue@0.17.3) (2020-10-28)
+
+
+### Bug Fixes
+
+* component button not emit click when isLoading is true ([8baf71c](https://github.com/juntossomosmais/venice/commit/8baf71c5ea429baa104f8e9827b4c8b5945b9c8c))
+* test name component button (vue) ([a9546e9](https://github.com/juntossomosmais/venice/commit/a9546e92792ad02be3cb667962dc5e9a6b2d91e5))
+
+
+
+
+
 ## [0.17.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.17.1...@juntossomosmais/venice-vue@0.17.2) (2020-10-26)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue
