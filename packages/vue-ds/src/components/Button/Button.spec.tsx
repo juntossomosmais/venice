@@ -1,4 +1,4 @@
-import { render } from '@testing-library/vue'
+import { mount } from '@vue/test-utils'
 
 import '@testing-library/jest-dom'
 
@@ -6,179 +6,205 @@ import Button from './Button.vue'
 
 describe('<Button />', () => {
   it('should have "default" classname when "color prop" is empty', () => {
-    const { container } = render(Button)
-    expect(container.firstChild).toHaveClass('default')
+    const wrapper = mount(Button)
+    expect(wrapper.classes()).toContain('default')
   })
 
   it('should have "default" classname when "color prop" is "default"', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         color: 'default',
       },
     })
-    expect(container.firstChild).toHaveClass('default')
+    expect(wrapper.classes()).toContain('default')
   })
 
   it('should have "primary" classname when "color prop" is "primary"', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         color: 'primary',
       },
     })
-    expect(container.firstChild).toHaveClass('primary')
+    expect(wrapper.classes()).toContain('primary')
   })
 
   it('should have "secondary" classname when "color prop" is "secondary"', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         color: 'secondary',
       },
     })
-    expect(container.firstChild).toHaveClass('secondary')
+    expect(wrapper.classes()).toContain('secondary')
   })
 
   it('should have "filled" classname when "variant prop" is empty', () => {
-    const { container } = render(Button)
-    expect(container.firstChild).toHaveClass('filled')
+    const wrapper = mount(Button)
+    expect(wrapper.classes()).toContain('filled')
   })
 
-  it('should have "filled" classname when "variant prop" props is "filled"', () => {
-    const { container } = render(Button, {
-      props: {
+  it('should have "filled" classname when "variant prop" propsData is "filled"', () => {
+    const wrapper = mount(Button, {
+      propsData: {
         variant: 'filled',
       },
     })
-    expect(container.firstChild).toHaveClass('filled')
+    expect(wrapper.classes()).toContain('filled')
   })
 
-  it('should have "outlined" classname when "variant prop" props is "outlined"', () => {
-    const { container } = render(Button, {
-      props: {
+  it('should have "outlined" classname when "variant prop" propsData is "outlined"', () => {
+    const wrapper = mount(Button, {
+      propsData: {
         variant: 'outlined',
       },
     })
-    expect(container.firstChild).toHaveClass('outlined')
+    expect(wrapper.classes()).toContain('outlined')
   })
 
-  it('should have "text" classname when "variant prop" props is "text"', () => {
-    const { container } = render(Button, {
-      props: {
+  it('should have "text" classname when "variant prop" propsData is "text"', () => {
+    const wrapper = mount(Button, {
+      propsData: {
         variant: 'text',
       },
     })
-    expect(container.firstChild).toHaveClass('text')
+    expect(wrapper.classes()).toContain('text')
   })
 
   it('should have "large" classname when "size prop" is empty', () => {
-    const { container } = render(Button)
-    expect(container.firstChild).toHaveClass('large')
+    const wrapper = mount(Button)
+    expect(wrapper.classes()).toContain('large')
   })
 
   it('should have "large" classname when "size prop" is "large"', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         size: 'large',
       },
     })
-    expect(container.firstChild).toHaveClass('large')
+    expect(wrapper.classes()).toContain('large')
   })
 
   it('should have "medium" classname when "size prop" is "medium"', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         size: 'medium',
       },
     })
-    expect(container.firstChild).toHaveClass('medium')
+    expect(wrapper.classes()).toContain('medium')
   })
 
   it('should have "small" classname when "size prop" is "small"', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         size: 'small',
       },
     })
-    expect(container.firstChild).toHaveClass('small')
+    expect(wrapper.classes()).toContain('small')
   })
 
   it('should have "round-square" classname when "shape prop" is empty', () => {
-    const { container } = render(Button)
-    expect(container.firstChild).toHaveClass('round-square')
+    const wrapper = mount(Button)
+    expect(wrapper.classes()).toContain('round-square')
   })
 
   it('should have "round-square" classname when "shape prop" is "round-square"', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         shape: 'round-square',
       },
     })
-    expect(container.firstChild).toHaveClass('round-square')
+    expect(wrapper.classes()).toContain('round-square')
   })
 
   it('should have "circle" classname when "shape prop" is "circle"', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         shape: 'circle',
       },
     })
-    expect(container.firstChild).toHaveClass('circle')
+    expect(wrapper.classes()).toContain('circle')
   })
 
   it('should have "startIcon" element when has "startIcon prop"', () => {
-    const { container } = render(Button, {
+    const wrapper = mount(Button, {
       slots: {
         startIcon: '←',
       },
     })
-    const endIcon = container.querySelector('.endIcon')
+    const endIcon = wrapper.find('.endIcon')
 
-    expect(container.firstChild).toContainHTML(
+    expect(wrapper.find('.startIcon').html()).toBe(
       `<span class="startIcon">←</span>`
     )
-    expect(endIcon).not.toBeInTheDocument()
+    expect(endIcon.exists()).toBeFalsy()
   })
 
   it('should have "endIcon" element when has "endIcon prop"', () => {
-    const { container } = render(Button, {
+    const wrapper = mount(Button, {
       slots: {
         endIcon: '→',
       },
     })
-    const startIcon = container.querySelector('.startIcon')
+    const startIcon = wrapper.find('.startIcon')
 
-    expect(startIcon).not.toBeInTheDocument()
-    expect(container.firstChild).toContainHTML(`<span class="endIcon">→</span>`)
+    expect(startIcon.exists()).toBeFalsy()
+    expect(wrapper.find('.endIcon').html()).toBe(
+      `<span class="endIcon">→</span>`
+    )
   })
 
   it('should be add a href in <a> if it has href', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         href: 'href',
       },
     })
-    expect(container.querySelector('a[href="href"]')).toBeInTheDocument()
+    expect(wrapper.find('a[href="href"]').exists()).toBeTruthy()
   })
 
-  it('should be render element as <button> if not has href', () => {
-    const { container } = render(Button)
-    expect(container.querySelector('button')).toBeInTheDocument()
+  it('should be mount element as <button> if not has href', () => {
+    const wrapper = mount(Button)
+    expect(wrapper.find('button').exists()).toBeTruthy()
   })
 
   it('should have "isLoading" classname when has "isLoading prop"', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         isLoading: true,
       },
     })
-    expect(container.firstChild).toHaveClass('isLoading')
+    expect(wrapper.classes()).toContain('isLoading')
   })
 
   it('should have "Spinner" component when has "isLoading prop"', () => {
-    const { container } = render(Button, {
-      props: {
+    const wrapper = mount(Button, {
+      propsData: {
         isLoading: true,
       },
     })
-    expect(container.querySelector('.loading')).toBeInTheDocument()
+    expect(wrapper.find('.loading').exists()).toBeTruthy()
+  })
+
+  it('should not execute click when button is loading', () => {
+    const wrapper = mount(Button, {
+      propsData: {
+        isLoading: true,
+      },
+    })
+
+    wrapper.find('button').trigger('click')
+
+    expect(wrapper.emitted('click')).toBeFalsy()
+  })
+
+  it('should execute click when button is not loading', () => {
+    const wrapper = mount(Button, {
+      propsData: {
+        isLoading: false,
+      },
+    })
+
+    wrapper.find('button').trigger('click')
+
+    expect(wrapper.emitted('click')).toBeTruthy()
   })
 })
