@@ -23,6 +23,7 @@
 
     &:first-of-type {
       border-top-left-radius: var(--border-radius);
+      text-align: start;
     }
 
     &:last-of-type {
@@ -41,7 +42,8 @@
   }
 
   &.center {
-    tbody tr > td {
+    tbody tr > td,
+    thead tr > th {
       text-align: center;
     }
   }
