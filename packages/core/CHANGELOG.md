@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.24.0...@venice/core@0.25.0) (2020-10-28)
+
+
+### Bug Fixes
+
+* style order ([61dc73c](https://github.com/juntossomosmais/venice/commit/61dc73ce5b7eccc29fce8239f664eb949bce64f2))
+
+
+### Features
+
+* added new styles to markdown-body class ([29c43c2](https://github.com/juntossomosmais/venice/commit/29c43c2fbc25ee338c5abe5195bde1349568aceb))
+* created table component ([5f15f45](https://github.com/juntossomosmais/venice/commit/5f15f452acb2289a658b746f18104cabc20eff1a))
+
+
+
+
+
 # [0.24.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.23.0...@venice/core@0.24.0) (2020-09-23)
 
 

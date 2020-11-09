@@ -38,6 +38,7 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
   size = 'large',
   startIcon,
   variant = 'filled',
+  onClick = () => ({}),
   ...rest
 }) => {
   return (
@@ -46,6 +47,9 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
         as={href ? 'a' : 'button'}
         role={href ? '' : 'button'}
         aria-busy={isLoading}
+        onClick={(e: React.MouseEvent<HTMLButtonElement>) =>
+          !isLoading && onClick(e)
+        }
         className={classNames(
           styles.button,
           styles[color],

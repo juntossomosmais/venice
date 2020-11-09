@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.25.3...@juntossomosmais/venice-react@0.26.0) (2020-10-28)
+
+
+### Bug Fixes
+
+* click when button is loading venice ([cc6286d](https://github.com/juntossomosmais/venice/commit/cc6286dc0ce05168c491e0c8ba18ed261b62c6f7))
+* props default value ([47bd04e](https://github.com/juntossomosmais/venice/commit/47bd04ed4b5907b696a3f426ae4a5043654dcc63))
+* test in component button ([a9f71de](https://github.com/juntossomosmais/venice/commit/a9f71deef84f159c707c11046162f18c6c2684e8))
+
+
+### Features
+
+* added new items to doc ([5d54330](https://github.com/juntossomosmais/venice/commit/5d5433039b97c850b00e8001aa0225f0591974be))
+* added tests to table component ([9b40c4e](https://github.com/juntossomosmais/venice/commit/9b40c4eeac6c9125892bf8346065724997f46c43))
+* created table component ([5f15f45](https://github.com/juntossomosmais/venice/commit/5f15f452acb2289a658b746f18104cabc20eff1a))
+* updated venice-types version ([90305a5](https://github.com/juntossomosmais/venice/commit/90305a5603315a876c36adacb815b07dc8fc5b9c))
+
+
+
+
+
+## [0.25.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.25.2...@juntossomosmais/venice-react@0.25.3) (2020-10-26)
+
+**Note:** Version bump only for package @juntossomosmais/venice-react
+
+
+
+
+
+## [0.25.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.25.1...@juntossomosmais/venice-react@0.25.2) (2020-10-06)
+
+**Note:** Version bump only for package @juntossomosmais/venice-react
+
+
+
+
+
+## [0.25.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.25.0...@juntossomosmais/venice-react@0.25.1) (2020-10-05)
+
+**Note:** Version bump only for package @juntossomosmais/venice-react
+
+
+
+
+
 # [0.25.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.24.2...@juntossomosmais/venice-react@0.25.0) (2020-09-23)
 
 
