@@ -23,10 +23,11 @@ const InternalCheckbox = (
     { [styles.invalid]: Boolean(error) },
     className
   )
+  const cursor = { cursor: props.disabled ? 'not-allowed' : 'pointer' }
 
   return (
     <div className={styleContainer} style={style}>
-      <label htmlFor={selfId} className={styles.label}>
+      <label htmlFor={selfId} className={styles.label} style={cursor}>
         <input
           className={styles.checkbox}
           type="checkbox"

@@ -10,12 +10,12 @@ $checkbox-opacity: 0.55;
 }
 
 .label {
-  cursor: pointer;
   display: flex;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: fit-content;
 
   &:hover .checkbox:not(:disabled) ~ .customCheckbox {
     border-color: var(--secondary-color-lighten);
@@ -23,7 +23,6 @@ $checkbox-opacity: 0.55;
 }
 
 .checkbox {
-  cursor: pointer;
   height: 0;
   opacity: 0;
   position: absolute;

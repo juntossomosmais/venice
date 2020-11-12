@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <label :for="selfId" class="label">
+    <label :for="selfId" class="label" :style="cursor">
       <input
         class="checkbox"
         type="checkbox"
@@ -32,6 +32,14 @@ export default class Checkbox extends Vue {
   @Prop({ default: false }) value!: boolean
 
   private selfId = this.$attrs.id || uniqid(`input__`)
+
+  get cursor() {
+    const isDisabled = 'disabled' in this.$attrs
+
+    return {
+      cursor: isDisabled ? 'not-allowed' : 'pointer',
+    }
+  }
 }
 </script>
 
