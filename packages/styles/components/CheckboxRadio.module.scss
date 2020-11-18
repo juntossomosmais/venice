@@ -1,11 +1,12 @@
 @import '~@venice/styles/core';
 
 $checkbox-border: 2px;
-$checkbox-size: 14px;
+$checkbox-size: 13px;
+$checkbox-font-size: $checkbox-size - 1;
 $checkbox-opacity: 0.55;
 
 .container {
-  font: var(--typography-body2-font);
+  font: var(--typography-caption-font);
   width: fit-content;
 }
 
@@ -59,7 +60,7 @@ $checkbox-opacity: 0.55;
   background-color: var(--secondary-color-contrast);
   border: $checkbox-border solid var(--gray-3);
   border-radius: $checkbox-border;
-  font-size: $checkbox-size;
+  font-size: $checkbox-font-size;
   height: $checkbox-size;
   margin-right: var(--space-xs);
   position: relative;
