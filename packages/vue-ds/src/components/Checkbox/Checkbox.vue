@@ -9,7 +9,7 @@
         @change="$emit('input', $event.target.checked)"
         v-bind="$attrs"
       />
-      <span class="customCheckbox jsm-icon-check"></span>
+      <span class="customCheckbox jsm-icon-ok"></span>
       {{ label }}
     </label>
     <div v-if="error" class="error jsm-icon-alert">

@@ -35,7 +35,7 @@ const InternalCheckbox = (
           {...props}
           ref={ref}
         />
-        <span className={`${styles.customCheckbox} jsm-icon-check`}></span>
+        <span className={`${styles.customCheckbox} jsm-icon-ok`}></span>
         {label}
       </label>
       {error && <div className={`${styles.error} jsm-icon-alert`}>{error}</div>}
