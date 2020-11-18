@@ -3,7 +3,7 @@ import { withKnobs } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
 import { knobInputLoading, knobInputSizes } from '@venice/core/storybook/knobs'
-import Docs from '@venice/core/docs/Input.md'
+import Docs from '@venice/core/docs/Checkbox.md'
 
 import { Checkbox } from '.'
 
@@ -17,7 +17,12 @@ import { Checkbox } from '.'
   <Story name="Base" decorators={[withKnobs, withA11y]}>
     <form className="row-items" style={{ display: 'flex' }}>
       <Checkbox label="label" style={{ flex: '1' }} />
-      <Checkbox label="label" placeholder="placeholder" style={{ flex: '1' }} />
+      <Checkbox
+        label="label"
+        id="venice-checkbox"
+        defaultChecked
+        style={{ flex: '1' }}
+      />
     </form>
   </Story>
 </Preview>
@@ -30,16 +35,17 @@ import { Checkbox } from '.'
       <Checkbox label="disabled" disabled style={{ flex: '1' }} />
       <Checkbox
         label="disabled"
-        placeholder="placeholder"
         disabled
+        defaultChecked
         style={{ flex: '1' }}
       />
-      <Checkbox label="disabled" value="value" disabled style={{ flex: '1' }} />
     </div>
   </Story>
 </Preview>
 
 ## Validation
+
+`Please, avoid use it because will be removed in the future.`
 
 <Preview>
   <Story name="Validation" decorators={[withKnobs, withA11y]}>

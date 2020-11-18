@@ -13,8 +13,8 @@
     "url": "https://github.com/juntossomosmais/venice/issues"
   },
   "main": "dist/index.umd.js",
-  "module": "dist/index.esm.js",
-  "unpkg": "dist/index.min.js",
+  "module": "dist/index.common.js",
+  "unpkg": "dist/index.umd.min.js",
   "files": [
     "dist"
   ],
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "uniqid": "^5.2.0",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.2",
     "vue-property-decorator": "^9.0.0"
@@ -42,6 +43,7 @@
     "@juntossomosmais/venice-types": "^0.10.0",
     "@storybook/vue": "^5.3.18",
     "@testing-library/vue": "^5.0.2",
+    "@types/uniqid": "^5.2.0",
     "@vue/cli-plugin-babel": "~4.5.6",
     "@vue/cli-plugin-eslint": "~4.5.4",
     "@vue/cli-plugin-typescript": "~4.5.4",

@@ -6,8 +6,6 @@ import uniqid from 'uniqid'
 
 import styles from '@venice/styles/components/CheckboxRadio.module.scss'
 
-import Alert from '../Icons/Alert'
-
 const InternalCheckbox = (
   {
     id,
@@ -25,24 +23,22 @@ const InternalCheckbox = (
     { [styles.invalid]: Boolean(error) },
     className
   )
+  const cursor = { cursor: props.disabled ? 'not-allowed' : 'pointer' }
 
   return (
     <div className={styleContainer} style={style}>
-      <div>
-        <input type="checkbox" id={selfId} {...props} ref={ref} />
-        {label && (
-          <label htmlFor={selfId} className={styles.label}>
-            {label}
-          </label>
-        )}
-      </div>
-      {/* TODO: Replace for alert component */}
-      {error && (
-        <div className={styles.error}>
-          <Alert />
-          {error}
-        </div>
-      )}
+      <label htmlFor={selfId} className={styles.label} style={cursor}>
+        <input
+          className={styles.checkbox}
+          type="checkbox"
+          id={selfId}
+          {...props}
+          ref={ref}
+        />
+        <span className={`${styles.customCheckbox} jsm-icon-ok`}></span>
+        {label}
+      </label>
+      {error && <div className={`${styles.error} jsm-icon-alert`}>{error}</div>}
     </div>
   )
 }
