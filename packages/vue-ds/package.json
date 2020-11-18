@@ -13,8 +13,8 @@
     "url": "https://github.com/juntossomosmais/venice/issues"
   },
   "main": "dist/index.umd.js",
-  "module": "dist/index.esm.js",
-  "unpkg": "dist/index.min.js",
+  "module": "dist/index.common.js",
+  "unpkg": "dist/index.umd.min.js",
   "files": [
     "dist"
   ],
