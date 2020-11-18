@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.26.0...@juntossomosmais/venice-react@0.27.0) (2020-11-18)
+
+
+### Bug Fixes
+
+* change react to 16.x to avoid error with storybook 5 ([d2d6225](https://github.com/juntossomosmais/venice/commit/d2d62256eba21bae78465905cef1d4314e16141e))
+
+
+### Features
+
+* avoid cursor point at disabled mode ([09eee3e](https://github.com/juntossomosmais/venice/commit/09eee3e572156943d4efe83953562295b1ca9921))
+* **react:** change checkbox component and test it ([5cd1e55](https://github.com/juntossomosmais/venice/commit/5cd1e555d97dff4be1aff06766339be1ca72c600))
+* **react:** restore error message ([f85cc4f](https://github.com/juntossomosmais/venice/commit/f85cc4f58c877b125b18e5198d3d15d0cd2da010))
+
+
+
+
+
 # [0.26.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.25.3...@juntossomosmais/venice-react@0.26.0) (2020-10-28)
 
 

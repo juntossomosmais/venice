@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.17.3...@juntossomosmais/venice-vue@0.18.0) (2020-11-18)
+
+
+### Features
+
+* avoid cursor point at disabled mode ([09eee3e](https://github.com/juntossomosmais/venice/commit/09eee3e572156943d4efe83953562295b1ca9921))
+* missing import ([869416c](https://github.com/juntossomosmais/venice/commit/869416c1c67bf9a52f40780717708a4de7acf66f))
+* **checkbox:** create vue stories ([a5165f3](https://github.com/juntossomosmais/venice/commit/a5165f33db12fa183345bbff1aeffd50a6d031d3))
+* **vue:** change checkbox component and test it ([516f351](https://github.com/juntossomosmais/venice/commit/516f351a50b54d0a254fab6b14678ff4bb9174e0))
+* **vue:** restore error message ([fc28256](https://github.com/juntossomosmais/venice/commit/fc282561cb942ff7731621e7e26ff783c871ecbe))
+* add tests to checkbox ([9d8c102](https://github.com/juntossomosmais/venice/commit/9d8c102312374d9c961033370b1bdc630e356f56))
+* new props ([6f92d16](https://github.com/juntossomosmais/venice/commit/6f92d1648a62bc92d47acc6681219f4633e26e04))
+* **vue:** checkbox component ([a925c3b](https://github.com/juntossomosmais/venice/commit/a925c3b8dfa1f0b1905352c6713995e49df274eb))
+
+
+
+
+
 ## [0.17.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.17.2...@juntossomosmais/venice-vue@0.17.3) (2020-10-28)
 
 

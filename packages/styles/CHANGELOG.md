@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.25.0...@venice/styles@0.26.0) (2020-11-18)
+
+
+### Features
+
+* avoid cursor point at disabled mode ([09eee3e](https://github.com/juntossomosmais/venice/commit/09eee3e572156943d4efe83953562295b1ca9921))
+* create custom checkox ([b069a8a](https://github.com/juntossomosmais/venice/commit/b069a8ab38d10651236a956b2c5f00b4f6b3a10c))
+* missing import ([869416c](https://github.com/juntossomosmais/venice/commit/869416c1c67bf9a52f40780717708a4de7acf66f))
+* remove comment ([5493d60](https://github.com/juntossomosmais/venice/commit/5493d60d3c9faea2d35384a91db1afd881ea81ca))
+* update size ([87817d4](https://github.com/juntossomosmais/venice/commit/87817d40e1243dbb4929f59472afab21cd1e5bcd))
+* **vue:** restore error message ([fc28256](https://github.com/juntossomosmais/venice/commit/fc282561cb942ff7731621e7e26ff783c871ecbe))
+
+
+
+
+
 # [0.25.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.24.0...@venice/styles@0.25.0) (2020-10-28)
 
 
