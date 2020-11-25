@@ -27,3 +27,4 @@ Media(images, gifs or videos) that shows the result of your work.
 - [ ] Project builds without errors
 - [ ] Lint errors fixed
 - [ ] Test a lib's generated build inside projects **!important**
+- [ ] Update icon files (woff, woff2 and etc) from projects (if necessary).
