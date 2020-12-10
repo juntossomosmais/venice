@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.5.0...@juntossomosmais/venice-icons@0.6.0) (2020-12-10)
+
+
+### Features
+
+* added shipping icon ([ae5cb6c](https://github.com/juntossomosmais/venice/commit/ae5cb6ca344d30bde476d195e1cb522e2ef042ef))
+
+
+
+
+
 # [0.5.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.4.0...@juntossomosmais/venice-icons@0.5.0) (2020-10-21)
 
 
