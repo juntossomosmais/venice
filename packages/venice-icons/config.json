@@ -91,7 +91,7 @@
     {
       "uid": "5d73628bc1aa2d5a8d6c92216d7fb52a",
       "css": "arrow-right",
-      "code": 59396,
+      "code": 59397,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -105,7 +105,7 @@
     {
       "uid": "f8f2445ecab4787d1b3f58612a8481e9",
       "css": "arrow-thin-right",
-      "code": 59397,
+      "code": 59398,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -749,7 +749,7 @@
     {
       "uid": "7389f0ccb5e1021fa61c29f49794f523",
       "css": "flag",
-      "code": 59398,
+      "code": 59400,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -775,7 +775,7 @@
     {
       "uid": "0969ed74cbed4b7ede2a7e23f9bb51a0",
       "css": "star",
-      "code": 59400,
+      "code": 59401,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -789,7 +789,7 @@
     {
       "uid": "d0841d15c9f7a4829b3505698f61e7a3",
       "css": "outline",
-      "code": 59401,
+      "code": 59402,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -803,7 +803,7 @@
     {
       "uid": "6305f933c9a31bcb60f25c6746caac55",
       "css": "whatsapp",
-      "code": 59402,
+      "code": 59403,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -817,7 +817,7 @@
     {
       "uid": "99688a9027565b6052c00e2c8bc5ba98",
       "css": "whatsapp-negative",
-      "code": 59403,
+      "code": 59404,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -915,7 +915,7 @@
     {
       "uid": "571c5998cca5555828bcdf0ca14335b6",
       "css": "padlock",
-      "code": 59404,
+      "code": 59405,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -941,7 +941,7 @@
     {
       "uid": "be21654cca0215492f98c45e444b22fa",
       "css": "double-ticket",
-      "code": 59405,
+      "code": 59406,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -955,7 +955,7 @@
     {
       "uid": "da02c4c82f69ad49ccb6722b2065eee0",
       "css": "close",
-      "code": 59406,
+      "code": 59408,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -969,7 +969,7 @@
     {
       "uid": "e4ad679e06a7c307b31e97e7ce88962e",
       "css": "shipping",
-      "code": 59408,
+      "code": 59409,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -979,6 +979,12 @@
       "search": [
         "shipping"
       ]
+    },
+    {
+      "uid": "e82cedfa1d5f15b00c5a81c9bd731ea2",
+      "css": "info-circled",
+      "code": 59396,
+      "src": "fontawesome"
     }
   ]
 }
