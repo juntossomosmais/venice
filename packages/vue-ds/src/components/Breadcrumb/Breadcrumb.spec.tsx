@@ -1,30 +1,28 @@
-import { render } from '@testing-library/vue'
-
-import '@testing-library/jest-dom'
+import { mount } from '@vue/test-utils'
 
 import Breadcrumb from './Breadcrumb.vue'
 
 describe('<Breadcrumb />', () => {
   it('should have "Breadcrumb" classname when render', () => {
-    const { container } = render(Breadcrumb)
-    expect(container.firstChild).toHaveClass('breadcrumb')
+    const wrapper = mount(Breadcrumb)
+    expect(wrapper.classes()).toContain('breadcrumb')
   })
 
   it('should have "default" classname when "color prop" is "default"', () => {
-    const { container } = render(Breadcrumb, {
-      props: {
+    const wrapper = mount(Breadcrumb, {
+      propsData: {
         color: 'default',
       },
     })
-    expect(container.firstChild).toHaveClass('default')
+    expect(wrapper.classes()).toContain('default')
   })
 
   it('should have "contrast" classname when "color prop" is "contrast"', () => {
-    const { container } = render(Breadcrumb, {
-      props: {
+    const wrapper = mount(Breadcrumb, {
+      propsData: {
         color: 'contrast',
       },
     })
-    expect(container.firstChild).toHaveClass('contrast')
+    expect(wrapper.classes()).toContain('contrast')
   })
 })
