@@ -26,7 +26,7 @@
     "start": "start-storybook -p 9009 -c .storybook -s src/fontello",
     "build": "rollup -c && yarn workspace @venice/styles build",
     "test": "react-scripts test",
-    "test:ci": "cross-env CI=true react-scripts test --bail --passWithNoTests --env=jsdom",
+    "test:ci": "cross-env CI=true react-scripts test --bail --passWithNoTests --coverage --detectOpenHandles --env=jsdom",
     "build:storybook": "yarn build && build-storybook -c .storybook -s src/fontello -o ../../dist/react",
     "loki-test": "loki test",
     "loki-update": "loki update",
