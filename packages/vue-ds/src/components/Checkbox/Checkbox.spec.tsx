@@ -15,6 +15,7 @@ const ID_SELECTOR = '#id'
 const ERRO_SELECTOR = '.error'
 const LABEL_SELECTOR = '.label'
 const FEED_BACK_ERROR = 'Errors will be displayed here'
+
 describe('<Checkbox />', () => {
   it('Should display the base input', () => {
     // given
@@ -53,7 +54,7 @@ describe('<Checkbox />', () => {
     expect((input.element as HTMLInputElement).checked).toBeTruthy()
   })
 
-  it('Should pass attributes to child only', async () => {
+  it('Should pass attributes to child only', () => {
     // given
     const container = mount(Checkbox, {
       attrs: ATTRS_WITH_DISABLED,
