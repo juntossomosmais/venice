@@ -5,11 +5,11 @@ module.exports = {
   preset: '@vue/cli-plugin-unit-jest/presets/typescript-and-babel',
   testMatch: ['<rootDir>/src/**/*.(spec|test).(tsx|jsx)'],
   collectCoverageFrom: [
-    'src/**/*.vue',
-    '!node_modules/**',
-    '!src/index.js',
-    '!src/shims-tsx.d.js',
-    '!src/shims-vue.js',
-    '!src/**/icons/*.vue',
+    '<rootDir>/src/**/*.vue',
+    '!<rootDir>/node_modules/**',
+    '!<rootDir>/src/index.js',
+    '!<rootDir>/src/shims-tsx.d.js',
+    '!<rootDir>/src/shims-vue.js',
+    '!<rootDir>/src/**/icons/*.vue',
   ],
 }
