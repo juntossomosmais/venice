@@ -4,4 +4,7 @@ module.exports = {
   transform: {
     '^.+\\.[jt]sx?$': 'ts-jest',
   },
+  collectCoverage: true,
+  coveragePathIgnorePatterns: ['/node_modules/'],
+  coverageReporters: ['json', 'lcov', 'text-summary', 'html'],
 }
