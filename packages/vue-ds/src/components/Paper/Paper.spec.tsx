@@ -1,12 +1,10 @@
-import { render } from '@testing-library/vue'
-
-import '@testing-library/jest-dom'
+import { mount } from '@vue/test-utils'
 
 import Paper from './Paper.vue'
 
 describe('<Paper />', () => {
   it('should have "paper" classname when render', () => {
-    const { container } = render(Paper)
-    expect(container.firstChild).toHaveClass('paper')
+    const wrapper = mount(Paper)
+    expect(wrapper.classes()).toContain('paper')
   })
 })

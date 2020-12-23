@@ -25,7 +25,7 @@
     "start": "vue-cli-service storybook:serve -p 6006 -c .storybook -s src/fontello",
     "build": "vue-cli-service build --target lib --name index src/index.ts && yarn workspace @venice/styles build",
     "test": "vue-cli-service test:unit --env=jsdom",
-    "test:ci": "cross-env CI=true vue-cli-service test:unit --bail --passWithNoTests --env=jsdom",
+    "test:ci": "cross-env CI=true vue-cli-service test:unit --bail --passWithNoTests --coverage --detectOpenHandles --env=jsdom",
     "lint": "vue-cli-service lint",
     "build:storybook": "yarn build && vue-cli-service storybook:build -c .storybook -s src/fontello -o ../../dist/vue",
     "loki-test": "loki test",
@@ -56,6 +56,11 @@
     "vue-cli-plugin-storybook": "~2.0.0",
     "vue-loader": "^15.9.1",
     "vue-template-compiler": "^2.6.11"
+  },
+  "resolutions": {
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "babel-jest": "^26.6.3"
   },
   "browserslist": [
     "defaults"
