@@ -24,3 +24,16 @@ jobs:
       - run: yarn build:storybook
       - run: yarn build
       - run: yarn test
+      - name: Fix code coverage paths on React
+        working-directory: ./packages/react-ds/coverage
+        run: |
+          sed -i 's/\/home\/runner\/work\/venice\/venice\//\/github\/workspace\//g' lcov.info
+      - name: Fix code coverage paths on Vue
+        working-directory: ./packages/vue-ds/coverage
+        run: |
+          sed -i 's/\/home\/runner\/work\/venice\/venice\//\/github\/workspace\//g' lcov.info
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_GHPAGES }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
