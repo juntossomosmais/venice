@@ -6,7 +6,7 @@ module.exports = {
   testMatch: ['<rootDir>/src/**/*.(spec|test).(tsx|jsx)'],
   collectCoverageFrom: [
     'src/**/*.vue',
-    '!**/node_modules/**',
+    '!node_modules/**',
     '!src/index.js',
     '!src/shims-tsx.d.js',
     '!src/shims-vue.js',
