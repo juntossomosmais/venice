@@ -10,6 +10,7 @@ const START_ICON = 'jsm-icon-angle-right'
 const END_ICON = 'jsm-icon-angle-left'
 const SOME_TEXT = 'Venice is the best!'
 const ROLE_BUTTON_WHEN_CLICKABLE = 'button'
+
 describe('<Tag />', () => {
   it('Should display text and default color and format', () => {
     // given
