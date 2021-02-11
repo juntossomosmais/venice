@@ -13,7 +13,7 @@ export default class Breadcrumb extends Vue {
   @Prop({ default: 'default' }) color!: IBreadcrumb['color']
 
   get breadcrumbClass() {
-    return ['breadcrumb', this.color]
+    return ['JSMBreadcrumb', `JSMBreadcrumb--${this.color}`]
   }
 }
 </script>

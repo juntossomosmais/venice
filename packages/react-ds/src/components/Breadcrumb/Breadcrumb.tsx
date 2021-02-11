@@ -20,7 +20,11 @@ export const Breadcrumb: React.FunctionComponent<IBreadcrumbProps> = ({
 }) => {
   return (
     <nav
-      className={classNames(styles.breadcrumb, styles[color], className)}
+      className={classNames(
+        styles.JSMBreadcrumb,
+        styles[`JSMBreadcrumb--${color}`],
+        className
+      )}
       aria-label="breadcrumb"
       {...rest}
     >

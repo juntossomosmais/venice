@@ -1,10 +1,30 @@
 @import '~@venice/styles/core';
 
-.breadcrumb {
+.JSMBreadcrumb {
   display: flex;
+
+  &--default {
+    .JSMBreadcrumbItem {
+      color: var(--text-color);
+
+      :root & > * {
+        color: var(--text-color);
+      }
+    }
+  }
+
+  &--contrast {
+    .JSMBreadcrumbItem {
+      color: var(--white);
+
+      :root & > * {
+        color: var(--white);
+      }
+    }
+  }
 }
 
-.breadcrumbItem {
+.JSMBreadcrumbItem {
   display: inline-block;
   font: var(--typography-body-font);
   line-height: var(--typography-body-letter);
@@ -38,26 +58,6 @@
       &:hover {
         text-decoration: none;
       }
-    }
-  }
-}
-
-.default {
-  .breadcrumbItem {
-    color: var(--text-color);
-
-    :root & > * {
-      color: var(--text-color);
-    }
-  }
-}
-
-.contrast {
-  .breadcrumbItem {
-    color: var(--white);
-
-    :root & > * {
-      color: var(--white);
     }
   }
 }
