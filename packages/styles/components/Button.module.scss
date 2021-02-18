@@ -197,64 +197,64 @@
     }
   }
 
-  .loading {
-    position: absolute;
-    z-index: var(--zindex-1);
-  }
-}
-
-.small {
-  height: var(--space-md);
-  padding-left: var(--space-sm);
-  padding-right: var(--space-sm);
-
-  .JSMButtonChildren {
-    font-size: 0.8em;
-  }
-}
-
-.medium {
-  height: 40px;
-  padding-left: var(--space);
-  padding-right: var(--space);
-
-  .JSMButtonChildren {
-    font-size: 0.9em;
-  }
-}
-
-.large {
-  height: var(--space-lg);
-  padding-left: var(--space);
-  padding-right: var(--space);
-
-  .JSMButtonChildren {
-    font-size: 1em;
-  }
-}
-
-.round-square {
-  min-width: var(--space-xlg);
-}
-
-.circle {
-  border-radius: 50%;
-
-  &.small {
-    width: var(--space-md);
-  }
-
-  &.medium {
+  &--small {
+    height: var(--space-md);
     padding-left: var(--space-sm);
     padding-right: var(--space-sm);
-    width: 40px;
+
+    .JSMButtonChildren {
+      font-size: 0.8em;
+    }
   }
 
-  &.large {
-    width: var(--space-lg);
+  &--medium {
+    height: 40px;
+    padding-left: var(--space);
+    padding-right: var(--space);
+
+    .JSMButtonChildren {
+      font-size: 0.9em;
+    }
+  }
+
+  &--large {
+    height: var(--space-lg);
+    padding-left: var(--space);
+    padding-right: var(--space);
+
+    .JSMButtonChildren {
+      font-size: 1em;
+    }
+  }
+
+  &--circle {
+    border-radius: 50%;
+
+    &.JSMButton--small {
+      width: var(--space-md);
+    }
+
+    &.JSMButton--medium {
+      padding-left: var(--space-sm);
+      padding-right: var(--space-sm);
+      width: 40px;
+    }
+
+    &.JSMButton--large {
+      width: var(--space-lg);
+    }
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--round-square {
+    min-width: var(--space-xlg);
   }
 }
 
-.bold {
-  font-weight: bold;
+.loading {
+  position: absolute;
+  z-index: var(--zindex-1);
 }

@@ -52,8 +52,8 @@ export default class Button extends Vue {
       'JSMButton',
       `JSMButton--${this.color}`,
       `JSMButton--${this.variant}`,
-      this.shape,
-      this.size,
+      `JSMButton--${this.shape}`,
+      `JSMButton--${this.size}`,
       this.isLoading ? 'JSMButton--isLoading' : '',
     ]
   }

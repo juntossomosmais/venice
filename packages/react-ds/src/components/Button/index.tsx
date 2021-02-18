@@ -54,11 +54,11 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
           styles.JSMButton,
           styles[`JSMButton--${color}`],
           styles[`JSMButton--${variant}`],
-          styles[size],
-          styles[shape],
+          styles[`JSMButton--${size}`],
+          styles[`JSMButton--${shape}`],
           {
             [styles['JSMButton--isLoading']]: isLoading,
-            [styles.bold]: bold,
+            [styles['JSMButton--bold']]: bold,
           },
           className
         )}
