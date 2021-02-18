@@ -1,13 +1,13 @@
 <template>
   <svg
-    :class="['spinner', color]"
+    :class="['JSMSpinner', `JSMSpinner--${color}`]"
     :style="{ height: `${size}px`, width: `${size}px` }"
     role="progressbar"
     aria-busy="true"
     viewBox="0 0 66 66"
   >
     <circle
-      :class="['circle']"
+      :class="['JSMSpinner--circle']"
       fill="none"
       strokeWidth="6"
       strokeLinecap="round"

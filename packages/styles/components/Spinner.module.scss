@@ -4,41 +4,41 @@ $rotation: 270;
 $dashoffset: 180;
 $animation-time: 1.2s;
 
-.spinner {
+.JSMSpinner {
   animation: rotation $animation-time linear infinite;
-}
 
-.circle {
-  animation: turn $animation-time ease-in-out infinite;
-  stroke-dasharray: $dashoffset;
-  stroke-dashoffset: 0;
-  stroke-linecap: round;
-  stroke-width: 6;
-  transform-origin: center;
-}
+  &--circle {
+    animation: turn $animation-time ease-in-out infinite;
+    stroke-dasharray: $dashoffset;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-width: 6;
+    transform-origin: center;
+  }
 
-.default {
-  stroke: var(--default-color);
-}
+  &--default {
+    stroke: var(--default-color);
+  }
 
-.default-contrast {
-  stroke: var(--default-color-contrast);
-}
+  &--default-contrast {
+    stroke: var(--default-color-contrast);
+  }
 
-.primary {
-  stroke: var(--primary-color);
-}
+  &--primary {
+    stroke: var(--primary-color);
+  }
 
-.primary-contrast {
-  stroke: var(--primary-color-contrast);
-}
+  &--primary-contrast {
+    stroke: var(--primary-color-contrast);
+  }
 
-.secondary {
-  stroke: var(--secondary-color);
-}
+  &--secondary {
+    stroke: var(--secondary-color);
+  }
 
-.secondary-contrast {
-  stroke: var(--secondary-color-contrast);
+  &--secondary-contrast {
+    stroke: var(--secondary-color-contrast);
+  }
 }
 
 @keyframes rotation {

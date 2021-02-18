@@ -18,7 +18,11 @@ export const Spinner = ({
 }: ISpinnerProps) => {
   return (
     <svg
-      className={classNames(styles.spinner, styles[color], className)}
+      className={classNames(
+        styles.JSMSpinner,
+        styles[`JSMSpinner--${color}`],
+        className
+      )}
       style={{
         fontSize: size,
         height: size,
@@ -30,9 +34,7 @@ export const Spinner = ({
       {...rest}
     >
       <circle
-        className={`
-          ${styles.circle}
-        `}
+        className={styles[`JSMSpinner--circle`]}
         fill="none"
         strokeWidth="6"
         strokeLinecap="round"
