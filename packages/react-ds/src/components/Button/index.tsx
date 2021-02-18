@@ -51,7 +51,7 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
           !isLoading && onClick(e)
         }
         className={classNames(
-          styles.button,
+          styles.JSMButton,
           styles[color],
           styles[variant],
           styles[size],
@@ -70,9 +70,13 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
           />
         )}
         <>
-          {startIcon && <span className={styles.startIcon}>{startIcon}</span>}
-          <span className={styles.children}>{children}</span>
-          {endIcon && <span className={styles.endIcon}>{endIcon}</span>}
+          {startIcon && (
+            <span className={styles.JSMButtonStartIcon}>{startIcon}</span>
+          )}
+          <span className={styles.JSMButtonChildren}>{children}</span>
+          {endIcon && (
+            <span className={styles.JSMButtonEndIcon}>{endIcon}</span>
+          )}
         </>
       </ButtonComponent>
     </>

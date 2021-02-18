@@ -13,15 +13,15 @@
       :size="spinnerSize"
       class="loading"
     />
-    <span v-if="$slots.startIcon" class="startIcon">
+    <span v-if="$slots.startIcon" class="JSMButtonStartIcon">
       <!-- @slot To add icon at the beginning -->
       <slot name="startIcon" />
     </span>
-    <span class="children">
+    <span class="JSMButtonChildren">
       <!-- @slot To add something, like a text -->
       <slot />
     </span>
-    <span v-if="$slots.endIcon" class="endIcon">
+    <span v-if="$slots.endIcon" class="JSMButtonEndIcon">
       <!-- @slot To add icon at the end -->
       <slot name="endIcon" />
     </span>
@@ -49,7 +49,7 @@ export default class Button extends Vue {
 
   get buttonClass() {
     return [
-      'button',
+      'JSMButton',
       this.color,
       this.variant,
       this.shape,

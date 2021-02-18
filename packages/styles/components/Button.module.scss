@@ -1,6 +1,6 @@
 @import '~@venice/styles/core';
 
-.button {
+.JSMButton {
   align-items: center;
   background-color: transparent;
   border: 1px solid transparent;
@@ -31,6 +31,33 @@
     transition-property: opacity;
   }
 
+  &Children {
+    display: inherit;
+    position: relative;
+
+    img {
+      max-width: none;
+    }
+  }
+
+  &StartIcon {
+    display: inline-block;
+    position: relative;
+
+    &:not(:empty) {
+      margin-right: var(--space-xs);
+    }
+  }
+
+  &EndIcon {
+    display: inline-block;
+    position: relative;
+
+    &:not(:empty) {
+      margin-left: var(--space-xs);
+    }
+  }
+
   &[disabled] {
     cursor: default;
 
@@ -50,39 +77,12 @@
   }
 }
 
-.children {
-  display: inherit;
-  position: relative;
-
-  img {
-    max-width: none;
-  }
-}
-
-.startIcon {
-  display: inline-block;
-  position: relative;
-
-  &:not(:empty) {
-    margin-right: var(--space-xs);
-  }
-}
-
-.endIcon {
-  display: inline-block;
-  position: relative;
-
-  &:not(:empty) {
-    margin-left: var(--space-xs);
-  }
-}
-
 .isLoading {
   cursor: default;
 
-  .children,
-  .startIcon,
-  .endIcon {
+  .JSMButtonChildren,
+  .JSMButtonStartIcon,
+  .JSMButtonEndIcon {
     opacity: 0;
   }
 }
@@ -203,7 +203,7 @@
   padding-left: var(--space-sm);
   padding-right: var(--space-sm);
 
-  .children {
+  .JSMButtonChildren {
     font-size: 0.8em;
   }
 }
@@ -213,7 +213,7 @@
   padding-left: var(--space);
   padding-right: var(--space);
 
-  .children {
+  .JSMButtonChildren {
     font-size: 0.9em;
   }
 }
@@ -223,7 +223,7 @@
   padding-left: var(--space);
   padding-right: var(--space);
 
-  .children {
+  .JSMButtonChildren {
     font-size: 1em;
   }
 }
