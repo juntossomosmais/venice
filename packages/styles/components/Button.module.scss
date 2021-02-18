@@ -61,16 +61,16 @@
   &[disabled] {
     cursor: default;
 
-    &.text {
+    &.JSMButton--text {
       color: var(--disabled-color);
     }
 
-    &.outlined {
+    &.JSMButton--outlined {
       border-color: var(--disabled-color);
       color: var(--disabled-color);
     }
 
-    &.filled {
+    &.JSMButton--filled {
       background-color: var(--disabled-color);
       color: var(--disabled-color-contrast);
     }
@@ -86,120 +86,120 @@
     }
   }
 
+  &--default {
+    &.JSMButton--text {
+      color: var(--default-color);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--default-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.JSMButton--outlined {
+      border-color: var(--default-color);
+      color: var(--default-color);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--default-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.JSMButton--filled {
+      background-color: var(--default-color);
+      color: var(--default-color-contrast);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--default-color-lighten);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &--primary {
+    &.JSMButton--text {
+      color: var(--primary-color);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--primary-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.JSMButton--outlined {
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--primary-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.JSMButton--filled {
+      background-color: var(--primary-color);
+      color: var(--primary-color-contrast);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--primary-color-lighten);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &--secondary {
+    &.JSMButton--text {
+      color: var(--secondary-color);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--secondary-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.JSMButton--outlined {
+      border-color: var(--secondary-color);
+      color: var(--secondary-color);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--secondary-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.JSMButton--filled {
+      background-color: var(--secondary-color);
+      color: var(--secondary-color-contrast);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--secondary-color-lighten);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   .loading {
     position: absolute;
     z-index: var(--zindex-1);
-  }
-}
-
-.default {
-  &.text {
-    color: var(--default-color);
-
-    &:not([disabled]):not(.JSMButton--isLoading):hover {
-      &::before {
-        background-color: var(--default-color-lighten);
-        opacity: 0.1;
-      }
-    }
-  }
-
-  &.outlined {
-    border-color: var(--default-color);
-    color: var(--default-color);
-
-    &:not([disabled]):not(.JSMButton--isLoading):hover {
-      &::before {
-        background-color: var(--default-color-lighten);
-        opacity: 0.1;
-      }
-    }
-  }
-
-  &.filled {
-    background-color: var(--default-color);
-    color: var(--default-color-contrast);
-
-    &:not([disabled]):not(.JSMButton--isLoading):hover {
-      &::before {
-        background-color: var(--default-color-lighten);
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.primary {
-  &.text {
-    color: var(--primary-color);
-
-    &:not([disabled]):not(.JSMButton--isLoading):hover {
-      &::before {
-        background-color: var(--primary-color-lighten);
-        opacity: 0.1;
-      }
-    }
-  }
-
-  &.outlined {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-
-    &:not([disabled]):not(.JSMButton--isLoading):hover {
-      &::before {
-        background-color: var(--primary-color-lighten);
-        opacity: 0.1;
-      }
-    }
-  }
-
-  &.filled {
-    background-color: var(--primary-color);
-    color: var(--primary-color-contrast);
-
-    &:not([disabled]):not(.JSMButton--isLoading):hover {
-      &::before {
-        background-color: var(--primary-color-lighten);
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.secondary {
-  &.text {
-    color: var(--secondary-color);
-
-    &:not([disabled]):not(.JSMButton--isLoading):hover {
-      &::before {
-        background-color: var(--secondary-color-lighten);
-        opacity: 0.1;
-      }
-    }
-  }
-
-  &.outlined {
-    border-color: var(--secondary-color);
-    color: var(--secondary-color);
-
-    &:not([disabled]):not(.JSMButton--isLoading):hover {
-      &::before {
-        background-color: var(--secondary-color-lighten);
-        opacity: 0.1;
-      }
-    }
-  }
-
-  &.filled {
-    background-color: var(--secondary-color);
-    color: var(--secondary-color-contrast);
-
-    &:not([disabled]):not(.JSMButton--isLoading):hover {
-      &::before {
-        background-color: var(--secondary-color-lighten);
-        opacity: 1;
-      }
-    }
   }
 }
 

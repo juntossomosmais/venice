@@ -50,8 +50,8 @@ export default class Button extends Vue {
   get buttonClass() {
     return [
       'JSMButton',
-      this.color,
-      this.variant,
+      `JSMButton--${this.color}`,
+      `JSMButton--${this.variant}`,
       this.shape,
       this.size,
       this.isLoading ? 'JSMButton--isLoading' : '',

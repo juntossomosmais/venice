@@ -52,8 +52,8 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
         }
         className={classNames(
           styles.JSMButton,
-          styles[color],
-          styles[variant],
+          styles[`JSMButton--${color}`],
+          styles[`JSMButton--${variant}`],
           styles[size],
           styles[shape],
           {
