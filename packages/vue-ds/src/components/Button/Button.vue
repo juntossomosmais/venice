@@ -54,7 +54,7 @@ export default class Button extends Vue {
       this.variant,
       this.shape,
       this.size,
-      this.isLoading ? 'isLoading' : '',
+      this.isLoading ? 'JSMButton--isLoading' : '',
     ]
   }
 

@@ -75,15 +75,20 @@
       color: var(--disabled-color-contrast);
     }
   }
-}
 
-.isLoading {
-  cursor: default;
+  &--isLoading {
+    cursor: default;
 
-  .JSMButtonChildren,
-  .JSMButtonStartIcon,
-  .JSMButtonEndIcon {
-    opacity: 0;
+    .JSMButtonChildren,
+    .JSMButtonStartIcon,
+    .JSMButtonEndIcon {
+      opacity: 0;
+    }
+  }
+
+  .loading {
+    position: absolute;
+    z-index: var(--zindex-1);
   }
 }
 
@@ -91,7 +96,7 @@
   &.text {
     color: var(--default-color);
 
-    &:not([disabled]):not(.isLoading):hover {
+    &:not([disabled]):not(.JSMButton--isLoading):hover {
       &::before {
         background-color: var(--default-color-lighten);
         opacity: 0.1;
@@ -103,7 +108,7 @@
     border-color: var(--default-color);
     color: var(--default-color);
 
-    &:not([disabled]):not(.isLoading):hover {
+    &:not([disabled]):not(.JSMButton--isLoading):hover {
       &::before {
         background-color: var(--default-color-lighten);
         opacity: 0.1;
@@ -115,7 +120,7 @@
     background-color: var(--default-color);
     color: var(--default-color-contrast);
 
-    &:not([disabled]):not(.isLoading):hover {
+    &:not([disabled]):not(.JSMButton--isLoading):hover {
       &::before {
         background-color: var(--default-color-lighten);
         opacity: 1;
@@ -128,7 +133,7 @@
   &.text {
     color: var(--primary-color);
 
-    &:not([disabled]):not(.isLoading):hover {
+    &:not([disabled]):not(.JSMButton--isLoading):hover {
       &::before {
         background-color: var(--primary-color-lighten);
         opacity: 0.1;
@@ -140,7 +145,7 @@
     border-color: var(--primary-color);
     color: var(--primary-color);
 
-    &:not([disabled]):not(.isLoading):hover {
+    &:not([disabled]):not(.JSMButton--isLoading):hover {
       &::before {
         background-color: var(--primary-color-lighten);
         opacity: 0.1;
@@ -152,7 +157,7 @@
     background-color: var(--primary-color);
     color: var(--primary-color-contrast);
 
-    &:not([disabled]):not(.isLoading):hover {
+    &:not([disabled]):not(.JSMButton--isLoading):hover {
       &::before {
         background-color: var(--primary-color-lighten);
         opacity: 1;
@@ -165,7 +170,7 @@
   &.text {
     color: var(--secondary-color);
 
-    &:not([disabled]):not(.isLoading):hover {
+    &:not([disabled]):not(.JSMButton--isLoading):hover {
       &::before {
         background-color: var(--secondary-color-lighten);
         opacity: 0.1;
@@ -177,7 +182,7 @@
     border-color: var(--secondary-color);
     color: var(--secondary-color);
 
-    &:not([disabled]):not(.isLoading):hover {
+    &:not([disabled]):not(.JSMButton--isLoading):hover {
       &::before {
         background-color: var(--secondary-color-lighten);
         opacity: 0.1;
@@ -189,7 +194,7 @@
     background-color: var(--secondary-color);
     color: var(--secondary-color-contrast);
 
-    &:not([disabled]):not(.isLoading):hover {
+    &:not([disabled]):not(.JSMButton--isLoading):hover {
       &::before {
         background-color: var(--secondary-color-lighten);
         opacity: 1;
@@ -248,11 +253,6 @@
   &.large {
     width: var(--space-lg);
   }
-}
-
-.loading {
-  position: absolute;
-  z-index: var(--zindex-1);
 }
 
 .bold {
