@@ -5,7 +5,7 @@ import Breadcrumb from './Breadcrumb.vue'
 describe('<Breadcrumb />', () => {
   it('should have "Breadcrumb" classname when render', () => {
     const wrapper = mount(Breadcrumb)
-    expect(wrapper.classes()).toContain('breadcrumb')
+    expect(wrapper.classes()).toContain('JSMBreadcrumb')
   })
 
   it('should have "default" classname when "color prop" is "default"', () => {
@@ -14,7 +14,7 @@ describe('<Breadcrumb />', () => {
         color: 'default',
       },
     })
-    expect(wrapper.classes()).toContain('default')
+    expect(wrapper.classes()).toContain('JSMBreadcrumb--default')
   })
 
   it('should have "contrast" classname when "color prop" is "contrast"', () => {
@@ -23,6 +23,6 @@ describe('<Breadcrumb />', () => {
         color: 'contrast',
       },
     })
-    expect(wrapper.classes()).toContain('contrast')
+    expect(wrapper.classes()).toContain('JSMBreadcrumb--contrast')
   })
 })
