@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.18.2...@juntossomosmais/venice-vue@0.19.0) (2021-02-19)
+
+
+### Features
+
+* **breadcrumb:** add prefix on class to avoid conflict ([72758da](https://github.com/juntossomosmais/venice/commit/72758da388a713082d7b3b1e00ee59f21b8b30bf))
+
+
+
+
+
 ## [0.18.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.18.1...@juntossomosmais/venice-vue@0.18.2) (2020-12-23)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue

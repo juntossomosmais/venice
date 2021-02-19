@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.26.0...@venice/styles@0.27.0) (2021-02-19)
+
+
+### Features
+
+* **breadcrumb:** add prefix on class to avoid conflict ([72758da](https://github.com/juntossomosmais/venice/commit/72758da388a713082d7b3b1e00ee59f21b8b30bf))
+
+
+
+
+
 # [0.26.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.25.0...@venice/styles@0.26.0) (2020-11-18)
 
 
