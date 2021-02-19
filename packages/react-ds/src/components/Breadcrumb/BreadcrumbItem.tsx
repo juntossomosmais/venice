@@ -8,7 +8,7 @@ export const BreadcrumbItem: React.FunctionComponent<React.HTMLProps<
   HTMLDivElement
 >> = ({ children, className = '', ...rest }) => {
   return (
-    <div className={classNames(styles.breadcrumbItem, className)} {...rest}>
+    <div className={classNames(styles.JSMBreadcrumbItem, className)} {...rest}>
       {children}
     </div>
   )

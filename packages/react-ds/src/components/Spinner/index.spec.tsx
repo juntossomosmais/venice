@@ -9,22 +9,22 @@ import { Spinner } from '.'
 describe('<Spinner />', () => {
   it('should have "default" classname when prop color is empty', () => {
     const { container } = render(<Spinner></Spinner>)
-    expect(container.firstChild).toHaveClass('default')
+    expect(container.firstChild).toHaveClass('JSMSpinner--default')
   })
 
   it('should have "default" classname when prop color is "default"', () => {
     const { container } = render(<Spinner color="default"></Spinner>)
-    expect(container.firstChild).toHaveClass('default')
+    expect(container.firstChild).toHaveClass('JSMSpinner--default')
   })
 
   it('should have "primary" classname when prop color is "primary"', () => {
     const { container } = render(<Spinner color="primary"></Spinner>)
-    expect(container.firstChild).toHaveClass('primary')
+    expect(container.firstChild).toHaveClass('JSMSpinner--primary')
   })
 
   it('should have "secondary" classname when prop color is "secondary"', () => {
     const { container } = render(<Spinner color="secondary"></Spinner>)
-    expect(container.firstChild).toHaveClass('secondary')
+    expect(container.firstChild).toHaveClass('JSMSpinner--secondary')
   })
 
   it('should have 36px as a default size', () => {

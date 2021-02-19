@@ -1,6 +1,6 @@
 @import '~@venice/styles/core';
 
-.button {
+.JSMButton {
   align-items: center;
   background-color: transparent;
   border: 1px solid transparent;
@@ -31,230 +31,230 @@
     transition-property: opacity;
   }
 
+  &Children {
+    display: inherit;
+    position: relative;
+
+    img {
+      max-width: none;
+    }
+  }
+
+  &StartIcon {
+    display: inline-block;
+    position: relative;
+
+    &:not(:empty) {
+      margin-right: var(--space-xs);
+    }
+  }
+
+  &EndIcon {
+    display: inline-block;
+    position: relative;
+
+    &:not(:empty) {
+      margin-left: var(--space-xs);
+    }
+  }
+
   &[disabled] {
     cursor: default;
 
-    &.text {
+    &.JSMButton--text {
       color: var(--disabled-color);
     }
 
-    &.outlined {
+    &.JSMButton--outlined {
       border-color: var(--disabled-color);
       color: var(--disabled-color);
     }
 
-    &.filled {
+    &.JSMButton--filled {
       background-color: var(--disabled-color);
       color: var(--disabled-color-contrast);
     }
   }
-}
 
-.children {
-  display: inherit;
-  position: relative;
+  &--isLoading {
+    cursor: default;
 
-  img {
-    max-width: none;
+    .JSMButtonChildren,
+    .JSMButtonStartIcon,
+    .JSMButtonEndIcon {
+      opacity: 0;
+    }
   }
-}
 
-.startIcon {
-  display: inline-block;
-  position: relative;
+  &--default {
+    &.JSMButton--text {
+      color: var(--default-color);
 
-  &:not(:empty) {
-    margin-right: var(--space-xs);
-  }
-}
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--default-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
 
-.endIcon {
-  display: inline-block;
-  position: relative;
+    &.JSMButton--outlined {
+      border-color: var(--default-color);
+      color: var(--default-color);
 
-  &:not(:empty) {
-    margin-left: var(--space-xs);
-  }
-}
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--default-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
 
-.isLoading {
-  cursor: default;
+    &.JSMButton--filled {
+      background-color: var(--default-color);
+      color: var(--default-color-contrast);
 
-  .children,
-  .startIcon,
-  .endIcon {
-    opacity: 0;
-  }
-}
-
-.default {
-  &.text {
-    color: var(--default-color);
-
-    &:not([disabled]):not(.isLoading):hover {
-      &::before {
-        background-color: var(--default-color-lighten);
-        opacity: 0.1;
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--default-color-lighten);
+          opacity: 1;
+        }
       }
     }
   }
 
-  &.outlined {
-    border-color: var(--default-color);
-    color: var(--default-color);
+  &--primary {
+    &.JSMButton--text {
+      color: var(--primary-color);
 
-    &:not([disabled]):not(.isLoading):hover {
-      &::before {
-        background-color: var(--default-color-lighten);
-        opacity: 0.1;
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--primary-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.JSMButton--outlined {
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--primary-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.JSMButton--filled {
+      background-color: var(--primary-color);
+      color: var(--primary-color-contrast);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--primary-color-lighten);
+          opacity: 1;
+        }
       }
     }
   }
 
-  &.filled {
-    background-color: var(--default-color);
-    color: var(--default-color-contrast);
+  &--secondary {
+    &.JSMButton--text {
+      color: var(--secondary-color);
 
-    &:not([disabled]):not(.isLoading):hover {
-      &::before {
-        background-color: var(--default-color-lighten);
-        opacity: 1;
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--secondary-color-lighten);
+          opacity: 0.1;
+        }
       }
     }
-  }
-}
 
-.primary {
-  &.text {
-    color: var(--primary-color);
+    &.JSMButton--outlined {
+      border-color: var(--secondary-color);
+      color: var(--secondary-color);
 
-    &:not([disabled]):not(.isLoading):hover {
-      &::before {
-        background-color: var(--primary-color-lighten);
-        opacity: 0.1;
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--secondary-color-lighten);
+          opacity: 0.1;
+        }
       }
     }
-  }
 
-  &.outlined {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    &.JSMButton--filled {
+      background-color: var(--secondary-color);
+      color: var(--secondary-color-contrast);
 
-    &:not([disabled]):not(.isLoading):hover {
-      &::before {
-        background-color: var(--primary-color-lighten);
-        opacity: 0.1;
-      }
-    }
-  }
-
-  &.filled {
-    background-color: var(--primary-color);
-    color: var(--primary-color-contrast);
-
-    &:not([disabled]):not(.isLoading):hover {
-      &::before {
-        background-color: var(--primary-color-lighten);
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.secondary {
-  &.text {
-    color: var(--secondary-color);
-
-    &:not([disabled]):not(.isLoading):hover {
-      &::before {
-        background-color: var(--secondary-color-lighten);
-        opacity: 0.1;
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--secondary-color-lighten);
+          opacity: 1;
+        }
       }
     }
   }
 
-  &.outlined {
-    border-color: var(--secondary-color);
-    color: var(--secondary-color);
-
-    &:not([disabled]):not(.isLoading):hover {
-      &::before {
-        background-color: var(--secondary-color-lighten);
-        opacity: 0.1;
-      }
-    }
-  }
-
-  &.filled {
-    background-color: var(--secondary-color);
-    color: var(--secondary-color-contrast);
-
-    &:not([disabled]):not(.isLoading):hover {
-      &::before {
-        background-color: var(--secondary-color-lighten);
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.small {
-  height: var(--space-md);
-  padding-left: var(--space-sm);
-  padding-right: var(--space-sm);
-
-  .children {
-    font-size: 0.8em;
-  }
-}
-
-.medium {
-  height: 40px;
-  padding-left: var(--space);
-  padding-right: var(--space);
-
-  .children {
-    font-size: 0.9em;
-  }
-}
-
-.large {
-  height: var(--space-lg);
-  padding-left: var(--space);
-  padding-right: var(--space);
-
-  .children {
-    font-size: 1em;
-  }
-}
-
-.round-square {
-  min-width: var(--space-xlg);
-}
-
-.circle {
-  border-radius: 50%;
-
-  &.small {
-    width: var(--space-md);
-  }
-
-  &.medium {
+  &--small {
+    height: var(--space-md);
     padding-left: var(--space-sm);
     padding-right: var(--space-sm);
-    width: 40px;
+
+    .JSMButtonChildren {
+      font-size: 0.8em;
+    }
   }
 
-  &.large {
-    width: var(--space-lg);
+  &--medium {
+    height: 40px;
+    padding-left: var(--space);
+    padding-right: var(--space);
+
+    .JSMButtonChildren {
+      font-size: 0.9em;
+    }
+  }
+
+  &--large {
+    height: var(--space-lg);
+    padding-left: var(--space);
+    padding-right: var(--space);
+
+    .JSMButtonChildren {
+      font-size: 1em;
+    }
+  }
+
+  &--circle {
+    border-radius: 50%;
+
+    &.JSMButton--small {
+      width: var(--space-md);
+    }
+
+    &.JSMButton--medium {
+      padding-left: var(--space-sm);
+      padding-right: var(--space-sm);
+      width: 40px;
+    }
+
+    &.JSMButton--large {
+      width: var(--space-lg);
+    }
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--round-square {
+    min-width: var(--space-xlg);
   }
 }
 
 .loading {
   position: absolute;
   z-index: var(--zindex-1);
-}
-
-.bold {
-  font-weight: bold;
 }

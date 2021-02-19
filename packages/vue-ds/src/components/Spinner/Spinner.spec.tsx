@@ -7,7 +7,7 @@ import Spinner from './Spinner.vue'
 describe('<Spinner />', () => {
   it('should have "default" classname when prop color is empty', () => {
     const { container } = render(Spinner)
-    expect(container.firstChild).toHaveClass('default')
+    expect(container.firstChild).toHaveClass('JSMSpinner--default')
   })
 
   it('should have "default" classname when prop color is "default"', () => {
@@ -16,7 +16,7 @@ describe('<Spinner />', () => {
         color: 'default',
       },
     })
-    expect(container.firstChild).toHaveClass('default')
+    expect(container.firstChild).toHaveClass('JSMSpinner--default')
   })
 
   it('should have "primary" classname when prop color is "primary"', () => {
@@ -25,7 +25,7 @@ describe('<Spinner />', () => {
         color: 'primary',
       },
     })
-    expect(container.firstChild).toHaveClass('primary')
+    expect(container.firstChild).toHaveClass('JSMSpinner--primary')
   })
 
   it('should have "secondary" classname when prop color is "secondary"', () => {
@@ -34,7 +34,7 @@ describe('<Spinner />', () => {
         color: 'secondary',
       },
     })
-    expect(container.firstChild).toHaveClass('secondary')
+    expect(container.firstChild).toHaveClass('JSMSpinner--secondary')
   })
 
   it('should have 36px as a default size', () => {

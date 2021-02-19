@@ -1,5 +1,5 @@
 <template>
-  <div class="breadcrumbItem">
+  <div class="JSMBreadcrumbItem">
     <slot />
   </div>
 </template>

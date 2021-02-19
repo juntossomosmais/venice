@@ -7,7 +7,7 @@ import Button from './Button.vue'
 describe('<Button />', () => {
   it('should have "default" classname when "color prop" is empty', () => {
     const wrapper = mount(Button)
-    expect(wrapper.classes()).toContain('default')
+    expect(wrapper.classes()).toContain('JSMButton--default')
   })
 
   it('should have "default" classname when "color prop" is "default"', () => {
@@ -16,7 +16,7 @@ describe('<Button />', () => {
         color: 'default',
       },
     })
-    expect(wrapper.classes()).toContain('default')
+    expect(wrapper.classes()).toContain('JSMButton--default')
   })
 
   it('should have "primary" classname when "color prop" is "primary"', () => {
@@ -25,7 +25,7 @@ describe('<Button />', () => {
         color: 'primary',
       },
     })
-    expect(wrapper.classes()).toContain('primary')
+    expect(wrapper.classes()).toContain('JSMButton--primary')
   })
 
   it('should have "secondary" classname when "color prop" is "secondary"', () => {
@@ -34,12 +34,12 @@ describe('<Button />', () => {
         color: 'secondary',
       },
     })
-    expect(wrapper.classes()).toContain('secondary')
+    expect(wrapper.classes()).toContain('JSMButton--secondary')
   })
 
   it('should have "filled" classname when "variant prop" is empty', () => {
     const wrapper = mount(Button)
-    expect(wrapper.classes()).toContain('filled')
+    expect(wrapper.classes()).toContain('JSMButton--filled')
   })
 
   it('should have "filled" classname when "variant prop" propsData is "filled"', () => {
@@ -48,7 +48,7 @@ describe('<Button />', () => {
         variant: 'filled',
       },
     })
-    expect(wrapper.classes()).toContain('filled')
+    expect(wrapper.classes()).toContain('JSMButton--filled')
   })
 
   it('should have "outlined" classname when "variant prop" propsData is "outlined"', () => {
@@ -57,7 +57,7 @@ describe('<Button />', () => {
         variant: 'outlined',
       },
     })
-    expect(wrapper.classes()).toContain('outlined')
+    expect(wrapper.classes()).toContain('JSMButton--outlined')
   })
 
   it('should have "text" classname when "variant prop" propsData is "text"', () => {
@@ -66,12 +66,12 @@ describe('<Button />', () => {
         variant: 'text',
       },
     })
-    expect(wrapper.classes()).toContain('text')
+    expect(wrapper.classes()).toContain('JSMButton--text')
   })
 
   it('should have "large" classname when "size prop" is empty', () => {
     const wrapper = mount(Button)
-    expect(wrapper.classes()).toContain('large')
+    expect(wrapper.classes()).toContain('JSMButton--large')
   })
 
   it('should have "large" classname when "size prop" is "large"', () => {
@@ -80,7 +80,7 @@ describe('<Button />', () => {
         size: 'large',
       },
     })
-    expect(wrapper.classes()).toContain('large')
+    expect(wrapper.classes()).toContain('JSMButton--large')
   })
 
   it('should have "medium" classname when "size prop" is "medium"', () => {
@@ -89,7 +89,7 @@ describe('<Button />', () => {
         size: 'medium',
       },
     })
-    expect(wrapper.classes()).toContain('medium')
+    expect(wrapper.classes()).toContain('JSMButton--medium')
   })
 
   it('should have "small" classname when "size prop" is "small"', () => {
@@ -98,12 +98,12 @@ describe('<Button />', () => {
         size: 'small',
       },
     })
-    expect(wrapper.classes()).toContain('small')
+    expect(wrapper.classes()).toContain('JSMButton--small')
   })
 
   it('should have "round-square" classname when "shape prop" is empty', () => {
     const wrapper = mount(Button)
-    expect(wrapper.classes()).toContain('round-square')
+    expect(wrapper.classes()).toContain('JSMButton--round-square')
   })
 
   it('should have "round-square" classname when "shape prop" is "round-square"', () => {
@@ -112,7 +112,7 @@ describe('<Button />', () => {
         shape: 'round-square',
       },
     })
-    expect(wrapper.classes()).toContain('round-square')
+    expect(wrapper.classes()).toContain('JSMButton--round-square')
   })
 
   it('should have "circle" classname when "shape prop" is "circle"', () => {
@@ -121,7 +121,7 @@ describe('<Button />', () => {
         shape: 'circle',
       },
     })
-    expect(wrapper.classes()).toContain('circle')
+    expect(wrapper.classes()).toContain('JSMButton--circle')
   })
 
   it('should have "startIcon" element when has "startIcon prop"', () => {
@@ -130,10 +130,10 @@ describe('<Button />', () => {
         startIcon: '←',
       },
     })
-    const endIcon = wrapper.find('.endIcon')
+    const endIcon = wrapper.find('.JSMButtonEndIcon')
 
-    expect(wrapper.find('.startIcon').html()).toBe(
-      `<span class="startIcon">←</span>`
+    expect(wrapper.find('.JSMButtonStartIcon').html()).toBe(
+      `<span class="JSMButtonStartIcon">←</span>`
     )
     expect(endIcon.exists()).toBeFalsy()
   })
@@ -144,11 +144,11 @@ describe('<Button />', () => {
         endIcon: '→',
       },
     })
-    const startIcon = wrapper.find('.startIcon')
+    const startIcon = wrapper.find('.JSMButtonStartIcon')
 
     expect(startIcon.exists()).toBeFalsy()
-    expect(wrapper.find('.endIcon').html()).toBe(
-      `<span class="endIcon">→</span>`
+    expect(wrapper.find('.JSMButtonEndIcon').html()).toBe(
+      `<span class="JSMButtonEndIcon">→</span>`
     )
   })
 
@@ -172,7 +172,7 @@ describe('<Button />', () => {
         isLoading: true,
       },
     })
-    expect(wrapper.classes()).toContain('isLoading')
+    expect(wrapper.classes()).toContain('JSMButton--isLoading')
   })
 
   it('should have "Spinner" component when has "isLoading prop"', () => {

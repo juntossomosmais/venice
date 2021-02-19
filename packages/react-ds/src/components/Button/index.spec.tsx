@@ -7,92 +7,92 @@ import '@testing-library/jest-dom'
 import { Button } from '.'
 
 describe('<Button />', () => {
-  it('should have "default" classname when "color prop" is empty', () => {
+  it('should have "JSMButton--default" classname when "color prop" is empty', () => {
     const { container } = render(<Button>Send</Button>)
-    expect(container.firstChild).toHaveClass('default')
+    expect(container.firstChild).toHaveClass('JSMButton--default')
   })
 
   it('should have "default" classname when "color prop" is "default"', () => {
     const { container } = render(<Button color="default">Send</Button>)
-    expect(container.firstChild).toHaveClass('default')
+    expect(container.firstChild).toHaveClass('JSMButton--default')
   })
 
   it('should have "primary" classname when "color prop" is "primary"', () => {
     const { container } = render(<Button color="primary">Send</Button>)
-    expect(container.firstChild).toHaveClass('primary')
+    expect(container.firstChild).toHaveClass('JSMButton--primary')
   })
 
   it('should have "secondary" classname when "color prop" is "secondary"', () => {
     const { container } = render(<Button color="secondary">Send</Button>)
-    expect(container.firstChild).toHaveClass('secondary')
+    expect(container.firstChild).toHaveClass('JSMButton--secondary')
   })
 
   it('should have "filled" classname when "variant prop" is empty', () => {
     const { container } = render(<Button>Send</Button>)
-    expect(container.firstChild).toHaveClass('filled')
+    expect(container.firstChild).toHaveClass('JSMButton--filled')
   })
 
   it('should have "filled" classname when "variant prop" is "filled"', () => {
     const { container } = render(<Button variant="filled">Send</Button>)
-    expect(container.firstChild).toHaveClass('filled')
+    expect(container.firstChild).toHaveClass('JSMButton--filled')
   })
 
   it('should have "outlined" classname when "variant prop" is "outlined"', () => {
     const { container } = render(<Button variant="outlined">Send</Button>)
-    expect(container.firstChild).toHaveClass('outlined')
+    expect(container.firstChild).toHaveClass('JSMButton--outlined')
   })
 
   it('should have "text" classname when "variant prop" is "text"', () => {
     const { container } = render(<Button variant="text">Send</Button>)
-    expect(container.firstChild).toHaveClass('text')
+    expect(container.firstChild).toHaveClass('JSMButton--text')
   })
 
   it('should have "large" classname when "size prop" is empty', () => {
     const { container } = render(<Button>Send</Button>)
-    expect(container.firstChild).toHaveClass('large')
+    expect(container.firstChild).toHaveClass('JSMButton--large')
   })
 
   it('should have "large" classname when "size prop" is "large"', () => {
     const { container } = render(<Button size="large">Send</Button>)
-    expect(container.firstChild).toHaveClass('large')
+    expect(container.firstChild).toHaveClass('JSMButton--large')
   })
 
   it('should have "medium" classname when "size prop" is "medium"', () => {
     const { container } = render(<Button size="medium">Send</Button>)
-    expect(container.firstChild).toHaveClass('medium')
+    expect(container.firstChild).toHaveClass('JSMButton--medium')
   })
 
   it('should have "small" classname when "size prop" is "small"', () => {
     const { container } = render(<Button size="small">Send</Button>)
-    expect(container.firstChild).toHaveClass('small')
+    expect(container.firstChild).toHaveClass('JSMButton--small')
   })
 
   it('should have "round-square" classname when "shape prop" is empty', () => {
     const { container } = render(<Button>Send</Button>)
-    expect(container.firstChild).toHaveClass('round-square')
+    expect(container.firstChild).toHaveClass('JSMButton--round-square')
   })
 
   it('should have "round-square" classname when "shape prop" is "round-square"', () => {
     const { container } = render(<Button shape="round-square">Send</Button>)
-    expect(container.firstChild).toHaveClass('round-square')
+    expect(container.firstChild).toHaveClass('JSMButton--round-square')
   })
 
   it('should have "circle" classname when "shape prop" is "circle"', () => {
     const { container } = render(<Button shape="circle">Send</Button>)
-    expect(container.firstChild).toHaveClass('circle')
+    expect(container.firstChild).toHaveClass('JSMButton--circle')
   })
 
   it('should have "startIcon" element when has "startIcon prop"', () => {
     const { container } = render(<Button startIcon="←">Back</Button>)
     expect(container.firstChild.firstChild).toContainHTML(
-      `<span class="startIcon">←</span>`
+      `<span class="JSMButtonStartIcon">←</span>`
     )
   })
 
   it('should have "endIcon" element when has "endIcon prop"', () => {
     const { container } = render(<Button endIcon="→">Back</Button>)
     expect(container.firstChild.lastChild).toContainHTML(
-      `<span class="endIcon">→</span>`
+      `<span class="JSMButtonEndIcon">→</span>`
     )
   })
 
@@ -108,7 +108,7 @@ describe('<Button />', () => {
 
   it('should have "isLoading" classname when has "isLoading prop"', () => {
     const { container } = render(<Button isLoading={true}>Loading</Button>)
-    expect(container.firstChild).toHaveClass('isLoading')
+    expect(container.firstChild).toHaveClass('JSMButton--isLoading')
   })
 
   it('should have "Spinner" component when has "isLoading prop"', () => {

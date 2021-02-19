@@ -8,18 +8,18 @@ import { Breadcrumb } from './Breadcrumb'
 describe('<Breadcrumb />', () => {
   it('should have "breadcrumb" classname when render', () => {
     const { container } = render(<Breadcrumb>Default</Breadcrumb>)
-    expect(container.firstChild).toHaveClass('breadcrumb')
+    expect(container.firstChild).toHaveClass('JSMBreadcrumb')
   })
 
   it('should have "default" classname when "color prop" is "default"', () => {
     const { container } = render(<Breadcrumb>Default</Breadcrumb>)
-    expect(container.firstChild).toHaveClass('default')
+    expect(container.firstChild).toHaveClass('JSMBreadcrumb--default')
   })
 
   it('should have "contrast" classname when "color prop" is "contrast"', () => {
     const { container } = render(
       <Breadcrumb color="contrast">Contrast</Breadcrumb>
     )
-    expect(container.firstChild).toHaveClass('contrast')
+    expect(container.firstChild).toHaveClass('JSMBreadcrumb--contrast')
   })
 })

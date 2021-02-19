@@ -51,12 +51,15 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
           !isLoading && onClick(e)
         }
         className={classNames(
-          styles.button,
-          styles[color],
-          styles[variant],
-          styles[size],
-          styles[shape],
-          { [styles.isLoading]: isLoading, [styles.bold]: bold },
+          styles.JSMButton,
+          styles[`JSMButton--${color}`],
+          styles[`JSMButton--${variant}`],
+          styles[`JSMButton--${size}`],
+          styles[`JSMButton--${shape}`],
+          {
+            [styles['JSMButton--isLoading']]: isLoading,
+            [styles['JSMButton--bold']]: bold,
+          },
           className
         )}
         {...(href && { href })}
@@ -70,9 +73,13 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
           />
         )}
         <>
-          {startIcon && <span className={styles.startIcon}>{startIcon}</span>}
-          <span className={styles.children}>{children}</span>
-          {endIcon && <span className={styles.endIcon}>{endIcon}</span>}
+          {startIcon && (
+            <span className={styles.JSMButtonStartIcon}>{startIcon}</span>
+          )}
+          <span className={styles.JSMButtonChildren}>{children}</span>
+          {endIcon && (
+            <span className={styles.JSMButtonEndIcon}>{endIcon}</span>
+          )}
         </>
       </ButtonComponent>
     </>
