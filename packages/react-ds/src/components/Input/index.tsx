@@ -7,8 +7,6 @@ import uniqid from 'uniqid'
 
 import styles from '@venice/styles/components/Field.module.scss'
 
-import Alert from '../Icons/Alert'
-
 const InternalInput = (
   {
     id,
@@ -36,12 +34,7 @@ const InternalInput = (
       )}
       <IMaskInput className={styles.field} id={selfId} {...props} ref={ref} />
       {/* TODO: Replace for alert component */}
-      {error && (
-        <div className={styles.error}>
-          <Alert />
-          {error}
-        </div>
-      )}
+      {error && <div className={styles.error}>{error}</div>}
     </div>
   )
 }
