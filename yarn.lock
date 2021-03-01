@@ -11450,10 +11450,10 @@ ignore@^5.1.1, ignore@^5.1.2, ignore@^5.1.4, ignore@^5.1.8:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
-imask@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/imask/-/imask-5.2.1.tgz#1576ca468ee32b2983618f5fbfd8d93d0351e826"
-  integrity sha512-MiYUC6zP3sHldoXovnbpYc9UXjL8t4GuiZGGgillFljzJaN/osq8AeCuS1DUwzwRydMLi8F9ZK3xHkOrXjuNcw==
+imask@^6.0.7:
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/imask/-/imask-6.0.7.tgz#20a626a80e277231d7d5c27cf45d816c035b748e"
+  integrity sha512-zyiKRSzuocb2adasVSz0ku9xxejDRs5wME7Dt5Uk1l83HGBFUP7A8y8Z6TytLCtCiS/A1aArlCTqLcOkoVNbNQ==
 
 immer@1.10.0:
   version "1.10.0"
@@ -17328,12 +17328,12 @@ react-hotkeys@2.0.0:
   dependencies:
     prop-types "^15.6.1"
 
-react-imask@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/react-imask/-/react-imask-5.2.1.tgz#26542f1c7b4470738404d8d01dfa6fe51ad386ce"
-  integrity sha512-7Kqz1k1rWbKB17RH8aGbnNYy8cCrUTHv9wxQGN5iEd1kPDcbcvJoFA46aSrXcytKeqyf30FTytIWIqQ9rw0Q4Q==
+react-imask@^6.0.7:
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/react-imask/-/react-imask-6.0.7.tgz#75560735607fc79b9065c1d6b25ce676c5e6c94e"
+  integrity sha512-2/E8dAiPH4v1AeadEL1xnWG+CfoG4VQYmAGymltWaNBPEDtnCY6H0TKgvRJJOhE+JkYQfjw5KPesrrvNBz0g/A==
   dependencies:
-    imask "^5.2.1"
+    imask "^6.0.7"
     prop-types "^15.7.2"
 
 react-input-autosize@^2.2.2:
