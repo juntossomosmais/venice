@@ -4047,10 +4047,15 @@
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
 
-"@types/json-schema@^7.0.3", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
+"@types/json-schema@^7.0.3", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5":
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
   integrity sha512-3c+yGKvVP5Y9TYBEibGNR+kLtijnj7mYrXRg+WpFb2X9xm04g/DXYkfg4hmzJQosc9snFNUPkbYIhu+KAm6jJw==
+
+"@types/json-schema@^7.0.6":
+  version "7.0.7"
+  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
+  integrity sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -11450,10 +11455,10 @@ ignore@^5.1.1, ignore@^5.1.2, ignore@^5.1.4, ignore@^5.1.8:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
-imask@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/imask/-/imask-5.2.1.tgz#1576ca468ee32b2983618f5fbfd8d93d0351e826"
-  integrity sha512-MiYUC6zP3sHldoXovnbpYc9UXjL8t4GuiZGGgillFljzJaN/osq8AeCuS1DUwzwRydMLi8F9ZK3xHkOrXjuNcw==
+imask@^6.0.7:
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/imask/-/imask-6.0.7.tgz#20a626a80e277231d7d5c27cf45d816c035b748e"
+  integrity sha512-zyiKRSzuocb2adasVSz0ku9xxejDRs5wME7Dt5Uk1l83HGBFUP7A8y8Z6TytLCtCiS/A1aArlCTqLcOkoVNbNQ==
 
 immer@1.10.0:
   version "1.10.0"
@@ -17328,12 +17333,12 @@ react-hotkeys@2.0.0:
   dependencies:
     prop-types "^15.6.1"
 
-react-imask@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/react-imask/-/react-imask-5.2.1.tgz#26542f1c7b4470738404d8d01dfa6fe51ad386ce"
-  integrity sha512-7Kqz1k1rWbKB17RH8aGbnNYy8cCrUTHv9wxQGN5iEd1kPDcbcvJoFA46aSrXcytKeqyf30FTytIWIqQ9rw0Q4Q==
+react-imask@^6.0.7:
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/react-imask/-/react-imask-6.0.7.tgz#75560735607fc79b9065c1d6b25ce676c5e6c94e"
+  integrity sha512-2/E8dAiPH4v1AeadEL1xnWG+CfoG4VQYmAGymltWaNBPEDtnCY6H0TKgvRJJOhE+JkYQfjw5KPesrrvNBz0g/A==
   dependencies:
-    imask "^5.2.1"
+    imask "^6.0.7"
     prop-types "^15.7.2"
 
 react-input-autosize@^2.2.2:
@@ -18475,10 +18480,10 @@ sass-loader@8.0.2:
     schema-utils "^2.6.1"
     semver "^6.3.0"
 
-sass-loader@^10.0.1:
-  version "10.0.5"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-10.0.5.tgz#f53505b5ddbedf43797470ceb34066ded82bb769"
-  integrity sha512-2LqoNPtKkZq/XbXNQ4C64GFEleSEHKv6NPSI+bMC/l+jpEXGJhiRYkAQToO24MR7NU4JRY2RpLpJ/gjo2Uf13w==
+sass-loader@^10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-10.1.1.tgz#4ddd5a3d7638e7949065dd6e9c7c04037f7e663d"
+  integrity sha512-W6gVDXAd5hR/WHsPicvZdjAWHBcEJ44UahgxcIE196fW2ong0ZHMPO1kZuI5q0VlvMQZh32gpv69PLWQm70qrw==
   dependencies:
     klona "^2.0.4"
     loader-utils "^2.0.0"
