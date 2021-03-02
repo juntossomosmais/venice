@@ -35,34 +35,35 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "react-imask": "^6.0.7",
-    "uniqid": "^5.2.0"
+    "uniqid": "^5.3.0"
   },
   "peerDependencies": {
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "7.13.9",
     "@juntossomosmais/venice-types": "^0.10.0",
-    "@rollup/plugin-babel": "^5.1.0",
+    "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^17.0.0",
-    "@storybook/preset-create-react-app": "^3.1.2",
+    "@storybook/preset-create-react-app": "^3.1.6",
     "@storybook/react": "^5.3.18",
-    "@testing-library/react": "^11.0.4",
-    "@types/classnames": "^2.2.10",
+    "@testing-library/react": "^11.2.5",
+    "@types/classnames": "^2.2.11",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "@types/uniqid": "^5.2.0",
+    "@types/uniqid": "^5.3.0",
     "autoprefixer": "^9.7.5",
-    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react": "^7.22.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-is": "^16.13.1",
     "react-scripts": "3.4.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-sourcemaps": "^0.6.2",
-    "rollup-plugin-typescript2": "^0.29.0",
-    "tslib": "^2.0.0"
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.1.0"
   },
   "browserslist": [
     "defaults"
