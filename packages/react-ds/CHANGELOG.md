@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.28.1...@juntossomosmais/venice-react@0.28.2) (2021-04-16)
+
+**Note:** Version bump only for package @juntossomosmais/venice-react
+
+
+
+
+
 ## [0.28.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.28.0...@juntossomosmais/venice-react@0.28.1) (2021-02-26)
 
 **Note:** Version bump only for package @juntossomosmais/venice-react
