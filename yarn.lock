@@ -9634,6 +9634,11 @@ doctypes@^1.1.0:
   resolved "https://registry.yarnpkg.com/doctypes/-/doctypes-1.1.0.tgz#ea80b106a87538774e8a3a4a5afe293de489e0a9"
   integrity sha1-6oCxBqh1OHdOijpKWv4pPeSJ4Kk=
 
+dom-accessibility-api@^0.5.4:
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.7.tgz#8c2aa6325968f2933160a0b7dbb380893ddf3e7d"
+  integrity sha512-ml3lJIq9YjUfM9TUnEPvEYWFSwivwIGBPKpewX7tii7fwCazA8yCioGdqQcNsItPpfFvSJ3VIdMQPj60LJhcQA==
+
 dom-accessibility-api@^0.5.6:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.6.tgz#3f5d43b52c7a3bd68b5fb63fa47b4e4c1fdf65a9"
