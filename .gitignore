@@ -13,3 +13,4 @@ node_modules
 .idea
 **/tsconfig.tsbuildinfo
 packages/**/fontello
+.fontello-session
