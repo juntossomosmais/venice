@@ -30,7 +30,7 @@
     "build:storybook": "yarn build && vue-cli-service storybook:build -c .storybook -s src/fontello -o ../../dist/vue",
     "loki-test": "loki test",
     "loki-update": "loki update",
-    "prepublish": "yarn test:ci && yarn build"
+    "prepublish": "&& yarn build"
   },
   "dependencies": {
     "core-js": "^3.6.4",
