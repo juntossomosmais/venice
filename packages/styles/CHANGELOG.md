@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.27.1...@venice/styles@0.28.0) (2021-09-15)
+
+
+### Features
+
+* add weight variables for general use ([86fd868](https://github.com/juntossomosmais/venice/commit/86fd868ff2828fbb3b85b0074ef14e8a8f4de46b))
+
+
+
+
+
 ## [0.27.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.27.0...@venice/styles@0.27.1) (2021-04-16)
 
 **Note:** Version bump only for package @venice/styles

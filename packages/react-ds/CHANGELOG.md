@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.28.2...@juntossomosmais/venice-react@0.28.3) (2021-09-15)
+
+
+### Bug Fixes
+
+* **storybook:** downgrade react to 16.13.1 ([fab31be](https://github.com/juntossomosmais/venice/commit/fab31bea8cd9e9f2bb2023d5821f9a75c87226f4))
+
+
+
+
+
 ## [0.28.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.28.1...@juntossomosmais/venice-react@0.28.2) (2021-04-16)
 
 **Note:** Version bump only for package @juntossomosmais/venice-react
