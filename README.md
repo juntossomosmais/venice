@@ -71,6 +71,8 @@ Maybe you want to read about them:
 
 This project also uses [Husky](https://github.com/typicode/husky) to prevent commit and push messy and wrong code.
 
+You also can check our [frontend-guideline](https://github.com/juntossomosmais/frontend-guideline) with some Front-end patterns that we use on our projects 😁
+
 ## Usage
 
 ### React
