@@ -97,7 +97,8 @@ describe('<Button />', () => {
   })
 
   it('should be add a href in <a> if it has href', () => {
-    const { container } = render(<Button href="href">Send</Button>)
+    const { container, getByRole } = render(<Button href="href">Send</Button>)
+    expect(getByRole('link', { name: 'Send' })).toBeInTheDocument()
     expect(container.querySelector('a[href="href"]')).toBeInTheDocument()
   })
 
