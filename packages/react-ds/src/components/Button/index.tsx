@@ -45,7 +45,7 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
     <>
       <ButtonComponent
         as={href ? 'a' : 'button'}
-        role={href ? '' : 'button'}
+        role={href ? 'link' : 'button'}
         aria-busy={isLoading}
         onClick={(e: React.MouseEvent<HTMLButtonElement>) =>
           !isLoading && onClick(e)
