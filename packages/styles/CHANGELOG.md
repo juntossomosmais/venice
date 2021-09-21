@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.28.0...@venice/styles@0.29.0) (2021-09-21)
+
+
+### Features
+
+* **variables:** change main text color ([51473be](https://github.com/juntossomosmais/venice/commit/51473be9c5ae80d234f5c3da8231bc552779d2ce))
+
+
+
+
+
 # [0.28.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.27.1...@venice/styles@0.28.0) (2021-09-15)
 
 
