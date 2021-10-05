@@ -9,6 +9,6 @@
     "@storybook/addon-notes": "^5.3.18",
     "@storybook/addon-viewport": "^5.3.18",
     "@storybook/addons": "^5.3.18",
-    "storybook-addon-themes": "^5.4.1"
+    "storybook-addon-themes": "^6.1.0"
   }
 }
