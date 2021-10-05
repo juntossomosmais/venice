@@ -1,0 +1,37 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: monthly
+      time: '08:00'
+  - package-ecosystem: npm
+    directory: '/packages/core'
+    schedule:
+      interval: monthly
+      time: '08:00'
+  - package-ecosystem: npm
+    directory: '/packages/react-ds'
+    schedule:
+      interval: monthly
+      time: '08:00'
+  - package-ecosystem: npm
+    directory: '/packages/styles'
+    schedule:
+      interval: monthly
+      time: '08:00'
+  - package-ecosystem: npm
+    directory: '/packages/venice-icons'
+    schedule:
+      interval: monthly
+      time: '08:00'
+  - package-ecosystem: npm
+    directory: '/packages/venice-types'
+    schedule:
+      interval: monthly
+      time: '08:00'
+  - package-ecosystem: npm
+    directory: '/packages/vue-ds'
+    schedule:
+      interval: monthly
+      time: '08:00'
