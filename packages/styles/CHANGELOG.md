@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.29.0...@venice/styles@0.30.0) (2021-10-20)
+
+
+### Features
+
+* **typography:** add new variables ([cc6d57b](https://github.com/juntossomosmais/venice/commit/cc6d57be7b9267a1ad54f0087e227e5ebd413e65))
+* **typography:** create mixin to generate new classes ([198c81f](https://github.com/juntossomosmais/venice/commit/198c81f7aff4b80998c0a1f423aec474f3667585))
+
+
+
+
+
 # [0.29.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.28.0...@venice/styles@0.29.0) (2021-09-21)
 
 
