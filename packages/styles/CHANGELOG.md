@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.30.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.30.0...@venice/styles@0.30.1) (2021-10-20)
+
+
+### Bug Fixes
+
+* **typography:** restore old variables to old values ([c5ffa25](https://github.com/juntossomosmais/venice/commit/c5ffa25658c8e3cd01fe49b61ffbc72e298e2202))
+
+
+
+
+
 # [0.30.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.29.0...@venice/styles@0.30.0) (2021-10-20)
 
 
