@@ -11,6 +11,7 @@
       />
       <span class="customCheckbox jsm-icon-ok"></span>
       {{ label }}
+      <slot></slot>
     </label>
     <div v-if="error" class="error jsm-icon-alert">
       {{ error }}
