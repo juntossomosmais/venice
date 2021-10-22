@@ -68,4 +68,19 @@ describe('<Checkbox />', () => {
 
     expect(container.emitted().input).toBeTruthy()
   })
+
+
+  it('Should render slot inside label if it is passed', async () => {
+    const container = mount(Checkbox, {
+      attrs: ATTRS,
+      slots:{
+        default: '<a class="anchor-slot" href="link"> Accept </a>',
+
+      }
+    })
+    const label = container.find(LABEL_SELECTOR)
+    const slot = label.find('.anchor-slot')
+
+    expect(slot.exists()).toBeTruthy()
+  })
 })

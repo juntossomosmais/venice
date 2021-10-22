@@ -19,6 +19,9 @@ Checkbox is a content container for text, photos, and actions in the context of 
         <div class="row-items" style="display: flex">
           <Checkbox label="label" testeid="testeid" v-model="checkbox" style="flex: 1"/>
           <Checkbox label="label" id="venice-checkbox" v-model="checkbox1" style="flex: 1"/>
+          <Checkbox label="label with " id="venice-checkbox-w-slot" v-model="checkbox1" style="flex: 1">
+              <a href="#">Slot</a>
+          </Checkbox>
         </div>
       `,
       data() {
