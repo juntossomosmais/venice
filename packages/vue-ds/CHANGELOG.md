@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.22.3...@juntossomosmais/venice-vue@0.23.0) (2021-11-11)
+
+
+### Features
+
+* **checkbox:** adding possibility for vue to have a slot with label ([4326418](https://github.com/juntossomosmais/venice/commit/4326418ba78bbc8ce62fc1aadd1ded3f064a969a))
+
+
+
+
+
 ## [0.22.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.22.1...@juntossomosmais/venice-vue@0.22.3) (2021-10-20)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue
