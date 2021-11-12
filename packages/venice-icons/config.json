@@ -1279,6 +1279,20 @@
       "search": [
         "vector-(8)"
       ]
+    },
+    {
+      "uid": "d9c4a655c35ab4e7ce472bced2572b98",
+      "css": "hourglass-top",
+      "code": 59429,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M0 37L0.5 314.8 185.2 500 0.5 685.6 0 962.9H555.6V685.2L370.4 500 555.6 315.2V37H0ZM463 708.3V870.3H92.6V708.3L277.8 523.1 463 708.3Z",
+        "width": 556
+      },
+      "search": [
+        "hourglass-top"
+      ]
     }
   ]
 }
