@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.8.0...@juntossomosmais/venice-icons@0.9.0) (2021-11-16)
+
+
+### Features
+
+* add build circle icon ([dc6e71a](https://github.com/juntossomosmais/venice/commit/dc6e71a121eac94a9c12ccf04b0c43d8bcf6244c))
+* add icons svgs on assets folder. ([54ea2ce](https://github.com/juntossomosmais/venice/commit/54ea2ced00b43a731137f70cc6648f17814e8f64))
+* add new icon hourglass-top ([0ab4cc1](https://github.com/juntossomosmais/venice/commit/0ab4cc1b998da922175c1cdb1ac82be661157702))
+* add new menu icons ([2f1226f](https://github.com/juntossomosmais/venice/commit/2f1226fe261b18bb7950b408ff1e9d4d44d74363))
+
+
+
+
+
 # [0.8.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.7.0...@juntossomosmais/venice-icons@0.8.0) (2021-09-16)
 
 
