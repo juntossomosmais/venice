@@ -16,6 +16,11 @@
   "workspaces": [
     "packages/*"
   ],
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.20",
+    "node": ">= 14.0.0"
+  },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build:storybook": "yarn build:fontello && lerna run build:storybook",
