@@ -16,7 +16,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Use Node.js ${{ matrix.node-version }} and run build and tests
+
+      - name: Use Node.js ${{ matrix.node-version }} and run build and tests 🔧
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
@@ -24,15 +25,18 @@ jobs:
       - run: yarn build:storybook
       - run: yarn build
       - run: yarn test
-      - name: Fix code coverage paths on React
+
+      - name: Fix code coverage paths on React 🩹
         working-directory: ./packages/react-ds/coverage
         run: |
           sed -i 's/\/home\/runner\/work\/venice\/venice\//\/github\/workspace\//g' lcov.info
-      - name: Fix code coverage paths on Vue
+
+      - name: Fix code coverage paths on Vue 🩹
         working-directory: ./packages/vue-ds/coverage
         run: |
           sed -i 's/\/home\/runner\/work\/venice\/venice\//\/github\/workspace\//g' lcov.info
-      - name: SonarCloud Scan
+
+      - name: SonarCloud Scan 🚨
         uses: sonarsource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_GHPAGES }}
