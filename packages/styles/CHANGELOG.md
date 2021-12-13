@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.30.3](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.30.1...@venice/styles@0.30.3) (2021-12-13)
+
+
+### Bug Fixes
+
+* **typography:** change percent to em on letter-spacing ([e710ea1](https://github.com/juntossomosmais/venice/commit/e710ea15092093ffd7487d8295d5b0688c7387ed))
+
+
+
+
+
 ## [0.30.2](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.30.1...@venice/styles@0.30.2) (2021-12-13)
 
 
