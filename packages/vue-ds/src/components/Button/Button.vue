@@ -5,7 +5,7 @@
     :href="href"
     :role="href ? '' : 'button'"
     :aria-busy="isLoading"
-    @click="!isLoading && $emit('click')"
+    @click="click"
   >
     <Spinner
       v-if="isLoading"
@@ -46,6 +46,10 @@ export default class Button extends Vue {
   @Prop({ default: 'large' }) size!: IButton['size']
   @Prop({ default: false }) isLoading!: IButton['isLoading']
   @Prop() href!: IButton['href']
+
+  click(event: unknown) {
+    return !this.isLoading && this.$emit('click', event)
+  }
 
   get buttonClass() {
     return [
