@@ -1,8 +1,17 @@
-import { Meta, Story, Description, Preview, Props } from '@storybook/addon-docs/blocks'
+import {
+  Meta,
+  Story,
+  Description,
+  Preview,
+  Props,
+} from '@storybook/addon-docs/blocks'
 import { withKnobs } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y'
 
-import { knobButtonLoading, knobButtonSizes } from '@venice/core/storybook/knobs'
+import {
+  knobButtonLoading,
+  knobButtonSizes,
+} from '@venice/core/storybook/knobs'
 import Docs from '@venice/core/docs/Button.md'
 
 import { Button } from '.'
@@ -16,13 +25,24 @@ import { Button } from '.'
 ### Filled buttons
 
 <Preview>
-  <Story name="Filled" decorators={[withKnobs,withA11y]}>
+  <Story name="Filled" decorators={[withKnobs, withA11y]}>
     <div class="row-items">
+      <Button isLoading={knobButtonLoading()} color="white">
+        White
+      </Button>
       <Button isLoading={knobButtonLoading()}>Default</Button>
-      <Button isLoading={knobButtonLoading()} color="primary">Primary</Button>
-      <Button isLoading={knobButtonLoading()} color="secondary">Secondary</Button>
-      <Button isLoading={knobButtonLoading()} bold>Bold</Button>
-      <Button isLoading={knobButtonLoading()} disabled>Disabled</Button>
+      <Button isLoading={knobButtonLoading()} color="primary">
+        Primary
+      </Button>
+      <Button isLoading={knobButtonLoading()} color="secondary">
+        Secondary
+      </Button>
+      <Button isLoading={knobButtonLoading()} bold>
+        Bold
+      </Button>
+      <Button isLoading={knobButtonLoading()} disabled>
+        Disabled
+      </Button>
     </div>
   </Story>
 </Preview>
@@ -30,13 +50,23 @@ import { Button } from '.'
 ### Outlined buttons
 
 <Preview>
-  <Story name="Outlined" decorators={[withKnobs,withA11y]}>
+  <Story name="Outlined" decorators={[withKnobs, withA11y]}>
     <div class="row-items">
-      <Button isLoading={knobButtonLoading()} variant="outlined">Default</Button>
-      <Button isLoading={knobButtonLoading()} color="primary" variant="outlined">
+      <Button isLoading={knobButtonLoading()} variant="outlined">
+        Default
+      </Button>
+      <Button
+        isLoading={knobButtonLoading()}
+        color="primary"
+        variant="outlined"
+      >
         Primary
       </Button>
-      <Button isLoading={knobButtonLoading()} color="secondary" variant="outlined">
+      <Button
+        isLoading={knobButtonLoading()}
+        color="secondary"
+        variant="outlined"
+      >
         Secondary
       </Button>
       <Button isLoading={knobButtonLoading()} disabled variant="outlined">
@@ -49,9 +79,11 @@ import { Button } from '.'
 ### Text buttons
 
 <Preview>
-  <Story name="Text" decorators={[withKnobs,withA11y]}>
+  <Story name="Text" decorators={[withKnobs, withA11y]}>
     <div class="row-items">
-      <Button isLoading={knobButtonLoading()} variant="text">Default</Button>
+      <Button isLoading={knobButtonLoading()} variant="text">
+        Default
+      </Button>
       <Button isLoading={knobButtonLoading()} color="primary" variant="text">
         Primary
       </Button>
@@ -70,43 +102,112 @@ import { Button } from '.'
 ### Circle buttons
 
 <Preview>
-  <Story name="Circle" decorators={[withKnobs,withA11y]}>
+  <Story name="Circle" decorators={[withKnobs, withA11y]}>
     <div>
       <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle">
+        <Button
+          isLoading={knobButtonLoading()}
+          size={knobButtonSizes()}
+          shape="circle"
+        >
           @
         </Button>
-        <Button isLoading={knobButtonLoading()} color="primary" size={knobButtonSizes()} shape="circle">
+        <Button
+          isLoading={knobButtonLoading()}
+          color="primary"
+          size={knobButtonSizes()}
+          shape="circle"
+        >
           @
         </Button>
-        <Button isLoading={knobButtonLoading()} color="secondary" size={knobButtonSizes()} shape="circle">
+        <Button
+          isLoading={knobButtonLoading()}
+          color="secondary"
+          size={knobButtonSizes()}
+          shape="circle"
+        >
           @
         </Button>
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" disabled>
+        <Button
+          isLoading={knobButtonLoading()}
+          size={knobButtonSizes()}
+          shape="circle"
+          disabled
+        >
           @
         </Button>
       </div>
       <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="outlined">@</Button>
-        <Button isLoading={knobButtonLoading()} color="primary" variant="outlined" size={knobButtonSizes()} shape="circle">
+        <Button
+          isLoading={knobButtonLoading()}
+          size={knobButtonSizes()}
+          shape="circle"
+          variant="outlined"
+        >
           @
         </Button>
-        <Button isLoading={knobButtonLoading()} color="secondary" variant="outlined" size={knobButtonSizes()} shape="circle">
+        <Button
+          isLoading={knobButtonLoading()}
+          color="primary"
+          variant="outlined"
+          size={knobButtonSizes()}
+          shape="circle"
+        >
           @
         </Button>
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="outlined" disabled>
+        <Button
+          isLoading={knobButtonLoading()}
+          color="secondary"
+          variant="outlined"
+          size={knobButtonSizes()}
+          shape="circle"
+        >
+          @
+        </Button>
+        <Button
+          isLoading={knobButtonLoading()}
+          size={knobButtonSizes()}
+          shape="circle"
+          variant="outlined"
+          disabled
+        >
           @
         </Button>
       </div>
       <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="text">@</Button>
-        <Button isLoading={knobButtonLoading()} color="primary" variant="text" size={knobButtonSizes()} shape="circle">
+        <Button
+          isLoading={knobButtonLoading()}
+          size={knobButtonSizes()}
+          shape="circle"
+          variant="text"
+        >
           @
         </Button>
-        <Button isLoading={knobButtonLoading()} color="secondary" variant="text" size={knobButtonSizes()} shape="circle">
+        <Button
+          isLoading={knobButtonLoading()}
+          color="primary"
+          variant="text"
+          size={knobButtonSizes()}
+          shape="circle"
+        >
           @
         </Button>
-        <Button isLoading={knobButtonLoading()} size={knobButtonSizes()} shape="circle" variant="text" disabled>
+        <Button
+          isLoading={knobButtonLoading()}
+          color="secondary"
+          variant="text"
+          size={knobButtonSizes()}
+          shape="circle"
+        >
+          @
+        </Button>
+        <Button
+          isLoading={knobButtonLoading()}
+          size={knobButtonSizes()}
+          shape="circle"
+          variant="text"
+          disabled
+        >
           @
         </Button>
       </div>
@@ -119,10 +220,12 @@ import { Button } from '.'
 ### Medium buttons
 
 <Preview>
-  <Story name="Medium" parameters={{ decorators: [withKnobs,withA11y] }}>
+  <Story name="Medium" parameters={{ decorators: [withKnobs, withA11y] }}>
     <div>
       <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size="medium">Default</Button>
+        <Button isLoading={knobButtonLoading()} size="medium">
+          Default
+        </Button>
         <Button isLoading={knobButtonLoading()} color="primary" size="medium">
           Primary
         </Button>
@@ -134,26 +237,64 @@ import { Button } from '.'
         </Button>
       </div>
       <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size="medium" variant="outlined">Default</Button>
-        <Button isLoading={knobButtonLoading()} color="primary" variant="outlined" size="medium">
+        <Button
+          isLoading={knobButtonLoading()}
+          size="medium"
+          variant="outlined"
+        >
+          Default
+        </Button>
+        <Button
+          isLoading={knobButtonLoading()}
+          color="primary"
+          variant="outlined"
+          size="medium"
+        >
           Primary
         </Button>
-        <Button isLoading={knobButtonLoading()} color="secondary" variant="outlined" size="medium">
+        <Button
+          isLoading={knobButtonLoading()}
+          color="secondary"
+          variant="outlined"
+          size="medium"
+        >
           Secondary
         </Button>
-        <Button isLoading={knobButtonLoading()} size="medium" variant="outlined" disabled>
+        <Button
+          isLoading={knobButtonLoading()}
+          size="medium"
+          variant="outlined"
+          disabled
+        >
           Disabled
         </Button>
       </div>
       <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size="medium" variant="text">Default</Button>
-        <Button isLoading={knobButtonLoading()} color="primary" variant="text" size="medium">
+        <Button isLoading={knobButtonLoading()} size="medium" variant="text">
+          Default
+        </Button>
+        <Button
+          isLoading={knobButtonLoading()}
+          color="primary"
+          variant="text"
+          size="medium"
+        >
           Primary
         </Button>
-        <Button isLoading={knobButtonLoading()} color="secondary" variant="text" size="medium">
+        <Button
+          isLoading={knobButtonLoading()}
+          color="secondary"
+          variant="text"
+          size="medium"
+        >
           Secondary
         </Button>
-        <Button isLoading={knobButtonLoading()} size="medium" variant="text" disabled>
+        <Button
+          isLoading={knobButtonLoading()}
+          size="medium"
+          variant="text"
+          disabled
+        >
           Disabled
         </Button>
       </div>
@@ -164,10 +305,12 @@ import { Button } from '.'
 ### Small buttons
 
 <Preview>
-  <Story name="Small" decorators={[withKnobs,withA11y]}>
+  <Story name="Small" decorators={[withKnobs, withA11y]}>
     <div>
       <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size="small">Default</Button>
+        <Button isLoading={knobButtonLoading()} size="small">
+          Default
+        </Button>
         <Button isLoading={knobButtonLoading()} color="primary" size="small">
           Primary
         </Button>
@@ -179,26 +322,60 @@ import { Button } from '.'
         </Button>
       </div>
       <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size="small" variant="outlined">Default</Button>
-        <Button isLoading={knobButtonLoading()} color="primary" variant="outlined" size="small">
+        <Button isLoading={knobButtonLoading()} size="small" variant="outlined">
+          Default
+        </Button>
+        <Button
+          isLoading={knobButtonLoading()}
+          color="primary"
+          variant="outlined"
+          size="small"
+        >
           Primary
         </Button>
-        <Button isLoading={knobButtonLoading()} color="secondary" variant="outlined" size="small">
+        <Button
+          isLoading={knobButtonLoading()}
+          color="secondary"
+          variant="outlined"
+          size="small"
+        >
           Secondary
         </Button>
-        <Button isLoading={knobButtonLoading()} size="small" variant="outlined" disabled>
+        <Button
+          isLoading={knobButtonLoading()}
+          size="small"
+          variant="outlined"
+          disabled
+        >
           Disabled
         </Button>
       </div>
       <div class="row-items">
-        <Button isLoading={knobButtonLoading()} size="small" variant="text">Default</Button>
-        <Button isLoading={knobButtonLoading()} color="primary" variant="text" size="small">
+        <Button isLoading={knobButtonLoading()} size="small" variant="text">
+          Default
+        </Button>
+        <Button
+          isLoading={knobButtonLoading()}
+          color="primary"
+          variant="text"
+          size="small"
+        >
           Primary
         </Button>
-        <Button isLoading={knobButtonLoading()} color="secondary" variant="text" size="small">
+        <Button
+          isLoading={knobButtonLoading()}
+          color="secondary"
+          variant="text"
+          size="small"
+        >
           Secondary
         </Button>
-        <Button isLoading={knobButtonLoading()} size="small" variant="text" disabled>
+        <Button
+          isLoading={knobButtonLoading()}
+          size="small"
+          variant="text"
+          disabled
+        >
           Disabled
         </Button>
       </div>
@@ -209,11 +386,21 @@ import { Button } from '.'
 ## Icons
 
 <Preview>
-  <Story name="Icons" decorators={[withKnobs,withA11y]}>
+  <Story name="Icons" decorators={[withKnobs, withA11y]}>
     <div class="row-items">
-      <Button isLoading={knobButtonLoading()} startIcon="←" variant="outlined">With icon</Button>
-      <Button isLoading={knobButtonLoading()} endIcon="→" variant="outlined">With icon</Button>
-      <Button isLoading={knobButtonLoading()} startIcon={<span>←</span>} size="small">With icon and tag</Button>
+      <Button isLoading={knobButtonLoading()} startIcon="←" variant="outlined">
+        With icon
+      </Button>
+      <Button isLoading={knobButtonLoading()} endIcon="→" variant="outlined">
+        With icon
+      </Button>
+      <Button
+        isLoading={knobButtonLoading()}
+        startIcon={<span>←</span>}
+        size="small"
+      >
+        With icon and tag
+      </Button>
     </div>
   </Story>
 </Preview>
@@ -221,10 +408,14 @@ import { Button } from '.'
 ## Loading state
 
 <Preview>
-  <Story name="Loading state" decorators={[withKnobs,withA11y]}>
+  <Story name="Loading state" decorators={[withKnobs, withA11y]}>
     <div class="row-items">
-      <Button isLoading={true} color="primary">Loading example</Button>
-      <Button isLoading={true} color="secondary" size="small">Loading example</Button>
+      <Button isLoading={true} color="primary">
+        Loading example
+      </Button>
+      <Button isLoading={true} color="secondary" size="small">
+        Loading example
+      </Button>
     </div>
   </Story>
 </Preview>
