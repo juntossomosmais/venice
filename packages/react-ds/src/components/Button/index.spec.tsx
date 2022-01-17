@@ -17,6 +17,11 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('JSMButton--default')
   })
 
+  it('should have "primary" classname when "color prop" is "white"', () => {
+    const { container } = render(<Button color="white">Send</Button>)
+    expect(container.firstChild).toHaveClass('JSMButton--white')
+  })
+
   it('should have "primary" classname when "color prop" is "primary"', () => {
     const { container } = render(<Button color="primary">Send</Button>)
     expect(container.firstChild).toHaveClass('JSMButton--primary')
@@ -84,14 +89,14 @@ describe('<Button />', () => {
 
   it('should have "startIcon" element when has "startIcon prop"', () => {
     const { container } = render(<Button startIcon="←">Back</Button>)
-    expect(container.firstChild.firstChild).toContainHTML(
+    expect(container.firstChild?.firstChild).toContainHTML(
       `<span class="JSMButtonStartIcon">←</span>`
     )
   })
 
   it('should have "endIcon" element when has "endIcon prop"', () => {
     const { container } = render(<Button endIcon="→">Back</Button>)
-    expect(container.firstChild.lastChild).toContainHTML(
+    expect(container.firstChild?.lastChild).toContainHTML(
       `<span class="JSMButtonEndIcon">→</span>`
     )
   })
