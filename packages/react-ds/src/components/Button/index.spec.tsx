@@ -17,7 +17,7 @@ describe('<Button />', () => {
     expect(container.firstChild).toHaveClass('JSMButton--default')
   })
 
-  it('should have "primary" classname when "color prop" is "white"', () => {
+  it('should have "white" classname when "color prop" is "white"', () => {
     const { container } = render(<Button color="white">Send</Button>)
     expect(container.firstChild).toHaveClass('JSMButton--white')
   })
