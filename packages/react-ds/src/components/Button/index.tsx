@@ -7,9 +7,11 @@ import styles from '@venice/styles/components/Button.module.scss'
 
 import { Spinner } from '../Spinner'
 
-export interface IButtonProps extends IButton {
+export interface IButtonProps extends Omit<IButton, 'color'> {
   /** string */
   className?: string
+  /**  'default' | 'primary' | 'secondary' | 'white' */
+  color?: IButton['color'] | 'white'
   /** React Element */
   children?: React.ReactNode
   /** React Element | string */

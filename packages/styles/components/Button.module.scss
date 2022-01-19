@@ -123,6 +123,43 @@
     }
   }
 
+  &--white {
+    &.JSMButton--text {
+      color: var(--white-color);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--white-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.JSMButton--outlined {
+      border-color: var(--white-color);
+      color: var(--white-color);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--white-color-lighten);
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.JSMButton--filled {
+      background-color: var(--white-color);
+      color: var(--white-color-contrast);
+
+      &:not([disabled]):not(.JSMButton--isLoading):hover {
+        &::before {
+          background-color: var(--white-color-lighten);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   &--primary {
     &.JSMButton--text {
       color: var(--primary-color);
