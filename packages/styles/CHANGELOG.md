@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.31.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.30.3...@venice/styles@0.31.0) (2022-01-19)
+
+
+### Features
+
+* add styles ([e797309](https://github.com/juntossomosmais/venice/commit/e797309d0cbb622d9e48df3cb13d7cfe6ca1b24e))
+
+
+
+
+
 ## [0.30.3](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.30.1...@venice/styles@0.30.3) (2021-12-13)
 
 
