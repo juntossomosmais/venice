@@ -29,7 +29,8 @@ $ npm i -S @juntossomosmais/venice-icons
    - `jsm-icons.css`
    - `jsm-icons.woff`
    - `jsm-icons.woff2`
-5. On mobile applications using `react-native`, use the `config.json` with `react-native-vector-icons` and `.ttf` generated font file.
+5. On mobile applications using `react-native`, use the `config.json` with `react-native-vector-icons` and `.ttf` generated font file. Remember to add the `.ttf` file on Android folder, inside the respective app: 
+    - Ex.: `app-folder > android > app > main > assets > fonts`
 
 ### Adding new icons
 
