@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.11.2...@juntossomosmais/venice-icons@0.12.0) (2022-02-01)
+
+
+### Features
+
+* add professional plus new icon ([c0ef693](https://github.com/juntossomosmais/venice/commit/c0ef693868a120ced531834771dec084efd97971))
+
+
+
+
+
 ## [0.11.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.11.0...@juntossomosmais/venice-icons@0.11.2) (2022-01-14)
 
 
