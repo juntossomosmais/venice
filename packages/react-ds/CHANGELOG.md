@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.32.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.31.10...@juntossomosmais/venice-react@0.32.0) (2022-01-19)
+
+
+### Bug Fixes
+
+* add correct test name ([1500153](https://github.com/juntossomosmais/venice/commit/15001534c672c479ad33d42d348492804b8930f3))
+
+
+### Features
+
+* add button color white storybook ([5ec88ea](https://github.com/juntossomosmais/venice/commit/5ec88ea15406d842ab03da0c394e3f6552e403f8))
+* add button color white test ([3e0845e](https://github.com/juntossomosmais/venice/commit/3e0845e8f0ff4dbb651730cddad07082784151d4))
+* add color white type ([f147bf8](https://github.com/juntossomosmais/venice/commit/f147bf84809f4ae57c38b214691eab058e025029))
+
+
+
+
+
 ## [0.31.10](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.31.8...@juntossomosmais/venice-react@0.31.10) (2021-12-13)
 
 **Note:** Version bump only for package @juntossomosmais/venice-react

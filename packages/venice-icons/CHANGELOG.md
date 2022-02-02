@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.11.2...@juntossomosmais/venice-icons@0.12.0) (2022-02-01)
+
+
+### Features
+
+* add professional plus new icon ([c0ef693](https://github.com/juntossomosmais/venice/commit/c0ef693868a120ced531834771dec084efd97971))
+
+
+
+
+
+## [0.11.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.11.0...@juntossomosmais/venice-icons@0.11.2) (2022-01-14)
+
+
+### Bug Fixes
+
+* update package.json version ([7c2f100](https://github.com/juntossomosmais/venice/commit/7c2f100e65ea6afb56f35e8cca420cc36979c46c))
+
+
+
+
+
+# [0.11.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.9.1...@juntossomosmais/venice-icons@0.11.0) (2022-01-13)
+
+
+### Bug Fixes
+
+* adjust version of package.json ([3bfb5b8](https://github.com/juntossomosmais/venice/commit/3bfb5b84e5566e8fa95c9b5cb46b7fd60c2bdca8))
+
+
+### Features
+
+* added new icon ([a914061](https://github.com/juntossomosmais/venice/commit/a914061e53952a02dc1a80535ede8a297e318b0b))
+
+
+
+
+
 ## [0.9.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.9.0...@juntossomosmais/venice-icons@0.9.1) (2021-11-17)
 
 **Note:** Version bump only for package @juntossomosmais/venice-icons
