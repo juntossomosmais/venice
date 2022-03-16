@@ -1,13 +1,18 @@
 :root {
   /* Spacings
   * ------------------------- */
-  --space-xxs: 4px;
-  --space-xs: 8px;
-  --space-sm: 16px;
-  --space: 24px;
-  --space-md: 32px;
-  --space-lg: 48px;
-  --space-xlg: 64px;
+  --spacing-xxsmall: 4px;
+  --spacing-xsmall: 8px;
+  --spacing-small: 12px;
+  --spacing-base: 16px;
+  --spacing-medium: 20px;
+  --spacing-large: 24px;
+  --spacing-xlarge: 29px;
+  --spacing-xxlarge: 32px;
+  --spacing-xxxlarge: 40px;
+  --spacing-xxxxlarge: 48px;
+  --spacing-giant: 64px;
+  --spacing-xgiant: 80px;
 
   /* Colors
   * ------------------------- */
@@ -126,7 +131,7 @@
   --zindex-overlay: 10000;
   --transition-duration: 0.25s;
 
-  /* Old Typography
+  /* OLD: Typography
    * TODO: Remove it after exclude from projects
   */
   --typography-panel-font: 900 38px/40px var(--font-family);
@@ -143,4 +148,15 @@
   --typography-caption-letter: -0.171429px;
   --typography-button-font: 500 16px/19px var(--font-family);
   --typography-button-letter: -0.228572px;
+
+  /* OLD: Spacings
+   * TODO: Remove it after exclude from projects
+  * ------------------------- */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
 }
