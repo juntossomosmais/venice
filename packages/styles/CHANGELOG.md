@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.32.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.31.0...@venice/styles@0.32.0) (2022-03-16)
+
+
+### Bug Fixes
+
+* **variables:** fix wrong value (29px) to 28px on spacing-xlarge ([3146dab](https://github.com/juntossomosmais/venice/commit/3146dab16c37e8c0dcf0fb458777b9983cac530d))
+
+
+### Features
+
+* **variables:** add new spacings ([9f0d129](https://github.com/juntossomosmais/venice/commit/9f0d129a26933af388a087cb589b7cc3692ef049))
+
+
+
+
+
 # [0.31.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.30.3...@venice/styles@0.31.0) (2022-01-19)
 
 
