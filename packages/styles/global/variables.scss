@@ -1,18 +1,21 @@
 :root {
-  --space-xxs: 4px;
-  --space-xs: 8px;
-  --space-sm: 16px;
-  --space: 24px;
-  --space-md: 32px;
-  --space-lg: 48px;
-  --space-xlg: 64px;
-  --screen-xs: 360px;
-  --screen-sm: 768px;
-  --screen-md: 992px;
-  --screen-lg: 1280px;
-  --screen-xlg: 1440px;
-  --screen-max-container: 1140px;
+  /* Spacings
+  * ------------------------- */
+  --spacing-xxsmall: 4px;
+  --spacing-xsmall: 8px;
+  --spacing-small: 12px;
+  --spacing-base: 16px;
+  --spacing-medium: 20px;
+  --spacing-large: 24px;
+  --spacing-xlarge: 28px;
+  --spacing-xxlarge: 32px;
+  --spacing-xxxlarge: 40px;
+  --spacing-xxxxlarge: 48px;
+  --spacing-giant: 64px;
+  --spacing-xgiant: 80px;
 
+  /* Colors
+  * ------------------------- */
   --black: #111;
   --white: #fff;
   --gray-1: #f5f5f5;
@@ -54,21 +57,15 @@
   --text-color: #333333;
   --text-color-lighten: var(--gray-3);
 
-  --border-radius: 4px;
-
-  --zindex-1: 1;
-  --zindex-5: 5;
-  --zindex-10: 10;
-  --zindex-100: 100;
-  --zindex-1000: 1000;
-  --zindex-overlay: 10000;
-  --transition-duration: 0.25s;
-
+  /* Fonts
+  * ------------------------- */
   --font-family: 'Roboto', sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 900;
 
+  /* Typography
+  * ------------------------- */
   --title-giant: 700 52px/68px var(--font-family);
   --title-giant-letter: 0.025em;
   --title-display: 700 46px/60px var(--font-family);
@@ -114,7 +111,27 @@
   --text-badge: 700 10px/16px var(--font-family);
   --text-badge-letter: 0.0004em;
 
-  /* Old Typography
+  /* Screens
+  * ------------------------- */
+  --screen-xs: 360px;
+  --screen-sm: 768px;
+  --screen-md: 992px;
+  --screen-lg: 1280px;
+  --screen-xlg: 1440px;
+  --screen-max-container: 1140px;
+
+  /* Misc
+  * ------------------------- */
+  --border-radius: 4px;
+  --zindex-1: 1;
+  --zindex-5: 5;
+  --zindex-10: 10;
+  --zindex-100: 100;
+  --zindex-1000: 1000;
+  --zindex-overlay: 10000;
+  --transition-duration: 0.25s;
+
+  /* OLD: Typography
    * TODO: Remove it after exclude from projects
   */
   --typography-panel-font: 900 38px/40px var(--font-family);
@@ -131,4 +148,15 @@
   --typography-caption-letter: -0.171429px;
   --typography-button-font: 500 16px/19px var(--font-family);
   --typography-button-letter: -0.228572px;
+
+  /* OLD: Spacings
+   * TODO: Remove it after exclude from projects
+  * ------------------------- */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
 }
