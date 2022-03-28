@@ -163,7 +163,7 @@
 
 /* Mobile
 * ------------------------- */
-@media screen and (max-width: 767px) {
+@include below(mobile) {
   :root {
     /* Typography
   * ------------------------- */
