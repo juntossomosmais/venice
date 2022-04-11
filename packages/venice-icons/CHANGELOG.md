@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.12.1...@juntossomosmais/venice-icons@0.13.0) (2022-04-04)
+
+
+### Features
+
+* add new icon assignment-turned and account-balance ([009077e](https://github.com/juntossomosmais/venice/commit/009077e19b935b47dc08cf3797228a5557b7b2e6))
+
+
+
+
+
 ## [0.12.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.12.0...@juntossomosmais/venice-icons@0.12.1) (2022-03-11)
 
 **Note:** Version bump only for package @juntossomosmais/venice-icons
