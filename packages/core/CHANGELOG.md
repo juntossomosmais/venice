@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.25.4...@venice/core@0.26.0) (2022-04-12)
+
+
+### Features
+
+* **typography:** add mobile version ([4b90465](https://github.com/juntossomosmais/venice/commit/4b90465a573ac7b8569281fc7c98ffb60f230a6a))
+
+
+
+
+
 ## [0.25.4](https://github.com/juntossomosmais/venice/compare/@venice/core@0.25.3...@venice/core@0.25.4) (2022-03-16)
 
 **Note:** Version bump only for package @venice/core

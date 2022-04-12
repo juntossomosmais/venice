@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.32.0...@venice/styles@0.33.0) (2022-04-12)
+
+
+### Features
+
+* **typography:** add mobile version ([4b90465](https://github.com/juntossomosmais/venice/commit/4b90465a573ac7b8569281fc7c98ffb60f230a6a))
+* **typography:** change values to mobile ([9c62a96](https://github.com/juntossomosmais/venice/commit/9c62a967a46fa7c7663e6deab9fab686029bf96b))
+
+
+
+
+
 # [0.32.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.31.0...@venice/styles@0.32.0) (2022-03-16)
 
 
