@@ -1,7 +1,7 @@
 {
   "name": "@juntossomosmais/venice-vue",
   "description": "Design System of UI Components using Vue",
-  "version": "0.25.2",
+  "version": "0.26.0",
   "license": "Apache-2.0",
   "homepage": "https://github.com/juntossomosmais/venice/packages/vue-ds#readme",
   "repository": {
@@ -82,5 +82,5 @@
       }
     }
   },
-  "gitHead": "df9fd8986ee04d735ebcd547debf7d6d16ce3b22"
+  "gitHead": "fa37cf9f32d1f57432bd8ec9bee336e72a38af61"
 }
