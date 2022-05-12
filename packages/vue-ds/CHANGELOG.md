@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.25.2...@juntossomosmais/venice-vue@0.27.0) (2022-04-12)
+
+
+### Features
+
+* new release ([5ed5f8d](https://github.com/juntossomosmais/venice/commit/5ed5f8d524d93c9c3d75e4bb19682a0e7165ccd7))
+
+
+
+
+
+## [0.25.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.25.0...@juntossomosmais/venice-vue@0.25.2) (2022-04-12)
+
+**Note:** Version bump only for package @juntossomosmais/venice-vue
+
+
+
+
+
+# [0.25.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.23.10...@juntossomosmais/venice-vue@0.25.0) (2022-03-16)
+
+
+### Features
+
+* **variables:** add new feat release ([708bac9](https://github.com/juntossomosmais/venice/commit/708bac9d562b56bdb7cf6292eb857fbd728831f2))
+
+
+
+
+
+## [0.23.10](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.23.8...@juntossomosmais/venice-vue@0.23.10) (2022-03-11)
+
+**Note:** Version bump only for package @juntossomosmais/venice-vue
+
+
+
+
+
+## [0.23.8](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.23.7...@juntossomosmais/venice-vue@0.23.8) (2022-03-11)
+
+**Note:** Version bump only for package @juntossomosmais/venice-vue
+
+
+
+
+
+## [0.23.7](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.23.6...@juntossomosmais/venice-vue@0.23.7) (2022-03-11)
+
+
+### Bug Fixes
+
+* add event ([b00d1a3](https://github.com/juntossomosmais/venice/commit/b00d1a32c2620496c081f740fd719f7eaae5aabe))
+
+
+
+
+
 ## [0.23.6](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.23.4...@juntossomosmais/venice-vue@0.23.6) (2021-12-13)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue

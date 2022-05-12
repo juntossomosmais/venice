@@ -30,7 +30,7 @@ jobs:
           yarn build:storybook
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@4.2.0
         with:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_GHPAGES }}
           BRANCH: gh-pages

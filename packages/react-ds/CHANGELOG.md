@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.34.2...@juntossomosmais/venice-react@0.36.0) (2022-04-12)
+
+
+### Features
+
+* new release ([5ed5f8d](https://github.com/juntossomosmais/venice/commit/5ed5f8d524d93c9c3d75e4bb19682a0e7165ccd7))
+
+
+
+
+
+## [0.34.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.34.0...@juntossomosmais/venice-react@0.34.2) (2022-04-12)
+
+**Note:** Version bump only for package @juntossomosmais/venice-react
+
+
+
+
+
+# [0.34.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.32.1...@juntossomosmais/venice-react@0.34.0) (2022-03-16)
+
+
+### Features
+
+* **variables:** add new feat release ([708bac9](https://github.com/juntossomosmais/venice/commit/708bac9d562b56bdb7cf6292eb857fbd728831f2))
+
+
+
+
+
+## [0.32.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.32.0...@juntossomosmais/venice-react@0.32.1) (2022-03-11)
+
+**Note:** Version bump only for package @juntossomosmais/venice-react
+
+
+
+
+
+# [0.32.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.31.10...@juntossomosmais/venice-react@0.32.0) (2022-01-19)
+
+
+### Bug Fixes
+
+* add correct test name ([1500153](https://github.com/juntossomosmais/venice/commit/15001534c672c479ad33d42d348492804b8930f3))
+
+
+### Features
+
+* add button color white storybook ([5ec88ea](https://github.com/juntossomosmais/venice/commit/5ec88ea15406d842ab03da0c394e3f6552e403f8))
+* add button color white test ([3e0845e](https://github.com/juntossomosmais/venice/commit/3e0845e8f0ff4dbb651730cddad07082784151d4))
+* add color white type ([f147bf8](https://github.com/juntossomosmais/venice/commit/f147bf84809f4ae57c38b214691eab058e025029))
+
+
+
+
+
 ## [0.31.10](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.31.8...@juntossomosmais/venice-react@0.31.10) (2021-12-13)
 
 **Note:** Version bump only for package @juntossomosmais/venice-react

@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.32.0...@venice/styles@0.33.0) (2022-04-12)
+
+
+### Features
+
+* **typography:** add mobile version ([4b90465](https://github.com/juntossomosmais/venice/commit/4b90465a573ac7b8569281fc7c98ffb60f230a6a))
+* **typography:** change values to mobile ([9c62a96](https://github.com/juntossomosmais/venice/commit/9c62a967a46fa7c7663e6deab9fab686029bf96b))
+
+
+
+
+
+# [0.32.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.31.0...@venice/styles@0.32.0) (2022-03-16)
+
+
+### Bug Fixes
+
+* **variables:** fix wrong value (29px) to 28px on spacing-xlarge ([3146dab](https://github.com/juntossomosmais/venice/commit/3146dab16c37e8c0dcf0fb458777b9983cac530d))
+
+
+### Features
+
+* **variables:** add new spacings ([9f0d129](https://github.com/juntossomosmais/venice/commit/9f0d129a26933af388a087cb589b7cc3692ef049))
+
+
+
+
+
+# [0.31.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.30.3...@venice/styles@0.31.0) (2022-01-19)
+
+
+### Features
+
+* add styles ([e797309](https://github.com/juntossomosmais/venice/commit/e797309d0cbb622d9e48df3cb13d7cfe6ca1b24e))
+
+
+
+
+
 ## [0.30.3](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.30.1...@venice/styles@0.30.3) (2021-12-13)
 
 
