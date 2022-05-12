@@ -31,8 +31,9 @@ $ npm i -S @juntossomosmais/venice-icons
     - `jsm-icons.woff2`
 5.  On mobile applications using `react-native`, according to the two operating systems we are developing for:
 
-    - Android: Add the `.ttf` file on Android folder, inside the respective app. Follow this path to find the file: `apps > app-folder > android > app > src > main > assets > fonts`
-    - iOS: In the `Icon` component, present in `~packages/uikit`, replace the `config.json` file and the `.ttf` font file.
+    - **Android**: Add the `.ttf` file on Android folder, inside the respective app. Follow this path to find the file:
+      `apps > app-folder > android > app > src > main > assets > fonts`
+    - **iOS**: In the `Icon` component, present in `~packages/uikit`, replace the `config.json` file and the `.ttf` font file.
 
 ### Adding new icons
 
