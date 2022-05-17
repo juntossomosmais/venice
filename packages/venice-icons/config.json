@@ -1517,6 +1517,20 @@
       "search": [
         "handshake-outline"
       ]
+    },
+    {
+      "uid": "4d374bcbb8860833f4ca7d32baae0e91",
+      "css": "book-outline",
+      "code": 59781,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M720 100H240C196 100 160 136 160 180V820C160 864 196 900 240 900H720C764 900 800 864 800 820V180C800 136 764 100 720 100ZM360 180H440V380L400 350 360 380V180ZM720 820H240V180H280V540L400 450 520 540V180H720V820Z",
+        "width": 960
+      },
+      "search": [
+        "book-outline"
+      ]
     }
   ]
 }
