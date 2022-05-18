@@ -25,7 +25,7 @@
     "url": "https://github.com/juntossomosmais/venice/issues"
   },
   "dependencies": {
-    "@storybook/addon-docs": "5.3.18",
+    "@storybook/addon-docs": "6.4.22",
     "babel-loader": "^8.1.0"
   }
 }
