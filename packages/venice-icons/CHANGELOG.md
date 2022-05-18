@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.14.0...@juntossomosmais/venice-icons@0.15.0) (2022-05-18)
+
+
+### Features
+
+* add training book icon ([1bad2d7](https://github.com/juntossomosmais/venice/commit/1bad2d7fd7ff7c82c26ac764292eebd9e73dca21))
+
+
+
+
+
 # [0.14.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.13.0...@juntossomosmais/venice-icons@0.14.0) (2022-05-11)
 
 
