@@ -1,6 +1,6 @@
 {
   "name": "@venice/core",
-  "version": "0.26.0",
+  "version": "0.26.1",
   "private": true,
   "devDependencies": {
     "@storybook/addon-a11y": "^5.3.18",

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.1](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.34.0...@venice/styles@0.34.1) (2022-05-25)
+
+**Note:** Version bump only for package @venice/styles
+
+
+
+
+
 # [0.34.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.33.0...@venice/styles@0.34.0) (2022-05-25)
 
 
