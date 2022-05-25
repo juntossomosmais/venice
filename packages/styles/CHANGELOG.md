@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.33.0...@venice/styles@0.34.0) (2022-05-25)
+
+
+### Features
+
+* add new color variables ([7659b10](https://github.com/juntossomosmais/venice/commit/7659b10bf3309c88138e44a38ab72d6b013032f4))
+
+
+
+
+
 # [0.33.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.32.0...@venice/styles@0.33.0) (2022-04-12)
 
 
