@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.34.2...@venice/styles@0.35.0) (2022-05-26)
+
+
+### Features
+
+* **fontWeight:** update font-weight to match design system ([d243003](https://github.com/juntossomosmais/venice/commit/d2430032af2d305ef3e9efaf232982992cfb03d9))
+
+
+
+
+
 ## [0.34.2](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.34.1...@venice/styles@0.34.2) (2022-05-25)
 
 **Note:** Version bump only for package @venice/styles
