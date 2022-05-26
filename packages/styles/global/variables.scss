@@ -62,7 +62,7 @@
   --font-family: 'Roboto', sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  @warn "This font-weight is deprecated";
+// This font-weight is deprecated, letting here for backwards compatibility.
   --font-weight-medium: 500;
 
   /* Typography

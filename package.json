@@ -39,7 +39,8 @@
     "start": "lerna run start --parallel",
     "test:react": "yarn workspace @juntossomosmais/venice-react test:ci",
     "test:vue": "yarn workspace @juntossomosmais/venice-vue test:ci",
-    "test": "run-p test:*"
+    "test": "run-p test:*",
+    "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
