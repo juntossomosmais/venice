@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.10.2...@juntossomosmais/venice-types@0.10.3) (2022-05-26)
+
+**Note:** Version bump only for package @juntossomosmais/venice-types
+
+
+
+
+
+## [0.10.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.10.1...@juntossomosmais/venice-types@0.10.2) (2022-05-25)
+
+**Note:** Version bump only for package @juntossomosmais/venice-types
+
+
+
+
+
+## [0.10.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.10.0...@juntossomosmais/venice-types@0.10.1) (2022-05-25)
+
+**Note:** Version bump only for package @juntossomosmais/venice-types
+
+
+
+
+
 # [0.10.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-types@0.9.0...@juntossomosmais/venice-types@0.10.0) (2020-10-26)
 
 
