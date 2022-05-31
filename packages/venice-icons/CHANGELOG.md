@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.15.3...@juntossomosmais/venice-icons@0.16.0) (2022-05-31)
+
+
+### Features
+
+* add icon warning outline ([c5c768b](https://github.com/juntossomosmais/venice/commit/c5c768ba3f77b1e586e85982c380577496a93f38))
+
+
+
+
+
 ## [0.15.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.15.2...@juntossomosmais/venice-icons@0.15.3) (2022-05-26)
 
 **Note:** Version bump only for package @juntossomosmais/venice-icons
