@@ -1545,6 +1545,20 @@
       "search": [
         "warning-outline"
       ]
+    },
+    {
+      "uid": "69ca8603296ef8934ab8d744ed865283",
+      "css": "medal-1",
+      "code": 59493,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M0 986.8H986.3V0.5H0V986.8Z",
+        "width": 986
+      },
+      "search": [
+        "medal"
+      ]
     }
   ]
 }
