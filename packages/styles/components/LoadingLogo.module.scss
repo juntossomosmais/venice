@@ -1,0 +1,59 @@
+@keyframes loadingFade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.JSMLoading--fade-animation {
+  animation: loadingFade 1.3s infinite;
+  opacity: 1;
+  will-change: opacity;
+}
+.JSMLoading__logo {
+  height: 48px;
+  position: relative;
+  width: 48px;
+}
+
+.JSMLoading__logo {
+  animation: loadingFade 4s infinite;
+  animation-delay: 400ms;
+  opacity: 1;
+}
+
+.JSMLoading__blue-piece {
+  animation-delay: 500ms;
+
+  &--fill {
+    fill: #005f9f;
+  }
+}
+
+.JSMLoading__green-piece {
+  animation-delay: 700ms;
+
+  &--fill {
+    fill: #728529;
+  }
+}
+
+.JSMLoading__orange-piece {
+  animation-delay: 1000ms;
+
+  &--fill {
+    fill: #ed7004;
+  }
+}
+
+.JSMLoading__red-piece {
+  animation-delay: 1200ms;
+
+  &--fill {
+    fill: #ab2723;
+  }
+}
