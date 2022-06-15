@@ -14,16 +14,14 @@
   opacity: 1;
   will-change: opacity;
 }
-.JSMLoading__logo {
-  height: 48px;
-  position: relative;
-  width: 48px;
-}
 
 .JSMLoading__logo {
   animation: loadingFade 4s infinite;
   animation-delay: 400ms;
+  height: 48px;
   opacity: 1;
+  position: relative;
+  width: 48px;
 }
 
 .JSMLoading__blue-piece {

@@ -119,7 +119,7 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component({
   name: 'LoadingLogo',
 })
-export default class Tag extends Vue {}
+export default class LoadingLogo extends Vue {}
 </script>
 
 <style lang="scss" scoped>
