@@ -123,5 +123,5 @@ export default class Tag extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-@import '~@venice/styles/components/Tag.module.scss';
+@import '~@venice/styles/components/LoadingLogo.module.scss';
 </style>

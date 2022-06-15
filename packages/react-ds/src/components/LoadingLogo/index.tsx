@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import classNames from 'classnames/bind'
+
 import styles from '@venice/styles/components/LoadingLogo.module.scss'
 
 export const LoadingLogo = () => {
@@ -7,7 +9,7 @@ export const LoadingLogo = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 194 189.24"
-      class="JSMLoading__logo"
+      className={classNames(styles.JSMLoading__logo)}
     >
       <defs>
         <linearGradient
@@ -18,8 +20,8 @@ export const LoadingLogo = () => {
           y2="96.85"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#c93f2b"></stop>
-          <stop offset="1" stop-color="#ab2723"></stop>
+          <stop offset="0" stopColor="#c93f2b"></stop>
+          <stop offset="1" stopColor="#ab2723"></stop>
         </linearGradient>
         <linearGradient
           id="green-gradient"
@@ -29,10 +31,10 @@ export const LoadingLogo = () => {
           y2="98.47"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#9cb71e"></stop>
-          <stop offset=".36" stop-color="#879e23"></stop>
-          <stop offset=".74" stop-color="#788c28"></stop>
-          <stop offset="1" stop-color="#728529"></stop>
+          <stop offset="0" stopColor="#9cb71e"></stop>
+          <stop offset=".36" stopColor="#879e23"></stop>
+          <stop offset=".74" stopColor="#788c28"></stop>
+          <stop offset="1" stopColor="#728529"></stop>
         </linearGradient>
         <linearGradient
           id="orange-gradient"
@@ -42,8 +44,8 @@ export const LoadingLogo = () => {
           y2="125.63"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#ed7004"></stop>
-          <stop offset="1" stop-color="#f59a2d"></stop>
+          <stop offset="0" stopColor="#ed7004"></stop>
+          <stop offset="1" stopColor="#f59a2d"></stop>
         </linearGradient>
         <linearGradient
           id="blue-gradient"
@@ -53,20 +55,25 @@ export const LoadingLogo = () => {
           y2="14.25"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#0bbbef"></stop>
-          <stop offset="1" stop-color="#005f9f"></stop>
+          <stop offset="0" stopColor="#0bbbef"></stop>
+          <stop offset="1" stopColor="#005f9f"></stop>
         </linearGradient>
       </defs>
       <g>
-        <g class="JSMLoading__red-piece JSMLoading--fade-animation">
+        <g
+          className={classNames(
+            styles[`JSMLoading__red-piece`],
+            styles[`JSMLoading--fade-animation`]
+          )}
+        >
           <circle
-            class="JSMLoading__red-piece--fill"
+            className={classNames(styles[`JSMLoading__red-piece--fill`])}
             cx="18.25"
             cy="170.05"
             r="18.25"
           ></circle>
           <path
-            class="JSMLoading__red-piece--fill"
+            className={classNames(styles[`JSMLoading__red-piece--fill`])}
             d="M87.63 125.93V175c0 12.47-8.95 17.77-19.88 11.76L39.5 150.61l41.63-40.52a22.61 22.61 0 0 1 6.5 15.84z"
           ></path>
           <path
@@ -74,9 +81,14 @@ export const LoadingLogo = () => {
             fill="url(#red-gradient)"
           ></path>
         </g>
-        <g class="JSMLoading__green-piece JSMLoading--fade-animation">
+        <g
+          className={classNames(
+            styles[`JSMLoading__green-piece`],
+            styles[`JSMLoading--fade-animation`]
+          )}
+        >
           <path
-            class="JSMLoading__green-piece--fill"
+            className={classNames(styles[`JSMLoading__green-piece--fill`])}
             d="M156 18.49A18.26 18.26 0 1 0 174.26.23 18.25 18.25 0 0 0 156 18.49zM124.76 2.48c-10.93-6-19.87-.71-19.87 11.76v49.08a22.58 22.58 0 0 0 6.93 16.25l40.91-41.23z"
           ></path>
           <path
@@ -84,15 +96,20 @@ export const LoadingLogo = () => {
             fill="url(#green-gradient)"
           ></path>
         </g>
-        <g class="JSMLoading__orange-piece JSMLoading--fade-animation">
+        <g
+          className={classNames(
+            styles[`JSMLoading__orange-piece`],
+            styles[`JSMLoading--fade-animation`]
+          )}
+        >
           <circle
-            class="JSMLoading__orange-piece--fill"
+            className={classNames(styles[`JSMLoading__orange-piece--fill`])}
             cx="173.83"
             cy="170.05"
             r="18.25"
           ></circle>
           <path
-            class="JSMLoading__orange-piece--fill"
+            className={classNames(styles[`JSMLoading__orange-piece--fill`])}
             d="M129.21 103.25h49.07c12.47 0 17.76 8.94 11.76 19.87l-36.28 28.4-40.91-41.23a22.62 22.62 0 0 1 16.36-7.04z"
           ></path>
           <path
@@ -100,9 +117,14 @@ export const LoadingLogo = () => {
             fill="url(#orange-gradient)"
           ></path>
         </g>
-        <g class="JSMLoading__blue-piece JSMLoading--fade-animation">
+        <g
+          className={classNames(
+            styles[`JSMLoading__blue-piece`],
+            styles[`JSMLoading--fade-animation`]
+          )}
+        >
           <path
-            class="JSMLoading__blue-piece--fill"
+            className={classNames(styles[`JSMLoading__blue-piece--fill`])}
             d="M2.08 18.49A18.26 18.26 0 1 0 20.34.23 18.26 18.26 0 0 0 2.08 18.49z"
           ></path>
           <path
@@ -110,7 +132,7 @@ export const LoadingLogo = () => {
             fill="url(#blue-gradient)"
           ></path>
           <path
-            class="JSMLoading__blue-piece--fill"
+            className={classNames(styles[`JSMLoading__blue-piece--fill`])}
             d="M38.77 39.36L4.12 66.12C-1.89 77.06 3.4 86 15.88 86H65a22.57 22.57 0 0 0 15.44-6.14z"
           ></path>
         </g>
