@@ -1,0 +1,22 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+
+import LoadingLogo from './LoadingLogo.vue'
+
+<Meta title="Components|LoadingLogo" component={LoadingLogo} />
+
+# LoadingLogo
+
+LoadingLogo is the loading effect with the JSM logo. This is made using just a CSS to create a visual and animation.
+
+<Preview>
+  <Story name="LoadingLogo" inline={true}>
+    {{
+      components: { LoadingLogo },
+      template: `
+        <div class="row-items">
+          <LoadingLogo :size="size" />
+        </div>
+      `,
+    }}
+  </Story>
+</Preview>
