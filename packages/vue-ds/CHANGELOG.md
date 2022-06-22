@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.27.3...@juntossomosmais/venice-vue@0.28.0) (2022-06-22)
+
+
+### Features
+
+* **LoadingLogo:** add files for style, vue and react ([0ad4755](https://github.com/juntossomosmais/venice/commit/0ad4755e7a190439189f520ed63cf94fbebc0c05))
+* **LoadingLogo:** add test files and adjust to react ([6066313](https://github.com/juntossomosmais/venice/commit/606631358a54a146b78ac49a0b12b2e87a23f141))
+* **LoadingLogo:** fixing code smells ([ee04f02](https://github.com/juntossomosmais/venice/commit/ee04f021f3a6c097627d5849514fd44ebe395c76))
+
+
+
+
+
 ## [0.27.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.27.2...@juntossomosmais/venice-vue@0.27.3) (2022-05-26)
 
 **Note:** Version bump only for package @juntossomosmais/venice-vue
