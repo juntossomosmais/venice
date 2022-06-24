@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.28.0...@juntossomosmais/venice-vue@0.28.1) (2022-06-24)
+
+
+### Bug Fixes
+
+* exportation to default ([e928129](https://github.com/juntossomosmais/venice/commit/e928129cae3304bc7bf2ebdd8bf1089bb9ac7b13))
+
+
+
+
+
 # [0.28.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.27.3...@juntossomosmais/venice-vue@0.28.0) (2022-06-22)
 
 

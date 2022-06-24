@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.37.0...@juntossomosmais/venice-react@0.37.1) (2022-06-24)
+
+
+### Bug Fixes
+
+* exportation to default ([e928129](https://github.com/juntossomosmais/venice/commit/e928129cae3304bc7bf2ebdd8bf1089bb9ac7b13))
+
+
+
+
+
 # [0.37.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.36.3...@juntossomosmais/venice-react@0.37.0) (2022-06-22)
 
 
