@@ -6,16 +6,19 @@
 
 <script lang="ts">
 import { IBreadcrumb } from '@juntossomosmais/venice-types'
-import { Component, Vue, Prop } from 'vue-property-decorator'
+import Vue, { PropOptions } from 'vue'
 
-@Component({})
-export default class Breadcrumb extends Vue {
-  @Prop({ default: 'default' }) color!: IBreadcrumb['color']
-
-  get breadcrumbClass() {
-    return ['JSMBreadcrumb', `JSMBreadcrumb--${this.color}`]
-  }
-}
+export default Vue.extend({
+  name: 'Breadcrumb',
+  props: {
+    color: { default: 'default' } as PropOptions<IBreadcrumb['color']>,
+  },
+  computed: {
+    breadcrumbClass() {
+      return ['JSMBreadcrumb', `JSMBreadcrumb--${this.color}`]
+    },
+  },
+})
 </script>
 
 <style lang="scss" scoped>

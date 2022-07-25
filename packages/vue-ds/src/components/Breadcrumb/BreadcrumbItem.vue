@@ -5,10 +5,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import Vue from 'vue'
 
-@Component({})
-export default class BreadcrumbItem extends Vue {}
+export default Vue.extend({
+  name: 'BreadcrumbItem',
+})
 </script>
 
 <style lang="scss" scoped>
