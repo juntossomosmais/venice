@@ -1,0 +1,18 @@
+{
+  "name": "react-native-ds",
+  "version": "1.0.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "transform-css-to-js": "^0.1.1"
+  },
+  "devDependencies": {
+    "postcss-import": "^14.1.0"
+  }
+}

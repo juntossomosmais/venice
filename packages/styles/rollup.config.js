@@ -4,6 +4,7 @@ import postcss from 'rollup-plugin-postcss'
 
 const reactDist = '../react-ds/dist'
 const vueDist = '../vue-ds/dist'
+const reactNativeDist = '../react-native-ds/dist'
 
 const resetFile = 'global/reset.css'
 
@@ -18,12 +19,17 @@ export default {
       file: `${vueDist}/styles.css`,
       format: 'es',
     },
+    {
+      file: `${reactNativeDist}/styles.css`,
+      format: 'es',
+    },
   ],
   plugins: [
     copy({
       targets: [
         { src: resetFile, dest: reactDist },
         { src: resetFile, dest: vueDist },
+        { src: resetFile, dest: reactNativeDist },
       ],
     }),
     postcss({
