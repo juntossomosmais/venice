@@ -1,6 +1,6 @@
 const pkg = require('./package.json')
 
-const input = 'index.js'
+const input = './index.js'
 
 const outputOptions = {
   freeze: false,
@@ -21,5 +21,4 @@ export default {
       ...outputOptions,
     },
   ],
-  external: [...Object.keys(pkg.dependencies)],
 }
