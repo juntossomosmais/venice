@@ -1,1 +1,1 @@
-export * from './styles/variables'
+export * from './styles/variables.js'
