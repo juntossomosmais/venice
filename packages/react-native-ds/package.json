@@ -1,5 +1,5 @@
 {
-  "name": "@juntossomosmais/venice-react-native-ds",
+  "name": "@juntossomosmais/venice-react-native",
   "version": "1.0.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -8,5 +8,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "rollup -c"
-  }
+  },
+  "repository": "https://github.com/juntossomosmais/venice.git",
+  "author": "@juntossomosmais"
 }
