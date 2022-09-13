@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.17.0...@juntossomosmais/venice-icons@0.17.2) (2022-09-13)
+
+
+### Bug Fixes
+
+* update package with correct bump ([555911e](https://github.com/juntossomosmais/venice/commit/555911ebb2bd73baa02eb26d9bf8221b7823f1fe))
+
+
+
+
+
 # [0.17.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.16.2...@juntossomosmais/venice-icons@0.17.0) (2022-09-13)
 
 
