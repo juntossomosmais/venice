@@ -1,6 +1,6 @@
 {
   "name": "@juntossomosmais/venice-icons",
-  "version": "0.17.2",
+  "version": "0.17.3",
   "description": "Icons used on Juntos Somos Mais applications",
   "homepage": "https://github.com/juntossomosmais/venice/tree/master/packages/venice-icons#readme",
   "license": "Apache-2.0",
@@ -26,5 +26,6 @@
   },
   "dependencies": {
     "babel-loader": "^8.1.0"
-  }
+  },
+  "gitHead": "5a63d8992756d549594bcccb3a88b7efe11bd8a9"
 }
