@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.16.2...@juntossomosmais/venice-icons@0.17.0) (2022-09-13)
+
+
+### Features
+
+* add Activity Blocked and Player Blocked icon ([d6df520](https://github.com/juntossomosmais/venice/commit/d6df520280632366f8826f6b80e4bb220ba6991b))
+
+
+
+
+
 ## [0.16.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.16.1...@juntossomosmais/venice-icons@0.16.2) (2022-08-01)
 
 **Note:** Version bump only for package @juntossomosmais/venice-icons
