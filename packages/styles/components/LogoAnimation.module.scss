@@ -1,0 +1,45 @@
+@keyframes shrink {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.logo__part {
+  transform: scale(1);
+}
+
+.JSMAnimation__logo:hover .logo__part {
+  animation: shrink 1s ease;
+  animation-fill-mode: forward;
+  animation-iteration-count: 1;
+}
+
+#part-green {
+  animation-delay: 200ms;
+  transform-origin: 100px 15px;
+}
+
+#part-red {
+  animation-delay: 400ms;
+  transform-origin: 75px;
+}
+
+#part-blue {
+  animation-delay: 600ms;
+  transform-origin: 75px 15px;
+}
+
+#part-orange {
+  animation-delay: 800ms;
+  transform-origin: 100px 55px;
+}
