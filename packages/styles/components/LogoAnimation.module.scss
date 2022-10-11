@@ -18,6 +18,9 @@
   transform: scale(1);
 }
 
+.JSMAnimation__logo {
+  overflow: visible;
+}
 .JSMAnimation__logo:hover .logo__part {
   animation: shrink 1s ease;
   animation-fill-mode: forward;
