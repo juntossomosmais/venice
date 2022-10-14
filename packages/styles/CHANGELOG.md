@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.36.0...@venice/styles@0.37.0) (2022-10-14)
+
+
+### Features
+
+* **LogoAnimation:** add logo animation for jsm ([add33da](https://github.com/juntossomosmais/venice/commit/add33dac6af7d49ebe3718eb215a31e84e917855))
+* **LogoAnimation:** fix overflow on animation ([0c7b9cf](https://github.com/juntossomosmais/venice/commit/0c7b9cf1a2cb911999aa78b9bb59ce1b3ee0aa04))
+
+
+
+
+
 # [0.36.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.35.0...@venice/styles@0.36.0) (2022-06-22)
 
 

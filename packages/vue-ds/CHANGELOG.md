@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.28.1...@juntossomosmais/venice-vue@0.29.0) (2022-10-14)
+
+
+### Features
+
+* **LogoAnimation:** add logo animation for jsm ([add33da](https://github.com/juntossomosmais/venice/commit/add33dac6af7d49ebe3718eb215a31e84e917855))
+
+
+
+
+
 ## [0.28.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-vue@0.28.0...@juntossomosmais/venice-vue@0.28.1) (2022-06-24)
 
 

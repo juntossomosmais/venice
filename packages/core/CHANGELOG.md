@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.27.1...@venice/core@0.28.0) (2022-10-14)
+
+
+### Features
+
+* **LogoAnimation:** add logo animation for jsm ([add33da](https://github.com/juntossomosmais/venice/commit/add33dac6af7d49ebe3718eb215a31e84e917855))
+
+
+
+
+
 ## [0.27.1](https://github.com/juntossomosmais/venice/compare/@venice/core@0.27.0...@venice/core@0.27.1) (2022-06-22)
 
 **Note:** Version bump only for package @venice/core
