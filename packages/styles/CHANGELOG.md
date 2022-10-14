@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.36.0...@venice/styles@0.37.0) (2022-10-14)
+
+
+### Features
+
+Add new component **LogoAnimation:** 
+
+
+
 # [0.36.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.35.0...@venice/styles@0.36.0) (2022-06-22)
 
 
