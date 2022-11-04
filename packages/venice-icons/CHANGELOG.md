@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.17.4...@juntossomosmais/venice-icons@0.18.0) (2022-11-04)
+
+
+### Features
+
+* add new icon flashlight ([fb5c3f8](https://github.com/juntossomosmais/venice/commit/fb5c3f89682deac0530d482d3327f75ea57d540e))
+* add svg file ([6a73cdb](https://github.com/juntossomosmais/venice/commit/6a73cdbb93b5261349685305a407548d56f8f9ec))
+
+
+
+
+
 ## [0.17.4](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.17.2...@juntossomosmais/venice-icons@0.17.4) (2022-09-13)
 
 
