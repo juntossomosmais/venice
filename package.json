@@ -57,7 +57,7 @@
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.5",
+    "eslint-plugin-jest": "^27.1.5",
     "eslint-plugin-mdx": "^1.9.0",
     "eslint-plugin-prettier": "^3.3.1",
     "fontello-cli": "^0.6.2",
