@@ -25,7 +25,7 @@
     "url": "https://github.com/juntossomosmais/venice/issues"
   },
   "dependencies": {
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^9.1.0"
   },
   "gitHead": "5a63d8992756d549594bcccb3a88b7efe11bd8a9"
 }
