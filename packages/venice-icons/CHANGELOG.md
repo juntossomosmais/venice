@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.18.2...@juntossomosmais/venice-icons@0.19.0) (2022-11-22)
+
+
+### Bug Fixes
+
+* change code icon hab ([2a2c29f](https://github.com/juntossomosmais/venice/commit/2a2c29f2f313c0abe0a86e99ed3fd4a5868ba77d))
+* change name icon ([c72317d](https://github.com/juntossomosmais/venice/commit/c72317dd3396e8b45faafe1d0a90a42ab812d8d3))
+* change svg ([c1889e6](https://github.com/juntossomosmais/venice/commit/c1889e6fb31d7c830e5cd00e8af3d85066441cca))
+* remove bg ([6eea9b9](https://github.com/juntossomosmais/venice/commit/6eea9b90c3cc827b0c3572131f8e69cec1765ba9))
+
+
+### Features
+
+* add icon in config ([f1721de](https://github.com/juntossomosmais/venice/commit/f1721de9798537b21c1947bc8674c81dea59464c))
+* add icon svg in backup assets ([af97e68](https://github.com/juntossomosmais/venice/commit/af97e68c5566dabf670a4d6bca4479630b5faee1))
+* add person-gift and person-receipt icons in venice-icons ([a4d4ebd](https://github.com/juntossomosmais/venice/commit/a4d4ebd879c92bf92f9f4dc7b5c32f2f27b9b229))
+
+
+
+
+
 ## [0.18.2](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.18.0...@juntossomosmais/venice-icons@0.18.2) (2022-11-04)
 
 **Note:** Version bump only for package @juntossomosmais/venice-icons
