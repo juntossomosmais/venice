@@ -7,7 +7,9 @@ import styles from '@venice/styles/components/Button.module.scss'
 
 import { Spinner } from '../Spinner'
 
-export interface IButtonProps extends Omit<IButton, 'color'> {
+export interface IButtonProps
+  extends Omit<IButton, 'color'>,
+    React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** string */
   className?: string
   /**  'default' | 'primary' | 'secondary' | 'white' */
@@ -20,8 +22,6 @@ export interface IButtonProps extends Omit<IButton, 'color'> {
   startIcon?: React.ReactNode | string
   /** React MouseEvent  */
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
-  /** 'submit' | 'reset' | 'button' | undefined */
-  type?: React.ButtonHTMLAttributes<HTMLButtonElement>['type']
 }
 
 const ButtonComponent: React.FunctionComponent<
