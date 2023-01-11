@@ -20,6 +20,8 @@ export interface IButtonProps extends Omit<IButton, 'color'> {
   startIcon?: React.ReactNode | string
   /** React MouseEvent  */
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
+  /** 'submit' | 'reset' | 'button' | undefined */
+  type?: React.ButtonHTMLAttributes<HTMLButtonElement>['type']
 }
 
 const ButtonComponent: React.FunctionComponent<

@@ -147,4 +147,18 @@ describe('<Button />', () => {
     fireEvent.click(getByText('Loading'))
     expect(onClick).not.toBeCalled()
   })
+
+  it('should be able to submit a form with type submit', () => {
+    const submitMocked = jest.fn()
+
+    const { getByText } = render(
+      <form onSubmit={submitMocked}>
+        <Button type="submit">Submit</Button>
+      </form>
+    )
+
+    fireEvent.submit(getByText('Submit'))
+
+    expect(submitMocked).toHaveBeenCalled()
+  })
 })
