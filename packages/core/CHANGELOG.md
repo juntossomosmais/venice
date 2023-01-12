@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.28.0...@venice/core@0.29.0) (2023-01-12)
+
+
+### Features
+
+* add colors into mdx file ([30c4931](https://github.com/juntossomosmais/venice/commit/30c4931d9368d46f1ae2ac77b19d39bba4fec798))
+
+
+
+
+
 # [0.28.0](https://github.com/juntossomosmais/venice/compare/@venice/core@0.27.1...@venice/core@0.28.0) (2022-10-14)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.38.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.37.0...@venice/styles@0.38.0) (2023-01-12)
+
+
+### Features
+
+* add turquoise color ([88314f9](https://github.com/juntossomosmais/venice/commit/88314f99d4650559c73657dcc8b40ff7f6a4da2b))
+* fix name color var ([4bedada](https://github.com/juntossomosmais/venice/commit/4bedada112054e7c0dc2bc5bf215dbc821b0ef70))
+
+
+
+
+
 # [0.37.0](https://github.com/juntossomosmais/venice/compare/@venice/styles@0.36.0...@venice/styles@0.37.0) (2022-10-14)
 
 
