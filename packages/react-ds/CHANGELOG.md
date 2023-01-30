@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.38.1...@juntossomosmais/venice-react@0.39.0) (2023-01-30)
+
+
+### Features
+
+* **react-ds:** add type props in ts ([0d91ad6](https://github.com/juntossomosmais/venice/commit/0d91ad6f3f951319bd5e2d3c1cdade704b5fd2a7))
+* **react-ds:** extending all html attributes types in Button ([caf6a1b](https://github.com/juntossomosmais/venice/commit/caf6a1b65395edcda1e67738cc63ac0fd24a37d9))
+
+
+
+
+
 ## [0.38.1](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-react@0.38.0...@juntossomosmais/venice-react@0.38.1) (2023-01-13)
 
 **Note:** Version bump only for package @juntossomosmais/venice-react
