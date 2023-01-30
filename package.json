@@ -63,7 +63,7 @@
     "fontello-cli": "^0.6.2",
     "fs-extra": "^9.1.0",
     "gh-pages-deploy": "^0.5.1",
-    "github-markdown-css": "^4.0.0",
+    "github-markdown-css": "^5.1.0",
     "glob": "^7.1.6",
     "husky": "^7.0.4",
     "jest": "^26.6.3",
