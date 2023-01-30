@@ -81,7 +81,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^3.1.1",
     "stylelint": "^13.11.0",
-    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
     "ts-jest": "^26.5.5",
     "typescript": "~3.8.3"
