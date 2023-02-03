@@ -1,9 +1,14 @@
 <h1 align="center"><img src="https://user-images.githubusercontent.com/3603793/82264068-9bd80580-993a-11ea-9715-41de3c11a8e8.png" alt="Venice Design System" width="665" /></h1>
 <p align="center">
-  <img
-    alt="Build"
-    src="https://img.shields.io/github/workflow/status/juntossomosmais/venice/ghpages"
-  />
+  <a
+    href="https://img.shields.io/github/workflow/status/juntossomosmais/venice/ghpages"
+    target="_blank"
+  >
+    <img
+      alt="Build"
+      src="https://img.shields.io/github/actions/workflow/status/juntossomosmais/venice/build-and-tests.yml"
+    />
+  </a>
   <a
     href="https://juntossomosmais.github.io/venice"
     target="_blank"
