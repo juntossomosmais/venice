@@ -15,6 +15,9 @@ $screen-sm: 768px; // Extra small screen / phone
 $screen-md: 992px; // Small screen / tablet
 $screen-lg: 1280px; // Medium screen / desktop
 $screen-xlg: 1440px; // Extra Large screen / wide desktop
+$screen-fhd: 1920px; // Full HD resolution
+$screen-2k: 2048px; // 2K resolution
+$screen-4k: 3840px; // 4K resolution
 
 $rupture: map-merge(
   $rupture,
