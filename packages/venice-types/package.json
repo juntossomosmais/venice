@@ -1,6 +1,6 @@
 {
   "name": "@juntossomosmais/venice-types",
-  "version": "0.10.5",
+  "version": "0.10.6",
   "description": "Components types and interfaces for Venice",
   "homepage": "https://github.com/juntossomosmais/venice/tree/master/packages/venice-types#readme",
   "license": "Apache-2.0",
@@ -24,5 +24,6 @@
   "types": "dist/index.d.ts",
   "bugs": {
     "url": "https://github.com/juntossomosmais/venice/issues"
-  }
+  },
+  "gitHead": "0570cdb68e36c9649eb34c4e6ecfbc98e81764b3"
 }
