@@ -1,6 +1,6 @@
 {
   "name": "@venice/styles",
-  "version": "0.38.3",
+  "version": "0.38.4",
   "private": true,
   "scripts": {
     "start": "rollup -c -w",
