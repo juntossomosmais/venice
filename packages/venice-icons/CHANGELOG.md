@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.19.3...@juntossomosmais/venice-icons@0.20.0) (2023-06-20)
+
+
+### Features
+
+* add icon cashback ([b2e283d](https://github.com/juntossomosmais/venice/commit/b2e283db8fbdee7c75f0a6ef612c4ea216087d06))
+
+
+
+
+
 ## [0.19.3](https://github.com/juntossomosmais/venice/compare/@juntossomosmais/venice-icons@0.19.2...@juntossomosmais/venice-icons@0.19.3) (2023-04-17)
 
 **Note:** Version bump only for package @juntossomosmais/venice-icons
