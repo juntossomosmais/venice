@@ -124,6 +124,7 @@
 .jsm-icon-people { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8b7;&nbsp;'); }
 .jsm-icon-assignment-turned-in-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8bc;&nbsp;'); }
 .jsm-icon-account-balance-wallet-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8bd;&nbsp;'); }
+.jsm-icon-cashback { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8d7;&nbsp;'); }
 .jsm-icon-emoji-events { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe917;&nbsp;'); }
 .jsm-icon-book-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe985;&nbsp;'); }
 .jsm-icon-check-empty { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf096;&nbsp;'); }
