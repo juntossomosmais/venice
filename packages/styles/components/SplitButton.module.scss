@@ -45,7 +45,7 @@
   opacity: 0;
   position: absolute;
   right: 0;
-  transform: translateY(var(--space-lg));
+  transform: translateY(var(--spacing-xxxxlarge));
   visibility: hidden;
   will-change: visibility;
   z-index: var(--zindex-10);
@@ -69,7 +69,7 @@
     cursor: pointer;
     display: flex;
     font-weight: 500;
-    min-height: var(--space-lg);
+    min-height: var(--spacing-xxxxlarge);
     padding-left: var(--spacing-large);
     padding-right: var(--spacing-large);
     text-decoration: none;
@@ -120,11 +120,11 @@
     visibility: visible;
 
     &.large {
-      transform: translateY(calc(var(--space-xlg) - var(--spacing-xxsmall)));
+      transform: translateY(calc(var(--spacing-giant) - var(--spacing-xxsmall)));
     }
 
     &.medium {
-      transform: translateY(calc(var(--space-lg) + var(--spacing-xxsmall)));
+      transform: translateY(calc(var(--spacing-xxxxlarge) + var(--spacing-xxsmall)));
     }
   }
 

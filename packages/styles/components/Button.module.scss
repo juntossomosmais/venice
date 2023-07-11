@@ -4,7 +4,7 @@
   align-items: center;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: var(--space-lg);
+  border-radius: var(--spacing-xxxxlarge);
   cursor: pointer;
   display: inline-flex;
   font: var(--typography-button-font);
@@ -19,7 +19,7 @@
   will-change: border-color;
 
   &::before {
-    border-radius: var(--space-lg);
+    border-radius: var(--spacing-xxxxlarge);
     bottom: 0;
     content: '';
     left: 0;
@@ -255,7 +255,7 @@
   }
 
   &--large {
-    height: var(--space-lg);
+    height: var(--spacing-xxxxlarge);
     padding-left: var(--spacing-large);
     padding-right: var(--spacing-large);
 
@@ -278,7 +278,7 @@
     }
 
     &.JSMButton--large {
-      width: var(--space-lg);
+      width: var(--spacing-xxxxlarge);
     }
   }
 
@@ -287,7 +287,7 @@
   }
 
   &--round-square {
-    min-width: var(--space-xlg);
+    min-width: var(--spacing-giant);
   }
 }
 
