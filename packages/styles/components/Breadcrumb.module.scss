@@ -5,10 +5,10 @@
 
   &--default {
     .JSMBreadcrumbItem {
-      color: var(--text-color);
+      color: var(--color-neutral-regular);
 
       :root & > * {
-        color: var(--text-color);
+        color: var(--color-neutral-regular);
       }
     }
   }
