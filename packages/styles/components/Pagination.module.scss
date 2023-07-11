@@ -51,7 +51,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
   display: flex;
   height: $btn-width;
   justify-content: center;
-  margin-top: var(--space-xxs);
+  margin-top: var(--spacing-xxsmall);
   outline: none;
   position: absolute;
   top: $btn-space;
@@ -101,7 +101,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
 }
 
 .indexWrapper {
-  margin-top: var(--space-xxs);
+  margin-top: var(--spacing-xxsmall);
   position: relative;
 
   &.active {
@@ -114,7 +114,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
       background-color: var(--secondary-color);
       border-radius: 9px;
       content: '';
-      height: var(--space-xxs);
+      height: var(--spacing-xxsmall);
       left: 0;
       margin-top: var(--space-xs);
       position: absolute;

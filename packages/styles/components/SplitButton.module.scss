@@ -101,7 +101,7 @@
     width: fit-content;
 
     &::before {
-      left: calc(var(--space-md) + var(--space-xxs));
+      left: calc(var(--space-md) + var(--spacing-xxsmall));
     }
   }
 
@@ -120,11 +120,11 @@
     visibility: visible;
 
     &.large {
-      transform: translateY(calc(var(--space-xlg) - var(--space-xxs)));
+      transform: translateY(calc(var(--space-xlg) - var(--spacing-xxsmall)));
     }
 
     &.medium {
-      transform: translateY(calc(var(--space-lg) + var(--space-xxs)));
+      transform: translateY(calc(var(--space-lg) + var(--spacing-xxsmall)));
     }
   }
 

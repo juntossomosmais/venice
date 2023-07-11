@@ -84,7 +84,7 @@ $checkbox-opacity: 0.55;
 .error {
   color: var(--danger-color);
   font: var(--typography-caption-font);
-  margin-top: var(--space-xxs);
+  margin-top: var(--spacing-xxsmall);
 
   &::before {
     margin-left: unset;

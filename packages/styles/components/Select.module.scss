@@ -16,12 +16,12 @@ $caret-size: 16px;
   color: var(--danger-color);
   display: inherit;
   font: var(--typography-caption-font);
-  margin-top: var(--space-xxs);
+  margin-top: var(--spacing-xxsmall);
 
   svg {
     fill: var(--danger-color);
     height: 14px;
-    margin-right: var(--space-xxs);
+    margin-right: var(--spacing-xxsmall);
     width: 14px;
   }
 }
