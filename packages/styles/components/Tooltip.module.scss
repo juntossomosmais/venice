@@ -42,13 +42,13 @@ $arrow-shadow-space: -25px;
   &.dark {
     .tooltipContent {
       background-color: var(--default-color);
-      color: var(--white);
+      color: var(--color-neutral-white);
     }
   }
 
   &.light {
     .tooltipContent {
-      background: var(--white);
+      background: var(--color-neutral-white);
       border-radius: var (-border-radius);
       box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -78,7 +78,7 @@ $arrow-shadow-space: -25px;
     &.light {
       .tooltipContent {
         &::after {
-          border-color: var(--white) transparent transparent transparent;
+          border-color: var(--color-neutral-white) transparent transparent transparent;
         }
 
         &::before {
@@ -108,7 +108,7 @@ $arrow-shadow-space: -25px;
     &.light {
       .tooltipContent {
         &::after {
-          border-color: transparent var(--white) transparent transparent;
+          border-color: transparent var(--color-neutral-white) transparent transparent;
         }
 
         &::before {

@@ -15,10 +15,10 @@
 
   &--contrast {
     .JSMBreadcrumbItem {
-      color: var(--white);
+      color: var(--color-neutral-white);
 
       :root & > * {
-        color: var(--white);
+        color: var(--color-neutral-white);
       }
     }
   }

@@ -18,7 +18,7 @@
 
   thead th {
     background-color: var(--gray-3);
-    color: var(--white);
+    color: var(--color-neutral-white);
     font-weight: 700;
 
     &:first-of-type {
@@ -37,7 +37,7 @@
     }
 
     tbody tr:nth-child(odd) > td {
-      background-color: var(--white);
+      background-color: var(--color-neutral-white);
     }
   }
 

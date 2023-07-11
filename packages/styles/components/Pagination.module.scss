@@ -80,7 +80,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
 }
 
 .paginationIndex {
-  background-color: var(--white);
+  background-color: var(--color-neutral-white);
   cursor: pointer;
   display: inline-block;
   font: var(--typography-body2-font);
