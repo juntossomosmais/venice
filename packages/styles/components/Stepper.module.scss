@@ -21,7 +21,7 @@
   width: 100%;
 
   &::before {
-    background-color: var(--gray-2);
+    background-color: var(--color-neutral-light-3);
     border: 2px solid var(--color-neutral-white);
     border-radius: 50%;
     content: '';
@@ -36,7 +36,7 @@
   }
 
   &::after {
-    background-color: var(--gray-2);
+    background-color: var(--color-neutral-light-3);
     content: '';
     height: 100%;
     left: var(--spacing-xsmall);
@@ -123,5 +123,5 @@
 }
 
 .last::after {
-  background-color: var(--gray-2);
+  background-color: var(--color-neutral-light-3);
 }

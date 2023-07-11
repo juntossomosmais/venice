@@ -37,14 +37,14 @@ $icon-size-lg: 24px;
     cursor: pointer;
 
     &:hover {
-      color: var(--gray-2);
+      color: var(--color-neutral-light-3);
     }
   }
 }
 
 .alert {
   border-radius: var(--border-radius);
-  border-top: 1px solid var(--gray-2);
+  border-top: 1px solid var(--color-neutral-light-3);
   display: grid;
   font: var(--typography-body-font);
   grid-gap: var(--spacing-base);
@@ -67,7 +67,7 @@ $icon-size-lg: 24px;
 
   &.filled {
     background: var(--color-neutral-light-5);
-    border: 1px solid var(--gray-2);
+    border: 1px solid var(--color-neutral-light-3);
   }
 
   &.transparent {

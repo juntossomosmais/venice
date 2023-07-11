@@ -44,7 +44,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
 
 .paginationButton {
   align-items: center;
-  background-color: var(--gray-2);
+  background-color: var(--color-neutral-light-3);
   border: 0;
   border-radius: 50%;
   cursor: pointer;
@@ -74,7 +74,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
   }
 
   &:hover:disabled {
-    background-color: var(--gray-2);
+    background-color: var(--color-neutral-light-3);
     opacity: 0.3;
   }
 }

@@ -82,7 +82,7 @@ $arrow-shadow-space: -25px;
         }
 
         &::before {
-          border-color: var(--gray-2) transparent transparent transparent;
+          border-color: var(--color-neutral-light-3) transparent transparent transparent;
           left: ($coordinate-space);
           top: calc(100% + 1px);
           transform: translateX(-$coordinate-space);
@@ -112,7 +112,7 @@ $arrow-shadow-space: -25px;
         }
 
         &::before {
-          border-color: transparent var(--gray-2) transparent transparent;
+          border-color: transparent var(--color-neutral-light-3) transparent transparent;
           left: ($arrow-shadow-space);
           top: ($coordinate-space);
           transform: translateY(-$coordinate-space);
