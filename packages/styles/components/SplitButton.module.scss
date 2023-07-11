@@ -147,12 +147,12 @@
       color: var(--default-color-contrast);
 
       &:hover {
-        background-color: var(--default-color-lighten);
+        background-color: var(--color-neutral-light-1);
         opacity: 1;
       }
 
       &:not(:last-child) {
-        border-bottom: 1px solid var(--default-color-lighten);
+        border-bottom: 1px solid var(--color-neutral-light-1);
       }
     }
   }
