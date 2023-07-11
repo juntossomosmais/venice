@@ -60,7 +60,7 @@ $icon-size-lg: 24px;
   }
 
   &.large {
-    font: var(--typography-title-font);
+    font: var(--title-headline-small);
 
     @include icon-size($icon-size-lg);
   }
