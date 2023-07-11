@@ -125,7 +125,7 @@
 
   &--white {
     &.JSMButton--text {
-      color: var(--white-color);
+      color: var(--color-neutral-white);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
@@ -136,8 +136,8 @@
     }
 
     &.JSMButton--outlined {
-      border-color: var(--white-color);
-      color: var(--white-color);
+      border-color: var(--color-neutral-white);
+      color: var(--color-neutral-white);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
@@ -148,7 +148,7 @@
     }
 
     &.JSMButton--filled {
-      background-color: var(--white-color);
+      background-color: var(--color-neutral-white);
       color: var(--white-color-contrast);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
