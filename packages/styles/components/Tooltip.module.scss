@@ -41,7 +41,7 @@ $arrow-shadow-space: -25px;
 
   &.dark {
     .tooltipContent {
-      background-color: var(--default-color);
+      background-color: var(--color-neutral-light-1);
       color: var(--color-neutral-white);
     }
   }
@@ -70,7 +70,7 @@ $arrow-shadow-space: -25px;
       transform: translateX(-$coordinate-space);
 
       &::after {
-        border-color: var(--default-color) transparent transparent transparent;
+        border-color: var(--color-neutral-light-1) transparent transparent transparent;
         top: 100%;
       }
     }
@@ -98,7 +98,7 @@ $arrow-shadow-space: -25px;
       transform: translateY(-$coordinate-space);
 
       &::after {
-        border-color: transparent var(--default-color) transparent transparent;
+        border-color: transparent var(--color-neutral-light-1) transparent transparent;
         left: ($arrow-space-left);
         top: ($coordinate-space);
         transform: translateY(-$coordinate-space);

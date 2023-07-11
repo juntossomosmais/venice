@@ -88,7 +88,7 @@
 
   &--default {
     &.JSMButton--text {
-      color: var(--default-color);
+      color: var(--color-neutral-light-1);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
@@ -99,8 +99,8 @@
     }
 
     &.JSMButton--outlined {
-      border-color: var(--default-color);
-      color: var(--default-color);
+      border-color: var(--color-neutral-light-1);
+      color: var(--color-neutral-light-1);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
@@ -111,7 +111,7 @@
     }
 
     &.JSMButton--filled {
-      background-color: var(--default-color);
+      background-color: var(--color-neutral-light-1);
       color: var(--default-color-contrast);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {

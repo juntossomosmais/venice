@@ -137,10 +137,10 @@
   }
 
   &.default {
-    background-color: var(--default-color);
+    background-color: var(--color-neutral-light-1);
 
     &::before {
-      border-bottom-color: var(--default-color);
+      border-bottom-color: var(--color-neutral-light-1);
     }
 
     & > * {
