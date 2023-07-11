@@ -92,7 +92,7 @@
 
 .danger {
   background-color: var(--danger-color);
-  color: var(--danger-color-contrast);
+  color: var(--color-neutral-white);
 
   &.clickable:hover {
     background-color: var(--danger-color-lighten);
