@@ -58,7 +58,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
   width: $btn-width;
 
   &:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--color-brand-secondary-regular);
   }
 
   &:disabled {
@@ -95,7 +95,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
     margin: 0;
 
     &:hover {
-      color: var(--secondary-color);
+      color: var(--color-brand-secondary-regular);
     }
   }
 }
@@ -106,12 +106,12 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
 
   &.active {
     p {
-      color: var(--secondary-color);
+      color: var(--color-brand-secondary-regular);
       font-weight: bold;
     }
 
     &::before {
-      background-color: var(--secondary-color);
+      background-color: var(--color-brand-secondary-regular);
       border-radius: 9px;
       content: '';
       height: var(--spacing-xxsmall);

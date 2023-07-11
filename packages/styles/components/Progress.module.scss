@@ -33,7 +33,7 @@
   position: relative;
 
   &-bar {
-    background: var(--secondary-color);
+    background: var(--color-brand-secondary-regular);
     height: 100%;
     transform-origin: left top;
     transition: transform var(--transition-duration) ease-in-out;

@@ -95,7 +95,7 @@
   }
 
   &::before {
-    background-color: var(--secondary-color);
+    background-color: var(--color-brand-secondary-regular);
     border-width: 1px;
     height: 18px;
     margin-bottom: var(--spacing-xsmall);
@@ -106,7 +106,7 @@
   }
 
   &::after {
-    background-color: var(--secondary-color);
+    background-color: var(--color-brand-secondary-regular);
   }
 
   @include above(desktopL) {

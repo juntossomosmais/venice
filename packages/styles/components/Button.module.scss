@@ -199,7 +199,7 @@
 
   &--secondary {
     &.JSMButton--text {
-      color: var(--secondary-color);
+      color: var(--color-brand-secondary-regular);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
@@ -210,8 +210,8 @@
     }
 
     &.JSMButton--outlined {
-      border-color: var(--secondary-color);
-      color: var(--secondary-color);
+      border-color: var(--color-brand-secondary-regular);
+      color: var(--color-brand-secondary-regular);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
@@ -222,7 +222,7 @@
     }
 
     &.JSMButton--filled {
-      background-color: var(--secondary-color);
+      background-color: var(--color-brand-secondary-regular);
       color: var(--secondary-color-contrast);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {

@@ -179,10 +179,10 @@
   }
 
   &.secondary {
-    background-color: var(--secondary-color);
+    background-color: var(--color-brand-secondary-regular);
 
     &::before {
-      border-bottom-color: var(--secondary-color);
+      border-bottom-color: var(--color-brand-secondary-regular);
     }
 
     & > * {
