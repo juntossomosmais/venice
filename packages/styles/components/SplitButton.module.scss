@@ -6,7 +6,7 @@
   position: relative;
 
   .inner-button {
-    padding-right: var(--space-md);
+    padding-right: var(--spacing-xxlarge);
   }
 }
 
@@ -101,7 +101,7 @@
     width: fit-content;
 
     &::before {
-      left: calc(var(--space-md) + var(--spacing-xxsmall));
+      left: calc(var(--spacing-xxlarge) + var(--spacing-xxsmall));
     }
   }
 

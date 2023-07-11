@@ -235,7 +235,7 @@
   }
 
   &--small {
-    height: var(--space-md);
+    height: var(--spacing-xxlarge);
     padding-left: var(--spacing-base);
     padding-right: var(--spacing-base);
 
@@ -268,7 +268,7 @@
     border-radius: 50%;
 
     &.JSMButton--small {
-      width: var(--space-md);
+      width: var(--spacing-xxlarge);
     }
 
     &.JSMButton--medium {
