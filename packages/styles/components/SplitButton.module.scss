@@ -11,7 +11,7 @@
 }
 
 .caret {
-  margin-left: var(--space);
+  margin-left: var(--spacing-large);
   position: relative;
 
   &::before,
@@ -70,8 +70,8 @@
     display: flex;
     font-weight: 500;
     min-height: var(--space-lg);
-    padding-left: var(--space);
-    padding-right: var(--space);
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
     text-decoration: none;
     white-space: nowrap;
 
@@ -92,7 +92,7 @@
 
   &.rtl {
     &::before {
-      right: var(--space);
+      right: var(--spacing-large);
     }
   }
 

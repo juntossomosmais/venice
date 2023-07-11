@@ -19,12 +19,12 @@
   }
 
   &[data-aside-info] {
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--spacing-base);
     margin-right: 28px;
   }
 
   &::before {
-    bottom: calc(-1 * var(--space-sm));
+    bottom: calc(-1 * var(--spacing-base));
     color: var(--default-color-lighten);
     content: attr(data-aside-info);
     font: inherit;

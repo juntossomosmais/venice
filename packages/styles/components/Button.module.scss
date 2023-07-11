@@ -236,8 +236,8 @@
 
   &--small {
     height: var(--space-md);
-    padding-left: var(--space-sm);
-    padding-right: var(--space-sm);
+    padding-left: var(--spacing-base);
+    padding-right: var(--spacing-base);
 
     .JSMButtonChildren {
       font-size: 0.8em;
@@ -246,8 +246,8 @@
 
   &--medium {
     height: 40px;
-    padding-left: var(--space);
-    padding-right: var(--space);
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
 
     .JSMButtonChildren {
       font-size: 0.9em;
@@ -256,8 +256,8 @@
 
   &--large {
     height: var(--space-lg);
-    padding-left: var(--space);
-    padding-right: var(--space);
+    padding-left: var(--spacing-large);
+    padding-right: var(--spacing-large);
 
     .JSMButtonChildren {
       font-size: 1em;
@@ -272,8 +272,8 @@
     }
 
     &.JSMButton--medium {
-      padding-left: var(--space-sm);
-      padding-right: var(--space-sm);
+      padding-left: var(--spacing-base);
+      padding-right: var(--spacing-base);
       width: 40px;
     }
 

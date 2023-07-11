@@ -16,7 +16,7 @@ $arrow-shadow-space: -25px;
     border-radius: var(--border-radius);
     display: none;
     min-width: 150px;
-    padding: 10px var(--space-sm);
+    padding: 10px var(--spacing-base);
     position: absolute;
     transition: opacity 0.5s;
     z-index: 1;
@@ -65,7 +65,7 @@ $arrow-shadow-space: -25px;
     display: inline-block;
 
     .tooltipContent {
-      bottom: calc(100% + var(--space-sm));
+      bottom: calc(100% + var(--spacing-base));
       left: ($coordinate-space);
       transform: translateX(-$coordinate-space);
 
@@ -93,7 +93,7 @@ $arrow-shadow-space: -25px;
 
   &.right {
     .tooltipContent {
-      left: calc(100% + var(--space));
+      left: calc(100% + var(--spacing-large));
       top: ($coordinate-space);
       transform: translateY(-$coordinate-space);
 

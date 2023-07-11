@@ -28,7 +28,7 @@
     display: block;
     height: 14px;
     margin-left: 2px;
-    margin-right: var(--space-sm);
+    margin-right: var(--spacing-base);
     position: relative;
     text-align: center;
     width: 14px;
@@ -61,7 +61,7 @@
     height: 100%;
 
     &::before {
-      margin-bottom: var(--space-sm);
+      margin-bottom: var(--spacing-base);
       margin-top: 2px;
     }
 
@@ -100,7 +100,7 @@
     height: 18px;
     margin-bottom: var(--spacing-xsmall);
     margin-left: 0;
-    margin-right: calc(var(--space-sm) - 2px);
+    margin-right: calc(var(--spacing-base) - 2px);
     margin-top: 0;
     width: 18px;
   }
@@ -117,7 +117,7 @@
     }
 
     &::before {
-      margin-bottom: calc(var(--space-sm) - 2px);
+      margin-bottom: calc(var(--spacing-base) - 2px);
     }
   }
 }
