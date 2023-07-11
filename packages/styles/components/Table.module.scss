@@ -33,7 +33,7 @@
 
   &.striped {
     tbody tr:nth-child(even) > td {
-      background-color: var(--gray-1);
+      background-color: var(--color-neutral-light-5);
     }
 
     tbody tr:nth-child(odd) > td {
