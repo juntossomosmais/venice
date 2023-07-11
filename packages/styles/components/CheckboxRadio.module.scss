@@ -35,13 +35,13 @@ $checkbox-opacity: 0.55;
       opacity: $checkbox-opacity;
 
       &::before {
-        background-color: var(--disabled-color);
+        background-color: var(--color-neutral-light-2);
         display: block;
       }
     }
 
     &:not(:checked) ~ .customCheckbox::before {
-      color: var(--disabled-color);
+      color: var(--color-neutral-light-2);
     }
   }
 

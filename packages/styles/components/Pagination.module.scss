@@ -123,7 +123,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
     }
 
     &::after {
-      color: var(--disabled-color);
+      color: var(--color-neutral-light-2);
       content: attr(data-marker);
       display: flex;
       font: var(--typography-caption-font);

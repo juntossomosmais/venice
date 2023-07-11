@@ -62,16 +62,16 @@
     cursor: default;
 
     &.JSMButton--text {
-      color: var(--disabled-color);
+      color: var(--color-neutral-light-2);
     }
 
     &.JSMButton--outlined {
-      border-color: var(--disabled-color);
-      color: var(--disabled-color);
+      border-color: var(--color-neutral-light-2);
+      color: var(--color-neutral-light-2);
     }
 
     &.JSMButton--filled {
-      background-color: var(--disabled-color);
+      background-color: var(--color-neutral-light-2);
       color: var(--disabled-color-contrast);
     }
   }
