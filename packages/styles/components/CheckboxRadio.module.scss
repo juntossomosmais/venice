@@ -20,7 +20,7 @@ $checkbox-opacity: 0.55;
   width: fit-content;
 
   &:hover .checkbox:not(:disabled) ~ .customCheckbox {
-    border-color: var(--secondary-color-lighten);
+    border-color: var(--color-brand-secondary-light-2);
   }
 }
 

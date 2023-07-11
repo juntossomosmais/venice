@@ -203,7 +203,7 @@
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
-          background-color: var(--secondary-color-lighten);
+          background-color: var(--color-brand-secondary-light-2);
           opacity: 0.1;
         }
       }
@@ -215,7 +215,7 @@
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
-          background-color: var(--secondary-color-lighten);
+          background-color: var(--color-brand-secondary-light-2);
           opacity: 0.1;
         }
       }
@@ -227,7 +227,7 @@
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
-          background-color: var(--secondary-color-lighten);
+          background-color: var(--color-brand-secondary-light-2);
           opacity: 1;
         }
       }
