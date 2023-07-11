@@ -162,7 +162,7 @@
 
   &--primary {
     &.JSMButton--text {
-      color: var(--primary-color);
+      color: var(--color-brand-primary-regular);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
@@ -173,8 +173,8 @@
     }
 
     &.JSMButton--outlined {
-      border-color: var(--primary-color);
-      color: var(--primary-color);
+      border-color: var(--color-brand-primary-regular);
+      color: var(--color-brand-primary-regular);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
@@ -185,7 +185,7 @@
     }
 
     &.JSMButton--filled {
-      background-color: var(--primary-color);
+      background-color: var(--color-brand-primary-regular);
       color: var(--primary-color-contrast);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {

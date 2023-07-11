@@ -158,10 +158,10 @@
   }
 
   &.primary {
-    background-color: var(--primary-color);
+    background-color: var(--color-brand-primary-regular);
 
     &::before {
-      border-bottom-color: var(--primary-color);
+      border-bottom-color: var(--color-brand-primary-regular);
     }
 
     & > * {

@@ -1,6 +1,6 @@
 @import '~@venice/styles/core';
 
-$colors: 'primary' var(--primary-color), 'secondary' var(--secondary-color),
+$colors: 'primary' var(--color-brand-primary-regular), 'secondary' var(--secondary-color),
   'success' var(--success-color), 'danger' var(--danger-color);
 
 $icon-size-sm: 12px;
@@ -29,7 +29,7 @@ $icon-size-lg: 24px;
   }
 
   &.icon-alert {
-    color: var(--primary-color);
+    color: var(--color-brand-primary-regular);
   }
 
   &.icon-close {
