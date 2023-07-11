@@ -56,7 +56,7 @@
 
 .default {
   background-color: var(--color-neutral-light-1);
-  color: var(--default-color-contrast);
+  color: var(--color-neutral-white);
 
   &.clickable:hover {
     background-color: var(--color-neutral-light-1);
@@ -101,7 +101,7 @@
 
 .purple {
   background-color: var(--purple-1);
-  color: var(--default-color-contrast);
+  color: var(--color-neutral-white);
 
   &.clickable:hover {
     background-color: var(--color-neutral-light-1);

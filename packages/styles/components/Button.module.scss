@@ -112,7 +112,7 @@
 
     &.JSMButton--filled {
       background-color: var(--color-neutral-light-1);
-      color: var(--default-color-contrast);
+      color: var(--color-neutral-white);
 
       &:not([disabled]):not(.JSMButton--isLoading):hover {
         &::before {
