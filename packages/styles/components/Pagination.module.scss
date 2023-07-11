@@ -129,7 +129,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
       font: var(--text-caption);
       justify-content: center;
       left: 0;
-      letter-spacing: var(--typography-caption-letter);
+      letter-spacing: var(--text-caption-letter);
       margin-top: var(--spacing-base);
       position: absolute;
       top: 100%;
