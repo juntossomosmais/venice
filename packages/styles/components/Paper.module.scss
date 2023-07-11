@@ -17,6 +17,6 @@
   button:focus > &,
   a:hover > &,
   a:focus > & {
-    box-shadow: 0 1px var(--space-xs) rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px var(--spacing-xsmall) rgba(0, 0, 0, 0.15);
   }
 }

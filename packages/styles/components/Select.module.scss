@@ -42,7 +42,7 @@ $caret-size: 16px;
 }
 
 .icon {
-  left: var(--space-xs);
+  left: var(--spacing-xsmall);
 
   + .field {
     padding-left: calc(#{$icon-size} + var(--space-sm));

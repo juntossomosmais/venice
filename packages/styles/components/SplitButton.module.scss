@@ -22,7 +22,7 @@
     border-radius: 1px;
     content: "";
     display: block;
-    height: var(--space-xs);
+    height: var(--spacing-xsmall);
     position: absolute;
     top: $centralize;
     transform: rotate(45deg);
@@ -55,7 +55,7 @@
   }
 
   &::before {
-    border: var(--space-xs) solid transparent;
+    border: var(--spacing-xsmall) solid transparent;
     content: "";
     margin-left: -20px;
     pointer-events: none;

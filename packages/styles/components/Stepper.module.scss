@@ -39,7 +39,7 @@
     background-color: var(--gray-2);
     content: '';
     height: 100%;
-    left: var(--space-xs);
+    left: var(--spacing-xsmall);
     position: absolute;
     top: var(--spacing-xxsmall);
     width: 2px;
@@ -53,7 +53,7 @@
     content: '-';
     display: inline-block;
     text-align: center;
-    width: var(--space-xs);
+    width: var(--spacing-xsmall);
   }
 
   @include above(desktopL) {
@@ -67,8 +67,8 @@
 
     &:not(:last-child)::after {
       height: 2px;
-      left: var(--space-xs);
-      top: var(--space-xs);
+      left: var(--spacing-xsmall);
+      top: var(--spacing-xsmall);
       width: 100%;
     }
 
@@ -98,7 +98,7 @@
     background-color: var(--secondary-color);
     border-width: 1px;
     height: 18px;
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--spacing-xsmall);
     margin-left: 0;
     margin-right: calc(var(--space-sm) - 2px);
     margin-top: 0;

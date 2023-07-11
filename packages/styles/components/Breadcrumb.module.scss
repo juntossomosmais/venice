@@ -36,8 +36,8 @@
     &::after {
       content: '/';
       display: inline-block;
-      margin-left: var(--space-xs);
-      margin-right: var(--space-xs);
+      margin-left: var(--spacing-xsmall);
+      margin-right: var(--spacing-xsmall);
     }
 
     :root & > a {

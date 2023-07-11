@@ -45,7 +45,7 @@
     position: relative;
 
     &:not(:empty) {
-      margin-right: var(--space-xs);
+      margin-right: var(--spacing-xsmall);
     }
   }
 
@@ -54,7 +54,7 @@
     position: relative;
 
     &:not(:empty) {
-      margin-left: var(--space-xs);
+      margin-left: var(--spacing-xsmall);
     }
   }
 

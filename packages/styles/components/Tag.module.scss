@@ -4,7 +4,7 @@
   font: var(--typography-caption-font);
   font-weight: bold;
   height: fit-content;
-  padding: var(--spacing-xxsmall) var(--space-xs);
+  padding: var(--spacing-xxsmall) var(--spacing-xsmall);
   position: relative;
   text-align: center;
   white-space: nowrap;
@@ -41,7 +41,7 @@
   position: relative;
 
   &:not(:empty) {
-    margin-right: var(--space-xs);
+    margin-right: var(--spacing-xsmall);
   }
 }
 
@@ -50,7 +50,7 @@
   position: relative;
 
   &:not(:empty) {
-    margin-left: var(--space-xs);
+    margin-left: var(--spacing-xsmall);
   }
 }
 

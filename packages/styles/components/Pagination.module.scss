@@ -116,7 +116,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
       content: '';
       height: var(--spacing-xxsmall);
       left: 0;
-      margin-top: var(--space-xs);
+      margin-top: var(--spacing-xsmall);
       position: absolute;
       top: 100%;
       width: 100%;
