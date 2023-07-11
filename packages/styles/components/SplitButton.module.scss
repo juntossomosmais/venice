@@ -168,12 +168,12 @@
       color: var(--primary-color-contrast);
 
       &:hover {
-        background-color: var(--primary-color-lighten);
+        background-color: var(--color-brand-primary-light-1);
         opacity: 1;
       }
 
       &:not(:last-child) {
-        border-bottom: 1px solid var(--primary-color-lighten);
+        border-bottom: 1px solid var(--color-brand-primary-light-1);
       }
     }
   }
