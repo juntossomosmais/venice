@@ -11,6 +11,7 @@ $checkbox-opacity: 0.55;
 }
 
 .label {
+  align-items: center;
   display: flex;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -46,10 +47,10 @@ $checkbox-opacity: 0.55;
 
   &:not(:disabled):checked {
     ~ .customCheckbox {
-      background-color: var(--secondary-color-lighten);
+      background-color: var(--color-brand-secondary-regular);
 
       &::before {
-        background-color: var(--secondary-color-lighten);
+        background-color: var(--color-brand-secondary-regular);
         display: block;
       }
     }
