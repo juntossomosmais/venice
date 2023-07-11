@@ -13,13 +13,13 @@ $caret-size: 16px;
 }
 
 .error {
-  color: var(--danger-color);
+  color: var(--color-contextual-error-regular);
   display: inherit;
   font: var(--typography-caption-font);
   margin-top: var(--spacing-xxsmall);
 
   svg {
-    fill: var(--danger-color);
+    fill: var(--color-contextual-error-regular);
     height: 14px;
     margin-right: var(--spacing-xxsmall);
     width: 14px;

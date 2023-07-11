@@ -91,7 +91,7 @@
 }
 
 .danger {
-  background-color: var(--danger-color);
+  background-color: var(--color-contextual-error-regular);
   color: var(--color-neutral-white);
 
   &.clickable:hover {
