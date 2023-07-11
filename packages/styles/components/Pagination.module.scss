@@ -84,7 +84,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
   cursor: pointer;
   display: inline-block;
   font: var(--text-body-small);
-  letter-spacing: var(--typography-body2-letter);
+  letter-spacing: var(--text-body-small-letter);
   text-align: center;
   width: $item-width;
 
