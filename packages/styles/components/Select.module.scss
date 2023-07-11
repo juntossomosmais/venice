@@ -15,7 +15,7 @@ $caret-size: 16px;
 .error {
   color: var(--color-contextual-error-regular);
   display: inherit;
-  font: var(--typography-caption-font);
+  font: var(--text-caption);
   margin-top: var(--spacing-xxsmall);
 
   svg {

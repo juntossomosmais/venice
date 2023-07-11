@@ -6,7 +6,7 @@ $checkbox-font-size: $checkbox-size - 1;
 $checkbox-opacity: 0.55;
 
 .container {
-  font: var(--typography-caption-font);
+  font: var(--text-caption);
   width: fit-content;
 }
 
@@ -83,7 +83,7 @@ $checkbox-opacity: 0.55;
 
 .error {
   color: var(--color-contextual-error-regular);
-  font: var(--typography-caption-font);
+  font: var(--text-caption);
   margin-top: var(--spacing-xxsmall);
 
   &::before {

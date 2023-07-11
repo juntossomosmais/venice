@@ -54,7 +54,7 @@ $icon-size-lg: 24px;
   @include icon-size($icon-size);
 
   &.small {
-    font: var(--typography-caption-font);
+    font: var(--text-caption);
 
     @include icon-size($icon-size-sm);
   }

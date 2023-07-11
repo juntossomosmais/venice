@@ -126,7 +126,7 @@ $long-range: calc((#{$item-width} * 5) + (#{$btn-width} * 2));
       color: var(--color-neutral-light-2);
       content: attr(data-marker);
       display: flex;
-      font: var(--typography-caption-font);
+      font: var(--text-caption);
       justify-content: center;
       left: 0;
       letter-spacing: var(--typography-caption-letter);
