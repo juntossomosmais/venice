@@ -9,6 +9,6 @@
   "devDependencies": {
     "node-sass": "^4.0.0",
     "rupture-sass": "^0.3.0",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^13.0.2"
   }
 }
